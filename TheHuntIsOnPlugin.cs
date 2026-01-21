@@ -1,4 +1,5 @@
 using BepInEx;
+using MonoDetour;
 using Silksong.DataManager;
 using Silksong.ModMenu.Plugin;
 using Silksong.ModMenu.Screens;
@@ -110,6 +111,7 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
     private void Awake()
     {
         instance = this;
+        MonoDetourManager.InvokeHookInitializers(typeof(TheHuntIsOnPlugin).Assembly);
 
         foreach (var module in ModuleBase.GetAllModulesInAssembly()) modules.Add(module.Name, module);
         ClientAddon.RegisterAddon(new HuntClientAddon());

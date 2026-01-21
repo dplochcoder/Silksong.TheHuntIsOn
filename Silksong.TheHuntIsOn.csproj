@@ -35,10 +35,24 @@
     <PackageReference Include="Harmonize" Version="1.0.3" />
     <PackageReference Include="Hamunii.BepInEx.AutoPlugin" Version="2.0.1" PrivateAssets="all" />
     <PackageReference Include="Microsoft.Unity.Analyzers" Version="1.25.0" PrivateAssets="all" />
+    <PackageReference Include="MonoDetour" Version="0.7.5" />
+    <PackageReference Include="MonoDetour.HookGen" Version="0.7.3" />
+    <PackageReference Include="PolySharp" Version="1.15.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
     <PackageReference Include="UnityEngine.Modules" Version="6000.0.50" IncludeAssets="compile" />
     <PackageReference Include="Silksong.DataManager" Version="1.1.0" PrivateAssets="all" />
+    <PackageReference Include="Silksong.FsmUtil" Version="0.3.12" PrivateAssets="all" />
     <PackageReference Include="Silksong.ModMenu" Version="0.2.0" />
     <PackageReference Include="Silksong.SSMP" Version="0.0.6" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(UseLocalRefs)">
+    <LocalReferences Include="$(SilksongPluginsFolder)/dplochcoder-PurenailUtil/Silksong.PurenailUtil.dll" />
+  </ItemGroup>
+  <ItemGroup Condition="!$(UseLocalRefs)">
+    <!-- FIXME: PurenailUtil -->
   </ItemGroup>
 
   <ItemGroup Condition="!$(UseLocalRefs) Or !Exists($(ManagedFolder))">
@@ -67,7 +81,7 @@
     </PropertyGroup>
 
     <!-- Local install -->
-    <Copy SourceFiles="@(Binaries)" DestinationFolder="$(SilksongPluginsFolder)/dplochcoder-$(AssemblyTitle)/%(Binaries.LocalDir)" Condition="'$(SilksongPluginsFolder)' != '' And Exists('$(SilksongPluginsFolder)')" />
+    <Copy SourceFiles="@(Binaries)" DestinationFolder="$(SilksongPluginsFolder)/dplochcoder-$(ThunderStoreTitle)/%(Binaries.LocalDir)" Condition="'$(SilksongPluginsFolder)' != '' And Exists('$(SilksongPluginsFolder)')" />
 
     <!-- Thunderstore packaging -->
     <RemoveDir Directories="$(ThunderstoreDir)/temp;$(ThunderstoreDir)/dist" />

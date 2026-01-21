@@ -52,11 +52,47 @@
         "resolved": "1.25.0",
         "contentHash": "jOclVb2PVoOdKafuzt3bJ3BHkbjsfuAx+60yqP4zCAhlNa1rwn1Jt05qrmqJgmBY42S08hXbps9KA6QR2Z7aOA=="
       },
+      "MonoDetour": {
+        "type": "Direct",
+        "requested": "[0.7.5, )",
+        "resolved": "0.7.5",
+        "contentHash": "jbEm9x1VJVWurAKTiA8z7Ugb+N5ktH0jgvoIguVvn7tWwZ2COkfURN5ZaIM0bUG8Ze0S5OEIKXl5/bs5sYJj8g==",
+        "dependencies": {
+          "Mono.Cecil": "0.11.5",
+          "MonoMod.RuntimeDetour": "21.12.13.1"
+        }
+      },
+      "MonoDetour.HookGen": {
+        "type": "Direct",
+        "requested": "[0.7.3, )",
+        "resolved": "0.7.3",
+        "contentHash": "82nNksQf2HHpoTt0QhWY+uWCkA9gYE4H+7fbBI2IOa+TVe4In838/XogX/5Lx6EhXXF58qV4XWvwFxmmdg/YQw==",
+        "dependencies": {
+          "MonoDetour": "0.5.0"
+        }
+      },
+      "PolySharp": {
+        "type": "Direct",
+        "requested": "[1.15.0, )",
+        "resolved": "1.15.0",
+        "contentHash": "FbU0El+EEjdpuIX4iDbeS7ki1uzpJPx8vbqOzEtqnl1GZeAGJfq+jCbxeJL2y0EPnUNk8dRnnqR2xnYXg9Tf+g=="
+      },
       "Silksong.DataManager": {
         "type": "Direct",
         "requested": "[1.1.0, )",
         "resolved": "1.1.0",
         "contentHash": "j9JR5Nbspwm1s1ese5kksHzaAWxMvfHuBe0EOwnF+R0Lxpb6nVY57tXY0s+A/AjmXP9tv+vdPj91ayeGNMR3Kg==",
+        "dependencies": {
+          "BepInEx.Core": "5.4.21",
+          "HarmonyX": "2.9.0",
+          "UnityEngine.Modules": "6000.0.50"
+        }
+      },
+      "Silksong.FsmUtil": {
+        "type": "Direct",
+        "requested": "[0.3.12, )",
+        "resolved": "0.3.12",
+        "contentHash": "HGncQoo+xyiSrlwAVjJg0okj1uWJm5ibtWjMdkJNy+ew7mJ+mY2DNA3+5i6qIw5/8OwtONBL0ByvLTo+VDHRjg==",
         "dependencies": {
           "BepInEx.Core": "5.4.21",
           "HarmonyX": "2.9.0",
@@ -108,23 +144,6 @@
         "type": "Transitive",
         "resolved": "0.11.5",
         "contentHash": "fxfX+0JGTZ8YQeu1MYjbBiK2CYTSzDyEeIixt+yqKKTn7FW8rv7JMY70qevup4ZJfD7Kk/VG/jDzQQTpfch87g=="
-      },
-      "MonoDetour": {
-        "type": "Transitive",
-        "resolved": "0.7.5",
-        "contentHash": "jbEm9x1VJVWurAKTiA8z7Ugb+N5ktH0jgvoIguVvn7tWwZ2COkfURN5ZaIM0bUG8Ze0S5OEIKXl5/bs5sYJj8g==",
-        "dependencies": {
-          "Mono.Cecil": "0.11.5",
-          "MonoMod.RuntimeDetour": "21.12.13.1"
-        }
-      },
-      "MonoDetour.HookGen": {
-        "type": "Transitive",
-        "resolved": "0.7.3",
-        "contentHash": "82nNksQf2HHpoTt0QhWY+uWCkA9gYE4H+7fbBI2IOa+TVe4In838/XogX/5Lx6EhXXF58qV4XWvwFxmmdg/YQw==",
-        "dependencies": {
-          "MonoDetour": "0.5.0"
-        }
       },
       "MonoMod.RuntimeDetour": {
         "type": "Transitive",
