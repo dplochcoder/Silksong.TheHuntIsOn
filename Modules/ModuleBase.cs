@@ -1,0 +1,43 @@
+﻿using Silksong.TheHuntIsOn.Menu;
+using System.Collections.Generic;
+using System.Reflection;
+
+namespace Silksong.TheHuntIsOn.Modules;
+
+internal abstract class ModuleBase
+{
+    public abstract string Name { get; }
+
+    public bool Enabled
+    {
+        get => field;
+        set
+        {
+            if (field == value) return;
+            field = value;
+
+            if (value) OnEnabled();
+            else OnDisabled();
+        }
+    }
+
+    public abstract IModuleSubMenu CreateSubMenu();
+
+    public virtual void OnEnabled() { }
+
+    public virtual void OnDisabled() { }
+
+    public virtual void OnGlobalConfigUpdated() { }
+
+    public virtual void OnLocalConfigUpdated() { }
+
+    public static IEnumerable<ModuleBase> GetAllModulesInAssembly()
+    {
+        Dictionary<string, ModuleBase> dict = [];
+        foreach (var type in Assembly.GetExecutingAssembly().GetTypes())
+        {
+            if (type.IsAbstract || !type.IsSubclassOf(typeof(ModuleBase))) continue;
+            yield return (ModuleBase)type.GetConstructor([]).Invoke([]);
+        }
+    }
+}
