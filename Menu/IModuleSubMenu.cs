@@ -8,7 +8,7 @@ internal interface IModuleSubMenu
 {
     IEnumerable<MenuElement> Elements();
 
-    void ApplyRaw(object? data);
+    void ApplyRaw(NetworkedCloneable? data);
 
-    Cloneable ExportRaw();
+    NetworkedCloneable ExportRaw();
 }

@@ -33,7 +33,6 @@ internal abstract class ModuleBase
 
     public static IEnumerable<ModuleBase> GetAllModulesInAssembly()
     {
-        Dictionary<string, ModuleBase> dict = [];
         foreach (var type in Assembly.GetExecutingAssembly().GetTypes())
         {
             if (type.IsAbstract || !type.IsSubclassOf(typeof(ModuleBase))) continue;

@@ -4,15 +4,15 @@ using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn.Menu;
 
-internal abstract class ModuleSubMenu<T> : IModuleSubMenu where T : Cloneable, new()
+internal abstract class ModuleSubMenu<T> : IModuleSubMenu where T : NetworkedCloneable, new()
 {
     public abstract IEnumerable<MenuElement> Elements();
 
     internal abstract void Apply(T data);
 
-    public void ApplyRaw(object? data) => Apply(data is T typed ? typed : new());
+    public void ApplyRaw(NetworkedCloneable? data) => Apply(data is T typed ? typed : new());
 
     internal abstract T Export();
 
-    public Cloneable ExportRaw() => Export();
+    public NetworkedCloneable ExportRaw() => Export();
 }

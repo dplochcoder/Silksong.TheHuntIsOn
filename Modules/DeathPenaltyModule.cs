@@ -9,6 +9,14 @@ using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn.Modules;
 
+internal class DeathPenaltySettings : NetworkedCloneable<DeathPenaltySettings>
+{
+    public int RespawnTimer = 0;
+    public bool SpawnCoccoon = true;
+    public bool LoseRosaries = true;
+    public bool LimitSilk = true;
+}
+
 [MonoDetourTargets(typeof(HeroController))]
 internal class DeathPenaltyModule : Module<DeathPenaltyModule, DeathPenaltySettings, EmptySettings, DeathPenaltyMenu>
 {
@@ -52,14 +60,6 @@ internal class DeathPenaltyModule : Module<DeathPenaltyModule, DeathPenaltySetti
 
     [MonoDetourHookInitialize]
     private static void Hook() => Md.HeroController.Die.Postfix(ExtendDeath);
-}
-
-internal class DeathPenaltySettings : Cloneable<DeathPenaltySettings>
-{
-    public int RespawnTimer = 0;
-    public bool SpawnCoccoon = true;
-    public bool LoseRosaries = true;
-    public bool LimitSilk = true;
 }
 
 internal class DeathPenaltyMenu : ModuleSubMenu<DeathPenaltySettings>

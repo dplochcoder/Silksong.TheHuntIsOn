@@ -9,7 +9,7 @@ internal class EmptySubMenu : IModuleSubMenu
 {
     public IEnumerable<MenuElement> Elements() => [];
 
-    public void ApplyRaw(object? data) { }
+    public void ApplyRaw(NetworkedCloneable? data) { }
 
-    public Cloneable ExportRaw() => new EmptySettings();
+    public NetworkedCloneable ExportRaw() => new EmptySettings();
 }

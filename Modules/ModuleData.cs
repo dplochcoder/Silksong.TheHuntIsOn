@@ -1,16 +1,18 @@
-﻿using Silksong.TheHuntIsOn.Util;
+﻿using Silksong.TheHuntIsOn.SsmpAddon.Packets;
+using Silksong.TheHuntIsOn.Util;
+using SSMP.Networking.Packet;
 
 namespace Silksong.TheHuntIsOn.Modules;
 
-internal class ModuleData(ModuleActivation moduleActivation, Cloneable? speedrunnerSettings, Cloneable? hunterSettings, Cloneable? everyoneSettings)
+internal class ModuleData(ModuleActivation moduleActivation, NetworkedCloneable? speedrunnerSettings, NetworkedCloneable? hunterSettings, NetworkedCloneable? everyoneSettings) : IWireInterface
 {
-    internal ModuleData() : this(ModuleActivation.Inactive, null, null, null) { }
+    public ModuleData() : this(ModuleActivation.Inactive, null, null, null) { }
     internal ModuleData(ModuleData copy) : this(copy.ModuleActivation, copy.SpeedrunnerSettings, copy.HunterSettings, copy.EveryoneSettings) { }
 
     public ModuleActivation ModuleActivation = moduleActivation;
-    public Cloneable? SpeedrunnerSettings = speedrunnerSettings;
-    public Cloneable? HunterSettings = hunterSettings;
-    public Cloneable? EveryoneSettings = everyoneSettings;
+    public NetworkedCloneable? SpeedrunnerSettings = speedrunnerSettings;
+    public NetworkedCloneable? HunterSettings = hunterSettings;
+    public NetworkedCloneable? EveryoneSettings = everyoneSettings;
 
     public bool IsEnabled(RoleId role) => ModuleActivation switch
     {
@@ -21,7 +23,7 @@ internal class ModuleData(ModuleActivation moduleActivation, Cloneable? speedrun
         _ => false
     };
 
-    public Cloneable? GetSettings(RoleId role) => ModuleActivation switch
+    public NetworkedCloneable? GetSettings(RoleId role) => ModuleActivation switch
     {
         ModuleActivation.Inactive => null,
         ModuleActivation.SpeedrunnerOnly => (role == RoleId.Speedrunner) ? SpeedrunnerSettings : null,
@@ -30,4 +32,20 @@ internal class ModuleData(ModuleActivation moduleActivation, Cloneable? speedrun
         ModuleActivation.EveryoneDifferent => (role == RoleId.Speedrunner) ? SpeedrunnerSettings : HunterSettings,
         _ => null,
     };
+
+    public void WriteData(IPacket packet)
+    {
+        packet.WriteEnum(ModuleActivation);
+        packet.WriteDynamic(SpeedrunnerSettings);
+        packet.WriteDynamic(HunterSettings);
+        packet.WriteDynamic(EveryoneSettings);
+    }
+
+    public void ReadData(IPacket packet)
+    {
+        ModuleActivation = packet.ReadEnum<ModuleActivation>();
+        packet.ReadDynamic(out SpeedrunnerSettings);
+        packet.ReadDynamic(out HunterSettings);
+        packet.ReadDynamic(out EveryoneSettings);
+    }
 }

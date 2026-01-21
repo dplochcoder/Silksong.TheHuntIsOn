@@ -20,9 +20,9 @@ internal class ModuleMultiMenu
     private readonly IModuleSubMenu? huntersSubMenu;
     private readonly TextButton? huntersSubMenuButton;
 
-    private Cloneable? speedrunnersMenuData;
-    private Cloneable? huntersMenuData;
-    private Cloneable? everyoneMenuData;
+    private NetworkedCloneable? speedrunnersMenuData;
+    private NetworkedCloneable? huntersMenuData;
+    private NetworkedCloneable? everyoneMenuData;
 
     internal ModuleMultiMenu(ModuleBase module)
     {

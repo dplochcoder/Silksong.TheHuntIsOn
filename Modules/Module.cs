@@ -3,7 +3,7 @@ using Silksong.TheHuntIsOn.Util;
 
 namespace Silksong.TheHuntIsOn.Modules;
 
-internal abstract class Module<ModuleT, GlobalT, LocalT, SubMenuT> : ModuleBase where ModuleT : Module<ModuleT, GlobalT, LocalT, SubMenuT> where GlobalT : Cloneable<GlobalT>, new() where LocalT : Cloneable<LocalT>, new() where SubMenuT : ModuleSubMenu<GlobalT>, new()
+internal abstract class Module<ModuleT, GlobalT, LocalT, SubMenuT> : ModuleBase where ModuleT : Module<ModuleT, GlobalT, LocalT, SubMenuT> where GlobalT : NetworkedCloneable<GlobalT>, new() where LocalT : NetworkedCloneable<LocalT>, new() where SubMenuT : ModuleSubMenu<GlobalT>, new()
 {
     protected static ModuleT? Instance { get; private set; }
 

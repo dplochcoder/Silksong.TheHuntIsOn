@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn;
 
-internal class LocalSaveData : Cloneable<LocalSaveData>
+internal class LocalSaveData : NetworkedCloneable<LocalSaveData>
 {
-    public Dictionary<string, Cloneable> LocalData = [];
+    public Dictionary<string, NetworkedCloneable> LocalData = [];
 
-    internal override Cloneable Clone()
+    internal override NetworkedCloneable Clone()
     {
         LocalSaveData clone = new();
         foreach (var e in LocalData) clone.LocalData.Add(e.Key, e.Value.Clone());

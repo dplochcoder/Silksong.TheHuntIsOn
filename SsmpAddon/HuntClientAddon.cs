@@ -1,4 +1,9 @@
-﻿using SSMP.Api.Client;
+﻿using Silksong.TheHuntIsOn.Modules;
+using SSMP.Api.Client;
+using SSMP.Api.Client.Networking;
+using SSMP.Networking.Packet;
+using System;
+using System.Collections.Generic;
 using System.Reflection;
 
 namespace Silksong.TheHuntIsOn.SsmpAddon;
@@ -13,8 +18,30 @@ internal class HuntClientAddon : ClientAddon
 
     protected override string Version => Assembly.GetExecutingAssembly().GetName().Version.ToString();
 
+    private IClientApi? api;
+    private IClientAddonNetworkSender<ServerPacketId>? sender;
+    private IClientAddonNetworkReceiver<ClientPacketId>? receiver;
+
     public override void Initialize(IClientApi clientApi)
     {
-        // FIXME
+        api = clientApi;
+        sender = clientApi.NetClient.GetNetworkSender<ServerPacketId>(this);
+        receiver = clientApi.NetClient.GetNetworkReceiver<ClientPacketId>(this, InstantiatePacket);
+
+        HandleClientPacket<ModuleDataset>(ClientPacketId.ModuleDataset, HandleModuleDataset);
     }
+
+    private readonly Dictionary<ClientPacketId, Func<IPacketData>> packetGenerators = [];
+
+    private IPacketData InstantiatePacket(ClientPacketId packetId) => packetGenerators.TryGetValue(packetId, out var gen) ? gen() : throw new ArgumentException($"Unknown id: {packetId}");
+
+    private void HandleClientPacket<T>(ClientPacketId packetId, Action<T> handler) where T : IPacketData, new()
+    {
+        packetGenerators.Add(packetId, () => new T());
+        receiver!.RegisterPacketHandler<T>(packetId, data => handler(data));
+    }
+
+    internal static event Action<ModuleDataset>? OnModuleDatasetUpdate;
+
+    private void HandleModuleDataset(ModuleDataset moduleDataset) => OnModuleDatasetUpdate?.Invoke(moduleDataset);
 }

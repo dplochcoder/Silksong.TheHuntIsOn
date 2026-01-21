@@ -55,7 +55,7 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
         set => GlobalSaveData = value ?? new();
     }
 
-    internal static bool GetGlobalConfig<T>(string name, out T config) where T : Cloneable<T>, new()
+    internal static bool GetGlobalConfig<T>(string name, out T config) where T : NetworkedCloneable<T>, new()
     {
         if (instance != null)
         {
@@ -83,7 +83,7 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
 
     LocalSaveData? ISaveDataMod<LocalSaveData>.SaveData { get => LocalSaveData; set => LocalSaveData = value; }
 
-    internal static bool GetLocalConfig<T>(string name, out T config) where T : Cloneable<T>, new()
+    internal static bool GetLocalConfig<T>(string name, out T config) where T : NetworkedCloneable<T>, new()
     {
         if (instance != null)
         {
@@ -99,7 +99,7 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
         return false;
     }
 
-    internal static void SetLocalConfig<T>(string name, T config) where T : Cloneable
+    internal static void SetLocalConfig<T>(string name, T config) where T : NetworkedCloneable<T>
     {
         if (instance == null) return;
 

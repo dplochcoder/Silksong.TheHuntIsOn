@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn.Modules;
 
-internal class BindSettings : Cloneable<BindSettings>
+internal class BindSettings : NetworkedCloneable<BindSettings>
 {
     public int HealMasks = 3;
     public int MultibinderHealMasks = 2;
@@ -50,7 +50,7 @@ internal class BindMenu : ModuleSubMenu<BindSettings>
     private readonly ChoiceElement<int> HealMasks = new("Heal Masks", CollectionUtil.IntRangeModel(0, 10), "Number of masks to heal when binding.");
     private readonly ChoiceElement<int> MultibinderHealMasks = new("Multibinder Heal Masks", CollectionUtil.IntRangeModel(0, 5), "Number of masks to heal when multi-binding.");
     private readonly ChoiceElement<int> SilkCost = new("Silk Cost", CollectionUtil.IntRangeModel(1, 18), "Number of silk spools required to bind.");
-    private readonly ChoiceElement<float> TimePenalty = new("Time Penalty", ChoiceModels.ForValues([0.25f, 0.5f, 1f, 1.5f, 2f, 3f]), "Multiplier for the time it takes to bind.");
+    private readonly ChoiceElement<float> TimePenalty = new("Time Penalty", ChoiceModels.ForValues([0.25f, 0.5f, 0.75f, 1f, 1.5f, 2f, 3f]), "Multiplier on the time it takes to bind.");
 
     public override IEnumerable<MenuElement> Elements() => [HealMasks, MultibinderHealMasks, SilkCost, TimePenalty];
 
