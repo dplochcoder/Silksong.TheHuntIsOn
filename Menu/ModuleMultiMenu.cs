@@ -1,7 +1,7 @@
 ﻿using Silksong.ModMenu.Elements;
 using Silksong.ModMenu.Models;
 using Silksong.ModMenu.Screens;
-using Silksong.TheHuntIsOn.Modules;
+using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.Util;
 using System.Collections.Generic;
 
@@ -76,16 +76,16 @@ internal class ModuleMultiMenu
 
         switch (ModuleActivation.Value)
         {
-            case Modules.ModuleActivation.SpeedrunnerOnly:
+            case Modules.Lib.ModuleActivation.SpeedrunnerOnly:
                 speedrunnersMenuData = mainMenu.ExportRaw();
                 break;
-            case Modules.ModuleActivation.HuntersOnly:
+            case Modules.Lib.ModuleActivation.HuntersOnly:
                 huntersMenuData = mainMenu.ExportRaw();
                 break;
-            case Modules.ModuleActivation.EveryoneSame:
+            case Modules.Lib.ModuleActivation.EveryoneSame:
                 everyoneMenuData = mainMenu.ExportRaw();
                 break;
-            case Modules.ModuleActivation.EveryoneDifferent:
+            case Modules.Lib.ModuleActivation.EveryoneDifferent:
                 speedrunnersMenuData = speedrunnersSubMenu?.ExportRaw();
                 huntersMenuData = huntersSubMenu?.ExportRaw();
                 break;
@@ -94,10 +94,10 @@ internal class ModuleMultiMenu
 
     private void UpdateModuleActivation(ModuleActivation value)
     {
-        bool showMain = value != Modules.ModuleActivation.Inactive && value != Modules.ModuleActivation.EveryoneDifferent;
+        bool showMain = value != Modules.Lib.ModuleActivation.Inactive && value != Modules.Lib.ModuleActivation.EveryoneDifferent;
         foreach (var element in mainElements) element.VisibleSelf = showMain;
 
-        bool showSubMenus = value == Modules.ModuleActivation.EveryoneDifferent;
+        bool showSubMenus = value == Modules.Lib.ModuleActivation.EveryoneDifferent;
         speedrunnersSubMenuButton?.VisibleSelf = showSubMenus;
         huntersSubMenuButton?.VisibleSelf = showSubMenus;
 
@@ -107,10 +107,10 @@ internal class ModuleMultiMenu
             huntersSubMenu?.ApplyRaw(huntersMenuData);
             switch (value)
             {
-                case Modules.ModuleActivation.SpeedrunnerOnly:
+                case Modules.Lib.ModuleActivation.SpeedrunnerOnly:
                     mainMenu.ApplyRaw(speedrunnersMenuData);
                     break;
-                case Modules.ModuleActivation.HuntersOnly:
+                case Modules.Lib.ModuleActivation.HuntersOnly:
                     mainMenu.ApplyRaw(huntersMenuData);
                     break;
                 default:

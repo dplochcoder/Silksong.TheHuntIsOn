@@ -2,7 +2,7 @@
 using Silksong.TheHuntIsOn.Util;
 using SSMP.Networking.Packet;
 
-namespace Silksong.TheHuntIsOn.Modules;
+namespace Silksong.TheHuntIsOn.Modules.Lib;
 
 internal class ModuleData(ModuleActivation moduleActivation, NetworkedCloneable? speedrunnerSettings, NetworkedCloneable? hunterSettings, NetworkedCloneable? everyoneSettings) : IWireInterface
 {

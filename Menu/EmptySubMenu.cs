@@ -1,5 +1,5 @@
 ﻿using Silksong.ModMenu.Elements;
-using Silksong.TheHuntIsOn.Modules;
+using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.Util;
 using System.Collections.Generic;
 

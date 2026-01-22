@@ -1,7 +1,7 @@
 ﻿using Silksong.ModMenu.Elements;
 using Silksong.ModMenu.Models;
 using Silksong.ModMenu.Screens;
-using Silksong.TheHuntIsOn.Modules;
+using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.SsmpAddon;
 using Silksong.TheHuntIsOn.Util;
 using System;

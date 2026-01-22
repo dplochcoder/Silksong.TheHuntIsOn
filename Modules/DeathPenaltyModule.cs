@@ -3,6 +3,7 @@ using MonoDetour.HookGen;
 using Silksong.ModMenu.Elements;
 using Silksong.ModMenu.Models;
 using Silksong.TheHuntIsOn.Menu;
+using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.Util;
 using System.Collections;
 using System.Collections.Generic;

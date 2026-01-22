@@ -1,7 +1,7 @@
 ﻿using Silksong.TheHuntIsOn.Menu;
 using Silksong.TheHuntIsOn.Util;
 
-namespace Silksong.TheHuntIsOn.Modules;
+namespace Silksong.TheHuntIsOn.Modules.Lib;
 
 internal abstract class Module<ModuleT, GlobalT, LocalT, SubMenuT> : ModuleBase where ModuleT : Module<ModuleT, GlobalT, LocalT, SubMenuT> where GlobalT : NetworkedCloneable<GlobalT>, new() where LocalT : NetworkedCloneable<LocalT>, new() where SubMenuT : ModuleSubMenu<GlobalT>, new()
 {

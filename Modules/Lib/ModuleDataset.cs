@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Silksong.TheHuntIsOn.Modules;
+namespace Silksong.TheHuntIsOn.Modules.Lib;
 
 /// <summary>
 /// Data representing which modules are enabled, with what settings, for which roles.

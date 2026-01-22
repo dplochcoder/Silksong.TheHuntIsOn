@@ -1,4 +1,4 @@
-﻿namespace Silksong.TheHuntIsOn.Modules;
+﻿namespace Silksong.TheHuntIsOn.Modules.Lib;
 
 internal enum RoleId
 {

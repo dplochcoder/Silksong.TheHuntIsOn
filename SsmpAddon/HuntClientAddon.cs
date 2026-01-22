@@ -1,4 +1,4 @@
-﻿using Silksong.TheHuntIsOn.Modules;
+﻿using Silksong.TheHuntIsOn.Modules.Lib;
 using SSMP.Api.Client;
 using SSMP.Api.Client.Networking;
 using SSMP.Networking.Packet;

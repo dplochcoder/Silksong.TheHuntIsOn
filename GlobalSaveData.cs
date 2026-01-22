@@ -1,4 +1,4 @@
-﻿using Silksong.TheHuntIsOn.Modules;
+﻿using Silksong.TheHuntIsOn.Modules.Lib;
 
 namespace Silksong.TheHuntIsOn;
 

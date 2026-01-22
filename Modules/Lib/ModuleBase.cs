@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace Silksong.TheHuntIsOn.Modules;
+namespace Silksong.TheHuntIsOn.Modules.Lib;
 
 internal abstract class ModuleBase
 {
