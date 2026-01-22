@@ -25,8 +25,8 @@ internal class HuntServerAddon : ServerAddon
     public override void Initialize(IServerApi serverApi)
     {
         api = serverApi;
-        sender = serverApi.NetServer.GetNetworkSender<ClientPacketId>(this);
-        receiver = serverApi.NetServer.GetNetworkReceiver<ServerPacketId>(this, InstantiatePacket);
+        sender = api.NetServer.GetNetworkSender<ClientPacketId>(this);
+        receiver = api.NetServer.GetNetworkReceiver<ServerPacketId>(this, InstantiatePacket);
 
         HandleServerPacket<ModuleDataset>(ServerPacketId.ModuleDataset, HandleModuleDataset);
     }

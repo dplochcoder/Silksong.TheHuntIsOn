@@ -38,6 +38,8 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
         foreach (var module in modules.Values) module.OnLocalConfigUpdated();
     }
 
+    private void OnModuleDatasetUpdate(ModuleDataset moduleDataset) => GlobalSaveData = GlobalSaveData with { ModuleDataset = moduleDataset };
+
     private GlobalSaveData GlobalSaveData
     {
         get => field;
@@ -111,10 +113,14 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
     private void Awake()
     {
         instance = this;
+
         MonoDetourManager.InvokeHookInitializers(typeof(TheHuntIsOnPlugin).Assembly);
 
         foreach (var module in ModuleBase.GetAllModulesInAssembly()) modules.Add(module.Name, module);
+
         ClientAddon.RegisterAddon(new HuntClientAddon());
+        HuntClientAddon.OnModuleDatasetUpdate += OnModuleDatasetUpdate;
+
         ServerAddon.RegisterAddon(new HuntServerAddon());
 
         Logger.LogInfo($"Plugin {Name} ({Id}) has loaded!");

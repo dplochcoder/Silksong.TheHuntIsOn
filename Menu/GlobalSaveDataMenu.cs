@@ -2,6 +2,7 @@
 using Silksong.ModMenu.Models;
 using Silksong.ModMenu.Screens;
 using Silksong.TheHuntIsOn.Modules;
+using Silksong.TheHuntIsOn.SsmpAddon;
 using Silksong.TheHuntIsOn.Util;
 using System;
 using System.Collections.Generic;
@@ -58,11 +59,15 @@ internal class GlobalSaveDataMenu
         TextButton applyButton = new("Apply Module Settings");
         applyButton.OnSubmit += () =>
         {
-            // FIXME: Admin filter.
-            currentModuleDataset = new();
+            ModuleDataset update = new();
             foreach (var e in ModuleMultiMenus) currentModuleDataset.ModuleData[e.Key] = e.Value.Export();
 
-            InvokeSaveDataChanged();
+            if (HuntClientAddon.IsConnected) HuntClientAddon.Instance?.SendModuleDataset(update);
+            else
+            {
+                currentModuleDataset = update;
+                InvokeSaveDataChanged();
+            }
         };
         screen.Add(applyButton);
 

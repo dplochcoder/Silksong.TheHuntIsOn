@@ -10,6 +10,10 @@ namespace Silksong.TheHuntIsOn.SsmpAddon;
 
 internal class HuntClientAddon : ClientAddon
 {
+    internal static HuntClientAddon? Instance { get; private set; }
+
+    internal static bool IsConnected => Instance?.api?.NetClient.IsConnected ?? false;
+
     public override bool NeedsNetwork => true;
 
     public override uint ApiVersion => 1u;
@@ -25,10 +29,12 @@ internal class HuntClientAddon : ClientAddon
     public override void Initialize(IClientApi clientApi)
     {
         api = clientApi;
-        sender = clientApi.NetClient.GetNetworkSender<ServerPacketId>(this);
-        receiver = clientApi.NetClient.GetNetworkReceiver<ClientPacketId>(this, InstantiatePacket);
+        sender = api.NetClient.GetNetworkSender<ServerPacketId>(this);
+        receiver = api.NetClient.GetNetworkReceiver<ClientPacketId>(this, InstantiatePacket);
 
         HandleClientPacket<ModuleDataset>(ClientPacketId.ModuleDataset, HandleModuleDataset);
+
+        Instance = this;
     }
 
     private readonly Dictionary<ClientPacketId, Func<IPacketData>> packetGenerators = [];
@@ -41,7 +47,11 @@ internal class HuntClientAddon : ClientAddon
         receiver!.RegisterPacketHandler<T>(packetId, data => handler(data));
     }
 
+    // Add-on classes use events for communication to avoid direct communication with plugin classes.
+    // This is necessary for the addons to work on dedicated servers, which do not have Silksong assemblies available.
     internal static event Action<ModuleDataset>? OnModuleDatasetUpdate;
 
     private void HandleModuleDataset(ModuleDataset moduleDataset) => OnModuleDatasetUpdate?.Invoke(moduleDataset);
+
+    internal void SendModuleDataset(ModuleDataset moduleDataset) => sender?.SendSingleData(ServerPacketId.ModuleDataset, moduleDataset);
 }
