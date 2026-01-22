@@ -1,10 +1,10 @@
 ﻿using Silksong.TheHuntIsOn.Modules.Lib;
+using Silksong.TheHuntIsOn.Modules.PauseTimerModule;
 using SSMP.Api.Client;
 using SSMP.Api.Client.Networking;
 using SSMP.Networking.Packet;
 using System;
 using System.Collections.Generic;
-using System.Reflection;
 
 namespace Silksong.TheHuntIsOn.SsmpAddon;
 
@@ -18,9 +18,9 @@ internal class HuntClientAddon : ClientAddon
 
     public override uint ApiVersion => 1u;
 
-    protected override string Name => "TheHuntIsOn";
+    protected override string Name => AddonIdentifiers.NAME;
 
-    protected override string Version => Assembly.GetExecutingAssembly().GetName().Version.ToString();
+    protected override string Version => AddonIdentifiers.VERSION;
 
     private IClientApi? api;
     private IClientAddonNetworkSender<ServerPacketId>? sender;
@@ -33,6 +33,7 @@ internal class HuntClientAddon : ClientAddon
         receiver = api.NetClient.GetNetworkReceiver<ClientPacketId>(this, InstantiatePacket);
 
         HandleClientPacket<ModuleDataset>(ClientPacketId.ModuleDataset, HandleModuleDataset);
+        HandleClientPacket<ServerPauseState>(ClientPacketId.ServerPauseState, HandleServerPauseState);
 
         Instance = this;
     }
@@ -54,4 +55,8 @@ internal class HuntClientAddon : ClientAddon
     private void HandleModuleDataset(ModuleDataset moduleDataset) => OnModuleDatasetUpdate?.Invoke(moduleDataset);
 
     internal void SendModuleDataset(ModuleDataset moduleDataset) => sender?.SendSingleData(ServerPacketId.ModuleDataset, moduleDataset);
+
+    internal static event Action<ServerPauseState>? OnServerPauseStateUpdate;
+
+    private void HandleServerPauseState(ServerPauseState serverPauseState) => OnServerPauseStateUpdate?.Invoke(serverPauseState);
 }

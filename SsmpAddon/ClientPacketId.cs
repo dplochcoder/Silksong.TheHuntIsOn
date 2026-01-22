@@ -3,4 +3,5 @@
 internal enum ClientPacketId
 {
     ModuleDataset,
+    ServerPauseState,
 }

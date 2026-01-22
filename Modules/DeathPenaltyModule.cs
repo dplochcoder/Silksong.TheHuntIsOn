@@ -19,7 +19,7 @@ internal class DeathPenaltySettings : NetworkedCloneable<DeathPenaltySettings>
 }
 
 [MonoDetourTargets(typeof(HeroController))]
-internal class DeathPenaltyModule : Module<DeathPenaltyModule, DeathPenaltySettings, EmptySettings, DeathPenaltyMenu>
+internal class DeathPenaltyModule : GlobalSettingsModule<DeathPenaltyModule, DeathPenaltySettings, DeathPenaltySubMenu>
 {
     protected override DeathPenaltyModule Self() => this;
 
@@ -63,14 +63,14 @@ internal class DeathPenaltyModule : Module<DeathPenaltyModule, DeathPenaltySetti
     private static void Hook() => Md.HeroController.Die.Postfix(ExtendDeath);
 }
 
-internal class DeathPenaltyMenu : ModuleSubMenu<DeathPenaltySettings>
+internal class DeathPenaltySubMenu : ModuleSubMenu<DeathPenaltySettings>
 {
     private readonly ChoiceElement<int> RespawnTimer = new("Respawn Timer", ChoiceModels.ForValues([0, 10, 20, 30, 45, 60, 90, 120, 180, 300]), "Seconds to wait to respawn after death.");
     private readonly ChoiceElement<bool> SpawnCoccoon = new("Spawn Coccoon", ChoiceModels.ForBool(), "If false, don't spawn coccoons at all.");
     private readonly ChoiceElement<bool> LoseRosaries = new("Lose Rosaries", ChoiceModels.ForBool(), "If false, don't lose rosaries on death.");
     private readonly ChoiceElement<bool> LimitSilk = new("Limit Silk", ChoiceModels.ForBool(), "If false, don't restrict silk on death.");
 
-    public DeathPenaltyMenu() => SpawnCoccoon.OnValueChanged += value =>
+    public DeathPenaltySubMenu() => SpawnCoccoon.OnValueChanged += value =>
     {
         LoseRosaries.Interactable = value;
         LimitSilk.Interactable = value;

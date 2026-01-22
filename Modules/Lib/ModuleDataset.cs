@@ -1,4 +1,5 @@
-﻿using Silksong.TheHuntIsOn.SsmpAddon.Packets;
+﻿using Silksong.TheHuntIsOn.SsmpAddon;
+using Silksong.TheHuntIsOn.SsmpAddon.Packets;
 using SSMP.Networking.Packet;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ namespace Silksong.TheHuntIsOn.Modules.Lib;
 /// Data representing which modules are enabled, with what settings, for which roles.
 /// Stored in json in global save data, serialized in binary for SSMP.
 /// </summary>
-internal class ModuleDataset : IEnumerable<(string, ModuleData)>, IPacketData
+internal class ModuleDataset : IEnumerable<(string, ModuleData)>, IIdentifiedPacket<ClientPacketId>, IIdentifiedPacket<ServerPacketId>
 {
     public ModuleDataset() { }
     internal ModuleDataset(ModuleDataset copy) {
@@ -24,6 +25,12 @@ internal class ModuleDataset : IEnumerable<(string, ModuleData)>, IPacketData
     public IEnumerator<(string, ModuleData)> GetEnumerator() => Enumerate().GetEnumerator();
 
     IEnumerator IEnumerable.GetEnumerator() => Enumerate().GetEnumerator();
+
+    ClientPacketId IIdentifiedPacket<ClientPacketId>.Identifier => ClientPacketId.ModuleDataset;
+
+    ServerPacketId IIdentifiedPacket<ServerPacketId>.Identifier => ServerPacketId.ModuleDataset;
+
+    public bool Single => true;
 
     public bool IsReliable => true;
 

@@ -48,9 +48,9 @@ internal class GlobalSaveDataMenu
         screen.Add(Enabled);
         screen.Add(Role);
 
-        PaginatedMenuScreenBuilder builder = new("The Hunt is On - Modules");
-        builder.AddRange(ModuleMultiMenus.OrderBy(e => e.Key).Select(e => e.Value.RootElement));
-        var modulesScreen = builder.Build();
+        PaginatedMenuScreenBuilder modulesScreenBuilder = new("The Hunt is On - Modules");
+        modulesScreenBuilder.AddRange(ModuleMultiMenus.OrderBy(e => e.Key).Select(e => e.Value.RootElement));
+        var modulesScreen = modulesScreenBuilder.Build();
 
         TextButton modulesButton = new("Modules");
         modulesButton.OnSubmit += () => MenuScreenNavigation.Show(modulesScreen);

@@ -1,4 +1,5 @@
-﻿using Silksong.TheHuntIsOn.Menu;
+﻿using Silksong.ModMenu.Elements;
+using Silksong.TheHuntIsOn.Menu;
 using System.Collections.Generic;
 using System.Reflection;
 
@@ -21,7 +22,9 @@ internal abstract class ModuleBase
         }
     }
 
-    public abstract IModuleSubMenu CreateSubMenu();
+    public abstract IModuleSubMenu CreateGlobalDataSubMenu();
+
+    public virtual IEnumerable<MenuElement> CreateCosmeticsMenuElements() => [];
 
     public virtual void OnEnabled() { }
 

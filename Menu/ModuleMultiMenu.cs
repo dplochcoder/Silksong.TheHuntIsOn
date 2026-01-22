@@ -26,7 +26,7 @@ internal class ModuleMultiMenu
 
     internal ModuleMultiMenu(ModuleBase module)
     {
-        mainMenu = module.CreateSubMenu();
+        mainMenu = module.CreateGlobalDataSubMenu();
         UpdateData(mainMenu);
         mainElements.AddRange(mainMenu.Elements());
         if (mainElements.Count == 0)
@@ -41,12 +41,12 @@ internal class ModuleMultiMenu
             subScreen.Add(ModuleActivation);
             subScreen.AddRange(mainElements);
 
-            speedrunnersSubMenu = module.CreateSubMenu();
+            speedrunnersSubMenu = module.CreateGlobalDataSubMenu();
             UpdateData(speedrunnersSubMenu);
             speedrunnersSubMenuButton = CreateRoleSpecificMenuButton(module.Name, "Speedrunner", speedrunnersSubMenu);
             subScreen.Add(speedrunnersSubMenuButton);
 
-            huntersSubMenu = module.CreateSubMenu();
+            huntersSubMenu = module.CreateGlobalDataSubMenu();
             UpdateData(huntersSubMenu);
             huntersSubMenuButton = CreateRoleSpecificMenuButton(module.Name, "Hunter", huntersSubMenu);
             subScreen.Add(huntersSubMenuButton);

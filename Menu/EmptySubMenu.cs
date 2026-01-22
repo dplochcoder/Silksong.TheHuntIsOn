@@ -1,15 +1,14 @@
 ﻿using Silksong.ModMenu.Elements;
 using Silksong.TheHuntIsOn.Modules.Lib;
-using Silksong.TheHuntIsOn.Util;
 using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn.Menu;
 
-internal class EmptySubMenu : IModuleSubMenu
+internal class EmptySubMenu : ModuleSubMenu<EmptySettings>
 {
-    public IEnumerable<MenuElement> Elements() => [];
+    public override IEnumerable<MenuElement> Elements() => [];
 
-    public void ApplyRaw(NetworkedCloneable? data) { }
+    internal override void Apply(EmptySettings data) { }
 
-    public NetworkedCloneable ExportRaw() => new EmptySettings();
+    internal override EmptySettings Export() => new();
 }

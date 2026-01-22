@@ -1,6 +1,7 @@
 using BepInEx;
 using MonoDetour;
 using Silksong.DataManager;
+using Silksong.ModMenu.Elements;
 using Silksong.ModMenu.Plugin;
 using Silksong.ModMenu.Screens;
 using Silksong.TheHuntIsOn.Menu;
@@ -9,7 +10,9 @@ using Silksong.TheHuntIsOn.SsmpAddon;
 using Silksong.TheHuntIsOn.Util;
 using SSMP.Api.Client;
 using SSMP.Api.Server;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Silksong.TheHuntIsOn;
 
@@ -18,7 +21,7 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
 {
     private static TheHuntIsOnPlugin? instance;
 
-    private Dictionary<string, ModuleBase> modules = [];
+    private readonly Dictionary<string, ModuleBase> modules = [];
 
     // Can be updated from disk, from menu, or over SSMP.
     // EventSuppressors allow updates to propagate between the three sources without infinite cascade.
@@ -57,20 +60,15 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
         set => GlobalSaveData = value ?? new();
     }
 
-    internal static bool GetGlobalConfig<T>(string name, out T config) where T : NetworkedCloneable<T>, new()
+    internal static T GetGlobalConfig<T>(string name) where T : NetworkedCloneable<T>, new()
     {
         if (instance != null)
         {
             var global = instance.GlobalSaveData;
-            if (global.ModuleDataset.ModuleData.TryGetValue(name, out var data) && data.GetSettings(global.Role) is T typed)
-            {
-                config = typed;
-                return true;
-            }
+            if (global.ModuleDataset.ModuleData.TryGetValue(name, out var data) && data.GetSettings(global.Role) is T typed) return typed;
         }
 
-        config = new();
-        return false;
+        return new();
     }
 
     private LocalSaveData? LocalSaveData
@@ -85,20 +83,10 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
 
     LocalSaveData? ISaveDataMod<LocalSaveData>.SaveData { get => LocalSaveData; set => LocalSaveData = value; }
 
-    internal static bool GetLocalConfig<T>(string name, out T config) where T : NetworkedCloneable<T>, new()
+    internal static T GetLocalConfig<T>(string name) where T : NetworkedCloneable<T>, new()
     {
-        if (instance != null)
-        {
-            var local = instance.LocalSaveData;
-            if (local != null && local.LocalData.TryGetValue(name, out var data) && data is T typed)
-            {
-                config = typed;
-                return true;
-            }
-        }
-
-        config = new();
-        return false;
+        if (instance != null && instance.LocalSaveData != null && instance.LocalSaveData.LocalData.TryGetValue(name, out var data) && data is T typed) return typed;
+        else return new();
     }
 
     internal static void SetLocalConfig<T>(string name, T config) where T : NetworkedCloneable<T>
@@ -108,6 +96,25 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
         var local = instance.LocalSaveData?.CloneTyped() ?? new();
         local.LocalData[name] = config.Clone();
         instance.LocalSaveData = local;
+    }
+
+    internal static T GetCosmeticConfig<T>(string name) where T : new()
+    {
+        if (instance != null && instance.GlobalSaveData.Cosmetics.Config.TryGetValue(name, out var data) && data is T typed) return typed;
+        else return new();
+    }
+
+    internal static void SetCosmeticConfig<T>(string name, T config) where T : class
+    {
+        if (instance == null) return;
+        instance.GlobalSaveData.Cosmetics.Config[name] = config;
+    }
+
+    internal static void UpdateCosmeticConfig<T>(string name, Action<T> update) where T : class, new()
+    {
+        var config = GetCosmeticConfig<T>(name);
+        update(config);
+        SetCosmeticConfig<T>(name, config);
     }
 
     private void Awake()
@@ -136,6 +143,29 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
         globalSaveDataMenu?.Apply(GlobalSaveData);
     }
 
+    private MenuElement BuildCustomizeButton()
+    {
+        PaginatedMenuScreenBuilder customizerScreenBuilder = new("The Hunt is On - Customize");
+        foreach (var module in modules.OrderBy(e => e.Key).Select(e => e.Value))
+        {
+            List<MenuElement> elements = [.. module.CreateCosmeticsMenuElements()];
+            if (elements.Count == 0) continue;
+
+            PaginatedMenuScreenBuilder subMenuBuilder = new($"Customize - {module.Name}");
+            subMenuBuilder.AddRange(elements);
+            var subMenuScreen = subMenuBuilder.Build();
+
+            TextButton subMenuButton = new(module.Name);
+            subMenuButton.OnSubmit += () => MenuScreenNavigation.Show(subMenuScreen);
+            customizerScreenBuilder.Add(subMenuButton);
+        }
+        var customizeScreen = customizerScreenBuilder.Build();
+
+        TextButton customizeButton = new("Customize");
+        customizeButton.OnSubmit += () => MenuScreenNavigation.Show(customizeScreen);
+        return customizeButton;
+    }
+   
     public AbstractMenuScreen BuildCustomMenu()
     {
         SimpleMenuScreen screen = new("The Hunt is On");
@@ -149,8 +179,10 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
                 GlobalSaveData = newSaveData;
             }
         };
-
         globalSaveDataMenu.AppendTo(screen);
+
+        screen.Add(BuildCustomizeButton());
+
         return screen;
     }
 }

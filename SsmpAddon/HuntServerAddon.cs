@@ -1,10 +1,11 @@
 ﻿using Silksong.TheHuntIsOn.Modules.Lib;
+using Silksong.TheHuntIsOn.Modules.PauseTimerModule;
+using Silksong.TheHuntIsOn.SsmpAddon.Packets;
 using SSMP.Api.Server;
 using SSMP.Api.Server.Networking;
 using SSMP.Networking.Packet;
 using System;
 using System.Collections.Generic;
-using System.Reflection;
 
 namespace Silksong.TheHuntIsOn.SsmpAddon;
 
@@ -14,13 +15,28 @@ internal class HuntServerAddon : ServerAddon
 
     public override uint ApiVersion => 1u;
 
-    protected override string Name => "TheHuntIsOn";
+    protected override string Name => AddonIdentifiers.NAME;
 
-    protected override string Version => Assembly.GetExecutingAssembly().GetName().Version.ToString();
+    protected override string Version => AddonIdentifiers.VERSION;
 
     private IServerApi? api;
     private IServerAddonNetworkSender<ClientPacketId>? sender;
     private IServerAddonNetworkReceiver<ServerPacketId>? receiver;
+
+    private ModuleDataset? moduleDataset;
+
+    internal event Action<IServerPlayer> OnPlayerConnected
+    {
+        add => api?.ServerManager.PlayerConnectEvent += value;
+        remove => api?.ServerManager.PlayerConnectEvent -= value;
+    }
+
+    internal void SendToPlayer<T>(IServerPlayer player, T data) where T : IIdentifiedPacket<ClientPacketId> => sender?.SendSingleData(data.Identifier, data, player.Id);
+
+    private void SendModuleDataset(IServerPlayer player)
+    {
+        if (moduleDataset != null) SendToPlayer(player, moduleDataset);
+    }
 
     public override void Initialize(IServerApi serverApi)
     {
@@ -28,22 +44,34 @@ internal class HuntServerAddon : ServerAddon
         sender = api.NetServer.GetNetworkSender<ClientPacketId>(this);
         receiver = api.NetServer.GetNetworkReceiver<ServerPacketId>(this, InstantiatePacket);
 
-        HandleServerPacket<ModuleDataset>(ServerPacketId.ModuleDataset, HandleModuleDataset);
+        OnPlayerConnected += SendModuleDataset;
+        api.CommandManager.RegisterCommand(new PauseTimerCommand(this));
+
+        HandleServerPacket<ModuleDataset>(HandleModuleDataset);
     }
 
     private readonly Dictionary<ServerPacketId, Func<IPacketData>> packetGenerators = [];
 
     private IPacketData InstantiatePacket(ServerPacketId packetId) => packetGenerators.TryGetValue(packetId, out var gen) ? gen() : throw new ArgumentException($"Unknown id: {packetId}");
 
-    private void HandleServerPacket<T>(ServerPacketId packetId, Action<ushort, T> handler) where T : IPacketData, new()
+    private void HandleServerPacket<T>(Action<ushort, T> handler) where T : IIdentifiedPacket<ServerPacketId>, new()
     {
-        packetGenerators.Add(packetId, () => new T());
-        receiver!.RegisterPacketHandler<T>(packetId, (id, data) => handler(id, data));
+        ServerPacketId id = new T().Identifier;
+        packetGenerators.Add(id, () => new T());
+        receiver!.RegisterPacketHandler<T>(id, (id, data) => handler(id, data));
     }
 
     private bool IsPlayerAuthorized(ushort id) => api?.ServerManager.GetPlayer(id)?.IsAuthorized ?? false;
 
     private string PlayerName(ushort id) => api?.ServerManager.GetPlayer(id)?.Username ?? "<unknown>";
+
+    internal void BroadcastMessage(string message) => api?.ServerManager.BroadcastMessage(message);
+
+    internal void Broadcast<T>(T packet) where T : IIdentifiedPacket<ClientPacketId>, new()
+    {
+        if (packet.Single) sender?.BroadcastSingleData(packet.Identifier, packet);
+        else sender?.BroadcastCollectionData(packet.Identifier, packet);
+    }
 
     private void HandleModuleDataset(ushort id, ModuleDataset moduleDataset)
     {
@@ -53,7 +81,8 @@ internal class HuntServerAddon : ServerAddon
             return;
         }
 
-        sender?.BroadcastSingleData(ClientPacketId.ModuleDataset, moduleDataset);
+        this.moduleDataset = new(moduleDataset);
+        Broadcast(moduleDataset);
         api?.ServerManager.BroadcastMessage($"{PlayerName(id)} updated module settings.");
     }
 }

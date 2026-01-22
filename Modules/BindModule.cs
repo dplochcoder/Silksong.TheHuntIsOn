@@ -5,7 +5,6 @@ using Silksong.ModMenu.Models;
 using Silksong.TheHuntIsOn.Menu;
 using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.Util;
-using System;
 using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn.Modules;
@@ -18,7 +17,7 @@ internal class BindSettings : NetworkedCloneable<BindSettings>
     public float TimePenalty = 1f;
 }
 
-internal class BindModule : Module<BindModule, BindSettings, EmptySettings, BindMenu>
+internal class BindModule : GlobalSettingsModule<BindModule, BindSettings, BindSubMenu>
 {
     protected override BindModule Self() => this;
 
@@ -31,22 +30,17 @@ internal class BindModule : Module<BindModule, BindSettings, EmptySettings, Bind
 
     private static void EditBindFsm(PlayMakerFSM fsm)
     {
-        fsm.GetState("Can Bind?")!.InsertMethod(0, IfEnabled(s => fsm.FsmVariables.GetFsmInt("Silk Cost").Value = s.SilkCost));
-        fsm.GetState("Set Normal")!.InsertMethod(3, IfEnabled(s => fsm.FsmVariables.GetFsmInt("Heal Amount").Value = s.HealMasks));
-        fsm.GetState("Multi Bind")!.AddMethod(IfEnabled(s => fsm.FsmVariables.GetFsmInt("Heal Amount").Value = s.MultibinderHealMasks));
-        fsm.GetState("Bind Shared")!.InsertMethod(0, IfEnabled(s => fsm.FsmVariables.GetFsmFloat("Bind Time").Value *= s.TimePenalty));
+        fsm.GetState("Can Bind?")!.InsertAction(0, IfEnabled(s => fsm.FsmVariables.GetFsmInt("Silk Cost").Value = s.SilkCost));
+        fsm.GetState("Set Normal")!.InsertAction(3, IfEnabled(s => fsm.FsmVariables.GetFsmInt("Heal Amount").Value = s.HealMasks));
+        fsm.GetState("Multi Bind")!.AddAction(IfEnabled(s => fsm.FsmVariables.GetFsmInt("Heal Amount").Value = s.MultibinderHealMasks));
+        fsm.GetState("Bind Shared")!.InsertAction(0, IfEnabled(s => fsm.FsmVariables.GetFsmFloat("Bind Time").Value *= s.TimePenalty));
     }
-
-    private static Action<FsmStateAction> IfEnabled(Action<BindSettings> action) => _ =>
-    {
-        if (GetEnabledConfig(out var s)) action(s);
-    };
 
     // FIXME: Fix UI
     static BindModule() => Events.AddFsmEdit("Hero_Hornet", "Bind", EditBindFsm);
 }
 
-internal class BindMenu : ModuleSubMenu<BindSettings>
+internal class BindSubMenu : ModuleSubMenu<BindSettings>
 {
     private readonly ChoiceElement<int> HealMasks = new("Heal Masks", CollectionUtil.IntRangeModel(0, 10), "Number of masks to heal when binding.");
     private readonly ChoiceElement<int> MultibinderHealMasks = new("Multibinder Heal Masks", CollectionUtil.IntRangeModel(0, 5), "Number of masks to heal when multi-binding.");
