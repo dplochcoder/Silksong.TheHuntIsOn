@@ -5,6 +5,7 @@ using System;
 
 namespace Silksong.TheHuntIsOn.Util;
 
+[MonoDetourTargets(typeof(HeroController))]
 [MonoDetourTargets(typeof(PlayMakerFSM))]
 internal static class Events
 {
@@ -22,6 +23,14 @@ internal static class Events
         foreach (var action in fsmEdits.Get(fsm.gameObject.name, fsm.FsmName)) action(fsm);
     }
 
+    internal static event Action? OnHeroUpdate;
+
+    private static void PostfixOnHeroUpdate(HeroController self) => OnHeroUpdate?.Invoke();
+
     [MonoDetourHookInitialize]
-    private static void Hook() => Md.PlayMakerFSM.OnEnable.Postfix(OnEnablePlayMakerFSM);
+    private static void Hook()
+    {
+        Md.HeroController.Update.Postfix(PostfixOnHeroUpdate);
+        Md.PlayMakerFSM.OnEnable.Postfix(OnEnablePlayMakerFSM);
+    }
 }

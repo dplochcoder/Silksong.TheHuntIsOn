@@ -4,7 +4,9 @@ using Silksong.ModMenu.Elements;
 using Silksong.ModMenu.Models;
 using Silksong.TheHuntIsOn.Menu;
 using Silksong.TheHuntIsOn.Modules.Lib;
+using Silksong.TheHuntIsOn.SsmpAddon.Packets;
 using Silksong.TheHuntIsOn.Util;
+using SSMP.Networking.Packet;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -16,6 +18,22 @@ internal class DeathPenaltySettings : NetworkedCloneable<DeathPenaltySettings>
     public bool SpawnCoccoon = true;
     public bool LoseRosaries = true;
     public bool LimitSilk = true;
+
+    public override void ReadData(IPacket packet)
+    {
+        RespawnTimer.ReadData(packet);
+        SpawnCoccoon.ReadData(packet);
+        LoseRosaries.ReadData(packet);
+        LimitSilk.ReadData(packet);
+    }
+
+    public override void WriteData(IPacket packet)
+    {
+        RespawnTimer.WriteData(packet);
+        SpawnCoccoon.WriteData(packet);
+        LoseRosaries.WriteData(packet);
+        LimitSilk.WriteData(packet);
+    }
 }
 
 [MonoDetourTargets(typeof(HeroController))]
@@ -24,6 +42,8 @@ internal class DeathPenaltyModule : GlobalSettingsModule<DeathPenaltyModule, Dea
     protected override DeathPenaltyModule Self() => this;
 
     public override string Name => "DeathPenalty";
+
+    public override ModuleActivationType ModuleActivationType => ModuleActivationType.AnyConfiguration;
 
     // FIXME: Respawn timer.
     private static void ExtendDeath(HeroController self, ref bool nonLethal, ref bool frostDeath, ref IEnumerator coroutine)

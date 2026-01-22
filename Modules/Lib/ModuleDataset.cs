@@ -20,6 +20,10 @@ internal class ModuleDataset : IEnumerable<(string, ModuleData)>, IIdentifiedPac
 
     public Dictionary<string, ModuleData> ModuleData = [];
 
+    public void WriteData(IPacket packet) => ModuleData.WriteData(packet, (packet, value) => value.WriteData(packet));
+
+    public void ReadData(IPacket packet) => ModuleData.ReadData(packet, packet => packet.ReadString());
+
     private IEnumerable<(string, ModuleData)> Enumerate() => ModuleData.Select(e => (e.Key, e.Value));
 
     public IEnumerator<(string, ModuleData)> GetEnumerator() => Enumerate().GetEnumerator();
@@ -35,8 +39,4 @@ internal class ModuleDataset : IEnumerable<(string, ModuleData)>, IIdentifiedPac
     public bool IsReliable => true;
 
     public bool DropReliableDataIfNewerExists => true;
-
-    public void WriteData(IPacket packet) => packet.WriteDict(ModuleData);
-
-    public void ReadData(IPacket packet) => ModuleData = packet.ReadDict<ModuleData>();
 }

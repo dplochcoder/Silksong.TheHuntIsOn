@@ -1,145 +1,86 @@
 ﻿using SSMP.Networking.Packet;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
 
 namespace Silksong.TheHuntIsOn.SsmpAddon.Packets;
 
 internal static class WireInterfaceExtensions
 {
-    internal static void WriteEnum<T>(this IPacket self, T value) where T : Enum => self.Write(Convert.ToInt32(value));
+    internal static void ReadData(this ref bool self, IPacket packet) => self = packet.ReadBool();
+    internal static void WriteData(this bool self, IPacket packet) => packet.Write(self);
 
-    internal static T ReadEnum<T>(this IPacket self) where T : Enum => (T)Enum.ToObject(typeof(T), self.ReadInt());
+    internal static void ReadData(this ref int self, IPacket packet) => self = packet.ReadInt();
+    internal static void WriteData(this int self, IPacket packet) => packet.Write(self);
 
-    internal static void WriteDict<V>(this IPacket self, IReadOnlyDictionary<string, V> data) where V : IWireInterface
+    internal static void ReadData(this ref float self, IPacket packet) => self = packet.ReadFloat();
+    internal static void WriteData(this float self, IPacket packet) => packet.Write(self);
+
+    internal static void ReadData(this ref long self, IPacket packet) => self = packet.ReadLong();
+    internal static void WriteData(this long self, IPacket packet) => packet.Write(self);
+
+    internal static void ReadData(this ref long? self, IPacket packet) => self = packet.ReadBool() ? packet.ReadLong() : null;
+    internal static void WriteData(this long? self, IPacket packet)
     {
-        self.Write(data.Count);
-        foreach (var e in data)
-        {
-            self.Write(e.Key);
-            e.Value.WriteData(self);
-        }
+        packet.Write(self.HasValue);
+        if (self.HasValue) packet.Write(self.Value);
     }
 
-    internal static Dictionary<string, V> ReadDict<V>(this IPacket self) where V : IWireInterface, new()
-    {
-        Dictionary<string, V> dict = [];
+    internal static void WriteData(this string self, IPacket packet) => packet.Write(self);
 
-        int count = self.ReadInt();
+    internal static T ReadEnum<T>(this IPacket self) where T : Enum => (T)Enum.ToObject(typeof(T), self.ReadByte());
+    internal static void WriteData<T>(this T self, IPacket packet) where T : Enum => packet.Write(Convert.ToByte(self));
+
+    private static T ReadIntoNew<T>(this IPacket self) where T : IWireInterface, new()
+    {
+        T item = new();
+        item.ReadData(self);
+        return item;
+    }
+
+    private static void Write<T>(this IPacket self, T value) where T : IWireInterface => value.WriteData(self);
+
+    internal static void ReadData<T>(this ICollection<T> self, IPacket packet, Func<IPacket, T> read)
+    {
+        self.Clear();
+
+        int count = packet.ReadInt();
+        for (int i = 0; i < count; i++) self.Add(read(packet));
+    }
+
+    internal static void ReadData<T>(this ICollection<T> self, IPacket packet) where T : IWireInterface, new() => self.ReadData(packet, ReadIntoNew<T>);
+
+    internal static void WriteData<T>(this ICollection<T> self, IPacket packet, Action<IPacket, T> write)
+    {
+        packet.Write(self.Count);
+        foreach (var item in self) write(packet, item);
+    }
+
+    internal static void WriteData<T>(this ICollection<T> self, IPacket packet) where T : IWireInterface => self.WriteData(packet, Write<T>);
+
+    internal static void ReadData<K, V>(this IDictionary<K, V> self, IPacket packet, Func<IPacket, K> readKey, Func<IPacket, V> readValue)
+    {
+        self.Clear();
+
+        int count = packet.ReadInt();
         for (int i = 0; i < count; i++)
         {
-            var key = self.ReadString();
-            V value = new();
-            value.ReadData(self);
-            dict.Add(key, value);
+            var key = readKey(packet);
+            var value = readValue(packet);
+            self.Add(key, value);
         }
-
-        return dict;
     }
 
-    internal static void WriteDynamic<T>(this IPacket self, T? value) where T : IWireInterface
+    internal static void ReadData<K, V>(this IDictionary<K, V> self, IPacket packet, Func<IPacket, K> readKey) where V : IWireInterface, new() => self.ReadData(packet, readKey, ReadIntoNew<V>);
+
+    internal static void WriteData<K, V>(this IDictionary<K, V> self, IPacket packet, Action<IPacket, K> writeKey, Action<IPacket, V> writeValue)
     {
-        self.Write(value != null);
-        if (value == null) return;
-
-        self.Write(value.GetType().FullName);
-        value.WriteData(self);
-    }
-
-    internal static void ReadDynamic<T>(this IPacket self, out T? value) where T : IWireInterface
-    {
-        bool exists = self.ReadBool();
-        if (!exists)
+        packet.Write(self.Count);
+        foreach (var e in self)
         {
-            value = default;
-            return;
-        }
-
-        var type = Type.GetType(self.ReadString());
-        value = (T)type.GetConstructor([]).Invoke([]);
-        value.ReadData(self);
-    }
-
-    private static readonly Dictionary<Type, IEnumerable<FieldInfo>> fieldsByType = [];
-    private static IEnumerable<FieldInfo> GetFields(Type type)
-    {
-        if (!fieldsByType.TryGetValue(type, out var fields))
-        {
-            fields = [.. type.GetFields(BindingFlags.Instance | BindingFlags.Public).OrderBy(f => f.Name)];
-            fieldsByType.Add(type, fields);
-        }
-
-        return fields;
-    }
-
-    private static readonly Dictionary<Type, ConstructorInfo> constructors = [];
-    private static object Instantiate(Type type)
-    {
-        if (!constructors.TryGetValue(type, out var constructor))
-        {
-            constructor = type.GetConstructor([]);
-            constructors.Add(type, constructor);
-        }
-
-        return constructor.Invoke([]);
-    }
-
-    internal static void WriteUsingReflection(this IPacket self, object value)
-    {
-        var type = value.GetType();
-
-        if (type.IsEnum) self.Write(Convert.ToInt32(value));
-        else if (type == typeof(int)) self.Write((int)value);
-        else if (type == typeof(bool)) self.Write((bool)value);
-        else if (type == typeof(float)) self.Write((float)value);
-        else if (type == typeof(string)) self.Write((string)value);
-        else if (typeof(IWireInterface).IsAssignableFrom(type)) ((IWireInterface)value).WriteData(self);
-        else if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(List<>))
-        {
-            var list = (IList)value;
-            self.Write(list.Count);
-            foreach (var obj in list) self.WriteUsingReflection(obj);
-        }
-        else if (type.IsClass)
-        {
-            foreach (var field in GetFields(type)) self.WriteUsingReflection(field.GetValue(value));
-        }
-        else throw new ArgumentException($"Unsupported type: {type.FullName}");
-    }
-
-    internal static void ReadUsingReflection(this IPacket self, object value)
-    {
-        var type = value.GetType();
-        if (typeof(IWireInterface).IsAssignableFrom(type)) ((IWireInterface)value).ReadData(self);
-        else if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(List<>))
-        {
-            var paramType = type.GetGenericArguments()[0];
-            var list = (IList)value;
-            list.Clear();
-
-            int count = self.ReadInt();
-            for (int i = 0; i < count; i++)
-            {
-                var element = Instantiate(paramType);
-                self.ReadUsingReflection(element);
-                list.Add(element);
-            }
-        }
-        else if (type.IsClass)
-        {
-            foreach (var field in GetFields(type))
-            {
-                var fieldType = field.FieldType;
-
-                if (fieldType.IsEnum) field.SetValue(value, Enum.ToObject(fieldType, self.ReadInt()));
-                else if (fieldType == typeof(int)) field.SetValue(value, self.ReadInt());
-                else if (fieldType == typeof(bool)) field.SetValue(value, self.ReadBool());
-                else if (fieldType == typeof(float)) field.SetValue(value, self.ReadFloat());
-                else if (fieldType == typeof(string)) field.SetValue(value, self.ReadString());
-                else if (fieldType.IsClass) self.ReadUsingReflection(field.GetValue(value));
-            }
+            writeKey(packet, e.Key);
+            writeValue(packet, e.Value);
         }
     }
+
+    internal static void WriteData<K, V>(this IDictionary<K, V> self, IPacket packet, Action<IPacket, K> writeKey) where V : IWireInterface => self.WriteData(packet, writeKey, Write<V>);
 }

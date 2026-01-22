@@ -11,5 +11,7 @@ internal class PauseTimerModule : Module<PauseTimerModule, EmptySettings, EmptyS
 
     public override string Name => "Pause Timer";
 
+    public override ModuleActivationType ModuleActivationType => ModuleActivationType.OnOffOnly;
+
     public override IEnumerable<MenuElement> CreateCosmeticsMenuElements() => PauseTimerUIConfig.CreateMenu(CosmeticConfig, UpdateCosmeticConfig);
 }

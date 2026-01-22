@@ -1,4 +1,5 @@
-﻿using Silksong.TheHuntIsOn.Modules.Lib;
+﻿using Silksong.TheHuntIsOn.Modules.EventsModule;
+using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.Modules.PauseTimerModule;
 using Silksong.TheHuntIsOn.SsmpAddon.Packets;
 using SSMP.Api.Server;
@@ -45,9 +46,13 @@ internal class HuntServerAddon : ServerAddon
         receiver = api.NetServer.GetNetworkReceiver<ServerPacketId>(this, InstantiatePacket);
 
         OnPlayerConnected += SendModuleDataset;
+        api.CommandManager.RegisterCommand(new HuntCommand());
         api.CommandManager.RegisterCommand(new PauseTimerCommand(this));
+        EventsModuleAddon eventsAddon = new(this);
 
         HandleServerPacket<ModuleDataset>(HandleModuleDataset);
+        HandleServerPacket<RecordSpeedrunnerEvents>(eventsAddon.HandleRecordSpeedrunnerEvents);
+        HandleServerPacket<RequestGrantHunterItems>(eventsAddon.HandleRequestGrantHunterItems);
     }
 
     private readonly Dictionary<ServerPacketId, Func<IPacketData>> packetGenerators = [];

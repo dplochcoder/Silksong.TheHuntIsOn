@@ -60,6 +60,19 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
         set => GlobalSaveData = value ?? new();
     }
 
+    internal static RoleId GetRole() => instance != null ? instance.GlobalSaveData.Role : RoleId.Hunter;
+
+    internal static ModuleActivation GetModuleActivation(string name)
+    {
+        if (instance != null)
+        {
+            var global = instance.GlobalSaveData;
+            if (global.Enabled && global.ModuleDataset.ModuleData.TryGetValue(name, out var data)) return data.ModuleActivation;
+        }
+
+        return ModuleActivation.Inactive;
+    }
+
     internal static T GetGlobalConfig<T>(string name) where T : NetworkedCloneable<T>, new()
     {
         if (instance != null)
@@ -94,7 +107,7 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
         if (instance == null) return;
 
         var local = instance.LocalSaveData?.CloneTyped() ?? new();
-        local.LocalData[name] = config.Clone();
+        local.LocalData[name].Value = config.Clone();
         instance.LocalSaveData = local;
     }
 

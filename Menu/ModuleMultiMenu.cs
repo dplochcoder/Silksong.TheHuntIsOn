@@ -3,6 +3,7 @@ using Silksong.ModMenu.Models;
 using Silksong.ModMenu.Screens;
 using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.Util;
+using System;
 using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn.Menu;
@@ -24,20 +25,28 @@ internal class ModuleMultiMenu
     private NetworkedCloneable? huntersMenuData;
     private NetworkedCloneable? everyoneMenuData;
 
+    private static (IChoiceModel<ModuleActivation>, string) GetChoiceModel(ModuleBase module) => module.ModuleActivationType switch
+    {
+        ModuleActivationType.OnOffOnly => (ChoiceModels.ForNamedValues([(Modules.Lib.ModuleActivation.Inactive, "Inactivew"), (Modules.Lib.ModuleActivation.EveryoneSame, "Active")]), "Whether this module should be active or not."),
+        ModuleActivationType.AnyConfiguration => (ChoiceModels.ForEnum<ModuleActivation>(), "Which teams this module should be enabled for."),
+        _ => throw new ArgumentException($"Unsupported enum: {module.ModuleActivationType}"),
+    };
+
     internal ModuleMultiMenu(ModuleBase module)
     {
         mainMenu = module.CreateGlobalDataSubMenu();
         UpdateData(mainMenu);
         mainElements.AddRange(mainMenu.Elements());
+        var (model, desc) = GetChoiceModel(module);
         if (mainElements.Count == 0)
         {
-            ModuleActivation = new($"{module.Name} Module", ChoiceModels.ForEnum<ModuleActivation>(), "Which teams this module should be enabled for.");
+            ModuleActivation = new($"{module.Name} Module", model, desc);
             RootElement = ModuleActivation;
         }
         else
         {
             SimpleMenuScreen subScreen = new($"{module.Name} Module");
-            ModuleActivation = new("Activation", ChoiceModels.ForEnum<ModuleActivation>(), "Which teams this module should be enabled for.");
+            ModuleActivation = new("Activation", model, desc);
             subScreen.Add(ModuleActivation);
             subScreen.AddRange(mainElements);
 

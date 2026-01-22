@@ -24,6 +24,8 @@ internal abstract class Module<ModuleT, GlobalT, SubMenuT, CosmeticT, LocalT> : 
 
     protected GlobalT GlobalConfig => TheHuntIsOnPlugin.GetGlobalConfig<GlobalT>(Name);
 
+    protected ModuleActivation ModuleActivation => TheHuntIsOnPlugin.GetModuleActivation(Name);
+
     protected static bool GetEnabledConfig(out GlobalT config)
     {
         if (Instance == null || !Instance.Enabled)

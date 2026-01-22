@@ -62,7 +62,7 @@ internal class GlobalSaveDataMenu
             ModuleDataset update = new();
             foreach (var e in ModuleMultiMenus) currentModuleDataset.ModuleData[e.Key] = e.Value.Export();
 
-            if (HuntClientAddon.IsConnected) HuntClientAddon.Instance?.SendModuleDataset(update);
+            if (HuntClientAddon.IsConnected) HuntClientAddon.Instance?.Send(update);
             else
             {
                 currentModuleDataset = update;

@@ -4,4 +4,5 @@ internal enum ClientPacketId
 {
     ModuleDataset,
     ServerPauseState,
+    GrantHunterItems,
 }

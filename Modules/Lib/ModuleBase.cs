@@ -9,6 +9,8 @@ internal abstract class ModuleBase
 {
     public abstract string Name { get; }
 
+    public abstract ModuleActivationType ModuleActivationType { get; }
+
     public bool Enabled
     {
         get => field;

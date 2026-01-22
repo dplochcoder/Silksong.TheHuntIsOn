@@ -10,9 +10,25 @@ internal class ModuleData(ModuleActivation moduleActivation, NetworkedCloneable?
     internal ModuleData(ModuleData copy) : this(copy.ModuleActivation, copy.SpeedrunnerSettings, copy.HunterSettings, copy.EveryoneSettings) { }
 
     public ModuleActivation ModuleActivation = moduleActivation;
-    public NetworkedCloneable? SpeedrunnerSettings = speedrunnerSettings;
-    public NetworkedCloneable? HunterSettings = hunterSettings;
-    public NetworkedCloneable? EveryoneSettings = everyoneSettings;
+    public Dynamic<NetworkedCloneable> SpeedrunnerSettings = new(speedrunnerSettings);
+    public Dynamic<NetworkedCloneable> HunterSettings = new(hunterSettings);
+    public Dynamic<NetworkedCloneable> EveryoneSettings = new(everyoneSettings);
+
+    public void WriteData(IPacket packet)
+    {
+        ModuleActivation.WriteData(packet);
+        SpeedrunnerSettings.WriteData(packet);
+        HunterSettings.WriteData(packet);
+        EveryoneSettings.WriteData(packet);
+    }
+
+    public void ReadData(IPacket packet)
+    {
+        ModuleActivation = packet.ReadEnum<ModuleActivation>();
+        SpeedrunnerSettings.ReadData(packet);
+        HunterSettings.ReadData(packet);
+        EveryoneSettings.ReadData(packet);
+    }
 
     public bool IsEnabled(RoleId role) => ModuleActivation switch
     {
@@ -32,20 +48,4 @@ internal class ModuleData(ModuleActivation moduleActivation, NetworkedCloneable?
         ModuleActivation.EveryoneDifferent => (role == RoleId.Speedrunner) ? SpeedrunnerSettings : HunterSettings,
         _ => null,
     };
-
-    public void WriteData(IPacket packet)
-    {
-        packet.WriteEnum(ModuleActivation);
-        packet.WriteDynamic(SpeedrunnerSettings);
-        packet.WriteDynamic(HunterSettings);
-        packet.WriteDynamic(EveryoneSettings);
-    }
-
-    public void ReadData(IPacket packet)
-    {
-        ModuleActivation = packet.ReadEnum<ModuleActivation>();
-        packet.ReadDynamic(out SpeedrunnerSettings);
-        packet.ReadDynamic(out HunterSettings);
-        packet.ReadDynamic(out EveryoneSettings);
-    }
 }
