@@ -1,14 +1,14 @@
 ﻿using Silksong.ModMenu.Elements;
-using Silksong.TheHuntIsOn.Modules.Lib;
+using Silksong.TheHuntIsOn.Util;
 using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn.Menu;
 
-internal class EmptySubMenu : ModuleSubMenu<EmptySettings>
+internal class EmptySubMenu : ModuleSubMenu<Empty>
 {
     public override IEnumerable<MenuElement> Elements() => [];
 
-    internal override void Apply(EmptySettings data) { }
+    internal override void Apply(Empty data) { }
 
-    internal override EmptySettings Export() => new();
+    internal override Empty Export() => new();
 }

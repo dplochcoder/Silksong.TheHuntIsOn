@@ -5,7 +5,6 @@ using Silksong.ModMenu.Models;
 using Silksong.TheHuntIsOn.Menu;
 using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
-using Silksong.TheHuntIsOn.Util;
 using SSMP.Networking.Packet;
 using System.Collections;
 using System.Collections.Generic;

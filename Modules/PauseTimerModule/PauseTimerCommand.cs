@@ -176,7 +176,7 @@ internal class CountdownSubcommand : Subcommand<PauseTimerCommand>
         if (arguments.Length > 1)
         {
             countdown.Message = string.Join(" ", arguments.Skip(1));
-            if (countdown.Message.Length > ServerPauseState.MAX_MESSAGE_LENGTH)
+            if (countdown.Message.Length > Countdown.MAX_MESSAGE_LENGTH)
             {
                 commandSender.SendMessage("Countdown message is too long.");
                 return false;

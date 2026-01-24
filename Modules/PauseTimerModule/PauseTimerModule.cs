@@ -2,11 +2,12 @@
 using Silksong.TheHuntIsOn.Menu;
 using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.SsmpAddon;
+using Silksong.TheHuntIsOn.Util;
 using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn.Modules.PauseTimerModule;
 
-internal class PauseTimerModule : Module<PauseTimerModule, EmptySettings, EmptySubMenu, PauseTimerUIConfig>
+internal class PauseTimerModule : Module<PauseTimerModule, Empty, EmptySubMenu, PauseTimerUIConfig>
 {
     private ServerPauseState serverPauseState = new();
 

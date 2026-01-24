@@ -3,7 +3,7 @@ using Silksong.TheHuntIsOn.Util;
 
 namespace Silksong.TheHuntIsOn.SsmpAddon;
 
-internal class ReportDesync : EmptyNetworkedCloneable<ReportDesync>, IIdentifiedPacket<ServerPacketId>
+internal class ReportDesync : Empty<ReportDesync>, IIdentifiedPacket<ServerPacketId>
 {
     public ServerPacketId Identifier => ServerPacketId.ReportDesync;
 

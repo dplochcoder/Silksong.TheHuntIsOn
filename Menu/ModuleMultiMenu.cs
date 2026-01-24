@@ -2,6 +2,7 @@
 using Silksong.ModMenu.Models;
 using Silksong.ModMenu.Screens;
 using Silksong.TheHuntIsOn.Modules.Lib;
+using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using Silksong.TheHuntIsOn.Util;
 using System;
 using System.Collections.Generic;

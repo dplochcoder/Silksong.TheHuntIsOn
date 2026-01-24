@@ -1,5 +1,5 @@
 ﻿using Silksong.ModMenu.Elements;
-using Silksong.TheHuntIsOn.Util;
+using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn.Menu;

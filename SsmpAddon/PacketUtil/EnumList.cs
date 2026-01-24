@@ -1,5 +1,4 @@
-﻿using Silksong.TheHuntIsOn.Util;
-using SSMP.Networking.Packet;
+﻿using SSMP.Networking.Packet;
 using System;
 using System.Collections.Generic;
 

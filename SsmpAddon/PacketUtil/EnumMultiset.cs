@@ -1,5 +1,4 @@
 ﻿using Silksong.PurenailUtil.Collections;
-using Silksong.TheHuntIsOn.Util;
 using SSMP.Networking.Packet;
 using System;
 

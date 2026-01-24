@@ -7,6 +7,7 @@ using Silksong.ModMenu.Screens;
 using Silksong.TheHuntIsOn.Menu;
 using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.SsmpAddon;
+using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using Silksong.TheHuntIsOn.Util;
 using SSMP.Api.Client;
 using SSMP.Api.Server;
@@ -21,7 +22,11 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
 {
     private static TheHuntIsOnPlugin? instance;
 
-    internal static void LogError(string message) => instance?.Logger.LogError(message);
+    internal static void LogError(string message)
+    {
+        if (instance == null) return;
+        instance.Logger.LogError(message);
+    }
 
     private readonly Dictionary<string, ModuleBase> modules = [];
 

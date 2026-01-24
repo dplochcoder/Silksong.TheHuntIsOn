@@ -1,7 +1,7 @@
 ﻿using HutongGames.PlayMaker;
 using Silksong.FsmUtil.Actions;
 using Silksong.TheHuntIsOn.Menu;
-using Silksong.TheHuntIsOn.Util;
+using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using System;
 
 namespace Silksong.TheHuntIsOn.Modules.Lib;

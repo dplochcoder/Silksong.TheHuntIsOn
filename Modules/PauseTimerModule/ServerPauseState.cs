@@ -1,6 +1,5 @@
 ﻿using Silksong.TheHuntIsOn.SsmpAddon;
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
-using Silksong.TheHuntIsOn.Util;
 using SSMP.Networking.Packet;
 using System;
 using System.Collections.Generic;
@@ -8,10 +7,8 @@ using System.Linq;
 
 namespace Silksong.TheHuntIsOn.Modules.PauseTimerModule;
 
-internal class ServerPauseState : NetworkedCloneable<ServerPauseState>, IIdentifiedPacket<ClientPacketId>
+internal class ServerPauseState : IIdentifiedPacket<ClientPacketId>
 {
-    public const byte MAX_MESSAGE_LENGTH = byte.MaxValue;
-
     public const int MAX_COUNTDOWNS = 10;
 
     public ClientPacketId Identifier => ClientPacketId.ServerPauseState;
@@ -29,14 +26,14 @@ internal class ServerPauseState : NetworkedCloneable<ServerPauseState>, IIdentif
     // When the server should be unpaused, if currently paused.
     public long UnpauseTimeTicks = long.MaxValue;
 
-    public override void ReadData(IPacket packet)
+    public void ReadData(IPacket packet)
     {
         Countdowns.ReadData(packet);
         ServerPaused.ReadData(packet);
         UnpauseTimeTicks.ReadData(packet);
     }
 
-    public override void WriteData(IPacket packet)
+    public void WriteData(IPacket packet)
     {
         Countdowns.WriteData(packet);
         ServerPaused.WriteData(packet);

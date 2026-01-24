@@ -1,5 +1,4 @@
 ﻿using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
-using Silksong.TheHuntIsOn.Util;
 using SSMP.Networking.Packet;
 
 namespace Silksong.TheHuntIsOn.Modules.Lib;

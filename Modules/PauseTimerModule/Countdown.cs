@@ -1,5 +1,4 @@
 ﻿using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
-using Silksong.TheHuntIsOn.Util;
 using SSMP.Networking.Packet;
 using System;
 
@@ -7,6 +6,8 @@ namespace Silksong.TheHuntIsOn.Modules.PauseTimerModule;
 
 internal class Countdown : NetworkedCloneable<Countdown>
 {
+    public const int MAX_MESSAGE_LENGTH = byte.MaxValue;
+
     // Scheduled time for the countdown to expire.
     public long FinishTimeTicks;
     // If set, always show this amount as the remaining time.
