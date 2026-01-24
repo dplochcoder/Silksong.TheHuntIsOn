@@ -1,36 +1,41 @@
-﻿using Silksong.TheHuntIsOn.SsmpAddon.Packets;
-using Silksong.TheHuntIsOn.Util;
+﻿using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using SSMP.Networking.Packet;
+using System;
 
 namespace Silksong.TheHuntIsOn.Modules.EventsModule;
 
-// Speedrunner events tied to collecting a certain number of things.
-internal enum SpeedrunnerCountType
+internal class SpeedrunnerCountEvent(SpeedrunnerCountEventType type, int value) : IWireInterface
 {
-    Masks,           // 2 - 10
-    SilkSpools,      // 2 - 18
-    SilkHearts,      // 1 - 3
-    CraftingKits,    // 1 - 4
-    ToolPouches,     // 1 - 4
-    NeedleUpgrades,  // 1 - 4
-    Melodies,        // 1 - 3
-    Hearts,          // 1 - 4
-}
-
-internal class SpeedrunnerCountEvent : NetworkedCloneable<SpeedrunnerCountEvent>
-{
-    public SpeedrunnerCountType Type;
-    public int Value;
-
-    public override void ReadData(IPacket packet)
+    public static bool TryParse(string s, out SpeedrunnerCountEvent result)
     {
-        Type = packet.ReadEnum<SpeedrunnerCountType>();
+        result = new();
+        for (int i = 0; i < s.Length; i++)
+        {
+            if (!char.IsDigit(s[i])) continue;
+            return Enum.TryParse(s[..i], out result.Type) && int.TryParse(s[i..], out result.Value);
+        }
+
+        return false;
+    }
+
+    public SpeedrunnerCountEvent() : this(default, 0) { }
+
+    public SpeedrunnerCountEventType Type = type;
+    public int Value = value;
+
+    public void ReadData(IPacket packet)
+    {
+        Type = packet.ReadEnum<SpeedrunnerCountEventType>();
         Value.ReadData(packet);
     }
 
-    public override void WriteData(IPacket packet)
+    public void WriteData(IPacket packet)
     {
         Type.WriteData(packet);
         Value.WriteData(packet);
     }
+
+    public override int GetHashCode() => Type.GetHashCode() ^ Value.GetHashCode();
+
+    public override bool Equals(object obj) => (obj is SpeedrunnerCountEvent other) && Type == other.Type && Value == other.Value;
 }

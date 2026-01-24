@@ -2,6 +2,7 @@
 
 internal enum HunterItemGrantType
 {
+    #region movement
     SwiftStep,
     DriftersCloak,
     ClingGrip,
@@ -9,7 +10,11 @@ internal enum HunterItemGrantType
     Clawline,
     FaydownCloak,
     SilkSoar,
+    #endregion
+
+    #region upgrades
     Mask,
     SilkSpool,
     NeedleUpgrade,
+    #endregion
 }

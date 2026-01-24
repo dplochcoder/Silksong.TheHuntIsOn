@@ -26,11 +26,11 @@ internal class GlobalSaveDataMenu
         foreach (var module in modules)
         {
             ModuleMultiMenu menu = new(module);
-            menu.Apply(globalSaveData.ModuleDataset.ModuleData.TryGetValue(module.Name, out var data) ? data : new());
+            menu.Apply(globalSaveData.ModuleDataset.TryGetValue(module.Name, out var data) ? data : new());
             ModuleMultiMenus[module.Name] = menu;
         }
 
-        currentModuleDataset = new(globalSaveData.ModuleDataset);
+        currentModuleDataset = globalSaveData.ModuleDataset.Clone();
         Enabled.OnValueChanged += _ => InvokeSaveDataChanged();
         Role.OnValueChanged += _ => InvokeSaveDataChanged();
     }
@@ -59,8 +59,8 @@ internal class GlobalSaveDataMenu
         TextButton applyButton = new("Apply Module Settings");
         applyButton.OnSubmit += () =>
         {
-            ModuleDataset update = new();
-            foreach (var e in ModuleMultiMenus) currentModuleDataset.ModuleData[e.Key] = e.Value.Export();
+            ModuleDataset update = [];
+            foreach (var e in ModuleMultiMenus) currentModuleDataset[e.Key] = e.Value.Export();
 
             if (HuntClientAddon.IsConnected) HuntClientAddon.Instance?.Send(update);
             else

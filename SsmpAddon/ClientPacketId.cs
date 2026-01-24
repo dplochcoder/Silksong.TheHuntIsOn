@@ -2,7 +2,10 @@
 
 internal enum ClientPacketId
 {
+    HunterItemGrants,
+    HunterItemGrantsDelta,
     ModuleDataset,
     ServerPauseState,
-    GrantHunterItems,
+    SpeedrunnerEvents,
+    SpeedrunnerEventsDelta,
 }

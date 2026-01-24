@@ -14,7 +14,7 @@ namespace Silksong.TheHuntIsOn.Modules.Lib;
 /// <typeparam name="SubMenuT">Sub-menu class for global settings.</typeparam>
 /// <typeparam name="CosmeticT">Cosmetic settings, stored globally but not sent over the network.</typeparam>
 /// <typeparam name="LocalT">Local settings type, localized to the current save file.</typeparam>
-internal abstract class Module<ModuleT, GlobalT, SubMenuT, CosmeticT, LocalT> : ModuleBase where ModuleT : Module<ModuleT, GlobalT, SubMenuT, CosmeticT, LocalT> where GlobalT : NetworkedCloneable<GlobalT>, new() where SubMenuT : ModuleSubMenu<GlobalT>, new() where CosmeticT : class, new() where LocalT : NetworkedCloneable<LocalT>, new()
+internal abstract class Module<ModuleT, GlobalT, SubMenuT, CosmeticT> : ModuleBase where ModuleT : Module<ModuleT, GlobalT, SubMenuT, CosmeticT> where GlobalT : NetworkedCloneable<GlobalT>, new() where SubMenuT : ModuleSubMenu<GlobalT>, new() where CosmeticT : class, new()
 {
     protected static ModuleT? Instance { get; private set; }
 
@@ -45,12 +45,6 @@ internal abstract class Module<ModuleT, GlobalT, SubMenuT, CosmeticT, LocalT> : 
             if (GetEnabledConfig(out var config)) action(config);
         }
     };
-
-    protected LocalT LocalConfig
-    {
-        get => TheHuntIsOnPlugin.GetLocalConfig<LocalT>(Name);
-        set => TheHuntIsOnPlugin.SetLocalConfig(Name, value);
-    }
 
     protected CosmeticT CosmeticConfig
     {

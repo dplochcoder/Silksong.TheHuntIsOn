@@ -15,45 +15,33 @@ internal class HuntCommand : IServerCommand
     private static readonly SubcommandRegister<HuntCommand> subcommands = new("/hunt", [new StatusSubcommand(), new StartSessionSubcommand(), new StopSessionSubcommand()]);
 
     private DateTime lastChange = DateTime.Now;
-    private int? currentSession;
-
-    internal bool GetCurrentSession(out int id)
-    {
-        if (currentSession.HasValue)
-        {
-            id = currentSession.Value;
-            return true;
-        }
-
-        id = default;
-        return false;
-    }
+    private bool activeSession;
 
     internal bool IsActiveSession(out DateTime lastChange)
     {
         lastChange = this.lastChange;
-        return currentSession.HasValue;
+        return activeSession;
     }
 
-    internal static event Action<int>? OnStartSession;
+    internal static event Action? OnStartSession;
 
     internal void StartNewSession()
     {
-        if (currentSession.HasValue) return;
+        if (activeSession) return;
 
         lastChange = DateTime.Now;
-        currentSession = new Random().Next();
-        OnStartSession?.Invoke(currentSession.Value);
+        activeSession = true;
+        OnStartSession?.Invoke();
     }
 
     internal static event Action? OnEndSession;
 
     internal void EndSession()
     {
-        if (!currentSession.HasValue) return;
+        if (!activeSession) return;
 
         lastChange = DateTime.Now;
-        currentSession = null;
+        activeSession = false;
         OnEndSession?.Invoke();
     }
 

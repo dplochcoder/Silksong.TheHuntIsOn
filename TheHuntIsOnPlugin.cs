@@ -17,9 +17,11 @@ using System.Linq;
 namespace Silksong.TheHuntIsOn;
 
 [BepInAutoPlugin(id: "io.github.silksong.thehuntison")]
-public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IGlobalDataMod<GlobalSaveData>, ISaveDataMod<LocalSaveData>
+public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IGlobalDataMod<GlobalSaveData>
 {
     private static TheHuntIsOnPlugin? instance;
+
+    internal static void LogError(string message) => instance?.Logger.LogError(message);
 
     private readonly Dictionary<string, ModuleBase> modules = [];
 
@@ -31,17 +33,12 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
     {
         foreach (var module in modules.Values)
         {
-            module.Enabled = GlobalSaveData.Enabled && GlobalSaveData.ModuleDataset.ModuleData.TryGetValue(module.Name, out var data) && data.IsEnabled(GlobalSaveData.Role);
+            module.Enabled = GlobalSaveData.Enabled && GlobalSaveData.ModuleDataset.TryGetValue(module.Name, out var data) && data.IsEnabled(GlobalSaveData.Role);
             module.OnGlobalConfigUpdated();
         }
     }
 
-    private void UpdateModulesLocal()
-    {
-        foreach (var module in modules.Values) module.OnLocalConfigUpdated();
-    }
-
-    private void OnModuleDatasetUpdate(ModuleDataset moduleDataset) => GlobalSaveData = GlobalSaveData with { ModuleDataset = moduleDataset };
+    private void OnModuleDataset(ModuleDataset moduleDataset) => GlobalSaveData = GlobalSaveData with { ModuleDataset = moduleDataset };
 
     private GlobalSaveData GlobalSaveData
     {
@@ -67,7 +64,7 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
         if (instance != null)
         {
             var global = instance.GlobalSaveData;
-            if (global.Enabled && global.ModuleDataset.ModuleData.TryGetValue(name, out var data)) return data.ModuleActivation;
+            if (global.Enabled && global.ModuleDataset.TryGetValue(name, out var data)) return data.ModuleActivation;
         }
 
         return ModuleActivation.Inactive;
@@ -78,37 +75,10 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
         if (instance != null)
         {
             var global = instance.GlobalSaveData;
-            if (global.ModuleDataset.ModuleData.TryGetValue(name, out var data) && data.GetSettings(global.Role) is T typed) return typed;
+            if (global.ModuleDataset.TryGetValue(name, out var data) && data.GetSettings(global.Role) is T typed) return typed;
         }
 
         return new();
-    }
-
-    private LocalSaveData? LocalSaveData
-    {
-        get => field;
-        set
-        {
-            field = value;
-            UpdateModulesLocal();
-        }
-    }
-
-    LocalSaveData? ISaveDataMod<LocalSaveData>.SaveData { get => LocalSaveData; set => LocalSaveData = value; }
-
-    internal static T GetLocalConfig<T>(string name) where T : NetworkedCloneable<T>, new()
-    {
-        if (instance != null && instance.LocalSaveData != null && instance.LocalSaveData.LocalData.TryGetValue(name, out var data) && data is T typed) return typed;
-        else return new();
-    }
-
-    internal static void SetLocalConfig<T>(string name, T config) where T : NetworkedCloneable<T>
-    {
-        if (instance == null) return;
-
-        var local = instance.LocalSaveData?.CloneTyped() ?? new();
-        local.LocalData[name].Value = config.Clone();
-        instance.LocalSaveData = local;
     }
 
     internal static T GetCosmeticConfig<T>(string name) where T : new()
@@ -139,7 +109,7 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
         foreach (var module in ModuleBase.GetAllModulesInAssembly()) modules.Add(module.Name, module);
 
         ClientAddon.RegisterAddon(new HuntClientAddon());
-        HuntClientAddon.OnModuleDatasetUpdate += OnModuleDatasetUpdate;
+        HuntClientAddon.OnModuleDataset += OnModuleDataset;
 
         ServerAddon.RegisterAddon(new HuntServerAddon());
 

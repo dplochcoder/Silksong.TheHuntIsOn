@@ -21,9 +21,9 @@ internal class ModuleMultiMenu
     private readonly IModuleSubMenu? huntersSubMenu;
     private readonly TextButton? huntersSubMenuButton;
 
-    private NetworkedCloneable? speedrunnersMenuData;
-    private NetworkedCloneable? huntersMenuData;
-    private NetworkedCloneable? everyoneMenuData;
+    private INetworkedCloneable? speedrunnersMenuData;
+    private INetworkedCloneable? huntersMenuData;
+    private INetworkedCloneable? everyoneMenuData;
 
     private static (IChoiceModel<ModuleActivation>, string) GetChoiceModel(ModuleBase module) => module.ModuleActivationType switch
     {

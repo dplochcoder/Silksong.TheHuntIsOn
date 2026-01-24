@@ -1,16 +1,62 @@
 ﻿using Silksong.TheHuntIsOn.Modules.EventsModule;
+using Silksong.TheHuntIsOn.Util;
+using SSMP.Api.Server;
 
 namespace Silksong.TheHuntIsOn.SsmpAddon;
 
-internal class EventsModuleAddon(HuntServerAddon serverAddon)
+internal class EventsModuleAddon
 {
-    internal void HandleRequestGrantHunterItems(ushort id, RequestGrantHunterItems request)
+    private readonly HuntServerAddon serverAddon;
+    private readonly ParsedEventsData parsedEventsData = ParsedEventsData.Load();
+
+    private readonly DeltaBaseWrapper<SpeedrunnerEvents, SpeedrunnerEventsDelta> speedrunnerEvents = new();
+    private readonly HunterItemGrants hunterItemGrants = new();
+
+    internal EventsModuleAddon(HuntServerAddon serverAddon)
     {
-        // FIXME
+        this.serverAddon = serverAddon;
+
+        serverAddon.OnUpdatePlayer += OnUpdatePlayer;
     }
 
-    internal void HandleRecordSpeedrunnerEvents(ushort id, RecordSpeedrunnerEvents request)
+    internal void OnUpdatePlayer(IServerPlayer player)
     {
-        // FIXME
+        serverAddon.SendToPlayer(player, speedrunnerEvents.Value);
+        serverAddon.SendToPlayer(player, hunterItemGrants);
+    }
+
+#pragma warning disable IDE0060 // Remove unused parameter
+    internal void OnSpeedrunnerEventsDelta(ushort id, SpeedrunnerEventsDelta eventsDelta)
+#pragma warning restore IDE0060 // Remove unused parameter
+    {
+        if (!speedrunnerEvents.Update(eventsDelta, out var realEventsDelta)) return;
+
+        HunterItemGrantsDelta grantsDelta = new();
+        void AddRewards(string id, EventRewards rewards)
+        {
+            grantsDelta.Grants.Add(id, rewards.Items);
+            if (rewards.Message != "") serverAddon.BroadcastMessage(rewards.Message);
+        }
+
+        foreach (var boolEvent in realEventsDelta.BoolEvents)
+        {
+            if (!parsedEventsData.BoolRewards.TryGetValue(boolEvent, out var rewards)) continue;
+            AddRewards($"{boolEvent}", rewards);
+        }
+        foreach (var countEvent in realEventsDelta.CountEvents)
+        {
+            for (int i = countEvent.PrevCount + 1; i <= countEvent.NewCount; i++)
+            {
+                if (!parsedEventsData.CountRewards.TryGetValue(new(countEvent.Type, i), out var rewards)) continue;
+                AddRewards($"{countEvent.Type}{i}", rewards);
+            }
+        }
+
+        serverAddon.Broadcast(realEventsDelta);
+        if (!grantsDelta.IsEmpty)
+        {
+            hunterItemGrants.Update(grantsDelta);
+            serverAddon.Broadcast(grantsDelta);
+        }
     }
 }

@@ -4,18 +4,18 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace Silksong.TheHuntIsOn.SsmpAddon.Packets;
+namespace Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 
 // Wrapper around a value with a dynamic type.
-internal class Dynamic<T> : NetworkedCloneable<Dynamic<T>> where T : NetworkedCloneable
+internal class DynamicValue : NetworkedCloneable<DynamicValue>
 {
-    public T? Value;
+    public INetworkedCloneable? Value;
 
-    public Dynamic() { }
-    public Dynamic(T? value) => Value = value;
+    public DynamicValue() { }
+    public DynamicValue(INetworkedCloneable? value) => Value = value;
 
     private static readonly Dictionary<Type, ConstructorInfo> constructors = [];
-    private static T Construct(Type type)
+    private static INetworkedCloneable Construct(Type type)
     {
         if (!constructors.TryGetValue(type, out var constructor))
         {
@@ -23,7 +23,7 @@ internal class Dynamic<T> : NetworkedCloneable<Dynamic<T>> where T : NetworkedCl
             constructors.Add(type, constructor);
         }
 
-        return (T)constructor.Invoke([]);
+        return (INetworkedCloneable)constructor.Invoke([]);
     }
 
     public override void ReadData(IPacket packet)
@@ -49,8 +49,5 @@ internal class Dynamic<T> : NetworkedCloneable<Dynamic<T>> where T : NetworkedCl
         Value.WriteData(packet);
     }
 
-    internal override NetworkedCloneable Clone() => new Dynamic<T>()
-    {
-        Value = Value != null ? (T)Value.Clone() : null
-    };
+    public override DynamicValue Clone() => new(Value?.CloneRaw());
 }

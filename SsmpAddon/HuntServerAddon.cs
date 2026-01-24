@@ -1,7 +1,7 @@
 ﻿using Silksong.TheHuntIsOn.Modules.EventsModule;
 using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.Modules.PauseTimerModule;
-using Silksong.TheHuntIsOn.SsmpAddon.Packets;
+using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using SSMP.Api.Server;
 using SSMP.Api.Server.Networking;
 using SSMP.Networking.Packet;
@@ -14,7 +14,7 @@ internal class HuntServerAddon : ServerAddon
 {
     public override bool NeedsNetwork => true;
 
-    public override uint ApiVersion => 1u;
+    public override uint ApiVersion => AddonIdentifiers.API_VERSION;
 
     protected override string Name => AddonIdentifiers.NAME;
 
@@ -26,18 +26,7 @@ internal class HuntServerAddon : ServerAddon
 
     private ModuleDataset? moduleDataset;
 
-    internal event Action<IServerPlayer> OnPlayerConnected
-    {
-        add => api?.ServerManager.PlayerConnectEvent += value;
-        remove => api?.ServerManager.PlayerConnectEvent -= value;
-    }
-
-    internal void SendToPlayer<T>(IServerPlayer player, T data) where T : IIdentifiedPacket<ClientPacketId> => sender?.SendSingleData(data.Identifier, data, player.Id);
-
-    private void SendModuleDataset(IServerPlayer player)
-    {
-        if (moduleDataset != null) SendToPlayer(player, moduleDataset);
-    }
+    internal event Action<IServerPlayer>? OnUpdatePlayer;
 
     public override void Initialize(IServerApi serverApi)
     {
@@ -45,14 +34,16 @@ internal class HuntServerAddon : ServerAddon
         sender = api.NetServer.GetNetworkSender<ClientPacketId>(this);
         receiver = api.NetServer.GetNetworkReceiver<ServerPacketId>(this, InstantiatePacket);
 
-        OnPlayerConnected += SendModuleDataset;
+        api.ServerManager.PlayerConnectEvent += player => OnUpdatePlayer?.Invoke(player);
+        OnUpdatePlayer += SendModuleDataset;
+
         api.CommandManager.RegisterCommand(new HuntCommand());
         api.CommandManager.RegisterCommand(new PauseTimerCommand(this));
         EventsModuleAddon eventsAddon = new(this);
 
-        HandleServerPacket<ModuleDataset>(HandleModuleDataset);
-        HandleServerPacket<RecordSpeedrunnerEvents>(eventsAddon.HandleRecordSpeedrunnerEvents);
-        HandleServerPacket<RequestGrantHunterItems>(eventsAddon.HandleRequestGrantHunterItems);
+        HandleServerPacket<ModuleDataset>(OnModuleDataset);
+        HandleServerPacket<ReportDesync>(OnReportDesync);
+        HandleServerPacket<SpeedrunnerEventsDelta>(eventsAddon.OnSpeedrunnerEventsDelta);
     }
 
     private readonly Dictionary<ServerPacketId, Func<IPacketData>> packetGenerators = [];
@@ -70,6 +61,21 @@ internal class HuntServerAddon : ServerAddon
 
     private string PlayerName(ushort id) => api?.ServerManager.GetPlayer(id)?.Username ?? "<unknown>";
 
+    internal void SendToPlayer<T>(IServerPlayer player, T data) where T : IIdentifiedPacket<ClientPacketId>, new() => SendToPlayer(player.Id, data);
+
+    internal void SendToPlayer<T>(ushort id, T data) where T : IIdentifiedPacket<ClientPacketId>, new()
+    {
+        if (data.Single) sender?.SendSingleData(data.Identifier, data, id);
+        else sender?.SendCollectionData(data.Identifier, data, id);
+    }
+
+    private void SendModuleDataset(IServerPlayer player)
+    {
+        if (moduleDataset != null) SendToPlayer(player, moduleDataset);
+    }
+
+    internal void SendMessage(ushort id, string message) => api?.ServerManager.SendMessage(id, message);
+
     internal void BroadcastMessage(string message) => api?.ServerManager.BroadcastMessage(message);
 
     internal void Broadcast<T>(T packet) where T : IIdentifiedPacket<ClientPacketId>, new()
@@ -78,16 +84,24 @@ internal class HuntServerAddon : ServerAddon
         else sender?.BroadcastCollectionData(packet.Identifier, packet);
     }
 
-    private void HandleModuleDataset(ushort id, ModuleDataset moduleDataset)
+    private void OnModuleDataset(ushort id, ModuleDataset moduleDataset)
     {
         if (!IsPlayerAuthorized(id))
         {
-            api?.ServerManager.SendMessage(id, "Only authorized users can change module settings.");
+            SendMessage(id, "Only authorized users can change module settings.");
             return;
         }
 
-        this.moduleDataset = new(moduleDataset);
+        this.moduleDataset = moduleDataset;
         Broadcast(moduleDataset);
-        api?.ServerManager.BroadcastMessage($"{PlayerName(id)} updated module settings.");
+        BroadcastMessage($"{PlayerName(id)} updated module settings.");
+    }
+
+    private void OnReportDesync(ushort id, ReportDesync reportDesync)
+    {
+        var player = api?.ServerManager.GetPlayer(id);
+        if (player == null) return;
+
+        OnUpdatePlayer?.Invoke(player);
     }
 }

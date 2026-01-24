@@ -1,12 +1,17 @@
 ﻿using Silksong.ModMenu.Elements;
 using Silksong.TheHuntIsOn.Menu;
 using Silksong.TheHuntIsOn.Modules.Lib;
+using Silksong.TheHuntIsOn.SsmpAddon;
 using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn.Modules.PauseTimerModule;
 
-internal class PauseTimerModule : Module<PauseTimerModule, EmptySettings, EmptySubMenu, PauseTimerUIConfig, ServerPauseState>
+internal class PauseTimerModule : Module<PauseTimerModule, EmptySettings, EmptySubMenu, PauseTimerUIConfig>
 {
+    private ServerPauseState serverPauseState = new();
+
+    public PauseTimerModule() => HuntClientAddon.OnServerPauseState += state => serverPauseState = state;
+
     protected override PauseTimerModule Self() => this;
 
     public override string Name => "Pause Timer";
@@ -14,4 +19,6 @@ internal class PauseTimerModule : Module<PauseTimerModule, EmptySettings, EmptyS
     public override ModuleActivationType ModuleActivationType => ModuleActivationType.OnOffOnly;
 
     public override IEnumerable<MenuElement> CreateCosmeticsMenuElements() => PauseTimerUIConfig.CreateMenu(CosmeticConfig, UpdateCosmeticConfig);
+
+    // FIXME: UI and application.
 }

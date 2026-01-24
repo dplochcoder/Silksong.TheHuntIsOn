@@ -1,6 +1,6 @@
 ﻿using SSMP.Networking.Packet;
 
-namespace Silksong.TheHuntIsOn.SsmpAddon.Packets;
+namespace Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 
 internal interface IWireInterface
 {

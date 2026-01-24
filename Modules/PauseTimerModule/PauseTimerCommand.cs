@@ -1,5 +1,5 @@
 ﻿using Silksong.TheHuntIsOn.SsmpAddon;
-using Silksong.TheHuntIsOn.SsmpAddon.Packets;
+using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using SSMP.Api.Command.Server;
 using System;
 using System.Linq;
@@ -14,8 +14,7 @@ internal class PauseTimerCommand : IServerCommand
     {
         this.serverAddon = serverAddon;
 
-        serverAddon.OnPlayerConnected += player => serverAddon.SendToPlayer(player, state);
-        HuntCommand.OnEndSession += () => Broadcast(state = new());
+        serverAddon.OnUpdatePlayer += player => serverAddon.SendToPlayer(player, state);
     }
 
     public string Trigger => "/pausetimer";
@@ -24,7 +23,7 @@ internal class PauseTimerCommand : IServerCommand
 
     public bool AuthorizedOnly => true;
 
-    private ServerPauseState state = new();
+    private readonly ServerPauseState state = new();
 
     internal void BroadcastMessage(string message) => serverAddon.BroadcastMessage(message);
 
