@@ -86,6 +86,31 @@ internal static class IWireInterfaceExtensions
 
     private static void Write<T>(this IPacket self, T value) where T : IWireInterface => value.WriteData(self);
 
+    internal static T ReadDynamic<E, T, F>(this IPacket self) where E : Enum where T : IDynamicValue<E, T, F> where F : IDynamicValueFactory<E, T, F>, new()
+    {
+        var type = self.ReadEnum<E>();
+        F factory = new();
+        T instance = factory.Create(type);
+        instance.ReadDynamicData(self);
+        return instance;
+    }
+
+    internal static T? ReadOptionalDynamic<E, T, F>(this IPacket self) where E : Enum where T : class, IDynamicValue<E, T, F> where F : IDynamicValueFactory<E, T, F>, new() => self.ReadBool() ? self.ReadDynamic<E, T, F>() : null;
+
+    internal static void WriteDynamic<E, T, F>(this IDynamicValue<E, T, F> self, IPacket packet) where E : Enum where T : IDynamicValue<E, T, F> where F : IDynamicValueFactory<E, T, F>, new()
+    {
+        self.DynamicType.WriteData(packet);
+        self.WriteDynamicData(packet);
+    }
+
+    internal static void WriteOptionalDynamic<E, T, F>(this IDynamicValue<E, T, F>? self, IPacket packet) where E : Enum where T : class, IDynamicValue<E, T, F> where F : IDynamicValueFactory<E, T, F>, new()
+    {
+        packet.Write(self != null);
+        if (self == null) return;
+
+        self.WriteDynamic(packet);
+    }
+
     internal static void ReadData<T>(this ICollection<T> self, IPacket packet, Func<IPacket, T> read)
     {
         self.Clear();

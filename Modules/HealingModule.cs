@@ -20,14 +20,16 @@ internal enum MaskHealType
     NoHeal,
 }
 
-internal class HealingSettings : NetworkedCloneable<HealingSettings>
+internal class HealingSettings : ModuleSettings<HealingSettings>
 {
+    public override ModuleSettingsType DynamicType => ModuleSettingsType.Healing;
+
     public bool BenchHeal = true;
     public MaskHealType MaskHeal = MaskHealType.FullHeal;
     public bool AbilityHeal = true;
     public bool SpaHeal = true;
 
-    public override void ReadData(IPacket packet)
+    public override void ReadDynamicData(IPacket packet)
     {
         BenchHeal.ReadData(packet);
         MaskHeal = packet.ReadEnum<MaskHealType>();
@@ -35,7 +37,7 @@ internal class HealingSettings : NetworkedCloneable<HealingSettings>
         SpaHeal.ReadData(packet);
     }
 
-    public override void WriteData(IPacket packet)
+    public override void WriteDynamicData(IPacket packet)
     {
         BenchHeal.WriteData(packet);
         MaskHeal.WriteData(packet);

@@ -1,18 +1,18 @@
 ﻿using Silksong.ModMenu.Elements;
-using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
+using Silksong.TheHuntIsOn.Modules.Lib;
 using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn.Menu;
 
-internal abstract class ModuleSubMenu<T> : IModuleSubMenu where T : NetworkedCloneable<T>, new()
+internal abstract class ModuleSubMenu<T> : IModuleSubMenu where T : ModuleSettings<T>, new()
 {
     public abstract IEnumerable<MenuElement> Elements();
 
     internal abstract void Apply(T data);
 
-    public void ApplyRaw(INetworkedCloneable? data) => Apply(data is T typed ? typed : new());
+    public void ApplyRaw(ModuleSettings? data) => Apply(data is T typed ? typed : new());
 
     internal abstract T Export();
 
-    public INetworkedCloneable ExportRaw() => Export();
+    public ModuleSettings ExportRaw() => Export();
 }

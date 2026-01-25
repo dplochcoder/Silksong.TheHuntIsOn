@@ -11,14 +11,16 @@ using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn.Modules;
 
-internal class DeathPenaltySettings : NetworkedCloneable<DeathPenaltySettings>
+internal class DeathPenaltySettings : ModuleSettings<DeathPenaltySettings>
 {
+    public override ModuleSettingsType DynamicType => ModuleSettingsType.DeathPenalty;
+
     public int RespawnTimer = 0;
     public bool SpawnCoccoon = true;
     public bool LoseRosaries = true;
     public bool LimitSilk = true;
 
-    public override void ReadData(IPacket packet)
+    public override void ReadDynamicData(IPacket packet)
     {
         RespawnTimer.ReadData(packet);
         SpawnCoccoon.ReadData(packet);
@@ -26,7 +28,7 @@ internal class DeathPenaltySettings : NetworkedCloneable<DeathPenaltySettings>
         LimitSilk.ReadData(packet);
     }
 
-    public override void WriteData(IPacket packet)
+    public override void WriteDynamicData(IPacket packet)
     {
         RespawnTimer.WriteData(packet);
         SpawnCoccoon.WriteData(packet);

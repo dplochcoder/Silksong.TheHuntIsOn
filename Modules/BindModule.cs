@@ -11,14 +11,16 @@ using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn.Modules;
 
-internal class BindSettings : NetworkedCloneable<BindSettings>
+internal class BindSettings : ModuleSettings<BindSettings>
 {
+    public override ModuleSettingsType DynamicType => ModuleSettingsType.Bind;
+
     public int HealMasks = 3;
     public int MultibinderHealMasks = 2;
     public int SilkCost = 9;
     public float TimePenalty = 1f;
 
-    public override void ReadData(IPacket packet)
+    public override void ReadDynamicData(IPacket packet)
     {
         HealMasks.ReadData(packet);
         MultibinderHealMasks.ReadData(packet);
@@ -26,7 +28,7 @@ internal class BindSettings : NetworkedCloneable<BindSettings>
         TimePenalty.ReadData(packet);
     }
 
-    public override void WriteData(IPacket packet)
+    public override void WriteDynamicData(IPacket packet)
     {
         HealMasks.WriteData(packet);
         MultibinderHealMasks.WriteData(packet);

@@ -20,13 +20,15 @@ internal enum SpawnPoint
     Songclave,
 }
 
-internal class SpawnPointSettings : NetworkedCloneable<SpawnPointSettings>
+internal class SpawnPointSettings : ModuleSettings<SpawnPointSettings>
 {
+    public override ModuleSettingsType DynamicType => ModuleSettingsType.SpawnPoint;
+
     public SpawnPoint SpawnPoint = SpawnPoint.Unchanged;
 
-    public override void ReadData(IPacket packet) => SpawnPoint = packet.ReadEnum<SpawnPoint>();
+    public override void ReadDynamicData(IPacket packet) => SpawnPoint = packet.ReadEnum<SpawnPoint>();
 
-    public override void WriteData(IPacket packet) => SpawnPoint.WriteData(packet);
+    public override void WriteDynamicData(IPacket packet) => SpawnPoint.WriteData(packet);
 }
 
 internal class SpawnPointModule : GlobalSettingsModule<SpawnPointModule, SpawnPointSettings, SpawnPointSubMenu>

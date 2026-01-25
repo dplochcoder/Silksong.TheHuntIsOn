@@ -1,6 +1,5 @@
 ﻿using Silksong.TheHuntIsOn.SsmpAddon;
 using Silksong.TheHuntIsOn.Util;
-using SSMP.Api.Server;
 
 namespace Silksong.TheHuntIsOn.Modules.EventsModule;
 

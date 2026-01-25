@@ -2,7 +2,6 @@
 using Silksong.ModMenu.Models;
 using Silksong.ModMenu.Screens;
 using Silksong.TheHuntIsOn.Modules.Lib;
-using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using Silksong.TheHuntIsOn.Util;
 using System;
 using System.Collections.Generic;
@@ -22,9 +21,9 @@ internal class ModuleMultiMenu
     private readonly IModuleSubMenu? huntersSubMenu;
     private readonly TextButton? huntersSubMenuButton;
 
-    private INetworkedCloneable? speedrunnersMenuData;
-    private INetworkedCloneable? huntersMenuData;
-    private INetworkedCloneable? everyoneMenuData;
+    private ModuleSettings? speedrunnersMenuData;
+    private ModuleSettings? huntersMenuData;
+    private ModuleSettings? everyoneMenuData;
 
     private static (IChoiceModel<ModuleActivation>, string) GetChoiceModel(ModuleBase module) => module.ModuleActivationType switch
     {

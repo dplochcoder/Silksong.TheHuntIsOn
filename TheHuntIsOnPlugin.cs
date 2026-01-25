@@ -7,7 +7,6 @@ using Silksong.ModMenu.Screens;
 using Silksong.TheHuntIsOn.Menu;
 using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.SsmpAddon;
-using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using Silksong.TheHuntIsOn.Util;
 using SSMP.Api.Client;
 using SSMP.Api.Server;
@@ -76,7 +75,7 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
         return ModuleActivation.Inactive;
     }
 
-    internal static T GetGlobalConfig<T>(string name) where T : NetworkedCloneable<T>, new()
+    internal static T GetGlobalConfig<T>(string name) where T : ModuleSettings<T>, new()
     {
         if (instance != null)
         {

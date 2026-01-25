@@ -9,18 +9,20 @@ using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn.Modules;
 
-internal class StatsSettings : NetworkedCloneable<StatsSettings>
+internal class StatsSettings : ModuleSettings<StatsSettings>
 {
+    public override ModuleSettingsType DynamicType => ModuleSettingsType.Stats;
+
     public int StartingMasks = 5;
     public int StartingSilkSpools = 9;
 
-    public override void ReadData(IPacket packet)
+    public override void ReadDynamicData(IPacket packet)
     {
         StartingMasks.ReadData(packet);
         StartingSilkSpools.ReadData(packet);
     }
 
-    public override void WriteData(IPacket packet)
+    public override void WriteDynamicData(IPacket packet)
     {
         StartingMasks.WriteData(packet);
         StartingSilkSpools.WriteData(packet);

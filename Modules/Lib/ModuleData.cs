@@ -6,34 +6,38 @@ namespace Silksong.TheHuntIsOn.Modules.Lib;
 internal class ModuleData : NetworkedCloneable<ModuleData>
 {
     public ModuleData() { }
-    public ModuleData(ModuleActivation moduleActivation, INetworkedCloneable? speedrunnerSettings, INetworkedCloneable? hunterSettings, INetworkedCloneable? everyoneSettings)
+    public ModuleData(ModuleActivation moduleActivation, ModuleSettings? speedrunnerSettings, ModuleSettings? hunterSettings, ModuleSettings? everyoneSettings)
     {
         ModuleActivation = moduleActivation;
-        SpeedrunnerSettings.Value = speedrunnerSettings;
-        HunterSettings.Value = hunterSettings;
-        EveryoneSettings.Value = everyoneSettings;
+        SpeedrunnerSettings = speedrunnerSettings;
+        HunterSettings = hunterSettings;
+        EveryoneSettings = everyoneSettings;
     }
 
     public ModuleActivation ModuleActivation = ModuleActivation.Inactive;
-    public DynamicValue SpeedrunnerSettings = new();
-    public DynamicValue HunterSettings = new();
-    public DynamicValue EveryoneSettings = new();
+    public ModuleSettings? SpeedrunnerSettings;
+    public ModuleSettings? HunterSettings;
+    public ModuleSettings? EveryoneSettings;
+
+    private static ModuleSettings? ReadSettings(IPacket packet) => packet.ReadOptionalDynamic<ModuleSettingsType, ModuleSettings, ModuleSettingsFactory>();
 
     public override void ReadData(IPacket packet)
     {
         ModuleActivation = packet.ReadEnum<ModuleActivation>();
-        SpeedrunnerSettings.ReadData(packet);
-        HunterSettings.ReadData(packet);
-        EveryoneSettings.ReadData(packet);
+        SpeedrunnerSettings = ReadSettings(packet);
+        HunterSettings = ReadSettings(packet);
+        EveryoneSettings = ReadSettings(packet);
     }
 
     public override void WriteData(IPacket packet)
     {
         ModuleActivation.WriteData(packet);
-        SpeedrunnerSettings.WriteData(packet);
-        HunterSettings.WriteData(packet);
-        EveryoneSettings.WriteData(packet);
+        SpeedrunnerSettings.WriteOptionalDynamic(packet);
+        HunterSettings.WriteOptionalDynamic(packet);
+        EveryoneSettings.WriteOptionalDynamic(packet);
     }
+
+    public override ModuleData Clone() => new(ModuleActivation, SpeedrunnerSettings?.Clone(), HunterSettings?.Clone(),  EveryoneSettings?.Clone());
 
     public bool IsEnabled(RoleId role) => ModuleActivation switch
     {
@@ -44,13 +48,13 @@ internal class ModuleData : NetworkedCloneable<ModuleData>
         _ => false
     };
 
-    public INetworkedCloneable? GetSettings(RoleId role) => ModuleActivation switch
+    public ModuleSettings? GetSettings(RoleId role) => ModuleActivation switch
     {
         ModuleActivation.Inactive => null,
-        ModuleActivation.SpeedrunnerOnly => (role == RoleId.Speedrunner) ? SpeedrunnerSettings.Value : null,
-        ModuleActivation.HuntersOnly => (role == RoleId.Hunter) ? HunterSettings.Value : null,
-        ModuleActivation.EveryoneSame => EveryoneSettings.Value,
-        ModuleActivation.EveryoneDifferent => (role == RoleId.Speedrunner) ? SpeedrunnerSettings.Value : HunterSettings.Value,
+        ModuleActivation.SpeedrunnerOnly => (role == RoleId.Speedrunner) ? SpeedrunnerSettings : null,
+        ModuleActivation.HuntersOnly => (role == RoleId.Hunter) ? HunterSettings : null,
+        ModuleActivation.EveryoneSame => EveryoneSettings,
+        ModuleActivation.EveryoneDifferent => (role == RoleId.Speedrunner) ? SpeedrunnerSettings : HunterSettings,
         _ => null,
     };
 }
