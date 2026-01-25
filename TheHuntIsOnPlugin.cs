@@ -17,6 +17,10 @@ using System.Linq;
 
 namespace Silksong.TheHuntIsOn;
 
+[BepInDependency("org.silksong-modding.datamanager")]
+[BepInDependency("org.silksong-modding.modmenu")]
+[BepInDependency("org.silksong-modding.prepatcher")]
+[BepInDependency("ssmp")]
 [BepInAutoPlugin(id: "io.github.silksong.thehuntison")]
 public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IGlobalDataMod<GlobalSaveData>
 {

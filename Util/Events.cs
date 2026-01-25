@@ -5,7 +5,7 @@ using System;
 
 namespace Silksong.TheHuntIsOn.Util;
 
-[MonoDetourTargets(typeof(HeroController))]
+[MonoDetourTargets(typeof(HeroController)]
 [MonoDetourTargets(typeof(PlayMakerFSM))]
 internal static class Events
 {

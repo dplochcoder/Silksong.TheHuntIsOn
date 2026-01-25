@@ -65,6 +65,10 @@
     <LocalReferences Include="$(ManagedFolder)/*.dll" Exclude="$(ManagedFolder)/Mono*.dll;$(ManagedFolder)/netstandard.dll;$(ManagedFolder)/System*.dll;$(ManagedFolder)/mscorlib.dll" />
     <Reference Include="@(LocalReferences)" Private="false" Publicize="true" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\**\*.json" />
+  </ItemGroup>
 
   <ItemGroup>
     <Folder Remove="thunderstore/temp;thunderstore/dist" />
