@@ -34,9 +34,17 @@ internal class StatsModule : GlobalSettingsModule<StatsModule, StatsSettings, St
 
     public override ModuleActivationType ModuleActivationType => ModuleActivationType.AnyConfiguration;
 
-    public override void OnEnabled() => PrepatcherPlugin.PlayerDataVariableEvents<int>.OnGetVariable += ModifyCoreStats;
+    public override void OnEnabled()
+    {
+        PrepatcherPlugin.PlayerDataVariableEvents<int>.OnGetVariable += ModifyCoreStats;
+        PrepatcherPlugin.PlayerDataVariableEvents<int>.OnSetVariable += ModifyCoreStats;
+    }
 
-    public override void OnDisabled() => PrepatcherPlugin.PlayerDataVariableEvents<int>.OnGetVariable += ModifyCoreStats;
+    public override void OnDisabled()
+    {
+        PrepatcherPlugin.PlayerDataVariableEvents<int>.OnGetVariable -= ModifyCoreStats;
+        PrepatcherPlugin.PlayerDataVariableEvents<int>.OnSetVariable -= ModifyCoreStats;
+    }
 
     private int ModifyCoreStats(PlayerData playerData, string name, int orig)
     {

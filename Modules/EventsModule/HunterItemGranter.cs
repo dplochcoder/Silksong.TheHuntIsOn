@@ -41,13 +41,15 @@ internal class HunterItemGranter
     internal void OnEnabled()
     {
         PrepatcherPlugin.PlayerDataVariableEvents<bool>.OnGetVariable += OverrideGetPDBool;
-        PrepatcherPlugin.PlayerDataVariableEvents<int>.OnGetVariable += OverrideGetPDInt;
+        PrepatcherPlugin.PlayerDataVariableEvents<int>.OnGetVariable += OverridePDInt;
+        PrepatcherPlugin.PlayerDataVariableEvents<int>.OnSetVariable += OverridePDInt;
     }
 
     internal void OnDisabled()
     {
         PrepatcherPlugin.PlayerDataVariableEvents<bool>.OnGetVariable -= OverrideGetPDBool;
-        PrepatcherPlugin.PlayerDataVariableEvents<int>.OnGetVariable -= OverrideGetPDInt;
+        PrepatcherPlugin.PlayerDataVariableEvents<int>.OnGetVariable -= OverridePDInt;
+        PrepatcherPlugin.PlayerDataVariableEvents<int>.OnSetVariable -= OverridePDInt;
     }
 
     private static readonly Dictionary<string, HunterItemGrantType> boolGrants = new()
@@ -76,5 +78,5 @@ internal class HunterItemGranter
         [nameof(PlayerData.nailUpgrades)] = HunterItemGrantType.NeedleUpgrade,
     };
 
-    private int OverrideGetPDInt(PlayerData instance, string name, int orig) => orig + (TheHuntIsOnPlugin.GetRole() == Lib.RoleId.Hunter && intGrants.TryGetValue(name, out var type) ? allGrants.Count(type) : 0);
+    private int OverridePDInt(PlayerData instance, string name, int orig) => orig + (TheHuntIsOnPlugin.GetRole() == Lib.RoleId.Hunter && intGrants.TryGetValue(name, out var type) ? allGrants.Count(type) : 0);
 }
