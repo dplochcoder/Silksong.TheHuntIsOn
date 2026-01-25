@@ -4,6 +4,7 @@ using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using Silksong.TheHuntIsOn.Util;
 using SSMP.Networking.Packet;
+using System;
 using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn.Modules;
@@ -34,29 +35,22 @@ internal class StatsModule : GlobalSettingsModule<StatsModule, StatsSettings, St
 
     public override ModuleActivationType ModuleActivationType => ModuleActivationType.AnyConfiguration;
 
+    private static Func<int> FromSettings(Func<StatsSettings, int> func) => () => GetEnabledConfig(out var settings) ? func(settings) : 0;
+
+    private static readonly Dictionary<string, Func<int>> intModifiers = new()
+    {
+        [nameof(PlayerData.maxHealth)] = FromSettings(s => s.StartingMasks - 5),
+        [nameof(PlayerData.silkMax)] = FromSettings(s => s.StartingSilkSpools - 9)
+    };
+
     public override void OnEnabled()
     {
-        PrepatcherPlugin.PlayerDataVariableEvents<int>.OnGetVariable += ModifyCoreStats;
-        PrepatcherPlugin.PlayerDataVariableEvents<int>.OnSetVariable += ModifyCoreStats;
+        foreach (var e in intModifiers) Events.AddPdIntModifier(e.Key, e.Value);
     }
 
     public override void OnDisabled()
     {
-        PrepatcherPlugin.PlayerDataVariableEvents<int>.OnGetVariable -= ModifyCoreStats;
-        PrepatcherPlugin.PlayerDataVariableEvents<int>.OnSetVariable -= ModifyCoreStats;
-    }
-
-    private int ModifyCoreStats(PlayerData playerData, string name, int orig)
-    {
-        if (Instance == null) return orig;
-
-        var config = Instance.GlobalConfig;
-        return name switch
-        {
-            nameof(PlayerData.maxHealth) => orig + (config.StartingMasks - 5),
-            nameof(PlayerData.silkMax) => orig + (config.StartingSilkSpools - 9),
-            _ => orig
-        };
+        foreach (var e in intModifiers) Events.RemovePdIntModifier(e.Key, e.Value);
     }
 }
 

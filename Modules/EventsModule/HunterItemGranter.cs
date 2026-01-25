@@ -1,10 +1,22 @@
 ﻿using Silksong.PurenailUtil.Collections;
+using Silksong.TheHuntIsOn.Util;
+using System;
 using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn.Modules.EventsModule;
 
 internal class HunterItemGranter
 {
+    internal HunterItemGranter()
+    {
+        intModifiers = new()
+        {
+            [nameof(PlayerData.maxHealth)] = IntModifier(HunterItemGrantType.Mask),
+            [nameof(PlayerData.silkMax)] = IntModifier(HunterItemGrantType.SilkSpool),
+            [nameof(PlayerData.nailUpgrades)] = IntModifier(HunterItemGrantType.NeedleUpgrade),
+        };
+    }
+
     // Base data.
     private readonly HunterItemGrants hunterItemGrants = new();
 
@@ -41,15 +53,13 @@ internal class HunterItemGranter
     internal void OnEnabled()
     {
         PrepatcherPlugin.PlayerDataVariableEvents<bool>.OnGetVariable += OverrideGetPDBool;
-        PrepatcherPlugin.PlayerDataVariableEvents<int>.OnGetVariable += OverridePDInt;
-        PrepatcherPlugin.PlayerDataVariableEvents<int>.OnSetVariable += OverridePDInt;
+        foreach (var e in intModifiers) Events.AddPdIntModifier(e.Key, e.Value);
     }
 
     internal void OnDisabled()
     {
         PrepatcherPlugin.PlayerDataVariableEvents<bool>.OnGetVariable -= OverrideGetPDBool;
-        PrepatcherPlugin.PlayerDataVariableEvents<int>.OnGetVariable -= OverridePDInt;
-        PrepatcherPlugin.PlayerDataVariableEvents<int>.OnSetVariable -= OverridePDInt;
+        foreach (var e in intModifiers) Events.RemovePdIntModifier(e.Key, e.Value);
     }
 
     private static readonly Dictionary<string, HunterItemGrantType> boolGrants = new()
@@ -65,18 +75,11 @@ internal class HunterItemGranter
 
     private bool OverrideGetPDBool(PlayerData instance, string name, bool orig)
     {
-        if (orig) return true;
-        if (TheHuntIsOnPlugin.GetRole() != Lib.RoleId.Hunter) return orig;
-
+        if (orig || TheHuntIsOnPlugin.GetRole() != Lib.RoleId.Hunter) return orig;
         return boolGrants.TryGetValue(name, out var type) && allGrants.Contains(type);
     }
 
-    private static readonly Dictionary<string, HunterItemGrantType> intGrants = new()
-    {
-        [nameof(PlayerData.maxHealth)] = HunterItemGrantType.Mask,
-        [nameof(PlayerData.silkMax)] = HunterItemGrantType.SilkSpool,
-        [nameof(PlayerData.nailUpgrades)] = HunterItemGrantType.NeedleUpgrade,
-    };
+    private readonly Dictionary<string, Func<int>> intModifiers;
 
-    private int OverridePDInt(PlayerData instance, string name, int orig) => orig + (TheHuntIsOnPlugin.GetRole() == Lib.RoleId.Hunter && intGrants.TryGetValue(name, out var type) ? allGrants.Count(type) : 0);
+    private Func<int> IntModifier(HunterItemGrantType type) => () => TheHuntIsOnPlugin.GetRole() == Lib.RoleId.Hunter ? allGrants.Count(type) : 0;
 }

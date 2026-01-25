@@ -9,6 +9,23 @@ namespace Silksong.TheHuntIsOn.Util;
 [MonoDetourTargets(typeof(PlayMakerFSM))]
 internal static class Events
 {
+    private static readonly HashMultimap<string, Func<int>> pdIntModifiers = [];
+
+    internal static void AddPdIntModifier(string name, Func<int> modifier) => pdIntModifiers.Add(name, modifier);
+    internal static void RemovePdIntModifier(string name, Func<int> modifier) => pdIntModifiers.Remove(name, modifier);
+
+    private static int OverrideGetPdInt(PlayerData playerData, string name, int orig)
+    {
+        foreach (var modifier in pdIntModifiers.Get(name)) orig += modifier();
+        return orig;
+    }
+
+    private static int OverrideSetPdInt(PlayerData playerData, string name, int orig)
+    {
+        foreach (var modifier in pdIntModifiers.Get(name)) orig -= modifier();
+        return orig;
+    }
+
     private static readonly HashMultimap<string, Action<PlayMakerFSM>> fsmEditsByName = [];
     private static readonly HashMultitable<string, string, Action<PlayMakerFSM>> fsmEdits = [];
 
@@ -30,6 +47,8 @@ internal static class Events
     [MonoDetourHookInitialize]
     private static void Hook()
     {
+        PrepatcherPlugin.PlayerDataVariableEvents<int>.OnGetVariable += OverrideGetPdInt;
+        PrepatcherPlugin.PlayerDataVariableEvents<int>.OnSetVariable += OverrideSetPdInt;
         Md.HeroController.Update.Postfix(PostfixOnHeroUpdate);
         Md.PlayMakerFSM.OnEnable.Postfix(OnEnablePlayMakerFSM);
     }
