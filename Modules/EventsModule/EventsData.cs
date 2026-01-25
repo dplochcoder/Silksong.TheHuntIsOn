@@ -1,12 +1,11 @@
-﻿using Silksong.TheHuntIsOn.Modules.EventsModule;
-using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
+﻿using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using Silksong.TheHuntIsOn.Util;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 
-namespace Silksong.TheHuntIsOn.SsmpAddon;
+namespace Silksong.TheHuntIsOn.Modules.EventsModule;
 
 internal record EventRewards
 {
@@ -15,10 +14,8 @@ internal record EventRewards
 }
 
 // JSON format
-internal record EventsData
+internal class EventsData : Dictionary<string, EventRewards>
 {
-    public Dictionary<string, EventRewards> HunterRewards = [];
-
     public static EventsData Load()
     {
         var localPath = Path.Join(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "events.json");
@@ -33,7 +30,7 @@ internal class ParsedEventsData
 
     public void Parse(EventsData eventsData)
     {
-        foreach (var e in eventsData.HunterRewards)
+        foreach (var e in eventsData)
         {
             if (Enum.TryParse(e.Key, out SpeedrunnerBoolEvent boolEvent)) BoolRewards.Add(boolEvent, e.Value);
             else if (SpeedrunnerCountEvent.TryParse(e.Key, out var countEvent)) CountRewards.Add(countEvent, e.Value);
