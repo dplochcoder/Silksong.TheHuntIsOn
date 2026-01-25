@@ -1,5 +1,6 @@
 ﻿using Silksong.ModMenu.Elements;
 using Silksong.TheHuntIsOn.Menu;
+using Silksong.TheHuntIsOn.Modules.EventsModule;
 using System.Collections.Generic;
 using System.Reflection;
 
@@ -32,12 +33,13 @@ internal abstract class ModuleBase
 
     public virtual void OnDisabled() { }
 
-    public static IEnumerable<ModuleBase> GetAllModulesInAssembly()
-    {
-        foreach (var type in Assembly.GetExecutingAssembly().GetTypes())
-        {
-            if (type.IsAbstract || !type.IsSubclassOf(typeof(ModuleBase))) continue;
-            yield return (ModuleBase)type.GetConstructor([]).Invoke([]);
-        }
-    }
+    public static IEnumerable<ModuleBase> GetAllModules() => [
+        new BindModule(),
+        new DeathPenaltyModule(),
+        new EventsModule.EventsModule(),
+        new HealingModule(),
+        new PauseTimerModule.PauseTimerModule(),
+        new SpawnPointModule(),
+        new StatsModule(),
+    ];
 }

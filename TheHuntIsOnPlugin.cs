@@ -111,7 +111,7 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
 
         MonoDetourManager.InvokeHookInitializers(typeof(TheHuntIsOnPlugin).Assembly);
 
-        foreach (var module in ModuleBase.GetAllModulesInAssembly()) modules.Add(module.Name, module);
+        foreach (var module in ModuleBase.GetAllModules()) modules.Add(module.Name, module);
 
         ClientAddon.RegisterAddon(new HuntClientAddon());
         HuntClientAddon.OnModuleDataset += OnModuleDataset;
