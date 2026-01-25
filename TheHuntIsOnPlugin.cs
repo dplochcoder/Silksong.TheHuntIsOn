@@ -114,7 +114,7 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
         foreach (var module in ModuleBase.GetAllModules()) modules.Add(module.Name, module);
 
         ClientAddon.RegisterAddon(new HuntClientAddon());
-        HuntClientAddon.OnModuleDataset += OnModuleDataset;
+        HuntClientAddon.On<ModuleDataset>.Received += OnModuleDataset;
 
         ServerAddon.RegisterAddon(new HuntServerAddon());
 

@@ -10,7 +10,7 @@ internal class PauseTimerModule : Module<PauseTimerModule, EmptySettings, EmptyS
 {
     private ServerPauseState serverPauseState = new();
 
-    public PauseTimerModule() => HuntClientAddon.OnServerPauseState += state => serverPauseState = state;
+    public PauseTimerModule() => HuntClientAddon.On<ServerPauseState>.Received += state => serverPauseState = state;
 
     protected override PauseTimerModule Self() => this;
 

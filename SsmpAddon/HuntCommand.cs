@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn.SsmpAddon;
 
-internal class HuntCommand : IServerCommand
+internal class HuntCommand(HuntServerAddon serverAddon) : IServerCommand
 {
     public bool AuthorizedOnly => true;
 
@@ -12,7 +12,7 @@ internal class HuntCommand : IServerCommand
 
     public string[] Aliases => ["/hunt"];
 
-    private static readonly SubcommandRegister<HuntCommand> subcommands = new("/hunt", [new ResetSubcommand(), new StatusSubcommand()]);
+    private static readonly SubcommandRegister<HuntCommand> subcommands = new("/hunt", [new ResetSubcommand(), new StatusSubcommand(), new UpdateArchitectCommand()]);
 
     internal DateTime LastReset { get; private set; } = DateTime.UtcNow;
 
@@ -24,7 +24,26 @@ internal class HuntCommand : IServerCommand
         OnGameReset?.Invoke();
     }
 
+    internal void UpdateArchitectLevels() => serverAddon.UpdateArchitectLevels();
+
     public void Execute(ICommandSender commandSender, string[] arguments) => subcommands.Execute(this, commandSender, arguments);
+}
+
+internal class ResetSubcommand : Subcommand<HuntCommand>
+{
+    public override string Name => "reset";
+
+    public override IEnumerable<string> Aliases => ["start", "newgame"];
+
+    public override string Usage => "'/hunt reset': Reset hunter power ups and start a new session.";
+
+    public override bool Execute(HuntCommand parent, ICommandSender commandSender, string[] arguments)
+    {
+        if (!MaxArguments(commandSender, arguments, 0)) return false;
+
+        parent.StartNewSession();
+        return true;
+    }
 }
 
 internal class StatusSubcommand : Subcommand<HuntCommand>
@@ -44,19 +63,17 @@ internal class StatusSubcommand : Subcommand<HuntCommand>
     }
 }
 
-internal class ResetSubcommand : Subcommand<HuntCommand>
+internal class UpdateArchitectCommand : Subcommand<HuntCommand>
 {
-    public override string Name => "reset";
+    public override string Name => "update-architect";
 
-    public override IEnumerable<string> Aliases => ["start", "newgame"];
-
-    public override string Usage => "'/hunt reset': Reset hunter power ups and start a new session.";
+    public override string Usage => "'/hunt update-architect': Reload Architect-Server levels and notify clients.";
 
     public override bool Execute(HuntCommand parent, ICommandSender commandSender, string[] arguments)
     {
         if (!MaxArguments(commandSender, arguments, 0)) return false;
 
-        parent.StartNewSession();
+        parent.UpdateArchitectLevels();
         return true;
     }
 }

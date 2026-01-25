@@ -1,4 +1,5 @@
-﻿using Silksong.TheHuntIsOn.Modules.EventsModule;
+﻿using Silksong.TheHuntIsOn.Modules.ArchitectModule;
+using Silksong.TheHuntIsOn.Modules.EventsModule;
 using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.Modules.PauseTimerModule;
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
@@ -26,7 +27,8 @@ internal class HuntServerAddon : ServerAddon
 
     private readonly HuntCommand huntCommand;
     private readonly PauseTimerCommand pauseTimerCommand;
-    private readonly EventsModuleAddon eventsModuleAddon;
+    private readonly EventsModuleServerAddon eventsModuleServerAddon;
+    private readonly ArchitectModuleServerAddon architectModuleServerAddon;
 
     private ModuleDataset? moduleDataset;
 
@@ -36,12 +38,14 @@ internal class HuntServerAddon : ServerAddon
         add => huntCommand.OnGameReset += value;
         remove => huntCommand.OnGameReset -= value;
     }
+    internal void UpdateArchitectLevels() => architectModuleServerAddon.Refresh();
 
     internal HuntServerAddon()
     {
-        huntCommand = new();
+        huntCommand = new(this);
         pauseTimerCommand = new(this);
-        eventsModuleAddon = new(this);
+        architectModuleServerAddon = new(this);
+        eventsModuleServerAddon = new(this);
     }
 
     public override void Initialize(IServerApi serverApi)
@@ -58,7 +62,8 @@ internal class HuntServerAddon : ServerAddon
 
         HandleServerPacket<ModuleDataset>(OnModuleDataset);
         HandleServerPacket<ReportDesync>(OnReportDesync);
-        HandleServerPacket<SpeedrunnerEventsDelta>(eventsModuleAddon.OnSpeedrunnerEventsDelta);
+        HandleServerPacket<RequestArchitectLevelData>(architectModuleServerAddon.OnRequestArchitectLevelData);
+        HandleServerPacket<SpeedrunnerEventsDelta>(eventsModuleServerAddon.OnSpeedrunnerEventsDelta);
     }
 
     private readonly Dictionary<ServerPacketId, Func<IPacketData>> packetGenerators = [];

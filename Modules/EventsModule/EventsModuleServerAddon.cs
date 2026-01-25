@@ -3,7 +3,7 @@ using Silksong.TheHuntIsOn.Util;
 
 namespace Silksong.TheHuntIsOn.Modules.EventsModule;
 
-internal class EventsModuleAddon
+internal class EventsModuleServerAddon
 {
     private readonly HuntServerAddon serverAddon;
     private readonly ParsedEventsData parsedEventsData = ParsedEventsData.Load();
@@ -11,7 +11,7 @@ internal class EventsModuleAddon
     private readonly DeltaBaseWrapper<SpeedrunnerEvents, SpeedrunnerEventsDelta> speedrunnerEvents = new();
     private readonly HunterItemGrants hunterItemGrants = new();
 
-    internal EventsModuleAddon(HuntServerAddon serverAddon)
+    internal EventsModuleServerAddon(HuntServerAddon serverAddon)
     {
         this.serverAddon = serverAddon;
 

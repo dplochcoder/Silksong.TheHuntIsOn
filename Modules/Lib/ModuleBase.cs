@@ -1,8 +1,6 @@
 ﻿using Silksong.ModMenu.Elements;
 using Silksong.TheHuntIsOn.Menu;
-using Silksong.TheHuntIsOn.Modules.EventsModule;
 using System.Collections.Generic;
-using System.Reflection;
 
 namespace Silksong.TheHuntIsOn.Modules.Lib;
 
@@ -34,6 +32,7 @@ internal abstract class ModuleBase
     public virtual void OnDisabled() { }
 
     public static IEnumerable<ModuleBase> GetAllModules() => [
+        new ArchitectModule.ArchitectModule(),
         new BindModule(),
         new DeathPenaltyModule(),
         new EventsModule.EventsModule(),

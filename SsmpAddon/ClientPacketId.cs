@@ -2,6 +2,8 @@
 
 internal enum ClientPacketId
 {
+    ArchitectLevelData,
+    ArchitectLevelsMetadata,
     HunterItemGrants,
     HunterItemGrantsDelta,
     ModuleDataset,

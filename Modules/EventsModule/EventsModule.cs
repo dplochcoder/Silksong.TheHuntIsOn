@@ -12,14 +12,14 @@ internal class EventsModule : Module<EventsModule, EmptySettings, EmptySubMenu, 
 
     public EventsModule()
     {
-        HuntClientAddon.OnHunterItemGrants += hunterItemGranter.Reset;
-        HuntClientAddon.OnHunterItemGrantsDelta += delta =>
+        HuntClientAddon.On<HunterItemGrants>.Received += hunterItemGranter.Reset;
+        HuntClientAddon.On<HunterItemGrantsDelta>.Received += delta =>
         {
             hunterItemGranter.Update(delta, out var desynced);
             reportDesync |= desynced;
         };
-        HuntClientAddon.OnSpeedrunnerEvents += speedrunnerEvents => this.speedrunnerEvents.Clear();
-        HuntClientAddon.OnSpeedrunnerEventsDelta += speedrunnerEventsDelta => speedrunnerEvents.Update(speedrunnerEventsDelta);
+        HuntClientAddon.On<SpeedrunnerEvents>.Received += speedrunnerEvents => this.speedrunnerEvents.Clear();
+        HuntClientAddon.On<SpeedrunnerEventsDelta>.Received += speedrunnerEventsDelta => speedrunnerEvents.Update(speedrunnerEventsDelta);
     }
 
     protected override EventsModule Self() => this;

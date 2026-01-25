@@ -1,4 +1,5 @@
-﻿using Silksong.TheHuntIsOn.Modules.EventsModule;
+﻿using Silksong.TheHuntIsOn.Modules.ArchitectModule;
+using Silksong.TheHuntIsOn.Modules.EventsModule;
 using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.Modules.PauseTimerModule;
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
@@ -34,12 +35,14 @@ internal class HuntClientAddon : TogglableClientAddon
         sender = api.NetClient.GetNetworkSender<ServerPacketId>(this);
         receiver = api.NetClient.GetNetworkReceiver<ClientPacketId>(this, InstantiatePacket);
 
-        HandleClientPacket<HunterItemGrants>(packet => OnHunterItemGrants?.Invoke(packet));
-        HandleClientPacket<HunterItemGrantsDelta>(packet => OnHunterItemGrantsDelta?.Invoke(packet));
-        HandleClientPacket<ModuleDataset>(packet => OnModuleDataset?.Invoke(packet));
-        HandleClientPacket<ServerPauseState>(packet => OnServerPauseState?.Invoke(packet));
-        HandleClientPacket<SpeedrunnerEvents>(packet => OnSpeedrunnerEvents?.Invoke(packet));
-        HandleClientPacket<SpeedrunnerEventsDelta>(packet => OnSpeedrunnerEventsDelta?.Invoke(packet));
+        HandleClientPacket<ArchitectLevelData>();
+        HandleClientPacket<ArchitectLevelsMetadata>();
+        HandleClientPacket<HunterItemGrants>();
+        HandleClientPacket<HunterItemGrantsDelta>();
+        HandleClientPacket<ModuleDataset>();
+        HandleClientPacket<ServerPauseState>();
+        HandleClientPacket<SpeedrunnerEvents>();
+        HandleClientPacket<SpeedrunnerEventsDelta>();
 
         Instance = this;
     }
@@ -52,11 +55,20 @@ internal class HuntClientAddon : TogglableClientAddon
 
     private IPacketData InstantiatePacket(ClientPacketId packetId) => packetGenerators.TryGetValue(packetId, out var gen) ? gen() : throw new ArgumentException($"Unknown id: {packetId}");
 
-    private void HandleClientPacket<T>(Action<T> handler) where T : IIdentifiedPacket<ClientPacketId>, new()
+    // Add-on classes use events for communication to avoid direct communication with plugin classes.
+    // This is necessary for the addons to work on dedicated servers, which do not have Silksong assemblies available.
+    internal class On<T> where T : IIdentifiedPacket<ClientPacketId>
+    {
+        public static event Action<T>? Received;
+
+        internal static void Invoke(T packet) => Received?.Invoke(packet);
+    }
+
+    private void HandleClientPacket<T>() where T : IIdentifiedPacket<ClientPacketId>, new()
     {
         var id = new T().Identifier;
         packetGenerators.Add(id, () => new T());
-        receiver!.RegisterPacketHandler<T>(id, data => handler(data));
+        receiver!.RegisterPacketHandler<T>(id, On<T>.Invoke);
     }
 
     internal void SendMessage(string message) => api?.UiManager.ChatBox.AddMessage(message);
@@ -66,13 +78,4 @@ internal class HuntClientAddon : TogglableClientAddon
         if (packet.Single) sender?.SendSingleData(packet.Identifier, packet);
         else sender?.SendCollectionData(packet.Identifier, packet);
     }
-
-    // Add-on classes use events for communication to avoid direct communication with plugin classes.
-    // This is necessary for the addons to work on dedicated servers, which do not have Silksong assemblies available.
-    internal static event Action<HunterItemGrants>? OnHunterItemGrants;
-    internal static event Action<HunterItemGrantsDelta>? OnHunterItemGrantsDelta;
-    internal static event Action<ModuleDataset>? OnModuleDataset;
-    internal static event Action<ServerPauseState>? OnServerPauseState;
-    internal static event Action<SpeedrunnerEvents>? OnSpeedrunnerEvents;
-    internal static event Action<SpeedrunnerEventsDelta>? OnSpeedrunnerEventsDelta;
 }

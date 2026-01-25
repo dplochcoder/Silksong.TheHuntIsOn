@@ -2,6 +2,7 @@
 using SSMP.Networking.Packet;
 using System;
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 
@@ -62,6 +63,9 @@ internal static class IWireInterfaceExtensions
     internal static void ReadData(this ref float self, IPacket packet) => self = packet.ReadFloat();
     internal static void WriteData(this float self, IPacket packet) => packet.Write(self);
 
+    internal static void ReadData(this ref Vector2 self, IPacket packet) => self = (Vector2)packet.ReadVector2();
+    internal static void WriteData(this Vector2 self, IPacket packet) => packet.Write((SSMP.Math.Vector2)self);
+
     internal static void ReadData(this ref long self, IPacket packet) => self = packet.ReadLong();
     internal static void WriteData(this long self, IPacket packet) => packet.Write(self);
 
@@ -121,13 +125,13 @@ internal static class IWireInterfaceExtensions
 
     internal static void ReadData<T>(this ICollection<T> self, IPacket packet) where T : IWireInterface, new() => self.ReadData(packet, ReadIntoNew<T>);
 
-    internal static void WriteData<T>(this ICollection<T> self, IPacket packet, Action<IPacket, T> write)
+    internal static void WriteData<T>(this IReadOnlyCollection<T> self, IPacket packet, Action<IPacket, T> write)
     {
         packet.WriteVarint(self.Count);
         foreach (var item in self) write(packet, item);
     }
 
-    internal static void WriteData<T>(this ICollection<T> self, IPacket packet) where T : IWireInterface => self.WriteData(packet, Write<T>);
+    internal static void WriteData<T>(this IReadOnlyCollection<T> self, IPacket packet) where T : IWireInterface => self.WriteData(packet, Write<T>);
 
     internal static void ReadData<T>(this HashMultiset<T> self, IPacket packet, Func<IPacket, T> read)
     {
@@ -169,7 +173,7 @@ internal static class IWireInterfaceExtensions
 
     internal static void ReadData<K, V>(this IDictionary<K, V> self, IPacket packet, Func<IPacket, K> readKey) where V : IWireInterface, new() => self.ReadData(packet, readKey, ReadIntoNew<V>);
 
-    internal static void WriteData<K, V>(this IDictionary<K, V> self, IPacket packet, Action<IPacket, K> writeKey, Action<IPacket, V> writeValue)
+    internal static void WriteData<K, V>(this IReadOnlyDictionary<K, V> self, IPacket packet, Action<IPacket, K> writeKey, Action<IPacket, V> writeValue)
     {
         packet.WriteVarint(self.Count);
         foreach (var e in self)
@@ -179,5 +183,31 @@ internal static class IWireInterfaceExtensions
         }
     }
 
-    internal static void WriteData<K, V>(this IDictionary<K, V> self, IPacket packet, Action<IPacket, K> writeKey) where V : IWireInterface => self.WriteData(packet, writeKey, Write<V>);
+    internal static void WriteData<K, V>(this IReadOnlyDictionary<K, V> self, IPacket packet, Action<IPacket, K> writeKey) where V : IWireInterface => self.WriteData(packet, writeKey, Write<V>);
+
+    internal static void ReadData<K, V>(this ListMultimap<K, V> self, IPacket packet, Func<IPacket, K> readKey, Func<IPacket, V> readValue)
+    {
+        int count = packet.ReadVarint();
+        for (int i = 0; i < count; i++)
+        {
+            var key = readKey(packet);
+            List<V> values = [];
+            values.ReadData(packet, readValue);
+            self.Add(key, values);
+        }
+    }
+
+    internal static void ReadData<K, V>(this ListMultimap<K, V> self, IPacket packet, Func<IPacket, K> readKey) where V : IWireInterface, new() => self.ReadData(packet, readKey, ReadIntoNew<V>);
+
+    internal static void WriteData<K, V>(this ListMultimap<K, V> self, IPacket packet, Action<IPacket, K> writeKey, Action<IPacket, V> writeValue)
+    {
+        packet.WriteVarint(self.Keys.Count);
+        foreach (var (key, values) in self)
+        {
+            writeKey(packet, key);
+            values.WriteData(packet, writeValue);
+        }
+    }
+
+    internal static void WriteData<K, V>(this ListMultimap<K, V> self, IPacket packet, Action<IPacket, K> writeKey) where V : IWireInterface, new() => self.WriteData(packet, writeKey, Write<V>);
 }

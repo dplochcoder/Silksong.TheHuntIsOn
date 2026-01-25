@@ -50,9 +50,11 @@
   </ItemGroup>
 
   <ItemGroup Condition="$(UseLocalRefs)">
+    <LocalReferences Include="$(SilksongPluginsFolder)/cometcake575-Architect/Architect.dll" />
     <LocalReferences Include="$(SilksongPluginsFolder)/dplochcoder-PurenailUtil/Silksong.PurenailUtil.dll" />
   </ItemGroup>
   <ItemGroup Condition="!$(UseLocalRefs)">
+    <PackageReference Include="Silksong.Architect" Version="3.10.19" PrivateAssets="all" />
     <!-- FIXME: PurenailUtil -->
   </ItemGroup>
 
@@ -72,7 +74,7 @@
 
   <ItemGroup>
     <Folder Remove="thunderstore/temp;thunderstore/dist" />
-    <Folder Include="Resources\Data\" />
+    <Folder Include="Resources\Data\Architect\" />
     <None Include="README.md" Pack="True" PackagePath="README.md" />
     <None Include="thunderstore/icon.png" Pack="True" PackagePath="icon.png" />
   </ItemGroup>

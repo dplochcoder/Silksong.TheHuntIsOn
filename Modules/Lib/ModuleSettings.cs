@@ -1,4 +1,5 @@
-﻿using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
+﻿using Silksong.TheHuntIsOn.Modules.ArchitectModule;
+using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using Silksong.TheHuntIsOn.Util;
 using SSMP.Networking.Packet;
 using System;
@@ -8,6 +9,7 @@ namespace Silksong.TheHuntIsOn.Modules.Lib;
 internal enum ModuleSettingsType
 {
     Empty,
+    Architect,
     Bind,
     DeathPenalty,
     Healing,
@@ -34,6 +36,7 @@ internal class ModuleSettingsFactory : IDynamicValueFactory<ModuleSettingsType, 
     public ModuleSettings Create(ModuleSettingsType type) => type switch
     {
         ModuleSettingsType.Empty => new EmptySettings(),
+        ModuleSettingsType.Architect => new ArchitectSettings(),
         ModuleSettingsType.Bind => new BindSettings(),
         ModuleSettingsType.DeathPenalty => new DeathPenaltySettings(),
         ModuleSettingsType.Healing => new HealingSettings(),
