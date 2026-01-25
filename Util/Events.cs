@@ -2,9 +2,11 @@
 using MonoDetour.HookGen;
 using Silksong.PurenailUtil.Collections;
 using System;
+using UnityEngine.SceneManagement;
 
 namespace Silksong.TheHuntIsOn.Util;
 
+[MonoDetourTargets(typeof(GameManager))]
 [MonoDetourTargets(typeof(HeroController))]
 [MonoDetourTargets(typeof(PlayMakerFSM))]
 internal static class Events
@@ -24,6 +26,18 @@ internal static class Events
     {
         foreach (var modifier in pdIntModifiers.Get(name)) orig -= modifier();
         return orig;
+    }
+
+    internal static event Action<Scene>? OnNewScene;
+    private static readonly HashMultimap<string, Action<Scene>> sceneEditsByName = [];
+
+    internal static void AddSceneEdit(string sceneName, Action<Scene> edit) => sceneEditsByName.Add(sceneName, edit);
+    internal static void RemoveSceneEdit(string sceneName, Action<Scene> edit) => sceneEditsByName.Remove(sceneName, edit);
+
+    private static void OnLevelActivated(GameManager self, ref Scene before, ref Scene after)
+    {
+        OnNewScene?.Invoke(after);
+        foreach (var edit in sceneEditsByName.Get(after.name)) edit(after);
     }
 
     private static readonly HashMultimap<string, Action<PlayMakerFSM>> fsmEditsByName = [];
@@ -49,6 +63,7 @@ internal static class Events
     {
         PrepatcherPlugin.PlayerDataVariableEvents<int>.OnGetVariable += OverrideGetPdInt;
         PrepatcherPlugin.PlayerDataVariableEvents<int>.OnSetVariable += OverrideSetPdInt;
+        Md.GameManager.LevelActivated.Postfix(OnLevelActivated);
         Md.HeroController.Update.Postfix(PostfixOnHeroUpdate);
         Md.PlayMakerFSM.OnEnable.Postfix(OnEnablePlayMakerFSM);
     }

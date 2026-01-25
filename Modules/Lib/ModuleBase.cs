@@ -32,10 +32,6 @@ internal abstract class ModuleBase
 
     public virtual void OnDisabled() { }
 
-    public virtual void OnGlobalConfigUpdated() { }
-
-    public virtual void OnLocalConfigUpdated() { }
-
     public static IEnumerable<ModuleBase> GetAllModulesInAssembly()
     {
         foreach (var type in Assembly.GetExecutingAssembly().GetTypes())

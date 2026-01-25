@@ -41,10 +41,7 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
     private void UpdateModulesGlobal()
     {
         foreach (var module in modules.Values)
-        {
             module.Enabled = GlobalSaveData.Enabled && GlobalSaveData.ModuleDataset.TryGetValue(module.Name, out var data) && data.IsEnabled(GlobalSaveData.Role);
-            module.OnGlobalConfigUpdated();
-        }
     }
 
     private void OnModuleDataset(ModuleDataset moduleDataset) => GlobalSaveData = GlobalSaveData with { ModuleDataset = moduleDataset };
