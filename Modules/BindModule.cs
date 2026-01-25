@@ -59,7 +59,7 @@ internal class BindModule : GlobalSettingsModule<BindModule, BindSettings, BindS
     }
 
     // FIXME: Fix UI
-    static BindModule() => Events.AddFsmEdit("Hero_Hornet", "Bind", EditBindFsm);
+    static BindModule() => Events.AddFsmEdit("Hero_Hornet(Clone)", "Bind", EditBindFsm);
 }
 
 internal class BindSubMenu : ModuleSubMenu<BindSettings>
