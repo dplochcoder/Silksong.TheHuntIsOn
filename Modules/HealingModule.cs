@@ -1,5 +1,4 @@
-﻿using HutongGames.PlayMaker;
-using HutongGames.PlayMaker.Actions;
+﻿using HutongGames.PlayMaker.Actions;
 using MonoDetour.DetourTypes;
 using MonoDetour.HookGen;
 using Silksong.FsmUtil;

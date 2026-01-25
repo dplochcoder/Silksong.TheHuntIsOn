@@ -15,6 +15,11 @@ internal class PauseTimerCommand : IServerCommand
         this.serverAddon = serverAddon;
 
         serverAddon.OnUpdatePlayer += player => serverAddon.SendToPlayer(player, state);
+        serverAddon.OnGameReset += () =>
+        {
+            state.Clear();
+            serverAddon.Broadcast(state);
+        };
     }
 
     public string Trigger => "/pausetimer";

@@ -40,6 +40,13 @@ internal class ServerPauseState : IIdentifiedPacket<ClientPacketId>
         UnpauseTimeTicks.WriteData(packet);
     }
 
+    public void Clear()
+    {
+        Countdowns.Clear();
+        ServerPaused = false;
+        UnpauseTimeTicks = long.MaxValue;
+    }
+
     public void UpdateCountdowns(DateTime now) => Countdowns = [.. Countdowns.Where(c => !c.IsCompleted(now))];
 
     public bool IsServerPaused(out float? remainingSeconds)

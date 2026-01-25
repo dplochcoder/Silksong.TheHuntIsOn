@@ -24,9 +24,25 @@ internal class HuntServerAddon : ServerAddon
     private IServerAddonNetworkSender<ClientPacketId>? sender;
     private IServerAddonNetworkReceiver<ServerPacketId>? receiver;
 
+    private readonly HuntCommand huntCommand;
+    private readonly PauseTimerCommand pauseTimerCommand;
+    private readonly EventsModuleAddon eventsModuleAddon;
+
     private ModuleDataset? moduleDataset;
 
     internal event Action<IServerPlayer>? OnUpdatePlayer;
+    internal event Action? OnGameReset
+    {
+        add => huntCommand.OnGameReset += value;
+        remove => huntCommand.OnGameReset -= value;
+    }
+
+    internal HuntServerAddon()
+    {
+        huntCommand = new();
+        pauseTimerCommand = new(this);
+        eventsModuleAddon = new(this);
+    }
 
     public override void Initialize(IServerApi serverApi)
     {
@@ -37,13 +53,12 @@ internal class HuntServerAddon : ServerAddon
         api.ServerManager.PlayerConnectEvent += player => OnUpdatePlayer?.Invoke(player);
         OnUpdatePlayer += SendModuleDataset;
 
-        api.CommandManager.RegisterCommand(new HuntCommand());
-        api.CommandManager.RegisterCommand(new PauseTimerCommand(this));
-        EventsModuleAddon eventsAddon = new(this);
+        api.CommandManager.RegisterCommand(huntCommand);
+        api.CommandManager.RegisterCommand(pauseTimerCommand);
 
         HandleServerPacket<ModuleDataset>(OnModuleDataset);
         HandleServerPacket<ReportDesync>(OnReportDesync);
-        HandleServerPacket<SpeedrunnerEventsDelta>(eventsAddon.OnSpeedrunnerEventsDelta);
+        HandleServerPacket<SpeedrunnerEventsDelta>(eventsModuleAddon.OnSpeedrunnerEventsDelta);
     }
 
     private readonly Dictionary<ServerPacketId, Func<IPacketData>> packetGenerators = [];

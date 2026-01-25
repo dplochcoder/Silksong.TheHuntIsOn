@@ -16,13 +16,18 @@ internal class EventsModuleAddon
     {
         this.serverAddon = serverAddon;
 
-        serverAddon.OnUpdatePlayer += OnUpdatePlayer;
-    }
-
-    internal void OnUpdatePlayer(IServerPlayer player)
-    {
-        serverAddon.SendToPlayer(player, speedrunnerEvents.Value);
-        serverAddon.SendToPlayer(player, hunterItemGrants);
+        serverAddon.OnUpdatePlayer += player =>
+        {
+            serverAddon.SendToPlayer(player, speedrunnerEvents.Value);
+            serverAddon.SendToPlayer(player, hunterItemGrants);
+        };
+        serverAddon.OnGameReset += () =>
+        {
+            speedrunnerEvents.Reset();
+            hunterItemGrants.Clear();
+            serverAddon.Broadcast(speedrunnerEvents.Value);
+            serverAddon.Broadcast(hunterItemGrants);
+        };
     }
 
 #pragma warning disable IDE0060 // Remove unused parameter
