@@ -27,7 +27,7 @@ internal class ModuleMultiMenu
 
     private static (IChoiceModel<ModuleActivation>, string) GetChoiceModel(ModuleBase module) => module.ModuleActivationType switch
     {
-        ModuleActivationType.OnOffOnly => (ChoiceModels.ForNamedValues([(Modules.Lib.ModuleActivation.Inactive, "Inactivew"), (Modules.Lib.ModuleActivation.EveryoneSame, "Active")]), "Whether this module should be active or not."),
+        ModuleActivationType.OnOffOnly => (ChoiceModels.ForNamedValues([(Modules.Lib.ModuleActivation.Inactive, "Inactive"), (Modules.Lib.ModuleActivation.EveryoneSame, "Active")]), "Whether this module should be active or not."),
         ModuleActivationType.AnyConfiguration => (ChoiceModels.ForEnum<ModuleActivation>(), "Which teams this module should be enabled for."),
         _ => throw new ArgumentException($"Unsupported enum: {module.ModuleActivationType}"),
     };

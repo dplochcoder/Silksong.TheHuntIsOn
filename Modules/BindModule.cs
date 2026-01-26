@@ -64,10 +64,12 @@ internal class BindModule : GlobalSettingsModule<BindModule, BindSettings, BindS
 
 internal class BindSubMenu : ModuleSubMenu<BindSettings>
 {
-    private readonly ChoiceElement<int> HealMasks = new("Heal Masks", CollectionUtil.IntRangeModel(0, 10), "Number of masks to heal when binding.");
-    private readonly ChoiceElement<int> MultibinderHealMasks = new("Multibinder Heal Masks", CollectionUtil.IntRangeModel(0, 5), "Number of masks to heal when multi-binding.");
-    private readonly ChoiceElement<int> SilkCost = new("Silk Cost", CollectionUtil.IntRangeModel(1, 18), "Number of silk spools required to bind.");
-    private readonly ChoiceElement<float> TimePenalty = new("Time Penalty", ChoiceModels.ForValues([0.25f, 0.5f, 0.75f, 1f, 1.5f, 2f, 3f]), "Multiplier on the time it takes to bind.");
+    private static ListChoiceModel<float> PercentageModel(List<float> values) => new(values) { DisplayFn = (idx, value) => $"{value * 100:0.#}%" };
+
+    private readonly ChoiceElement<int> HealMasks = new("Heal Masks", ChoiceModelUtil.IntRangeModel(0, 10).FormatIntDelta(3), "Number of masks to heal when binding.");
+    private readonly ChoiceElement<int> MultibinderHealMasks = new("Multibinder Heal Masks", ChoiceModelUtil.IntRangeModel(0, 10).FormatIntDelta(2), "Number of masks to heal when multi-binding.");
+    private readonly ChoiceElement<int> SilkCost = new("Silk Cost", ChoiceModelUtil.IntRangeModel(1, 18).FormatIntDelta(9), "Number of silk spools required to bind.");
+    private readonly ChoiceElement<float> TimePenalty = new("Time Penalty", PercentageModel([0.25f, 0.5f, 0.75f, 1f, 1.5f, 2f, 3f]), "Multiplier on the time it takes to bind.");
 
     public override IEnumerable<MenuElement> Elements() => [HealMasks, MultibinderHealMasks, SilkCost, TimePenalty];
 

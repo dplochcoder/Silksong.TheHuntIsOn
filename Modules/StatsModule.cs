@@ -58,8 +58,8 @@ internal class StatsModule : GlobalSettingsModule<StatsModule, StatsSettings, St
 
 internal class StatsSubMenu : ModuleSubMenu<StatsSettings>
 {
-    private readonly ChoiceElement<int> StartingMasks = new("Starting Masks", CollectionUtil.IntRangeModel(1, 10), "Number of masks players start with.");
-    private readonly ChoiceElement<int> StartingSilkSpools = new("Starting Silk Spools", CollectionUtil.IntRangeModel(1, 18), "Number of silk spools players start with.");
+    private readonly ChoiceElement<int> StartingMasks = new("Starting Masks", ChoiceModelUtil.IntRangeModel(1, 10).FormatIntDelta(5), "Number of masks players start with.");
+    private readonly ChoiceElement<int> StartingSilkSpools = new("Starting Silk Spools", ChoiceModelUtil.IntRangeModel(1, 18).FormatIntDelta(9), "Number of silk spools players start with.");
 
     public override IEnumerable<MenuElement> Elements() => [StartingMasks, StartingSilkSpools];
 

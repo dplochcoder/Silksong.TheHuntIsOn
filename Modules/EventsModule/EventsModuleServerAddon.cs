@@ -6,7 +6,7 @@ namespace Silksong.TheHuntIsOn.Modules.EventsModule;
 internal class EventsModuleServerAddon
 {
     private readonly HuntServerAddon serverAddon;
-    private readonly ParsedEventsData parsedEventsData = ParsedEventsData.Load();
+    private ParsedEventsData parsedEventsData = ParsedEventsData.Load();
 
     private readonly DeltaBaseWrapper<SpeedrunnerEvents, SpeedrunnerEventsDelta> speedrunnerEvents = new();
     private readonly HunterItemGrants hunterItemGrants = new();
@@ -20,13 +20,21 @@ internal class EventsModuleServerAddon
             serverAddon.SendToPlayer(player, speedrunnerEvents.Value);
             serverAddon.SendToPlayer(player, hunterItemGrants);
         };
-        serverAddon.OnGameReset += () =>
-        {
-            speedrunnerEvents.Reset();
-            hunterItemGrants.Clear();
-            serverAddon.Broadcast(speedrunnerEvents.Value);
-            serverAddon.Broadcast(hunterItemGrants);
-        };
+        serverAddon.OnGameReset += OnGameReset;
+    }
+
+    private void OnGameReset()
+    {
+        speedrunnerEvents.Reset();
+        hunterItemGrants.Clear();
+        serverAddon.Broadcast(speedrunnerEvents.Value);
+        serverAddon.Broadcast(hunterItemGrants);
+    }
+
+    internal void Refresh()
+    {
+        parsedEventsData = ParsedEventsData.Load();
+        OnGameReset();
     }
 
 #pragma warning disable IDE0060 // Remove unused parameter

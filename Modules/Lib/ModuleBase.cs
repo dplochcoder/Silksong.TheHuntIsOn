@@ -34,7 +34,7 @@ internal abstract class ModuleBase
     public static IEnumerable<ModuleBase> GetAllModules() => [
         new ArchitectModule.ArchitectModule(),
         new BindModule(),
-        new DeathPenaltyModule(),
+        new DeathModule(),
         new EventsModule.EventsModule(),
         new HealingModule(),
         new PauseTimerModule.PauseTimerModule(),

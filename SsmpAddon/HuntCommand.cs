@@ -26,6 +26,8 @@ internal class HuntCommand(HuntServerAddon serverAddon) : IServerCommand
 
     internal void UpdateArchitectLevels() => serverAddon.UpdateArchitectLevels();
 
+    internal void UpdateEvents() => serverAddon.UpdateEvents();
+
     public void Execute(ICommandSender commandSender, string[] arguments) => subcommands.Execute(this, commandSender, arguments);
 }
 
@@ -74,6 +76,21 @@ internal class UpdateArchitectCommand : Subcommand<HuntCommand>
         if (!MaxArguments(commandSender, arguments, 0)) return false;
 
         parent.UpdateArchitectLevels();
+        return true;
+    }
+}
+
+internal class UpdateEventsCommand : Subcommand<HuntCommand>
+{
+    public override string Name => "update-events";
+
+    public override string Usage => "'/hunt update-events': Reload events.json on the server and notify clients.";
+
+    public override bool Execute(HuntCommand parent, ICommandSender commandSender, string[] arguments)
+    {
+        if (!MaxArguments(commandSender, arguments, 0)) return false;
+
+        parent.UpdateEvents();
         return true;
     }
 }

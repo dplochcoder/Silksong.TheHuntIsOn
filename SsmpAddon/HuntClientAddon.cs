@@ -15,7 +15,7 @@ internal class HuntClientAddon : TogglableClientAddon
 {
     internal static HuntClientAddon? Instance { get; private set; }
 
-    internal static bool IsConnected => Instance?.api?.NetClient.IsConnected ?? false;
+    internal static bool IsConnected => Instance != null && !Instance.Disabled && (Instance.api?.NetClient.IsConnected ?? false);
 
     public override bool NeedsNetwork => true;
 

@@ -11,9 +11,9 @@ using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn.Modules;
 
-internal class DeathPenaltySettings : ModuleSettings<DeathPenaltySettings>
+internal class DeathSettings : ModuleSettings<DeathSettings>
 {
-    public override ModuleSettingsType DynamicType => ModuleSettingsType.DeathPenalty;
+    public override ModuleSettingsType DynamicType => ModuleSettingsType.Death;
 
     public int RespawnTimer = 0;
     public bool SpawnCoccoon = true;
@@ -38,11 +38,11 @@ internal class DeathPenaltySettings : ModuleSettings<DeathPenaltySettings>
 }
 
 [MonoDetourTargets(typeof(HeroController))]
-internal class DeathPenaltyModule : GlobalSettingsModule<DeathPenaltyModule, DeathPenaltySettings, DeathPenaltySubMenu>
+internal class DeathModule : GlobalSettingsModule<DeathModule, DeathSettings, DeathSubMenu>
 {
-    protected override DeathPenaltyModule Self() => this;
+    protected override DeathModule Self() => this;
 
-    public override string Name => "DeathPenalty";
+    public override string Name => "Death";
 
     public override ModuleActivationType ModuleActivationType => ModuleActivationType.AnyConfiguration;
 
@@ -84,22 +84,22 @@ internal class DeathPenaltyModule : GlobalSettingsModule<DeathPenaltyModule, Dea
     private static void Hook() => Md.HeroController.Die.Postfix(ExtendDeath);
 }
 
-internal class DeathPenaltySubMenu : ModuleSubMenu<DeathPenaltySettings>
+internal class DeathSubMenu : ModuleSubMenu<DeathSettings>
 {
     private readonly ChoiceElement<int> RespawnTimer = new("Respawn Timer", ChoiceModels.ForValues([0, 10, 20, 30, 45, 60, 90, 120, 180, 300]), "Seconds to wait to respawn after death.");
     private readonly ChoiceElement<bool> SpawnCoccoon = new("Spawn Coccoon", ChoiceModels.ForBool(), "If false, don't spawn coccoons at all.");
     private readonly ChoiceElement<bool> LoseRosaries = new("Lose Rosaries", ChoiceModels.ForBool(), "If false, don't lose rosaries on death.");
     private readonly ChoiceElement<bool> LimitSilk = new("Limit Silk", ChoiceModels.ForBool(), "If false, don't restrict silk on death.");
 
-    public DeathPenaltySubMenu() => SpawnCoccoon.OnValueChanged += value =>
+    public DeathSubMenu() => SpawnCoccoon.OnValueChanged += value =>
     {
         LoseRosaries.Interactable = value;
         LimitSilk.Interactable = value;
     };
 
-    public override IEnumerable<MenuElement> Elements() => [SpawnCoccoon, LoseRosaries, LimitSilk];
+    public override IEnumerable<MenuElement> Elements() => [RespawnTimer, SpawnCoccoon, LoseRosaries, LimitSilk];
 
-    internal override void Apply(DeathPenaltySettings data)
+    internal override void Apply(DeathSettings data)
     {
         RespawnTimer.Value = data.RespawnTimer;
         SpawnCoccoon.Value = data.SpawnCoccoon;
@@ -107,7 +107,7 @@ internal class DeathPenaltySubMenu : ModuleSubMenu<DeathPenaltySettings>
         LimitSilk.Value = data.LimitSilk;
     }
 
-    internal override DeathPenaltySettings Export() => new()
+    internal override DeathSettings Export() => new()
     {
         RespawnTimer = RespawnTimer.Value,
         SpawnCoccoon = SpawnCoccoon.Value,

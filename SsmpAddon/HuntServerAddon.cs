@@ -25,10 +25,10 @@ internal class HuntServerAddon : ServerAddon
     private IServerAddonNetworkSender<ClientPacketId>? sender;
     private IServerAddonNetworkReceiver<ServerPacketId>? receiver;
 
+    private readonly ArchitectModuleServerAddon architectModuleServerAddon;
+    private readonly EventsModuleServerAddon eventsModuleServerAddon;
     private readonly HuntCommand huntCommand;
     private readonly PauseTimerCommand pauseTimerCommand;
-    private readonly EventsModuleServerAddon eventsModuleServerAddon;
-    private readonly ArchitectModuleServerAddon architectModuleServerAddon;
 
     private ModuleDataset? moduleDataset;
 
@@ -39,13 +39,14 @@ internal class HuntServerAddon : ServerAddon
         remove => huntCommand.OnGameReset -= value;
     }
     internal void UpdateArchitectLevels() => architectModuleServerAddon.Refresh();
+    internal void UpdateEvents() => eventsModuleServerAddon.Refresh();
 
     internal HuntServerAddon()
     {
-        huntCommand = new(this);
-        pauseTimerCommand = new(this);
         architectModuleServerAddon = new(this);
         eventsModuleServerAddon = new(this);
+        huntCommand = new(this);
+        pauseTimerCommand = new(this);
     }
 
     public override void Initialize(IServerApi serverApi)

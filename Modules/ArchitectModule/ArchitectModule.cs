@@ -30,7 +30,7 @@ internal class ArchitectModule : GlobalSettingsModule<ArchitectModule, Architect
 
     protected override ArchitectModule Self() => this;
 
-    public override string Name => "Deployers";
+    public override string Name => "Architect";
 
     public override ModuleActivationType ModuleActivationType => ModuleActivationType.AnyConfiguration;
 

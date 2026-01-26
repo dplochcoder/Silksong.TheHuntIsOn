@@ -2,6 +2,7 @@
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using SSMP.Api.Command.Server;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Silksong.TheHuntIsOn.Modules.PauseTimerModule;
@@ -202,6 +203,8 @@ internal class CountdownSubcommand : Subcommand<PauseTimerCommand>
 internal class ClearCountdownsSubcommand : Subcommand<PauseTimerCommand>
 {
     public override string Name => "clearcountdowns";
+
+    public override IEnumerable<string> Aliases => ["clear"];
 
     public override string Usage => "'/pt clearcountdowns': clear all outstanding countdowns";
 
