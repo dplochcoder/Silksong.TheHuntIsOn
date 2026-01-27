@@ -54,6 +54,8 @@ internal class ClientArchitectLevelManager : BaseArchitectLevelManager
     private DiskArchitectLevelsMetadata HashDisk()
     {
         DiskArchitectLevelsMetadata metadata = new();
+        if (!Directory.Exists(diskFolder)) return metadata;
+
         foreach (var groupDir in Directory.EnumerateDirectories(diskFolder))
         {
             DiskArchitectLevelMetadata groupMetadata = new();
@@ -232,6 +234,8 @@ internal class ClientArchitectLevelManager : BaseArchitectLevelManager
 
         if (!diskMetadata.Metadata.TryGetValue(groupId, out var groupMetadata))
         {
+            if (!Directory.Exists(diskFolder)) Directory.CreateDirectory(diskFolder);
+
             Directory.CreateDirectory(DiskGroupPath(groupId));
             groupMetadata = new();
             diskMetadata.Metadata.Add(groupId, groupMetadata);

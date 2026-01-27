@@ -1,4 +1,5 @@
-﻿using Silksong.TheHuntIsOn.Util;
+﻿using AsmResolver.PE.DotNet.Metadata.Tables;
+using Silksong.TheHuntIsOn.Util;
 using System.IO;
 using System.Text;
 
@@ -13,7 +14,9 @@ internal class ServerArchitectLevelManager : BaseArchitectLevelManager
 
     private ArchitectLevelsMetadata HashDisk()
     {
-        ArchitectLevelsMetadata metadata = new();
+        ArchitectLevelsMetadata metadata = [];
+        if (!Directory.Exists(diskFolder)) return metadata;
+
         foreach (var groupDir in Directory.EnumerateDirectories(diskFolder))
         {
             ArchitectLevelMetadata groupMetadata = [];

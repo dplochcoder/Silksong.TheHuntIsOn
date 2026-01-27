@@ -24,6 +24,8 @@ internal class ArchitectSettings : ModuleSettings<ArchitectSettings>
 
 internal class ArchitectModule : GlobalSettingsModule<ArchitectModule, ArchitectSettings, ArchitectSubMenu>
 {
+    internal const string NONE_GROUP = "None";
+
     private readonly ClientArchitectLevelManager levelManager;
 
     public ArchitectModule() => levelManager = new(() => GetEnabledConfig(out var config) ? config.EnabledGroups : []);
@@ -42,7 +44,7 @@ internal class ArchitectGroupSelectorModel : IChoiceModel<string>
     private static List<string> AllGroups()
     {
         List<string> all = [.. ArchitectModule.GetAllGroups()];
-        if (all.Count == 0) all.Add("None");
+        if (all.Count == 0) all.Add(ArchitectModule.NONE_GROUP);
         return all;
     }
 
@@ -75,7 +77,7 @@ internal class ArchitectGroupSelectorModel : IChoiceModel<string>
             return true;
         }
 
-        if (Value == "None")
+        if (Value == ArchitectModule.NONE_GROUP)
         {
             Value = all[0];
             changed = true;
@@ -154,6 +156,7 @@ internal class ArchitectSubMenu : ModuleSubMenu<ArchitectSettings>
         {
             using (updateEnabled.Suppress())
             {
+                if (groupId == ArchitectModule.NONE_GROUP) return;
                 Enabled?.Value = enabledGroups.Contains(groupId);
             }
         };
