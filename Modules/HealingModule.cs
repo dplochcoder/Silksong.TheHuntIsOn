@@ -1,6 +1,7 @@
 ﻿using HutongGames.PlayMaker.Actions;
 using MonoDetour.DetourTypes;
 using MonoDetour.HookGen;
+using PrepatcherPlugin;
 using Silksong.FsmUtil;
 using Silksong.ModMenu.Elements;
 using Silksong.ModMenu.Models;
@@ -74,13 +75,13 @@ internal class HealingModule : GlobalSettingsModule<HealingModule, HealingSettin
     {
         if (!GetEnabledConfig(out var config) || config.MaskHeal == MaskHealType.FullHeal) return ReturnFlow.None;
 
-        self.SetInt(nameof(self.maxHealth), self.GetInt(nameof(self.maxHealth)) + count);
-        self.SetInt(nameof(self.maxHealthBase), self.GetInt(nameof(self.maxHealthBase)) + count);
+        PlayerDataAccess.maxHealth += count;
+        PlayerDataAccess.maxHealthBase += count;
 
         if (config.MaskHeal == MaskHealType.HealOneMask)
         {
-            self.SetInt(nameof(self.prevHealth), self.GetInt(nameof(self.health)));
-            self.IncrementInt(nameof(self.health));
+            PlayerDataAccess.prevHealth = PlayerDataAccess.health;
+            PlayerDataAccess.health++;
         }
 
         return ReturnFlow.SkipOriginal;

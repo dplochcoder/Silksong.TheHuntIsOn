@@ -1,5 +1,6 @@
 ﻿using MonoDetour;
 using MonoDetour.HookGen;
+using PrepatcherPlugin;
 using Silksong.ModMenu.Elements;
 using Silksong.ModMenu.Models;
 using Silksong.TheHuntIsOn.Menu;
@@ -56,24 +57,21 @@ internal class DeathModule : GlobalSettingsModule<DeathModule, DeathSettings, De
         {
             while (orig.MoveNext()) yield return orig.Current;
 
-            var pd = PlayerData.instance;
             if (!s.SpawnCoccoon || !s.LoseRosaries)
             {
                 // Save the rosaries.
-                var pool = pd.GetInt(nameof(pd.HeroCorpseMoneyPool));
-                var saved = pd.GetInt(nameof(pd.geo));
-                pd.SetInt(nameof(pd.geo), pool + saved);
-                pd.SetInt(nameof(pd.HeroCorpseMoneyPool), 0);
+                PlayerDataAccess.geo += PlayerDataAccess.HeroCorpseMoneyPool;
+                PlayerDataAccess.HeroCorpseMoneyPool = 0;
             }
             if (!s.SpawnCoccoon || !s.LimitSilk)
             {
-                pd.SetBool(nameof(pd.IsSilkSpoolBroken), false);
+                PlayerDataAccess.IsSilkSpoolBroken = false;
                 GameCameras.instance.silkSpool.RefreshSilk();
             }
             if (!s.SpawnCoccoon)
             {
-                pd.SetString(nameof(pd.HeroCorpseScene), "");
-                pd.SetString(nameof(pd.HeroCorpseMarkerGuid), "");
+                PlayerDataAccess.HeroCorpseScene = "";
+                PlayerDataAccess.HeroCorpseMarkerGuid = [];
                 GameManager.instance.gameMap.corpseSceneMapZone = GlobalEnums.MapZone.NONE;
             }
         }
