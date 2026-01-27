@@ -40,36 +40,32 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
     private void UpdateModulesGlobal()
     {
         foreach (var module in modules.Values)
-            module.Enabled = GlobalSaveData.Enabled && GlobalSaveData.ModuleDataset.TryGetValue(module.Name, out var data) && data.IsEnabled(GlobalSaveData.Role);
+            module.Enabled = GlobalData != null && GlobalData.Enabled && GlobalData.ModuleDataset.TryGetValue(module.Name, out var data) && data.IsEnabled(GlobalData.Role);
     }
 
-    private void OnModuleDataset(ModuleDataset moduleDataset) => GlobalSaveData = GlobalSaveData with { ModuleDataset = moduleDataset };
+    private void OnModuleDataset(ModuleDataset moduleDataset) => GlobalData = GlobalData with { ModuleDataset = moduleDataset };
 
-    private GlobalSaveData GlobalSaveData
+    public GlobalSaveData ?GlobalData
     {
         get => field;
+#pragma warning disable CS8767 // Nullability of reference types in type of parameter doesn't match implicitly implemented member (possibly because of nullability attributes).
         set
+#pragma warning restore CS8767 // Nullability of reference types in type of parameter doesn't match implicitly implemented member (possibly because of nullability attributes).
         {
-            field = value;
+            field = value ?? new();
             UpdateMenu();
             UpdateModulesGlobal();
         }
-    } = new();
-
-    GlobalSaveData? IGlobalDataMod<GlobalSaveData>.GlobalData
-    {
-        get => GlobalSaveData;
-        set => GlobalSaveData = value ?? new();
     }
 
-    internal static RoleId GetRole() => instance != null ? instance.GlobalSaveData.Role : RoleId.Hunter;
+    internal static RoleId GetRole() => instance != null ? instance.GlobalData?.Role ?? RoleId.Hunter : RoleId.Hunter;
 
     internal static ModuleActivation GetModuleActivation(string name)
     {
         if (instance != null)
         {
-            var global = instance.GlobalSaveData;
-            if (global.Enabled && global.ModuleDataset.TryGetValue(name, out var data)) return data.ModuleActivation;
+            var global = instance.GlobalData;
+            if (global != null && global.Enabled && global.ModuleDataset.TryGetValue(name, out var data)) return data.ModuleActivation;
         }
 
         return ModuleActivation.Inactive;
@@ -79,8 +75,8 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
     {
         if (instance != null)
         {
-            var global = instance.GlobalSaveData;
-            if (global.ModuleDataset.TryGetValue(name, out var data) && data.GetSettings(global.Role) is T typed) return typed;
+            var global = instance.GlobalData;
+            if (global != null && global.ModuleDataset.TryGetValue(name, out var data) && data.GetSettings(global.Role) is T typed) return typed;
         }
 
         return new();
@@ -88,14 +84,16 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
 
     internal static T GetCosmeticConfig<T>(string name) where T : new()
     {
-        if (instance != null && instance.GlobalSaveData.Cosmetics.Config.TryGetValue(name, out var data) && data is T typed) return typed;
+        if (instance != null && instance.GlobalData != null && instance.GlobalData.Cosmetics.Config.TryGetValue(name, out var data) && data is T typed) return typed;
         else return new();
     }
 
     internal static void SetCosmeticConfig<T>(string name, T config) where T : class
     {
         if (instance == null) return;
-        instance.GlobalSaveData.Cosmetics.Config[name] = config;
+
+        instance.GlobalData ??= new();
+        instance.GlobalData.Cosmetics.Config[name] = config;
     }
 
     internal static void UpdateCosmeticConfig<T>(string name, Action<T> update) where T : class, new()
@@ -128,7 +126,7 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
     private void UpdateMenu()
     {
         if (updateMenu.Suppressed) return;
-        globalSaveDataMenu?.Apply(GlobalSaveData);
+        globalSaveDataMenu?.Apply(GlobalData ?? new());
     }
 
     private MenuElement BuildCustomizeButton()
@@ -159,12 +157,12 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
         SimpleMenuScreen screen = new("The Hunt is On");
         screen.OnDispose += () => globalSaveDataMenu = null;
 
-        globalSaveDataMenu = new(GlobalSaveData, modules.Values);
+        globalSaveDataMenu = new(GlobalData ?? new(), modules.Values);
         globalSaveDataMenu.OnGlobalSaveDataChanged += newSaveData =>
         {
             using (updateMenu.Suppress())
             {
-                GlobalSaveData = newSaveData;
+                GlobalData = newSaveData;
             }
         };
         globalSaveDataMenu.AppendTo(screen);

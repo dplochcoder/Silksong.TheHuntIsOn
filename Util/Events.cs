@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 namespace Silksong.TheHuntIsOn.Util;
 
-[MonoDetourTargets(typeof(GameManager), GenerateControlFlowVariants = true)]
+[MonoDetourTargets(typeof(GameManager))]
 [MonoDetourTargets(typeof(HeroController))]
 [MonoDetourTargets(typeof(PlayMakerFSM))]
 internal static class Events
@@ -63,7 +63,7 @@ internal static class Events
     {
         PrepatcherPlugin.PlayerDataVariableEvents<int>.OnGetVariable += OverrideGetPDInt;
         PrepatcherPlugin.PlayerDataVariableEvents<int>.OnSetVariable += OverrideSetPDInt;
-        Md.GameManager.LevelActivated.Postfix(OnLevelActivated);
+        Md.GameManager.LevelActivated.Prefix(OnLevelActivated);
         Md.HeroController.Update.Postfix(PostfixOnHeroUpdate);
         Md.PlayMakerFSM.OnEnable.Postfix(OnEnablePlayMakerFSM);
     }

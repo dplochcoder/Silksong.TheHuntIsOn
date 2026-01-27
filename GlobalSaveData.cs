@@ -2,7 +2,7 @@
 
 namespace Silksong.TheHuntIsOn;
 
-internal record GlobalSaveData
+public record GlobalSaveData
 {
     internal bool Enabled = false;
     internal RoleId Role = RoleId.Hunter;

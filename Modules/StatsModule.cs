@@ -42,6 +42,7 @@ internal class StatsModule : GlobalSettingsModule<StatsModule, StatsSettings, St
     private static readonly Dictionary<string, Func<int>> intModifiers = new()
     {
         [nameof(PlayerData.maxHealth)] = FromSettings(s => s.StartingMasks - 5),
+        [nameof(PlayerData.maxHealthBase)] = FromSettings(s => s.StartingMasks - 5),
         [nameof(PlayerData.silkMax)] = FromSettings(s => s.StartingSilkSpools - 9)
     };
 

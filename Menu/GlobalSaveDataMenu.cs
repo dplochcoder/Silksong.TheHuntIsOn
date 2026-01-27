@@ -17,29 +17,28 @@ internal class GlobalSaveDataMenu
     private readonly Dictionary<string, ModuleMultiMenu> ModuleMultiMenus = [];
 
     // Updated on incoming packet or on "Apply".
-    private ModuleDataset currentModuleDataset;
+    private readonly ModuleDataset currentModuleDataset;
 
     public event Action<GlobalSaveData>? OnGlobalSaveDataChanged;
 
     internal GlobalSaveDataMenu(GlobalSaveData globalSaveData, IEnumerable<ModuleBase> modules)
     {
+        currentModuleDataset = globalSaveData.ModuleDataset.Clone();
         foreach (var module in modules)
         {
+            var localModule = module;
             ModuleMultiMenu menu = new(module);
             menu.Apply(globalSaveData.ModuleDataset.TryGetValue(module.Name, out var data) ? data : new());
             menu.OnUpdateData += () =>
             {
-                if (HuntClientAddon.IsConnected) return;
+                if (HuntClientAddon.IsConnected || saveDataChanged.Suppressed) return;
 
-                ModuleDataset update = [];
-                foreach (var e in ModuleMultiMenus) update[e.Key] = e.Value.Export();
-                currentModuleDataset = update;
-                InvokeSaveDataChanged();
+                currentModuleDataset[localModule.Name] = menu.Export();
+                OnGlobalSaveDataChanged?.Invoke(Export());
             };
             ModuleMultiMenus[module.Name] = menu;
         }
 
-        currentModuleDataset = globalSaveData.ModuleDataset.Clone();
         Enabled.OnValueChanged += _ => InvokeSaveDataChanged();
         Role.OnValueChanged += _ => InvokeSaveDataChanged();
     }
@@ -88,8 +87,10 @@ internal class GlobalSaveDataMenu
             Enabled.Value = globalSaveData.Enabled;
             Role.Value = globalSaveData.Role;
 
+            currentModuleDataset.Clear();
             foreach (var (name, data) in globalSaveData.ModuleDataset)
             {
+                currentModuleDataset.Add(name, data);
                 if (ModuleMultiMenus.TryGetValue(name, out var menu)) menu.Apply(data);
             }
         }
@@ -99,6 +100,6 @@ internal class GlobalSaveDataMenu
     {
         Enabled = Enabled.Value,
         Role = Role.Value,
-        ModuleDataset = currentModuleDataset,
+        ModuleDataset = currentModuleDataset.Clone(),
     };
 }
