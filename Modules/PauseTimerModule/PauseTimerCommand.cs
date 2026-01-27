@@ -11,12 +11,12 @@ internal class PauseTimerCommand : IServerCommand
 {
     private readonly HuntServerAddon serverAddon;
 
-    public PauseTimerCommand(HuntServerAddon serverAddon)
+    public PauseTimerCommand(HuntServerAddon serverAddon, HuntCommand huntCommand)
     {
         this.serverAddon = serverAddon;
 
         serverAddon.OnUpdatePlayer += player => serverAddon.SendToPlayer(player, state);
-        serverAddon.OnGameReset += () =>
+        huntCommand.OnGameReset += () =>
         {
             state.Clear();
             serverAddon.Broadcast(state);

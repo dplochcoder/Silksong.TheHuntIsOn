@@ -11,7 +11,7 @@ internal class EventsModuleServerAddon
     private readonly DeltaBaseWrapper<SpeedrunnerEvents, SpeedrunnerEventsDelta> speedrunnerEvents = new();
     private readonly HunterItemGrants hunterItemGrants = new();
 
-    internal EventsModuleServerAddon(HuntServerAddon serverAddon)
+    internal EventsModuleServerAddon(HuntServerAddon serverAddon, HuntCommand huntCommand)
     {
         this.serverAddon = serverAddon;
 
@@ -20,7 +20,7 @@ internal class EventsModuleServerAddon
             serverAddon.SendToPlayer(player, speedrunnerEvents.Value);
             serverAddon.SendToPlayer(player, hunterItemGrants);
         };
-        serverAddon.OnGameReset += OnGameReset;
+        huntCommand.OnGameReset += OnGameReset;
     }
 
     private void OnGameReset()

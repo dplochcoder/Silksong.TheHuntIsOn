@@ -33,20 +33,16 @@ internal class HuntServerAddon : ServerAddon
     private ModuleDataset? moduleDataset;
 
     internal event Action<IServerPlayer>? OnUpdatePlayer;
-    internal event Action? OnGameReset
-    {
-        add => huntCommand.OnGameReset += value;
-        remove => huntCommand.OnGameReset -= value;
-    }
     internal void UpdateArchitectLevels() => architectModuleServerAddon.Refresh();
     internal void UpdateEvents() => eventsModuleServerAddon.Refresh();
 
     internal HuntServerAddon()
     {
-        architectModuleServerAddon = new(this);
-        eventsModuleServerAddon = new(this);
         huntCommand = new(this);
-        pauseTimerCommand = new(this);
+
+        architectModuleServerAddon = new(this);
+        eventsModuleServerAddon = new(this, huntCommand);
+        pauseTimerCommand = new(this, huntCommand);
     }
 
     public override void Initialize(IServerApi serverApi)
