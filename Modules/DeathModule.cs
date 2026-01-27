@@ -41,6 +41,8 @@ internal class DeathSettings : ModuleSettings<DeathSettings>
 [MonoDetourTargets(typeof(HeroController))]
 internal class DeathModule : GlobalSettingsModule<DeathModule, DeathSettings, DeathSubMenu>
 {
+    internal static int GetRespawnTimer() => GetEnabledConfig(out var config) ? config.RespawnTimer : 0;
+
     protected override DeathModule Self() => this;
 
     public override string Name => "Death";

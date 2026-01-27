@@ -6,6 +6,7 @@ using Silksong.ModMenu.Plugin;
 using Silksong.ModMenu.Screens;
 using Silksong.TheHuntIsOn.Menu;
 using Silksong.TheHuntIsOn.Modules.Lib;
+using Silksong.TheHuntIsOn.Modules.PauseTimerModule;
 using Silksong.TheHuntIsOn.SsmpAddon;
 using Silksong.TheHuntIsOn.Util;
 using SSMP.Api.Client;

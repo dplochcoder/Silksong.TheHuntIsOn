@@ -58,12 +58,17 @@ internal static class Events
 
     private static void PostfixOnHeroUpdate(HeroController self) => OnHeroUpdate?.Invoke();
 
+    internal static event Action? OnGameManagerUpdate;
+
+    private static void PostfixOnGameManagerUpdate(GameManager self) => OnGameManagerUpdate?.Invoke();
+
     [MonoDetourHookInitialize]
     private static void Hook()
     {
         PrepatcherPlugin.PlayerDataVariableEvents<int>.OnGetVariable += OverrideGetPDInt;
         PrepatcherPlugin.PlayerDataVariableEvents<int>.OnSetVariable += OverrideSetPDInt;
         Md.GameManager.LevelActivated.Prefix(OnLevelActivated);
+        Md.GameManager.Update.Postfix(PostfixOnGameManagerUpdate);
         Md.HeroController.Update.Postfix(PostfixOnHeroUpdate);
         Md.PlayMakerFSM.OnEnable.Postfix(OnEnablePlayMakerFSM);
     }
