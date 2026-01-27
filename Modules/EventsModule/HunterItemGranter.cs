@@ -73,9 +73,9 @@ internal class HunterItemGranter
         [nameof(PlayerData.hasSuperJump)] = HunterItemGrantType.SilkSoar,
     };
 
-    private bool OverrideGetPDBool(PlayerData instance, string name, bool orig)
+    private bool OverrideGetPDBool(PlayerData instance, string name, bool current)
     {
-        if (orig || TheHuntIsOnPlugin.GetRole() != Lib.RoleId.Hunter) return orig;
+        if (current || TheHuntIsOnPlugin.GetRole() != Lib.RoleId.Hunter) return current;
         return boolGrants.TryGetValue(name, out var type) && allGrants.Contains(type);
     }
 

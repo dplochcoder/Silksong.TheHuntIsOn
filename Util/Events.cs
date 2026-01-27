@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 namespace Silksong.TheHuntIsOn.Util;
 
-[MonoDetourTargets(typeof(GameManager))]
+[MonoDetourTargets(typeof(GameManager), GenerateControlFlowVariants = true)]
 [MonoDetourTargets(typeof(HeroController))]
 [MonoDetourTargets(typeof(PlayMakerFSM))]
 internal static class Events
@@ -16,16 +16,16 @@ internal static class Events
     internal static void AddPdIntModifier(string name, Func<int> modifier) => pdIntModifiers.Add(name, modifier);
     internal static void RemovePdIntModifier(string name, Func<int> modifier) => pdIntModifiers.Remove(name, modifier);
 
-    private static int OverrideGetPdInt(PlayerData playerData, string name, int orig)
+    private static int OverrideGetPDInt(PlayerData playerData, string name, int current)
     {
-        foreach (var modifier in pdIntModifiers.Get(name)) orig += modifier();
-        return orig;
+        foreach (var modifier in pdIntModifiers.Get(name)) current += modifier();
+        return current;
     }
 
-    private static int OverrideSetPdInt(PlayerData playerData, string name, int orig)
+    private static int OverrideSetPDInt(PlayerData playerData, string name, int current)
     {
-        foreach (var modifier in pdIntModifiers.Get(name)) orig -= modifier();
-        return orig;
+        foreach (var modifier in pdIntModifiers.Get(name)) current -= modifier();
+        return current;
     }
 
     internal static event Action<Scene>? OnNewScene;
@@ -61,8 +61,8 @@ internal static class Events
     [MonoDetourHookInitialize]
     private static void Hook()
     {
-        PrepatcherPlugin.PlayerDataVariableEvents<int>.OnGetVariable += OverrideGetPdInt;
-        PrepatcherPlugin.PlayerDataVariableEvents<int>.OnSetVariable += OverrideSetPdInt;
+        PrepatcherPlugin.PlayerDataVariableEvents<int>.OnGetVariable += OverrideGetPDInt;
+        PrepatcherPlugin.PlayerDataVariableEvents<int>.OnSetVariable += OverrideSetPDInt;
         Md.GameManager.LevelActivated.Postfix(OnLevelActivated);
         Md.HeroController.Update.Postfix(PostfixOnHeroUpdate);
         Md.PlayMakerFSM.OnEnable.Postfix(OnEnablePlayMakerFSM);

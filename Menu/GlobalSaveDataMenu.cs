@@ -27,6 +27,15 @@ internal class GlobalSaveDataMenu
         {
             ModuleMultiMenu menu = new(module);
             menu.Apply(globalSaveData.ModuleDataset.TryGetValue(module.Name, out var data) ? data : new());
+            menu.OnUpdateData += () =>
+            {
+                if (HuntClientAddon.IsConnected) return;
+
+                ModuleDataset update = [];
+                foreach (var e in ModuleMultiMenus) update[e.Key] = e.Value.Export();
+                currentModuleDataset = update;
+                InvokeSaveDataChanged();
+            };
             ModuleMultiMenus[module.Name] = menu;
         }
 
@@ -56,22 +65,18 @@ internal class GlobalSaveDataMenu
         modulesButton.OnSubmit += () => MenuScreenNavigation.Show(modulesScreen);
         screen.Add(modulesButton);
 
-        TextButton applyButton = new("Apply Module Settings");
+        TextButton applyButton = new("Send Module Settings");
+        applyButton.Container.DoOnUpdate(() => applyButton.Interactable = HuntClientAddon.IsConnected);
         applyButton.OnSubmit += () =>
         {
             ModuleDataset update = [];
-            foreach (var e in ModuleMultiMenus) currentModuleDataset[e.Key] = e.Value.Export();
-
-            if (HuntClientAddon.IsConnected) HuntClientAddon.Instance?.Send(update);
-            else
-            {
-                currentModuleDataset = update;
-                InvokeSaveDataChanged();
-            }
+            foreach (var e in ModuleMultiMenus) update[e.Key] = e.Value.Export();
+            HuntClientAddon.Instance?.Send(update);
         };
         screen.Add(applyButton);
 
         TextButton revertButton = new("Revert Module Settings");
+        revertButton.Container.DoOnUpdate(() => revertButton.Interactable = HuntClientAddon.IsConnected);
         revertButton.OnSubmit += () => Apply(Export());
         screen.Add(revertButton);
     }

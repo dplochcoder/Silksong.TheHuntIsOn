@@ -6,6 +6,6 @@ internal record GlobalSaveData
 {
     internal bool Enabled = false;
     internal RoleId Role = RoleId.Hunter;
-    internal ModuleDataset ModuleDataset = new();
+    internal ModuleDataset ModuleDataset = [];
     internal CosmeticConfig Cosmetics = new();
 }

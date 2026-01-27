@@ -1,5 +1,4 @@
-﻿using AsmResolver.PE.DotNet.Metadata.Tables;
-using Silksong.TheHuntIsOn.Util;
+﻿using Silksong.TheHuntIsOn.Util;
 using System.IO;
 using System.Text;
 

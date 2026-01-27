@@ -79,6 +79,8 @@ internal class ModuleMultiMenu
 
     private readonly EventSuppressor updateData = new();
 
+    internal event Action? OnUpdateData;
+
     private void UpdateData()
     {
         if (updateData.Suppressed) return;
@@ -99,6 +101,8 @@ internal class ModuleMultiMenu
                 huntersMenuData = huntersSubMenu?.ExportRaw();
                 break;
         }
+
+        OnUpdateData?.Invoke();
     }
 
     private void UpdateModuleActivation(ModuleActivation value)
@@ -127,6 +131,8 @@ internal class ModuleMultiMenu
                     break;
             }
         }
+
+        OnUpdateData?.Invoke();
     }
 
     internal void Apply(ModuleData data)

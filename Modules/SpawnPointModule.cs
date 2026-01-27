@@ -1,4 +1,7 @@
-﻿using Silksong.ModMenu.Elements;
+﻿using MonoDetour;
+using MonoDetour.DetourTypes;
+using MonoDetour.HookGen;
+using Silksong.ModMenu.Elements;
 using Silksong.ModMenu.Models;
 using Silksong.TheHuntIsOn.Menu;
 using Silksong.TheHuntIsOn.Modules.Lib;
@@ -31,15 +34,9 @@ internal class SpawnPointSettings : ModuleSettings<SpawnPointSettings>
     public override void WriteDynamicData(IPacket packet) => SpawnPoint.WriteData(packet);
 }
 
+[MonoDetourTargets(typeof(GameManager), GenerateControlFlowVariants = true)]
 internal class SpawnPointModule : GlobalSettingsModule<SpawnPointModule, SpawnPointSettings, SpawnPointSubMenu>
 {
-    internal class RespawnData
-    {
-        public string Scene = "";
-        public Vector2 Position;
-        public bool FacingRight;
-    }
-
     protected override SpawnPointModule Self() => this;
 
     public override string Name => "Spawn Point";
@@ -48,16 +45,21 @@ internal class SpawnPointModule : GlobalSettingsModule<SpawnPointModule, SpawnPo
 
     public override void OnEnabled()
     {
-        PrepatcherPlugin.PlayerDataVariableEvents<string>.OnGetVariable += OverrideRespawnString;
         PrepatcherPlugin.PlayerDataVariableEvents<int>.OnGetVariable += OverrideRespawnInt;
         Events.OnNewScene += OnNewScene;
     }
 
     public override void OnDisabled()
     {
-        PrepatcherPlugin.PlayerDataVariableEvents<string>.OnGetVariable -= OverrideRespawnString;
         PrepatcherPlugin.PlayerDataVariableEvents<int>.OnGetVariable -= OverrideRespawnInt;
         Events.OnNewScene -= OnNewScene;
+    }
+
+    private class RespawnData
+    {
+        public string Scene = "";
+        public Vector2 Position;
+        public bool FacingRight;
     }
 
     private static readonly Dictionary<SpawnPoint, RespawnData> respawnData = new ()
@@ -88,22 +90,31 @@ internal class SpawnPointModule : GlobalSettingsModule<SpawnPointModule, SpawnPo
         }
     };
 
-    private bool GetRespawnData(out RespawnData data) => respawnData.TryGetValue(GlobalConfig.SpawnPoint, out data);
+    private static bool GetRespawnData(out RespawnData data)
+    {
+        if (GetEnabledConfig(out var config)) return respawnData.TryGetValue(config.SpawnPoint, out data);
+        else
+        {
+            data = new();
+            return false;
+        }
+    }
 
     private const string RESPAWN_MARKER_NAME = "TheHuntIsOn-RespawnMarker";
 
-    private string OverrideRespawnString(PlayerData playerData, string name, string orig) =>
-        name switch
+    private static ReturnFlow OverrideGetRespawnInfo(GameManager self, ref string scene, ref string marker)
     {
-        nameof(PlayerData.respawnScene) => GetRespawnData(out var data) ? data.Scene : orig,
-        nameof(PlayerData.respawnMarkerName) => GetRespawnData(out _) ? RESPAWN_MARKER_NAME : orig,
-        _ => orig,
-    };
+        if (!GetRespawnData(out var data)) return ReturnFlow.None;
 
-    private int OverrideRespawnInt(PlayerData playerData, string name, int orig) => name switch
+        scene = data.Scene;
+        marker = RESPAWN_MARKER_NAME;
+        return ReturnFlow.SkipOriginal;
+    }
+
+    private int OverrideRespawnInt(PlayerData playerData, string name, int current) => name switch
     {
-        nameof(PlayerData.respawnType) => GetRespawnData(out _) ? 0 : orig,
-        _ => orig
+        nameof(PlayerData.respawnType) => GlobalConfig.SpawnPoint == SpawnPoint.Unchanged ? current : 0,
+        _ => current
     };
 
     private void OnNewScene(Scene scene)
@@ -117,6 +128,9 @@ internal class SpawnPointModule : GlobalSettingsModule<SpawnPointModule, SpawnPo
         var marker = obj.AddComponent<RespawnMarker>();
         marker.respawnFacingRight = data.FacingRight;
     }
+
+    [MonoDetourHookInitialize]
+    private static void Hook() => Md.GameManager.GetRespawnInfo.ControlFlowPrefix(OverrideGetRespawnInfo);
 }
 
 internal class SpawnPointSubMenu : ModuleSubMenu<SpawnPointSettings>
