@@ -37,6 +37,10 @@ internal class ServerArchitectLevelManager : BaseArchitectLevelManager
     {
         embeddedMetadata = HashEmbedded();
         levelDataCache = new(100, LoadLevelData);
+        diskMetadata = [];
+        overlayMetadata = [];
+
+        UpdateDiskMetadata();
     }
 
     private bool LoadLevelData((string, string) key, out (string, SHA1Hash) value)
