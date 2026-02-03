@@ -10,10 +10,9 @@ namespace Silksong.TheHuntIsOn.Modules.PauseTimerModule;
 
 internal class PauseTimerModule : Module<PauseTimerModule, EmptySettings, EmptySubMenu, PauseTimerUIConfig>
 {
-    private readonly PauseTimerUI pauseTimerUI = new();
     private ServerPauseState serverPauseState = new();
 
-    internal static ServerPauseState GetServerPauseState() => Instance?.serverPauseState ?? new();
+    internal static ServerPauseState GetServerPauseState() => IsEnabled ? (Instance?.serverPauseState ?? new()) : new();
 
     internal static PauseTimerUIConfig GetUIConfig() => Instance?.CosmeticConfig ?? new();
 
@@ -27,6 +26,8 @@ internal class PauseTimerModule : Module<PauseTimerModule, EmptySettings, EmptyS
             UpdateTimeScale();
         };
         Events.OnGameManagerUpdate += UpdateTimeScale;
+
+        PauseTimerUI.Load();
     }
 
     private float prevTimeScale = 1f;

@@ -14,7 +14,7 @@ internal class ModuleData : NetworkedCloneable<ModuleData>
         EveryoneSettings = everyoneSettings;
     }
 
-    public ModuleActivation ModuleActivation = ModuleActivation.Inactive;
+    public ModuleActivation ModuleActivation;
     public ModuleSettings? SpeedrunnerSettings;
     public ModuleSettings? HunterSettings;
     public ModuleSettings? EveryoneSettings;
@@ -44,7 +44,8 @@ internal class ModuleData : NetworkedCloneable<ModuleData>
         ModuleActivation.Inactive => false,
         ModuleActivation.SpeedrunnerOnly => role == RoleId.Speedrunner,
         ModuleActivation.HuntersOnly => role == RoleId.Hunter,
-        ModuleActivation.EveryoneSame | ModuleActivation.EveryoneDifferent => true,
+        ModuleActivation.EveryoneSame => true,
+        ModuleActivation.EveryoneDifferent => true,
         _ => false
     };
 

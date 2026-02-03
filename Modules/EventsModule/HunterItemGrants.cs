@@ -10,11 +10,11 @@ internal class HunterItemGrants : IDeltaBase<HunterItemGrants, HunterItemGrantsD
 {
     public ClientPacketId Identifier => ClientPacketId.HunterItemGrants;
 
-    public bool Single => true;
+    public bool Single => false;
 
     public bool IsReliable => true;
 
-    public bool DropReliableDataIfNewerExists => true;
+    public bool DropReliableDataIfNewerExists => false;
 
     // Items to grant to hunter(s).
     public Dictionary<string, EnumList<HunterItemGrantType>> Grants = [];

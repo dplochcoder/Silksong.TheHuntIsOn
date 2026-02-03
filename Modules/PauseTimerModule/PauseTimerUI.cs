@@ -1,14 +1,13 @@
 ﻿using GlobalEnums;
 using MonoDetour;
 using MonoDetour.HookGen;
-using Silksong.TheHuntIsOn.SsmpAddon;
 using Silksong.TheHuntIsOn.Util;
-using Silksong.UnityHelper.Extensions;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMProOld;
 using UnityEngine;
-using UnityEngine.UI;
 using UObject = UnityEngine.Object;
 
 namespace Silksong.TheHuntIsOn.Modules.PauseTimerModule;
@@ -16,30 +15,29 @@ namespace Silksong.TheHuntIsOn.Modules.PauseTimerModule;
 [MonoDetourTargets(typeof(GameManager))]
 internal class PauseTimerUI
 {
-    private static PauseTimerUI? instance;
+    private static readonly PauseTimerUI instance = new();
+
+    private PauseTimerUI() => Events.OnGameManagerUpdate += Update;
+
+    // Call to force class-loading.
+    internal static void Load() { }
 
     private GameObject? parent;
-    private readonly List<Text> textCache = [];
+    private readonly List<TextMeshPro> textCache = [];
 
     private float respawnTimer;
-
-    internal PauseTimerUI()
-    {
-        instance = this;
-        Events.OnGameManagerUpdate += Update;
-    }
 
     private bool EnsureParent()
     {
         if (parent != null) return true;
         textCache.Clear();
 
-        var camera = GameObject.Find("_UIManager/UICanvas");
-        if (camera == null) return false;
+        var cameraParent = GameObject.Find("_GameCameras/HudCamera/In-game");
+        if (cameraParent == null) return false;
 
         parent = new("CountdownsDisplayer");
-        parent.AddComponent<RectTransform>();
-        parent.transform.SetParent(camera.transform);
+        UObject.DontDestroyOnLoad(parent);
+        parent.transform.SetParent(cameraParent.transform);
         parent.transform.localPosition = Vector3.zero;
         return true;
     }
@@ -88,33 +86,32 @@ internal class PauseTimerUI
         return statuses;
     }
 
-    private static Font? _font;
-    private static Font Font
-    {
-        get
-        {
-            if (_font == null) _font = Resources.FindObjectsOfTypeAll<Font>().Where(f => f.name == "TrajanPro-Bold").First();
-            return _font;
-        }
-    }
+    private static readonly Lazy<TMP_FontAsset> Font = new(() => Resources.FindObjectsOfTypeAll<TMP_FontAsset>().Where(f => f.name == "trajan_bold_tmpro").First());
 
     private void CreateText()
     {
         GameObject obj = new("Display");
+        obj.layer = (int)PhysLayers.UI;
         obj.transform.SetParent(parent!.transform);
 
-        var text = obj.AddComponent<Text>();
-        text.font = Font;
+        var text = obj.AddComponent<TextMeshPro>();
+        text.font = Font.Value;
         text.color = Color.white;
+        text.enableWordWrapping = false;
+        text.autoSizeTextContainer = true;
 
-        obj.layer = (int)PhysLayers.UI;
+        var renderer = obj.GetComponent<MeshRenderer>();
+        renderer.sortingLayerName = "HUD";
+        renderer.sortingOrder = 11;
+
         obj.SetActive(false);
         textCache.Add(text);
     }
 
+    private static readonly Vector2 INACTIVE_POS = new(-1000, -1000);
+
     private void UpdateStatuses(List<string> statuses)
     {
-        var state = PauseTimerModule.GetServerPauseState();
         var config = PauseTimerModule.GetUIConfig();
         var spacingParameters = config.PauseTimerPosition.SpacingParameters();
 
@@ -126,23 +123,23 @@ internal class PauseTimerUI
             {
                 text.gameObject.SetActive(false);
                 text.text = "";
-                text.transform.position = new(-100, -100);
+                text.transform.position = INACTIVE_POS;
                 continue;
             }
 
             text.gameObject.SetActive(true);
             text.text = status;
-            text.fontSize = 24;
+            text.fontSize = 40;
 
             var scale = config.PauseTimerSize.FontScale();
             text.transform.localScale = new(scale, scale, 1);
-            text.transform.localPosition = spacingParameters.GetPosition(i, statuses.Count, config.PauseTimerSize.Spacing(), scale, text.rectTransform.GetBounds());
+            text.transform.position = spacingParameters.GetPosition(i, statuses.Count, config.PauseTimerSize.Spacing(), scale, text.bounds);
         }
     }
 
     private void Update()
     {
-        if (respawnTimer > 0 && HuntClientAddon.IsConnected && !PauseTimerModule.GetServerPauseState().IsServerPaused(out _))
+        if (respawnTimer > 0 && !PauseTimerModule.GetServerPauseState().IsServerPaused(out _))
         {
             respawnTimer -= Time.unscaledDeltaTime;
             if (respawnTimer < 0) respawnTimer = 0;
@@ -150,19 +147,18 @@ internal class PauseTimerUI
 
         if (!EnsureParent()) return;
 
-        List<string> statuses = [];
-        if (HuntClientAddon.IsConnected) statuses = ComputeStatuses();
+        List<string> statuses = ComputeStatuses();
         while (textCache.Count < statuses.Count) CreateText();
         UpdateStatuses(statuses);
     }
 
     private IEnumerator WaitForRespawn(IEnumerator orig)
     {
-        if (respawnTimer <= 0 || !HuntClientAddon.IsConnected) return orig;
+        if (respawnTimer <= 0) return orig;
 
         IEnumerator Modified()
         {
-            yield return new WaitUntil(() => respawnTimer <= 0 || !HuntClientAddon.IsConnected);
+            yield return new WaitUntil(() => respawnTimer <= 0);
             while (orig.MoveNext()) yield return orig.Current;
         }
         return Modified();

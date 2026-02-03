@@ -6,7 +6,6 @@ using Silksong.ModMenu.Plugin;
 using Silksong.ModMenu.Screens;
 using Silksong.TheHuntIsOn.Menu;
 using Silksong.TheHuntIsOn.Modules.Lib;
-using Silksong.TheHuntIsOn.Modules.PauseTimerModule;
 using Silksong.TheHuntIsOn.SsmpAddon;
 using Silksong.TheHuntIsOn.Util;
 using SSMP.Api.Client;
@@ -44,16 +43,14 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
             module.Enabled = GlobalData != null && GlobalData.Enabled && GlobalData.ModuleDataset.TryGetValue(module.Name, out var data) && data.IsEnabled(GlobalData.Role);
     }
 
-    private void OnModuleDataset(ModuleDataset moduleDataset) => GlobalData = GlobalData with { ModuleDataset = moduleDataset };
+    private void OnModuleDataset(ModuleDataset moduleDataset) => GlobalData = (GlobalData ?? new()) with { ModuleDataset = moduleDataset };
 
-    public GlobalSaveData ?GlobalData
+    public GlobalSaveData? GlobalData
     {
         get => field;
-#pragma warning disable CS8767 // Nullability of reference types in type of parameter doesn't match implicitly implemented member (possibly because of nullability attributes).
         set
-#pragma warning restore CS8767 // Nullability of reference types in type of parameter doesn't match implicitly implemented member (possibly because of nullability attributes).
         {
-            field = value ?? new();
+            field = value;
             UpdateMenu();
             UpdateModulesGlobal();
         }

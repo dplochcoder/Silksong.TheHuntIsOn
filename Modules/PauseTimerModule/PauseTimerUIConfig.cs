@@ -65,7 +65,7 @@ internal enum PauseTimerSize
 
 internal static class PauseTimerSizeExtensions
 {
-    internal static float FontScale(this PauseTimerSize size) => size switch { PauseTimerSize.Normal => 0.3f, PauseTimerSize.Small => 0.2f, PauseTimerSize.Large => 0.4f, _ => 0.3f };
+    internal static float FontScale(this PauseTimerSize size) => size switch { PauseTimerSize.Normal => 0.25f, PauseTimerSize.Small => 0.15f, PauseTimerSize.Large => 0.35f, _ => 0.25f };
 
     internal static float Spacing(this PauseTimerSize size) => size switch { PauseTimerSize.Normal => 0.95f, PauseTimerSize.Small => 0.6f, PauseTimerSize.Large => 1.3f, _ => 0.95f };
 }
