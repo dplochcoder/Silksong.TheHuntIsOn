@@ -9,6 +9,7 @@ using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using Silksong.TheHuntIsOn.Util;
 using SSMP.Networking.Packet;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -38,6 +39,8 @@ internal class SpawnPointSettings : ModuleSettings<SpawnPointSettings>
 [MonoDetourTargets(typeof(GameManager))]
 internal class SpawnPointModule : GlobalSettingsModule<SpawnPointModule, SpawnPointSettings, SpawnPointSubMenu>
 {
+    internal SpawnPointModule() => Events.OnNewScene += OnNewScene;
+
     protected override SpawnPointModule Self() => this;
 
     public override string Name => "Spawn Point";
@@ -48,14 +51,12 @@ internal class SpawnPointModule : GlobalSettingsModule<SpawnPointModule, SpawnPo
     {
         PrepatcherPlugin.PlayerDataVariableEvents<string>.OnGetVariable += OverrideRespawnString;
         PrepatcherPlugin.PlayerDataVariableEvents<int>.OnGetVariable += OverrideRespawnInt;
-        Events.OnNewScene += OnNewScene;
     }
 
     public override void OnDisabled()
     {
         PrepatcherPlugin.PlayerDataVariableEvents<string>.OnGetVariable -= OverrideRespawnString;
         PrepatcherPlugin.PlayerDataVariableEvents<int>.OnGetVariable -= OverrideRespawnInt;
-        Events.OnNewScene -= OnNewScene;
     }
 
     private class RespawnData
@@ -103,17 +104,38 @@ internal class SpawnPointModule : GlobalSettingsModule<SpawnPointModule, SpawnPo
         }
     }
 
+    private static readonly Lazy<Dictionary<string, RespawnData>> respawnDataByScene = new(() =>
+    {
+        Dictionary<string, RespawnData> dict = [];
+        foreach (var d in respawnData.Values) dict[d.Scene] = d;
+        return dict;
+    });
+
     private const string RESPAWN_MARKER_NAME = "TheHuntIsOn-RespawnMarker";
 
-    private static void MaybeForceRespawn(ILManipulationInfo info)
+    private static void OverridePlayerDeadMoveNext(ILManipulationInfo info)
     {
         ILCursor cursor = new(info.Context);
-
         cursor.Goto(0);
+
+        // Override the SpawnPreloader scene.
+        if (cursor.TryGotoNext(i => i.MatchCall<ScenePreloader>(nameof(ScenePreloader.SpawnPreloader))) && cursor.TryGotoPrev(MoveType.After, i => i.MatchLdloc(3)))
+        {
+            static string Delegate(string scene) => GetRespawnData(out var data) ? data.Scene : scene;
+            cursor.EmitDelegate(Delegate);
+        }
+    }
+
+    private static void OverrideReadyForRespawn(ILManipulationInfo info)
+    {
+        ILCursor cursor = new(info.Context);
+        cursor.Goto(0);
+
         if (cursor.TryGotoNext(i => i.MatchCall<GameManager>(nameof(GameManager.BeginSceneTransition))))
         {
             cursor.Remove();
 
+            // Override the scene and entry gate for the next transition.
             static void Delegate(GameManager self, GameManager.SceneLoadInfo info)
             {
                 if (GetRespawnData(out var data))
@@ -158,7 +180,11 @@ internal class SpawnPointModule : GlobalSettingsModule<SpawnPointModule, SpawnPo
     }
 
     [MonoDetourHookInitialize]
-    private static void Hook() => Md.GameManager.ReadyForRespawn.ILHook(MaybeForceRespawn);
+    private static void Hook()
+    {
+        Md.GameManager._PlayerDead_d__245.MoveNext.ILHook(OverridePlayerDeadMoveNext);
+        Md.GameManager.ReadyForRespawn.ILHook(OverrideReadyForRespawn);
+    }
 }
 
 internal class SpawnPointSubMenu : ModuleSubMenu<SpawnPointSettings>
