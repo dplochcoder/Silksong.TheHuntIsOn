@@ -27,6 +27,8 @@ internal class StatsSettings : ModuleSettings<StatsSettings>
         StartingMasks.WriteData(packet);
         StartingSilkSpools.WriteData(packet);
     }
+
+    protected override bool Equivalent(StatsSettings other) => StartingMasks == other.StartingMasks && StartingSilkSpools == other.StartingSilkSpools;
 }
 
 internal class StatsModule : GlobalSettingsModule<StatsModule, StatsSettings, StatsSubMenu>
@@ -49,12 +51,15 @@ internal class StatsModule : GlobalSettingsModule<StatsModule, StatsSettings, St
     public override void OnEnabled()
     {
         foreach (var e in intModifiers) Events.AddPdIntModifier(e.Key, e.Value);
+        UIEvents.UpdateHealthAndSilk();
     }
 
     public override void OnDisabled()
     {
         foreach (var e in intModifiers) Events.RemovePdIntModifier(e.Key, e.Value);
     }
+
+    public override void OnGlobalConfigChanged() => UIEvents.UpdateHealthAndSilk();
 }
 
 internal class StatsSubMenu : ModuleSubMenu<StatsSettings>

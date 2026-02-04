@@ -90,8 +90,7 @@ internal class PauseTimerUI
 
     private void CreateText()
     {
-        GameObject obj = new("Display");
-        obj.layer = (int)PhysLayers.UI;
+        GameObject obj = new("Display") { layer = (int)PhysLayers.UI };
         obj.transform.SetParent(parent!.transform);
 
         var text = obj.AddComponent<TextMeshPro>();

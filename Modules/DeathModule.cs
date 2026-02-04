@@ -36,6 +36,11 @@ internal class DeathSettings : ModuleSettings<DeathSettings>
         LoseRosaries.WriteData(packet);
         LimitSilk.WriteData(packet);
     }
+
+    protected override bool Equivalent(DeathSettings other) => RespawnTimer == other.RespawnTimer
+        && SpawnCoccoon == other.SpawnCoccoon
+        && LoseRosaries == other.LoseRosaries
+        && LimitSilk == other.LimitSilk;
 }
 
 [MonoDetourTargets(typeof(HeroController))]

@@ -45,6 +45,11 @@ internal class HealingSettings : ModuleSettings<HealingSettings>
         AbilityHeal.WriteData(packet);
         SpaHeal.WriteData(packet);
     }
+
+    protected override bool Equivalent(HealingSettings other) => BenchHeal == other.BenchHeal
+        && MaskHeal == other.MaskHeal
+        && AbilityHeal == other.AbilityHeal
+        && SpaHeal == other.SpaHeal;
 }
 
 [MonoDetourTargets(typeof(CallMethodProper))]

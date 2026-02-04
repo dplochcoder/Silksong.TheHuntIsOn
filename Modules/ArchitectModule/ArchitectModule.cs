@@ -20,6 +20,8 @@ internal class ArchitectSettings : ModuleSettings<ArchitectSettings>
     public override void ReadDynamicData(IPacket packet) => EnabledGroups.ReadData(packet, packet => packet.ReadString());
 
     public override void WriteDynamicData(IPacket packet) => EnabledGroups.WriteData(packet, (packet, value) => value.WriteData(packet));
+
+    protected override bool Equivalent(ArchitectSettings other) => EnabledGroups.Count == other.EnabledGroups.Count && EnabledGroups.All(other.EnabledGroups.Contains);
 }
 
 internal class ArchitectModule : GlobalSettingsModule<ArchitectModule, ArchitectSettings, ArchitectSubMenu>

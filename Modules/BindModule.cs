@@ -35,6 +35,11 @@ internal class BindSettings : ModuleSettings<BindSettings>
         SilkCost.WriteData(packet);
         TimePenalty.WriteData(packet);
     }
+
+    protected override bool Equivalent(BindSettings other) => HealMasks == other.HealMasks
+        && MultibinderHealMasks == other.MultibinderHealMasks
+        && SilkCost == other.SilkCost
+        && TimePenalty == other.TimePenalty;
 }
 
 internal class BindModule : GlobalSettingsModule<BindModule, BindSettings, BindSubMenu>

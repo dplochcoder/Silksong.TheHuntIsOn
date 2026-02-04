@@ -12,6 +12,7 @@ using SSMP.Api.Client;
 using SSMP.Api.Server;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
 namespace Silksong.TheHuntIsOn;
@@ -37,10 +38,43 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
     // EventSuppressors allow updates to propagate between the three sources without infinite cascade.
     private readonly EventSuppressor updateMenu = new();
 
-    private void UpdateModulesGlobal()
+    private static bool GetModuleData(GlobalSaveData? saveData, string name, [MaybeNullWhen(false)] out ModuleData data)
+    {
+        if (saveData != null && saveData.Enabled) return saveData.ModuleDataset.TryGetValue(name, out data);
+        else
+        {
+            data = default;
+            return false;
+        }
+    }
+
+    private static bool GetSettings(GlobalSaveData? saveData, string name, [MaybeNullWhen(false)] out ModuleSettings settings)
+    {
+        if (GetModuleData(saveData, name, out var data))
+        {
+            var s = data.GetSettings(saveData!.Role);
+            if (s != null)
+            {
+                settings = s;
+                return true;
+            }
+        }
+
+        settings = default;
+        return false;
+    }
+
+    private static bool IsEnabled(GlobalSaveData? saveData, string name) => GetModuleData(saveData, name, out var data) && data.IsEnabled(saveData!.Role);
+
+    private void UpdateModulesGlobal(GlobalSaveData? prev)
     {
         foreach (var module in modules.Values)
-            module.Enabled = GlobalData != null && GlobalData.Enabled && GlobalData.ModuleDataset.TryGetValue(module.Name, out var data) && data.IsEnabled(GlobalData.Role);
+        {
+            module.Enabled = IsEnabled(GlobalData, module.Name);
+
+            if (GetSettings(prev, module.Name, out var prevSettings) && GetSettings(GlobalData, module.Name, out var newSettings) && !newSettings.Equivalent(prevSettings))
+                module.OnGlobalConfigChanged();
+        }
     }
 
     private void OnModuleDataset(ModuleDataset moduleDataset) => GlobalData = (GlobalData ?? new()) with { ModuleDataset = moduleDataset };
@@ -50,9 +84,10 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
         get => field;
         set
         {
+            var prev = field;
             field = value;
             UpdateMenu();
-            UpdateModulesGlobal();
+            UpdateModulesGlobal(prev);
         }
     }
 

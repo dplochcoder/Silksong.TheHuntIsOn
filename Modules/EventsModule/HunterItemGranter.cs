@@ -12,6 +12,7 @@ internal class HunterItemGranter
         intModifiers = new()
         {
             [nameof(PlayerData.maxHealth)] = IntModifier(HunterItemGrantType.Mask),
+            [nameof(PlayerData.maxHealthBase)] = IntModifier(HunterItemGrantType.Mask),
             [nameof(PlayerData.silkMax)] = IntModifier(HunterItemGrantType.SilkSpool),
             [nameof(PlayerData.nailUpgrades)] = IntModifier(HunterItemGrantType.NeedleUpgrade),
         };
@@ -23,6 +24,9 @@ internal class HunterItemGranter
     // Derived.
     private readonly HashSet<string> allGrantIds = [];
     private readonly HashMultiset<HunterItemGrantType> allGrants = [];
+
+    internal int MaxHealthAdds() => allGrants.Count(HunterItemGrantType.Mask);
+    internal int MaxSilkAdds() => allGrants.Count(HunterItemGrantType.SilkSpool);
 
     internal bool Update(HunterItemGrantsDelta delta, out bool desynced)
     {
@@ -39,7 +43,7 @@ internal class HunterItemGranter
 
     internal void Reset(HunterItemGrants newGrants)
     {
-        this.hunterItemGrants.Clear();
+        hunterItemGrants.Clear();
         allGrantIds.Clear();
         allGrants.Clear();
 

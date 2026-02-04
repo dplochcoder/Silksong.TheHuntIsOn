@@ -8,7 +8,7 @@ namespace Silksong.TheHuntIsOn.Modules.EventsModule;
 internal class EventsModule : Module<EventsModule, EmptySettings, EmptySubMenu, Empty>
 {
     private readonly HunterItemGranter hunterItemGranter = new();
-    private readonly SpeedrunnerEvents speedrunnerEvents = new();
+    private SpeedrunnerEvents speedrunnerEvents = new();
 
     public EventsModule()
     {
@@ -18,7 +18,7 @@ internal class EventsModule : Module<EventsModule, EmptySettings, EmptySubMenu, 
             hunterItemGranter.Update(delta, out var desynced);
             reportDesync |= desynced;
         };
-        HuntClientAddon.On<SpeedrunnerEvents>.Received += speedrunnerEvents => this.speedrunnerEvents.Clear();
+        HuntClientAddon.On<SpeedrunnerEvents>.Received += speedrunnerEvents => this.speedrunnerEvents = speedrunnerEvents;
         HuntClientAddon.On<SpeedrunnerEventsDelta>.Received += speedrunnerEventsDelta => speedrunnerEvents.Update(speedrunnerEventsDelta);
     }
 
@@ -44,6 +44,9 @@ internal class EventsModule : Module<EventsModule, EmptySettings, EmptySubMenu, 
     private readonly RateLimiter desyncRateLimiter = new(1f);
     private readonly RateLimiter publishRateLimiter = new(1f);
 
+    private int prevHunterMasks;
+    private int prevHunterSilk;
+
     private void Update()
     {
         desyncRateLimiter.Update();
@@ -54,6 +57,16 @@ internal class EventsModule : Module<EventsModule, EmptySettings, EmptySubMenu, 
             TheHuntIsOnPlugin.LogError("Desync! Requesting all server information again.");
             HuntClientAddon.Instance?.Send(new ReportDesync());
             desyncRateLimiter.Reset();
+        }
+
+        bool isHunter = TheHuntIsOnPlugin.GetRole() == RoleId.Hunter;
+        int hunterMasks = isHunter ? hunterItemGranter.MaxHealthAdds() : 0;
+        int hunterSilk = isHunter ? hunterItemGranter.MaxSilkAdds() : 0;
+        if (prevHunterMasks != hunterMasks || prevHunterSilk != hunterSilk)
+        {
+            prevHunterMasks = hunterMasks;
+            prevHunterSilk = hunterSilk;
+            UIEvents.UpdateHealthAndSilk();
         }
 
         if (TheHuntIsOnPlugin.GetRole() == RoleId.Speedrunner && publishRateLimiter.Check())

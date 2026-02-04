@@ -24,11 +24,17 @@ internal abstract class ModuleSettings : Cloneable<ModuleSettings>, IDynamicValu
     public abstract void ReadDynamicData(IPacket packet);
 
     public abstract void WriteDynamicData(IPacket packet);
+
+    public abstract bool Equivalent(ModuleSettings other);
 }
 
 internal abstract class ModuleSettings<T> : ModuleSettings, ICloneable<T> where T : ModuleSettings<T>
 {
     T ICloneable<T>.Clone() => (T)((ModuleSettings)this).Clone();
+
+    public override bool Equivalent(ModuleSettings other) => other is T typed && Equivalent(typed);
+
+    protected abstract bool Equivalent(T other);
 }
 
 internal class ModuleSettingsFactory : IDynamicValueFactory<ModuleSettingsType, ModuleSettings, ModuleSettingsFactory>

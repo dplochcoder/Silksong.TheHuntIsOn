@@ -34,6 +34,8 @@ internal class SpawnPointSettings : ModuleSettings<SpawnPointSettings>
     public override void ReadDynamicData(IPacket packet) => SpawnPoint = packet.ReadEnum<SpawnPoint>();
 
     public override void WriteDynamicData(IPacket packet) => SpawnPoint.WriteData(packet);
+
+    protected override bool Equivalent(SpawnPointSettings other) => SpawnPoint == other.SpawnPoint;
 }
 
 [MonoDetourTargets(typeof(GameManager))]
