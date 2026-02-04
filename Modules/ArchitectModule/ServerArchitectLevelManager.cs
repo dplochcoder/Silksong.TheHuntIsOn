@@ -26,7 +26,7 @@ internal class ServerArchitectLevelManager : BaseArchitectLevelManager
                 if (!sceneFileName.ConsumeSuffix(ARCHITECT_SUFFIX, out var sceneSpan)) continue;
 
                 string scene = new(sceneSpan);
-                using var stream = File.OpenRead(sceneFileName);
+                using var stream = File.OpenRead(scenePath);
                 groupMetadata.Add(scene, SHA1Hash.Compute(stream));
             }
         }
@@ -80,8 +80,7 @@ internal class ServerArchitectLevelManager : BaseArchitectLevelManager
     {
         if (levelDataCache.TryGetValue((groupId, sceneName), out var pair))
         {
-            levelData = pair.Item1;
-            hash = pair.Item2;
+            (levelData, hash) = pair;
             return true;
         }
 

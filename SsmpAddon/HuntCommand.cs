@@ -12,7 +12,9 @@ internal class HuntCommand(HuntServerAddon serverAddon) : IServerCommand
 
     public string[] Aliases => ["/hunt"];
 
-    private static readonly SubcommandRegister<HuntCommand> subcommands = new("/hunt", [new ResetSubcommand(), new StatusSubcommand(), new UpdateArchitectCommand()]);
+    private static readonly SubcommandRegister<HuntCommand> subcommands = new(
+        "/hunt",
+        [new ResetSubcommand(), new StatusSubcommand(), new UpdateArchitectCommand(), new UpdateEventsCommand()]);
 
     internal DateTime LastReset { get; private set; } = DateTime.UtcNow;
 
@@ -69,6 +71,8 @@ internal class UpdateArchitectCommand : Subcommand<HuntCommand>
 {
     public override string Name => "update-architect";
 
+    public override IEnumerable<string> Aliases => ["update-levels"];
+
     public override string Usage => "'/hunt update-architect': Reload Architect-Server levels and notify clients.";
 
     public override bool Execute(HuntCommand parent, ICommandSender commandSender, string[] arguments)
@@ -76,6 +80,7 @@ internal class UpdateArchitectCommand : Subcommand<HuntCommand>
         if (!MaxArguments(commandSender, arguments, 0)) return false;
 
         parent.UpdateArchitectLevels();
+        commandSender.SendMessage("Reloaded Architect levels.");
         return true;
     }
 }
@@ -91,6 +96,7 @@ internal class UpdateEventsCommand : Subcommand<HuntCommand>
         if (!MaxArguments(commandSender, arguments, 0)) return false;
 
         parent.UpdateEvents();
+        commandSender.SendMessage("Reloaded events.json");
         return true;
     }
 }

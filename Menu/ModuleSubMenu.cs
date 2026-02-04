@@ -1,11 +1,16 @@
 ﻿using Silksong.ModMenu.Elements;
 using Silksong.TheHuntIsOn.Modules.Lib;
+using System;
 using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn.Menu;
 
 internal abstract class ModuleSubMenu<T> : IModuleSubMenu where T : ModuleSettings<T>, new()
 {
+    public event Action? OnDataUpdated;
+
+    protected void NotifyDataUpdated() => OnDataUpdated?.Invoke();
+
     public abstract IEnumerable<MenuElement> Elements();
 
     internal abstract void Apply(T data);

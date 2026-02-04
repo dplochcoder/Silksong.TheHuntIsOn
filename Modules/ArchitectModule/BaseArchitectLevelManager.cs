@@ -36,7 +36,7 @@ internal abstract class BaseArchitectLevelManager(string diskFolderName)
 
     protected string DiskGroupPath(string groupId) => Path.Join(diskFolder, groupId);
 
-    protected string DiskLevelPath(string groupId, string sceneName) => Path.Join(diskFolder, groupId, $"{sceneName}{ARCHITECT_SUFFIX}");
+    protected string DiskLevelPath(string groupId, string sceneName) => Path.Join(DiskGroupPath(groupId), $"{sceneName}{ARCHITECT_SUFFIX}");
 
     protected static Stream EmbeddedLevelStream(string groupId, string sceneName) => Assembly.GetExecutingAssembly().GetManifestResourceStream($"{EMBEDDED_PREFIX}.{groupId}.{sceneName}{ARCHITECT_SUFFIX}");
 }

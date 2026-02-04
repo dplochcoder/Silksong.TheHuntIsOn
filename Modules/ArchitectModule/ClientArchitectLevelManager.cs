@@ -71,7 +71,7 @@ internal class ClientArchitectLevelManager : BaseArchitectLevelManager
                 if (!sceneFileName.ConsumeSuffix(ARCHITECT_SUFFIX, out sceneSpan)) continue;
 
                 string scene = new(sceneSpan);
-                using var stream = File.OpenRead(sceneFileName);
+                using var stream = File.OpenRead(scenePath);
                 groupMetadata.Metadata.Add(scene, SHA1Hash.Compute(stream));
             }
         }

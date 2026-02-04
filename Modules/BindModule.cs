@@ -1,7 +1,6 @@
 ﻿using HutongGames.PlayMaker;
 using MonoDetour;
 using MonoDetour.HookGen;
-using PrepatcherPlugin;
 using Silksong.FsmUtil;
 using Silksong.ModMenu.Elements;
 using Silksong.ModMenu.Models;
@@ -11,7 +10,6 @@ using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using Silksong.TheHuntIsOn.Util;
 using SSMP.Networking.Packet;
 using System.Collections.Generic;
-using UnityEngine.UIElements;
 
 namespace Silksong.TheHuntIsOn.Modules;
 

@@ -75,6 +75,7 @@ internal class ModuleMultiMenu
             if (element is not BaseSelectableValueElement selectable) continue;
             selectable.RawModel.OnRawValueChanged += _ => UpdateData();
         }
+        menu.OnDataUpdated += UpdateData;
     }
 
     private readonly EventSuppressor updateData = new();
@@ -137,9 +138,9 @@ internal class ModuleMultiMenu
 
     internal void Apply(ModuleData data)
     {
-        everyoneMenuData = data.EveryoneSettings;
         speedrunnersMenuData = data.SpeedrunnerSettings;
         huntersMenuData = data.HunterSettings;
+        everyoneMenuData = data.EveryoneSettings;
         ModuleActivation.Value = data.ModuleActivation;
         UpdateModuleActivation(ModuleActivation.Value);
     }

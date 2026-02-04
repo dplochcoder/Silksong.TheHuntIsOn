@@ -5,9 +5,7 @@ using Silksong.TheHuntIsOn.Modules.PauseTimerModule;
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using SSMP.Api.Client;
 using SSMP.Api.Client.Networking;
-using SSMP.Networking.Packet;
 using System;
-using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn.SsmpAddon;
 
@@ -33,7 +31,7 @@ internal class HuntClientAddon : TogglableClientAddon
     {
         api = clientApi;
         sender = api.NetClient.GetNetworkSender<ServerPacketId>(this);
-        receiver = api.NetClient.GetNetworkReceiver<ClientPacketId>(this, InstantiatePacket);
+        receiver = api.NetClient.GetNetworkReceiver<ClientPacketId>(this, packetGenerators.Instantiate);
 
         HandleClientPacket<ArchitectLevelData>();
         HandleClientPacket<ArchitectLevelsMetadata>();
@@ -51,9 +49,7 @@ internal class HuntClientAddon : TogglableClientAddon
 
     protected override void OnDisable() { }
 
-    private readonly Dictionary<ClientPacketId, Func<IPacketData>> packetGenerators = [];
-
-    private IPacketData InstantiatePacket(ClientPacketId packetId) => packetGenerators.TryGetValue(packetId, out var gen) ? gen() : throw new ArgumentException($"Unknown id: {packetId}");
+    private readonly PacketGenerators<ClientPacketId> packetGenerators = new();
 
     // Add-on classes use events for communication to avoid direct communication with plugin classes.
     // This is necessary for the addons to work on dedicated servers, which do not have Silksong assemblies available.
@@ -66,9 +62,8 @@ internal class HuntClientAddon : TogglableClientAddon
 
     private void HandleClientPacket<T>() where T : IIdentifiedPacket<ClientPacketId>, new()
     {
-        var id = new T().Identifier;
-        packetGenerators.Add(id, () => new T());
-        receiver!.RegisterPacketHandler<T>(id, On<T>.Invoke);
+        packetGenerators.Register<T>();
+        receiver!.RegisterPacketHandler<T>(new T().Identifier, On<T>.Invoke);
     }
 
     internal void SendMessage(string message) => api?.UiManager.ChatBox.AddMessage(message);

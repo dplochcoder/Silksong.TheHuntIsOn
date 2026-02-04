@@ -5,9 +5,7 @@ using Silksong.TheHuntIsOn.Modules.PauseTimerModule;
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using SSMP.Api.Server;
 using SSMP.Api.Server.Networking;
-using SSMP.Networking.Packet;
 using System;
-using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn.SsmpAddon;
 
@@ -49,7 +47,7 @@ internal class HuntServerAddon : ServerAddon
     {
         api = serverApi;
         sender = api.NetServer.GetNetworkSender<ClientPacketId>(this);
-        receiver = api.NetServer.GetNetworkReceiver<ServerPacketId>(this, InstantiatePacket);
+        receiver = api.NetServer.GetNetworkReceiver<ServerPacketId>(this, packetGenerators.Instantiate);
 
         api.ServerManager.PlayerConnectEvent += player => OnUpdatePlayer?.Invoke(player);
         OnUpdatePlayer += SendModuleDataset;
@@ -63,15 +61,12 @@ internal class HuntServerAddon : ServerAddon
         HandleServerPacket<SpeedrunnerEventsDelta>(eventsModuleServerAddon.OnSpeedrunnerEventsDelta);
     }
 
-    private readonly Dictionary<ServerPacketId, Func<IPacketData>> packetGenerators = [];
-
-    private IPacketData InstantiatePacket(ServerPacketId packetId) => packetGenerators.TryGetValue(packetId, out var gen) ? gen() : throw new ArgumentException($"Unknown id: {packetId}");
+    private readonly PacketGenerators<ServerPacketId> packetGenerators = new();
 
     private void HandleServerPacket<T>(Action<ushort, T> handler) where T : IIdentifiedPacket<ServerPacketId>, new()
     {
-        ServerPacketId id = new T().Identifier;
-        packetGenerators.Add(id, () => new T());
-        receiver!.RegisterPacketHandler<T>(id, (id, data) => handler(id, data));
+        packetGenerators.Register<T>();
+        receiver!.RegisterPacketHandler<T>(new T().Identifier, (id, data) => handler(id, data));
     }
 
     private bool IsPlayerAuthorized(ushort id) => api?.ServerManager.GetPlayer(id)?.IsAuthorized ?? false;

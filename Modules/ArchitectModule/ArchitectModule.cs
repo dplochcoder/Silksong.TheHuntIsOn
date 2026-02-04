@@ -22,6 +22,8 @@ internal class ArchitectSettings : ModuleSettings<ArchitectSettings>
     public override void WriteDynamicData(IPacket packet) => EnabledGroups.WriteData(packet, (packet, value) => value.WriteData(packet));
 
     protected override bool Equivalent(ArchitectSettings other) => EnabledGroups.Count == other.EnabledGroups.Count && EnabledGroups.All(other.EnabledGroups.Contains);
+
+    public override ModuleSettings Clone() => new ArchitectSettings() { EnabledGroups = [.. EnabledGroups] };
 }
 
 internal class ArchitectModule : GlobalSettingsModule<ArchitectModule, ArchitectSettings, ArchitectSubMenu>
@@ -118,7 +120,7 @@ internal class ArchitectGroupSelectorModel : IChoiceModel<string>
     {
         if (HandleOne(all, out bool changed)) return changed;
 
-        for (int i = 0; i < all.Count; i++)
+        for (int i = all.Count - 1; i >= 0; i--)
         {
             if (all[i] == Value || all[i].CompareTo(Value) < 0)
             {
@@ -127,7 +129,7 @@ internal class ArchitectGroupSelectorModel : IChoiceModel<string>
             }
         }
 
-        Value = all.Last();
+        Value = all.First();
         return true;
     }
 
@@ -149,19 +151,19 @@ internal class ArchitectSubMenu : ModuleSubMenu<ArchitectSettings>
     private readonly HashSet<string> enabledGroups = [];
     private readonly EventSuppressor updateEnabled = new();
 
+    private void UpdateEnabled()
+    {
+        using var lease = updateEnabled.Suppress();
+        Enabled?.Interactable = GroupSelector.Value != ArchitectModule.NONE_GROUP;
+        Enabled?.Value = enabledGroups.Contains(GroupSelector.Value);
+    }
+
     public ArchitectSubMenu()
     {
         model = new();
 
         GroupSelector = new("Level Group", model, "Level group to enable/disable.");
-        GroupSelector.OnValueChanged += groupId =>
-        {
-            using (updateEnabled.Suppress())
-            {
-                if (groupId == ArchitectModule.NONE_GROUP) return;
-                Enabled?.Value = enabledGroups.Contains(groupId);
-            }
-        };
+        GroupSelector.OnValueChanged += _ => UpdateEnabled();
 
         Enabled = new("Enabled", ChoiceModels.ForBool("No", "Yes"));
         Enabled.OnValueChanged += enabled =>
@@ -170,6 +172,7 @@ internal class ArchitectSubMenu : ModuleSubMenu<ArchitectSettings>
 
             if (enabled) enabledGroups.Add(GroupSelector.Value);
             else enabledGroups.Remove(GroupSelector.Value);
+            NotifyDataUpdated();
         };
     }
 
@@ -179,8 +182,14 @@ internal class ArchitectSubMenu : ModuleSubMenu<ArchitectSettings>
     {
         enabledGroups.Clear();
         foreach (var group in data.EnabledGroups) enabledGroups.Add(group);
+
         model.PickClosest();
+        UpdateEnabled();
     }
 
-    internal override ArchitectSettings Export() => new() { EnabledGroups = [.. enabledGroups] };
+    internal override ArchitectSettings Export()
+    {
+        ArchitectSettings settings = new() { EnabledGroups = [.. enabledGroups] };
+        return settings;
+    }
 }

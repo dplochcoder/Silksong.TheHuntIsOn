@@ -25,17 +25,16 @@ internal class ArchitectModuleServerAddon
 
     internal void OnRequestArchitectLevelData(ushort id, RequestArchitectLevelData request) => Enqueue(() =>
     {
-        if (levelManager.TryGetLevelData(request.ArchitectGroupId, request.SceneName, out var data, out var hash))
+        if (!levelManager.TryGetLevelData(request.ArchitectGroupId, request.SceneName, out var data, out var hash)) return;
+
+        ArchitectLevelData response = new()
         {
-            ArchitectLevelData response = new()
-            {
-                ArchitectGroupId = request.ArchitectGroupId,
-                SceneName = request.SceneName,
-                LevelData = data,
-                LevelDataHash = hash,
-            };
-            serverAddon.SendToPlayer(id, response);
-        }
+            ArchitectGroupId = request.ArchitectGroupId,
+            SceneName = request.SceneName,
+            LevelData = data,
+            LevelDataHash = hash,
+        };
+        serverAddon.SendToPlayer(id, response);
     });
 
     internal void Refresh() => Enqueue(() =>
