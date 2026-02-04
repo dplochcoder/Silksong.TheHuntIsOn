@@ -36,18 +36,32 @@ internal class ModuleMultiMenu
     {
         mainMenu = module.CreateGlobalDataSubMenu();
         UpdateData(mainMenu);
-        mainElements.AddRange(mainMenu.Elements());
+        List<MenuElement> coreElements = [.. mainMenu.Elements()];
         var (model, desc) = GetChoiceModel(module);
-        if (mainElements.Count == 0)
+        if (coreElements.Count == 0)
         {
             ModuleActivation = new($"{module.Name} Module", model, desc);
             RootElement = ModuleActivation;
         }
         else
         {
-            SimpleMenuScreen subScreen = new($"{module.Name} Module");
             ModuleActivation = new("Activation", model, desc);
+
+
+            SimpleMenuScreen subScreen = new($"{module.Name} Module");
             subScreen.Add(ModuleActivation);
+
+            if (coreElements.Count <= 5) mainElements.AddRange(coreElements);
+            else
+            {
+                PaginatedMenuScreenBuilder builder = new($"{module.Name} Module Settings");
+                builder.AddRange(coreElements);
+                var screen = builder.Build();
+
+                TextButton settingsButton = new("Module Settings");
+                settingsButton.OnSubmit += () => MenuScreenNavigation.Show(screen);
+                mainElements.Add(settingsButton);
+            }
             subScreen.AddRange(mainElements);
 
             speedrunnersSubMenu = module.CreateGlobalDataSubMenu();
