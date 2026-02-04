@@ -136,6 +136,12 @@ internal class PauseTimerUI
         }
     }
 
+    internal static void ShortenRespawn(float reduce)
+    {
+        if (instance == null) return;
+        instance.respawnTimer = Mathf.Max(0, instance.respawnTimer - reduce);
+    }
+
     private void Update()
     {
         if (respawnTimer > 0 && !PauseTimerModule.GetServerPauseState().IsServerPaused(out _))

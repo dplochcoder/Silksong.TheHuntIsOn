@@ -44,8 +44,8 @@ internal class EventsModule : Module<EventsModule, EmptySettings, EmptySubMenu, 
     private readonly RateLimiter desyncRateLimiter = new(1f);
     private readonly RateLimiter publishRateLimiter = new(1f);
 
-    private int prevHunterMasks;
-    private int prevHunterSilk;
+    private readonly Updater<int> hunterMasks = new(0);
+    private readonly Updater<int> hunterSilk = new(0);
 
     private void Update()
     {
@@ -60,14 +60,8 @@ internal class EventsModule : Module<EventsModule, EmptySettings, EmptySubMenu, 
         }
 
         bool isHunter = TheHuntIsOnPlugin.GetRole() == RoleId.Hunter;
-        int hunterMasks = isHunter ? hunterItemGranter.MaxHealthAdds() : 0;
-        int hunterSilk = isHunter ? hunterItemGranter.MaxSilkAdds() : 0;
-        if (prevHunterMasks != hunterMasks || prevHunterSilk != hunterSilk)
-        {
-            prevHunterMasks = hunterMasks;
-            prevHunterSilk = hunterSilk;
-            UIEvents.UpdateHealthAndSilk();
-        }
+        if (hunterMasks.Update(isHunter ? hunterItemGranter.MaxHealthAdds() : 0)) UIEvents.UpdateHealth();
+        if (hunterSilk.Update(isHunter ? hunterItemGranter.MaxSilkAdds() : 0)) UIEvents.UpdateSilk();
 
         if (TheHuntIsOnPlugin.GetRole() == RoleId.Speedrunner && publishRateLimiter.Check())
         {

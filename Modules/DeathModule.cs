@@ -5,6 +5,7 @@ using Silksong.ModMenu.Elements;
 using Silksong.ModMenu.Models;
 using Silksong.TheHuntIsOn.Menu;
 using Silksong.TheHuntIsOn.Modules.Lib;
+using Silksong.TheHuntIsOn.Modules.PauseTimerModule;
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using SSMP.Networking.Packet;
 using System.Collections;
@@ -54,7 +55,11 @@ internal class DeathModule : GlobalSettingsModule<DeathModule, DeathSettings, De
 
     public override ModuleActivationType ModuleActivationType => ModuleActivationType.AnyConfiguration;
 
-    // FIXME: Respawn timer.
+    protected override void OnGlobalConfigChanged(DeathSettings before, DeathSettings after)
+    {
+        if (before.RespawnTimer > after.RespawnTimer) PauseTimerUI.ShortenRespawn(before.RespawnTimer - after.RespawnTimer);
+    }
+
     private static void ExtendDeath(HeroController self, ref bool nonLethal, ref bool frostDeath, ref IEnumerator coroutine)
     {
         if (nonLethal || !GetEnabledConfig(out var s)) return;

@@ -51,15 +51,22 @@ internal class StatsModule : GlobalSettingsModule<StatsModule, StatsSettings, St
     public override void OnEnabled()
     {
         foreach (var e in intModifiers) Events.AddPdIntModifier(e.Key, e.Value);
-        UIEvents.UpdateHealthAndSilk();
+        UIEvents.UpdateHealth();
+        UIEvents.UpdateSilk();
     }
 
     public override void OnDisabled()
     {
         foreach (var e in intModifiers) Events.RemovePdIntModifier(e.Key, e.Value);
+        UIEvents.UpdateHealth();
+        UIEvents.UpdateSilk();
     }
 
-    public override void OnGlobalConfigChanged() => UIEvents.UpdateHealthAndSilk();
+    protected override void OnGlobalConfigChanged(StatsSettings before, StatsSettings after)
+    {
+        if (before.StartingMasks != after.StartingMasks) UIEvents.UpdateHealth();
+        if (before.StartingSilkSpools != after.StartingSilkSpools) UIEvents.UpdateSilk();
+    }
 }
 
 internal class StatsSubMenu : ModuleSubMenu<StatsSettings>

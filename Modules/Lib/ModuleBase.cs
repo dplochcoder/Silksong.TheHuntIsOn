@@ -31,7 +31,7 @@ internal abstract class ModuleBase
 
     public virtual void OnDisabled() { }
 
-    public virtual void OnGlobalConfigChanged() { }
+    public virtual void OnGlobalConfigChanged(ModuleSettings? before, ModuleSettings? after) { }
 
     public static IEnumerable<ModuleBase> GetAllModules() => [
         new ArchitectModule.ArchitectModule(),

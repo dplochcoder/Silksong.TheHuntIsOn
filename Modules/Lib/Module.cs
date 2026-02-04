@@ -39,6 +39,17 @@ internal abstract class Module<ModuleT, GlobalT, SubMenuT, CosmeticT> : ModuleBa
         return true;
     }
 
+    public override void OnGlobalConfigChanged(ModuleSettings? before, ModuleSettings? after)
+    {
+        var b = (before as GlobalT) ?? new();
+        var a = (after as GlobalT) ?? new();
+        if (b.Equivalent(a)) return;
+
+        OnGlobalConfigChanged(b, a);
+    }
+
+    protected virtual void OnGlobalConfigChanged(GlobalT before, GlobalT after) { }
+
     protected static FsmStateAction IfEnabled(Action<GlobalT> action) => new LambdaAction()
     {
         Method = () =>

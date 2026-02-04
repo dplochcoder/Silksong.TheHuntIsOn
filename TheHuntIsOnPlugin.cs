@@ -48,21 +48,7 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
         }
     }
 
-    private static bool GetSettings(GlobalSaveData? saveData, string name, [MaybeNullWhen(false)] out ModuleSettings settings)
-    {
-        if (GetModuleData(saveData, name, out var data))
-        {
-            var s = data.GetSettings(saveData!.Role);
-            if (s != null)
-            {
-                settings = s;
-                return true;
-            }
-        }
-
-        settings = default;
-        return false;
-    }
+    private static ModuleSettings? GetSettings(GlobalSaveData? saveData, string name) => GetModuleData(saveData, name, out var data) ? data.GetSettings(saveData!.Role) : null;
 
     private static bool IsEnabled(GlobalSaveData? saveData, string name) => GetModuleData(saveData, name, out var data) && data.IsEnabled(saveData!.Role);
 
@@ -71,9 +57,7 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
         foreach (var module in modules.Values)
         {
             module.Enabled = IsEnabled(GlobalData, module.Name);
-
-            if (GetSettings(prev, module.Name, out var prevSettings) && GetSettings(GlobalData, module.Name, out var newSettings) && !newSettings.Equivalent(prevSettings))
-                module.OnGlobalConfigChanged();
+            module.OnGlobalConfigChanged(GetSettings(prev, module.Name), GetSettings(GlobalData, module.Name));
         }
     }
 
@@ -141,6 +125,7 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
         instance = this;
 
         MonoDetourManager.InvokeHookInitializers(typeof(TheHuntIsOnPlugin).Assembly);
+        UIEvents.Load();
 
         foreach (var module in ModuleBase.GetAllModules()) modules.Add(module.Name, module);
 

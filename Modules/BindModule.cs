@@ -1,4 +1,7 @@
 ﻿using HutongGames.PlayMaker;
+using MonoDetour;
+using MonoDetour.HookGen;
+using PrepatcherPlugin;
 using Silksong.FsmUtil;
 using Silksong.ModMenu.Elements;
 using Silksong.ModMenu.Models;
@@ -8,6 +11,7 @@ using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using Silksong.TheHuntIsOn.Util;
 using SSMP.Networking.Packet;
 using System.Collections.Generic;
+using UnityEngine.UIElements;
 
 namespace Silksong.TheHuntIsOn.Modules;
 
@@ -42,6 +46,7 @@ internal class BindSettings : ModuleSettings<BindSettings>
         && TimePenalty == other.TimePenalty;
 }
 
+[MonoDetourTargets(typeof(SilkSpool))]
 internal class BindModule : GlobalSettingsModule<BindModule, BindSettings, BindSubMenu>
 {
     protected override BindModule Self() => this;
@@ -50,9 +55,14 @@ internal class BindModule : GlobalSettingsModule<BindModule, BindSettings, BindS
 
     public override ModuleActivationType ModuleActivationType => ModuleActivationType.AnyConfiguration;
 
+    protected override void OnGlobalConfigChanged(BindSettings before, BindSettings after)
+    {
+        if (before.SilkCost != after.SilkCost) UIEvents.UpdateSilk();
+    }
+
     private static void SetSilkCost(FsmInt fsmInt)
     {
-        if (Instance != null) fsmInt.Value = Instance.GlobalConfig.SilkCost;
+        if (GetEnabledConfig(out var config)) fsmInt.Value = config.SilkCost;
     }
 
     private static void EditBindFsm(PlayMakerFSM fsm)
@@ -63,8 +73,16 @@ internal class BindModule : GlobalSettingsModule<BindModule, BindSettings, BindS
         fsm.GetState("Bind Shared")!.InsertAction(0, IfEnabled(s => fsm.FsmVariables.GetFsmFloat("Bind Time").Value *= s.TimePenalty));
     }
 
-    // FIXME: Fix UI
+    private static void OverrideBindCost(ref float result)
+    {
+        if (PlayerData.instance.IsAnyCursed) return;
+        if (GetEnabledConfig(out var config)) result = config.SilkCost;
+    }
+
     static BindModule() => Events.AddFsmEdit("Hero_Hornet(Clone)", "Bind", EditBindFsm);
+
+    [MonoDetourHookInitialize]
+    private static void Hook() => Md.SilkSpool.get_BindCost.Postfix(OverrideBindCost);
 }
 
 internal class BindSubMenu : ModuleSubMenu<BindSettings>
