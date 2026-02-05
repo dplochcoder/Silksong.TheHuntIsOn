@@ -26,7 +26,7 @@
     <Description>SSMP add-on mod for speedrunners vs. hunters.</Description>
     <ManagedFolder Condition="$(SilksongFolder) != ''">$(SilksongFolder)/Hollow Knight Silksong_Data/Managed</ManagedFolder>
     <!-- Set to true to use local references for development purposes. -->
-    <UseLocalRefs>true</UseLocalRefs>
+    <UseLocalRefs>false</UseLocalRefs>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="BepInEx.Analyzers" Version="1.0.8" PrivateAssets="all" />
@@ -48,15 +48,14 @@
     <PackageReference Include="Silksong.ModMenu" Version="0.2.0" />
     <PackageReference Include="Silksong.PrepatcherPlugin" Version="1.3.0" PrivateAssets="all" />
     <PackageReference Include="Silksong.SSMP" Version="0.0.6" PrivateAssets="all" />
+    <!-- TODO: Purenail util package -->
+    <Reference Include="PurenailUtil">
+      <HintPath>$(SilksongPluginsFolder)/dplochcoder-PurenailUtil/Silksong.PurenailUtil.dll</HintPath>
+    </Reference>
     <!-- TODO: Architect nuget package? -->
-    <LocalReferences Include="$(SilksongPluginsFolder)/cometcake575-Architect/Architect.dll" />
-  </ItemGroup>
-
-  <ItemGroup Condition="$(UseLocalRefs)">
-    <LocalReferences Include="$(SilksongPluginsFolder)/dplochcoder-PurenailUtil/Silksong.PurenailUtil.dll" />
-  </ItemGroup>
-  <ItemGroup Condition="!$(UseLocalRefs)">
-    <!-- FIXME: PurenailUtil -->
+    <Reference Include="Architect">
+      <HintPath>$(SilksongPluginsFolder)/cometcake575-Architect/Architect.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup Condition="!$(UseLocalRefs) Or !Exists($(ManagedFolder))">

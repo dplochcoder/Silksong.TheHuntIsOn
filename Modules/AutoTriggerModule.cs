@@ -79,7 +79,7 @@ internal class AutoTriggerModule : GlobalSettingsModule<AutoTriggerModule, AutoT
         var initState = fsm.GetState("Init")!;
         initState.AddTransition("AUTO TRIGGER", "Wait for Refight");
 
-        int idx = initState.Actions.IndexOf(a => a is PlayerDataBoolTest);
+        int idx = initState.Actions.ArrayIndexOf(a => a is PlayerDataBoolTest);
         initState.InsertMethod(_ =>
         {
             if (GetEnabledConfig(out var config) && config.LastJudge) fsm.SendEvent("AUTO TRIGGER");
