@@ -10,6 +10,7 @@ internal enum ModuleSettingsType
 {
     Empty,
     Architect,
+    AutoTrigger,
     Bind,
     Death,
     Healing,
@@ -43,6 +44,7 @@ internal class ModuleSettingsFactory : IDynamicValueFactory<ModuleSettingsType, 
     {
         ModuleSettingsType.Empty => new EmptySettings(),
         ModuleSettingsType.Architect => new ArchitectSettings(),
+        ModuleSettingsType.AutoTrigger => new AutoTriggerSettings(),
         ModuleSettingsType.Bind => new BindSettings(),
         ModuleSettingsType.Death => new DeathSettings(),
         ModuleSettingsType.Healing => new HealingSettings(),
