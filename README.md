@@ -5,6 +5,7 @@ An [SSMP](https://github.com/Extremelyd1/SSMP) add-on for "Speedrunner vs. Hunte
 Functionality is broken down into different modules, which can each be enabled or disabled independently of one another.
 
 - [Architect Module](docs/architect.md)
+- [Auto Trigger](docs/auto_trigger.md)
 - [Bind Module](docs/bind.md)
 - [Death Module](docs/death.md)
 - [Events Module](docs/events.md)
