@@ -68,7 +68,7 @@ internal class ArchitectGroupSelectorModel : IChoiceModel<string>
     public event Action<string>? OnValueChanged;
     public event Action<object>? OnRawValueChanged;
 
-    public string DisplayString() => Value;
+    public LocalizedText DisplayString() => Value;
 
     public string GetValue() => Value;
 
