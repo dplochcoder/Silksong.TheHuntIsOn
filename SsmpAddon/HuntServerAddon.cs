@@ -37,7 +37,7 @@ internal class HuntServerAddon : ServerAddon
     internal void UpdateArchitectLevels() => architectModuleServerAddon.Refresh();
     internal void UpdateEvents() => eventsModuleServerAddon.Refresh();
 
-    internal HuntServerAddon()
+    public HuntServerAddon()
     {
         huntCommand = new(this);
 

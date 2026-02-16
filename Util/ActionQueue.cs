@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Silksong.TheHuntIsOn.SsmpAddon;
+using System;
 using System.Collections.Generic;
 using System.Threading;
 
@@ -36,7 +37,7 @@ internal class ActionQueue
             try { action(); }
             catch (Exception ex)
             {
-                TheHuntIsOnPlugin.LogError($"{ex}");
+                HuntLogger.LogError($"{ex}");
             }
         }
     }

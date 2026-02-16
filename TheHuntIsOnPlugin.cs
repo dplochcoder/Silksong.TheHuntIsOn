@@ -26,12 +26,6 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
 {
     private static TheHuntIsOnPlugin? instance;
 
-    internal static void LogError(string message)
-    {
-        if (instance == null) return;
-        instance.Logger.LogError(message);
-    }
-
     private readonly Dictionary<string, ModuleBase> modules = [];
 
     // Can be updated from disk, from menu, or over SSMP.
@@ -120,11 +114,19 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
         SetCosmeticConfig<T>(name, config);
     }
 
+    private static void LogError(string message)
+    {
+        if (instance != null) instance.Logger.LogError(message);
+        else Console.WriteLine(message);
+    }
+
     private void Awake()
     {
+        HuntLogger.LogError = LogError;
+
         instance = this;
 
-        MonoDetourManager.InvokeHookInitializers(typeof(TheHuntIsOnPlugin).Assembly);
+        MonoDetourManager.InvokeHookInitializers(System.Reflection.Assembly.GetExecutingAssembly());
         UIEvents.Load();
 
         foreach (var module in ModuleBase.GetAllModules()) modules.Add(module.Name, module);

@@ -54,7 +54,7 @@ internal class EventsModule : Module<EventsModule, EmptySettings, EmptySubMenu, 
 
         if (reportDesync && desyncRateLimiter.Check())
         {
-            TheHuntIsOnPlugin.LogError("Desync! Requesting all server information again.");
+            HuntLogger.LogError("Desync! Requesting all server information again.");
             HuntClientAddon.Instance?.Send(new ReportDesync());
             desyncRateLimiter.Reset();
         }

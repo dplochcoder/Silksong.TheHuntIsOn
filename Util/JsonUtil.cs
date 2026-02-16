@@ -21,14 +21,14 @@ internal class JsonUtil
 
     internal static T DeserializeFromFile<T>(string path)
     {
-        using var fileReader = System.IO.File.OpenText(path);
+        using var fileReader = File.OpenText(path);
         using JsonTextReader jsonReader = new(fileReader);
         return Serializer().Deserialize<T>(jsonReader) ?? throw new ArgumentNullException($"{nameof(path)}: {path}");
     }
 
     internal static T DeserializeFromDataResource<T>(string path)
     {
-        using var stream = typeof(TheHuntIsOnPlugin).Assembly.GetManifestResourceStream($"Silksong.TheHuntIsOn.Resources.Data.{path}");
+        using var stream = System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream($"Silksong.TheHuntIsOn.Resources.Data.{path}");
         using StreamReader streamReader = new(stream);
         using JsonTextReader jsonReader = new(streamReader);
         return Serializer().Deserialize<T>(jsonReader) ?? throw new ArgumentNullException($"{nameof(path)}: {path}");
