@@ -132,6 +132,7 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
         ClientAddon.RegisterAddon(new HuntClientAddon());
         HuntClientAddon.On<ModuleDataset>.Received += OnModuleDataset;
 
+        HuntServerAddon serverAddon = new() { SeedModuleDataset = () => GlobalData?.ModuleDataset?.Clone() };
         ServerAddon.RegisterAddon(new HuntServerAddon());
 
         Logger.LogInfo($"Plugin {Name} ({Id}) has loaded!");

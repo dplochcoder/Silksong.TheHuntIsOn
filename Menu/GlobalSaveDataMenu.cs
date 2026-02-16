@@ -39,7 +39,10 @@ internal class GlobalSaveDataMenu
             ModuleMultiMenus[module.Name] = menu;
         }
 
+        Enabled.Value = globalSaveData.Enabled;
         Enabled.OnValueChanged += _ => InvokeSaveDataChanged();
+
+        Role.Value = globalSaveData.Role;
         Role.OnValueChanged += _ => InvokeSaveDataChanged();
     }
 

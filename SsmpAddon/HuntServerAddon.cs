@@ -30,6 +30,9 @@ internal class HuntServerAddon : ServerAddon
 
     private ModuleDataset? moduleDataset;
 
+    // Allow mod to provide the starting module dataset.
+    internal Func<ModuleDataset?>? SeedModuleDataset;
+
     internal event Action<IServerPlayer>? OnUpdatePlayer;
     internal void UpdateArchitectLevels() => architectModuleServerAddon.Refresh();
     internal void UpdateEvents() => eventsModuleServerAddon.Refresh();
@@ -48,6 +51,7 @@ internal class HuntServerAddon : ServerAddon
         api = serverApi;
         sender = api.NetServer.GetNetworkSender<ClientPacketId>(this);
         receiver = api.NetServer.GetNetworkReceiver<ServerPacketId>(this, packetGenerators.Instantiate);
+        moduleDataset = SeedModuleDataset?.Invoke();
 
         api.ServerManager.PlayerConnectEvent += player => OnUpdatePlayer?.Invoke(player);
         OnUpdatePlayer += SendModuleDataset;
