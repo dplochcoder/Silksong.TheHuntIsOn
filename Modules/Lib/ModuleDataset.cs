@@ -12,6 +12,9 @@ namespace Silksong.TheHuntIsOn.Modules.Lib;
 /// </summary>
 internal class ModuleDataset : Dictionary<string, ModuleData>, INetworkedCloneable<ModuleDataset>, IIdentifiedPacket<ClientPacketId>, IIdentifiedPacket<ServerPacketId>
 {
+    public ModuleDataset() { }
+    public ModuleDataset(IReadOnlyDictionary<string, ModuleData> data) : base(data.CloneDictDeep()) { }
+
     ClientPacketId IIdentifiedPacket<ClientPacketId>.Identifier => ClientPacketId.ModuleDataset;
 
     ServerPacketId IIdentifiedPacket<ServerPacketId>.Identifier => ServerPacketId.ModuleDataset;
@@ -26,12 +29,7 @@ internal class ModuleDataset : Dictionary<string, ModuleData>, INetworkedCloneab
 
     public void ReadData(IPacket packet) => this.ReadData(packet, packet => packet.ReadString());
 
-    public ModuleDataset Clone()
-    {
-        ModuleDataset clone = [];
-        foreach (var e in this) clone.Add(e.Key, e.Value.Clone());
-        return clone;
-    }
+    public ModuleDataset Clone() => new(this);
 
     public INetworkedCloneable CloneRaw() => Clone();
 
