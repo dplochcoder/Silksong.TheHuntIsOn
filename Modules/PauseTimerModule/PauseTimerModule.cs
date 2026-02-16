@@ -32,7 +32,11 @@ internal class PauseTimerModule : Module<PauseTimerModule, EmptySettings, EmptyS
 
     private float prevTimeScale = 1f;
 
-    private void UpdateTimeScale() => Time.timeScale = (HuntClientAddon.IsConnected && GameManager.instance.GameState == GlobalEnums.GameState.PLAYING && HeroController.instance.acceptingInput &&  GetServerPauseState().IsServerPaused(out _)) ? 0 : prevTimeScale;
+    private void UpdateTimeScale()
+    {
+        var gs = GameManager.instance.GameState;
+        Time.timeScale = (HuntClientAddon.IsConnected && (gs == GlobalEnums.GameState.PLAYING || gs == GlobalEnums.GameState.PAUSED) && GetServerPauseState().IsServerPaused(out _)) ? 0 : prevTimeScale;
+    }
 
     protected override PauseTimerModule Self() => this;
 
