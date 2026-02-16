@@ -108,7 +108,7 @@ internal class ClientArchitectLevelManager : BaseArchitectLevelManager
 
         if (diskMetadata.Tombstones.Contains(groupId) || diskMetadata.ContainsTombstone(groupId, sceneName))
         {
-            levelData = new([], [], []);
+            levelData = new([], [], [], []);
             return false;
         }
 
@@ -127,13 +127,13 @@ internal class ClientArchitectLevelManager : BaseArchitectLevelManager
             return true;
         }
 
-        levelData = new([], [], []);
+        levelData = new([], [], [], []);
         return false;
     }
 
     protected LevelData InjectLevelData(string sceneName)
     {
-        LevelData levelData = new([], [], []);
+        LevelData levelData = new([], [], [], []);
         foreach (var group in getEnabledGroups())
         {
             if (!levelDataCache.TryGetValue((group, sceneName), out var data)) continue;
