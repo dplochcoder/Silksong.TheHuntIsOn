@@ -89,6 +89,7 @@
 
     <!-- Local install -->
     <Copy SourceFiles="@(Binaries)" DestinationFolder="$(SilksongPluginsFolder)/dplochcoder-$(ThunderStoreTitle)/%(Binaries.LocalDir)" Condition="'$(SilksongPluginsFolder)' != '' And Exists('$(SilksongPluginsFolder)')" />
+    <Copy SourceFiles="@(Binaries)" DestinationFolder="$(SSMPFolder)" Condition="'$(SSMPFolder)' != '' AND Exists('$(SSMPFolder)')" />
 
     <!-- Thunderstore packaging -->
     <RemoveDir Directories="$(ThunderstoreDir)/temp;$(ThunderstoreDir)/dist" />
