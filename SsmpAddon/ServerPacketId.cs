@@ -5,5 +5,6 @@ internal enum ServerPacketId
     ModuleDataset,
     ReportDesync,
     RequestArchitectLevelData,
+    SeedModuleDataset,
     SpeedrunnerEventsDelta,
 }

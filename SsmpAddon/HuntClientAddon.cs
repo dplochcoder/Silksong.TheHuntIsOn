@@ -27,6 +27,8 @@ internal class HuntClientAddon : TogglableClientAddon
     private IClientAddonNetworkSender<ServerPacketId>? sender;
     private IClientAddonNetworkReceiver<ClientPacketId>? receiver;
 
+    internal event Action? OnConnect;
+
     public override void Initialize(IClientApi clientApi)
     {
         api = clientApi;
@@ -41,6 +43,8 @@ internal class HuntClientAddon : TogglableClientAddon
         HandleClientPacket<ServerPauseState>();
         HandleClientPacket<SpeedrunnerEvents>();
         HandleClientPacket<SpeedrunnerEventsDelta>();
+
+        api.ClientManager.ConnectEvent += () => OnConnect?.Invoke();
 
         Instance = this;
     }

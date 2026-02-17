@@ -62,6 +62,7 @@ internal class HuntServerAddon : ServerAddon
         HandleServerPacket<ModuleDataset>(OnModuleDataset);
         HandleServerPacket<ReportDesync>(OnReportDesync);
         HandleServerPacket<RequestArchitectLevelData>(architectModuleServerAddon.OnRequestArchitectLevelData);
+        HandleServerPacket<SeedModuleDataset>(OnSeedModuleDataset);
         HandleServerPacket<SpeedrunnerEventsDelta>(eventsModuleServerAddon.OnSpeedrunnerEventsDelta);
     }
 
@@ -111,6 +112,21 @@ internal class HuntServerAddon : ServerAddon
         this.moduleDataset = moduleDataset;
         Broadcast(moduleDataset);
         BroadcastMessage($"{PlayerName(id)} updated module settings.");
+    }
+
+    private void OnSeedModuleDataset(ushort id, SeedModuleDataset seedModuleDataset)
+    {
+        if (moduleDataset != null) return;
+
+        if (!IsPlayerAuthorized(id))
+        {
+            SendMessage(id, "Only authorized users can seed module settings.");
+            return;
+        }
+
+        moduleDataset = seedModuleDataset.ModuleDataset;
+        Broadcast(moduleDataset);
+        BroadcastMessage($"{PlayerName(id)} seeded module settings.");
     }
 
     private void OnReportDesync(ushort id, ReportDesync reportDesync)

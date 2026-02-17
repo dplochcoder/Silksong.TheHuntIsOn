@@ -57,6 +57,14 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
 
     private void OnModuleDataset(ModuleDataset moduleDataset) => GlobalData = (GlobalData ?? new()) with { ModuleDataset = moduleDataset };
 
+    private void MaybeSeedModuleDataset()
+    {
+        if (GlobalData == null) return;
+
+        SeedModuleDataset seed = new() { ModuleDataset = GlobalData.ModuleDataset.Clone() };
+        HuntClientAddon.Instance?.Send(seed);
+    }
+
     public GlobalSaveData? GlobalData
     {
         get => field;
@@ -131,8 +139,10 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
 
         foreach (var module in ModuleBase.GetAllModules()) modules.Add(module.Name, module);
 
-        ClientAddon.RegisterAddon(new HuntClientAddon());
+        HuntClientAddon clientAddon = new();
         HuntClientAddon.On<ModuleDataset>.Received += OnModuleDataset;
+        clientAddon.OnConnect += MaybeSeedModuleDataset;
+        ClientAddon.RegisterAddon(clientAddon);
 
         HuntServerAddon serverAddon = new() { SeedModuleDataset = () => GlobalData?.ModuleDataset?.Clone() };
         ServerAddon.RegisterAddon(new HuntServerAddon());
