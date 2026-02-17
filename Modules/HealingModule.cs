@@ -1,4 +1,5 @@
 ﻿using HutongGames.PlayMaker.Actions;
+using MonoDetour;
 using MonoDetour.DetourTypes;
 using MonoDetour.HookGen;
 using PrepatcherPlugin;
@@ -113,11 +114,13 @@ internal class HealingModule : GlobalSettingsModule<HealingModule, HealingSettin
     {
         Events.AddFsmEdit("Bench Control", BenchControlInterceptMaxHealth);
         Events.AddFsmEdit("Heart Container UI", MaskShardInterceptHealing);
-        Md.PlayerData.AddToMaxHealth.ControlFlowPrefix(OverrideAddToMaxHealth);
         Events.AddFsmEdit("Shrine Weaver Ability", "Inspection", ShrineInterceptHealing);
         Events.AddFsmEdit("Crest Get Shrine", "Control", CrestInterceptHealing);
         Events.AddFsmEdit("Spa Region", SpaInterceptHealing);
     }
+
+    [MonoDetourHookInitialize]
+    private static void Hook() => Md.PlayerData.AddToMaxHealth.ControlFlowPrefix(OverrideAddToMaxHealth);
 }
 
 internal class HealingSubMenu : ModuleSubMenu<HealingSettings>

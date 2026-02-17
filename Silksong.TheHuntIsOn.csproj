@@ -36,7 +36,7 @@
     <PackageReference Include="Hamunii.BepInEx.AutoPlugin" Version="2.0.1" PrivateAssets="all" />
     <PackageReference Include="Microsoft.Unity.Analyzers" Version="1.25.0" PrivateAssets="all" />
     <PackageReference Include="MonoDetour" Version="0.7.10" />
-    <PackageReference Include="MonoDetour.HookGen" Version="0.7.3" />
+    <PackageReference Include="MonoDetour.HookGen" Version="0.7.6" />
     <PackageReference Include="PolySharp" Version="1.15.0">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
