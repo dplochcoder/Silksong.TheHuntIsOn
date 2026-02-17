@@ -2,7 +2,6 @@
 using SSMP.Networking.Packet;
 using System;
 using System.Collections.Generic;
-using UnityEngine;
 
 namespace Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 
@@ -62,9 +61,6 @@ internal static class IWireInterfaceExtensions
 
     internal static void ReadData(this ref float self, IPacket packet) => self = packet.ReadFloat();
     internal static void WriteData(this float self, IPacket packet) => packet.Write(self);
-
-    internal static void ReadData(this ref Vector2 self, IPacket packet) => self = (Vector2)packet.ReadVector2();
-    internal static void WriteData(this Vector2 self, IPacket packet) => packet.Write((SSMP.Math.Vector2)self);
 
     internal static void ReadData(this ref long self, IPacket packet) => self = packet.ReadLong();
     internal static void WriteData(this long self, IPacket packet) => packet.Write(self);
