@@ -15,6 +15,16 @@ namespace Silksong.TheHuntIsOn.Modules.PauseTimerModule;
 [MonoDetourTargets(typeof(GameManager))]
 internal class PauseTimerUI
 {
+    private record StatusMessage(string Actual, string Spacing)
+    {
+        public static readonly StatusMessage Empty = new("");
+
+        public StatusMessage(string singleton) : this(singleton, singleton) { }
+
+        public readonly string Actual = Actual;
+        public readonly string Spacing = Spacing;
+    }
+
     private static readonly PauseTimerUI instance = new();
 
     private PauseTimerUI() => Events.OnGameManagerUpdate += Update;
@@ -42,45 +52,58 @@ internal class PauseTimerUI
         return true;
     }
 
+    private static StatusMessage MessageWithTime(string msg, float time) => new($"{msg}: {FormatTime(time)}", $"{msg}: {FormatTimeSpacing(time)}");
+
+    private static string FormatHours(float timeSeconds)
+    {
+        int hours = Mathf.FloorToInt(timeSeconds / 3600);
+        int minutes = Mathf.FloorToInt((timeSeconds % 3600) / 60);
+        if (minutes >= 60) minutes = 59;
+
+        string status = $"{hours} {(hours > 1 ? "hours" : "hour")}";
+        if (minutes > 0) status = $"{status} and {minutes} {(minutes > 1 ? "minutes" : "minute")}";
+        return status;
+    }
+
     private static string FormatTime(float timeSeconds)
     {
         if (timeSeconds <= 0) return "0.00";
-        if (timeSeconds >= 3600)
-        {
-            int hours = Mathf.FloorToInt(timeSeconds / 3600);
-            int minutes = Mathf.FloorToInt((timeSeconds % 3600) / 60);
-            if (minutes >= 60) minutes = 59;
-
-            string status = $"{hours} {(hours > 1 ? "hours" : "hour")}";
-            if (minutes > 0) status = $"{status} and {minutes} {(minutes > 1 ? "minutes" : "minute")}";
-            return status;
-        }
-        if (timeSeconds >= 60)
+        else if (timeSeconds < 10) return $"{timeSeconds:0.00}";
+        else if (timeSeconds < 60) return $"{timeSeconds:00.0}";
+        else if (timeSeconds < 3600)
         {
             int minutes = Mathf.FloorToInt(timeSeconds / 60);
             int seconds = Mathf.FloorToInt(timeSeconds % 60);
             if (seconds >= 60) seconds = 59;
             return $"{minutes}:{seconds:00}";
         }
-        if (timeSeconds >= 10) return $"{timeSeconds:00.0}";
-        return $"{timeSeconds:0.00}";
+        else return FormatHours(timeSeconds);
     }
 
-    private List<string> ComputeStatuses()
+    private static string FormatTimeSpacing(float timeSeconds)
     {
-        List<string> statuses = [];
+        if (timeSeconds < 10) return "0.00";
+        else if (timeSeconds < 60) return "00.0";
+        else if (timeSeconds < 600) return "0:00";
+        else if (timeSeconds < 3600) return "00:00";
+        else return FormatHours(timeSeconds);
+    }
+
+    private List<StatusMessage> ComputeStatuses()
+    {
+        List<StatusMessage> statuses = [];
 
         var state = PauseTimerModule.GetServerPauseState();
         if (state.IsServerPaused(out var unpauseSeconds))
         {
-            if (!unpauseSeconds.HasValue) statuses.Add("Server Paused");
-            else statuses.Add($"Unpausing in: {FormatTime(unpauseSeconds.Value)}");
+            if (!unpauseSeconds.HasValue) statuses.Add(new("Server Paused"));
+            else statuses.Add(MessageWithTime("Unpausing in", unpauseSeconds.Value));
         }
-        if (respawnTimer > 0) statuses.Add($"Respawn in: {FormatTime(respawnTimer)}");
+        if (respawnTimer > 0) statuses.Add(MessageWithTime("Respawn in", respawnTimer));
 
         foreach (var countdown in state.Countdowns)
         {
-            if (countdown.GetDisplayTime(out float seconds)) statuses.Add($"{countdown.Message}: {FormatTime(seconds)}");
+            if (countdown.GetDisplayTime(out float seconds)) statuses.Add(MessageWithTime(countdown.Message, seconds));
         }
 
         return statuses;
@@ -109,7 +132,7 @@ internal class PauseTimerUI
 
     private static readonly Vector2 INACTIVE_POS = new(-1000, -1000);
 
-    private void UpdateStatuses(List<string> statuses)
+    private void UpdateStatuses(List<StatusMessage> statuses)
     {
         var config = PauseTimerModule.GetUIConfig();
         var spacingParameters = config.PauseTimerPosition.SpacingParameters();
@@ -117,8 +140,8 @@ internal class PauseTimerUI
         for (int i = 0; i < textCache.Count; i++)
         {
             var text = textCache[i];
-            var status = i < statuses.Count ? statuses[i] : "";
-            if (status == "")
+            var status = i < statuses.Count ? statuses[i] : StatusMessage.Empty;
+            if (status.Actual == "")
             {
                 text.gameObject.SetActive(false);
                 text.text = "";
@@ -127,12 +150,14 @@ internal class PauseTimerUI
             }
 
             text.gameObject.SetActive(true);
-            text.text = status;
-            text.fontSize = 40;
 
             var scale = config.PauseTimerSize.FontScale();
             text.transform.localScale = new(scale, scale, 1);
+            text.fontSize = 40;
+
+            text.text = status.Spacing;
             text.transform.position = spacingParameters.GetPosition(i, statuses.Count, config.PauseTimerSize.Spacing(), scale, text.bounds);
+            text.text = status.Actual;
         }
     }
 
@@ -152,7 +177,7 @@ internal class PauseTimerUI
 
         if (!EnsureParent()) return;
 
-        List<string> statuses = ComputeStatuses();
+        List<StatusMessage> statuses = ComputeStatuses();
         while (textCache.Count < statuses.Count) CreateText();
         UpdateStatuses(statuses);
     }
