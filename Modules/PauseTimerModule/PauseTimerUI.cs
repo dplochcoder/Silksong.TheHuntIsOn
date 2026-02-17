@@ -156,6 +156,7 @@ internal class PauseTimerUI
             text.fontSize = 40;
 
             text.text = status.Spacing;
+            text.ForceMeshUpdate();
             text.transform.position = spacingParameters.GetPosition(i, statuses.Count, config.PauseTimerSize.Spacing(), scale, text.bounds);
             text.text = status.Actual;
         }
