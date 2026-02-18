@@ -42,6 +42,7 @@ internal abstract class ModuleBase
         new HealingModule(),
         new IntelligenceModule(),
         new PauseTimerModule.PauseTimerModule(),
+        new SilkRegenerationModule(),
         new SpawnPointModule(),
         new StatsModule(),
     ];
