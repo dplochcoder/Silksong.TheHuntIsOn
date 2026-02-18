@@ -22,7 +22,9 @@ internal enum HunterItemGrantType
     #endregion
 
     #region Upgrades
+    MaskShard,
     Mask,
+    SpoolFragment,
     SilkSpool,
     NeedleUpgrade,
     #endregion

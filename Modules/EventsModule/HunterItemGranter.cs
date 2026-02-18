@@ -2,18 +2,37 @@
 using Silksong.TheHuntIsOn.Util;
 using System;
 using System.Collections.Generic;
+using System.Reflection;
 
 namespace Silksong.TheHuntIsOn.Modules.EventsModule;
 
 internal class HunterItemGranter
 {
+    private static readonly IReadOnlyList<(HunterItemGrantType, int)> MASK_SHARD_REWARDS = [
+        (HunterItemGrantType.MaskShard, 1),
+        (HunterItemGrantType.Mask, 4),
+    ];
+
+    private static readonly IReadOnlyList<(HunterItemGrantType, int)> SILK_SPOOL_REWARDS = [
+        (HunterItemGrantType.SpoolFragment, 1),
+        (HunterItemGrantType.SilkSpool, 2),
+    ];
+
+    private readonly Dictionary<string, Func<int>> intModifiers;
+    private readonly Func<int> maxHealthModifier;
+    private readonly Func<int> maxSilkModifier;
+
     internal HunterItemGranter()
     {
+        maxHealthModifier = QuotientModifier(MASK_SHARD_REWARDS, nameof(PlayerData.heartPieces), 4);
+        maxSilkModifier = QuotientModifier(SILK_SPOOL_REWARDS, nameof(PlayerData.silkSpoolParts), 2);
         intModifiers = new()
         {
-            [nameof(PlayerData.maxHealth)] = IntModifier(HunterItemGrantType.Mask),
-            [nameof(PlayerData.maxHealthBase)] = IntModifier(HunterItemGrantType.Mask),
-            [nameof(PlayerData.silkMax)] = IntModifier(HunterItemGrantType.SilkSpool),
+            [nameof(PlayerData.heartPieces)] = ModulusModifier(MASK_SHARD_REWARDS, nameof(PlayerData.heartPieces), 4),
+            [nameof(PlayerData.maxHealth)] = maxHealthModifier,
+            [nameof(PlayerData.maxHealthBase)] = maxHealthModifier,
+            [nameof(PlayerData.silkSpoolParts)] = ModulusModifier(SILK_SPOOL_REWARDS, nameof(PlayerData.silkSpoolParts), 2),
+            [nameof(PlayerData.silkMax)] = maxSilkModifier,
             [nameof(PlayerData.nailUpgrades)] = IntModifier(HunterItemGrantType.NeedleUpgrade),
         };
     }
@@ -25,8 +44,8 @@ internal class HunterItemGranter
     private readonly HashSet<string> allGrantIds = [];
     private readonly HashMultiset<HunterItemGrantType> allGrants = [];
 
-    internal int MaxHealthAdds() => allGrants.Count(HunterItemGrantType.Mask);
-    internal int MaxSilkAdds() => allGrants.Count(HunterItemGrantType.SilkSpool);
+    internal int MaxHealthAdds() => maxHealthModifier();
+    internal int MaxSilkAdds() => maxSilkModifier();
 
     internal bool Update(HunterItemGrantsDelta delta, out bool desynced)
     {
@@ -89,7 +108,36 @@ internal class HunterItemGranter
         return boolGrants.TryGetValue(name, out var type) && allGrants.Contains(type);
     }
 
-    private readonly Dictionary<string, Func<int>> intModifiers;
-
     private Func<int> IntModifier(HunterItemGrantType type) => () => TheHuntIsOnPlugin.GetRole() == Lib.RoleId.Hunter ? allGrants.Count(type) : 0;
+
+    private static readonly Dictionary<string, FieldInfo> origFields = [];
+    private static int GetOrigPDInt(string name)
+    {
+        if (!origFields.TryGetValue(name, out var field))
+        {
+            field = typeof(PlayerData).GetField(name, BindingFlags.Public | BindingFlags.Instance) ?? typeof(PlayerData).GetField(name, BindingFlags.NonPublic | BindingFlags.Instance);
+            origFields.Add(name, field);
+        }
+
+        return (int)field.GetValue(PlayerData.instance);
+    }
+
+    private bool GetNewShards(IEnumerable<(HunterItemGrantType, int)> shardRewards, string pdShardName, int modulus, out int origShards, out int newShards)
+    {
+        if (TheHuntIsOnPlugin.GetRole() != Lib.RoleId.Hunter)
+        {
+            origShards = 0;
+            newShards = 0;
+            return false;
+        }
+
+        origShards = GetOrigPDInt(pdShardName);
+        newShards = origShards;
+        foreach (var (type, count) in shardRewards) newShards += count * allGrants.Count(type);
+        return true;
+    }
+
+    private Func<int> QuotientModifier(IEnumerable<(HunterItemGrantType, int)> shardRewards, string pdShardName, int modulus) => () => GetNewShards(shardRewards, pdShardName, modulus, out var origShards, out var newShards) ? newShards / modulus : 0;
+
+    private Func<int> ModulusModifier(IEnumerable<(HunterItemGrantType, int)> shardRewards, string pdShardName, int modulus) => () => GetNewShards(shardRewards, pdShardName, modulus, out var origShards, out var newShards) ? (newShards % modulus) - origShards : 0;
 }

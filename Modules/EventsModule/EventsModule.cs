@@ -59,9 +59,8 @@ internal class EventsModule : Module<EventsModule, EmptySettings, EmptySubMenu, 
             desyncRateLimiter.Reset();
         }
 
-        bool isHunter = TheHuntIsOnPlugin.GetRole() == RoleId.Hunter;
-        if (hunterMasks.Update(isHunter ? hunterItemGranter.MaxHealthAdds() : 0)) UIEvents.UpdateHealth();
-        if (hunterSilk.Update(isHunter ? hunterItemGranter.MaxSilkAdds() : 0)) UIEvents.UpdateSilk();
+        if (hunterMasks.Update(hunterItemGranter.MaxHealthAdds())) UIEvents.UpdateHealth();
+        if (hunterSilk.Update(hunterItemGranter.MaxSilkAdds())) UIEvents.UpdateSilk();
 
         if (TheHuntIsOnPlugin.GetRole() == RoleId.Speedrunner && publishRateLimiter.Check())
         {
