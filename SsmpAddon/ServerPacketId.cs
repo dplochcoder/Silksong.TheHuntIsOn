@@ -2,6 +2,7 @@
 
 internal enum ServerPacketId
 {
+    IntelligenceMessage,
     ModuleDataset,
     ReportDesync,
     RequestArchitectLevelData,

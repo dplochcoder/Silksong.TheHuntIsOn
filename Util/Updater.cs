@@ -13,4 +13,11 @@ internal class Updater<T>(T value) where T : struct
         Value = newValue;
         return true;
     }
+
+    public bool Update(T value, out T prevValue, out T newValue)
+    {
+        prevValue = Value;
+        newValue = value;
+        return Update(newValue);
+    }
 }

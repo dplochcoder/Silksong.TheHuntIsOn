@@ -2,11 +2,19 @@
 using HutongGames.PlayMaker.Actions;
 using Silksong.FsmUtil.Actions;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Silksong.TheHuntIsOn.Util;
 
 internal static class FsmEdits
 {
+    internal static bool HasStates(this PlayMakerFSM fsm, IEnumerable<string> states)
+    {
+        HashSet<string> owned = [.. fsm.FsmStates.Select(s => s.Name)];
+        return states.All(owned.Contains);
+    }
+
     internal static bool IsCallMethodProper(this FsmStateAction self, string behaviour, string methodName) => self is CallMethodProper call && call.behaviour.Value == behaviour && call.methodName.Value == methodName;
 
     internal static bool IsCallMethodProper<T>(this FsmStateAction self, string methodName) => self.IsCallMethodProper(typeof(T).Name, methodName);

@@ -28,7 +28,8 @@ internal static class Events
         return current;
     }
 
-    internal static event Action<Scene>? OnNewScene;
+    internal static event Action<Scene>? OnLeaveScene;
+    internal static event Action<Scene>? OnEnterScene;
     private static readonly HashMultimap<string, Action<Scene>> sceneEditsByName = [];
 
     internal static void AddSceneEdit(string sceneName, Action<Scene> edit) => sceneEditsByName.Add(sceneName, edit);
@@ -36,7 +37,8 @@ internal static class Events
 
     private static void OnLevelActivated(GameManager self, ref Scene before, ref Scene after)
     {
-        OnNewScene?.Invoke(after);
+        OnLeaveScene?.Invoke(before);
+        OnEnterScene?.Invoke(after);
         foreach (var edit in sceneEditsByName.Get(after.name)) edit(after);
     }
 

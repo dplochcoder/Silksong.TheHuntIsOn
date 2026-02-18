@@ -10,6 +10,7 @@ Functionality is broken down into different modules, which can each be enabled o
 - [Death Module](docs/death.md)
 - [Events Module](docs/events.md)
 - [Healing Module](docs/healing.md)
+- [Intelligence Module](docs/intelligence.md)
 - [Pause Timer Module](docs/pause_timer.md)
 - [Spawn Point Module](docs/spawn_point.md)
 - [Stats Module](docs/stats.md)

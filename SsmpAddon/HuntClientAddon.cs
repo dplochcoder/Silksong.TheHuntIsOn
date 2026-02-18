@@ -6,6 +6,7 @@ using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using SSMP.Api.Client;
 using SSMP.Api.Client.Networking;
 using System;
+using System.Linq;
 
 namespace Silksong.TheHuntIsOn.SsmpAddon;
 
@@ -52,6 +53,8 @@ internal class HuntClientAddon : TogglableClientAddon
     protected override void OnEnable() { }
 
     protected override void OnDisable() { }
+
+    internal static bool OpponentsInRoom() => Instance?.api?.ClientManager.Players.Any(p => p.Team != Instance.api.ClientManager.Team && p.IsInLocalScene) ?? false;
 
     private readonly PacketGenerators<ClientPacketId> packetGenerators = new();
 

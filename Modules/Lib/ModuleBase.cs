@@ -40,6 +40,7 @@ internal abstract class ModuleBase
         new DeathModule(),
         new EventsModule.EventsModule(),
         new HealingModule(),
+        new IntelligenceModule(),
         new PauseTimerModule.PauseTimerModule(),
         new SpawnPointModule(),
         new StatsModule(),

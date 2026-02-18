@@ -1,4 +1,5 @@
-﻿using Silksong.TheHuntIsOn.Modules.ArchitectModule;
+﻿using Silksong.TheHuntIsOn.Modules;
+using Silksong.TheHuntIsOn.Modules.ArchitectModule;
 using Silksong.TheHuntIsOn.Modules.EventsModule;
 using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.Modules.PauseTimerModule;
@@ -59,6 +60,7 @@ internal class HuntServerAddon : ServerAddon
         api.CommandManager.RegisterCommand(huntCommand);
         api.CommandManager.RegisterCommand(pauseTimerCommand);
 
+        HandleServerPacket<IntelligenceMessage>(OnIntelligenceMessage);
         HandleServerPacket<ModuleDataset>(OnModuleDataset);
         HandleServerPacket<ReportDesync>(OnReportDesync);
         HandleServerPacket<RequestArchitectLevelData>(architectModuleServerAddon.OnRequestArchitectLevelData);
@@ -100,6 +102,8 @@ internal class HuntServerAddon : ServerAddon
         if (packet.Single) sender?.BroadcastSingleData(packet.Identifier, packet);
         else sender?.BroadcastCollectionData(packet.Identifier, packet);
     }
+
+    private void OnIntelligenceMessage(ushort id, IntelligenceMessage intelligenceMessage) => BroadcastMessage(intelligenceMessage.Message);
 
     private void OnModuleDataset(ushort id, ModuleDataset moduleDataset)
     {

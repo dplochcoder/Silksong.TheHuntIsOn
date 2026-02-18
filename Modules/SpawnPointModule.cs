@@ -41,7 +41,7 @@ internal class SpawnPointSettings : ModuleSettings<SpawnPointSettings>
 [MonoDetourTargets(typeof(GameManager))]
 internal class SpawnPointModule : GlobalSettingsModule<SpawnPointModule, SpawnPointSettings, SpawnPointSubMenu>
 {
-    internal SpawnPointModule() => Events.OnNewScene += OnNewScene;
+    internal SpawnPointModule() => Events.OnEnterScene += OnNewScene;
 
     protected override SpawnPointModule Self() => this;
 
