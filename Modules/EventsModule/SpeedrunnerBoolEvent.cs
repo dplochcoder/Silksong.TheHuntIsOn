@@ -3,6 +3,7 @@
 // Speedrunner events tied to unique pickups.
 internal enum SpeedrunnerBoolEvent
 {
+    #region Movement
     SwiftStep,
     DriftersCloak,
     ClingGrip,
@@ -10,6 +11,18 @@ internal enum SpeedrunnerBoolEvent
     Clawline,
     FaydownCloak,
     SilkSoar,
+    #endregion
+
+    #region Silk Skills
+    Silkspear,
+    Sharpdart,
+    ThreadStorm,
+    RuneRage,
+    CrossStitch,
+    PaleNails,
+    #endregion
+
+    #region Key Items
     ArchitectsMelody,
     ConductorsMelody,
     VaultkeepersMelody,
@@ -18,4 +31,5 @@ internal enum SpeedrunnerBoolEvent
     EncrustedHeart,
     ConjoinedHeart,
     Everbloom,
+    #endregion
 }

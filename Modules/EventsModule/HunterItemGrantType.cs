@@ -2,7 +2,7 @@
 
 internal enum HunterItemGrantType
 {
-    #region movement
+    #region Movement
     SwiftStep,
     DriftersCloak,
     ClingGrip,
@@ -12,7 +12,16 @@ internal enum HunterItemGrantType
     SilkSoar,
     #endregion
 
-    #region upgrades
+    #region Silk Skills
+    Silkspear,
+    Sharpdart,
+    ThreadStorm,
+    RuneRage,
+    CrossStitch,
+    PaleNails,
+    #endregion
+
+    #region Upgrades
     Mask,
     SilkSpool,
     NeedleUpgrade,

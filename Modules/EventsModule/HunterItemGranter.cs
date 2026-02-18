@@ -75,6 +75,12 @@ internal class HunterItemGranter
         [nameof(PlayerData.hasHarpoonDash)] = HunterItemGrantType.Clawline,
         [nameof(PlayerData.hasDoubleJump)] = HunterItemGrantType.FaydownCloak,
         [nameof(PlayerData.hasSuperJump)] = HunterItemGrantType.SilkSoar,
+        [nameof(PlayerData.hasNeedleThrow)] = HunterItemGrantType.Silkspear,
+        [nameof(PlayerData.hasSilkCharge)] = HunterItemGrantType.Sharpdart,
+        [nameof(PlayerData.hasThreadSphere)] = HunterItemGrantType.ThreadStorm,
+        [nameof(PlayerData.hasSilkBomb)] = HunterItemGrantType.RuneRage,
+        [nameof(PlayerData.hasParry)] = HunterItemGrantType.CrossStitch,
+        [nameof(PlayerData.hasSilkBossNeedle)] = HunterItemGrantType.PaleNails,
     };
 
     private bool OverrideGetPDBool(PlayerData instance, string name, bool current)

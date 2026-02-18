@@ -81,6 +81,12 @@ internal class SpeedrunnerEvents : IDeltaBase<SpeedrunnerEvents, SpeedrunnerEven
         [SpeedrunnerBoolEvent.Clawline] = nameof(PlayerData.hasHarpoonDash),
         [SpeedrunnerBoolEvent.FaydownCloak] = nameof(PlayerData.hasDoubleJump),
         [SpeedrunnerBoolEvent.SilkSoar] = nameof(PlayerData.hasSuperJump),
+        [SpeedrunnerBoolEvent.Silkspear] = nameof(PlayerData.hasNeedleThrow),
+        [SpeedrunnerBoolEvent.Sharpdart] = nameof(PlayerData.hasSilkCharge),
+        [SpeedrunnerBoolEvent.ThreadStorm] = nameof(PlayerData.hasThreadSphere),
+        [SpeedrunnerBoolEvent.RuneRage] = nameof(PlayerData.hasSilkBomb),
+        [SpeedrunnerBoolEvent.CrossStitch] = nameof(PlayerData.hasParry),
+        [SpeedrunnerBoolEvent.PaleNails] = nameof(PlayerData.hasSilkBossNeedle),
         [SpeedrunnerBoolEvent.ArchitectsMelody] = nameof(PlayerData.HasMelodyArchitect),
         [SpeedrunnerBoolEvent.ConductorsMelody] = nameof(PlayerData.HasMelodyConductor),
         [SpeedrunnerBoolEvent.VaultkeepersMelody] = nameof(PlayerData.HasMelodyLibrarian),
@@ -116,6 +122,7 @@ internal class SpeedrunnerEvents : IDeltaBase<SpeedrunnerEvents, SpeedrunnerEven
             if (value > 0) events.CountEvents.Add(e.Key, playerData.GetInt(e.Value));
         }
 
+        events.DeriveInt(SpeedrunnerCountEventType.SilkSkills, [SpeedrunnerBoolEvent.Silkspear, SpeedrunnerBoolEvent.Sharpdart, SpeedrunnerBoolEvent.ThreadStorm, SpeedrunnerBoolEvent.RuneRage, SpeedrunnerBoolEvent.CrossStitch, SpeedrunnerBoolEvent.PaleNails]);
         events.DeriveInt(SpeedrunnerCountEventType.Melodies, [SpeedrunnerBoolEvent.ArchitectsMelody, SpeedrunnerBoolEvent.ConductorsMelody, SpeedrunnerBoolEvent.VaultkeepersMelody]);
         events.DeriveInt(SpeedrunnerCountEventType.Hearts, [SpeedrunnerBoolEvent.HuntersHeart, SpeedrunnerBoolEvent.EncrustedHeart, SpeedrunnerBoolEvent.EncrustedHeart, SpeedrunnerBoolEvent.ConjoinedHeart]);
 
