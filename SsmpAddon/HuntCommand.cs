@@ -30,6 +30,8 @@ internal class HuntCommand(HuntServerAddon serverAddon) : IServerCommand
 
     internal void UpdateEvents() => serverAddon.UpdateEvents();
 
+    internal void BroadcastMessage(string message) => serverAddon.BroadcastMessage(message);
+
     public void Execute(ICommandSender commandSender, string[] arguments) => subcommands.Execute(this, commandSender, arguments);
 }
 
@@ -46,6 +48,7 @@ internal class ResetSubcommand : Subcommand<HuntCommand>
         if (!MaxArguments(commandSender, arguments, 0)) return false;
 
         parent.StartNewSession();
+        parent.BroadcastMessage("Hunt session reset.");
         return true;
     }
 }
