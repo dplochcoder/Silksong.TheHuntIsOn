@@ -108,6 +108,7 @@ internal class IntelligenceMessage : IIdentifiedPacket<ServerPacketId>
 [MonoDetourTargets(typeof(GameManager))]
 [MonoDetourTargets(typeof(HealthManager))]
 [MonoDetourTargets(typeof(Lever))]
+[MonoDetourTargets(typeof(Lever_tk2d))]
 [MonoDetourTargets(typeof(ShopItem))]
 internal class IntelligenceModule : GlobalSettingsModule<IntelligenceModule, IntelligenceSettings, IntelligenceSubMenu>
 {
@@ -115,7 +116,14 @@ internal class IntelligenceModule : GlobalSettingsModule<IntelligenceModule, Int
     private const string SHOP_PURCHASE = "The hubble of barter almost drowns out the clacking of rosaries. A shrewd deal hath been bargained.";
     private const string TOLL_PURCHASE = "Rosaries clink and clang noisily down a long metal chute. A machine has collected its toll.";
     private const string SIMPLE_KEY_USAGES = "A simple door creaks open, its key expired.";
-    private const string LEVER_HITS = "A lever recoils from the needle, compelled to turn the gears once again.";
+    private static readonly IReadOnlyList<string> LEVER_HITS = [
+        "A lever recoils, compelled to turn the gears once again.",
+        "An overexcited bug shouts 'Kronk!' in the distance.",
+        "The gears turn, the door moves, the lever cries.",
+        "Clickity clackety, a lever is whacked-ity.",
+        "Another lever is soundly defeated by the puzzle master.",
+        "The lever bounces back, but its defiance is temporary.",
+    ];
     private const string BELL_SHRINES = "A mighty bell dings and dongs in the distance, echoing across all of Pharloom.";
     private const string FLEA_RESCUES = "Barely audible over the flutter of wings, you hear a soft, joyful 'Awoo!'.";
     private const string CARAVAN_RIDES = "The great caravan settles down once again in new lands, its red passenger flying off.";
@@ -276,10 +284,18 @@ internal class IntelligenceModule : GlobalSettingsModule<IntelligenceModule, Int
     }
 
     private static bool IgnoreLever(Lever lever) => lever.gameObject.name == "Bell Shrine Lever";  // Covered by bell shrines.
+    private static bool IgnoreLeverTk2d(Lever_tk2d lever) => lever.gameObject.name == "Bell Shrine Lever";  // Covered by bell shrines.
+
+    private void SendLeverMessage() => SendMessage(LEVER_HITS[UnityEngine.Random.Range(0, LEVER_HITS.Count)]);
 
     private static void PostfixLeverAwake(Lever self) => self.OnActivated.AddListener(() =>
     {
-        if (GetEnabledConfig(out var config) && config.LeverHits == NotificationSetting.Notify && !IgnoreLever(self)) Instance?.SendMessage(LEVER_HITS);
+        if (GetEnabledConfig(out var config) && config.LeverHits == NotificationSetting.Notify && !IgnoreLever(self)) Instance?.SendLeverMessage();
+    });
+
+    private static void PostfixLeverTk2dAwake(Lever_tk2d self) => self.CustomGateOpen.AddListener(() =>
+    {
+        if (GetEnabledConfig(out var config) && config.LeverHits == NotificationSetting.Notify && !IgnoreLeverTk2d(self)) Instance?.SendLeverMessage();
     });
 
     private static void PostfixShopItemPurchased(ShopItem self, ref Action onComplete, ref int subItemIndex)
@@ -293,6 +309,7 @@ internal class IntelligenceModule : GlobalSettingsModule<IntelligenceModule, Int
         Md.GameManager.SetLoadedGameData_SaveGameData_System_Int32.Postfix(PostfixLoadGameData);
         Md.HealthManager.OnEnable.Postfix(PostfixHealthManagerOnEnable);
         Md.Lever.Awake.Postfix(PostfixLeverAwake);
+        Md.Lever_tk2d.Awake.Postfix(PostfixLeverTk2dAwake);
         Md.ShopItem.SetPurchased.Postfix(PostfixShopItemPurchased);
     }
 }
