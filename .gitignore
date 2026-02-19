@@ -487,3 +487,4 @@ $RECYCLE.BIN/
 # Vim temporary swap files
 *.swp
 /packages.lock.json
+/packages.lock.json
