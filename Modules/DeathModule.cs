@@ -44,7 +44,7 @@ internal class DeathSettings : ModuleSettings<DeathSettings>
         && LimitSilk == other.LimitSilk;
 }
 
-[MonoDetourTargets(typeof(HeroController))]
+[MonoDetourTargets(typeof(HeroController), GenerateControlFlowVariants = true)]
 internal class DeathModule : GlobalSettingsModule<DeathModule, DeathSettings, DeathSubMenu>
 {
     internal static int GetRespawnTimer() => GetEnabledConfig(out var config) ? config.RespawnTimer : 0;

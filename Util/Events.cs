@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 namespace Silksong.TheHuntIsOn.Util;
 
 [MonoDetourTargets(typeof(GameManager))]
-[MonoDetourTargets(typeof(HeroController))]
+[MonoDetourTargets(typeof(HeroController), GenerateControlFlowVariants = true)]
 [MonoDetourTargets(typeof(PlayMakerFSM))]
 internal static class Events
 {
