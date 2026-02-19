@@ -13,6 +13,7 @@ using Silksong.TheHuntIsOn.Util;
 using SSMP.Networking.Packet;
 using System;
 using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Silksong.TheHuntIsOn.Modules;
@@ -182,6 +183,7 @@ internal class IntelligenceModule : GlobalSettingsModule<IntelligenceModule, Int
         Events.OnHeroUpdate += WatchPlayerData;
         Events.OnLeaveScene += WatchCaravanRide;
         Events.AddFsmEdit("FSM", ModifyTollFsm);
+        Events.AddFsmEdit("rosary_string_machine", "Behaviour (special)", ModifyStringMachineFsm);
         Events.AddFsmEdit("Bone Beast NPC", "Interaction", ModifyBellBeast);
         Events.AddFsmEdit("City Travel Tube", "Tube Travel", ModifyVentrica);
     }
@@ -189,6 +191,47 @@ internal class IntelligenceModule : GlobalSettingsModule<IntelligenceModule, Int
     private readonly EventSuppressor sendMessages = new();
 
     private readonly Updater<int> simpleKeys = new(0);
+
+    private readonly Updater<int> defeatedBosses = new(0);
+    private static int CalculateDefeatedBosses() =>
+          (PlayerDataAccess.ant02GuardDefeated ? 1 : 0)
+        + (PlayerDataAccess.cog7_automaton_defeated ? 1 : 0)
+        + (PlayerDataAccess.defeatedAntQueen ? 1 : 0)
+        + (PlayerDataAccess.defeatedAntTrapper ? 1 : 0)
+        + (PlayerDataAccess.defeatedBellBeast ? 1 : 0)
+        + (PlayerDataAccess.defeatedBoneFlyerGiant ? 1 : 0)
+        + (PlayerDataAccess.DefeatedBonetownBoss ? 1 : 0)
+        + (PlayerDataAccess.defeatedBroodMother ? 1 : 0)
+        + (PlayerDataAccess.defeatedCloverDancers ? 1 : 0)
+        + (PlayerDataAccess.defeatedCogworkDancers ? 1 : 0)
+        + (PlayerDataAccess.defeatedCoralDrillers ? 1 : 0)
+        + (PlayerDataAccess.defeatedCoralDrillerSolo ? 1 : 0)
+        + (PlayerDataAccess.defeatedCoralKing ? 1 : 0)
+        + (PlayerDataAccess.defeatedCrowCourt ? 1 : 0)
+        + (PlayerDataAccess.defeatedDockForemen ? 1 : 0)
+        + (PlayerDataAccess.defeatedFirstWeaver ? 1 : 0)
+        + (PlayerDataAccess.defeatedFlowerQueen ? 1 : 0)
+        + (PlayerDataAccess.defeatedGreyWarrior ? 1 : 0)
+        + (PlayerDataAccess.defeatedLace1 ? 1 : 0)
+        + (PlayerDataAccess.defeatedLaceTower ? 1 : 0)
+        + (PlayerDataAccess.defeatedLastJudge ? 1 : 0)
+        + (PlayerDataAccess.defeatedMossEvolver ? 1 : 0)
+        + (PlayerDataAccess.defeatedMossMother ? 1 : 0)
+        + (PlayerDataAccess.defeatedPhantom ? 1 : 0)
+        + (PlayerDataAccess.defeatedRoachkeeperChef ? 1 : 0)
+        + (PlayerDataAccess.defeatedSeth ? 1 : 0)
+        + (PlayerDataAccess.defeatedSongChevalierBoss ? 1 : 0)
+        + (PlayerDataAccess.defeatedSplinterQueen ? 1 : 0)
+        + (PlayerDataAccess.defeatedTrobbio ? 1 : 0)
+        + (PlayerDataAccess.defeatedTormentedTrobbio ? 1 : 0)
+        + (PlayerDataAccess.defeatedWhiteCloverstag ? 1 : 0)
+        + (PlayerDataAccess.defeatedVampireGnatBoss ? 1 : 0)
+        + (PlayerDataAccess.defeatedWispPyreEffigy ? 1 : 0)
+        + (PlayerDataAccess.defeatedZapCoreEnemy ? 1 : 0)
+        + (PlayerDataAccess.garmondBlackThreadDefeated ? 1 : 0)
+        + (PlayerDataAccess.skullKingDefeated ? 1 : 0)
+        + (PlayerDataAccess.spinnerDefeated ? 1 : 0)
+        + (PlayerDataAccess.wardBossDefeated ? 1 : 0);
 
     private readonly Updater<int> bellshrines = new(0);
     private static int CalculateBellshrines() => (PlayerDataAccess.bellShrineBellhart ? 1 : 0) + (PlayerDataAccess.bellShrineBoneForest ? 1 : 0) + (PlayerDataAccess.bellShrineEnclave ? 1 : 0) + (PlayerDataAccess.bellShrineGreymoor ? 1 : 0) + (PlayerDataAccess.bellShrineShellwood ? 1 : 0) + (PlayerDataAccess.bellShrineWilds ? 1 : 0);
@@ -201,6 +244,7 @@ internal class IntelligenceModule : GlobalSettingsModule<IntelligenceModule, Int
         var pd = PlayerData.instance;
 
         if (simpleKeys.Update(PlayerData.instance.Collectables.GetData("Simple Key").Amount, out var prev, out var next) && prev > next) SendMessage(SIMPLE_KEY_USAGES);
+        if (defeatedBosses.Update(CalculateDefeatedBosses())) SendMessage(BOSS_KILL);
         if (bellshrines.Update(CalculateBellshrines())) SendMessage(BELL_SHRINES);
         if (savedFleas.Update(CalculateSavedFleas(pd))) SendMessage(FLEA_RESCUES);
     }
@@ -215,11 +259,16 @@ internal class IntelligenceModule : GlobalSettingsModule<IntelligenceModule, Int
     {
         if (!fsm.HasStates(["Get Text", "Confirm", "Cancel", "Start Sequence", "Wait For Currency Counter", "Taking Currency", "Wait Frame", "Before Sequence Pause", "Keep Reach", "End"])) return;
 
-        fsm.GetState("End")!.InsertMethod(_ =>
+        fsm.GetState("End")!.InsertMethod(() =>
         {
             if (GetEnabledConfig(out var config) && config.TollPurchases == NotificationSetting.Notify) SendMessage(TOLL_PURCHASE);
         }, 0);
     }
+
+    private void ModifyStringMachineFsm(PlayMakerFSM fsm) => fsm.GetState("Give Object")!.AddMethod(() =>
+    {
+        if (GetEnabledConfig(out var config) && config.TollPurchases == NotificationSetting.Notify) SendMessage(TOLL_PURCHASE);
+    });
 
     private void SendTravelMessage<T>(PlayMakerFSM fsm, TravelNotificationSetting setting, Func<bool, T, string> messageFn) where T : Enum
     {
@@ -247,13 +296,13 @@ internal class IntelligenceModule : GlobalSettingsModule<IntelligenceModule, Int
         }
     }
 
-    private void ModifyBellBeast(PlayMakerFSM fsm) => fsm.GetState("Fade")!.AddMethod(_ =>
+    private void ModifyBellBeast(PlayMakerFSM fsm) => fsm.GetState("Fade")!.AddMethod(() =>
     {
         if (!GetEnabledConfig(out var config)) return;
         SendTravelMessage<FastTravelLocations>(fsm, config.BellwayRides, BellwayRideString);
     });
 
-    private void ModifyVentrica(PlayMakerFSM fsm) => fsm.GetState("Preload Scene")!.AddMethod(_ =>
+    private void ModifyVentrica(PlayMakerFSM fsm) => fsm.GetState("Preload Scene")!.AddMethod(() =>
     {
         if (!GetEnabledConfig(out var config)) return;
         SendTravelMessage<TubeTravelLocations>(fsm, config.VentricaRides, VentricaRideString);
@@ -272,15 +321,6 @@ internal class IntelligenceModule : GlobalSettingsModule<IntelligenceModule, Int
     {
         if (Instance == null) return;
         using (Instance.sendMessages.Suppress()) Instance.WatchPlayerData();
-    }
-
-    private static void PostfixHealthManagerOnEnable(HealthManager self)
-    {
-        // TODO: This probably doesn't work for some bosses, let's find out which with playtesting.
-        if (self.gameObject.CompareTag("Boss")) self.OnDeath += () =>
-        {
-            if (GetEnabledConfig(out var config) && config.BossKills == NotificationSetting.Notify) Instance?.SendMessage(BOSS_KILL);
-        };
     }
 
     private static bool IgnoreLever(Lever lever) => lever.gameObject.name == "Bell Shrine Lever";  // Covered by bell shrines.
@@ -307,7 +347,6 @@ internal class IntelligenceModule : GlobalSettingsModule<IntelligenceModule, Int
     private static void Hook()
     {
         Md.GameManager.SetLoadedGameData_SaveGameData_System_Int32.Postfix(PostfixLoadGameData);
-        Md.HealthManager.OnEnable.Postfix(PostfixHealthManagerOnEnable);
         Md.Lever.Awake.Postfix(PostfixLeverAwake);
         Md.Lever_tk2d.Awake.Postfix(PostfixLeverTk2dAwake);
         Md.ShopItem.SetPurchased.Postfix(PostfixShopItemPurchased);
