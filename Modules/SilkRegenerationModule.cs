@@ -22,7 +22,7 @@ internal class SilkRegenerationSettings : ModuleSettings<SilkRegenerationSetting
     public float SilkRegenTime = 3.9f;
     public bool CanFarmSilk = true;
 
-    public override ModuleSettingsType DynamicType => throw new System.NotImplementedException();
+    public override ModuleSettingsType DynamicType => ModuleSettingsType.SilkRegeneration;
 
     public override void ReadDynamicData(IPacket packet)
     {
