@@ -1,4 +1,5 @@
 ﻿using GlobalEnums;
+using HutongGames.PlayMaker;
 using MonoDetour;
 using MonoDetour.HookGen;
 using PrepatcherPlugin;
@@ -182,7 +183,7 @@ internal class IntelligenceModule : GlobalSettingsModule<IntelligenceModule, Int
     {
         Events.OnHeroUpdate += WatchPlayerData;
         Events.OnLeaveScene += WatchCaravanRide;
-        Events.AddFsmEdit("FSM", ModifyTollFsm);
+        Events.AddRawFsmEdit(ModifyTollFsm);
         Events.AddFsmEdit("rosary_string_machine", "Behaviour (special)", ModifyStringMachineFsm);
         Events.AddFsmEdit("Bone Beast NPC", "Interaction", ModifyBellBeast);
         Events.AddFsmEdit("City Travel Tube", "Tube Travel", ModifyVentrica);
@@ -255,7 +256,7 @@ internal class IntelligenceModule : GlobalSettingsModule<IntelligenceModule, Int
         SendMessage(CARAVAN_RIDES);
     }
 
-    private void ModifyTollFsm(PlayMakerFSM fsm)
+    private void ModifyTollFsm(Fsm fsm)
     {
         if (!fsm.HasStates(["Get Text", "Confirm", "Cancel", "Start Sequence", "Wait For Currency Counter", "Taking Currency", "Wait Frame", "Before Sequence Pause", "Keep Reach", "End"])) return;
 

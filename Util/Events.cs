@@ -1,11 +1,14 @@
-﻿using MonoDetour;
+﻿using HutongGames.PlayMaker;
+using MonoDetour;
 using MonoDetour.HookGen;
 using Silksong.PurenailUtil.Collections;
 using System;
+using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
 namespace Silksong.TheHuntIsOn.Util;
 
+[MonoDetourTargets(typeof(Fsm))]
 [MonoDetourTargets(typeof(GameManager))]
 [MonoDetourTargets(typeof(HeroController), GenerateControlFlowVariants = true)]
 [MonoDetourTargets(typeof(PlayMakerFSM))]
@@ -42,16 +45,25 @@ internal static class Events
         foreach (var edit in sceneEditsByName.Get(after.name)) edit(after);
     }
 
+    private static readonly HashSet<Action<Fsm>> rawFsmEdits = [];
     private static readonly HashMultimap<string, Action<PlayMakerFSM>> fsmEditsByName = [];
     private static readonly HashMultimap<(string, string), Action<PlayMakerFSM>> fsmEditsByObjAndName = [];
     private static readonly HashMultimap<(string, string, string), Action<PlayMakerFSM>> fsmEditsBySceneObjAndName = [];
 
+    internal static void AddRawFsmEdit(Action<Fsm> fsm) => rawFsmEdits.Add(fsm);
     internal static void AddFsmEdit(string fsmName, Action<PlayMakerFSM> fsmEdit) => fsmEditsByName.Add(fsmName, fsmEdit);
     internal static void AddFsmEdit(string objName, string fsmName, Action<PlayMakerFSM> fsmEdit) => fsmEditsByObjAndName.Add((objName, fsmName), fsmEdit);
     internal static void AddFsmEdit(string sceneName, string objName, string fsmName, Action<PlayMakerFSM> fsmEdit) => fsmEditsBySceneObjAndName.Add((sceneName, objName, fsmName), fsmEdit);
+
+    internal static void RemoveRawFsmEdit(Action<Fsm> fsm) => rawFsmEdits.Remove(fsm);
     internal static void RemoveFsmEdit(string fsmName, Action<PlayMakerFSM> fsmEdit) => fsmEditsByName.Remove(fsmName, fsmEdit);
     internal static void RemoveFsmEdit(string objName, string fsmName, Action<PlayMakerFSM> fsmEdit) => fsmEditsByObjAndName.Remove((objName, fsmName), fsmEdit);
     internal static void RemoveFsmEdit(string sceneName, string objName, string fsmName, Action<PlayMakerFSM> fsmEdit) => fsmEditsBySceneObjAndName.Remove((sceneName, objName, fsmName), fsmEdit);
+
+    private static void OnEnableFsm(Fsm fsm)
+    {
+        foreach (var action in rawFsmEdits) action(fsm);
+    }
 
     private static void OnEnablePlayMakerFSM(PlayMakerFSM fsm)
     {
@@ -73,6 +85,7 @@ internal static class Events
     {
         PrepatcherPlugin.PlayerDataVariableEvents<int>.OnGetVariable += OverrideGetPDInt;
         PrepatcherPlugin.PlayerDataVariableEvents<int>.OnSetVariable += OverrideSetPDInt;
+        Md.HutongGames.PlayMaker.Fsm.OnEnable.Prefix(OnEnableFsm);
         Md.GameManager.LevelActivated.Prefix(OnLevelActivated);
         Md.GameManager.Update.Postfix(PostfixOnGameManagerUpdate);
         Md.HeroController.Update.Postfix(PostfixOnHeroUpdate);
