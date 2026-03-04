@@ -26,7 +26,7 @@ internal class SHA1Hash : NetworkedCloneable<SHA1Hash>, IEquatable<SHA1Hash>
 
     public override void WriteData(IPacket packet)
     {
-        for (int i = 0; i < NUM_BYTES; i++) packet.Write(Hash[i]);
+        foreach (var b in Hash) packet.Write(b);
     }
 
     public override SHA1Hash Clone()
