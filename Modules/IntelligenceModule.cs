@@ -1,5 +1,7 @@
-﻿using GlobalEnums;
+﻿using AssetHelperLib.Util;
+using GlobalEnums;
 using HutongGames.PlayMaker;
+using HutongGames.PlayMaker.Actions;
 using MonoDetour;
 using MonoDetour.HookGen;
 using PrepatcherPlugin;
@@ -14,6 +16,7 @@ using Silksong.TheHuntIsOn.Util;
 using SSMP.Networking.Packet;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -112,27 +115,24 @@ internal class IntelligenceMessage : IIdentifiedPacket<ServerPacketId>
 [MonoDetourTargets(typeof(Lever))]
 [MonoDetourTargets(typeof(Lever_tk2d))]
 [MonoDetourTargets(typeof(ShopItem))]
+
 internal class IntelligenceModule : GlobalSettingsModule<IntelligenceModule, IntelligenceSettings, IntelligenceSubMenu>
 {
-    private const string BOSS_KILL = "A scream of agony echoes in the distance! A mighty foe has been slain.";
-    private const string SHOP_PURCHASE = "The hubble of barter almost drowns out the clacking of rosaries. A shrewd deal hath been bargained.";
-    private const string TOLL_PURCHASE = "Rosaries clink and clang noisily down a long metal chute. A machine has collected its toll.";
-    private const string SIMPLE_KEY_USAGES = "A simple door creaks open, its key expired.";
+    private const string BOSS_KILL = "You hear screams of agony echoing in the distance. A mighty foe has been slain.";
+    private const string SHOP_PURCHASE = "You hear the hubble of barter and the clacking of rosaries. A deal has been made.";
+    private const string TOLL_PURCHASE = "You hear rosaries clinking down a metal chute. A toll has been purchased.";
+    private const string SIMPLE_KEY_USAGES = "You hear a simple door creak open, its key expired.";
     private static readonly IReadOnlyList<string> LEVER_HITS = [
-        "A lever recoils, compelled to turn the gears once again.",
-        "An overexcited bug shouts 'Kronk!' in the distance.",
-        "The gears turn, the door moves, the lever cries.",
-        "Clickity clackety, a lever is whacked-ity.",
-        "Another lever is soundly defeated by the puzzle master.",
-        "The lever bounces back, but its defiance is temporary.",
-    ];
-    private const string BELL_SHRINES = "A mighty bell dings and dongs in the distance, echoing across all of Pharloom.";
-    private const string FLEA_RESCUES = "Barely audible over the flutter of wings, you hear a soft, joyful 'Awoo!'.";
-    private const string CARAVAN_RIDES = "The great caravan settles down once again in new lands, its red passenger flying off.";
+        "You hear the groan of a lever in the distance. A lever has been hit.",
+        "You hear the slam of a lever in the distance. A lever has been hit.",
+        "You hear gears creaking — a door moving in the distance. A lever has been hit." ];
+    private const string BELL_SHRINES = "You hear a mighty bell echoing in the distance. A grand gate bell has been rung.";
+    private const string FLEA_RESCUES = "You hear an excited 'Awoo!' in the distance. A flea has been saved.";
+    private const string CARAVAN_RIDES = "You hear the great caravan setting off in the distance. The speedrunner has traveled with the fleas.";
 
     private static string BellwayDestinationString(FastTravelLocations destination) => destination switch
     {
-        FastTravelLocations.None => "nowhere land",
+        FastTravelLocations.None => "nowhere",
         FastTravelLocations.Bonetown => "Bone Bottom",
         FastTravelLocations.Docks => "the Deep Docks",
         FastTravelLocations.BoneforestEast => "the Far Fields",
@@ -151,7 +151,7 @@ internal class IntelligenceModule : GlobalSettingsModule<IntelligenceModule, Int
     private static string BellwayRideString(bool includeDestination, FastTravelLocations destination)
     {
         string clause = includeDestination ? $", tossed about the ground of {BellwayDestinationString(destination)}" : "";
-        return $"The growl of the beast surges through a thousand little bells{clause}.";
+        return $"You hear the growl of a beast surging through a thousand little bells{clause}. The speedrunner has traveled with the Bell Beast.";
     }
 
     private static string VentricaDestinationString(TubeTravelLocations destination) => destination switch
@@ -170,7 +170,7 @@ internal class IntelligenceModule : GlobalSettingsModule<IntelligenceModule, Int
     private static string VentricaRideString(bool includeDestination, TubeTravelLocations destination)
     {
         string clause = includeDestination ? $". A heavy thump is heard in {VentricaDestinationString(destination)}" : "";
-        return $"Vacuum-sealed tubes fly angrily across the citadel{clause}.";
+        return $"You hear a tube flying across the citadel{clause}. The speedrunner has traveled with the Ventrica.";
     }
 
     protected override IntelligenceModule Self() => this;
@@ -187,6 +187,9 @@ internal class IntelligenceModule : GlobalSettingsModule<IntelligenceModule, Int
         Events.AddFsmEdit("rosary_string_machine", "Behaviour (special)", ModifyStringMachineFsm);
         Events.AddFsmEdit("Bone Beast NPC", "Interaction", ModifyBellBeast);
         Events.AddFsmEdit("City Travel Tube", "Tube Travel", ModifyVentrica);
+        Events.AddFsmEdit("cog_lever", "Control", ModifyCogLeverFsm);
+        Events.AddFsmEdit("cog_lever (1)", "Control", ModifyCogLeverFsm);
+        Events.AddFsmEdit("cog_lever (2)", "Control", ModifyCogLeverFsm);
     }
 
     private readonly EventSuppressor sendMessages = new();
@@ -324,8 +327,36 @@ internal class IntelligenceModule : GlobalSettingsModule<IntelligenceModule, Int
         using (Instance.sendMessages.Suppress()) Instance.WatchPlayerData();
     }
 
-    private static bool IgnoreLever(Lever lever) => lever.gameObject.name == "Bell Shrine Lever";  // Covered by bell shrines.
+    private static bool IgnoreLever(Lever lever)
+    { 
+        if (lever.gameObject.name == "Bell Shrine Lever" // Covered by bell shrines.
+         || lever.gameObject.name == "lever_top" // Repeatable levers in Sinner's Road.
+         || lever.gameObject.name == "lever_bottom" // Repeatable levers in Sinner's Road.
+         || lever.gameObject.name == "Lever Top" // Repeatable levers in Deep Docks and the Citadel.
+         || lever.gameObject.name == "Lever Bottom" // Repeatable levers in Deep Docks and the Citadel.
+         || lever.gameObject.name == "Lever Cog" // Repeatable levers in Deep Docks and the Citadel.
+         || lever.gameObject.name == "lever_left" // Dial door lever in the Citadel.
+         || lever.gameObject.name == "lever_right" // Dial door lever in the Citadel.
+         || lever.gameObject.name == "lever_bot" // Dial door lever in the Citadel.
+         || lever.gameObject.name.Contains("Understore Lever")) // Repeatable levers in the Underworks and lower Citadel.
+            return true;
+
+        if (lever.gameObject.transform.parent != null)
+            if (lever.gameObject.transform.parent.name == "Cage") // Elevator levers
+                return true;
+
+        return false;
+    }
+
     private static bool IgnoreLeverTk2d(Lever_tk2d lever) => lever.gameObject.name == "Bell Shrine Lever";  // Covered by bell shrines.
+
+    private void ModifyCogLeverFsm(PlayMakerFSM fsm)
+    {
+        fsm.GetState("Complete Shake")!.InsertMethod(() =>
+        {
+            if (GetEnabledConfig(out var config) && config.LeverHits == NotificationSetting.Notify) Instance?.SendLeverMessage();
+        }, 0);
+    }
 
     private void SendLeverMessage() => SendMessage(LEVER_HITS[UnityEngine.Random.Range(0, LEVER_HITS.Count)]);
 
