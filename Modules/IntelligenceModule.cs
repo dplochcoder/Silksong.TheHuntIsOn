@@ -1,7 +1,5 @@
-﻿using AssetHelperLib.Util;
-using GlobalEnums;
+﻿using GlobalEnums;
 using HutongGames.PlayMaker;
-using HutongGames.PlayMaker.Actions;
 using MonoDetour;
 using MonoDetour.HookGen;
 using PrepatcherPlugin;
@@ -16,8 +14,6 @@ using Silksong.TheHuntIsOn.Util;
 using SSMP.Networking.Packet;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Silksong.TheHuntIsOn.Modules;
@@ -115,7 +111,6 @@ internal class IntelligenceMessage : IIdentifiedPacket<ServerPacketId>
 [MonoDetourTargets(typeof(Lever))]
 [MonoDetourTargets(typeof(Lever_tk2d))]
 [MonoDetourTargets(typeof(ShopItem))]
-
 internal class IntelligenceModule : GlobalSettingsModule<IntelligenceModule, IntelligenceSettings, IntelligenceSubMenu>
 {
     private const string BOSS_KILL = "You hear screams of agony echoing in the distance. A mighty foe has been slain.";
@@ -125,7 +120,8 @@ internal class IntelligenceModule : GlobalSettingsModule<IntelligenceModule, Int
     private static readonly IReadOnlyList<string> LEVER_HITS = [
         "You hear the groan of a lever in the distance. A lever has been hit.",
         "You hear the slam of a lever in the distance. A lever has been hit.",
-        "You hear gears creaking — a door moving in the distance. A lever has been hit." ];
+        "You hear gears creaking — a door moving in the distance. A lever has been hit."
+    ];
     private const string BELL_SHRINES = "You hear a mighty bell echoing in the distance. A grand gate bell has been rung.";
     private const string FLEA_RESCUES = "You hear an excited 'Awoo!' in the distance. A flea has been saved.";
     private const string CARAVAN_RIDES = "You hear the great caravan setting off in the distance. The speedrunner has traveled with the fleas.";
@@ -327,25 +323,21 @@ internal class IntelligenceModule : GlobalSettingsModule<IntelligenceModule, Int
         using (Instance.sendMessages.Suppress()) Instance.WatchPlayerData();
     }
 
+    private static readonly HashSet<string> ignoreLeverNames = [
+        // Covered by bell shrines.
+        "Bell Shrine Lever",
+
+        // Repeatable levers.
+        "lever_bot", "lever_bottom", "lever_left", "lever_right", "lever_top",
+        "Lever Bottom", "Lever Cog", "Lever Top"
+    ];
+
     private static bool IgnoreLever(Lever lever)
-    { 
-        if (lever.gameObject.name == "Bell Shrine Lever" // Covered by bell shrines.
-         || lever.gameObject.name == "lever_top" // Repeatable levers in Sinner's Road.
-         || lever.gameObject.name == "lever_bottom" // Repeatable levers in Sinner's Road.
-         || lever.gameObject.name == "Lever Top" // Repeatable levers in Deep Docks and the Citadel.
-         || lever.gameObject.name == "Lever Bottom" // Repeatable levers in Deep Docks and the Citadel.
-         || lever.gameObject.name == "Lever Cog" // Repeatable levers in Deep Docks and the Citadel.
-         || lever.gameObject.name == "lever_left" // Dial door lever in the Citadel.
-         || lever.gameObject.name == "lever_right" // Dial door lever in the Citadel.
-         || lever.gameObject.name == "lever_bot" // Dial door lever in the Citadel.
-         || lever.gameObject.name.Contains("Understore Lever")) // Repeatable levers in the Underworks and lower Citadel.
-            return true;
+    {
+        if (ignoreLeverNames.Contains(lever.name)) return true;
+        if (lever.name.Contains("Understore Lever")) return true;  // Underworks levers.
 
-        if (lever.gameObject.transform.parent != null)
-            if (lever.gameObject.transform.parent.name == "Cage") // Elevator levers
-                return true;
-
-        return false;
+        return lever.transform.parent != null && lever.transform.parent.name == "Cage";  // Elevator levers.
     }
 
     private static bool IgnoreLeverTk2d(Lever_tk2d lever) => lever.gameObject.name == "Bell Shrine Lever";  // Covered by bell shrines.
