@@ -1,7 +1,7 @@
-﻿using Silksong.ModMenu.Elements;
-using Silksong.TheHuntIsOn.Modules.Lib;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using Silksong.ModMenu.Elements;
+using Silksong.TheHuntIsOn.Modules.Lib;
 
 namespace Silksong.TheHuntIsOn.Menu;
 

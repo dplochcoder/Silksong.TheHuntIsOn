@@ -9,7 +9,7 @@ internal class LRUCache<K, V>(int Size, LRUCacheLoader<K, V> Loader)
 {
     private record Entry(K Key, V Value) { }
 
-    private readonly LinkedList<Entry> cacheList = [];  // FIFO
+    private readonly LinkedList<Entry> cacheList = []; // FIFO
     private readonly Dictionary<K, LinkedListNode<Entry>> cacheDict = [];
     private readonly HashSet<K> negativeCache = [];
 
@@ -53,7 +53,8 @@ internal class LRUCache<K, V>(int Size, LRUCacheLoader<K, V> Loader)
 
     public void Evict(K key)
     {
-        if (negativeCache.Remove(key)) return;
+        if (negativeCache.Remove(key))
+            return;
 
         if (cacheDict.TryGetValue(key, out var node))
         {

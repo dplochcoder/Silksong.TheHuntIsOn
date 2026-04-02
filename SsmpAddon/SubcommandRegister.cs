@@ -1,8 +1,8 @@
-﻿using SSMP.Api.Command.Server;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using SSMP.Api.Command.Server;
 
 namespace Silksong.TheHuntIsOn.SsmpAddon;
 
@@ -11,7 +11,8 @@ internal class SubcommandRegister<T>(string self, IEnumerable<Subcommand<T>> sub
     private readonly string self = self;
     private readonly List<Subcommand<T>> subcommands = [.. subcommands];
 
-    private string AllSubcommands() => string.Join("|", [.. subcommands.Select(s => s.Name).OrderBy(s => s)]);
+    private string AllSubcommands() =>
+        string.Join("|", [.. subcommands.Select(s => s.Name).OrderBy(s => s)]);
 
     private bool TryGetSubcommand(string name, [MaybeNullWhen(false)] out Subcommand<T> subcommand)
     {
@@ -27,6 +28,7 @@ internal class SubcommandRegister<T>(string self, IEnumerable<Subcommand<T>> sub
         subcommand = null;
         return false;
     }
+
     internal void Execute(T parent, ICommandSender commandSender, string[] arguments)
     {
         if (arguments.Length <= 1)
@@ -40,7 +42,8 @@ internal class SubcommandRegister<T>(string self, IEnumerable<Subcommand<T>> sub
         string name = arguments[1].ToLower();
         if (name == "help")
         {
-            if (arguments.Length == 2) commandSender.SendMessage($"Usage: '{self} help <{AllSubcommands()}>'");
+            if (arguments.Length == 2)
+                commandSender.SendMessage($"Usage: '{self} help <{AllSubcommands()}>'");
             else if (TryGetSubcommand(arguments[2].ToLower(), out subcommand))
             {
                 commandSender.SendMessage($"Usage: {subcommand.Usage}");
@@ -67,6 +70,7 @@ internal class SubcommandRegister<T>(string self, IEnumerable<Subcommand<T>> sub
             return;
         }
 
-        if (!subcommand.Execute(parent, commandSender, [.. arguments.Skip(2)])) commandSender.SendMessage($"Usage: {subcommand.Usage}");
+        if (!subcommand.Execute(parent, commandSender, [.. arguments.Skip(2)]))
+            commandSender.SendMessage($"Usage: {subcommand.Usage}");
     }
 }

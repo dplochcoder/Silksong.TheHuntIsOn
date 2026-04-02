@@ -1,9 +1,10 @@
-﻿using SSMP.Networking.Packet;
-using System;
+﻿using System;
+using SSMP.Networking.Packet;
 
 namespace Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 
-internal interface IIdentifiedPacket<E> : IPacketData where E : Enum
+internal interface IIdentifiedPacket<E> : IPacketData
+    where E : Enum
 {
     E Identifier { get; }
 

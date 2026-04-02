@@ -1,6 +1,6 @@
-﻿using Silksong.TheHuntIsOn.Util;
-using System.IO;
+﻿using System.IO;
 using System.Text;
+using Silksong.TheHuntIsOn.Util;
 
 namespace Silksong.TheHuntIsOn.Modules.ArchitectModule;
 
@@ -14,7 +14,8 @@ internal class ServerArchitectLevelManager : BaseArchitectLevelManager
     private ArchitectLevelsMetadata HashDisk()
     {
         ArchitectLevelsMetadata metadata = [];
-        if (!Directory.Exists(diskFolder)) return metadata;
+        if (!Directory.Exists(diskFolder))
+            return metadata;
 
         foreach (var groupDir in Directory.EnumerateDirectories(diskFolder))
         {
@@ -23,7 +24,8 @@ internal class ServerArchitectLevelManager : BaseArchitectLevelManager
             foreach (var scenePath in Directory.EnumerateFiles(groupDir))
             {
                 var sceneFileName = Path.GetFileName(scenePath);
-                if (!sceneFileName.ConsumeSuffix(ARCHITECT_SUFFIX, out var sceneSpan)) continue;
+                if (!sceneFileName.ConsumeSuffix(ARCHITECT_SUFFIX, out var sceneSpan))
+                    continue;
 
                 string scene = new(sceneSpan);
                 using var stream = File.OpenRead(scenePath);
@@ -33,7 +35,8 @@ internal class ServerArchitectLevelManager : BaseArchitectLevelManager
         return metadata;
     }
 
-    public ServerArchitectLevelManager() : base("Server")
+    public ServerArchitectLevelManager()
+        : base("Server")
     {
         embeddedMetadata = HashEmbedded();
         levelDataCache = new(100, LoadLevelData);
@@ -46,7 +49,7 @@ internal class ServerArchitectLevelManager : BaseArchitectLevelManager
     private bool LoadLevelData((string, string) key, out (string, SHA1Hash) value)
     {
         var (groupId, sceneName) = key;
-        
+
         if (diskMetadata.TryGetValue(groupId, out var groupMetadata))
         {
             if (groupMetadata.TryGetValue(sceneName, out var hash))
@@ -71,12 +74,18 @@ internal class ServerArchitectLevelManager : BaseArchitectLevelManager
     {
         diskMetadata = HashDisk();
         overlayMetadata = embeddedMetadata.Clone();
-        foreach (var e in diskMetadata) overlayMetadata[e.Key] = e.Value;
+        foreach (var e in diskMetadata)
+            overlayMetadata[e.Key] = e.Value;
     }
 
     internal ArchitectLevelsMetadata GetLevelsMetadata() => overlayMetadata;
 
-    internal bool TryGetLevelData(string groupId, string sceneName, out string levelData, out SHA1Hash hash)
+    internal bool TryGetLevelData(
+        string groupId,
+        string sceneName,
+        out string levelData,
+        out SHA1Hash hash
+    )
     {
         if (levelDataCache.TryGetValue((groupId, sceneName), out var pair))
         {

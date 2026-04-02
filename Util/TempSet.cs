@@ -1,5 +1,5 @@
-﻿using Silksong.PurenailUtil.Collections;
-using System;
+﻿using System;
+using Silksong.PurenailUtil.Collections;
 
 namespace Silksong.TheHuntIsOn.Util;
 
@@ -16,7 +16,8 @@ internal class TempSet<T>
         private readonly TempSet<T> parent;
         private readonly T item;
 
-        internal Lease(TempSet<T> parent, T item) {
+        internal Lease(TempSet<T> parent, T item)
+        {
             this.parent = parent;
             this.item = item;
 

@@ -5,8 +5,15 @@ namespace Silksong.TheHuntIsOn;
 
 public record GlobalSaveData
 {
-    [JsonProperty] internal bool Enabled = false;
-    [JsonProperty] internal RoleId Role = RoleId.Hunter;
-    [JsonProperty] internal ModuleDataset ModuleDataset = [];
-    [JsonProperty] internal CosmeticConfig Cosmetics = new();
+    [JsonProperty]
+    internal bool Enabled = false;
+
+    [JsonProperty]
+    internal RoleId Role = RoleId.Hunter;
+
+    [JsonProperty]
+    internal ModuleDataset ModuleDataset = [];
+
+    [JsonProperty]
+    internal CosmeticConfig Cosmetics = new();
 }

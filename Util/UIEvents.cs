@@ -1,7 +1,7 @@
-﻿using PrepatcherPlugin;
-using Silksong.FsmUtil;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
+using PrepatcherPlugin;
+using Silksong.FsmUtil;
 
 namespace Silksong.TheHuntIsOn.Util;
 
@@ -9,11 +9,13 @@ internal static class UIEvents
 {
     internal static void UpdateHealth()
     {
-        if (PlayerDataAccess.health > PlayerData.instance.CurrentMaxHealth) PlayerDataAccess.health = PlayerData.instance.CurrentMaxHealth;
+        if (PlayerDataAccess.health > PlayerData.instance.CurrentMaxHealth)
+            PlayerDataAccess.health = PlayerData.instance.CurrentMaxHealth;
 
         foreach (var fsm in healthDisplays.Where(fsm => fsm.gameObject.activeInHierarchy))
         {
-            if (!fsm.enabled) fsm.enabled = true;
+            if (!fsm.enabled)
+                fsm.enabled = true;
 
             using var lease = suppressWait.TempAdd(fsm);
             fsm.SendEvent("HUD APPEAR RESET");
@@ -28,14 +30,16 @@ internal static class UIEvents
         healthDisplays.Add(fsm);
 
         fsm.gameObject.DoOnDestroy(() => healthDisplays.Remove(fsm));
-        fsm.GetState("Set Appear Pause")!.AddMethod(action =>
-        {
-            if (!suppressWait.Contains(action.Fsm.FsmComponent)) return;
-            
-            var vars = action.Fsm.variables;
-            var num = vars.GetFsmInt("Health Number").Value;
-            action.Fsm.variables.GetFsmFloat("Appear Pause").Value = num * 0.05f;
-        });
+        fsm.GetState("Set Appear Pause")!
+            .AddMethod(action =>
+            {
+                if (!suppressWait.Contains(action.Fsm.FsmComponent))
+                    return;
+
+                var vars = action.Fsm.variables;
+                var num = vars.GetFsmInt("Health Number").Value;
+                action.Fsm.variables.GetFsmFloat("Appear Pause").Value = num * 0.05f;
+            });
     }
 
     private static readonly HashSet<PlayMakerFSM> silkSpoolFsms = [];
@@ -48,20 +52,26 @@ internal static class UIEvents
 
         var initState = fsm.GetState("Init")!;
         initState.AddTransition("SKIP", "Appear Anim");
-        initState.InsertMethod(0, _ =>
-        {
-            if (disableSpoolAnimSkip.Suppressed) fsm.SendEvent("SKIP");
-        });
+        initState.InsertMethod(
+            0,
+            _ =>
+            {
+                if (disableSpoolAnimSkip.Suppressed)
+                    fsm.SendEvent("SKIP");
+            }
+        );
     }
 
     internal static void UpdateSilk()
     {
-        if (PlayerDataAccess.silk > PlayerDataAccess.silkMax) PlayerDataAccess.silk = PlayerDataAccess.silkMax;
+        if (PlayerDataAccess.silk > PlayerDataAccess.silkMax)
+            PlayerDataAccess.silk = PlayerDataAccess.silkMax;
 
         using var lease = disableSpoolAnimSkip.Suppress();
         foreach (var fsm in silkSpoolFsms)
         {
-            if (!fsm.enabled) fsm.enabled = true;
+            if (!fsm.enabled)
+                fsm.enabled = true;
             fsm.SendEvent("HUD APPEAR RESET");
         }
     }
@@ -70,7 +80,8 @@ internal static class UIEvents
 
     internal static void Load()
     {
-        if (loaded) return;
+        if (loaded)
+            return;
         loaded = true;
 
         Events.AddFsmEdit("health_display", TrackHealthDisplay);

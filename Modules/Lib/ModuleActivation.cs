@@ -6,5 +6,5 @@ internal enum ModuleActivation
     HuntersOnly,
     SpeedrunnerOnly,
     EveryoneSame,
-    EveryoneDifferent
+    EveryoneDifferent,
 }

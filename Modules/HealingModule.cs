@@ -1,4 +1,5 @@
-﻿using HutongGames.PlayMaker.Actions;
+﻿using System.Collections.Generic;
+using HutongGames.PlayMaker.Actions;
 using MonoDetour;
 using MonoDetour.DetourTypes;
 using MonoDetour.HookGen;
@@ -11,7 +12,6 @@ using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using Silksong.TheHuntIsOn.Util;
 using SSMP.Networking.Packet;
-using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn.Modules;
 
@@ -47,7 +47,8 @@ internal class HealingSettings : ModuleSettings<HealingSettings>
         SpaHeal.WriteData(packet);
     }
 
-    protected override bool Equivalent(HealingSettings other) => BenchHeal == other.BenchHeal
+    protected override bool Equivalent(HealingSettings other) =>
+        BenchHeal == other.BenchHeal
         && MaskHeal == other.MaskHeal
         && AbilityHeal == other.AbilityHeal
         && SpaHeal == other.SpaHeal;
@@ -61,25 +62,42 @@ internal class HealingModule : GlobalSettingsModule<HealingModule, HealingSettin
 
     public override string Name => "Healing";
 
-    public override ModuleActivationType ModuleActivationType => ModuleActivationType.AnyConfiguration;
+    public override ModuleActivationType ModuleActivationType =>
+        ModuleActivationType.AnyConfiguration;
 
-    private static void BenchControlInterceptMaxHealth(PlayMakerFSM fsm) => fsm.ReplaceActions(a => a.IsCallMethodProper<HeroController>(nameof(HeroController.MaxHealth)), MaybeBenchHeal);
+    private static void BenchControlInterceptMaxHealth(PlayMakerFSM fsm) =>
+        fsm.ReplaceActions(
+            a => a.IsCallMethodProper<HeroController>(nameof(HeroController.MaxHealth)),
+            MaybeBenchHeal
+        );
 
     private static void MaybeBenchHeal()
     {
-        if (HeroController.instance != null && (!GetEnabledConfig(out var config) || config.BenchHeal))
+        if (
+            HeroController.instance != null
+            && (!GetEnabledConfig(out var config) || config.BenchHeal)
+        )
             HeroController.instance.MaxHealth();
     }
 
-    private static void MaskShardInterceptHealing(PlayMakerFSM fsm) => fsm.GetState("Full Health?")!.InsertMethod(0, _ =>
-    {
-        if (GetEnabledConfig(out var config) && config.MaskHeal != MaskHealType.FullHeal)
-            fsm.SendEvent("FINISHED");
-    });
+    private static void MaskShardInterceptHealing(PlayMakerFSM fsm) =>
+        fsm.GetState("Full Health?")!
+            .InsertMethod(
+                0,
+                _ =>
+                {
+                    if (
+                        GetEnabledConfig(out var config)
+                        && config.MaskHeal != MaskHealType.FullHeal
+                    )
+                        fsm.SendEvent("FINISHED");
+                }
+            );
 
     private static ReturnFlow OverrideAddToMaxHealth(PlayerData self, ref int count)
     {
-        if (!GetEnabledConfig(out var config) || config.MaskHeal == MaskHealType.FullHeal) return ReturnFlow.None;
+        if (!GetEnabledConfig(out var config) || config.MaskHeal == MaskHealType.FullHeal)
+            return ReturnFlow.None;
 
         PlayerDataAccess.maxHealth += count;
         PlayerDataAccess.maxHealthBase += count;
@@ -93,22 +111,43 @@ internal class HealingModule : GlobalSettingsModule<HealingModule, HealingSettin
         return ReturnFlow.SkipOriginal;
     }
 
-    private static void ShrineInterceptHealing(PlayMakerFSM fsm) => fsm.GetState("Heal")!.InsertAction(IfEnabled(config =>
-    {
-        if (!config.AbilityHeal) fsm.SendEvent("FINISHED");
-    }), 0);
+    private static void ShrineInterceptHealing(PlayMakerFSM fsm) =>
+        fsm.GetState("Heal")!
+            .InsertAction(
+                IfEnabled(config =>
+                {
+                    if (!config.AbilityHeal)
+                        fsm.SendEvent("FINISHED");
+                }),
+                0
+            );
 
-    private static void CrestInterceptHealing(PlayMakerFSM fsm) => fsm.GetState("Set Return")!.ReplaceActions(a => a.IsCallMethodProper<HeroController>(nameof(HeroController.RefillAll)), MaybeCrestHeal);
+    private static void CrestInterceptHealing(PlayMakerFSM fsm) =>
+        fsm.GetState("Set Return")!
+            .ReplaceActions(
+                a => a.IsCallMethodProper<HeroController>(nameof(HeroController.RefillAll)),
+                MaybeCrestHeal
+            );
 
     private static void MaybeCrestHeal()
     {
-        if (HeroController.instance != null && (!GetEnabledConfig(out var config) || config.AbilityHeal)) HeroController.instance.RefillAll();
+        if (
+            HeroController.instance != null
+            && (!GetEnabledConfig(out var config) || config.AbilityHeal)
+        )
+            HeroController.instance.RefillAll();
     }
 
-    private static void SpaInterceptHealing(PlayMakerFSM fsm) => fsm.GetState("Healing")!.InsertAction(0, IfEnabled(config =>
-    {
-        if (!config.SpaHeal) fsm.SendEvent("LEAVE");
-    }));
+    private static void SpaInterceptHealing(PlayMakerFSM fsm) =>
+        fsm.GetState("Healing")!
+            .InsertAction(
+                0,
+                IfEnabled(config =>
+                {
+                    if (!config.SpaHeal)
+                        fsm.SendEvent("LEAVE");
+                })
+            );
 
     static HealingModule()
     {
@@ -120,17 +159,35 @@ internal class HealingModule : GlobalSettingsModule<HealingModule, HealingSettin
     }
 
     [MonoDetourHookInitialize]
-    private static void Hook() => Md.PlayerData.AddToMaxHealth.ControlFlowPrefix(OverrideAddToMaxHealth);
+    private static void Hook() =>
+        Md.PlayerData.AddToMaxHealth.ControlFlowPrefix(OverrideAddToMaxHealth);
 }
 
 internal class HealingSubMenu : ModuleSubMenu<HealingSettings>
 {
-    private readonly ChoiceElement<bool> BenchHeal = new("Bench Heal", ChoiceModels.ForBool("No", "Yes"), "Heal when sitting at a bench.");
-    private readonly ChoiceElement<MaskHealType> MaskHeal = new("Mask Heal", ChoiceModels.ForEnum<MaskHealType>(), "Heal when completing a new mask.");
-    private readonly ChoiceElement<bool> AbilityHeal = new("Ability Heal", ChoiceModels.ForBool("No", "Yes"), "Heal when obtaining a new ability or silk heart.");
-    private readonly ChoiceElement<bool> SpaHeal = new("Spa Heal", ChoiceModels.ForBool("No", "Yes"), "Heal when bathing at a spa.");
+    private readonly ChoiceElement<bool> BenchHeal = new(
+        "Bench Heal",
+        ChoiceModels.ForBool("No", "Yes"),
+        "Heal when sitting at a bench."
+    );
+    private readonly ChoiceElement<MaskHealType> MaskHeal = new(
+        "Mask Heal",
+        ChoiceModels.ForEnum<MaskHealType>(),
+        "Heal when completing a new mask."
+    );
+    private readonly ChoiceElement<bool> AbilityHeal = new(
+        "Ability Heal",
+        ChoiceModels.ForBool("No", "Yes"),
+        "Heal when obtaining a new ability or silk heart."
+    );
+    private readonly ChoiceElement<bool> SpaHeal = new(
+        "Spa Heal",
+        ChoiceModels.ForBool("No", "Yes"),
+        "Heal when bathing at a spa."
+    );
 
-    public override IEnumerable<MenuElement> Elements() => [BenchHeal, MaskHeal, AbilityHeal, SpaHeal];
+    public override IEnumerable<MenuElement> Elements() =>
+        [BenchHeal, MaskHeal, AbilityHeal, SpaHeal];
 
     internal override void Apply(HealingSettings data)
     {
@@ -140,11 +197,12 @@ internal class HealingSubMenu : ModuleSubMenu<HealingSettings>
         SpaHeal.Value = data.SpaHeal;
     }
 
-    internal override HealingSettings Export() => new()
-    {
-        BenchHeal = BenchHeal.Value,
-        MaskHeal = MaskHeal.Value,
-        AbilityHeal = AbilityHeal.Value,
-        SpaHeal = SpaHeal.Value,
-    };
+    internal override HealingSettings Export() =>
+        new()
+        {
+            BenchHeal = BenchHeal.Value,
+            MaskHeal = MaskHeal.Value,
+            AbilityHeal = AbilityHeal.Value,
+            SpaHeal = SpaHeal.Value,
+        };
 }

@@ -1,11 +1,11 @@
-﻿using GlobalEnums;
-using MonoDetour;
-using MonoDetour.HookGen;
-using Silksong.TheHuntIsOn.Util;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using GlobalEnums;
+using MonoDetour;
+using MonoDetour.HookGen;
+using Silksong.TheHuntIsOn.Util;
 using TMProOld;
 using UnityEngine;
 using UObject = UnityEngine.Object;
@@ -19,7 +19,8 @@ internal class PauseTimerUI
     {
         public static readonly StatusMessage Empty = new("");
 
-        public StatusMessage(string singleton) : this(singleton, singleton) { }
+        public StatusMessage(string singleton)
+            : this(singleton, singleton) { }
 
         public readonly string Actual = Actual;
         public readonly string Spacing = Spacing;
@@ -39,11 +40,13 @@ internal class PauseTimerUI
 
     private bool EnsureParent()
     {
-        if (parent != null) return true;
+        if (parent != null)
+            return true;
         textCache.Clear();
 
         var cameraParent = GameObject.Find("_GameCameras/HudCamera/In-game");
-        if (cameraParent == null) return false;
+        if (cameraParent == null)
+            return false;
 
         parent = new("CountdownsDisplayer");
         UObject.DontDestroyOnLoad(parent);
@@ -52,41 +55,54 @@ internal class PauseTimerUI
         return true;
     }
 
-    private static StatusMessage MessageWithTime(string msg, float time) => new($"{msg}: {FormatTime(time)}", $"{msg}: {FormatTimeSpacing(time)}");
+    private static StatusMessage MessageWithTime(string msg, float time) =>
+        new($"{msg}: {FormatTime(time)}", $"{msg}: {FormatTimeSpacing(time)}");
 
     private static string FormatHours(float timeSeconds)
     {
         int hours = Mathf.FloorToInt(timeSeconds / 3600);
         int minutes = Mathf.FloorToInt((timeSeconds % 3600) / 60);
-        if (minutes >= 60) minutes = 59;
+        if (minutes >= 60)
+            minutes = 59;
 
         string status = $"{hours} {(hours > 1 ? "hours" : "hour")}";
-        if (minutes > 0) status = $"{status} and {minutes} {(minutes > 1 ? "minutes" : "minute")}";
+        if (minutes > 0)
+            status = $"{status} and {minutes} {(minutes > 1 ? "minutes" : "minute")}";
         return status;
     }
 
     private static string FormatTime(float timeSeconds)
     {
-        if (timeSeconds <= 0) return "0.00";
-        else if (timeSeconds < 10) return $"{timeSeconds:0.00}";
-        else if (timeSeconds < 60) return $"{timeSeconds:00.0}";
+        if (timeSeconds <= 0)
+            return "0.00";
+        else if (timeSeconds < 10)
+            return $"{timeSeconds:0.00}";
+        else if (timeSeconds < 60)
+            return $"{timeSeconds:00.0}";
         else if (timeSeconds < 3600)
         {
             int minutes = Mathf.FloorToInt(timeSeconds / 60);
             int seconds = Mathf.FloorToInt(timeSeconds % 60);
-            if (seconds >= 60) seconds = 59;
+            if (seconds >= 60)
+                seconds = 59;
             return $"{minutes}:{seconds:00}";
         }
-        else return FormatHours(timeSeconds);
+        else
+            return FormatHours(timeSeconds);
     }
 
     private static string FormatTimeSpacing(float timeSeconds)
     {
-        if (timeSeconds < 10) return "0.00";
-        else if (timeSeconds < 60) return "00.0";
-        else if (timeSeconds < 600) return "0:00";
-        else if (timeSeconds < 3600) return "00:00";
-        else return FormatHours(timeSeconds);
+        if (timeSeconds < 10)
+            return "0.00";
+        else if (timeSeconds < 60)
+            return "00.0";
+        else if (timeSeconds < 600)
+            return "0:00";
+        else if (timeSeconds < 3600)
+            return "00:00";
+        else
+            return FormatHours(timeSeconds);
     }
 
     private List<StatusMessage> ComputeStatuses()
@@ -96,20 +112,29 @@ internal class PauseTimerUI
         var state = PauseTimerModule.GetServerPauseState();
         if (state.IsServerPaused(out var unpauseSeconds))
         {
-            if (!unpauseSeconds.HasValue) statuses.Add(new("Server Paused"));
-            else statuses.Add(MessageWithTime("Unpausing in", unpauseSeconds.Value));
+            if (!unpauseSeconds.HasValue)
+                statuses.Add(new("Server Paused"));
+            else
+                statuses.Add(MessageWithTime("Unpausing in", unpauseSeconds.Value));
         }
-        if (respawnTimer > 0) statuses.Add(MessageWithTime("Respawn in", respawnTimer));
+        if (respawnTimer > 0)
+            statuses.Add(MessageWithTime("Respawn in", respawnTimer));
 
         foreach (var countdown in state.Countdowns)
         {
-            if (countdown.GetDisplayTime(out float seconds)) statuses.Add(MessageWithTime(countdown.Message, seconds));
+            if (countdown.GetDisplayTime(out float seconds))
+                statuses.Add(MessageWithTime(countdown.Message, seconds));
         }
 
         return statuses;
     }
 
-    private static readonly Lazy<TMP_FontAsset> Font = new(() => Resources.FindObjectsOfTypeAll<TMP_FontAsset>().Where(f => f.name == "trajan_bold_tmpro").First());
+    private static readonly Lazy<TMP_FontAsset> Font = new(() =>
+        Resources
+            .FindObjectsOfTypeAll<TMP_FontAsset>()
+            .Where(f => f.name == "trajan_bold_tmpro")
+            .First()
+    );
 
     private void CreateText()
     {
@@ -157,14 +182,21 @@ internal class PauseTimerUI
 
             text.text = status.Spacing;
             text.ForceMeshUpdate();
-            text.transform.position = spacingParameters.GetPosition(i, statuses.Count, config.PauseTimerSize.Spacing(), scale, text.bounds);
+            text.transform.position = spacingParameters.GetPosition(
+                i,
+                statuses.Count,
+                config.PauseTimerSize.Spacing(),
+                scale,
+                text.bounds
+            );
             text.text = status.Actual;
         }
     }
 
     internal static void ShortenRespawn(float reduce)
     {
-        if (instance == null) return;
+        if (instance == null)
+            return;
         instance.respawnTimer = Mathf.Max(0, instance.respawnTimer - reduce);
     }
 
@@ -173,33 +205,47 @@ internal class PauseTimerUI
         if (respawnTimer > 0 && !PauseTimerModule.GetServerPauseState().IsServerPaused(out _))
         {
             respawnTimer -= Time.unscaledDeltaTime;
-            if (respawnTimer < 0) respawnTimer = 0;
+            if (respawnTimer < 0)
+                respawnTimer = 0;
         }
 
-        if (!EnsureParent()) return;
+        if (!EnsureParent())
+            return;
 
         List<StatusMessage> statuses = ComputeStatuses();
-        while (textCache.Count < statuses.Count) CreateText();
+        while (textCache.Count < statuses.Count)
+            CreateText();
         UpdateStatuses(statuses);
     }
 
     private IEnumerator WaitForRespawn(IEnumerator orig)
     {
-        if (respawnTimer <= 0) return orig;
+        if (respawnTimer <= 0)
+            return orig;
 
         IEnumerator Modified()
         {
             yield return new WaitUntil(() => respawnTimer <= 0);
-            while (orig.MoveNext()) yield return orig.Current;
+            while (orig.MoveNext())
+                yield return orig.Current;
         }
         return Modified();
     }
 
-    private static void PostfixBeginSceneTransitionRoutine(GameManager self, ref GameManager.SceneLoadInfo sceneLoadInfo, ref IEnumerator returnValue) => returnValue = instance?.WaitForRespawn(returnValue) ?? returnValue;
+    private static void PostfixBeginSceneTransitionRoutine(
+        GameManager self,
+        ref GameManager.SceneLoadInfo sceneLoadInfo,
+        ref IEnumerator returnValue
+    ) => returnValue = instance?.WaitForRespawn(returnValue) ?? returnValue;
 
-    private static void PostfixPlayerDead(GameManager self, ref float waitTime, ref IEnumerator coroutine)
+    private static void PostfixPlayerDead(
+        GameManager self,
+        ref float waitTime,
+        ref IEnumerator coroutine
+    )
     {
-        if (instance == null) return;
+        if (instance == null)
+            return;
         instance.respawnTimer = Mathf.Max(instance.respawnTimer, DeathModule.GetRespawnTimer());
     }
 

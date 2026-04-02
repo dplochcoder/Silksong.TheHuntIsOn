@@ -1,19 +1,27 @@
-﻿using Silksong.ModMenu.Elements;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using Silksong.ModMenu.Elements;
 using Silksong.ModMenu.Models;
 using Silksong.ModMenu.Screens;
 using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.SsmpAddon;
 using Silksong.TheHuntIsOn.Util;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace Silksong.TheHuntIsOn.Menu;
 
 internal class GlobalSaveDataMenu
 {
-    private readonly ChoiceElement<bool> Enabled = new("Enable", ChoiceModels.ForBool("No", "Yes"), "Enabled this mod.");
-    private readonly ChoiceElement<RoleId> Role = new("Role", ChoiceModels.ForEnum<RoleId>(), "Team to play on.");
+    private readonly ChoiceElement<bool> Enabled = new(
+        "Enable",
+        ChoiceModels.ForBool("No", "Yes"),
+        "Enabled this mod."
+    );
+    private readonly ChoiceElement<RoleId> Role = new(
+        "Role",
+        ChoiceModels.ForEnum<RoleId>(),
+        "Team to play on."
+    );
     private readonly Dictionary<string, ModuleMultiMenu> ModuleMultiMenus = [];
 
     // Updated on incoming packet or on "Apply".
@@ -28,10 +36,13 @@ internal class GlobalSaveDataMenu
         {
             var localModule = module;
             ModuleMultiMenu menu = new(module);
-            menu.Apply(globalSaveData.ModuleDataset.TryGetValue(module.Name, out var data) ? data : new());
+            menu.Apply(
+                globalSaveData.ModuleDataset.TryGetValue(module.Name, out var data) ? data : new()
+            );
             menu.OnUpdateData += () =>
             {
-                if (HuntClientAddon.IsConnected || saveDataChanged.Suppressed) return;
+                if (HuntClientAddon.IsConnected || saveDataChanged.Suppressed)
+                    return;
 
                 currentModuleDataset[localModule.Name] = menu.Export();
                 OnGlobalSaveDataChanged?.Invoke(Export());
@@ -50,7 +61,8 @@ internal class GlobalSaveDataMenu
 
     private void InvokeSaveDataChanged()
     {
-        if (saveDataChanged.Suppressed) return;
+        if (saveDataChanged.Suppressed)
+            return;
         OnGlobalSaveDataChanged?.Invoke(Export());
     }
 
@@ -60,7 +72,9 @@ internal class GlobalSaveDataMenu
         screen.Add(Role);
 
         PaginatedMenuScreenBuilder modulesScreenBuilder = new("The Hunt is On - Modules");
-        modulesScreenBuilder.AddRange(ModuleMultiMenus.OrderBy(e => e.Key).Select(e => e.Value.RootElement));
+        modulesScreenBuilder.AddRange(
+            ModuleMultiMenus.OrderBy(e => e.Key).Select(e => e.Value.RootElement)
+        );
         var modulesScreen = modulesScreenBuilder.Build();
 
         TextButton modulesButton = new("Modules");
@@ -68,17 +82,22 @@ internal class GlobalSaveDataMenu
         screen.Add(modulesButton);
 
         TextButton applyButton = new("Send Module Settings");
-        applyButton.Container.DoOnUpdate(() => applyButton.Interactable = HuntClientAddon.IsConnected);
+        applyButton.Container.DoOnUpdate(() =>
+            applyButton.Interactable = HuntClientAddon.IsConnected
+        );
         applyButton.OnSubmit += () =>
         {
             ModuleDataset update = [];
-            foreach (var e in ModuleMultiMenus) update[e.Key] = e.Value.Export();
+            foreach (var e in ModuleMultiMenus)
+                update[e.Key] = e.Value.Export();
             HuntClientAddon.Instance?.Send(update);
         };
         screen.Add(applyButton);
 
         TextButton revertButton = new("Revert Module Settings");
-        revertButton.Container.DoOnUpdate(() => revertButton.Interactable = HuntClientAddon.IsConnected);
+        revertButton.Container.DoOnUpdate(() =>
+            revertButton.Interactable = HuntClientAddon.IsConnected
+        );
         revertButton.OnSubmit += () => Apply(Export());
         screen.Add(revertButton);
     }
@@ -94,15 +113,17 @@ internal class GlobalSaveDataMenu
             foreach (var (name, data) in globalSaveData.ModuleDataset)
             {
                 currentModuleDataset.Add(name, data);
-                if (ModuleMultiMenus.TryGetValue(name, out var menu)) menu.Apply(data);
+                if (ModuleMultiMenus.TryGetValue(name, out var menu))
+                    menu.Apply(data);
             }
         }
     }
 
-    private GlobalSaveData Export() => new()
-    {
-        Enabled = Enabled.Value,
-        Role = Role.Value,
-        ModuleDataset = currentModuleDataset.Clone(),
-    };
+    private GlobalSaveData Export() =>
+        new()
+        {
+            Enabled = Enabled.Value,
+            Role = Role.Value,
+            ModuleDataset = currentModuleDataset.Clone(),
+        };
 }

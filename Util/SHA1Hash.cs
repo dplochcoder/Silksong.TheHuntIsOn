@@ -1,8 +1,8 @@
-﻿using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
-using SSMP.Networking.Packet;
-using System;
+﻿using System;
 using System.IO;
 using System.Text;
+using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
+using SSMP.Networking.Packet;
 
 namespace Silksong.TheHuntIsOn.Util;
 
@@ -13,20 +13,24 @@ internal class SHA1Hash : NetworkedCloneable<SHA1Hash>, IEquatable<SHA1Hash>
     public byte[] Hash = new byte[NUM_BYTES];
 
     public SHA1Hash() { }
+
     public SHA1Hash(byte[] bytes)
     {
-        if (bytes.Length != NUM_BYTES) throw new ArgumentException($"{bytes.Length} != {NUM_BYTES}");
+        if (bytes.Length != NUM_BYTES)
+            throw new ArgumentException($"{bytes.Length} != {NUM_BYTES}");
         Hash = bytes;
     }
 
     public override void ReadData(IPacket packet)
     {
-        for (int i = 0; i < NUM_BYTES; i++) Hash[i] = packet.ReadByte();
+        for (int i = 0; i < NUM_BYTES; i++)
+            Hash[i] = packet.ReadByte();
     }
 
     public override void WriteData(IPacket packet)
     {
-        foreach (var b in Hash) packet.Write(b);
+        foreach (var b in Hash)
+            packet.Write(b);
     }
 
     public override SHA1Hash Clone()
@@ -52,7 +56,8 @@ internal class SHA1Hash : NetworkedCloneable<SHA1Hash>, IEquatable<SHA1Hash>
     {
         for (int i = 0; i < NUM_BYTES; i++)
         {
-            if (Hash[i] != other.Hash[i]) return false;
+            if (Hash[i] != other.Hash[i])
+                return false;
         }
         return true;
     }
@@ -60,7 +65,8 @@ internal class SHA1Hash : NetworkedCloneable<SHA1Hash>, IEquatable<SHA1Hash>
     public override int GetHashCode()
     {
         int hash = 0;
-        for (int i = 0; i < NUM_BYTES; i += 4) hash ^= BitConverter.ToInt32(Hash.AsSpan()[i..]);
+        for (int i = 0; i < NUM_BYTES; i += 4)
+            hash ^= BitConverter.ToInt32(Hash.AsSpan()[i..]);
         return hash;
     }
 

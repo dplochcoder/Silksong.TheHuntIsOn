@@ -1,16 +1,21 @@
-﻿using Silksong.TheHuntIsOn.SsmpAddon;
+﻿using System.Collections.Generic;
+using Silksong.TheHuntIsOn.SsmpAddon;
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using Silksong.TheHuntIsOn.Util;
 using SSMP.Networking.Packet;
-using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn.Modules.EventsModule;
 
-internal class SpeedrunnerEventsDelta : IDelta<SpeedrunnerEvents, SpeedrunnerEventsDelta>, IIdentifiedPacket<ClientPacketId>, IIdentifiedPacket<ServerPacketId>
+internal class SpeedrunnerEventsDelta
+    : IDelta<SpeedrunnerEvents, SpeedrunnerEventsDelta>,
+        IIdentifiedPacket<ClientPacketId>,
+        IIdentifiedPacket<ServerPacketId>
 {
-    ClientPacketId IIdentifiedPacket<ClientPacketId>.Identifier => ClientPacketId.SpeedrunnerEventsDelta;
+    ClientPacketId IIdentifiedPacket<ClientPacketId>.Identifier =>
+        ClientPacketId.SpeedrunnerEventsDelta;
 
-    ServerPacketId IIdentifiedPacket<ServerPacketId>.Identifier => ServerPacketId.SpeedrunnerEventsDelta;
+    ServerPacketId IIdentifiedPacket<ServerPacketId>.Identifier =>
+        ServerPacketId.SpeedrunnerEventsDelta;
 
     public bool Single => false;
 
@@ -20,6 +25,7 @@ internal class SpeedrunnerEventsDelta : IDelta<SpeedrunnerEvents, SpeedrunnerEve
 
     // Singular acquisitions.
     public EnumSet<SpeedrunnerBoolEvent> BoolEvents = [];
+
     // Repeatable acquisitions.
     public List<SpeedrunnerCountEventDelta> CountEvents = [];
 

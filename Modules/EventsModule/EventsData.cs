@@ -1,9 +1,9 @@
-﻿using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
-using Silksong.TheHuntIsOn.Util;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
+using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
+using Silksong.TheHuntIsOn.Util;
 
 namespace Silksong.TheHuntIsOn.Modules.EventsModule;
 
@@ -18,8 +18,13 @@ internal class EventsData : Dictionary<string, EventRewards>
 {
     public static EventsData Load()
     {
-        var localPath = Path.Join(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "events.json");
-        return File.Exists(localPath) ? JsonUtil.DeserializeFromFile<EventsData>(localPath) : JsonUtil.DeserializeFromDataResource<EventsData>("default-events.json");
+        var localPath = Path.Join(
+            Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location),
+            "events.json"
+        );
+        return File.Exists(localPath)
+            ? JsonUtil.DeserializeFromFile<EventsData>(localPath)
+            : JsonUtil.DeserializeFromDataResource<EventsData>("default-events.json");
     }
 }
 
@@ -32,9 +37,12 @@ internal class ParsedEventsData
     {
         foreach (var e in eventsData)
         {
-            if (Enum.TryParse(e.Key, out SpeedrunnerBoolEvent boolEvent)) BoolRewards.Add(boolEvent, e.Value);
-            else if (SpeedrunnerCountEvent.TryParse(e.Key, out var countEvent)) CountRewards.Add(countEvent, e.Value);
-            else throw new ArgumentException($"Unrecognized event key: '{e.Key}'");
+            if (Enum.TryParse(e.Key, out SpeedrunnerBoolEvent boolEvent))
+                BoolRewards.Add(boolEvent, e.Value);
+            else if (SpeedrunnerCountEvent.TryParse(e.Key, out var countEvent))
+                CountRewards.Add(countEvent, e.Value);
+            else
+                throw new ArgumentException($"Unrecognized event key: '{e.Key}'");
         }
     }
 

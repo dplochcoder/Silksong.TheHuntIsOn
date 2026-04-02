@@ -1,8 +1,8 @@
-﻿using Silksong.TheHuntIsOn.Modules.ArchitectModule;
+﻿using System;
+using Silksong.TheHuntIsOn.Modules.ArchitectModule;
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using Silksong.TheHuntIsOn.Util;
 using SSMP.Networking.Packet;
-using System;
 
 namespace Silksong.TheHuntIsOn.Modules.Lib;
 
@@ -20,7 +20,9 @@ internal enum ModuleSettingsType
     Stats,
 }
 
-internal abstract class ModuleSettings : Cloneable<ModuleSettings>, IDynamicValue<ModuleSettingsType, ModuleSettings, ModuleSettingsFactory>
+internal abstract class ModuleSettings
+    : Cloneable<ModuleSettings>,
+        IDynamicValue<ModuleSettingsType, ModuleSettings, ModuleSettingsFactory>
 {
     public abstract ModuleSettingsType DynamicType { get; }
 
@@ -31,7 +33,8 @@ internal abstract class ModuleSettings : Cloneable<ModuleSettings>, IDynamicValu
     public abstract bool Equivalent(ModuleSettings other);
 }
 
-internal abstract class ModuleSettings<T> : ModuleSettings, ICloneable<T> where T : ModuleSettings<T>
+internal abstract class ModuleSettings<T> : ModuleSettings, ICloneable<T>
+    where T : ModuleSettings<T>
 {
     T ICloneable<T>.Clone() => (T)((ModuleSettings)this).Clone();
 
@@ -40,20 +43,22 @@ internal abstract class ModuleSettings<T> : ModuleSettings, ICloneable<T> where 
     protected abstract bool Equivalent(T other);
 }
 
-internal class ModuleSettingsFactory : IDynamicValueFactory<ModuleSettingsType, ModuleSettings, ModuleSettingsFactory>
+internal class ModuleSettingsFactory
+    : IDynamicValueFactory<ModuleSettingsType, ModuleSettings, ModuleSettingsFactory>
 {
-    public ModuleSettings Create(ModuleSettingsType type) => type switch
-    {
-        ModuleSettingsType.Empty => new EmptySettings(),
-        ModuleSettingsType.Architect => new ArchitectSettings(),
-        ModuleSettingsType.AutoTrigger => new AutoTriggerSettings(),
-        ModuleSettingsType.Bind => new BindSettings(),
-        ModuleSettingsType.Death => new DeathSettings(),
-        ModuleSettingsType.Healing => new HealingSettings(),
-        ModuleSettingsType.Intelligence => new IntelligenceSettings(),
-        ModuleSettingsType.SilkRegeneration => new SilkRegenerationSettings(),
-        ModuleSettingsType.SpawnPoint => new SpawnPointSettings(),
-        ModuleSettingsType.Stats => new StatsSettings(),
-        _ => throw new ArgumentException($"{nameof(type)}: {type}"),
-    };
+    public ModuleSettings Create(ModuleSettingsType type) =>
+        type switch
+        {
+            ModuleSettingsType.Empty => new EmptySettings(),
+            ModuleSettingsType.Architect => new ArchitectSettings(),
+            ModuleSettingsType.AutoTrigger => new AutoTriggerSettings(),
+            ModuleSettingsType.Bind => new BindSettings(),
+            ModuleSettingsType.Death => new DeathSettings(),
+            ModuleSettingsType.Healing => new HealingSettings(),
+            ModuleSettingsType.Intelligence => new IntelligenceSettings(),
+            ModuleSettingsType.SilkRegeneration => new SilkRegenerationSettings(),
+            ModuleSettingsType.SpawnPoint => new SpawnPointSettings(),
+            ModuleSettingsType.Stats => new StatsSettings(),
+            _ => throw new ArgumentException($"{nameof(type)}: {type}"),
+        };
 }

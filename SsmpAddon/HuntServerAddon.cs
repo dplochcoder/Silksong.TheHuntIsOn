@@ -1,4 +1,5 @@
-﻿using Silksong.TheHuntIsOn.Modules;
+﻿using System;
+using Silksong.TheHuntIsOn.Modules;
 using Silksong.TheHuntIsOn.Modules.ArchitectModule;
 using Silksong.TheHuntIsOn.Modules.EventsModule;
 using Silksong.TheHuntIsOn.Modules.Lib;
@@ -6,7 +7,6 @@ using Silksong.TheHuntIsOn.Modules.PauseTimerModule;
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using SSMP.Api.Server;
 using SSMP.Api.Server.Networking;
-using System;
 
 namespace Silksong.TheHuntIsOn.SsmpAddon;
 
@@ -35,7 +35,9 @@ internal class HuntServerAddon : ServerAddon
     internal Func<ModuleDataset?>? SeedModuleDataset;
 
     internal event Action<IServerPlayer>? OnUpdatePlayer;
+
     internal void UpdateArchitectLevels() => architectModuleServerAddon.Refresh();
+
     internal void UpdateEvents() => eventsModuleServerAddon.Refresh();
 
     public HuntServerAddon()
@@ -51,7 +53,10 @@ internal class HuntServerAddon : ServerAddon
     {
         api = serverApi;
         sender = api.NetServer.GetNetworkSender<ClientPacketId>(this);
-        receiver = api.NetServer.GetNetworkReceiver<ServerPacketId>(this, packetGenerators.Instantiate);
+        receiver = api.NetServer.GetNetworkReceiver<ServerPacketId>(
+            this,
+            packetGenerators.Instantiate
+        );
         moduleDataset = SeedModuleDataset?.Invoke();
 
         api.ServerManager.PlayerConnectEvent += player => OnUpdatePlayer?.Invoke(player);
@@ -63,47 +68,64 @@ internal class HuntServerAddon : ServerAddon
         HandleServerPacket<IntelligenceMessage>(OnIntelligenceMessage);
         HandleServerPacket<ModuleDataset>(OnModuleDataset);
         HandleServerPacket<ReportDesync>(OnReportDesync);
-        HandleServerPacket<RequestArchitectLevelData>(architectModuleServerAddon.OnRequestArchitectLevelData);
+        HandleServerPacket<RequestArchitectLevelData>(
+            architectModuleServerAddon.OnRequestArchitectLevelData
+        );
         HandleServerPacket<SeedModuleDataset>(OnSeedModuleDataset);
-        HandleServerPacket<SpeedrunnerEventsDelta>(eventsModuleServerAddon.OnSpeedrunnerEventsDelta);
+        HandleServerPacket<SpeedrunnerEventsDelta>(
+            eventsModuleServerAddon.OnSpeedrunnerEventsDelta
+        );
     }
 
     private readonly PacketGenerators<ServerPacketId> packetGenerators = new();
 
-    private void HandleServerPacket<T>(Action<ushort, T> handler) where T : IIdentifiedPacket<ServerPacketId>, new()
+    private void HandleServerPacket<T>(Action<ushort, T> handler)
+        where T : IIdentifiedPacket<ServerPacketId>, new()
     {
         packetGenerators.Register<T>();
         receiver!.RegisterPacketHandler<T>(new T().Identifier, (id, data) => handler(id, data));
     }
 
-    private bool IsPlayerAuthorized(ushort id) => api?.ServerManager.GetPlayer(id)?.IsAuthorized ?? false;
+    private bool IsPlayerAuthorized(ushort id) =>
+        api?.ServerManager.GetPlayer(id)?.IsAuthorized ?? false;
 
-    private string PlayerName(ushort id) => api?.ServerManager.GetPlayer(id)?.Username ?? "<unknown>";
+    private string PlayerName(ushort id) =>
+        api?.ServerManager.GetPlayer(id)?.Username ?? "<unknown>";
 
-    internal void SendToPlayer<T>(IServerPlayer player, T data) where T : IIdentifiedPacket<ClientPacketId>, new() => SendToPlayer(player.Id, data);
+    internal void SendToPlayer<T>(IServerPlayer player, T data)
+        where T : IIdentifiedPacket<ClientPacketId>, new() => SendToPlayer(player.Id, data);
 
-    internal void SendToPlayer<T>(ushort id, T data) where T : IIdentifiedPacket<ClientPacketId>, new()
+    internal void SendToPlayer<T>(ushort id, T data)
+        where T : IIdentifiedPacket<ClientPacketId>, new()
     {
-        if (data.Single) sender?.SendSingleData(data.Identifier, data, id);
-        else sender?.SendCollectionData(data.Identifier, data, id);
+        if (data.Single)
+            sender?.SendSingleData(data.Identifier, data, id);
+        else
+            sender?.SendCollectionData(data.Identifier, data, id);
     }
 
     private void SendModuleDataset(IServerPlayer player)
     {
-        if (moduleDataset != null) SendToPlayer(player, moduleDataset);
+        if (moduleDataset != null)
+            SendToPlayer(player, moduleDataset);
     }
 
-    internal void SendMessage(ushort id, string message) => api?.ServerManager.SendMessage(id, message);
+    internal void SendMessage(ushort id, string message) =>
+        api?.ServerManager.SendMessage(id, message);
 
     internal void BroadcastMessage(string message) => api?.ServerManager.BroadcastMessage(message);
 
-    internal void Broadcast<T>(T packet) where T : IIdentifiedPacket<ClientPacketId>, new()
+    internal void Broadcast<T>(T packet)
+        where T : IIdentifiedPacket<ClientPacketId>, new()
     {
-        if (packet.Single) sender?.BroadcastSingleData(packet.Identifier, packet);
-        else sender?.BroadcastCollectionData(packet.Identifier, packet);
+        if (packet.Single)
+            sender?.BroadcastSingleData(packet.Identifier, packet);
+        else
+            sender?.BroadcastCollectionData(packet.Identifier, packet);
     }
 
-    private void OnIntelligenceMessage(ushort id, IntelligenceMessage intelligenceMessage) => BroadcastMessage(intelligenceMessage.Message);
+    private void OnIntelligenceMessage(ushort id, IntelligenceMessage intelligenceMessage) =>
+        BroadcastMessage(intelligenceMessage.Message);
 
     private void OnModuleDataset(ushort id, ModuleDataset moduleDataset)
     {
@@ -120,7 +142,8 @@ internal class HuntServerAddon : ServerAddon
 
     private void OnSeedModuleDataset(ushort id, SeedModuleDataset seedModuleDataset)
     {
-        if (moduleDataset != null) return;
+        if (moduleDataset != null)
+            return;
 
         if (!IsPlayerAuthorized(id))
         {
@@ -136,7 +159,8 @@ internal class HuntServerAddon : ServerAddon
     private void OnReportDesync(ushort id, ReportDesync reportDesync)
     {
         var player = api?.ServerManager.GetPlayer(id);
-        if (player == null) return;
+        if (player == null)
+            return;
 
         OnUpdatePlayer?.Invoke(player);
     }

@@ -8,7 +8,8 @@ internal class EventsModuleServerAddon
     private readonly HuntServerAddon serverAddon;
     private ParsedEventsData parsedEventsData = ParsedEventsData.Load();
 
-    private readonly DeltaBaseWrapper<SpeedrunnerEvents, SpeedrunnerEventsDelta> speedrunnerEvents = new();
+    private readonly DeltaBaseWrapper<SpeedrunnerEvents, SpeedrunnerEventsDelta> speedrunnerEvents =
+        new();
     private readonly HunterItemGrants hunterItemGrants = new();
 
     internal EventsModuleServerAddon(HuntServerAddon serverAddon, HuntCommand huntCommand)
@@ -41,25 +42,34 @@ internal class EventsModuleServerAddon
     internal void OnSpeedrunnerEventsDelta(ushort id, SpeedrunnerEventsDelta eventsDelta)
 #pragma warning restore IDE0060 // Remove unused parameter
     {
-        if (!speedrunnerEvents.Update(eventsDelta, out var realEventsDelta)) return;
+        if (!speedrunnerEvents.Update(eventsDelta, out var realEventsDelta))
+            return;
 
         HunterItemGrantsDelta grantsDelta = new();
         void AddRewards(string id, EventRewards rewards)
         {
             grantsDelta.Grants.Add(id, rewards.Items);
-            if (rewards.Message != "") serverAddon.BroadcastMessage(rewards.Message);
+            if (rewards.Message != "")
+                serverAddon.BroadcastMessage(rewards.Message);
         }
 
         foreach (var boolEvent in realEventsDelta.BoolEvents)
         {
-            if (!parsedEventsData.BoolRewards.TryGetValue(boolEvent, out var rewards)) continue;
+            if (!parsedEventsData.BoolRewards.TryGetValue(boolEvent, out var rewards))
+                continue;
             AddRewards($"{boolEvent}", rewards);
         }
         foreach (var countEvent in realEventsDelta.CountEvents)
         {
             for (int i = countEvent.PrevCount + 1; i <= countEvent.NewCount; i++)
             {
-                if (!parsedEventsData.CountRewards.TryGetValue(new(countEvent.Type, i), out var rewards)) continue;
+                if (
+                    !parsedEventsData.CountRewards.TryGetValue(
+                        new(countEvent.Type, i),
+                        out var rewards
+                    )
+                )
+                    continue;
                 AddRewards($"{countEvent.Type}{i}", rewards);
             }
         }

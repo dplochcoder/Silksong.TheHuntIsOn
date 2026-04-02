@@ -1,6 +1,8 @@
 ﻿namespace Silksong.TheHuntIsOn.Util;
 
-internal class DeltaBaseWrapper<B, D> where B : IDeltaBase<B, D>, new() where D : IDelta<B, D>, new()
+internal class DeltaBaseWrapper<B, D>
+    where B : IDeltaBase<B, D>, new()
+    where D : IDelta<B, D>, new()
 {
     private B prevData = new();
     private B currentData = new();

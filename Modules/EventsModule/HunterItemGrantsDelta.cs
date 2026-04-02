@@ -1,12 +1,14 @@
-﻿using Silksong.TheHuntIsOn.SsmpAddon;
+﻿using System.Collections.Generic;
+using Silksong.TheHuntIsOn.SsmpAddon;
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using Silksong.TheHuntIsOn.Util;
 using SSMP.Networking.Packet;
-using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn.Modules.EventsModule;
 
-internal class HunterItemGrantsDelta : IDelta<HunterItemGrants, HunterItemGrantsDelta>, IIdentifiedPacket<ClientPacketId>
+internal class HunterItemGrantsDelta
+    : IDelta<HunterItemGrants, HunterItemGrantsDelta>,
+        IIdentifiedPacket<ClientPacketId>
 {
     public ClientPacketId Identifier => ClientPacketId.HunterItemGrantsDelta;
 
@@ -18,6 +20,7 @@ internal class HunterItemGrantsDelta : IDelta<HunterItemGrants, HunterItemGrants
 
     // Items to grant to hunter(s).
     public Dictionary<string, EnumList<HunterItemGrantType>> Grants = [];
+
     // A synchronization count for the total number of grants this session.
     public int? TotalGrants;
 

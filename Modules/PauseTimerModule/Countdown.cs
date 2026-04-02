@@ -1,6 +1,6 @@
-﻿using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
+﻿using System;
+using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using SSMP.Networking.Packet;
-using System;
 
 namespace Silksong.TheHuntIsOn.Modules.PauseTimerModule;
 
@@ -10,10 +10,13 @@ internal class Countdown : NetworkedCloneable<Countdown>
 
     // Scheduled time for the countdown to expire.
     public long FinishTimeTicks;
+
     // If set, always show this amount as the remaining time.
     public long? FrozenRemainder;
+
     // If set, override FrozenRemainder and start counting down again after this time.
     public long? UnfreezeTimeTicks;
+
     // Message to accompany the countdown.
     public string Message = "<untitled>";
 
@@ -33,7 +36,9 @@ internal class Countdown : NetworkedCloneable<Countdown>
         Message.WriteData(packet);
     }
 
-    public bool IsFrozen(DateTime now) => FrozenRemainder.HasValue && (!UnfreezeTimeTicks.HasValue || UnfreezeTimeTicks.Value > now.Ticks);
+    public bool IsFrozen(DateTime now) =>
+        FrozenRemainder.HasValue
+        && (!UnfreezeTimeTicks.HasValue || UnfreezeTimeTicks.Value > now.Ticks);
 
     public bool IsCompleted(DateTime now) => !IsFrozen(now) && now.Ticks >= FinishTimeTicks;
 
@@ -42,7 +47,9 @@ internal class Countdown : NetworkedCloneable<Countdown>
         var now = DateTime.UtcNow;
         if (IsFrozen(now) || !IsCompleted(now))
         {
-            TimeSpan span = new(IsFrozen(now) ? FrozenRemainder!.Value : (FinishTimeTicks - now.Ticks));
+            TimeSpan span = new(
+                IsFrozen(now) ? FrozenRemainder!.Value : (FinishTimeTicks - now.Ticks)
+            );
             seconds = (float)span.TotalSeconds;
             return true;
         }
@@ -53,8 +60,10 @@ internal class Countdown : NetworkedCloneable<Countdown>
 
     public Countdown Pause(DateTime now)
     {
-        if (IsCompleted(now)) return this;
-        if (IsFrozen(now)) return With(c => c.UnfreezeTimeTicks = null);
+        if (IsCompleted(now))
+            return this;
+        if (IsFrozen(now))
+            return With(c => c.UnfreezeTimeTicks = null);
 
         return With(c =>
         {
@@ -65,11 +74,14 @@ internal class Countdown : NetworkedCloneable<Countdown>
 
     public Countdown UnpauseAt(DateTime now, DateTime unpauseWhen)
     {
-        if (IsCompleted(now)) return this;
-        if (IsFrozen(now)) return With(c => {
-            c.FinishTimeTicks = unpauseWhen.Ticks + FrozenRemainder!.Value;
-            c.UnfreezeTimeTicks = unpauseWhen.Ticks;
-        });
+        if (IsCompleted(now))
+            return this;
+        if (IsFrozen(now))
+            return With(c =>
+            {
+                c.FinishTimeTicks = unpauseWhen.Ticks + FrozenRemainder!.Value;
+                c.UnfreezeTimeTicks = unpauseWhen.Ticks;
+            });
 
         var remainder = FinishTimeTicks - now.Ticks;
         return With(c =>

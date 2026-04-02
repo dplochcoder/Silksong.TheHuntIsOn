@@ -3,5 +3,5 @@
 internal enum RoleId
 {
     Speedrunner,
-    Hunter
+    Hunter,
 }

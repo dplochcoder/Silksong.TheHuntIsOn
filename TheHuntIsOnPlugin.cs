@@ -1,3 +1,7 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq;
 using BepInEx;
 using MonoDetour;
 using Silksong.DataManager;
@@ -10,10 +14,6 @@ using Silksong.TheHuntIsOn.SsmpAddon;
 using Silksong.TheHuntIsOn.Util;
 using SSMP.Api.Client;
 using SSMP.Api.Server;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using System.Linq;
 
 namespace Silksong.TheHuntIsOn;
 
@@ -22,7 +22,10 @@ namespace Silksong.TheHuntIsOn;
 [BepInDependency("org.silksong-modding.prepatcher")]
 [BepInDependency("ssmp")]
 [BepInAutoPlugin(id: "io.github.silksong.thehuntison")]
-public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IGlobalDataMod<GlobalSaveData>
+public partial class TheHuntIsOnPlugin
+    : BaseUnityPlugin,
+        IModMenuCustomMenu,
+        IGlobalDataMod<GlobalSaveData>
 {
     private static TheHuntIsOnPlugin? instance;
 
@@ -32,9 +35,14 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
     // EventSuppressors allow updates to propagate between the three sources without infinite cascade.
     private readonly EventSuppressor updateMenu = new();
 
-    private static bool GetModuleData(GlobalSaveData? saveData, string name, [MaybeNullWhen(false)] out ModuleData data)
+    private static bool GetModuleData(
+        GlobalSaveData? saveData,
+        string name,
+        [MaybeNullWhen(false)] out ModuleData data
+    )
     {
-        if (saveData != null && saveData.Enabled) return saveData.ModuleDataset.TryGetValue(name, out data);
+        if (saveData != null && saveData.Enabled)
+            return saveData.ModuleDataset.TryGetValue(name, out data);
         else
         {
             data = default;
@@ -42,24 +50,31 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
         }
     }
 
-    private static ModuleSettings? GetSettings(GlobalSaveData? saveData, string name) => GetModuleData(saveData, name, out var data) ? data.GetSettings(saveData!.Role) : null;
+    private static ModuleSettings? GetSettings(GlobalSaveData? saveData, string name) =>
+        GetModuleData(saveData, name, out var data) ? data.GetSettings(saveData!.Role) : null;
 
-    private static bool IsEnabled(GlobalSaveData? saveData, string name) => GetModuleData(saveData, name, out var data) && data.IsEnabled(saveData!.Role);
+    private static bool IsEnabled(GlobalSaveData? saveData, string name) =>
+        GetModuleData(saveData, name, out var data) && data.IsEnabled(saveData!.Role);
 
     private void UpdateModulesGlobal(GlobalSaveData? prev)
     {
         foreach (var module in modules.Values)
         {
             module.Enabled = IsEnabled(GlobalData, module.Name);
-            module.OnGlobalConfigChanged(GetSettings(prev, module.Name), GetSettings(GlobalData, module.Name));
+            module.OnGlobalConfigChanged(
+                GetSettings(prev, module.Name),
+                GetSettings(GlobalData, module.Name)
+            );
         }
     }
 
-    private void OnModuleDataset(ModuleDataset moduleDataset) => GlobalData = (GlobalData ?? new()) with { ModuleDataset = moduleDataset };
+    private void OnModuleDataset(ModuleDataset moduleDataset) =>
+        GlobalData = (GlobalData ?? new()) with { ModuleDataset = moduleDataset };
 
     private void MaybeSeedModuleDataset()
     {
-        if (GlobalData == null) return;
+        if (GlobalData == null)
+            return;
 
         SeedModuleDataset seed = new() { ModuleDataset = GlobalData.ModuleDataset.Clone() };
         HuntClientAddon.Instance?.Send(seed);
@@ -77,45 +92,68 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
         }
     }
 
-    internal static RoleId GetRole() => instance != null ? instance.GlobalData?.Role ?? RoleId.Hunter : RoleId.Hunter;
+    internal static RoleId GetRole() =>
+        instance != null ? instance.GlobalData?.Role ?? RoleId.Hunter : RoleId.Hunter;
 
     internal static ModuleActivation GetModuleActivation(string name)
     {
         if (instance != null)
         {
             var global = instance.GlobalData;
-            if (global != null && global.Enabled && global.ModuleDataset.TryGetValue(name, out var data)) return data.ModuleActivation;
+            if (
+                global != null
+                && global.Enabled
+                && global.ModuleDataset.TryGetValue(name, out var data)
+            )
+                return data.ModuleActivation;
         }
 
         return ModuleActivation.Inactive;
     }
 
-    internal static T GetGlobalConfig<T>(string name) where T : ModuleSettings<T>, new()
+    internal static T GetGlobalConfig<T>(string name)
+        where T : ModuleSettings<T>, new()
     {
         if (instance != null)
         {
             var global = instance.GlobalData;
-            if (global != null && global.ModuleDataset.TryGetValue(name, out var data) && data.GetSettings(global.Role) is T typed) return typed;
+            if (
+                global != null
+                && global.ModuleDataset.TryGetValue(name, out var data)
+                && data.GetSettings(global.Role) is T typed
+            )
+                return typed;
         }
 
         return new();
     }
 
-    internal static T GetCosmeticConfig<T>(string name) where T : new()
+    internal static T GetCosmeticConfig<T>(string name)
+        where T : new()
     {
-        if (instance != null && instance.GlobalData != null && instance.GlobalData.Cosmetics.Config.TryGetValue(name, out var data) && data is T typed) return typed;
-        else return new();
+        if (
+            instance != null
+            && instance.GlobalData != null
+            && instance.GlobalData.Cosmetics.Config.TryGetValue(name, out var data)
+            && data is T typed
+        )
+            return typed;
+        else
+            return new();
     }
 
-    internal static void SetCosmeticConfig<T>(string name, T config) where T : class
+    internal static void SetCosmeticConfig<T>(string name, T config)
+        where T : class
     {
-        if (instance == null) return;
+        if (instance == null)
+            return;
 
         instance.GlobalData ??= new();
         instance.GlobalData.Cosmetics.Config[name] = config;
     }
 
-    internal static void UpdateCosmeticConfig<T>(string name, Action<T> update) where T : class, new()
+    internal static void UpdateCosmeticConfig<T>(string name, Action<T> update)
+        where T : class, new()
     {
         var config = GetCosmeticConfig<T>(name);
         update(config);
@@ -124,8 +162,10 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
 
     private static void LogError(string message)
     {
-        if (instance != null) instance.Logger.LogError(message);
-        else Console.WriteLine(message);
+        if (instance != null)
+            instance.Logger.LogError(message);
+        else
+            Console.WriteLine(message);
     }
 
     private void Awake()
@@ -137,14 +177,18 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
         MonoDetourManager.InvokeHookInitializers(System.Reflection.Assembly.GetExecutingAssembly());
         UIEvents.Load();
 
-        foreach (var module in ModuleBase.GetAllModules()) modules.Add(module.Name, module);
+        foreach (var module in ModuleBase.GetAllModules())
+            modules.Add(module.Name, module);
 
         HuntClientAddon clientAddon = new();
         HuntClientAddon.On<ModuleDataset>.Received += OnModuleDataset;
         clientAddon.OnConnect += MaybeSeedModuleDataset;
         ClientAddon.RegisterAddon(clientAddon);
 
-        HuntServerAddon serverAddon = new() { SeedModuleDataset = () => GlobalData?.ModuleDataset?.Clone() };
+        HuntServerAddon serverAddon = new()
+        {
+            SeedModuleDataset = () => GlobalData?.ModuleDataset?.Clone(),
+        };
         ServerAddon.RegisterAddon(new HuntServerAddon());
 
         Logger.LogInfo($"Plugin {Name} ({Id}) has loaded!");
@@ -156,7 +200,8 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
 
     private void UpdateMenu()
     {
-        if (updateMenu.Suppressed) return;
+        if (updateMenu.Suppressed)
+            return;
         globalSaveDataMenu?.Apply(GlobalData ?? new());
     }
 
@@ -166,7 +211,8 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
         foreach (var module in modules.OrderBy(e => e.Key).Select(e => e.Value))
         {
             List<MenuElement> elements = [.. module.CreateCosmeticsMenuElements()];
-            if (elements.Count == 0) continue;
+            if (elements.Count == 0)
+                continue;
 
             PaginatedMenuScreenBuilder subMenuBuilder = new($"Customize - {module.Name}");
             subMenuBuilder.AddRange(elements);
@@ -182,7 +228,7 @@ public partial class TheHuntIsOnPlugin : BaseUnityPlugin, IModMenuCustomMenu, IG
         customizeButton.OnSubmit += () => MenuScreenNavigation.Show(customizeScreen);
         return customizeButton;
     }
-   
+
     public AbstractMenuScreen BuildCustomMenu()
     {
         SimpleMenuScreen screen = new("The Hunt is On");

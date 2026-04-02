@@ -1,4 +1,6 @@
-﻿using MonoDetour;
+﻿using System;
+using System.Collections.Generic;
+using MonoDetour;
 using MonoDetour.Cil;
 using MonoDetour.HookGen;
 using MonoMod.Cil;
@@ -9,8 +11,6 @@ using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using Silksong.TheHuntIsOn.Util;
 using SSMP.Networking.Packet;
-using System;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -31,7 +31,8 @@ internal class SpawnPointSettings : ModuleSettings<SpawnPointSettings>
 
     public SpawnPoint SpawnPoint = SpawnPoint.Unchanged;
 
-    public override void ReadDynamicData(IPacket packet) => SpawnPoint = packet.ReadEnum<SpawnPoint>();
+    public override void ReadDynamicData(IPacket packet) =>
+        SpawnPoint = packet.ReadEnum<SpawnPoint>();
 
     public override void WriteDynamicData(IPacket packet) => SpawnPoint.WriteData(packet);
 
@@ -39,7 +40,8 @@ internal class SpawnPointSettings : ModuleSettings<SpawnPointSettings>
 }
 
 [MonoDetourTargets(typeof(GameManager))]
-internal class SpawnPointModule : GlobalSettingsModule<SpawnPointModule, SpawnPointSettings, SpawnPointSubMenu>
+internal class SpawnPointModule
+    : GlobalSettingsModule<SpawnPointModule, SpawnPointSettings, SpawnPointSubMenu>
 {
     internal SpawnPointModule() => Events.OnEnterScene += OnNewScene;
 
@@ -47,7 +49,8 @@ internal class SpawnPointModule : GlobalSettingsModule<SpawnPointModule, SpawnPo
 
     public override string Name => "Spawn Point";
 
-    public override ModuleActivationType ModuleActivationType => ModuleActivationType.AnyConfiguration;
+    public override ModuleActivationType ModuleActivationType =>
+        ModuleActivationType.AnyConfiguration;
 
     public override void OnEnabled()
     {
@@ -68,7 +71,7 @@ internal class SpawnPointModule : GlobalSettingsModule<SpawnPointModule, SpawnPo
         public bool FacingRight;
     }
 
-    private static readonly Dictionary<SpawnPoint, RespawnData> respawnData = new ()
+    private static readonly Dictionary<SpawnPoint, RespawnData> respawnData = new()
     {
         [SpawnPoint.Bellhart] = new()
         {
@@ -93,12 +96,13 @@ internal class SpawnPointModule : GlobalSettingsModule<SpawnPointModule, SpawnPo
             Scene = "Song_Enclave",
             Position = new(91f, 8f),
             FacingRight = false,
-        }
+        },
     };
 
     private static bool GetRespawnData(out RespawnData data)
     {
-        if (GetEnabledConfig(out var config)) return respawnData.TryGetValue(config.SpawnPoint, out data);
+        if (GetEnabledConfig(out var config))
+            return respawnData.TryGetValue(config.SpawnPoint, out data);
         else
         {
             data = new();
@@ -109,7 +113,8 @@ internal class SpawnPointModule : GlobalSettingsModule<SpawnPointModule, SpawnPo
     private static readonly Lazy<Dictionary<string, RespawnData>> respawnDataByScene = new(() =>
     {
         Dictionary<string, RespawnData> dict = [];
-        foreach (var d in respawnData.Values) dict[d.Scene] = d;
+        foreach (var d in respawnData.Values)
+            dict[d.Scene] = d;
         return dict;
     });
 
@@ -121,9 +126,14 @@ internal class SpawnPointModule : GlobalSettingsModule<SpawnPointModule, SpawnPo
         cursor.Goto(0);
 
         // Override the SpawnPreloader scene.
-        if (cursor.TryGotoNext(i => i.MatchCall<ScenePreloader>(nameof(ScenePreloader.SpawnPreloader))) && cursor.TryGotoPrev(MoveType.After, i => i.MatchLdloc(3)))
+        if (
+            cursor.TryGotoNext(i =>
+                i.MatchCall<ScenePreloader>(nameof(ScenePreloader.SpawnPreloader))
+            ) && cursor.TryGotoPrev(MoveType.After, i => i.MatchLdloc(3))
+        )
         {
-            static string Delegate(string scene) => GetRespawnData(out var data) ? data.Scene : scene;
+            static string Delegate(string scene) =>
+                GetRespawnData(out var data) ? data.Scene : scene;
             cursor.EmitDelegate(Delegate);
         }
     }
@@ -133,7 +143,11 @@ internal class SpawnPointModule : GlobalSettingsModule<SpawnPointModule, SpawnPo
         ILCursor cursor = new(info.Context);
         cursor.Goto(0);
 
-        if (cursor.TryGotoNext(i => i.MatchCall<GameManager>(nameof(GameManager.BeginSceneTransition))))
+        if (
+            cursor.TryGotoNext(i =>
+                i.MatchCall<GameManager>(nameof(GameManager.BeginSceneTransition))
+            )
+        )
         {
             cursor.Remove();
 
@@ -151,24 +165,35 @@ internal class SpawnPointModule : GlobalSettingsModule<SpawnPointModule, SpawnPo
         }
     }
 
-    private string OverrideRespawnString(PlayerData self, string name, string current) => name switch
-    {
-        nameof(PlayerData.respawnScene) => GetRespawnData(out var data) ? data.Scene : current,
-        nameof(PlayerData.respawnMarkerName) => GlobalConfig.SpawnPoint != SpawnPoint.Unchanged ? RESPAWN_MARKER_NAME : current,
-        nameof(PlayerData.tempRespawnScene) => GlobalConfig.SpawnPoint != SpawnPoint.Unchanged ? "" : current,
-        nameof(PlayerData.tempRespawnMarker) => GlobalConfig.SpawnPoint != SpawnPoint.Unchanged ? "" : current,
-        _ => current,
-    };
+    private string OverrideRespawnString(PlayerData self, string name, string current) =>
+        name switch
+        {
+            nameof(PlayerData.respawnScene) => GetRespawnData(out var data) ? data.Scene : current,
+            nameof(PlayerData.respawnMarkerName) => GlobalConfig.SpawnPoint != SpawnPoint.Unchanged
+                ? RESPAWN_MARKER_NAME
+                : current,
+            nameof(PlayerData.tempRespawnScene) => GlobalConfig.SpawnPoint != SpawnPoint.Unchanged
+                ? ""
+                : current,
+            nameof(PlayerData.tempRespawnMarker) => GlobalConfig.SpawnPoint != SpawnPoint.Unchanged
+                ? ""
+                : current,
+            _ => current,
+        };
 
-    private int OverrideRespawnInt(PlayerData playerData, string name, int current) => name switch
-    {
-        nameof(PlayerData.respawnType) => GlobalConfig.SpawnPoint == SpawnPoint.Unchanged ? current : 0,
-        _ => current
-    };
+    private int OverrideRespawnInt(PlayerData playerData, string name, int current) =>
+        name switch
+        {
+            nameof(PlayerData.respawnType) => GlobalConfig.SpawnPoint == SpawnPoint.Unchanged
+                ? current
+                : 0,
+            _ => current,
+        };
 
     private void OnNewScene(Scene scene)
     {
-        if (!GetRespawnData(out var data) || scene.name != data.Scene) return;
+        if (!GetRespawnData(out var data) || scene.name != data.Scene)
+            return;
 
         GameObject obj = new(RESPAWN_MARKER_NAME);
         obj.transform.position = data.Position;
@@ -191,7 +216,11 @@ internal class SpawnPointModule : GlobalSettingsModule<SpawnPointModule, SpawnPo
 
 internal class SpawnPointSubMenu : ModuleSubMenu<SpawnPointSettings>
 {
-    private readonly ChoiceElement<SpawnPoint> SpawnPoint = new("Spawn Point", ChoiceModels.ForEnum<SpawnPoint>(), "Forced respawn point on death.");
+    private readonly ChoiceElement<SpawnPoint> SpawnPoint = new(
+        "Spawn Point",
+        ChoiceModels.ForEnum<SpawnPoint>(),
+        "Forced respawn point on death."
+    );
 
     public override IEnumerable<MenuElement> Elements() => [SpawnPoint];
 

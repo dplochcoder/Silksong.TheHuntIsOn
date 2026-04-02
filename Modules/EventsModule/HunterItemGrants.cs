@@ -1,12 +1,14 @@
-﻿using Silksong.TheHuntIsOn.SsmpAddon;
+﻿using System.Collections.Generic;
+using Silksong.TheHuntIsOn.SsmpAddon;
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using Silksong.TheHuntIsOn.Util;
 using SSMP.Networking.Packet;
-using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn.Modules.EventsModule;
 
-internal class HunterItemGrants : IDeltaBase<HunterItemGrants, HunterItemGrantsDelta>, IIdentifiedPacket<ClientPacketId>
+internal class HunterItemGrants
+    : IDeltaBase<HunterItemGrants, HunterItemGrantsDelta>,
+        IIdentifiedPacket<ClientPacketId>
 {
     public ClientPacketId Identifier => ClientPacketId.HunterItemGrants;
 
@@ -21,7 +23,8 @@ internal class HunterItemGrants : IDeltaBase<HunterItemGrants, HunterItemGrantsD
 
     public void ReadData(IPacket packet) => Grants.ReadData(packet, packet => packet.ReadString());
 
-    public void WriteData(IPacket packet) => Grants.WriteData(packet, (packet, value) => value.WriteData(packet));
+    public void WriteData(IPacket packet) =>
+        Grants.WriteData(packet, (packet, value) => value.WriteData(packet));
 
     public void Clear() => Grants.Clear();
 
@@ -31,8 +34,9 @@ internal class HunterItemGrants : IDeltaBase<HunterItemGrants, HunterItemGrantsD
 
         foreach (var e in delta.Grants)
         {
-            if (Grants.ContainsKey(e.Key)) continue;
-            
+            if (Grants.ContainsKey(e.Key))
+                continue;
+
             changed = true;
             Grants.Add(e.Key, e.Value.Clone());
         }
@@ -48,7 +52,8 @@ internal class HunterItemGrants : IDeltaBase<HunterItemGrants, HunterItemGrantsD
         HunterItemGrantsDelta delta = new() { TotalGrants = Grants.Count };
         foreach (var e in Grants)
         {
-            if (deltaBase.Grants.ContainsKey(e.Key)) continue;
+            if (deltaBase.Grants.ContainsKey(e.Key))
+                continue;
             delta.Grants.Add(e.Key, e.Value.Clone());
         }
         return delta;

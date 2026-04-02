@@ -4,7 +4,11 @@ namespace Silksong.TheHuntIsOn.Util;
 
 internal static class StringUtil
 {
-    internal static bool ConsumePrefix(this ReadOnlySpan<char> self, ReadOnlySpan<char> prefix, out ReadOnlySpan<char> suffix)
+    internal static bool ConsumePrefix(
+        this ReadOnlySpan<char> self,
+        ReadOnlySpan<char> prefix,
+        out ReadOnlySpan<char> suffix
+    )
     {
         if (self.StartsWith(prefix))
         {
@@ -18,7 +22,11 @@ internal static class StringUtil
         }
     }
 
-    internal static bool ConsumeSuffix(this ReadOnlySpan<char> self, ReadOnlySpan<char> suffix, out ReadOnlySpan<char> prefix)
+    internal static bool ConsumeSuffix(
+        this ReadOnlySpan<char> self,
+        ReadOnlySpan<char> suffix,
+        out ReadOnlySpan<char> prefix
+    )
     {
         if (self.EndsWith(suffix))
         {
@@ -32,7 +40,12 @@ internal static class StringUtil
         }
     }
 
-    internal static bool Split2(this ReadOnlySpan<char> self, char delimeter, out ReadOnlySpan<char> one, out ReadOnlySpan<char> two)
+    internal static bool Split2(
+        this ReadOnlySpan<char> self,
+        char delimeter,
+        out ReadOnlySpan<char> one,
+        out ReadOnlySpan<char> two
+    )
     {
         one = [];
         two = [];
@@ -41,7 +54,8 @@ internal static class StringUtil
             if (self[i] == delimeter)
             {
                 for (int j = i + 1; j < self.Length; j++)
-                    if (self[j] == delimeter) return false;
+                    if (self[j] == delimeter)
+                        return false;
 
                 one = self[..i];
                 two = self[(i + 1)..];

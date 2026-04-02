@@ -18,8 +18,10 @@ internal class EventsModule : Module<EventsModule, EmptySettings, EmptySubMenu, 
             hunterItemGranter.Update(delta, out var desynced);
             reportDesync |= desynced;
         };
-        HuntClientAddon.On<SpeedrunnerEvents>.Received += speedrunnerEvents => this.speedrunnerEvents = speedrunnerEvents;
-        HuntClientAddon.On<SpeedrunnerEventsDelta>.Received += speedrunnerEventsDelta => speedrunnerEvents.Update(speedrunnerEventsDelta);
+        HuntClientAddon.On<SpeedrunnerEvents>.Received += speedrunnerEvents =>
+            this.speedrunnerEvents = speedrunnerEvents;
+        HuntClientAddon.On<SpeedrunnerEventsDelta>.Received += speedrunnerEventsDelta =>
+            speedrunnerEvents.Update(speedrunnerEventsDelta);
     }
 
     protected override EventsModule Self() => this;
@@ -59,8 +61,10 @@ internal class EventsModule : Module<EventsModule, EmptySettings, EmptySubMenu, 
             desyncRateLimiter.Reset();
         }
 
-        if (hunterMasks.Update(hunterItemGranter.MaxHealthAdds())) UIEvents.UpdateHealth();
-        if (hunterSilk.Update(hunterItemGranter.MaxSilkAdds())) UIEvents.UpdateSilk();
+        if (hunterMasks.Update(hunterItemGranter.MaxHealthAdds()))
+            UIEvents.UpdateHealth();
+        if (hunterSilk.Update(hunterItemGranter.MaxSilkAdds()))
+            UIEvents.UpdateSilk();
 
         if (TheHuntIsOnPlugin.GetRole() == RoleId.Speedrunner && publishRateLimiter.Check())
         {

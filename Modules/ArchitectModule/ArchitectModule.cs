@@ -1,13 +1,13 @@
-﻿using Silksong.ModMenu.Elements;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using Silksong.ModMenu.Elements;
 using Silksong.ModMenu.Models;
 using Silksong.TheHuntIsOn.Menu;
 using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using Silksong.TheHuntIsOn.Util;
 using SSMP.Networking.Packet;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace Silksong.TheHuntIsOn.Modules.ArchitectModule;
 
@@ -17,30 +17,39 @@ internal class ArchitectSettings : ModuleSettings<ArchitectSettings>
 
     public override ModuleSettingsType DynamicType => ModuleSettingsType.Architect;
 
-    public override void ReadDynamicData(IPacket packet) => EnabledGroups.ReadData(packet, packet => packet.ReadString());
+    public override void ReadDynamicData(IPacket packet) =>
+        EnabledGroups.ReadData(packet, packet => packet.ReadString());
 
-    public override void WriteDynamicData(IPacket packet) => EnabledGroups.WriteData(packet, (packet, value) => value.WriteData(packet));
+    public override void WriteDynamicData(IPacket packet) =>
+        EnabledGroups.WriteData(packet, (packet, value) => value.WriteData(packet));
 
-    protected override bool Equivalent(ArchitectSettings other) => EnabledGroups.Count == other.EnabledGroups.Count && EnabledGroups.All(other.EnabledGroups.Contains);
+    protected override bool Equivalent(ArchitectSettings other) =>
+        EnabledGroups.Count == other.EnabledGroups.Count
+        && EnabledGroups.All(other.EnabledGroups.Contains);
 
-    public override ModuleSettings Clone() => new ArchitectSettings() { EnabledGroups = [.. EnabledGroups] };
+    public override ModuleSettings Clone() =>
+        new ArchitectSettings() { EnabledGroups = [.. EnabledGroups] };
 }
 
-internal class ArchitectModule : GlobalSettingsModule<ArchitectModule, ArchitectSettings, ArchitectSubMenu>
+internal class ArchitectModule
+    : GlobalSettingsModule<ArchitectModule, ArchitectSettings, ArchitectSubMenu>
 {
     internal const string NONE_GROUP = "None";
 
     private readonly ClientArchitectLevelManager levelManager;
 
-    public ArchitectModule() => levelManager = new(() => GetEnabledConfig(out var config) ? config.EnabledGroups : []);
+    public ArchitectModule() =>
+        levelManager = new(() => GetEnabledConfig(out var config) ? config.EnabledGroups : []);
 
     protected override ArchitectModule Self() => this;
 
     public override string Name => "Architect";
 
-    public override ModuleActivationType ModuleActivationType => ModuleActivationType.AnyConfiguration;
+    public override ModuleActivationType ModuleActivationType =>
+        ModuleActivationType.AnyConfiguration;
 
-    internal static IEnumerable<string> GetAllGroups() => Instance?.levelManager.GetAllGroups() ?? [];
+    internal static IEnumerable<string> GetAllGroups() =>
+        Instance?.levelManager.GetAllGroups() ?? [];
 }
 
 internal class ArchitectGroupSelectorModel : IChoiceModel<string>
@@ -48,7 +57,8 @@ internal class ArchitectGroupSelectorModel : IChoiceModel<string>
     private static List<string> AllGroups()
     {
         List<string> all = [.. ArchitectModule.GetAllGroups()];
-        if (all.Count == 0) all.Add(ArchitectModule.NONE_GROUP);
+        if (all.Count == 0)
+            all.Add(ArchitectModule.NONE_GROUP);
         return all;
     }
 
@@ -57,7 +67,8 @@ internal class ArchitectGroupSelectorModel : IChoiceModel<string>
         get => field;
         set
         {
-            if (field == value) return;
+            if (field == value)
+                return;
 
             field = value;
             OnValueChanged?.Invoke(value);
@@ -95,7 +106,8 @@ internal class ArchitectGroupSelectorModel : IChoiceModel<string>
     public bool MoveLeft()
     {
         List<string> all = AllGroups();
-        if (HandleOne(all, out bool changed)) return changed;
+        if (HandleOne(all, out bool changed))
+            return changed;
 
         for (int i = 0; i < all.Count; i++)
         {
@@ -113,12 +125,14 @@ internal class ArchitectGroupSelectorModel : IChoiceModel<string>
     internal void PickClosest()
     {
         List<string> all = AllGroups();
-        if (!all.Contains(Value)) MoveRight(all);
+        if (!all.Contains(Value))
+            MoveRight(all);
     }
 
     internal bool MoveRight(List<string> all)
     {
-        if (HandleOne(all, out bool changed)) return changed;
+        if (HandleOne(all, out bool changed))
+            return changed;
 
         for (int i = all.Count - 1; i >= 0; i--)
         {
@@ -168,10 +182,13 @@ internal class ArchitectSubMenu : ModuleSubMenu<ArchitectSettings>
         Enabled = new("Enabled", ChoiceModels.ForBool("No", "Yes"));
         Enabled.OnValueChanged += enabled =>
         {
-            if (updateEnabled.Suppressed) return;
+            if (updateEnabled.Suppressed)
+                return;
 
-            if (enabled) enabledGroups.Add(GroupSelector.Value);
-            else enabledGroups.Remove(GroupSelector.Value);
+            if (enabled)
+                enabledGroups.Add(GroupSelector.Value);
+            else
+                enabledGroups.Remove(GroupSelector.Value);
             NotifyDataUpdated();
         };
     }
@@ -181,7 +198,8 @@ internal class ArchitectSubMenu : ModuleSubMenu<ArchitectSettings>
     internal override void Apply(ArchitectSettings data)
     {
         enabledGroups.Clear();
-        foreach (var group in data.EnabledGroups) enabledGroups.Add(group);
+        foreach (var group in data.EnabledGroups)
+            enabledGroups.Add(group);
 
         model.PickClosest();
         UpdateEnabled();

@@ -24,7 +24,9 @@
     <PackageIcon>icon.png</PackageIcon>
     <RepositoryUrl>https://github.com/dplochcoder/Silksong.TheHuntIsOn</RepositoryUrl>
     <Description>SSMP add-on mod for speedrunners vs. hunters.</Description>
-    <ManagedFolder Condition="$(SilksongFolder) != ''">$(SilksongFolder)/Hollow Knight Silksong_Data/Managed</ManagedFolder>
+    <ManagedFolder Condition="$(SilksongFolder) != ''"
+      >$(SilksongFolder)/Hollow Knight Silksong_Data/Managed</ManagedFolder
+    >
     <!-- Set to true to use local references for development purposes. -->
     <UseLocalRefs>false</UseLocalRefs>
   </PropertyGroup>
@@ -47,7 +49,7 @@
     <PackageReference Include="Silksong.FsmUtil" Version="0.3.12" PrivateAssets="all" />
     <PackageReference Include="Silksong.ModMenu" Version="0.4.1" />
     <PackageReference Include="Silksong.PrepatcherPlugin" Version="1.3.0" PrivateAssets="all" />
-	<PackageReference Include="Silksong.PurenailUtil" Version="1.0.0" PrivateAssets="all" />
+    <PackageReference Include="Silksong.PurenailUtil" Version="1.0.0" PrivateAssets="all" />
     <PackageReference Include="Silksong.SSMP" Version="0.0.6" PrivateAssets="all" />
     <!-- TODO: Architect nuget package? -->
     <Reference Include="Architect">
@@ -59,12 +61,19 @@
     <PackageReference Include="Silksong.GameLibs" Version="*-*" PrivateAssets="all" />
   </ItemGroup>
   <ItemGroup Condition="$(UseLocalRefs) And Exists($(ManagedFolder))">
-    <PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.2" PrivateAssets="all" />
+    <PackageReference
+      Include="BepInEx.AssemblyPublicizer.MSBuild"
+      Version="0.4.2"
+      PrivateAssets="all"
+    />
 
-    <LocalReferences Include="$(ManagedFolder)/*.dll" Exclude="$(ManagedFolder)/Mono*.dll;$(ManagedFolder)/netstandard.dll;$(ManagedFolder)/System*.dll;$(ManagedFolder)/mscorlib.dll" />
+    <LocalReferences
+      Include="$(ManagedFolder)/*.dll"
+      Exclude="$(ManagedFolder)/Mono*.dll;$(ManagedFolder)/netstandard.dll;$(ManagedFolder)/System*.dll;$(ManagedFolder)/mscorlib.dll"
+    />
     <Reference Include="@(LocalReferences)" Private="false" Publicize="true" />
   </ItemGroup>
-  
+
   <ItemGroup>
     <EmbeddedResource Include="Resources\**\*.json" />
   </ItemGroup>
@@ -85,14 +94,29 @@
     </PropertyGroup>
 
     <!-- Local install -->
-    <Copy SourceFiles="@(Binaries)" DestinationFolder="$(SilksongPluginsFolder)/dplochcoder-$(ThunderStoreTitle)/%(Binaries.LocalDir)" Condition="'$(SilksongPluginsFolder)' != '' And Exists('$(SilksongPluginsFolder)')" />
-    <Copy SourceFiles="@(Binaries)" DestinationFolder="$(SSMPFolder)" Condition="'$(SSMPFolder)' != '' AND Exists('$(SSMPFolder)')" />
+    <Copy
+      SourceFiles="@(Binaries)"
+      DestinationFolder="$(SilksongPluginsFolder)/dplochcoder-$(ThunderStoreTitle)/%(Binaries.LocalDir)"
+      Condition="'$(SilksongPluginsFolder)' != '' And Exists('$(SilksongPluginsFolder)')"
+    />
+    <Copy
+      SourceFiles="@(Binaries)"
+      DestinationFolder="$(SSMPFolder)"
+      Condition="'$(SSMPFolder)' != '' AND Exists('$(SSMPFolder)')"
+    />
 
     <!-- Thunderstore packaging -->
     <RemoveDir Directories="$(ThunderstoreDir)/temp;$(ThunderstoreDir)/dist" />
     <MakeDir Directories="$(ThunderstoreDir)/temp" />
-    <Copy SourceFiles="@(Binaries)" DestinationFolder="$(ThunderstoreDir)/temp/%(Binaries.PackDir)" />
+    <Copy
+      SourceFiles="@(Binaries)"
+      DestinationFolder="$(ThunderstoreDir)/temp/%(Binaries.PackDir)"
+    />
     <Exec Command="dotnet tool restore" />
-    <Exec Command="dotnet tcli build --config-path &quot;$(ThunderstoreDir)/thunderstore.toml&quot; --package-name &quot;$(AssemblyTitle)&quot; --package-version $(Version)" StandardOutputImportance="High" StandardErrorImportance="High" />
+    <Exec
+      Command="dotnet tcli build --config-path &quot;$(ThunderstoreDir)/thunderstore.toml&quot; --package-name &quot;$(AssemblyTitle)&quot; --package-version $(Version)"
+      StandardOutputImportance="High"
+      StandardErrorImportance="High"
+    />
   </Target>
 </Project>

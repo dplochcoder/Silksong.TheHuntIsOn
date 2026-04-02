@@ -1,14 +1,16 @@
-﻿using Silksong.TheHuntIsOn.SsmpAddon;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Silksong.TheHuntIsOn.SsmpAddon;
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using Silksong.TheHuntIsOn.Util;
 using SSMP.Networking.Packet;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace Silksong.TheHuntIsOn.Modules.EventsModule;
 
 // New speedrunner events, reported to client or server.
-internal class SpeedrunnerEvents : IDeltaBase<SpeedrunnerEvents, SpeedrunnerEventsDelta>, IIdentifiedPacket<ClientPacketId>
+internal class SpeedrunnerEvents
+    : IDeltaBase<SpeedrunnerEvents, SpeedrunnerEventsDelta>,
+        IIdentifiedPacket<ClientPacketId>
 {
     public ClientPacketId Identifier => ClientPacketId.SpeedrunnerEvents;
 
@@ -20,6 +22,7 @@ internal class SpeedrunnerEvents : IDeltaBase<SpeedrunnerEvents, SpeedrunnerEven
 
     // Singular acquisitions.
     public EnumSet<SpeedrunnerBoolEvent> BoolEvents = [];
+
     // Repeatable acquisitions.
     public EnumMultiset<SpeedrunnerCountEventType> CountEvents = [];
 
@@ -44,8 +47,13 @@ internal class SpeedrunnerEvents : IDeltaBase<SpeedrunnerEvents, SpeedrunnerEven
     public bool Update(SpeedrunnerEventsDelta delta)
     {
         bool changed = false;
-        foreach (var boolEvent in delta.BoolEvents) changed |= BoolEvents.Add(boolEvent);
-        foreach (var countDelta in delta.CountEvents) changed |= CountEvents.Set(countDelta.Type, System.Math.Max(CountEvents.Count(countDelta.Type), countDelta.NewCount));
+        foreach (var boolEvent in delta.BoolEvents)
+            changed |= BoolEvents.Add(boolEvent);
+        foreach (var countDelta in delta.CountEvents)
+            changed |= CountEvents.Set(
+                countDelta.Type,
+                System.Math.Max(CountEvents.Count(countDelta.Type), countDelta.NewCount)
+            );
         return changed;
     }
 
@@ -60,14 +68,17 @@ internal class SpeedrunnerEvents : IDeltaBase<SpeedrunnerEvents, SpeedrunnerEven
         foreach (var (type, newCount) in CountEvents.Counts)
         {
             var prevCount = deltaBase.CountEvents.Count(type);
-            if (prevCount >= newCount) continue;
+            if (prevCount >= newCount)
+                continue;
 
-            delta.CountEvents.Add(new()
-            {
-                Type = type,
-                PrevCount = prevCount,
-                NewCount = newCount,
-            });
+            delta.CountEvents.Add(
+                new()
+                {
+                    Type = type,
+                    PrevCount = prevCount,
+                    NewCount = newCount,
+                }
+            );
         }
         return delta;
     }
@@ -75,7 +86,7 @@ internal class SpeedrunnerEvents : IDeltaBase<SpeedrunnerEvents, SpeedrunnerEven
     private static readonly Dictionary<SpeedrunnerBoolEvent, string> pdBoolChecks = new()
     {
         [SpeedrunnerBoolEvent.SwiftStep] = nameof(PlayerData.hasDash),
-        [SpeedrunnerBoolEvent.DriftersCloak] =  nameof(PlayerData.hasBrolly),
+        [SpeedrunnerBoolEvent.DriftersCloak] = nameof(PlayerData.hasBrolly),
         [SpeedrunnerBoolEvent.ClingGrip] = nameof(PlayerData.hasWalljump),
         [SpeedrunnerBoolEvent.Needolin] = nameof(PlayerData.hasNeedolin),
         [SpeedrunnerBoolEvent.Clawline] = nameof(PlayerData.hasHarpoonDash),
@@ -112,24 +123,55 @@ internal class SpeedrunnerEvents : IDeltaBase<SpeedrunnerEvents, SpeedrunnerEven
 
         foreach (var e in pdBoolChecks)
         {
-            if (playerData.GetBool(e.Value)) events.BoolEvents.Add(e.Key);
+            if (playerData.GetBool(e.Value))
+                events.BoolEvents.Add(e.Key);
         }
-        if (playerData.HasWhiteFlower) events.BoolEvents.Add(SpeedrunnerBoolEvent.Everbloom);
+        if (playerData.HasWhiteFlower)
+            events.BoolEvents.Add(SpeedrunnerBoolEvent.Everbloom);
 
         foreach (var e in pdIntChecks)
         {
             var value = playerData.GetInt(e.Value);
-            if (value > 0) events.CountEvents.Add(e.Key, playerData.GetInt(e.Value));
+            if (value > 0)
+                events.CountEvents.Add(e.Key, playerData.GetInt(e.Value));
         }
 
-        events.DeriveInt(SpeedrunnerCountEventType.SilkSkills, [SpeedrunnerBoolEvent.Silkspear, SpeedrunnerBoolEvent.Sharpdart, SpeedrunnerBoolEvent.ThreadStorm, SpeedrunnerBoolEvent.RuneRage, SpeedrunnerBoolEvent.CrossStitch, SpeedrunnerBoolEvent.PaleNails]);
-        events.DeriveInt(SpeedrunnerCountEventType.Melodies, [SpeedrunnerBoolEvent.ArchitectsMelody, SpeedrunnerBoolEvent.ConductorsMelody, SpeedrunnerBoolEvent.VaultkeepersMelody]);
-        events.DeriveInt(SpeedrunnerCountEventType.Hearts, [SpeedrunnerBoolEvent.HuntersHeart, SpeedrunnerBoolEvent.EncrustedHeart, SpeedrunnerBoolEvent.EncrustedHeart, SpeedrunnerBoolEvent.ConjoinedHeart]);
+        events.DeriveInt(
+            SpeedrunnerCountEventType.SilkSkills,
+            [
+                SpeedrunnerBoolEvent.Silkspear,
+                SpeedrunnerBoolEvent.Sharpdart,
+                SpeedrunnerBoolEvent.ThreadStorm,
+                SpeedrunnerBoolEvent.RuneRage,
+                SpeedrunnerBoolEvent.CrossStitch,
+                SpeedrunnerBoolEvent.PaleNails,
+            ]
+        );
+        events.DeriveInt(
+            SpeedrunnerCountEventType.Melodies,
+            [
+                SpeedrunnerBoolEvent.ArchitectsMelody,
+                SpeedrunnerBoolEvent.ConductorsMelody,
+                SpeedrunnerBoolEvent.VaultkeepersMelody,
+            ]
+        );
+        events.DeriveInt(
+            SpeedrunnerCountEventType.Hearts,
+            [
+                SpeedrunnerBoolEvent.HuntersHeart,
+                SpeedrunnerBoolEvent.EncrustedHeart,
+                SpeedrunnerBoolEvent.EncrustedHeart,
+                SpeedrunnerBoolEvent.ConjoinedHeart,
+            ]
+        );
 
         return events;
     }
 
-    private void DeriveInt(SpeedrunnerCountEventType countType, IEnumerable<SpeedrunnerBoolEvent> boolEvents)
+    private void DeriveInt(
+        SpeedrunnerCountEventType countType,
+        IEnumerable<SpeedrunnerBoolEvent> boolEvents
+    )
     {
         int count = boolEvents.Where(BoolEvents.Contains).Count();
         CountEvents.Add(countType, count);

@@ -1,7 +1,7 @@
-﻿using HutongGames.PlayMaker;
+﻿using System;
+using HutongGames.PlayMaker;
 using Silksong.FsmUtil.Actions;
 using Silksong.TheHuntIsOn.Menu;
-using System;
 
 namespace Silksong.TheHuntIsOn.Modules.Lib;
 
@@ -13,7 +13,11 @@ namespace Silksong.TheHuntIsOn.Modules.Lib;
 /// <typeparam name="SubMenuT">Sub-menu class for global settings.</typeparam>
 /// <typeparam name="CosmeticT">Cosmetic settings, stored globally but not sent over the network.</typeparam>
 /// <typeparam name="LocalT">Local settings type, localized to the current save file.</typeparam>
-internal abstract class Module<ModuleT, GlobalT, SubMenuT, CosmeticT> : ModuleBase where ModuleT : Module<ModuleT, GlobalT, SubMenuT, CosmeticT> where GlobalT : ModuleSettings<GlobalT>, new() where SubMenuT : ModuleSubMenu<GlobalT>, new() where CosmeticT : class, new()
+internal abstract class Module<ModuleT, GlobalT, SubMenuT, CosmeticT> : ModuleBase
+    where ModuleT : Module<ModuleT, GlobalT, SubMenuT, CosmeticT>
+    where GlobalT : ModuleSettings<GlobalT>, new()
+    where SubMenuT : ModuleSubMenu<GlobalT>, new()
+    where CosmeticT : class, new()
 {
     protected static ModuleT? Instance { get; private set; }
 
@@ -43,20 +47,23 @@ internal abstract class Module<ModuleT, GlobalT, SubMenuT, CosmeticT> : ModuleBa
     {
         var b = (before as GlobalT) ?? new();
         var a = (after as GlobalT) ?? new();
-        if (b.Equivalent(a)) return;
+        if (b.Equivalent(a))
+            return;
 
         OnGlobalConfigChanged(b, a);
     }
 
     protected virtual void OnGlobalConfigChanged(GlobalT before, GlobalT after) { }
 
-    protected static FsmStateAction IfEnabled(Action<GlobalT> action) => new LambdaAction()
-    {
-        Method = () =>
+    protected static FsmStateAction IfEnabled(Action<GlobalT> action) =>
+        new LambdaAction()
         {
-            if (GetEnabledConfig(out var config)) action(config);
-        }
-    };
+            Method = () =>
+            {
+                if (GetEnabledConfig(out var config))
+                    action(config);
+            },
+        };
 
     protected CosmeticT CosmeticConfig
     {
@@ -64,7 +71,8 @@ internal abstract class Module<ModuleT, GlobalT, SubMenuT, CosmeticT> : ModuleBa
         set => TheHuntIsOnPlugin.SetCosmeticConfig(Name, value);
     }
 
-    protected void UpdateCosmeticConfig(Action<CosmeticT> action) => TheHuntIsOnPlugin.UpdateCosmeticConfig(Name, action);
+    protected void UpdateCosmeticConfig(Action<CosmeticT> action) =>
+        TheHuntIsOnPlugin.UpdateCosmeticConfig(Name, action);
 
     public override IModuleSubMenu CreateGlobalDataSubMenu() => new SubMenuT();
 }

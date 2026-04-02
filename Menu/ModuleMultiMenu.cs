@@ -1,10 +1,10 @@
-﻿using Silksong.ModMenu.Elements;
+﻿using System;
+using System.Collections.Generic;
+using Silksong.ModMenu.Elements;
 using Silksong.ModMenu.Models;
 using Silksong.ModMenu.Screens;
 using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.Util;
-using System;
-using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn.Menu;
 
@@ -25,12 +25,22 @@ internal class ModuleMultiMenu
     private ModuleSettings? huntersMenuData;
     private ModuleSettings? everyoneMenuData;
 
-    private static (IChoiceModel<ModuleActivation>, string) GetChoiceModel(ModuleBase module) => module.ModuleActivationType switch
-    {
-        ModuleActivationType.OnOffOnly => (ChoiceModels.ForNamedValues([(Modules.Lib.ModuleActivation.Inactive, "Inactive"), (Modules.Lib.ModuleActivation.EveryoneSame, "Active")]), "Whether this module should be active or not."),
-        ModuleActivationType.AnyConfiguration => (ChoiceModels.ForEnum<ModuleActivation>(), "Which teams this module should be enabled for."),
-        _ => throw new ArgumentException($"Unsupported enum: {module.ModuleActivationType}"),
-    };
+    private static (IChoiceModel<ModuleActivation>, string) GetChoiceModel(ModuleBase module) =>
+        module.ModuleActivationType switch
+        {
+            ModuleActivationType.OnOffOnly => (
+                ChoiceModels.ForNamedValues([
+                    (Modules.Lib.ModuleActivation.Inactive, "Inactive"),
+                    (Modules.Lib.ModuleActivation.EveryoneSame, "Active"),
+                ]),
+                "Whether this module should be active or not."
+            ),
+            ModuleActivationType.AnyConfiguration => (
+                ChoiceModels.ForEnum<ModuleActivation>(),
+                "Which teams this module should be enabled for."
+            ),
+            _ => throw new ArgumentException($"Unsupported enum: {module.ModuleActivationType}"),
+        };
 
     internal ModuleMultiMenu(ModuleBase module)
     {
@@ -47,11 +57,11 @@ internal class ModuleMultiMenu
         {
             ModuleActivation = new("Activation", model, desc);
 
-
             SimpleMenuScreen subScreen = new($"{module.Name} Module");
             subScreen.Add(ModuleActivation);
 
-            if (coreElements.Count <= 5) mainElements.AddRange(coreElements);
+            if (coreElements.Count <= 5)
+                mainElements.AddRange(coreElements);
             else
             {
                 PaginatedMenuScreenBuilder builder = new($"{module.Name} Module Settings");
@@ -66,12 +76,20 @@ internal class ModuleMultiMenu
 
             speedrunnersSubMenu = module.CreateGlobalDataSubMenu();
             UpdateData(speedrunnersSubMenu);
-            speedrunnersSubMenuButton = CreateRoleSpecificMenuButton(module.Name, "Speedrunner", speedrunnersSubMenu);
+            speedrunnersSubMenuButton = CreateRoleSpecificMenuButton(
+                module.Name,
+                "Speedrunner",
+                speedrunnersSubMenu
+            );
             subScreen.Add(speedrunnersSubMenuButton);
 
             huntersSubMenu = module.CreateGlobalDataSubMenu();
             UpdateData(huntersSubMenu);
-            huntersSubMenuButton = CreateRoleSpecificMenuButton(module.Name, "Hunter", huntersSubMenu);
+            huntersSubMenuButton = CreateRoleSpecificMenuButton(
+                module.Name,
+                "Hunter",
+                huntersSubMenu
+            );
             subScreen.Add(huntersSubMenuButton);
 
             TextButton mainText = new($"{module.Name} Module");
@@ -86,7 +104,8 @@ internal class ModuleMultiMenu
     {
         foreach (var element in menu.Elements())
         {
-            if (element is not BaseSelectableValueElement selectable) continue;
+            if (element is not BaseSelectableValueElement selectable)
+                continue;
             selectable.RawModel.OnRawValueChanged += _ => UpdateData();
         }
         menu.OnDataUpdated += UpdateData;
@@ -98,7 +117,8 @@ internal class ModuleMultiMenu
 
     private void UpdateData()
     {
-        if (updateData.Suppressed) return;
+        if (updateData.Suppressed)
+            return;
 
         switch (ModuleActivation.Value)
         {
@@ -122,8 +142,11 @@ internal class ModuleMultiMenu
 
     private void UpdateModuleActivation(ModuleActivation value)
     {
-        bool showMain = value != Modules.Lib.ModuleActivation.Inactive && value != Modules.Lib.ModuleActivation.EveryoneDifferent;
-        foreach (var element in mainElements) element.VisibleSelf = showMain;
+        bool showMain =
+            value != Modules.Lib.ModuleActivation.Inactive
+            && value != Modules.Lib.ModuleActivation.EveryoneDifferent;
+        foreach (var element in mainElements)
+            element.VisibleSelf = showMain;
 
         bool showSubMenus = value == Modules.Lib.ModuleActivation.EveryoneDifferent;
         speedrunnersSubMenuButton?.VisibleSelf = showSubMenus;
@@ -159,9 +182,14 @@ internal class ModuleMultiMenu
         UpdateModuleActivation(ModuleActivation.Value);
     }
 
-    internal ModuleData Export() => new(ModuleActivation.Value, speedrunnersMenuData, huntersMenuData, everyoneMenuData);
+    internal ModuleData Export() =>
+        new(ModuleActivation.Value, speedrunnersMenuData, huntersMenuData, everyoneMenuData);
 
-    private static TextButton CreateRoleSpecificMenuButton(string moduleName, string teamName, IModuleSubMenu subMenu)
+    private static TextButton CreateRoleSpecificMenuButton(
+        string moduleName,
+        string teamName,
+        IModuleSubMenu subMenu
+    )
     {
         TextButton button = new($"{teamName} Settings");
         SimpleMenuScreen screen = new($"{moduleName} {teamName} Settings");

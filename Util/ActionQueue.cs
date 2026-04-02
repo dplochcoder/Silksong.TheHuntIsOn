@@ -22,7 +22,8 @@ internal class ActionQueue
     {
         lock (actionQueue)
         {
-            while (actionQueue.Count == 0) Monitor.Wait(actionQueue);
+            while (actionQueue.Count == 0)
+                Monitor.Wait(actionQueue);
             return actionQueue.Dequeue();
         }
     }
@@ -33,7 +34,10 @@ internal class ActionQueue
         {
             Action action = Dequeue();
 
-            try { action(); }
+            try
+            {
+                action();
+            }
             catch (Exception ex)
             {
                 HuntLogger.LogError($"{ex}");

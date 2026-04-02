@@ -1,12 +1,12 @@
-﻿using Architect.Api;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using Architect.Api;
 using Architect.Placements;
 using Architect.Storage;
 using Silksong.TheHuntIsOn.SsmpAddon;
 using Silksong.TheHuntIsOn.Util;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 
 namespace Silksong.TheHuntIsOn.Modules.ArchitectModule;
 
@@ -19,12 +19,15 @@ internal class ClientArchitectLevelManager : BaseArchitectLevelManager
         public readonly ArchitectLevelMetadata Metadata = [];
         public readonly HashSet<string> Tombstones = [];
 
-        public bool Contains(string sceneName) => !Tombstones.Contains(sceneName) && Metadata.ContainsKey(sceneName);
+        public bool Contains(string sceneName) =>
+            !Tombstones.Contains(sceneName) && Metadata.ContainsKey(sceneName);
 
         public void OverlayOnto(ArchitectLevelMetadata other)
         {
-            foreach (var e in Metadata) other[e.Key] = e.Value;
-            foreach (var tombstone in Tombstones) other.Remove(tombstone);
+            foreach (var e in Metadata)
+                other[e.Key] = e.Value;
+            foreach (var tombstone in Tombstones)
+                other.Remove(tombstone);
         }
     }
 
@@ -33,18 +36,27 @@ internal class ClientArchitectLevelManager : BaseArchitectLevelManager
         public readonly Dictionary<string, DiskArchitectLevelMetadata> Metadata = [];
         public readonly HashSet<string> Tombstones = [];
 
-        public bool Contains(string groupId, string sceneName) => !Tombstones.Contains(groupId) && Metadata.TryGetValue(groupId, out var groupMetadata) && groupMetadata.Contains(sceneName);
+        public bool Contains(string groupId, string sceneName) =>
+            !Tombstones.Contains(groupId)
+            && Metadata.TryGetValue(groupId, out var groupMetadata)
+            && groupMetadata.Contains(sceneName);
 
-        public bool ContainsTombstone(string groupId, string sceneName) => !Tombstones.Contains(groupId) && Metadata.TryGetValue(groupId, out var groupMetadata) && groupMetadata.Tombstones.Contains(sceneName);
+        public bool ContainsTombstone(string groupId, string sceneName) =>
+            !Tombstones.Contains(groupId)
+            && Metadata.TryGetValue(groupId, out var groupMetadata)
+            && groupMetadata.Tombstones.Contains(sceneName);
 
         public void OverlayOnto(ArchitectLevelsMetadata other)
         {
             foreach (var e in Metadata)
             {
-                if (other.TryGetValue(e.Key, out var existing)) e.Value.OverlayOnto(existing);
-                else other[e.Key] = e.Value.Metadata;
+                if (other.TryGetValue(e.Key, out var existing))
+                    e.Value.OverlayOnto(existing);
+                else
+                    other[e.Key] = e.Value.Metadata;
             }
-            foreach (var tombstone in Tombstones) other.Remove(tombstone);
+            foreach (var tombstone in Tombstones)
+                other.Remove(tombstone);
         }
     }
 
@@ -54,7 +66,8 @@ internal class ClientArchitectLevelManager : BaseArchitectLevelManager
     private DiskArchitectLevelsMetadata HashDisk()
     {
         DiskArchitectLevelsMetadata metadata = new();
-        if (!Directory.Exists(diskFolder)) return metadata;
+        if (!Directory.Exists(diskFolder))
+            return metadata;
 
         foreach (var groupDir in Directory.EnumerateDirectories(diskFolder))
         {
@@ -68,7 +81,8 @@ internal class ClientArchitectLevelManager : BaseArchitectLevelManager
                     groupMetadata.Tombstones.Add(new(sceneSpan));
                     continue;
                 }
-                if (!sceneFileName.ConsumeSuffix(ARCHITECT_SUFFIX, out sceneSpan)) continue;
+                if (!sceneFileName.ConsumeSuffix(ARCHITECT_SUFFIX, out sceneSpan))
+                    continue;
 
                 string scene = new(sceneSpan);
                 using var stream = File.OpenRead(scenePath);
@@ -77,7 +91,8 @@ internal class ClientArchitectLevelManager : BaseArchitectLevelManager
         }
         foreach (var groupFile in Directory.EnumerateFiles(diskFolder))
         {
-            if (!Path.GetFileName(groupFile).ConsumeSuffix(TOMBSTONE_SUFFIX, out var groupSpan)) continue;
+            if (!Path.GetFileName(groupFile).ConsumeSuffix(TOMBSTONE_SUFFIX, out var groupSpan))
+                continue;
             metadata.Tombstones.Add(new(groupSpan));
         }
         return metadata;
@@ -86,7 +101,8 @@ internal class ClientArchitectLevelManager : BaseArchitectLevelManager
     private readonly Func<IEnumerable<string>> getEnabledGroups;
     private readonly LRUCache<(string, string), LevelData> levelDataCache;
 
-    public ClientArchitectLevelManager(Func<IEnumerable<string>> getEnabledGroups) : base("Client")
+    public ClientArchitectLevelManager(Func<IEnumerable<string>> getEnabledGroups)
+        : base("Client")
     {
         embeddedMetadata = HashEmbedded();
         diskMetadata = HashDisk();
@@ -106,7 +122,10 @@ internal class ClientArchitectLevelManager : BaseArchitectLevelManager
         var groupId = key.Item1;
         var sceneName = key.Item2;
 
-        if (diskMetadata.Tombstones.Contains(groupId) || diskMetadata.ContainsTombstone(groupId, sceneName))
+        if (
+            diskMetadata.Tombstones.Contains(groupId)
+            || diskMetadata.ContainsTombstone(groupId, sceneName)
+        )
         {
             levelData = new([], [], [], []);
             return false;
@@ -136,15 +155,18 @@ internal class ClientArchitectLevelManager : BaseArchitectLevelManager
         LevelData levelData = new([], [], [], []);
         foreach (var group in getEnabledGroups())
         {
-            if (!levelDataCache.TryGetValue((group, sceneName), out var data)) continue;
+            if (!levelDataCache.TryGetValue((group, sceneName), out var data))
+                continue;
             levelData.Merge(data);
         }
         return levelData;
     }
 
-    private string GroupTombstonePath(string groupId) => Path.Join(diskFolder, $"{groupId}{TOMBSTONE_SUFFIX}");
+    private string GroupTombstonePath(string groupId) =>
+        Path.Join(diskFolder, $"{groupId}{TOMBSTONE_SUFFIX}");
 
-    private string LevelTombstonePath(string groupId, string sceneName) => Path.Join(diskFolder, groupId, $"{sceneName}{TOMBSTONE_SUFFIX}");
+    private string LevelTombstonePath(string groupId, string sceneName) =>
+        Path.Join(diskFolder, groupId, $"{sceneName}{TOMBSTONE_SUFFIX}");
 
     private void FixTombstones()
     {
@@ -202,7 +224,8 @@ internal class ClientArchitectLevelManager : BaseArchitectLevelManager
                 e1.Value.Metadata.Remove(sceneName);
             }
 
-            if (e1.Value.Tombstones.Count == 0 && e1.Value.Metadata.Count == 0) groupsToRemove.Add(groupId);
+            if (e1.Value.Tombstones.Count == 0 && e1.Value.Metadata.Count == 0)
+                groupsToRemove.Add(groupId);
         }
         foreach (var groupId in groupsToRemove)
         {
@@ -234,7 +257,8 @@ internal class ClientArchitectLevelManager : BaseArchitectLevelManager
 
         if (!diskMetadata.Metadata.TryGetValue(groupId, out var groupMetadata))
         {
-            if (!Directory.Exists(diskFolder)) Directory.CreateDirectory(diskFolder);
+            if (!Directory.Exists(diskFolder))
+                Directory.CreateDirectory(diskFolder);
 
             Directory.CreateDirectory(DiskGroupPath(groupId));
             groupMetadata = new();
@@ -264,7 +288,8 @@ internal class ClientArchitectLevelManager : BaseArchitectLevelManager
         var metadata = EnsureDiskGroup(update.ArchitectGroupId);
 
         var levelPath = DiskLevelPath(update.ArchitectGroupId, update.SceneName);
-        if (File.Exists(levelPath)) File.Delete(levelPath);
+        if (File.Exists(levelPath))
+            File.Delete(levelPath);
         File.WriteAllText(levelPath, update.LevelData);
         metadata.Metadata[update.SceneName] = update.LevelDataHash;
 
@@ -276,11 +301,13 @@ internal class ClientArchitectLevelManager : BaseArchitectLevelManager
         if (embeddedMetadata.TryGet(groupId, sceneName, out var hash) && hash.Equals(levelHash))
             RemoveDiskLevel(groupId, sceneName);
         else
-            HuntClientAddon.Instance?.Send(new RequestArchitectLevelData()
-            {
-                ArchitectGroupId = groupId,
-                SceneName = sceneName,
-            });
+            HuntClientAddon.Instance?.Send(
+                new RequestArchitectLevelData()
+                {
+                    ArchitectGroupId = groupId,
+                    SceneName = sceneName,
+                }
+            );
     }
 
     private void MakeTombstone(string groupId, string sceneName)
@@ -292,7 +319,10 @@ internal class ClientArchitectLevelManager : BaseArchitectLevelManager
             diskMetadata.Metadata[groupId].Metadata.Remove(sceneName);
         }
         // Install a tombstone if needed.
-        if (embeddedMetadata.Contains(groupId, sceneName) && !diskMetadata.ContainsTombstone(groupId, sceneName))
+        if (
+            embeddedMetadata.Contains(groupId, sceneName)
+            && !diskMetadata.ContainsTombstone(groupId, sceneName)
+        )
         {
             EnsureDiskGroup(groupId).Tombstones.Add(sceneName);
             File.Create(LevelTombstonePath(groupId, sceneName));
@@ -303,7 +333,8 @@ internal class ClientArchitectLevelManager : BaseArchitectLevelManager
 
     private void RemoveDiskLevel(string groupId, string sceneName)
     {
-        if (!diskMetadata.Contains(groupId, sceneName)) return;
+        if (!diskMetadata.Contains(groupId, sceneName))
+            return;
 
         File.Delete(DiskLevelPath(groupId, sceneName));
         diskMetadata.Metadata[groupId].Metadata.Remove(sceneName);
@@ -318,16 +349,23 @@ internal class ClientArchitectLevelManager : BaseArchitectLevelManager
             RemoveDiskLevel(groupId, sceneName);
     }
 
-    public void OnArchitectLevelsMetadata(ArchitectLevelsMetadata metadata) => ComputeMetadata().Diff(
-        metadata,
-        deleteGroup: DeleteGroup,
-        updateLevel: UpdateLevel,
-        deleteLevel: DeleteLevel);
+    public void OnArchitectLevelsMetadata(ArchitectLevelsMetadata metadata) =>
+        ComputeMetadata()
+            .Diff(
+                metadata,
+                deleteGroup: DeleteGroup,
+                updateLevel: UpdateLevel,
+                deleteLevel: DeleteLevel
+            );
 
     public IEnumerable<string> GetAllGroups()
     {
-        HashSet<string> set = [.. embeddedMetadata.Keys.Concat(diskMetadata.Metadata.Keys).Distinct()];
-        foreach (var groupId in diskMetadata.Tombstones) set.Remove(groupId);
+        HashSet<string> set =
+        [
+            .. embeddedMetadata.Keys.Concat(diskMetadata.Metadata.Keys).Distinct(),
+        ];
+        foreach (var groupId in diskMetadata.Tombstones)
+            set.Remove(groupId);
         return [.. set.OrderBy(n => n)];
     }
 }

@@ -1,8 +1,8 @@
-﻿using Silksong.TheHuntIsOn.SsmpAddon;
+﻿using System.Collections.Generic;
+using Silksong.TheHuntIsOn.SsmpAddon;
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using Silksong.TheHuntIsOn.Util;
 using SSMP.Networking.Packet;
-using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn.Modules.Lib;
 
@@ -10,10 +10,16 @@ namespace Silksong.TheHuntIsOn.Modules.Lib;
 /// Data representing which modules are enabled, with what settings, for which roles.
 /// Stored in json in global save data, serialized in binary for SSMP.
 /// </summary>
-internal class ModuleDataset : Dictionary<string, ModuleData>, INetworkedCloneable<ModuleDataset>, IIdentifiedPacket<ClientPacketId>, IIdentifiedPacket<ServerPacketId>
+internal class ModuleDataset
+    : Dictionary<string, ModuleData>,
+        INetworkedCloneable<ModuleDataset>,
+        IIdentifiedPacket<ClientPacketId>,
+        IIdentifiedPacket<ServerPacketId>
 {
     public ModuleDataset() { }
-    public ModuleDataset(IReadOnlyDictionary<string, ModuleData> data) : base(data.CloneDictDeep()) { }
+
+    public ModuleDataset(IReadOnlyDictionary<string, ModuleData> data)
+        : base(data.CloneDictDeep()) { }
 
     ClientPacketId IIdentifiedPacket<ClientPacketId>.Identifier => ClientPacketId.ModuleDataset;
 
@@ -25,7 +31,8 @@ internal class ModuleDataset : Dictionary<string, ModuleData>, INetworkedCloneab
 
     public bool DropReliableDataIfNewerExists => true;
 
-    public void WriteData(IPacket packet) => this.WriteData(packet, (packet, value) => value.WriteData(packet));
+    public void WriteData(IPacket packet) =>
+        this.WriteData(packet, (packet, value) => value.WriteData(packet));
 
     public void ReadData(IPacket packet) => this.ReadData(packet, packet => packet.ReadString());
 

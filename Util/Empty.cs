@@ -12,7 +12,8 @@ internal class Empty : NetworkedCloneable<Empty>
     public override void WriteData(IPacket packet) { }
 }
 
-internal class Empty<T> : NetworkedCloneable<T> where T : Empty<T>
+internal class Empty<T> : NetworkedCloneable<T>
+    where T : Empty<T>
 {
     public override T Clone() => (T)this;
 

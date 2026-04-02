@@ -1,6 +1,6 @@
-﻿using Silksong.ModMenu.Elements;
+﻿using System.Collections.Generic;
+using Silksong.ModMenu.Elements;
 using Silksong.TheHuntIsOn.Menu;
-using System.Collections.Generic;
 
 namespace Silksong.TheHuntIsOn.Modules.Lib;
 
@@ -15,11 +15,14 @@ internal abstract class ModuleBase
         get => field;
         set
         {
-            if (field == value) return;
+            if (field == value)
+                return;
             field = value;
 
-            if (value) OnEnabled();
-            else OnDisabled();
+            if (value)
+                OnEnabled();
+            else
+                OnDisabled();
         }
     }
 
@@ -33,17 +36,18 @@ internal abstract class ModuleBase
 
     public virtual void OnGlobalConfigChanged(ModuleSettings? before, ModuleSettings? after) { }
 
-    public static IEnumerable<ModuleBase> GetAllModules() => [
-        new ArchitectModule.ArchitectModule(),
-        new AutoTriggerModule(),
-        new BindModule(),
-        new DeathModule(),
-        new EventsModule.EventsModule(),
-        new HealingModule(),
-        new IntelligenceModule(),
-        new PauseTimerModule.PauseTimerModule(),
-        new SilkRegenerationModule(),
-        new SpawnPointModule(),
-        new StatsModule(),
-    ];
+    public static IEnumerable<ModuleBase> GetAllModules() =>
+        [
+            new ArchitectModule.ArchitectModule(),
+            new AutoTriggerModule(),
+            new BindModule(),
+            new DeathModule(),
+            new EventsModule.EventsModule(),
+            new HealingModule(),
+            new IntelligenceModule(),
+            new PauseTimerModule.PauseTimerModule(),
+            new SilkRegenerationModule(),
+            new SpawnPointModule(),
+            new StatsModule(),
+        ];
 }

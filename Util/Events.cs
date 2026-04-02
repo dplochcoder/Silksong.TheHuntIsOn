@@ -1,9 +1,9 @@
-﻿using HutongGames.PlayMaker;
+﻿using System;
+using System.Collections.Generic;
+using HutongGames.PlayMaker;
 using MonoDetour;
 using MonoDetour.HookGen;
 using Silksong.PurenailUtil.Collections;
-using System;
-using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
 namespace Silksong.TheHuntIsOn.Util;
@@ -16,18 +16,23 @@ internal static class Events
 {
     private static readonly HashMultimap<string, Func<int>> pdIntModifiers = [];
 
-    internal static void AddPdIntModifier(string name, Func<int> modifier) => pdIntModifiers.Add(name, modifier);
-    internal static void RemovePdIntModifier(string name, Func<int> modifier) => pdIntModifiers.Remove(name, modifier);
+    internal static void AddPdIntModifier(string name, Func<int> modifier) =>
+        pdIntModifiers.Add(name, modifier);
+
+    internal static void RemovePdIntModifier(string name, Func<int> modifier) =>
+        pdIntModifiers.Remove(name, modifier);
 
     private static int OverrideGetPDInt(PlayerData playerData, string name, int current)
     {
-        foreach (var modifier in pdIntModifiers.Get(name)) current += modifier();
+        foreach (var modifier in pdIntModifiers.Get(name))
+            current += modifier();
         return current;
     }
 
     private static int OverrideSetPDInt(PlayerData playerData, string name, int current)
     {
-        foreach (var modifier in pdIntModifiers.Get(name)) current -= modifier();
+        foreach (var modifier in pdIntModifiers.Get(name))
+            current -= modifier();
         return current;
     }
 
@@ -35,41 +40,82 @@ internal static class Events
     internal static event Action<Scene>? OnEnterScene;
     private static readonly HashMultimap<string, Action<Scene>> sceneEditsByName = [];
 
-    internal static void AddSceneEdit(string sceneName, Action<Scene> edit) => sceneEditsByName.Add(sceneName, edit);
-    internal static void RemoveSceneEdit(string sceneName, Action<Scene> edit) => sceneEditsByName.Remove(sceneName, edit);
+    internal static void AddSceneEdit(string sceneName, Action<Scene> edit) =>
+        sceneEditsByName.Add(sceneName, edit);
+
+    internal static void RemoveSceneEdit(string sceneName, Action<Scene> edit) =>
+        sceneEditsByName.Remove(sceneName, edit);
 
     private static void OnLevelActivated(GameManager self, ref Scene before, ref Scene after)
     {
         OnLeaveScene?.Invoke(before);
         OnEnterScene?.Invoke(after);
-        foreach (var edit in sceneEditsByName.Get(after.name)) edit(after);
+        foreach (var edit in sceneEditsByName.Get(after.name))
+            edit(after);
     }
 
     private static readonly HashSet<Action<Fsm>> rawFsmEdits = [];
     private static readonly HashMultimap<string, Action<PlayMakerFSM>> fsmEditsByName = [];
-    private static readonly HashMultimap<(string, string), Action<PlayMakerFSM>> fsmEditsByObjAndName = [];
-    private static readonly HashMultimap<(string, string, string), Action<PlayMakerFSM>> fsmEditsBySceneObjAndName = [];
+    private static readonly HashMultimap<
+        (string, string),
+        Action<PlayMakerFSM>
+    > fsmEditsByObjAndName = [];
+    private static readonly HashMultimap<
+        (string, string, string),
+        Action<PlayMakerFSM>
+    > fsmEditsBySceneObjAndName = [];
 
     internal static void AddRawFsmEdit(Action<Fsm> fsm) => rawFsmEdits.Add(fsm);
-    internal static void AddFsmEdit(string fsmName, Action<PlayMakerFSM> fsmEdit) => fsmEditsByName.Add(fsmName, fsmEdit);
-    internal static void AddFsmEdit(string objName, string fsmName, Action<PlayMakerFSM> fsmEdit) => fsmEditsByObjAndName.Add((objName, fsmName), fsmEdit);
-    internal static void AddFsmEdit(string sceneName, string objName, string fsmName, Action<PlayMakerFSM> fsmEdit) => fsmEditsBySceneObjAndName.Add((sceneName, objName, fsmName), fsmEdit);
+
+    internal static void AddFsmEdit(string fsmName, Action<PlayMakerFSM> fsmEdit) =>
+        fsmEditsByName.Add(fsmName, fsmEdit);
+
+    internal static void AddFsmEdit(string objName, string fsmName, Action<PlayMakerFSM> fsmEdit) =>
+        fsmEditsByObjAndName.Add((objName, fsmName), fsmEdit);
+
+    internal static void AddFsmEdit(
+        string sceneName,
+        string objName,
+        string fsmName,
+        Action<PlayMakerFSM> fsmEdit
+    ) => fsmEditsBySceneObjAndName.Add((sceneName, objName, fsmName), fsmEdit);
 
     internal static void RemoveRawFsmEdit(Action<Fsm> fsm) => rawFsmEdits.Remove(fsm);
-    internal static void RemoveFsmEdit(string fsmName, Action<PlayMakerFSM> fsmEdit) => fsmEditsByName.Remove(fsmName, fsmEdit);
-    internal static void RemoveFsmEdit(string objName, string fsmName, Action<PlayMakerFSM> fsmEdit) => fsmEditsByObjAndName.Remove((objName, fsmName), fsmEdit);
-    internal static void RemoveFsmEdit(string sceneName, string objName, string fsmName, Action<PlayMakerFSM> fsmEdit) => fsmEditsBySceneObjAndName.Remove((sceneName, objName, fsmName), fsmEdit);
+
+    internal static void RemoveFsmEdit(string fsmName, Action<PlayMakerFSM> fsmEdit) =>
+        fsmEditsByName.Remove(fsmName, fsmEdit);
+
+    internal static void RemoveFsmEdit(
+        string objName,
+        string fsmName,
+        Action<PlayMakerFSM> fsmEdit
+    ) => fsmEditsByObjAndName.Remove((objName, fsmName), fsmEdit);
+
+    internal static void RemoveFsmEdit(
+        string sceneName,
+        string objName,
+        string fsmName,
+        Action<PlayMakerFSM> fsmEdit
+    ) => fsmEditsBySceneObjAndName.Remove((sceneName, objName, fsmName), fsmEdit);
 
     private static void OnEnableFsm(Fsm fsm)
     {
-        foreach (var action in rawFsmEdits) action(fsm);
+        foreach (var action in rawFsmEdits)
+            action(fsm);
     }
 
     private static void OnEnablePlayMakerFSM(PlayMakerFSM fsm)
     {
-        foreach (var action in fsmEditsByName.Get(fsm.FsmName)) action(fsm);
-        foreach (var action in fsmEditsByObjAndName.Get((fsm.gameObject.name, fsm.FsmName))) action(fsm);
-        foreach (var action in fsmEditsBySceneObjAndName.Get((fsm.gameObject.scene.name, fsm.gameObject.name, fsm.FsmName))) action(fsm);
+        foreach (var action in fsmEditsByName.Get(fsm.FsmName))
+            action(fsm);
+        foreach (var action in fsmEditsByObjAndName.Get((fsm.gameObject.name, fsm.FsmName)))
+            action(fsm);
+        foreach (
+            var action in fsmEditsBySceneObjAndName.Get(
+                (fsm.gameObject.scene.name, fsm.gameObject.name, fsm.FsmName)
+            )
+        )
+            action(fsm);
     }
 
     internal static event Action? OnHeroUpdate;
@@ -78,7 +124,8 @@ internal static class Events
 
     internal static event Action? OnGameManagerUpdate;
 
-    private static void PostfixOnGameManagerUpdate(GameManager self) => OnGameManagerUpdate?.Invoke();
+    private static void PostfixOnGameManagerUpdate(GameManager self) =>
+        OnGameManagerUpdate?.Invoke();
 
     [MonoDetourHookInitialize]
     private static void Hook()

@@ -10,10 +10,12 @@ internal class RateLimiter(float limit)
 
     internal void Update(float? time = null)
     {
-        if (cooldown <= 0) return;
+        if (cooldown <= 0)
+            return;
 
         cooldown -= time ?? Time.deltaTime;
-        if (cooldown < 0) cooldown = 0;
+        if (cooldown < 0)
+            cooldown = 0;
     }
 
     internal void Reset() => cooldown = limit;

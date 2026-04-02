@@ -1,4 +1,6 @@
-﻿using GlobalEnums;
+﻿using System;
+using System.Collections.Generic;
+using GlobalEnums;
 using HutongGames.PlayMaker;
 using MonoDetour;
 using MonoDetour.HookGen;
@@ -12,8 +14,6 @@ using Silksong.TheHuntIsOn.SsmpAddon;
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using Silksong.TheHuntIsOn.Util;
 using SSMP.Networking.Packet;
-using System;
-using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
 namespace Silksong.TheHuntIsOn.Modules;
@@ -21,7 +21,7 @@ namespace Silksong.TheHuntIsOn.Modules;
 internal enum NotificationSetting
 {
     Silent,
-    Notify
+    Notify,
 }
 
 internal enum TravelNotificationSetting
@@ -77,7 +77,8 @@ internal class IntelligenceSettings : ModuleSettings<IntelligenceSettings>
         VentricaRides.WriteData(packet);
     }
 
-    protected override bool Equivalent(IntelligenceSettings other) => BossKills == other.BossKills
+    protected override bool Equivalent(IntelligenceSettings other) =>
+        BossKills == other.BossKills
         && ShopPurchases == other.ShopPurchases
         && TollPurchases == other.TollPurchases
         && SimpleKeyUsages == other.SimpleKeyUsages
@@ -111,61 +112,81 @@ internal class IntelligenceMessage : IIdentifiedPacket<ServerPacketId>
 [MonoDetourTargets(typeof(Lever))]
 [MonoDetourTargets(typeof(Lever_tk2d))]
 [MonoDetourTargets(typeof(ShopItem))]
-internal class IntelligenceModule : GlobalSettingsModule<IntelligenceModule, IntelligenceSettings, IntelligenceSubMenu>
+internal class IntelligenceModule
+    : GlobalSettingsModule<IntelligenceModule, IntelligenceSettings, IntelligenceSubMenu>
 {
-    private const string BOSS_KILL = "You hear screams of agony echoing in the distance. A mighty foe has been slain.";
-    private const string SHOP_PURCHASE = "You hear the hubble of barter and the clacking of rosaries. A deal has been made.";
-    private const string TOLL_PURCHASE = "You hear rosaries clinking down a metal chute. A toll has been purchased.";
+    private const string BOSS_KILL =
+        "You hear screams of agony echoing in the distance. A mighty foe has been slain.";
+    private const string SHOP_PURCHASE =
+        "You hear the hubble of barter and the clacking of rosaries. A deal has been made.";
+    private const string TOLL_PURCHASE =
+        "You hear rosaries clinking down a metal chute. A toll has been purchased.";
     private const string SIMPLE_KEY_USAGES = "You hear a simple door creak open, its key expired.";
-    private static readonly IReadOnlyList<string> LEVER_HITS = [
+    private static readonly IReadOnlyList<string> LEVER_HITS =
+    [
         "You hear the groan of a lever in the distance. A lever has been hit.",
         "You hear the slam of a lever in the distance. A lever has been hit.",
-        "You hear gears creaking — a door moving in the distance. A lever has been hit."
+        "You hear gears creaking — a door moving in the distance. A lever has been hit.",
     ];
-    private const string BELL_SHRINES = "You hear a mighty bell echoing in the distance. A grand gate bell has been rung.";
-    private const string FLEA_RESCUES = "You hear an excited 'Awoo!' in the distance. A flea has been saved.";
-    private const string CARAVAN_RIDES = "You hear the great caravan setting off in the distance. The speedrunner has traveled with the fleas.";
+    private const string BELL_SHRINES =
+        "You hear a mighty bell echoing in the distance. A grand gate bell has been rung.";
+    private const string FLEA_RESCUES =
+        "You hear an excited 'Awoo!' in the distance. A flea has been saved.";
+    private const string CARAVAN_RIDES =
+        "You hear the great caravan setting off in the distance. The speedrunner has traveled with the fleas.";
 
-    private static string BellwayDestinationString(FastTravelLocations destination) => destination switch
-    {
-        FastTravelLocations.None => "nowhere",
-        FastTravelLocations.Bonetown => "Bone Bottom",
-        FastTravelLocations.Docks => "the Deep Docks",
-        FastTravelLocations.BoneforestEast => "the Far Fields",
-        FastTravelLocations.Greymoor => "Greymoor",
-        FastTravelLocations.Belltown => "Bellhart",
-        FastTravelLocations.CoralTower => "the Blasted Steps",
-        FastTravelLocations.City => "the Grand Bellway",
-        FastTravelLocations.Peak => "the Slab",
-        FastTravelLocations.Shellwood => "Shellwood",
-        FastTravelLocations.Bone => "the Marrow",
-        FastTravelLocations.Shadow => "Bilewater",
-        FastTravelLocations.Aqueduct => "the Putrefied Ducts",
-        _ => "the unknown",
-    };
+    private static string BellwayDestinationString(FastTravelLocations destination) =>
+        destination switch
+        {
+            FastTravelLocations.None => "nowhere",
+            FastTravelLocations.Bonetown => "Bone Bottom",
+            FastTravelLocations.Docks => "the Deep Docks",
+            FastTravelLocations.BoneforestEast => "the Far Fields",
+            FastTravelLocations.Greymoor => "Greymoor",
+            FastTravelLocations.Belltown => "Bellhart",
+            FastTravelLocations.CoralTower => "the Blasted Steps",
+            FastTravelLocations.City => "the Grand Bellway",
+            FastTravelLocations.Peak => "the Slab",
+            FastTravelLocations.Shellwood => "Shellwood",
+            FastTravelLocations.Bone => "the Marrow",
+            FastTravelLocations.Shadow => "Bilewater",
+            FastTravelLocations.Aqueduct => "the Putrefied Ducts",
+            _ => "the unknown",
+        };
 
-    private static string BellwayRideString(bool includeDestination, FastTravelLocations destination)
+    private static string BellwayRideString(
+        bool includeDestination,
+        FastTravelLocations destination
+    )
     {
-        string clause = includeDestination ? $", tossed about the ground of {BellwayDestinationString(destination)}" : "";
+        string clause = includeDestination
+            ? $", tossed about the ground of {BellwayDestinationString(destination)}"
+            : "";
         return $"You hear the growl of a beast surging through a thousand little bells{clause}. The speedrunner has traveled with the Bell Beast.";
     }
 
-    private static string VentricaDestinationString(TubeTravelLocations destination) => destination switch
-    {
-        TubeTravelLocations.None => "nowhere land",
-        TubeTravelLocations.Hub => "Terminus",
-        TubeTravelLocations.Song => "the Choral Chambers",
-        TubeTravelLocations.Under => "the Underworks",
-        TubeTravelLocations.CityBellway => "the Grand Bellway",
-        TubeTravelLocations.Hang => "the High Halls",
-        TubeTravelLocations.Enclave => "Songclave",
-        TubeTravelLocations.Arborium => "the Memorium",
-        _ => "the unknown"
-    };
+    private static string VentricaDestinationString(TubeTravelLocations destination) =>
+        destination switch
+        {
+            TubeTravelLocations.None => "nowhere land",
+            TubeTravelLocations.Hub => "Terminus",
+            TubeTravelLocations.Song => "the Choral Chambers",
+            TubeTravelLocations.Under => "the Underworks",
+            TubeTravelLocations.CityBellway => "the Grand Bellway",
+            TubeTravelLocations.Hang => "the High Halls",
+            TubeTravelLocations.Enclave => "Songclave",
+            TubeTravelLocations.Arborium => "the Memorium",
+            _ => "the unknown",
+        };
 
-    private static string VentricaRideString(bool includeDestination, TubeTravelLocations destination)
+    private static string VentricaRideString(
+        bool includeDestination,
+        TubeTravelLocations destination
+    )
     {
-        string clause = includeDestination ? $". A heavy thump is heard in {VentricaDestinationString(destination)}" : "";
+        string clause = includeDestination
+            ? $". A heavy thump is heard in {VentricaDestinationString(destination)}"
+            : "";
         return $"You hear a tube flying across the citadel{clause}. The speedrunner has traveled with the Ventrica.";
     }
 
@@ -193,8 +214,9 @@ internal class IntelligenceModule : GlobalSettingsModule<IntelligenceModule, Int
     private readonly Updater<int> simpleKeys = new(0);
 
     private readonly Updater<int> defeatedBosses = new(0);
+
     private static int CalculateDefeatedBosses() =>
-          (PlayerDataAccess.ant02GuardDefeated ? 1 : 0)
+        (PlayerDataAccess.ant02GuardDefeated ? 1 : 0)
         + (PlayerDataAccess.cog7_automaton_defeated ? 1 : 0)
         + (PlayerDataAccess.defeatedAntQueen ? 1 : 0)
         + (PlayerDataAccess.defeatedAntTrapper ? 1 : 0)
@@ -234,43 +256,100 @@ internal class IntelligenceModule : GlobalSettingsModule<IntelligenceModule, Int
         + (PlayerDataAccess.wardBossDefeated ? 1 : 0);
 
     private readonly Updater<int> bellshrines = new(0);
-    private static int CalculateBellshrines() => (PlayerDataAccess.bellShrineBellhart ? 1 : 0) + (PlayerDataAccess.bellShrineBoneForest ? 1 : 0) + (PlayerDataAccess.bellShrineEnclave ? 1 : 0) + (PlayerDataAccess.bellShrineGreymoor ? 1 : 0) + (PlayerDataAccess.bellShrineShellwood ? 1 : 0) + (PlayerDataAccess.bellShrineWilds ? 1 : 0);
+
+    private static int CalculateBellshrines() =>
+        (PlayerDataAccess.bellShrineBellhart ? 1 : 0)
+        + (PlayerDataAccess.bellShrineBoneForest ? 1 : 0)
+        + (PlayerDataAccess.bellShrineEnclave ? 1 : 0)
+        + (PlayerDataAccess.bellShrineGreymoor ? 1 : 0)
+        + (PlayerDataAccess.bellShrineShellwood ? 1 : 0)
+        + (PlayerDataAccess.bellShrineWilds ? 1 : 0);
 
     private readonly Updater<int> savedFleas = new(0);
-    private static int CalculateSavedFleas(PlayerData pd) => pd.SavedFleasCount + (PlayerDataAccess.CaravanLechSaved ? 1 : 0) + (PlayerDataAccess.MetTroupeHunterWild ? 1 : 0) + (PlayerDataAccess.tamedGiantFlea ? 1 : 0);
+
+    private static int CalculateSavedFleas(PlayerData pd) =>
+        pd.SavedFleasCount
+        + (PlayerDataAccess.CaravanLechSaved ? 1 : 0)
+        + (PlayerDataAccess.MetTroupeHunterWild ? 1 : 0)
+        + (PlayerDataAccess.tamedGiantFlea ? 1 : 0);
 
     private void WatchPlayerData()
     {
         var pd = PlayerData.instance;
 
-        if (simpleKeys.Update(PlayerData.instance.Collectables.GetData("Simple Key").Amount, out var prev, out var next) && prev > next) SendMessage(SIMPLE_KEY_USAGES);
-        if (defeatedBosses.Update(CalculateDefeatedBosses())) SendMessage(BOSS_KILL);
-        if (bellshrines.Update(CalculateBellshrines())) SendMessage(BELL_SHRINES);
-        if (savedFleas.Update(CalculateSavedFleas(pd))) SendMessage(FLEA_RESCUES);
+        if (
+            simpleKeys.Update(
+                PlayerData.instance.Collectables.GetData("Simple Key").Amount,
+                out var prev,
+                out var next
+            )
+            && prev > next
+        )
+            SendMessage(SIMPLE_KEY_USAGES);
+        if (defeatedBosses.Update(CalculateDefeatedBosses()))
+            SendMessage(BOSS_KILL);
+        if (bellshrines.Update(CalculateBellshrines()))
+            SendMessage(BELL_SHRINES);
+        if (savedFleas.Update(CalculateSavedFleas(pd)))
+            SendMessage(FLEA_RESCUES);
     }
 
     private void WatchCaravanRide(Scene scene)
     {
-        if (scene.name != "Room_Caravan_Interior_Travel" || !Enabled) return;
+        if (scene.name != "Room_Caravan_Interior_Travel" || !Enabled)
+            return;
         SendMessage(CARAVAN_RIDES);
     }
 
     private void ModifyTollFsm(Fsm fsm)
     {
-        if (!fsm.HasStates(["Get Text", "Confirm", "Cancel", "Start Sequence", "Wait For Currency Counter", "Taking Currency", "Wait Frame", "Before Sequence Pause", "Keep Reach", "End"])) return;
+        if (
+            !fsm.HasStates([
+                "Get Text",
+                "Confirm",
+                "Cancel",
+                "Start Sequence",
+                "Wait For Currency Counter",
+                "Taking Currency",
+                "Wait Frame",
+                "Before Sequence Pause",
+                "Keep Reach",
+                "End",
+            ])
+        )
+            return;
 
-        fsm.GetState("End")!.InsertMethod(() =>
-        {
-            if (GetEnabledConfig(out var config) && config.TollPurchases == NotificationSetting.Notify) SendMessage(TOLL_PURCHASE);
-        }, 0);
+        fsm.GetState("End")!
+            .InsertMethod(
+                () =>
+                {
+                    if (
+                        GetEnabledConfig(out var config)
+                        && config.TollPurchases == NotificationSetting.Notify
+                    )
+                        SendMessage(TOLL_PURCHASE);
+                },
+                0
+            );
     }
 
-    private void ModifyStringMachineFsm(PlayMakerFSM fsm) => fsm.GetState("Give Object")!.AddMethod(() =>
-    {
-        if (GetEnabledConfig(out var config) && config.TollPurchases == NotificationSetting.Notify) SendMessage(TOLL_PURCHASE);
-    });
+    private void ModifyStringMachineFsm(PlayMakerFSM fsm) =>
+        fsm.GetState("Give Object")!
+            .AddMethod(() =>
+            {
+                if (
+                    GetEnabledConfig(out var config)
+                    && config.TollPurchases == NotificationSetting.Notify
+                )
+                    SendMessage(TOLL_PURCHASE);
+            });
 
-    private void SendTravelMessage<T>(PlayMakerFSM fsm, TravelNotificationSetting setting, Func<bool, T, string> messageFn) where T : Enum
+    private void SendTravelMessage<T>(
+        PlayMakerFSM fsm,
+        TravelNotificationSetting setting,
+        Func<bool, T, string> messageFn
+    )
+        where T : Enum
     {
         var target = (T)fsm.FsmVariables.GetFsmEnum("Target Location").Value;
         bool hunterPresent = HuntClientAddon.OpponentsInRoom();
@@ -279,10 +358,12 @@ internal class IntelligenceModule : GlobalSettingsModule<IntelligenceModule, Int
             case TravelNotificationSetting.Silent:
                 break;
             case TravelNotificationSetting.NotifyLocal:
-                if (hunterPresent) SendMessage(messageFn(false, target));
+                if (hunterPresent)
+                    SendMessage(messageFn(false, target));
                 break;
             case TravelNotificationSetting.NotifyDestinationLocal:
-                if (hunterPresent) SendMessage(messageFn(true, target));
+                if (hunterPresent)
+                    SendMessage(messageFn(true, target));
                 break;
             case TravelNotificationSetting.NotifyGlobal:
                 SendMessage(messageFn(false, target));
@@ -296,75 +377,129 @@ internal class IntelligenceModule : GlobalSettingsModule<IntelligenceModule, Int
         }
     }
 
-    private void ModifyBellBeast(PlayMakerFSM fsm) => fsm.GetState("Fade")!.AddMethod(() =>
-    {
-        if (!GetEnabledConfig(out var config)) return;
-        SendTravelMessage<FastTravelLocations>(fsm, config.BellwayRides, BellwayRideString);
-    });
+    private void ModifyBellBeast(PlayMakerFSM fsm) =>
+        fsm.GetState("Fade")!
+            .AddMethod(() =>
+            {
+                if (!GetEnabledConfig(out var config))
+                    return;
+                SendTravelMessage<FastTravelLocations>(fsm, config.BellwayRides, BellwayRideString);
+            });
 
-    private void ModifyVentrica(PlayMakerFSM fsm) => fsm.GetState("Preload Scene")!.AddMethod(() =>
-    {
-        if (!GetEnabledConfig(out var config)) return;
-        SendTravelMessage<TubeTravelLocations>(fsm, config.VentricaRides, VentricaRideString);
-    });
+    private void ModifyVentrica(PlayMakerFSM fsm) =>
+        fsm.GetState("Preload Scene")!
+            .AddMethod(() =>
+            {
+                if (!GetEnabledConfig(out var config))
+                    return;
+                SendTravelMessage<TubeTravelLocations>(
+                    fsm,
+                    config.VentricaRides,
+                    VentricaRideString
+                );
+            });
 
     private void SendMessage(string msg)
     {
-        if (sendMessages.Suppressed) return;
-        if (TheHuntIsOnPlugin.GetRole() != RoleId.Speedrunner) return;
-        if (GameManager.instance.profileID == 0) return;
+        if (sendMessages.Suppressed)
+            return;
+        if (TheHuntIsOnPlugin.GetRole() != RoleId.Speedrunner)
+            return;
+        if (GameManager.instance.profileID == 0)
+            return;
 
         HuntClientAddon.Instance?.Send(new IntelligenceMessage() { Message = msg });
     }
 
-    private static void PostfixLoadGameData(GameManager self, ref SaveGameData saveGameData, ref int saveSlot)
+    private static void PostfixLoadGameData(
+        GameManager self,
+        ref SaveGameData saveGameData,
+        ref int saveSlot
+    )
     {
-        if (Instance == null) return;
-        using (Instance.sendMessages.Suppress()) Instance.WatchPlayerData();
+        if (Instance == null)
+            return;
+        using (Instance.sendMessages.Suppress())
+            Instance.WatchPlayerData();
     }
 
-    private static readonly HashSet<string> ignoreLeverNames = [
+    private static readonly HashSet<string> ignoreLeverNames =
+    [
         // Covered by bell shrines.
         "Bell Shrine Lever",
-
         // Repeatable levers.
-        "lever_bot", "lever_bottom", "lever_left", "lever_right", "lever_top",
-        "Lever Bottom", "Lever Cog", "Lever Top"
+        "lever_bot",
+        "lever_bottom",
+        "lever_left",
+        "lever_right",
+        "lever_top",
+        "Lever Bottom",
+        "Lever Cog",
+        "Lever Top",
     ];
 
     private static bool IgnoreLever(Lever lever)
     {
-        if (ignoreLeverNames.Contains(lever.name)) return true;
-        if (lever.name.Contains("Understore Lever")) return true;  // Underworks levers.
+        if (ignoreLeverNames.Contains(lever.name))
+            return true;
+        if (lever.name.Contains("Understore Lever"))
+            return true; // Underworks levers.
 
-        return lever.transform.parent != null && lever.transform.parent.name == "Cage";  // Elevator levers.
+        return lever.transform.parent != null && lever.transform.parent.name == "Cage"; // Elevator levers.
     }
 
-    private static bool IgnoreLeverTk2d(Lever_tk2d lever) => lever.gameObject.name == "Bell Shrine Lever";  // Covered by bell shrines.
+    private static bool IgnoreLeverTk2d(Lever_tk2d lever) =>
+        lever.gameObject.name == "Bell Shrine Lever"; // Covered by bell shrines.
 
     private void ModifyCogLeverFsm(PlayMakerFSM fsm)
     {
-        fsm.GetState("Complete Shake")!.InsertMethod(() =>
-        {
-            if (GetEnabledConfig(out var config) && config.LeverHits == NotificationSetting.Notify) Instance?.SendLeverMessage();
-        }, 0);
+        fsm.GetState("Complete Shake")!
+            .InsertMethod(
+                () =>
+                {
+                    if (
+                        GetEnabledConfig(out var config)
+                        && config.LeverHits == NotificationSetting.Notify
+                    )
+                        Instance?.SendLeverMessage();
+                },
+                0
+            );
     }
 
-    private void SendLeverMessage() => SendMessage(LEVER_HITS[UnityEngine.Random.Range(0, LEVER_HITS.Count)]);
+    private void SendLeverMessage() =>
+        SendMessage(LEVER_HITS[UnityEngine.Random.Range(0, LEVER_HITS.Count)]);
 
-    private static void PostfixLeverAwake(Lever self) => self.OnActivated.AddListener(() =>
-    {
-        if (GetEnabledConfig(out var config) && config.LeverHits == NotificationSetting.Notify && !IgnoreLever(self)) Instance?.SendLeverMessage();
-    });
+    private static void PostfixLeverAwake(Lever self) =>
+        self.OnActivated.AddListener(() =>
+        {
+            if (
+                GetEnabledConfig(out var config)
+                && config.LeverHits == NotificationSetting.Notify
+                && !IgnoreLever(self)
+            )
+                Instance?.SendLeverMessage();
+        });
 
-    private static void PostfixLeverTk2dAwake(Lever_tk2d self) => self.CustomGateOpen.AddListener(() =>
-    {
-        if (GetEnabledConfig(out var config) && config.LeverHits == NotificationSetting.Notify && !IgnoreLeverTk2d(self)) Instance?.SendLeverMessage();
-    });
+    private static void PostfixLeverTk2dAwake(Lever_tk2d self) =>
+        self.CustomGateOpen.AddListener(() =>
+        {
+            if (
+                GetEnabledConfig(out var config)
+                && config.LeverHits == NotificationSetting.Notify
+                && !IgnoreLeverTk2d(self)
+            )
+                Instance?.SendLeverMessage();
+        });
 
-    private static void PostfixShopItemPurchased(ShopItem self, ref Action onComplete, ref int subItemIndex)
+    private static void PostfixShopItemPurchased(
+        ShopItem self,
+        ref Action onComplete,
+        ref int subItemIndex
+    )
     {
-        if (GetEnabledConfig(out var config) && config.ShopPurchases == NotificationSetting.Notify) Instance?.SendMessage(SHOP_PURCHASE);
+        if (GetEnabledConfig(out var config) && config.ShopPurchases == NotificationSetting.Notify)
+            Instance?.SendMessage(SHOP_PURCHASE);
     }
 
     [MonoDetourHookInitialize]
@@ -379,18 +514,60 @@ internal class IntelligenceModule : GlobalSettingsModule<IntelligenceModule, Int
 
 internal class IntelligenceSubMenu : ModuleSubMenu<IntelligenceSettings>
 {
-    public ChoiceElement<NotificationSetting> BossKills = new("Boss Kills", ChoiceModels.ForEnum<NotificationSetting>());
-    public ChoiceElement<NotificationSetting> ShopPurchases = new("Shop Purchases", ChoiceModels.ForEnum<NotificationSetting>());
-    public ChoiceElement<NotificationSetting> TollPurchases = new("Toll Purchases", ChoiceModels.ForEnum<NotificationSetting>());
-    public ChoiceElement<NotificationSetting> SimpleKeyUsages = new("Simple Key Usages", ChoiceModels.ForEnum<NotificationSetting>());
-    public ChoiceElement<NotificationSetting> LeverHits = new("Lever Hits", ChoiceModels.ForEnum<NotificationSetting>());
-    public ChoiceElement<NotificationSetting> BellShrines = new("Bell Shrines", ChoiceModels.ForEnum<NotificationSetting>());
-    public ChoiceElement<NotificationSetting> FleaRescues = new("Flea Rescues", ChoiceModels.ForEnum<NotificationSetting>());
-    public ChoiceElement<NotificationSetting> CaravanRides = new("Caravan Rides", ChoiceModels.ForEnum<NotificationSetting>());
-    public ChoiceElement<TravelNotificationSetting> BellwayRides = new("Bellway Rides", ChoiceModels.ForEnum<TravelNotificationSetting>());
-    public ChoiceElement<TravelNotificationSetting> VentricaRides = new("Ventrica Rides", ChoiceModels.ForEnum<TravelNotificationSetting>());
+    public ChoiceElement<NotificationSetting> BossKills = new(
+        "Boss Kills",
+        ChoiceModels.ForEnum<NotificationSetting>()
+    );
+    public ChoiceElement<NotificationSetting> ShopPurchases = new(
+        "Shop Purchases",
+        ChoiceModels.ForEnum<NotificationSetting>()
+    );
+    public ChoiceElement<NotificationSetting> TollPurchases = new(
+        "Toll Purchases",
+        ChoiceModels.ForEnum<NotificationSetting>()
+    );
+    public ChoiceElement<NotificationSetting> SimpleKeyUsages = new(
+        "Simple Key Usages",
+        ChoiceModels.ForEnum<NotificationSetting>()
+    );
+    public ChoiceElement<NotificationSetting> LeverHits = new(
+        "Lever Hits",
+        ChoiceModels.ForEnum<NotificationSetting>()
+    );
+    public ChoiceElement<NotificationSetting> BellShrines = new(
+        "Bell Shrines",
+        ChoiceModels.ForEnum<NotificationSetting>()
+    );
+    public ChoiceElement<NotificationSetting> FleaRescues = new(
+        "Flea Rescues",
+        ChoiceModels.ForEnum<NotificationSetting>()
+    );
+    public ChoiceElement<NotificationSetting> CaravanRides = new(
+        "Caravan Rides",
+        ChoiceModels.ForEnum<NotificationSetting>()
+    );
+    public ChoiceElement<TravelNotificationSetting> BellwayRides = new(
+        "Bellway Rides",
+        ChoiceModels.ForEnum<TravelNotificationSetting>()
+    );
+    public ChoiceElement<TravelNotificationSetting> VentricaRides = new(
+        "Ventrica Rides",
+        ChoiceModels.ForEnum<TravelNotificationSetting>()
+    );
 
-    public override IEnumerable<MenuElement> Elements() => [BossKills, ShopPurchases, TollPurchases, SimpleKeyUsages, LeverHits, BellShrines, FleaRescues, CaravanRides, BellwayRides, VentricaRides];
+    public override IEnumerable<MenuElement> Elements() =>
+        [
+            BossKills,
+            ShopPurchases,
+            TollPurchases,
+            SimpleKeyUsages,
+            LeverHits,
+            BellShrines,
+            FleaRescues,
+            CaravanRides,
+            BellwayRides,
+            VentricaRides,
+        ];
 
     internal override void Apply(IntelligenceSettings data)
     {
@@ -406,17 +583,18 @@ internal class IntelligenceSubMenu : ModuleSubMenu<IntelligenceSettings>
         VentricaRides.Value = data.VentricaRides;
     }
 
-    internal override IntelligenceSettings Export() => new()
-    {
-        BossKills = BossKills.Value,
-        ShopPurchases = ShopPurchases.Value,
-        TollPurchases = TollPurchases.Value,
-        SimpleKeyUsages = SimpleKeyUsages.Value,
-        LeverHits = LeverHits.Value,
-        BellShrines = BellShrines.Value,
-        FleaRescues = FleaRescues.Value,
-        CaravanRides = CaravanRides.Value,
-        BellwayRides = BellwayRides.Value,
-        VentricaRides = VentricaRides.Value,
-    };
+    internal override IntelligenceSettings Export() =>
+        new()
+        {
+            BossKills = BossKills.Value,
+            ShopPurchases = ShopPurchases.Value,
+            TollPurchases = TollPurchases.Value,
+            SimpleKeyUsages = SimpleKeyUsages.Value,
+            LeverHits = LeverHits.Value,
+            BellShrines = BellShrines.Value,
+            FleaRescues = FleaRescues.Value,
+            CaravanRides = CaravanRides.Value,
+            BellwayRides = BellwayRides.Value,
+            VentricaRides = VentricaRides.Value,
+        };
 }
