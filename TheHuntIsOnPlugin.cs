@@ -17,6 +17,7 @@ using SSMP.Api.Server;
 
 namespace Silksong.TheHuntIsOn;
 
+[BepInDependency("com.cometcake575.architect")]
 [BepInDependency("org.silksong-modding.datamanager")]
 [BepInDependency("org.silksong-modding.modmenu")]
 [BepInDependency("org.silksong-modding.prepatcher")]
