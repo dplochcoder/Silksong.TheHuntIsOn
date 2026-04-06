@@ -48,7 +48,5 @@ internal abstract class BaseArchitectLevelManager(string diskFolderName)
     protected static Stream EmbeddedLevelStream(string groupId, string sceneName) =>
         Assembly
             .GetExecutingAssembly()
-            .GetManifestResourceStream(
-                $"{EMBEDDED_PREFIX}{groupId}.{sceneName}{ARCHITECT_SUFFIX}"
-            );
+            .GetManifestResourceStream($"{EMBEDDED_PREFIX}{groupId}.{sceneName}{ARCHITECT_SUFFIX}");
 }
