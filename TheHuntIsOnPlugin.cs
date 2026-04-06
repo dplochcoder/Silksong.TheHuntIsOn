@@ -194,7 +194,7 @@ public partial class TheHuntIsOnPlugin
         Logger.LogInfo($"Plugin {Name} ({Id}) has loaded!");
     }
 
-    public string ModMenuName() => "The Hunt is On";
+    public LocalizedText ModMenuName() => "The Hunt is On";
 
     private GlobalSaveDataMenu? globalSaveDataMenu;
 
