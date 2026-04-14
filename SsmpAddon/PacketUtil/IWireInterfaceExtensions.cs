@@ -51,19 +51,21 @@ internal static class IWireInterfaceExtensions
             return;
         }
 
+        List<byte> bytes = new List<byte>();
         while (value > 0)
         {
-            byte b = (byte)(value & 0x7f);
-            if (value >= 0x80)
-            {
+            bytes.Add((byte)(value & 0x7f));
+            value >>= 7;
+        }
+
+        bytes.Reverse();
+
+        for (int i = 0; i < bytes.Count; i++)
+        {
+            byte b = bytes[i];
+            if (i < bytes.Count - 1)
                 b |= 0x80;
-                self.Write(b);
-            }
-            else
-            {
-                self.Write(b);
-                break;
-            }
+            self.Write(b);
         }
     }
 
