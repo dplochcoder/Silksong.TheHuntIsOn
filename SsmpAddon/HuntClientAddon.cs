@@ -87,6 +87,8 @@ internal class HuntClientAddon : TogglableClientAddon
     internal void Send<T>(T packet)
         where T : IIdentifiedPacket<ServerPacketId>, new()
     {
+        if (api == null || !api.NetClient.IsConnected) return;
+
         if (packet.Single)
             sender?.SendSingleData(packet.Identifier, packet);
         else
