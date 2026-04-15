@@ -1,0 +1,174 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "greymoor_flip_bridge",
+        "pid": "0159bc99",
+        "pos": {
+          "x": 25.754364,
+          "y": 15.9804764,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 270.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "28d2eeef",
+        "pos": {
+          "x": 21.5875,
+          "y": 15.8792477,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_width": "2",
+        "size_height": "2"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "4e8f435d",
+        "pos": {
+          "x": 109.110924,
+          "y": 28.9407082,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "song_trap_door (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "11130fa9",
+        "pos": {
+          "x": 108.301064,
+          "y": 22.5379753,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8cc8d01c",
+        "pos": {
+          "x": 29.766058,
+          "y": 17.82859,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "58792dc4",
+        "pos": {
+          "x": 111.6144,
+          "y": 27.3874683,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "song_trap_door/Door/Tilt Plat/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "44dc46ba",
+        "pos": {
+          "x": 22.021183,
+          "y": 20.5727539,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_Gate_small"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -628.249939,
+        "y": 5.98438454
+      },
+      "block_id": "89969e33-ef40-4f20-88a5-9a73ab3f6099",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "4f7aea9b-6061-471c-8643-3d1b4299c9c6",
+            "Item2": "Display"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "28d2eeef",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": -422.812561,
+        "y": -1.37502289
+      },
+      "block_id": "4f7aea9b-6061-471c-8643-3d1b4299c9c6",
+      "events": {},
+      "vars": {},
+      "type": "Song Display",
+      "config": {
+        "song_text": "Shortcut Blocked",
+        "song_duration": "1"
+      },
+      "ext": {}
+    }
+  ]
+}

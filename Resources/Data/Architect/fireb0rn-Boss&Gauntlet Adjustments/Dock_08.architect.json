@@ -1,0 +1,296 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "10c51e04",
+        "pos": {
+          "x": 12.0390882,
+          "y": 24.1239929,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Battle Scene/Gates/Battle Gate",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8229ffd2",
+        "pos": {
+          "x": 37.51745,
+          "y": 23.869133,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Battle Scene/Gates/Battle Gate (1)",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "bc36768d",
+        "pos": {
+          "x": 9.471011,
+          "y": 22.9018326,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "ff2ea9f2",
+        "pos": {
+          "x": 39.5597839,
+          "y": 22.875042,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "1d9b3c28",
+        "pos": {
+          "x": 20.1171474,
+          "y": 28.278286,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Battle Scene/Wave 1/Dock Worker"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "93bea48f",
+        "pos": {
+          "x": 25.1901512,
+          "y": 28.2366638,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Battle Scene/Wave 2/Bone Flyer"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "d3f5a3b4",
+        "pos": {
+          "x": 30.138937,
+          "y": 28.2895,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Battle Scene/Wave 2/Bone Flyer (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "44f0e43b",
+        "pos": {
+          "x": 16.30707,
+          "y": 28.267004,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "start_active": "False",
+        "remover_path": "Battle Scene/CamLocks/CameraLockArea (4)"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "41a603f2",
+        "pos": {
+          "x": 24.5831547,
+          "y": 26.2567043,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 8.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "6e41b470",
+        "pos": {
+          "x": 86.23858,
+          "y": 24.3755817,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_id": "DocksSpawn8",
+        "trans_collide": "False"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -1.51515174,
+        "y": -0.3787899
+      },
+      "block_id": "63aa2be7-b210-4b75-b184-04982505dec1",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "1d9b3c28",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -334.5739,
+        "y": -145.8523
+      },
+      "block_id": "876d41aa-194a-4069-842e-ec73ba4c9461",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "63aa2be7-b210-4b75-b184-04982505dec1",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "68f4341b-baf7-4d0f-8ce5-c0452189ed1c",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "c8142924-d7d1-4856-8cd8-e59fbcfbdee8",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1.51515174,
+        "y": -369.318237
+      },
+      "block_id": "c8142924-d7d1-4856-8cd8-e59fbcfbdee8",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "93bea48f",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 0.378787935,
+        "y": -188.636383
+      },
+      "block_id": "68f4341b-baf7-4d0f-8ce5-c0452189ed1c",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "d3f5a3b4",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 225.7576,
+        "y": 19.3181839
+      },
+      "block_id": "a4e776a2-dac6-49cf-baff-8ceab6f6a83b",
+      "events": {
+        "ZoneExit": [
+          {
+            "Item1": "b6cddb56-7e72-4018-9c7e-8f28a9b1a22b",
+            "Item2": "enable"
+          }
+        ],
+        "ZoneEnter": [
+          {
+            "Item1": "b6cddb56-7e72-4018-9c7e-8f28a9b1a22b",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "41a603f2",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 471.969757,
+        "y": 32.1969757
+      },
+      "block_id": "b6cddb56-7e72-4018-9c7e-8f28a9b1a22b",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "44f0e43b",
+        "object_type": "object_remover"
+      }
+    }
+  ]
+}

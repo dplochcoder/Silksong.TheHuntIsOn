@@ -1,0 +1,63 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a59f3966",
+        "pos": {
+          "x": 39.9547348,
+          "y": 45.40951,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Cogwork Energy Gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "099924d9",
+        "pos": {
+          "x": 38.75122,
+          "y": 52.0569534,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "cog_lever"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "4f3ef759",
+        "pos": {
+          "x": 82.9135,
+          "y": 16.5916824,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Silk Spool"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

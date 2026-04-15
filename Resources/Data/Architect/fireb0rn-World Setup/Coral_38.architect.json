@@ -1,0 +1,205 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0752c609",
+        "pos": {
+          "x": 9.190218,
+          "y": 78.5944443,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Coral Crust Wall Tall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "fa816517",
+        "pos": {
+          "x": 104.369331,
+          "y": 81.048645,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Coral Crust Wall Sphere"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "94494ffa",
+        "pos": {
+          "x": 124.24675,
+          "y": 76.3993454,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Coral Crust Wall Tall (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "coloured_square",
+        "pid": "123c0412",
+        "pos": {
+          "x": 70.17619,
+          "y": 41.2760925,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "colour_red": "0",
+        "colour_green": "0",
+        "colour_blue": "0",
+        "colour_alpha": "1",
+        "obj_layer": "1",
+        "obj_z": "0",
+        "size_width": "20",
+        "size_height": "8"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "5bf03ed8",
+        "pos": {
+          "x": 35.90466,
+          "y": 41.7487335,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_width": "0.1",
+        "size_height": "2"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "62634f69",
+        "pos": {
+          "x": 33.80142,
+          "y": 41.8612061,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_width": "0.1",
+        "size_height": "3"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 59.375,
+        "y": -41.875
+      },
+      "block_id": "782b0e99-9c59-4f70-83fe-29c483a7a2a5",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "123c0412",
+        "object_type": "coloured_square"
+      }
+    },
+    {
+      "pos": {
+        "x": -192.8125,
+        "y": -131.25
+      },
+      "block_id": "b4041034-6dfa-4bd6-aebe-e300fe8d955a",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "782b0e99-9c59-4f70-83fe-29c483a7a2a5",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "5bf03ed8",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": -187.1875,
+        "y": 13.4375
+      },
+      "block_id": "93d57cc3-a2e2-492e-b013-35fcd5f9b787",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "782b0e99-9c59-4f70-83fe-29c483a7a2a5",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "62634f69",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": -348.75,
+        "y": -55.3125
+      },
+      "block_id": "87429878-ead5-4c44-8298-26ee0596e142",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "782b0e99-9c59-4f70-83fe-29c483a7a2a5",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

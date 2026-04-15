@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "baecec69",
+        "pos": {
+          "x": 11.2843628,
+          "y": 34.2928429,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

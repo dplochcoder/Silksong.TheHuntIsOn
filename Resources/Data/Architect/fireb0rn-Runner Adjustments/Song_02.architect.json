@@ -1,0 +1,164 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "3f6129dc",
+        "pos": {
+          "x": 39.8952,
+          "y": 13.108098,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "0",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "f308cbf6",
+        "pos": {
+          "x": 36.55781,
+          "y": 17.09245,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "1",
+        "component_hook_target": "Bellway Toll Machine",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "2783a849",
+        "pos": {
+          "x": 39.83897,
+          "y": 17.0448647,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "2",
+        "component_hook_target": "Bellway Toll Machine",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "4521db91",
+        "pos": {
+          "x": 45.4066124,
+          "y": 14.5253954,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Bellway Toll Machine",
+        "fsm_hook_state": "Return Control",
+        "fsm_hook_name": "Unlock Behaviour"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "af0ba23a",
+        "pos": {
+          "x": 85.31371,
+          "y": 15.8210888,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "start_active": "False",
+        "remover_path": "City Travel Tube/tube_toll_machine/toll_machine"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 206.250885,
+        "y": 320.1882
+      },
+      "block_id": "93ea43c8-89a8-4092-a17c-7b758adbc874",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "a09da824-fec1-4335-bc8a-47b61eabf0e6",
+            "Item2": "Set"
+          },
+          {
+            "Item1": "d731288c-f2ff-4d18-a7ab-ec9f9716d1d9",
+            "Item2": "Set"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 363.122559,
+        "y": 186.578
+      },
+      "block_id": "a09da824-fec1-4335-bc8a-47b61eabf0e6",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "act2Started",
+        "pd_bool": "True"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 360.7424,
+        "y": 82.33673
+      },
+      "block_id": "d731288c-f2ff-4d18-a7ab-ec9f9716d1d9",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "visitedCitadel",
+        "pd_bool": "True"
+      },
+      "ext": {}
+    }
+  ]
+}

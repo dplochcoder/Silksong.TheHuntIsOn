@@ -1,0 +1,631 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "24017ff6",
+        "pos": {
+          "x": 50.5957642,
+          "y": 110.936966,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "start_active": "False",
+        "enabler_path": "Boss Scene/Silk Heart"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "6ec5b1ec",
+        "pos": {
+          "x": 54.5948753,
+          "y": 111.946022,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Boss Scene/Lace Boss2 New",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "aa2ffa7d",
+        "pos": {
+          "x": 47.81498,
+          "y": 113.02565,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Lace Boss2 New",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Death",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "16383714",
+        "pos": {
+          "x": 64.95164,
+          "y": 111.471977,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Silk Heart",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Drop To Place",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "896f581f",
+        "pos": {
+          "x": 69.60822,
+          "y": 111.303284,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Silk Heart",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Fade Return",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "7527a637",
+        "pos": {
+          "x": 59.04657,
+          "y": 116.252304,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Silk Heart",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Shatter",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "1d8ab96b",
+        "pos": {
+          "x": 63.10673,
+          "y": 116.420982,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Silk Heart",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Wipe",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "129fcd21",
+        "pos": {
+          "x": 43.4535675,
+          "y": 109.5052,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "start_active": "False",
+        "enabler_path": "Boss Scene/Silk Heart/Shell"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "46e67161",
+        "pos": {
+          "x": 47.0191078,
+          "y": 109.145309,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "start_active": "False",
+        "enabler_path": "Boss Scene/Silk Heart/Heart"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "0ed1b2d0",
+        "pos": {
+          "x": 42.5868874,
+          "y": 107.0046,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Silk Heart",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Shell Appear",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "3bec7b57",
+        "pos": {
+          "x": 46.3099022,
+          "y": 106.906837,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Silk Heart",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Heart Appear",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "50138992",
+        "pos": {
+          "x": 73.7408,
+          "y": 107.615585,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_state": "Defeated Lace",
+        "fsm_hook_name": "Control",
+        "fsm_hook_target": "State Control/song_tower_right_gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "fac5591d",
+        "pos": {
+          "x": 69.02555,
+          "y": 107.501595,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Silk Heart",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Collected",
+        "start_active": "False"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 8.7854805,
+        "y": -1.71661377E-05
+      },
+      "block_id": "7b42819f-267e-4839-8915-b22dc9c58d21",
+      "events": {
+        "OnDeath": [
+          {
+            "Item1": "1d3d018c-1dcd-4583-aeb5-d04c62146d67",
+            "Item2": "Trigger"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "6ec5b1ec",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 7.44195747,
+        "y": 232.501312
+      },
+      "block_id": "e0fc53c4-f3be-48b4-9ba4-5b4c217940ae",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "1d3d018c-1dcd-4583-aeb5-d04c62146d67",
+            "Item2": "Trigger"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "aa2ffa7d",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 403.440155,
+        "y": 211.7622
+      },
+      "block_id": "0a60a1cd-8d74-4b56-b17a-c07d618b922e",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "24017ff6",
+        "object_type": "object_enabler"
+      }
+    },
+    {
+      "pos": {
+        "x": -349.703552,
+        "y": 97.28105
+      },
+      "block_id": "f18d0a51-a87e-4c3b-9c69-c7c24fcee149",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "df37ac55-e872-4338-94be-300c39a702d2",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -171.567947,
+        "y": 94.4904251
+      },
+      "block_id": "df37ac55-e872-4338-94be-300c39a702d2",
+      "events": {
+        "Out": [
+          {
+            "Item1": "e0fc53c4-f3be-48b4-9ba4-5b4c217940ae",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "7b42819f-267e-4839-8915-b22dc9c58d21",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 522.1864,
+        "y": -233.756638
+      },
+      "block_id": "95ace2b4-6418-4a80-ac09-d057879832cd",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "9b1d5267-435b-4a5a-9c09-26f6d4027373",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7527a637",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 752.277161,
+        "y": -236.930191
+      },
+      "block_id": "9b1d5267-435b-4a5a-9c09-26f6d4027373",
+      "events": {
+        "OnTarget": []
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "1d8ab96b",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 533.212158,
+        "y": -501.57547
+      },
+      "block_id": "2b5fd254-9a3c-47a2-9424-7c9f9339e348",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "2d68f95d-8c6b-4ec5-b816-16fc7ddc329b",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "16383714",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 746.69574,
+        "y": -500.6453
+      },
+      "block_id": "2d68f95d-8c6b-4ec5-b816-16fc7ddc329b",
+      "events": {
+        "OnTarget": []
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "896f581f",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 835.0801,
+        "y": 52.39969
+      },
+      "block_id": "c76f45c5-849d-48a1-b097-05d0046f6e29",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "46e67161",
+        "object_type": "object_enabler"
+      }
+    },
+    {
+      "pos": {
+        "x": 610.789368,
+        "y": 264.21463
+      },
+      "block_id": "92527b0f-12f0-4ca9-a9d0-0d2f1a2899f4",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "8cb7597e-baf1-45ff-ad00-47ef723e7695",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "0ed1b2d0",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 994.939148,
+        "y": 254.2013
+      },
+      "block_id": "c5b7b232-5050-49b4-8f5e-ae0a81a26f3f",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "129fcd21",
+        "object_type": "object_enabler"
+      }
+    },
+    {
+      "pos": {
+        "x": 609.36676,
+        "y": 31.4702072
+      },
+      "block_id": "bc67391c-cc36-494a-93b8-e4676f746f3e",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "c76f45c5-849d-48a1-b097-05d0046f6e29",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "3bec7b57",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 797.9628,
+        "y": 255.362061
+      },
+      "block_id": "8cb7597e-baf1-45ff-ad00-47ef723e7695",
+      "events": {
+        "Out": [
+          {
+            "Item1": "c5b7b232-5050-49b4-8f5e-ae0a81a26f3f",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.5"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 220.182144,
+        "y": 200.379959
+      },
+      "block_id": "1d3d018c-1dcd-4583-aeb5-d04c62146d67",
+      "events": {},
+      "vars": {},
+      "type": "Ordered Events",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":73.53421,\"y\":78.35574},\"block_id\":\"b5e672a6-c552-4d93-9694-38d437b85ac2\",\"events\":{\"OnTrigger\":[{\"Item1\":\"0a60a1cd-8d74-4b56-b17a-c07d618b922e\",\"Item2\":\"enable\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":73.53421,\"y\":78.35574},\"block_id\":\"d6584924-2515-45c4-a99c-f951aa2153f1\",\"events\":{\"OnTrigger\":[{\"Item1\":\"fa55cd5d-e2ab-4795-a3cf-e53165daa1a7\",\"Item2\":\"In\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 397.842529,
+        "y": 40.53072
+      },
+      "block_id": "fa55cd5d-e2ab-4795-a3cf-e53165daa1a7",
+      "events": {
+        "Out": [
+          {
+            "Item1": "92527b0f-12f0-4ca9-a9d0-0d2f1a2899f4",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "bc67391c-cc36-494a-93b8-e4676f746f3e",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "95ace2b4-6418-4a80-ac09-d057879832cd",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "9b1d5267-435b-4a5a-9c09-26f6d4027373",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "2b5fd254-9a3c-47a2-9424-7c9f9339e348",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "2d68f95d-8c6b-4ec5-b816-16fc7ddc329b",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "6600c31d-7b0f-4847-9309-b38108d8004e",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 741.018066,
+        "y": -746.958435
+      },
+      "block_id": "d04e3f7a-e382-40dc-b696-6aa79cf9b7ae",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "50138992",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 538.868164,
+        "y": -754.814148
+      },
+      "block_id": "6600c31d-7b0f-4847-9309-b38108d8004e",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "d04e3f7a-e382-40dc-b696-6aa79cf9b7ae",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "fac5591d",
+        "object_type": "fsm_hook"
+      }
+    }
+  ]
+}

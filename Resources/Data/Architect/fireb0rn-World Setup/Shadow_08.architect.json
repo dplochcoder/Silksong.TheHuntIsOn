@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "40c42481",
+        "pos": {
+          "x": 44.1369743,
+          "y": 23.86212,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f4efc18b",
+        "pos": {
+          "x": 13.0666895,
+          "y": 8.150737,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall Swamp Shortcut"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

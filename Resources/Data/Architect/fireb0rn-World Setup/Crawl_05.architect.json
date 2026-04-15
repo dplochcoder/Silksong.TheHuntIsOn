@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a426d087",
+        "pos": {
+          "x": 215.292313,
+          "y": 17.1788845,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_Gate_set (1)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

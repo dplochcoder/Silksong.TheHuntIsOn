@@ -1,0 +1,574 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1d32cdab",
+        "pos": {
+          "x": 24.8845673,
+          "y": 19.6698284,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall/wall1"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "3b1e83f8",
+        "pos": {
+          "x": 25.8882523,
+          "y": 19.4725456,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall/wall2"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b7661607",
+        "pos": {
+          "x": 26.8576279,
+          "y": 19.3694611,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall/wall3"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "70e9ddb6",
+        "pos": {
+          "x": 25.4633636,
+          "y": 20.6925678,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall/explode rock"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0f117dff",
+        "pos": {
+          "x": 26.5429764,
+          "y": 20.6589184,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall/Pt Idle"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "cf78119b",
+        "pos": {
+          "x": 27.4765472,
+          "y": 20.1977634,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall/Glow Idle"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "29ae202b",
+        "pos": {
+          "x": 28.5882111,
+          "y": 16.6170177,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "explode_wall",
+        "component_hook_name": "BoxCollider2D"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "4af11878",
+        "pos": {
+          "x": 22.454422,
+          "y": 16.4142113,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_width": "0.1",
+        "size_height": "2"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "4f07a0d4",
+        "pos": {
+          "x": 23.6017189,
+          "y": 17.066925,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_width": "0.1",
+        "size_height": "4"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "dd27c83c",
+        "pos": {
+          "x": 25.5813255,
+          "y": 17.5730743,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall/masks",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "94cbdaa5",
+        "pos": {
+          "x": 27.04275,
+          "y": 5.49930239,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Explode Sequence"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "11d22a1b",
+        "pos": {
+          "x": 59.7172623,
+          "y": 41.6125031,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_width": "0.1",
+        "size_height": "2"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "cc0fd1bd",
+        "pos": {
+          "x": 67.62058,
+          "y": 32.1086426,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall (2)/explode rock"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c40e75ac",
+        "pos": {
+          "x": 68.7002,
+          "y": 32.0749969,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall (2)/Pt Idle"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6253d0c8",
+        "pos": {
+          "x": 69.6337662,
+          "y": 31.61384,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall (2)/Glow Idle"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1cf61ae0",
+        "pos": {
+          "x": 67.04179,
+          "y": 31.0859051,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall (2)/wall1"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "57edb1af",
+        "pos": {
+          "x": 68.04548,
+          "y": 30.8886242,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall (2)/wall2"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c173ad9a",
+        "pos": {
+          "x": 69.0148544,
+          "y": 30.7855358,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall (2)/wall3"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "fe4cf6d2",
+        "pos": {
+          "x": 67.73855,
+          "y": 28.98915,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall (2)/masks",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "f91f769a",
+        "pos": {
+          "x": 70.74544,
+          "y": 28.0330944,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "explode_wall (2)",
+        "component_hook_name": "BoxCollider2D"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "7188967a",
+        "pos": {
+          "x": 62.23516,
+          "y": 38.18899,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_width": "2",
+        "size_height": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "dfea4639",
+        "pos": {
+          "x": 62.24641,
+          "y": 44.9489136,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_width": "2",
+        "size_height": "0.1"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -41.8918953,
+        "y": -15.2026978
+      },
+      "block_id": "2c18c5a8-8fa8-4404-aaf8-9ca4effe3d07",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "de7ea492-5e68-43a8-a6be-e4f8364ac1aa",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "4af11878",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": -41.216217,
+        "y": -162.16217
+      },
+      "block_id": "7565ce86-55ce-4087-83c8-659ad86b40d9",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "de7ea492-5e68-43a8-a6be-e4f8364ac1aa",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "4f07a0d4",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 205.743256,
+        "y": -81.0811
+      },
+      "block_id": "de7ea492-5e68-43a8-a6be-e4f8364ac1aa",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "dd27c83c",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": 223.986542,
+        "y": -359.797333
+      },
+      "block_id": "6c03b8d8-4d2a-40ba-928f-36530e30c48f",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "e1221293-3026-4ccc-b38b-d81e5de2dabe",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "11d22a1b",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 527.7028,
+        "y": -351.013672
+      },
+      "block_id": "e1221293-3026-4ccc-b38b-d81e5de2dabe",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "fe4cf6d2",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": 322.635162,
+        "y": -442.229767
+      },
+      "block_id": "74bbadb1-e4ad-4892-a8f3-8b0e6a72ef8b",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "e1221293-3026-4ccc-b38b-d81e5de2dabe",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7188967a",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 319.594635,
+        "y": -281.081116
+      },
+      "block_id": "7ae9bb60-8d4b-4aca-ab19-88cb3da56941",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "e1221293-3026-4ccc-b38b-d81e5de2dabe",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "dfea4639",
+        "object_type": "trigger_zone"
+      }
+    }
+  ]
+}

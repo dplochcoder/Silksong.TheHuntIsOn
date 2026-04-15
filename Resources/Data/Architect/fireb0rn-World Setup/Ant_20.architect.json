@@ -1,0 +1,63 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "bf3ff7e9",
+        "pos": {
+          "x": 74.16826,
+          "y": 9.504094,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Mapper States"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "60c33f0d",
+        "pos": {
+          "x": 144.1881,
+          "y": 13.9691248,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f2f93359",
+        "pos": {
+          "x": 144.221848,
+          "y": 14.8914433,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Enemy Break Cage (2)/Corpse/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

@@ -1,0 +1,26 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "54a0afa2",
+        "pos": {
+          "x": 21.0337334,
+          "y": 77.76104,
+          "z": 0.0
+        },
+        "flipped": true,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_id": "DocksSpawnBE1",
+        "trans_collide": "1"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

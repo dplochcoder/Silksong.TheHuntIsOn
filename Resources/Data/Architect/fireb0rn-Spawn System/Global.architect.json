@@ -1,0 +1,198 @@
+{
+  "placements": [],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -206.218246,
+        "y": 40.71188
+      },
+      "block_id": "d13bad48-3582-434d-9608-e97ea7078815",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "d0a5ed29-db09-4602-95c8-a87acb3907a8",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 37.0244675,
+        "y": 28.1250076
+      },
+      "block_id": "d0a5ed29-db09-4602-95c8-a87acb3907a8",
+      "events": {
+        "True": [
+          {
+            "Item1": "55b56c6c-da0e-4c43-a6a6-44aa4a1994cc",
+            "Item2": "Trigger"
+          }
+        ]
+      },
+      "vars": {
+        "Check": {
+          "Item1": "3c4cffcd-68f6-4849-84dc-b2599b720045",
+          "Item2": "Value"
+        }
+      },
+      "type": "If",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 36.5625,
+        "y": 242.1875
+      },
+      "block_id": "77fcbedd-9a02-43b1-899b-a4664abfec7f",
+      "events": {},
+      "vars": {},
+      "type": "Constant Bool",
+      "config": {
+        "constant_bool": "True"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 36.875,
+        "y": 150.0
+      },
+      "block_id": "3c4cffcd-68f6-4849-84dc-b2599b720045",
+      "events": {},
+      "vars": {
+        "New Value": {
+          "Item1": "77fcbedd-9a02-43b1-899b-a4664abfec7f",
+          "Item2": "Value"
+        }
+      },
+      "type": "Variable (Bool)",
+      "config": {
+        "var_persistence_bool": "2",
+        "var_id_bool": "UsedTeleporter"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 721.5908,
+        "y": -184.994583
+      },
+      "block_id": "7c9bb6b9-67dc-46fc-87ef-0b53c966e309",
+      "events": {},
+      "vars": {},
+      "type": "Constant Bool",
+      "config": {
+        "constant_bool": "False"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 723.3552,
+        "y": -127.012413
+      },
+      "block_id": "5f0c48bf-b04c-4c05-8bb7-6df75324a9dc",
+      "events": {},
+      "vars": {
+        "New Value": {
+          "Item1": "7c9bb6b9-67dc-46fc-87ef-0b53c966e309",
+          "Item2": "Value"
+        }
+      },
+      "type": "Variable (Bool)",
+      "config": {
+        "var_persistence_bool": "2",
+        "var_id_bool": "UsedTeleporter"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 263.7256,
+        "y": 8.219051
+      },
+      "block_id": "55b56c6c-da0e-4c43-a6a6-44aa4a1994cc",
+      "events": {},
+      "vars": {},
+      "type": "Ordered Events",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":218.192749,\"y\":50.08899},\"block_id\":\"3515f4ee-b659-42a7-b20a-8bcb744081a5\",\"events\":{\"OnTrigger\":[{\"Item1\":\"3e14ab11-f760-4399-8499-75c818951317\",\"Item2\":\"Slow\"},{\"Item1\":\"5fbb7dff-22c1-4b35-bc9c-dcb3cc5500aa\",\"Item2\":\"Spawn\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":467.943359,\"y\":-185.152863},\"block_id\":\"7342ec63-2900-43b1-9532-4e37445bc670\",\"events\":{\"OnTrigger\":[{\"Item1\":\"5f0c48bf-b04c-4c05-8bb7-6df75324a9dc\",\"Item2\":\"Set\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":233.75,\"y\":20.0},\"block_id\":\"90532e6a-3487-445e-90fc-505c378d73c3\",\"events\":{\"OnTrigger\":[{\"Item1\":\"741a34ba-577d-4e92-815a-f197d5374f25\",\"Item2\":\"FadeIn\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":351.875,\"y\":-221.5625},\"block_id\":\"b6543d1c-d07e-452e-b098-7b8d9e74f9fa\",\"events\":{\"OnTrigger\":[{\"Item1\":\"b1b84296-205c-4a75-98e1-093b0621d3f3\",\"Item2\":\"ClearBlur\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 555.0408,
+        "y": -245.839935
+      },
+      "block_id": "741a34ba-577d-4e92-815a-f197d5374f25",
+      "events": {},
+      "vars": {},
+      "type": "UI Control",
+      "config": {
+        "ui_fade_r": "0",
+        "ui_fade_g": "0",
+        "ui_fade_b": "0",
+        "ui_fade_a": "1",
+        "ui_fade_duration": "4"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 718.114746,
+        "y": -30.5544052
+      },
+      "block_id": "3e14ab11-f760-4399-8499-75c818951317",
+      "events": {},
+      "vars": {},
+      "type": "Time Slowdown",
+      "config": {
+        "time_scale": "0.1",
+        "time_change": "0.1",
+        "time_wait": "3",
+        "time_return": "0.75",
+        "time_prevent_pausing": "True"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 548.707336,
+        "y": 14.36478
+      },
+      "block_id": "5fbb7dff-22c1-4b35-bc9c-dcb3cc5500aa",
+      "events": {},
+      "vars": {},
+      "type": "Spawn Prefab",
+      "config": {
+        "prefab_x": "0",
+        "prefab_y": "0",
+        "prefab_name": "Spawn"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 568.75,
+        "y": -485.9375
+      },
+      "block_id": "b1b84296-205c-4a75-98e1-093b0621d3f3",
+      "events": {},
+      "vars": {},
+      "type": "UI Control",
+      "config": {
+        "ui_fade_r": "1",
+        "ui_fade_g": "1",
+        "ui_fade_b": "1",
+        "ui_fade_a": "1",
+        "ui_fade_duration": "10"
+      },
+      "ext": {}
+    }
+  ]
+}

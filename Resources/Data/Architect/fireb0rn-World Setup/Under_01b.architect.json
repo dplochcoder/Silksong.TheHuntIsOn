@@ -1,0 +1,63 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b3eb8a8f",
+        "pos": {
+          "x": 40.9702454,
+          "y": 6.17411232,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Understore Big Plate Gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0db99360",
+        "pos": {
+          "x": 19.2965336,
+          "y": 5.517333,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Understore Toll Bench"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "04968937",
+        "pos": {
+          "x": 29.6667366,
+          "y": 4.72228527,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States Thread Only Variant/Normal World/Understore Toll Bench (1)/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

@@ -1,0 +1,82 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ef03f227",
+        "pos": {
+          "x": 34.659,
+          "y": 16.02507,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Dock Pipe Grate Beam"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5f55510d",
+        "pos": {
+          "x": 24.4234734,
+          "y": 11.0332155,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Dock Pipe Grate Beam"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "43b29efe",
+        "pos": {
+          "x": 44.4333038,
+          "y": 12.0905066,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Dock Pipe Grate Beam"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "4fcc7a31",
+        "pos": {
+          "x": 37.155983,
+          "y": 10.6620369,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

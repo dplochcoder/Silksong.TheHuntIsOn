@@ -1,0 +1,86 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "f0803ef2",
+        "pos": {
+          "x": 14.7704563,
+          "y": 90.04064,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_collide": "False",
+        "trans_id": "Under02-1"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "09ff74e4",
+        "pos": {
+          "x": 10.1346321,
+          "y": 150.34581,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_collide": "False",
+        "trans_id": "Under02-2"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "2106945d",
+        "pos": {
+          "x": 33.3518639,
+          "y": 189.152969,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_collide": "False",
+        "trans_id": "Under02-3"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "28614f7a",
+        "pos": {
+          "x": 30.8755569,
+          "y": 221.845856,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_collide": "False",
+        "trans_id": "Under02-4"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

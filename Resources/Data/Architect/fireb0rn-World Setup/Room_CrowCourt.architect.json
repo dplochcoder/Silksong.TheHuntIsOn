@@ -1,0 +1,78 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "d39ce0de",
+        "pos": {
+          "x": 47.1799622,
+          "y": 13.7613344,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "court_door",
+        "fsm_hook_name": "Door",
+        "fsm_hook_state": "Opened"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "f6d75f64",
+        "pos": {
+          "x": 26.6342659,
+          "y": 19.2929211,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "Battle Scene/Balloon Raiser/Bottom Balloons"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "353d3f88-ce48-4d32-b430-76de19883618",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "d39ce0de",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -320.0,
+        "y": 30.9375
+      },
+      "block_id": "f9695823-9399-4cb2-9479-74808129b9b9",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "353d3f88-ce48-4d32-b430-76de19883618",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

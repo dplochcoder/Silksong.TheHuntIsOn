@@ -1,0 +1,46 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "266996c7",
+        "pos": {
+          "x": 103.537987,
+          "y": 47.4905,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_id": "GreymoorSpawn1-1",
+        "trans_collide": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "e9f24fb5",
+        "pos": {
+          "x": 34.8337746,
+          "y": 38.5064163,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_id": "GreymoorSpawn1-2",
+        "trans_collide": "False"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

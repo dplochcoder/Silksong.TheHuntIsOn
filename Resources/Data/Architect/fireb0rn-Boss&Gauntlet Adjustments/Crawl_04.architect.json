@@ -1,0 +1,57 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "1e63378d",
+        "pos": {
+          "x": 119.861389,
+          "y": 13.2574387,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Roof Crab"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 144.0625,
+        "y": -13.125
+      },
+      "block_id": "cbdc4cbd-79a7-4739-9f7d-df96017c3a3f",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "1e63378d",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -130.0,
+        "y": -3.75
+      },
+      "block_id": "1f73c7d1-b7f1-45b4-aa49-0fd63b80354d",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "cbdc4cbd-79a7-4739-9f7d-df96017c3a3f",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

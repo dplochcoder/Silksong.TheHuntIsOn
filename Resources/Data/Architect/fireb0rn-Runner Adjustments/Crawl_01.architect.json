@@ -1,0 +1,72 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "485097c1",
+        "pos": {
+          "x": 56.72467,
+          "y": 33.16881,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "bone_plat_02"
+      }
+    },
+    {
+      "placement": {
+        "id": "bone_plat_crumble_3",
+        "pid": "9b3fd468",
+        "pos": {
+          "x": 56.3197441,
+          "y": 33.5410347,
+          "z": -0.09
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e5a3bcea",
+        "pos": {
+          "x": 57.2560234,
+          "y": 46.324482,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "bone_plat_01_crumble_small (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "bone_plat_crumble_1",
+        "pid": "fddeba5d",
+        "pos": {
+          "x": 56.45743,
+          "y": 46.43696,
+          "z": -0.09
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

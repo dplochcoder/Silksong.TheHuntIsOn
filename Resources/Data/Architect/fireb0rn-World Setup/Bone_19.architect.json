@@ -1,0 +1,263 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6c7c41da-c0c946ba",
+        "pos": {
+          "x": 120.72934,
+          "y": 19.50357,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall/Masks",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "9925429b-c0c946ba",
+        "pos": {
+          "x": 118.850952,
+          "y": 21.93483,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Breakable Wall",
+        "fsm_hook_name": "breakable_wall_v2",
+        "fsm_hook_state": "Send to Register?"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "4c6b0f02-c0c946ba",
+        "pos": {
+          "x": 122.5065,
+          "y": 21.93309,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "Breakable Wall",
+        "component_hook_name": "BoxCollider2D"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "a43b9218-c0c946ba",
+        "pos": {
+          "x": 117.435814,
+          "y": 18.5980911,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "3",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "64f83fd3",
+        "pos": {
+          "x": 122.740486,
+          "y": 16.8807487,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall/Camera Locks",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "7d52f17d-c0c946ba",
+        "pos": {
+          "x": 115.17588,
+          "y": 17.83752,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "3",
+        "size_width": "0.1"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "3a151c3d-d64d-40a0-a577-70f4e765ec09",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "dfd90184-409c-4b16-b65a-b8c16563dd5d",
+            "Item2": "fsm_set_state"
+          },
+          {
+            "Item1": "70324b81-d64e-4e09-bce9-892b111486fc",
+            "Item2": "component_hook_apply"
+          },
+          {
+            "Item1": "b71ed677-c3c0-4794-a166-e5cff373fa84",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 227.702713,
+        "y": 56.75676
+      },
+      "block_id": "dfd90184-409c-4b16-b65a-b8c16563dd5d",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "9925429b-c0c946ba",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 228.040558,
+        "y": 19.2567444
+      },
+      "block_id": "70324b81-d64e-4e09-bce9-892b111486fc",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "4c6b0f02-c0c946ba",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": 527.702942,
+        "y": -191.891922
+      },
+      "block_id": "b71ed677-c3c0-4794-a166-e5cff373fa84",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "6c7c41da-c0c946ba",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": 249.662216,
+        "y": -362.162262
+      },
+      "block_id": "acccbab8-0194-4e2d-b71a-d298b09f9dd0",
+      "events": {
+        "ZoneExit": [],
+        "ZoneEnter": [
+          {
+            "Item1": "b71ed677-c3c0-4794-a166-e5cff373fa84",
+            "Item2": "disable"
+          },
+          {
+            "Item1": "71cddc77-840f-410f-b732-efea8298368c",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "a43b9218-c0c946ba",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 253.040558,
+        "y": -181.081116
+      },
+      "block_id": "1451734c-b885-411e-8dfe-5052d14311f6",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "b71ed677-c3c0-4794-a166-e5cff373fa84",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "71cddc77-840f-410f-b732-efea8298368c",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7d52f17d-c0c946ba",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 528.0406,
+        "y": -314.18924
+      },
+      "block_id": "71cddc77-840f-410f-b732-efea8298368c",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "64f83fd3",
+        "object_type": "object_remover"
+      }
+    }
+  ]
+}

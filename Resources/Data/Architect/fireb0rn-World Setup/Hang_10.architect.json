@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "eaadb663",
+        "pos": {
+          "x": 3.8150053,
+          "y": 6.889392,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "edf776e1",
+        "pos": {
+          "x": 72.49127,
+          "y": 16.08408,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

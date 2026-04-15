@@ -1,0 +1,78 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "afeaecfc",
+        "pos": {
+          "x": 88.41009,
+          "y": 8.844355,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Library Sliding Plat (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "b9f0ddb1",
+        "pos": {
+          "x": 76.909,
+          "y": 37.7079849,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "GameObject/Battle Scene Control",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "None"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "97fc02ac-89d7-4a70-bb11-66f885929469",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "b9f0ddb1",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -338.4375,
+        "y": 37.5
+      },
+      "block_id": "74f308bf-b32b-46c7-adf0-d77f8948ab09",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "97fc02ac-89d7-4a70-bb11-66f885929469",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

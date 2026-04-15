@@ -1,0 +1,63 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7e9e5b86",
+        "pos": {
+          "x": 74.47696,
+          "y": 68.517334,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "one way break from moss"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "22efa6fd",
+        "pos": {
+          "x": 63.4642563,
+          "y": 65.68783,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a2cef375",
+        "pos": {
+          "x": 11.160553,
+          "y": 8.79615,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Geo Rock 2"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

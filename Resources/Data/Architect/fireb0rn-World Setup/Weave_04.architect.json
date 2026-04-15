@@ -1,0 +1,160 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "c4535640",
+        "pos": {
+          "x": 5.821274,
+          "y": 97.26121,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "top set/Song_Gate_set (2)",
+        "component_hook_name": "PlayMakerFSM"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7d1955e4",
+        "pos": {
+          "x": 11.5855942,
+          "y": 97.5875,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "top set/Song_Gate_set (2)/Mask Half Front"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ee0fc0b5",
+        "pos": {
+          "x": 10.8094969,
+          "y": 96.9126358,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "top set/Song_Gate_set (2)/Leave Range"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "3cca9580",
+        "pos": {
+          "x": 12.6428852,
+          "y": 97.5312653,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "top set/Song_Gate_set (2)/Pt Slam"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "70e7524f",
+        "pos": {
+          "x": 13.7114248,
+          "y": 97.655,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "top set/Song_Gate_set (2)/Mask Half Back"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "3cddc410",
+        "pos": {
+          "x": 11.4731169,
+          "y": 96.44024,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "top set/Song_Gate_set (2)/Pt Crack"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "bec18e31",
+        "pos": {
+          "x": 12.5304079,
+          "y": 96.53022,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "top set/Song_Gate_set (2)/solid"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ee992e71",
+        "pos": {
+          "x": 14.0713549,
+          "y": 96.47397,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "top set/Song_Gate_set (2)/Terrain Block"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

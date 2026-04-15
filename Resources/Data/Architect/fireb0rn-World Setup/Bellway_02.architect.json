@@ -1,0 +1,189 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "76a2e693",
+        "pos": {
+          "x": 64.4546,
+          "y": 17.0218716,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "f1abd391",
+        "pos": {
+          "x": 81.85451,
+          "y": 23.2019424,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "1",
+        "trans_id": "DocksStag",
+        "trans_collide": "1",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "e1933555",
+        "pos": {
+          "x": 79.1909943,
+          "y": 19.3995514,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "start_active": "False",
+        "fsm_hook_state": "Appear Delay",
+        "fsm_hook_name": "Interaction",
+        "fsm_hook_target": "Bone Beast NPC"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "07ac1ddf",
+        "pos": {
+          "x": 82.99653,
+          "y": 19.5249176,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "start_active": "False",
+        "fsm_hook_state": "Start Shake",
+        "fsm_hook_name": "Interaction",
+        "fsm_hook_target": "Bone Beast NPC"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 52.5,
+        "y": -60.0
+      },
+      "block_id": "158f0226-7e0a-4c44-83ff-54d9e12c3a2c",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "5bbc2629-e318-4e04-beb7-c8f818b4a578",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "e1933555",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 300.3125,
+        "y": -64.0625
+      },
+      "block_id": "5bbc2629-e318-4e04-beb7-c8f818b4a578",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "07ac1ddf",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -97.8125,
+        "y": 78.125
+      },
+      "block_id": "38c427fd-e39a-4e20-bf5f-21c08fd4b21a",
+      "events": {
+        "Out": [
+          {
+            "Item1": "158f0226-7e0a-4c44-83ff-54d9e12c3a2c",
+            "Item2": "fsm_remove_transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -193.4375,
+        "y": -69.0625
+      },
+      "block_id": "3753e196-66f9-43e8-8370-1436602356f4",
+      "events": {
+        "Out": [
+          {
+            "Item1": "158f0226-7e0a-4c44-83ff-54d9e12c3a2c",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "5bbc2629-e318-4e04-beb7-c8f818b4a578",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "38c427fd-e39a-4e20-bf5f-21c08fd4b21a",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -387.5,
+        "y": -42.1875
+      },
+      "block_id": "b567189d-f53d-42ae-8a1c-6e2089365f7b",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "3753e196-66f9-43e8-8370-1436602356f4",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

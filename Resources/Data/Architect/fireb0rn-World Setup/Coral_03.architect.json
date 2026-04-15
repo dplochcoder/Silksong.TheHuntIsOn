@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5d87b372",
+        "pos": {
+          "x": 21.61572,
+          "y": 124.792519,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8133bd25",
+        "pos": {
+          "x": 39.3042068,
+          "y": 8.77300549,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

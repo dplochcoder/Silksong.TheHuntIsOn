@@ -1,0 +1,120 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b0130c76",
+        "pos": {
+          "x": 6.96275425,
+          "y": 81.56674,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song Knight Gate Backside"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "08d3e8e4",
+        "pos": {
+          "x": 40.91419,
+          "y": 33.9035263,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bridge Group/Innerworks Trap Bridge Large Long/lever_left/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7ab93a5c",
+        "pos": {
+          "x": 89.0050049,
+          "y": 33.7348137,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bridge Group/Innerworks Trap Bridge Large Long/lever_right"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ba9110cd",
+        "pos": {
+          "x": 41.4371147,
+          "y": 32.6020927,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bridge Group/Innerworks Trap Bridge Large Long/Left/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b6aabf65",
+        "pos": {
+          "x": 88.58107,
+          "y": 32.5458565,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bridge Group/Innerworks Trap Bridge Large Long/Right/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "3318be74",
+        "pos": {
+          "x": 17.98594,
+          "y": 60.43775,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "One Way Wall"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

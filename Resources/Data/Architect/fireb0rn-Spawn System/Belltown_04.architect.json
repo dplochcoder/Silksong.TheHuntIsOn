@@ -1,0 +1,46 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "308fbfbd",
+        "pos": {
+          "x": 75.2375,
+          "y": 51.46209,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_id": "ShellwoodSpawnBT4-2",
+        "trans_collide": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "d3c09dd5",
+        "pos": {
+          "x": 17.8101463,
+          "y": 90.82579,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_id": "ShellwoodSpawnBT4-1",
+        "trans_collide": "False"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

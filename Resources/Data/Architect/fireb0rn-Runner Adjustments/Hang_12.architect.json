@@ -1,0 +1,100 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "798e9ced",
+        "pos": {
+          "x": 31.3224888,
+          "y": 8.686291,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Black Thread States/Normal World/Last Conductor NPC",
+        "fsm_hook_name": "Dialogue",
+        "fsm_hook_state": "Has Item?"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "3024c421",
+        "pos": {
+          "x": 34.5955963,
+          "y": 8.821265,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Black Thread States/Normal World/Last Conductor NPC",
+        "fsm_hook_name": "Dialogue",
+        "fsm_hook_state": "Run Melody Play Prompted"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -116.743,
+        "y": -80.92941
+      },
+      "block_id": "676bb93b-7cc1-4266-b834-e7883246db0e",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "755c852c-6daf-47fe-95a2-d8e9ed10f501",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "798e9ced",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 205.579315,
+        "y": -62.32495
+      },
+      "block_id": "755c852c-6daf-47fe-95a2-d8e9ed10f501",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "3024c421",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -377.6706,
+        "y": -40.4647064
+      },
+      "block_id": "c43d132a-0ed8-4df4-891c-dd06a0a08059",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "676bb93b-7cc1-4266-b834-e7883246db0e",
+            "Item2": "fsm_remove_transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

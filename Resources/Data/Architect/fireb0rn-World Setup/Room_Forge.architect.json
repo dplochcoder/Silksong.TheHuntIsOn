@@ -1,0 +1,82 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "fe9383c2",
+        "pos": {
+          "x": 133.532135,
+          "y": 16.6054268,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "dock_sealed_gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "84ed8220",
+        "pos": {
+          "x": 48.5240326,
+          "y": 35.3801155,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_Gate_small"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c822dbdd",
+        "pos": {
+          "x": 118.756592,
+          "y": 34.24408,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "_NPCs"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ccc3dfd7",
+        "pos": {
+          "x": 51.0198479,
+          "y": 33.0016136,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

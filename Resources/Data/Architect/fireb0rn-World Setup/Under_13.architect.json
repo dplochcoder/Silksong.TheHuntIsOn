@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "56e02807",
+        "pos": {
+          "x": 15.3311081,
+          "y": 82.97858,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "Innerworks Trap Bridge Large/lever_left/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

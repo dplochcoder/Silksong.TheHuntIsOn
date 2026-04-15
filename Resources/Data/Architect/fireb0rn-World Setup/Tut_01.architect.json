@@ -1,0 +1,450 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "20d4dfa0",
+        "pos": {
+          "x": 12.3308773,
+          "y": 100.978188,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Moss Vine Cluster (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "7d52f17d-c8c29943",
+        "pos": {
+          "x": 38.73226,
+          "y": 66.3717651,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "2",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "a43b9218-c8c29943",
+        "pos": {
+          "x": 41.1298752,
+          "y": 66.5180054,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "2",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "4c6b0f02-c8c29943",
+        "pos": {
+          "x": 48.4840851,
+          "y": 70.8034058,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "Moss Vine Cluster (3)",
+        "component_hook_name": "BoxCollider2D"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6c7c41da-c8c29943",
+        "pos": {
+          "x": 46.70694,
+          "y": 68.3738861,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Moss Vine Cluster (3)/Mask",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "317a8c9a",
+        "pos": {
+          "x": 45.019268,
+          "y": 67.43385,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Moss Vine Cluster (3)/Thick"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2d889937",
+        "pos": {
+          "x": 47.50503,
+          "y": 68.2999344,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Moss Vine Cluster (3)/Standard"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a5c6a045",
+        "pos": {
+          "x": 48.3148727,
+          "y": 68.28868,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Moss Vine Cluster (3)/Standard 2"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "09f416ff",
+        "pos": {
+          "x": 49.0347328,
+          "y": 68.13122,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Moss Vine Cluster (3)/Twirl"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "def87667",
+        "pos": {
+          "x": 49.79958,
+          "y": 68.09748,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Moss Vine Cluster (3)/Extra Vines"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f2dc00e3",
+        "pos": {
+          "x": 44.6072464,
+          "y": 21.51892,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup"
+      }
+    },
+    {
+      "placement": {
+        "id": "weaver_gate",
+        "pid": "74751d65",
+        "pos": {
+          "x": 99.24118,
+          "y": 19.2156887,
+          "z": 3.7316
+        },
+        "flipped": true,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "needolin_gate_strings": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c9ff9438",
+        "pos": {
+          "x": 78.5217361,
+          "y": 9.23642,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Shell Shard Fossil Large Uni"
+      }
+    },
+    {
+      "placement": {
+        "id": "coloured_triangle",
+        "pid": "4b543489",
+        "pos": {
+          "x": 60.246788,
+          "y": 8.153917,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 171.634,
+        "scale": 1.0
+      },
+      "config": {
+        "colour_red": "1",
+        "colour_green": "1",
+        "colour_blue": "1",
+        "colour_alpha": "1",
+        "obj_layer": "0",
+        "obj_z": "0",
+        "size_width": "0.3",
+        "size_height": "0.3"
+      }
+    },
+    {
+      "placement": {
+        "id": "coloured_square",
+        "pid": "1625d776",
+        "pos": {
+          "x": 59.2606354,
+          "y": 7.91649961,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 20.59351,
+        "scale": 1.0
+      },
+      "config": {
+        "colour_red": "1",
+        "colour_green": "1",
+        "colour_blue": "1",
+        "colour_alpha": "1",
+        "obj_layer": "0",
+        "obj_z": "0",
+        "size_height": "0.1",
+        "size_width": "0.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "48a756ad",
+        "pos": {
+          "x": 5.0393877,
+          "y": 12.529686,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Moss Vine Cluster"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -113.513519,
+        "y": -69.93245
+      },
+      "block_id": "2525f56b-5e43-4122-83f1-c59a8a32ac9c",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "4c6b0f02-c8c29943",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": 80.74325,
+        "y": 15.5405273
+      },
+      "block_id": "e9fba6dd-ee07-410a-8c16-092dae9ee07a",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "90b33a88-841c-420f-b3e6-12e24d00caa8",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7d52f17d-c8c29943",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 171.540131,
+        "y": -114.934776
+      },
+      "block_id": "f16cbbb0-060c-437b-8728-838e7af96bc2",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "90b33a88-841c-420f-b3e6-12e24d00caa8",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "a43b9218-c8c29943",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 364.527039,
+        "y": -28.7162552
+      },
+      "block_id": "90b33a88-841c-420f-b3e6-12e24d00caa8",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "6c7c41da-c8c29943",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": -390.202759,
+        "y": -33.10811
+      },
+      "block_id": "f8ebd936-51ed-47d4-beb5-28373671601d",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "2525f56b-5e43-4122-83f1-c59a8a32ac9c",
+            "Item2": "component_hook_apply"
+          },
+          {
+            "Item1": "90b33a88-841c-420f-b3e6-12e24d00caa8",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -403.988953,
+        "y": -376.1748
+      },
+      "block_id": "6304b3fa-10a6-4f28-a7a8-1c7b7151142b",
+      "events": {
+        "OnStart": []
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -68.77022,
+        "y": -232.953613
+      },
+      "block_id": "4d32e88e-5b96-48e4-8ce0-e169782182d6",
+      "events": {},
+      "vars": {},
+      "type": "Persistent Data",
+      "config": {
+        "ped_bool_scene": "Tut_01",
+        "ped_bool_type": "Moss Vine Cluster",
+        "ped_bool": "True"
+      },
+      "ext": {}
+    }
+  ]
+}

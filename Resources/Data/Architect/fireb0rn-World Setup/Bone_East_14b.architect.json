@@ -1,0 +1,120 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "84978e59",
+        "pos": {
+          "x": 190.392166,
+          "y": 16.3419437,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "DropBomb Rock (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d42abfab",
+        "pos": {
+          "x": 250.175751,
+          "y": 14.3412228,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "DropBomb Rock"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "3c61f5b3",
+        "pos": {
+          "x": 300.5665,
+          "y": 11.5628281,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_Gate_set/Terrain Block"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "51791e7b",
+        "pos": {
+          "x": 299.318,
+          "y": 11.0004377,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_Gate_set/Mask Half Back/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "016039f0",
+        "pos": {
+          "x": 300.364044,
+          "y": 10.6967478,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_Gate_set/Mask Half Front/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "92adb7d9",
+        "pos": {
+          "x": 299.511383,
+          "y": 11.8440228,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_Gate_set/Leave Range"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

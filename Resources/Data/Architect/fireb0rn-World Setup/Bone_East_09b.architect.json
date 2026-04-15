@@ -1,0 +1,120 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5186979a",
+        "pos": {
+          "x": 34.09626,
+          "y": 100.685127,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1aa9ea82",
+        "pos": {
+          "x": 86.13507,
+          "y": 145.653915,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Wind Rock (4)"
+      }
+    },
+    {
+      "placement": {
+        "id": "updraft_region",
+        "pid": "614a3237",
+        "pos": {
+          "x": 83.46935,
+          "y": 148.0497,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "updraft_width": "1.5",
+        "updraft_height": "12"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a5cfcbd8",
+        "pos": {
+          "x": 19.7807713,
+          "y": 131.603516,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Wind Rock (6)"
+      }
+    },
+    {
+      "placement": {
+        "id": "fung_plat_float_02",
+        "pid": "3e30713a",
+        "pos": {
+          "x": 16.980072,
+          "y": 128.532883,
+          "z": -0.09
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "updraft_region",
+        "pid": "638f3da4",
+        "pos": {
+          "x": 17.4974747,
+          "y": 128.948,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "updraft_width": "1.5",
+        "updraft_height": "40"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

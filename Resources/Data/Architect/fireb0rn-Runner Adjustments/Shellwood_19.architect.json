@@ -1,0 +1,181 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "8f7adf6a",
+        "pos": {
+          "x": 57.9783554,
+          "y": 7.442341,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "0",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "b9bb84f1",
+        "pos": {
+          "x": 54.64097,
+          "y": 11.426693,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "1",
+        "component_hook_target": "Bellway Toll Machine",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "666375c0",
+        "pos": {
+          "x": 57.9221268,
+          "y": 11.3791084,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "2",
+        "component_hook_target": "Bellway Toll Machine",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "aa5ec73f",
+        "pos": {
+          "x": 63.48977,
+          "y": 8.859638,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Bellway Toll Machine",
+        "fsm_hook_state": "Return Control",
+        "fsm_hook_name": "Unlock Behaviour"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 9.134613,
+        "y": 138.461533
+      },
+      "block_id": "071eaae9-1ed3-40e2-b667-e782a00e9f50",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "b9bb84f1",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": 2.88461447,
+        "y": -14.4230614
+      },
+      "block_id": "f9a19093-c852-446c-90f1-dcd2f66ab437",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "666375c0",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": -303.3653,
+        "y": -77.8846
+      },
+      "block_id": "9aa4b4fd-dc00-4b70-b06d-9c85e329c8ee",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "f9a19093-c852-446c-90f1-dcd2f66ab437",
+            "Item2": "component_hook_apply"
+          },
+          {
+            "Item1": "756837d8-d8fb-4285-9ea5-e054d494a59c",
+            "Item2": "fsm_set_state"
+          },
+          {
+            "Item1": "9aa4b4fd-dc00-4b70-b06d-9c85e329c8ee",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "8f7adf6a",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": -4.326922,
+        "y": -201.44223
+      },
+      "block_id": "756837d8-d8fb-4285-9ea5-e054d494a59c",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "aa5ec73f",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -333.725861,
+        "y": 102.355759
+      },
+      "block_id": "5498798c-0348-4855-a71f-e03e7ad56df9",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "071eaae9-1ed3-40e2-b667-e782a00e9f50",
+            "Item2": "component_hook_apply"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

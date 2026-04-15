@@ -1,0 +1,162 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "24025ea7",
+        "pos": {
+          "x": 113.750969,
+          "y": 8.050297,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe Vent Hatch Split (1)/Pipe_Vent_Hatch/Platform/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d6f4f69f",
+        "pos": {
+          "x": 114.65815,
+          "y": 8.727416,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe Vent Hatch Split (1)/Pipe_Vent_Hatch (1)/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d1d2d65c",
+        "pos": {
+          "x": 76.47978,
+          "y": 26.9121971,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Architect Scene/Chair/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5decaf04",
+        "pos": {
+          "x": 30.5001335,
+          "y": 36.788578,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Architect Shrine Door/Prompt Marker"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "eda36eb0",
+        "pos": {
+          "x": 31.8306656,
+          "y": 37.2132149,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Architect Shrine Door"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "0c14ee03",
+        "pos": {
+          "x": 26.3552818,
+          "y": 37.86508,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "0",
+        "trans_collide": "1",
+        "trans_edit_mode_active": "True",
+        "trans_other_id": "architectDoor",
+        "trans_other_scene": "Under_20",
+        "size_height": "2.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "157ba668",
+        "pos": {
+          "x": 12.2842846,
+          "y": 5.892975,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "understore propeller/Updraft Region/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "950c039e",
+        "pos": {
+          "x": 12.2505407,
+          "y": 4.91441727,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "understore propeller/lever/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

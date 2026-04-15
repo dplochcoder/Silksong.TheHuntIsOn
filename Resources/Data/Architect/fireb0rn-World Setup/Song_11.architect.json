@@ -1,0 +1,253 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "58bb4ef3",
+        "pos": {
+          "x": 55.7029724,
+          "y": 181.859543,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Plug_Gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "2fbbf1df",
+        "pos": {
+          "x": 12.764123,
+          "y": 126.862305,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "shortcut_states/open/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "decd1a25",
+        "pos": {
+          "x": 26.9865627,
+          "y": 125.142479,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "33cfc59f",
+        "pos": {
+          "x": 27.009058,
+          "y": 123.938965,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "16ff160b",
+        "pos": {
+          "x": 28.3713551,
+          "y": 63.67312,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d90bf7a8",
+        "pos": {
+          "x": 22.1400928,
+          "y": 64.7529,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "song_trap_door/Door/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7e5f5795",
+        "pos": {
+          "x": 9.363052,
+          "y": 39.4301643,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_10_hidden_gate/closed/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "7ee8c2ec",
+        "pos": {
+          "x": 9.484039,
+          "y": 40.4153328,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "Song_10_hidden_gate/open"
+      }
+    },
+    {
+      "placement": {
+        "id": "citadel_plat_3",
+        "pid": "6b54ffd2",
+        "pos": {
+          "x": 25.6602268,
+          "y": 59.66019,
+          "z": -0.11
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 90.0,
+        "scale": 1.0
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7f4ce5fd",
+        "pos": {
+          "x": 23.757843,
+          "y": 63.61085,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "song_trap_door"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a9cc8cb1",
+        "pos": {
+          "x": 47.7271156,
+          "y": 164.202,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Flea Rescue Sleeping"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "bd52d0f7",
+        "pos": {
+          "x": 44.8929024,
+          "y": 88.53775,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "propeller understore propeller/Updraft Region/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5364b9c0",
+        "pos": {
+          "x": 45.1525459,
+          "y": 87.4778,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "propeller understore propeller/lever/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

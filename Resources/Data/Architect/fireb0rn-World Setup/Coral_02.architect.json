@@ -1,0 +1,103 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f64ab800",
+        "pos": {
+          "x": 202.7515,
+          "y": 47.24208,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9fb54b81",
+        "pos": {
+          "x": 196.063187,
+          "y": 5.9173317,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "bell_bench/bell_toll_machine/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "039e4db3",
+        "pos": {
+          "x": 144.097244,
+          "y": 34.82594,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2bbbc1d0",
+        "pos": {
+          "x": 195.367676,
+          "y": 6.18049526,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "bell_bench/frame/"
+      }
+    },
+    {
+      "placement": {
+        "id": "bell_bench",
+        "pid": "254a4d65",
+        "pos": {
+          "x": 195.918747,
+          "y": 5.37064266,
+          "z": 0.009
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "bench_spawn": "True",
+        "bench_offset_x": "0",
+        "bench_offset_y": "0",
+        "bench_offset_z": "0"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

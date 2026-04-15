@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0f2df6d2",
+        "pos": {
+          "x": 124.430748,
+          "y": 13.971035,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Rhino Scene/Gate Smashing/Song_Gate_small"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "bed9368b",
+        "pos": {
+          "x": 34.63106,
+          "y": 6.8827796,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States Thread Only Variant/Normal World/Group/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

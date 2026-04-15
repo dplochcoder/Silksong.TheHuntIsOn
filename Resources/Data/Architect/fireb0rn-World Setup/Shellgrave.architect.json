@@ -1,0 +1,57 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "952c4bf0",
+        "pos": {
+          "x": 64.85828,
+          "y": 14.9545441,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Event Control/Rosary Pilgrim Scene/Rosary Pilgrim/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "52391cb5-7d67-44f8-9cab-96278dd76191",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "952c4bf0",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -313.125,
+        "y": 20.0
+      },
+      "block_id": "b084ebdc-7966-4376-a59e-dc45b0f4332f",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "52391cb5-7d67-44f8-9cab-96278dd76191",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

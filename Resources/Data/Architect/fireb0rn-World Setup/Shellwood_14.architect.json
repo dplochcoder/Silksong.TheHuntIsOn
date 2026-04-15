@@ -1,0 +1,101 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2c2d0d7d",
+        "pos": {
+          "x": 44.61541,
+          "y": 12.4950142,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Shellwood Twig Wall (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ac775f3f",
+        "pos": {
+          "x": 123.241531,
+          "y": 12.9789677,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Shellwood Twig Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "79671f45",
+        "pos": {
+          "x": 127.337761,
+          "y": 12.51231,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Heart Piece"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "98e47814",
+        "pos": {
+          "x": 58.0972,
+          "y": 12.6785192,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "Ambush Scene/Enemies Up/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "cd31e654",
+        "pos": {
+          "x": 59.1514969,
+          "y": 12.7246017,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "Ambush Scene/Enemies Down"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

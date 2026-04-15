@@ -1,0 +1,1241 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "47d63d4d",
+        "pos": {
+          "x": 61.5142822,
+          "y": 27.33089,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "vault_gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1ff320b4",
+        "pos": {
+          "x": 64.69139,
+          "y": 28.9467487,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "vault_gate (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "813b1a08",
+        "pos": {
+          "x": 74.436,
+          "y": 29.076273,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a07ac0da",
+        "pos": {
+          "x": 75.6977,
+          "y": 26.8985367,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch (1)/Lever Cog/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "177dcc1e",
+        "pos": {
+          "x": 76.19893,
+          "y": 26.0343533,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch/Lever Cog/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9562146c",
+        "pos": {
+          "x": 52.67929,
+          "y": 32.3855438,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b14bf8be",
+        "pos": {
+          "x": 74.80039,
+          "y": 7.16222572,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2b778dd5",
+        "pos": {
+          "x": 74.7241058,
+          "y": 9.544427,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "77db7cc3",
+        "pos": {
+          "x": 54.9736938,
+          "y": 13.4823551,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c160254f",
+        "pos": {
+          "x": 54.9736938,
+          "y": 13.4812965,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "be0ec016",
+        "pos": {
+          "x": 55.0601273,
+          "y": 19.35772,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "06f62e21",
+        "pos": {
+          "x": 54.9909935,
+          "y": 19.3231525,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "29e6b66a",
+        "pos": {
+          "x": 62.094574,
+          "y": 17.1799774,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "dec064e0",
+        "pos": {
+          "x": 54.14409,
+          "y": 15.1750765,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e45a26ac",
+        "pos": {
+          "x": 54.23051,
+          "y": 15.2614937,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "393b5b95",
+        "pos": {
+          "x": 61.80075,
+          "y": 11.6492109,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "042c1e6c",
+        "pos": {
+          "x": 54.90457,
+          "y": 13.1356049,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "708cbb8d",
+        "pos": {
+          "x": 54.95642,
+          "y": 13.0491867,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "739351c0",
+        "pos": {
+          "x": 54.23051,
+          "y": 14.7429829,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "4028fae8",
+        "pos": {
+          "x": 54.23051,
+          "y": 14.7429829,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2041dd9f",
+        "pos": {
+          "x": 61.80075,
+          "y": 7.120895,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "aafb094b",
+        "pos": {
+          "x": 54.1959457,
+          "y": 10.04183,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f1cb20f1",
+        "pos": {
+          "x": 54.1959457,
+          "y": 10.04183,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "12fba459",
+        "pos": {
+          "x": 54.7144547,
+          "y": 9.194935,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5587b442",
+        "pos": {
+          "x": 54.6107521,
+          "y": 9.298635,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "3e869322",
+        "pos": {
+          "x": 54.5761833,
+          "y": 9.350487,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "3a17b494",
+        "pos": {
+          "x": 61.7143326,
+          "y": 8.071498,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "99da28d6",
+        "pos": {
+          "x": 54.1786575,
+          "y": 13.2911568,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9700af69",
+        "pos": {
+          "x": 54.1786575,
+          "y": 13.2565918,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b5405129",
+        "pos": {
+          "x": 54.50705,
+          "y": 12.5998106,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2b4e2769",
+        "pos": {
+          "x": 54.50705,
+          "y": 12.5998106,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "49018631",
+        "pos": {
+          "x": 54.14409,
+          "y": 13.1874542,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2fe0fb9b",
+        "pos": {
+          "x": 54.14409,
+          "y": 13.20474,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "55de1775",
+        "pos": {
+          "x": 54.2996445,
+          "y": 13.7578163,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a65343e9",
+        "pos": {
+          "x": 54.2477951,
+          "y": 13.7405329,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a74391e4",
+        "pos": {
+          "x": 54.161377,
+          "y": 14.3108912,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "068ca85c",
+        "pos": {
+          "x": 54.14409,
+          "y": 14.3973122,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "04fdf0aa",
+        "pos": {
+          "x": 62.0254364,
+          "y": 9.17765,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c5bffb50",
+        "pos": {
+          "x": 59.1736336,
+          "y": 11.7356291,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "21e8b714",
+        "pos": {
+          "x": 51.20587,
+          "y": 9.609737,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c1a5859c",
+        "pos": {
+          "x": 60.642746,
+          "y": 22.14038,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "4f1535c0",
+        "pos": {
+          "x": 62.1809845,
+          "y": 8.676422,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6eb3bd74",
+        "pos": {
+          "x": 61.645195,
+          "y": 9.21221352,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "496da58b",
+        "pos": {
+          "x": 54.1786575,
+          "y": 9.93812752,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0f9851d7",
+        "pos": {
+          "x": 54.10952,
+          "y": 9.955412,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "99b1f53a",
+        "pos": {
+          "x": 54.05767,
+          "y": 10.5949059,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "786f7ccf",
+        "pos": {
+          "x": 54.12681,
+          "y": 10.6121893,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "17d95f62",
+        "pos": {
+          "x": 54.10952,
+          "y": 11.1306992,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a665196f",
+        "pos": {
+          "x": 54.10952,
+          "y": 11.18255,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "98862fe9",
+        "pos": {
+          "x": 55.8033257,
+          "y": 19.5478344,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "19d8b2b1",
+        "pos": {
+          "x": 55.8033257,
+          "y": 19.5478344,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d8ed424d",
+        "pos": {
+          "x": 55.8033257,
+          "y": 19.5478344,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "995977c1",
+        "pos": {
+          "x": 27.6800842,
+          "y": 41.82944,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "79a59fdd",
+        "pos": {
+          "x": 28.2331734,
+          "y": 41.91586,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d4edead7",
+        "pos": {
+          "x": 56.3709526,
+          "y": 38.5628281,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "33ce02e6",
+        "pos": {
+          "x": 55.7314529,
+          "y": 37.594944,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1ee80ed6",
+        "pos": {
+          "x": 40.0839844,
+          "y": 18.1954842,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Roof Collider_Basic"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "32198232",
+        "pos": {
+          "x": 53.3049965,
+          "y": 26.2504845,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Roof Collider_Basic"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c22e3156",
+        "pos": {
+          "x": 44.1271744,
+          "y": 28.36013,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Roof Collider_Basic"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b938f852",
+        "pos": {
+          "x": 39.65071,
+          "y": 18.8368473,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "rosary_cannon"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d4d8542d",
+        "pos": {
+          "x": 90.51848,
+          "y": 36.54556,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Handmaiden Scene/break_thread_core/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "3db67987",
+        "pos": {
+          "x": 90.50735,
+          "y": 36.5343056,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Handmaiden Scene/break_thread_core/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e9b56948",
+        "pos": {
+          "x": 91.49717,
+          "y": 36.5343,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Handmaiden Scene/break_thread_core/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "73499646",
+        "pos": {
+          "x": 86.44693,
+          "y": 37.2878876,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Handmaiden Scene/break_thread_core/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ff819f42",
+        "pos": {
+          "x": 83.6854858,
+          "y": 32.25071,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Thief Scene Control"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

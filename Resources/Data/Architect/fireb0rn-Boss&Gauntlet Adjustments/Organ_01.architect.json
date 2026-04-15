@@ -1,0 +1,324 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "cbee9901",
+        "pos": {
+          "x": 98.43607,
+          "y": 105.374466,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene/Gates"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "7d61a217",
+        "pos": {
+          "x": 77.54895,
+          "y": 108.197662,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Boss Scene/Phantom"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "3575451d",
+        "pos": {
+          "x": 87.10617,
+          "y": 108.688385,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Phantom",
+        "fsm_hook_state": "Final Phase?",
+        "fsm_hook_name": "Control"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "439d916c",
+        "pos": {
+          "x": 83.23598,
+          "y": 108.687241,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Phantom",
+        "fsm_hook_state": "Start Pause",
+        "fsm_hook_name": "Control"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "cbee9901",
+        "pos": {
+          "x": 98.43607,
+          "y": 105.374466,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene/Gates"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "7d61a217",
+        "pos": {
+          "x": 77.54895,
+          "y": 108.197662,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Boss Scene/Phantom"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "3575451d",
+        "pos": {
+          "x": 87.10617,
+          "y": 108.688385,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Phantom",
+        "fsm_hook_state": "Final Phase?",
+        "fsm_hook_name": "Control"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "439d916c",
+        "pos": {
+          "x": 83.23598,
+          "y": 108.687241,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Phantom",
+        "fsm_hook_state": "Start Pause",
+        "fsm_hook_name": "Control"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 224.4195,
+        "y": -386.5001
+      },
+      "block_id": "ca43be95-cf31-4763-be49-38f580defbb0",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7d61a217",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 307.661377,
+        "y": -15.32259
+      },
+      "block_id": "106cc88c-87ca-4b66-bbc1-08a223f5cadc",
+      "events": {
+        "OnTarget": []
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "3575451d",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 39.11291,
+        "y": -11.6935558
+      },
+      "block_id": "8805d2ac-5b99-407e-b51b-dc821345bfb7",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "106cc88c-87ca-4b66-bbc1-08a223f5cadc",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "439d916c",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 224.125061,
+        "y": -201.500046
+      },
+      "block_id": "f3178428-71cf-483b-b56f-38f05df1838b",
+      "events": {},
+      "vars": {
+        "Target": {
+          "Item1": "ca43be95-cf31-4763-be49-38f580defbb0",
+          "Item2": "hp_hook_target"
+        }
+      },
+      "type": "Enemy Control",
+      "config": {
+        "enemy_damage_type": "1",
+        "enemy_hp_amount": "600"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -189.437546,
+        "y": -258.312561
+      },
+      "block_id": "a03584f6-1fda-4d22-8cfb-29cc592d4ca6",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "ff815c7d-193f-41a5-a638-f5127e914fce",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 38.1875076,
+        "y": -248.875061
+      },
+      "block_id": "ff815c7d-193f-41a5-a638-f5127e914fce",
+      "events": {
+        "Out": [
+          {
+            "Item1": "f3178428-71cf-483b-b56f-38f05df1838b",
+            "Item2": "Damage"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 239.91951,
+        "y": -225.000046
+      },
+      "block_id": "ca43be95-cf31-4763-be49-38f580defbb0",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7d61a217",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 242.161392,
+        "y": 9.677406
+      },
+      "block_id": "106cc88c-87ca-4b66-bbc1-08a223f5cadc",
+      "events": {
+        "OnTarget": []
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "3575451d",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -11.8870878,
+        "y": -9.19354
+      },
+      "block_id": "8805d2ac-5b99-407e-b51b-dc821345bfb7",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "106cc88c-87ca-4b66-bbc1-08a223f5cadc",
+            "Item2": "fsm_set_state"
+          },
+          {
+            "Item1": "ca43be95-cf31-4763-be49-38f580defbb0",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "439d916c",
+        "object_type": "fsm_hook"
+      }
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "32dfc63d",
+        "pos": {
+          "x": 38.0333557,
+          "y": 24.1512432,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "ant_gate_animated"
+      }
+    },
+    {
+      "placement": {
+        "id": "bellbeast_child",
+        "pid": "c9ccd239",
+        "pos": {
+          "x": 33.3964081,
+          "y": 21.8362827,
+          "z": 0.005
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "ba630f0c",
+        "pos": {
+          "x": 36.816494,
+          "y": 21.6820126,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "ffbb9d35",
+        "pos": {
+          "x": 28.3575439,
+          "y": 21.8502731,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "49cafc2e",
+        "pos": {
+          "x": 33.2731743,
+          "y": 22.0253429,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "7",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5",
+        "size_height": "0.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_anchor",
+        "pid": "d14dc29b",
+        "pos": {
+          "x": 33.3423157,
+          "y": 21.4525566,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "anchor_dist": "10",
+        "anchor_start_dist": "0",
+        "anchor_speed": "0",
+        "anchor_rot": "0",
+        "anchor_rot_speed": "0",
+        "anchor_smoothing": "0.5",
+        "anchor_pause_time": "0",
+        "anchor_moving": "True",
+        "anchor_target": "49cafc2e",
+        "anchor_parent": "c9ccd239"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "34bebfdd",
+        "pos": {
+          "x": 25.99833,
+          "y": 24.6870174,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Memory Group"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "27c983c7",
+        "pos": {
+          "x": 32.3744278,
+          "y": 27.02031,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "0",
+        "trans_collide": "2",
+        "trans_edit_mode_active": "True",
+        "trans_other_id": "karmExit",
+        "trans_other_scene": "Memory_Ant_Queen",
+        "trans_id": "karmEntry"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -13.8513527,
+        "y": 2.02701187
+      },
+      "block_id": "9eae3c8d-d071-4239-92f0-a4c481965c96",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "d5b2ec4e-9e8e-40e1-b155-4471dcf74af9",
+            "Item2": "transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "49cafc2e",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": 220.270279,
+        "y": 3.37838364
+      },
+      "block_id": "d5b2ec4e-9e8e-40e1-b155-4471dcf74af9",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "27c983c7",
+        "object_type": "transition_gate"
+      }
+    }
+  ]
+}

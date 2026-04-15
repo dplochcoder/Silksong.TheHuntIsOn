@@ -1,0 +1,430 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "fba8e923",
+        "pos": {
+          "x": 50.9018936,
+          "y": 5.852928,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Broodmother Scene Control/Broodmother Scene/Battle Scene Broodmother/Gates"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "480118fd",
+        "pos": {
+          "x": 55.592392,
+          "y": 8.732678,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Broodmother Scene Control/Broodmother Scene/Battle Scene Broodmother/Wave 4/Slab Fly Broodmother",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Dormant"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "b33bd0a4",
+        "pos": {
+          "x": 59.7765656,
+          "y": 8.586456,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Broodmother Scene Control/Broodmother Scene/Battle Scene Broodmother/Wave 4/Slab Fly Broodmother",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Entry Antic"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "6f4284e3",
+        "pos": {
+          "x": 64.443634,
+          "y": 9.031109,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Broodmother Scene Control/Broodmother Scene/Battle Scene Broodmother/Wave 4/Slab Fly Broodmother",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Burst In"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "e1a27401",
+        "pos": {
+          "x": 68.75389,
+          "y": 9.064852,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Broodmother Scene Control/Broodmother Scene/Battle Scene Broodmother/Wave 4/Slab Fly Broodmother",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Activate"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "2c439ff1",
+        "pos": {
+          "x": 60.58638,
+          "y": 13.2317924,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Broodmother Scene Control/Broodmother Scene/Battle Scene Broodmother/Wave 4/Slab Fly Broodmother",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Choice"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "b4f9da4a",
+        "pos": {
+          "x": 64.77055,
+          "y": 13.3330221,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Broodmother Scene Control/Broodmother Scene/Battle Scene Broodmother/Wave 4/Slab Fly Broodmother",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Choice P2"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "29f6777c",
+        "pos": {
+          "x": 50.5980949,
+          "y": 7.78260374,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Broodmother Scene Control/Broodmother Scene/Battle Scene Broodmother/Wave 1"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "4379cfbc",
+        "pos": {
+          "x": 51.4079361,
+          "y": 7.80509949,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Broodmother Scene Control/Broodmother Scene/Battle Scene Broodmother/Wave 2"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "bbb098c8",
+        "pos": {
+          "x": 52.2177773,
+          "y": 7.80509949,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Broodmother Scene Control/Broodmother Scene/Battle Scene Broodmother/Wave 3"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "c77e5739",
+        "pos": {
+          "x": 47.36956,
+          "y": 5.39807463,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "fba8e923",
+        "pos": {
+          "x": 50.9018936,
+          "y": 5.852928,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Broodmother Scene Control/Broodmother Scene/Battle Scene Broodmother/Gates"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "c77e5739",
+        "pos": {
+          "x": 47.36956,
+          "y": 5.39807463,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "29e000f2",
+        "pos": {
+          "x": 57.6394577,
+          "y": 7.46170139,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Broodmother Scene Control/Broodmother Scene/Battle Scene Broodmother/Wave 4/Slab Fly Broodmother"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "d6bee735-3368-4b51-a9c3-a5800791f9ac",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "29e000f2",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -253.966324,
+        "y": -10.0721064
+      },
+      "block_id": "16fc1373-7e73-44d9-b7a8-782ff5e4cb56",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "d6bee735-3368-4b51-a9c3-a5800791f9ac",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+   {
+      "pos": {
+        "x": -77.8125,
+        "y": -48.75
+      },
+      "block_id": "12c2b4fc-b301-4f4b-a206-f2d833e221ef",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "2ceb61ae-77ee-416e-910f-aef59fa8e2cc",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "480118fd",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 205.9375,
+        "y": -16.25
+      },
+      "block_id": "2ceb61ae-77ee-416e-910f-aef59fa8e2cc",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "b33bd0a4",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -256.875,
+        "y": -291.25
+      },
+      "block_id": "0e19e756-a753-45eb-8bad-dbbe183e8fbe",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "e4201ec1-6cb6-4218-8418-81ea5a9e3952",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "6f4284e3",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 162.1875,
+        "y": -305.0
+      },
+      "block_id": "45ee5ad1-1118-4354-bc37-f3c26f1f06c3",
+      "events": {
+        "OnTarget": []
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "e1a27401",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -20.3125,
+        "y": -276.5625
+      },
+      "block_id": "e4201ec1-6cb6-4218-8418-81ea5a9e3952",
+      "events": {
+        "Out": [
+          {
+            "Item1": "45ee5ad1-1118-4354-bc37-f3c26f1f06c3",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.8"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 415.3125,
+        "y": -59.0625
+      },
+      "block_id": "2a425939-caa0-410c-a89e-b63d15740e35",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "6fac7e0d-c63c-49b3-bbda-4bf46031256f",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "2c439ff1",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 669.230652,
+        "y": -57.2115059
+      },
+      "block_id": "6fac7e0d-c63c-49b3-bbda-4bf46031256f",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "b4f9da4a",
+        "object_type": "fsm_hook"
+      }
+    }
+  ]
+}

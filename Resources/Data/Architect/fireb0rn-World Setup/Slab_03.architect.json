@@ -1,0 +1,405 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "3224371f",
+        "pos": {
+          "x": 25.2541122,
+          "y": 116.396454,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "slab_gate_entrance_inside/slab_gate_simple (2)/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "35ecad96",
+        "pos": {
+          "x": 16.6833019,
+          "y": 111.9985,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "song_trap_door/Door/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0856f99a",
+        "pos": {
+          "x": 15.0298758,
+          "y": 113.708168,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "song_trap_door (1)/Door/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "98ff3bd2",
+        "pos": {
+          "x": 16.7620354,
+          "y": 119.759468,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "song_trap_door (2)/Door/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d3fae311",
+        "pos": {
+          "x": 14.5124769,
+          "y": 119.973175,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "song_trap_door (3)/Door/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9e5f2a5d",
+        "pos": {
+          "x": 5.896674,
+          "y": 123.310226,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "slab_jail_lever (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e193dfa7",
+        "pos": {
+          "x": 20.3725739,
+          "y": 104.645172,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "slab_jail_lever"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "211b70bd",
+        "pos": {
+          "x": 5.37927532,
+          "y": 82.3099747,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Jail Gate Door (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ebfcd0a3",
+        "pos": {
+          "x": 12.0492134,
+          "y": 152.660522,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "song_trap_door parent/song_trap_door (4)/Door/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6070b5bd",
+        "pos": {
+          "x": 16.72829,
+          "y": 152.559372,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "song_trap_door parent/song_trap_door (5)/Door/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "03ec18d4",
+        "pos": {
+          "x": 11.2956114,
+          "y": 199.88797,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "song_trap_door parent/song_trap_door (5)/Door/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ea8201d7",
+        "pos": {
+          "x": 20.0238914,
+          "y": 198.729431,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Cage_Rubbish/Cage Rubbish_Before/One Way Wall (1)/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "14fbc552",
+        "pos": {
+          "x": 10.8569489,
+          "y": 27.5862465,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "One Way Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0e690be5",
+        "pos": {
+          "x": 26.5026169,
+          "y": 49.66152,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Slab Lock (4)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8495801b",
+        "pos": {
+          "x": 26.5026169,
+          "y": 48.84043,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Jail Gate Door (4)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "107462d4",
+        "pos": {
+          "x": 5.27804661,
+          "y": 80.84869,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Slab Lock (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a4dab367",
+        "pos": {
+          "x": 20.6987572,
+          "y": 152.516159,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Slab Lock (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "94a29c14",
+        "pos": {
+          "x": 20.08013,
+          "y": 154.180847,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Slab Lock (3)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d26f7100",
+        "pos": {
+          "x": 19.2815361,
+          "y": 152.797348,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Slab Lock"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ca651c6e",
+        "pos": {
+          "x": 26.8175545,
+          "y": 245.552521,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Jail Gate Door (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "80608c43",
+        "pos": {
+          "x": 23.904377,
+          "y": 8.097542,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Coral Crust Wall Tall (2)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

@@ -1,0 +1,116 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1d6182af",
+        "pos": {
+          "x": 38.62601,
+          "y": 7.472792,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Grey Door Container"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "389d6c0a",
+        "pos": {
+          "x": 37.4899826,
+          "y": 5.144503,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Hornet_pressure_plate_small_persistent"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "83975d09",
+        "pos": {
+          "x": 24.4708252,
+          "y": 8.35011,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "cellar trapdoor set",
+        "fsm_hook_name": "Trapdoor",
+        "fsm_hook_state": "Open"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "95b1cbb1",
+        "pos": {
+          "x": 28.9641514,
+          "y": 7.664008,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "_NPCs"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "e3bec5c1-ce3b-4d07-8c99-be5746ee84fd",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "83975d09",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -273.75,
+        "y": 8.4375
+      },
+      "block_id": "ca8f1690-dff9-41ad-8958-e701375ed6a9",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "e3bec5c1-ce3b-4d07-8c99-be5746ee84fd",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

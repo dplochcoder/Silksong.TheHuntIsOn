@@ -1,0 +1,63 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "82777b96",
+        "pos": {
+          "x": 55.41487,
+          "y": 95.88516,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "ant_drop_plat"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "beed80e4",
+        "pos": {
+          "x": 42.09544,
+          "y": 97.1112747,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Ant Chest"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "19ee6c96",
+        "pos": {
+          "x": 52.2634621,
+          "y": 97.43743,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "ant_lever_persistent"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

@@ -1,0 +1,65 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5b135005",
+        "pos": {
+          "x": 36.6555328,
+          "y": 9.087473,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Boss Scene - To Additive Load"
+      }
+    },
+    {
+      "placement": {
+        "id": "second_sentinel_boss",
+        "pid": "a9f610d9",
+        "pos": {
+          "x": 45.5627174,
+          "y": 6.020813,
+          "z": 0.006
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "boss_title": "False",
+        "enemy_hp_scale": "True",
+        "enemy_z": "0",
+        "enemy_hp": "99999",
+        "invulnerable": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "2f706644",
+        "pos": {
+          "x": 25.6150284,
+          "y": 6.32050133,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_height": "2"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

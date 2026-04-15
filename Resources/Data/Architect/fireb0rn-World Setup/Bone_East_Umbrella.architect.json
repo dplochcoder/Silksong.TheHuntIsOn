@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "fcd7f8f1",
+        "pos": {
+          "x": 24.2663517,
+          "y": 9.524799,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "_NPCs"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7da3f1a9",
+        "pos": {
+          "x": 26.8953838,
+          "y": 9.468561,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "seamstress_loom"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

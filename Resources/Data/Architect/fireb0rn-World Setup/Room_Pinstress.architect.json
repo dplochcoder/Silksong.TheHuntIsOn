@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "618b20a5",
+        "pos": {
+          "x": 25.9580936,
+          "y": 10.6278458,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pinstress States"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

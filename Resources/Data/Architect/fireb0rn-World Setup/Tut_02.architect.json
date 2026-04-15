@@ -1,0 +1,325 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "18c75b58",
+        "pos": {
+          "x": 12.7328672,
+          "y": 24.961359,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "One Way VineWall/Solid",
+        "component_hook_name": "BoxCollider2D"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e0fb7418",
+        "pos": {
+          "x": 10.5507984,
+          "y": 25.7638531,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "One Way VineWall/Vine 1"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ac672da0",
+        "pos": {
+          "x": 10.4495678,
+          "y": 24.59669,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "One Way VineWall/Vine 2"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "943ee8f9",
+        "pos": {
+          "x": 9.61723,
+          "y": 24.9678669,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "One Way VineWall/Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "23de1156",
+        "pos": {
+          "x": 29.1914253,
+          "y": 19.93375,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "One Way VineWall"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "e3f03f65",
+        "pos": {
+          "x": 29.11269,
+          "y": 19.9899883,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "One Way VineWall"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "a622bc8b",
+        "pos": {
+          "x": 29.15768,
+          "y": 20.50739,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "One Way VineWall"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "5a8dee31",
+        "pos": {
+          "x": 29.0901947,
+          "y": 20.3724136,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "One Way VineWall"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "d526e75f",
+        "pos": {
+          "x": 29.1801777,
+          "y": 21.5871754,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "One Way VineWall"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "1263afbe",
+        "pos": {
+          "x": 29.202673,
+          "y": 21.9583511,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "One Way VineWall"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "172873c7",
+        "pos": {
+          "x": 29.0901947,
+          "y": 21.5421829,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "One Way VineWall"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "f9a1a87d",
+        "pos": {
+          "x": 29.15768,
+          "y": 21.5534325,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "One Way VineWall"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "a75f6b82",
+        "pos": {
+          "x": 29.15768,
+          "y": 21.46345,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "One Way VineWall"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "900beee3",
+        "pos": {
+          "x": 28.1581879,
+          "y": 21.9920959,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "One Way VineWall"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "972d278b",
+        "pos": {
+          "x": 28.2098236,
+          "y": 21.5084419,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "One Way VineWall"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "61e937fd",
+        "pos": {
+          "x": 14.7573366,
+          "y": 24.9388618,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "One Way VineWall",
+        "component_hook_name": "PlayMakerFSM"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

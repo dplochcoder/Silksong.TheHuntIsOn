@@ -1,0 +1,156 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5a2f5c83",
+        "pos": {
+          "x": 12.4516754,
+          "y": 29.893671,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Coral Crust Wall Tall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "55e0174e",
+        "pos": {
+          "x": 19.48714,
+          "y": 29.7137089,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Coral Crust Wall Sphere"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7c8c19ce",
+        "pos": {
+          "x": 10.1289854,
+          "y": 32.3119469,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ef15a243",
+        "pos": {
+          "x": 25.9883671,
+          "y": 34.67398,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a2995dfb",
+        "pos": {
+          "x": 21.30929,
+          "y": 27.9478054,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Coral Crust Wall Tall (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "98c2d9ef",
+        "pos": {
+          "x": 35.14763,
+          "y": 31.0184517,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Coral Crust Wall Tall (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "de1a957b",
+        "pos": {
+          "x": 62.83557,
+          "y": 28.274004,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Coral Crust Wall Mid"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d64fbcb3",
+        "pos": {
+          "x": 76.8306656,
+          "y": 28.7689037,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Coral Crust Wall Mid (1)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

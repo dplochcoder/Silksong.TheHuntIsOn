@@ -1,0 +1,46 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "fa1d9238",
+        "pos": {
+          "x": 113.537346,
+          "y": 32.36935,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_id": "FarFieldsSpawnBE10-2",
+        "trans_collide": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "45959fee",
+        "pos": {
+          "x": 123.2722,
+          "y": 15.0741177,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_id": "FarFieldsSpawnBE10-1",
+        "trans_collide": "False"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

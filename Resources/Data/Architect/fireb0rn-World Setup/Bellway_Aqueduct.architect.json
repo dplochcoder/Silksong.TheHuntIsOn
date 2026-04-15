@@ -1,0 +1,158 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "b1496512",
+        "pos": {
+          "x": 52.992775,
+          "y": 26.3620148,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "2",
+        "trans_id": "DuctsStag",
+        "trans_collide": "1"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b5d8fadc",
+        "pos": {
+          "x": 84.3244247,
+          "y": 25.9282131,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Shadow_09b/bell_bench/frame/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "061a6e7f",
+        "pos": {
+          "x": 83.9869843,
+          "y": 25.0182514,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Shadow_09b/bell_bench/bell_toll_machine/"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "6f3594ad",
+        "pos": {
+          "x": 59.966404,
+          "y": 26.0920677,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Bone Beast NPC",
+        "fsm_hook_name": "Interaction",
+        "fsm_hook_state": "Appear Delay"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "d4799058",
+        "pos": {
+          "x": 63.8243866,
+          "y": 25.8446159,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Bone Beast NPC",
+        "fsm_hook_name": "Interaction",
+        "fsm_hook_state": "Start Shake"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -1.25,
+        "y": -106.875
+      },
+      "block_id": "e4930a28-a20f-403d-b7cf-bebc120180c4",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "5d0611d5-a665-4f19-b6da-a0060165cc72",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "6f3594ad",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 272.1875,
+        "y": -97.1875
+      },
+      "block_id": "5d0611d5-a665-4f19-b6da-a0060165cc72",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "d4799058",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -255.9375,
+        "y": 18.4375
+      },
+      "block_id": "3ef399ee-8a41-47df-bdb6-098a3302b38b",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "e4930a28-a20f-403d-b7cf-bebc120180c4",
+            "Item2": "fsm_remove_transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

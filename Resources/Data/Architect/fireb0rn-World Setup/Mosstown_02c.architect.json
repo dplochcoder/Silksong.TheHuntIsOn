@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2de8168a",
+        "pos": {
+          "x": 42.3571129,
+          "y": 6.631461,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "moss_hut_set/NPC Scene/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

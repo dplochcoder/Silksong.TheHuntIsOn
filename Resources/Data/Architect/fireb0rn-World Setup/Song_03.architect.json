@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "55488a78",
+        "pos": {
+          "x": 31.1282616,
+          "y": 34.0833054,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "bot_blocker"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a8ec05c5",
+        "pos": {
+          "x": 130.810181,
+          "y": 5.038142,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Chest Scene"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

@@ -1,0 +1,761 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "e6c2d3bf",
+        "pos": {
+          "x": 105.560913,
+          "y": 7.72636032,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "7",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "walk_target",
+        "pid": "3be05653",
+        "pos": {
+          "x": 103.736725,
+          "y": 6.35413456,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "walk_anim": "0",
+        "walk_speed": "1"
+      }
+    },
+    {
+      "placement": {
+        "id": "custom_wav",
+        "pid": "07766816",
+        "pos": {
+          "x": 104.230186,
+          "y": 11.4943695,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "wav_volume": "1",
+        "wav_pitch": "1",
+        "wav_mode": "1",
+        "wav_loop": "False",
+        "wav_url": "https://drive.google.com/uc?export=download&id=1slikSvsEAQu4fzBf1EFKPqnheJeUkT3j",
+        "start_active": "True"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -595.979431,
+        "y": -129.987854
+      },
+      "block_id": "07c9e0b1-42cb-47fe-affb-4dca64c06da0",
+      "events": {
+        "OnDismiss": []
+      },
+      "vars": {},
+      "type": "Travel UI",
+      "config": {
+        "travel_ui_list_name": "BELLWAYS"
+      },
+      "ext": {
+        "children": "[{\"pos\":{\"x\":-424.248352,\"y\":-119.172333},\"block_id\":\"c4261ab6-b323-4d75-b2bc-44fddc840c4b\",\"events\":{\"OnChoose\":[{\"Item1\":\"b1332082-3e26-4616-b910-fa85c38384b8\",\"Item2\":\"Trigger\"},{\"Item1\":\"2984e6a2-64f8-4d20-99b6-2b765814be28\",\"Item2\":\"In\"}]},\"vars\":{},\"type\":\"Travel Target\",\"config\":{\"travel_ui_name\":\"Bone Bottom\"},\"ext\":{}},{\"pos\":{\"x\":-498.935852,\"y\":-291.359863},\"block_id\":\"41bf769a-b06b-4fd8-8316-2f1f2a10ceed\",\"events\":{},\"vars\":{},\"type\":\"Travel Target\",\"config\":{\"travel_ui_name\":\"The Marrow\"},\"ext\":{}},{\"pos\":{\"x\":-498.935852,\"y\":-291.359863},\"block_id\":\"df2a51e8-e90d-4592-81ac-ef406d0e2988\",\"events\":{\"OnChoose\":[{\"Item1\":\"b1332082-3e26-4616-b910-fa85c38384b8\",\"Item2\":\"Trigger\"},{\"Item1\":\"d68cfcb3-567d-4f36-83af-c62096d0bff4\",\"Item2\":\"In\"}]},\"vars\":{\"Unlocked\":{\"Item1\":\"a24a3746-8eaa-495e-b21f-dce78358a524\",\"Item2\":\"Value\"}},\"type\":\"Travel Target\",\"config\":{\"travel_ui_name\":\"Deep Docks\"},\"ext\":{}},{\"pos\":{\"x\":-498.935852,\"y\":-291.359863},\"block_id\":\"84a12c65-131b-4d56-b9b4-3764c0b78ac5\",\"events\":{\"OnChoose\":[{\"Item1\":\"b1332082-3e26-4616-b910-fa85c38384b8\",\"Item2\":\"Trigger\"},{\"Item1\":\"a19b1c76-049a-44b3-af31-1562a74b1f36\",\"Item2\":\"In\"}]},\"vars\":{\"Unlocked\":{\"Item1\":\"2bc93d31-421d-4d0c-ab36-1c2d110b13e9\",\"Item2\":\"Value\"}},\"type\":\"Travel Target\",\"config\":{\"travel_ui_name\":\"Far Fields\"},\"ext\":{}},{\"pos\":{\"x\":-503.623352,\"y\":-496.672363},\"block_id\":\"3e58c049-4e9c-430c-ada8-ca07619036ea\",\"events\":{\"OnChoose\":[{\"Item1\":\"b1332082-3e26-4616-b910-fa85c38384b8\",\"Item2\":\"Trigger\"},{\"Item1\":\"d396013e-3759-4c6b-bc63-f016a0cda4a6\",\"Item2\":\"In\"}]},\"vars\":{\"Unlocked\":{\"Item1\":\"7e41963c-ab62-44e2-aa4f-7b0bffcb44db\",\"Item2\":\"Value\"}},\"type\":\"Travel Target\",\"config\":{\"travel_ui_name\":\"Greymoor\"},\"ext\":{}},{\"pos\":{\"x\":-490.498352,\"y\":-623.859863},\"block_id\":\"676c1c29-3c2d-4ade-8bb5-11e98dc5962f\",\"events\":{\"OnChoose\":[{\"Item1\":\"b1332082-3e26-4616-b910-fa85c38384b8\",\"Item2\":\"Trigger\"},{\"Item1\":\"2a1f78a5-d22e-43c2-a778-2350e63cf2b4\",\"Item2\":\"In\"}]},\"vars\":{\"Unlocked\":{\"Item1\":\"18c4c9c9-189f-4c8b-a064-1020d47464cb\",\"Item2\":\"Value\"}},\"type\":\"Travel Target\",\"config\":{\"travel_ui_name\":\"Bellhart\"},\"ext\":{}},{\"pos\":{\"x\":-506.123352,\"y\":-681.672363},\"block_id\":\"0cdd9353-e44d-4cdd-a6d0-ef683b9bb791\",\"events\":{\"OnChoose\":[{\"Item1\":\"b1332082-3e26-4616-b910-fa85c38384b8\",\"Item2\":\"Trigger\"},{\"Item1\":\"122b36bc-7bd7-49a2-80ce-e99bc84adaf9\",\"Item2\":\"In\"}]},\"vars\":{\"Unlocked\":{\"Item1\":\"4677f130-48ac-4b77-82bb-de45d9372f7d\",\"Item2\":\"Value\"}},\"type\":\"Travel Target\",\"config\":{\"travel_ui_name\":\"Shellwood\"},\"ext\":{}},{\"pos\":{\"x\":-500.185852,\"y\":-771.359863},\"block_id\":\"d8c8b617-90a8-4fba-bb7d-8776e9bc6e2c\",\"events\":{\"OnChoose\":[{\"Item1\":\"b1332082-3e26-4616-b910-fa85c38384b8\",\"Item2\":\"Trigger\"},{\"Item1\":\"e7d980a7-8d02-4466-8369-f9b3ceb17656\",\"Item2\":\"In\"}]},\"vars\":{\"Unlocked\":{\"Item1\":\"0e2aeba7-6675-43e2-a00b-372e4ae3ce62\",\"Item2\":\"Value\"}},\"type\":\"Travel Target\",\"config\":{\"travel_ui_name\":\"Blasted Steps\"},\"ext\":{}},{\"pos\":{\"x\":-506.123352,\"y\":-832.922363},\"block_id\":\"78a035f2-349a-486c-8470-865baa5e8239\",\"events\":{\"OnChoose\":[{\"Item1\":\"b1332082-3e26-4616-b910-fa85c38384b8\",\"Item2\":\"Trigger\"},{\"Item1\":\"1c5718fd-f90c-4e25-99bc-31e6d2d19b98\",\"Item2\":\"In\"}]},\"vars\":{\"Unlocked\":{\"Item1\":\"d3f4e305-2f42-47a7-acea-e65425f307c8\",\"Item2\":\"Value\"}},\"type\":\"Travel Target\",\"config\":{\"travel_ui_name\":\"The Slab\"},\"ext\":{}},{\"pos\":{\"x\":-505.810852,\"y\":-899.172363},\"block_id\":\"e9ced2e6-64e1-4d27-bdbf-d154c1e5d4a1\",\"events\":{\"OnChoose\":[{\"Item1\":\"b1332082-3e26-4616-b910-fa85c38384b8\",\"Item2\":\"Trigger\"},{\"Item1\":\"f11c8d5a-2d85-41f4-93c3-85d2b97b43d3\",\"Item2\":\"In\"}]},\"vars\":{\"Unlocked\":{\"Item1\":\"240b7c7d-e031-47b1-b4d9-544f74aafab9\",\"Item2\":\"Value\"}},\"type\":\"Travel Target\",\"config\":{\"travel_ui_name\":\"Grand Bellway\"},\"ext\":{}},{\"pos\":{\"x\":-517.373352,\"y\":-983.859863},\"block_id\":\"f6cd24ea-7520-4b31-b264-3126f57990eb\",\"events\":{\"OnChoose\":[{\"Item1\":\"b1332082-3e26-4616-b910-fa85c38384b8\",\"Item2\":\"Trigger\"},{\"Item1\":\"afd133ce-9b08-4e9a-be4c-0fde14858353\",\"Item2\":\"In\"}]},\"vars\":{\"Unlocked\":{\"Item1\":\"58024539-2c30-48ed-bbc4-66ec713f4bd0\",\"Item2\":\"Value\"}},\"type\":\"Travel Target\",\"config\":{\"travel_ui_name\":\"Bilewater\"},\"ext\":{}},{\"pos\":{\"x\":-478.935852,\"y\":-965.422363},\"block_id\":\"f6d33ef5-308a-4529-ab4e-0f4f7da80719\",\"events\":{\"OnChoose\":[{\"Item1\":\"b1332082-3e26-4616-b910-fa85c38384b8\",\"Item2\":\"Trigger\"},{\"Item1\":\"d58bbe3c-a36e-4eec-883f-194ce6afcf36\",\"Item2\":\"In\"}]},\"vars\":{\"Unlocked\":{\"Item1\":\"8b7fe7e9-63f2-4d57-a8fa-57c2ee927fa0\",\"Item2\":\"Value\"}},\"type\":\"Travel Target\",\"config\":{\"travel_ui_name\":\"Putrified Ducks\"},\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": -815.902,
+        "y": -141.337738
+      },
+      "block_id": "d3bf3e99-874f-4289-8654-0e62e01f8297",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "07c9e0b1-42cb-47fe-affb-4dca64c06da0",
+            "Item2": "Display"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "e6c2d3bf",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": -755.602539,
+        "y": -340.2487
+      },
+      "block_id": "a24a3746-8eaa-495e-b21f-dce78358a524",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "UnlockedDocksStation"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -754.97,
+        "y": -440.311676
+      },
+      "block_id": "2bc93d31-421d-4d0c-ab36-1c2d110b13e9",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "UnlockedBoneforestEastStation"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -751.279053,
+        "y": -542.2279
+      },
+      "block_id": "7e41963c-ab62-44e2-aa4f-7b0bffcb44db",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "UnlockedGreymoorStation"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -752.442749,
+        "y": -643.6169
+      },
+      "block_id": "18c4c9c9-189f-4c8b-a064-1020d47464cb",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "UnlockedBelltownStation"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -751.694,
+        "y": -745.0151
+      },
+      "block_id": "4677f130-48ac-4b77-82bb-de45d9372f7d",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "UnlockedShellwoodStation"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -753.9733,
+        "y": -845.927368
+      },
+      "block_id": "0e2aeba7-6675-43e2-a00b-372e4ae3ce62",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "UnlockedCoralTowerStation"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -749.2605,
+        "y": -947.9224
+      },
+      "block_id": "d3f4e305-2f42-47a7-acea-e65425f307c8",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "UnlockedPeakStation"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -745.825867,
+        "y": -1047.95056
+      },
+      "block_id": "240b7c7d-e031-47b1-b4d9-544f74aafab9",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "UnlockedCityStation"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -743.172058,
+        "y": -1148.89734
+      },
+      "block_id": "58024539-2c30-48ed-bbc4-66ec713f4bd0",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "UnlockedAqueductStation"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -746.3438,
+        "y": -1251.56812
+      },
+      "block_id": "8b7fe7e9-63f2-4d57-a8fa-57c2ee927fa0",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "UnlockedShadowStation"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -419.976685,
+        "y": -254.1791
+      },
+      "block_id": "5d426410-a622-407e-b25d-f0c099ec807f",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bellway_01",
+        "trans_door": "BonebottomStag"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -204.62587,
+        "y": -249.315445
+      },
+      "block_id": "b1332082-3e26-4616-b910-fa85c38384b8",
+      "events": {},
+      "vars": {},
+      "type": "Ordered Events",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":-414.375,\"y\":-190.9375},\"block_id\":\"3fe5e036-91e4-45f1-91e1-2899010efe71\",\"events\":{\"OnTrigger\":[{\"Item1\":\"ad4b71a0-3006-4945-9f96-2a572b3afd7f\",\"Item2\":\"start_walk\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":-414.375,\"y\":-190.9375},\"block_id\":\"3694d198-6352-4aa2-8e68-1bae73a82a33\",\"events\":{\"OnTrigger\":[{\"Item1\":\"798ccab5-6a25-463e-b024-8e6b352cb0b0\",\"Item2\":\"start_play\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":-113.974,\"y\":-357.6798},\"block_id\":\"809c5e66-23c6-48ab-9de8-b0a7b401c7b8\",\"events\":{\"OnTrigger\":[{\"Item1\":\"9c299979-0a66-482b-80b0-5a4a3708598b\",\"Item2\":\"FadeOut\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 140.872635,
+        "y": -549.222351
+      },
+      "block_id": "798ccab5-6a25-463e-b024-8e6b352cb0b0",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "07766816",
+        "object_type": "custom_wav"
+      }
+    },
+    {
+      "pos": {
+        "x": -26.9201984,
+        "y": -356.9913
+      },
+      "block_id": "ad4b71a0-3006-4945-9f96-2a572b3afd7f",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "3be05653",
+        "object_type": "walk_target"
+      }
+    },
+    {
+      "pos": {
+        "x": -30.4814568,
+        "y": -662.0322
+      },
+      "block_id": "9c299979-0a66-482b-80b0-5a4a3708598b",
+      "events": {},
+      "vars": {},
+      "type": "UI Control",
+      "config": {
+        "ui_fade_r": "0",
+        "ui_fade_g": "0",
+        "ui_fade_b": "0",
+        "ui_fade_a": "1",
+        "ui_fade_duration": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -420.3859,
+        "y": -449.2732
+      },
+      "block_id": "04f4b5a8-0287-4cbd-be4b-bec5313289b2",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bellway_02",
+        "trans_door": "DocksStag"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -415.4096,
+        "y": -559.464966
+      },
+      "block_id": "f4e0ccc7-86fe-4e10-acf8-bbf91eabf03a",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bellway_03",
+        "trans_door": "FieldsStag"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -415.947,
+        "y": -658.813965
+      },
+      "block_id": "4eddc603-712d-4bf0-ab03-205499af5f17",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bellway_04",
+        "trans_door": "GreymoorStag"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -414.8509,
+        "y": -763.9394
+      },
+      "block_id": "831cc171-f047-4460-9d00-70a2322f9f7e",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Belltown_basement",
+        "trans_door": "BellhartStag"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -420.0024,
+        "y": -861.2476
+      },
+      "block_id": "eb8a49fc-29ac-489a-8f02-a7381ec10218",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Shellwood_19",
+        "trans_door": "ShellwoodStag"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -420.801483,
+        "y": -955.6641
+      },
+      "block_id": "6fd2ecc3-55e8-4ae9-aced-17050e07b922",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_door": "StepsStag",
+        "trans_scene": "Bellway_08"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -420.203674,
+        "y": -1059.40344
+      },
+      "block_id": "a980e07b-388e-40e7-982e-c776ed5e6419",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Slab_06",
+        "trans_door": "SlabStag"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -408.570068,
+        "y": -1168.07056
+      },
+      "block_id": "1af9c1e4-e99f-4a0c-bc9d-791909a7c242",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bellway_City",
+        "trans_door": "BellwayStag"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -420.265167,
+        "y": -1248.41382
+      },
+      "block_id": "e2f02cb5-df7e-4c42-9dba-74eb57f844e3",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bellway_Shadow",
+        "trans_door": "BilewaterStag"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -410.819122,
+        "y": -1356.37061
+      },
+      "block_id": "fca4b8eb-63d1-4e04-821a-4448c986ff35",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bellway_Aqueduct",
+        "trans_door": "DuctsStag"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -432.343719,
+        "y": -252.89064
+      },
+      "block_id": "2984e6a2-64f8-4d20-99b6-2b765814be28",
+      "events": {
+        "Out": [
+          {
+            "Item1": "5d426410-a622-407e-b25d-f0c099ec807f",
+            "Item2": "Transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -433.28125,
+        "y": -439.4531
+      },
+      "block_id": "d68cfcb3-567d-4f36-83af-c62096d0bff4",
+      "events": {
+        "Out": [
+          {
+            "Item1": "04f4b5a8-0287-4cbd-be4b-bec5313289b2",
+            "Item2": "Transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -423.8281,
+        "y": -547.96875
+      },
+      "block_id": "a19b1c76-049a-44b3-af31-1562a74b1f36",
+      "events": {
+        "Out": [
+          {
+            "Item1": "f4e0ccc7-86fe-4e10-acf8-bbf91eabf03a",
+            "Item2": "Transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -429.374969,
+        "y": -649.6875
+      },
+      "block_id": "d396013e-3759-4c6b-bc63-f016a0cda4a6",
+      "events": {
+        "Out": [
+          {
+            "Item1": "4eddc603-712d-4bf0-ab03-205499af5f17",
+            "Item2": "Transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -429.687469,
+        "y": -756.953064
+      },
+      "block_id": "2a1f78a5-d22e-43c2-a778-2350e63cf2b4",
+      "events": {
+        "Out": [
+          {
+            "Item1": "831cc171-f047-4460-9d00-70a2322f9f7e",
+            "Item2": "Transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -432.812469,
+        "y": -851.6406
+      },
+      "block_id": "122b36bc-7bd7-49a2-80ce-e99bc84adaf9",
+      "events": {
+        "Out": [
+          {
+            "Item1": "eb8a49fc-29ac-489a-8f02-a7381ec10218",
+            "Item2": "Transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -425.686279,
+        "y": -944.347656
+      },
+      "block_id": "e7d980a7-8d02-4466-8369-f9b3ceb17656",
+      "events": {
+        "Out": [
+          {
+            "Item1": "6fd2ecc3-55e8-4ae9-aced-17050e07b922",
+            "Item2": "Transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -407.681671,
+        "y": -1067.05664
+      },
+      "block_id": "1c5718fd-f90c-4e25-99bc-31e6d2d19b98",
+      "events": {
+        "Out": [
+          {
+            "Item1": "a980e07b-388e-40e7-982e-c776ed5e6419",
+            "Item2": "Transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -426.562469,
+        "y": -1158.12488
+      },
+      "block_id": "f11c8d5a-2d85-41f4-93c3-85d2b97b43d3",
+      "events": {
+        "Out": [
+          {
+            "Item1": "1af9c1e4-e99f-4a0c-bc9d-791909a7c242",
+            "Item2": "Transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -439.843781,
+        "y": -1243.75
+      },
+      "block_id": "afd133ce-9b08-4e9a-be4c-0fde14858353",
+      "events": {
+        "Out": [
+          {
+            "Item1": "e2f02cb5-df7e-4c42-9dba-74eb57f844e3",
+            "Item2": "Transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -408.6191,
+        "y": -1400.44543
+      },
+      "block_id": "d58bbe3c-a36e-4eec-883f-194ce6afcf36",
+      "events": {
+        "Out": [
+          {
+            "Item1": "fca4b8eb-63d1-4e04-821a-4448c986ff35",
+            "Item2": "Transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -1031.07263,
+        "y": 4.493717
+      },
+      "block_id": "896e4f03-d690-4a7a-90af-520130d84c51",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "defeatedBellBeast",
+        "pd_bool": "True"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -1031.2511,
+        "y": -155.754974
+      },
+      "block_id": "5352239a-206c-400d-b450-cd9e39499977",
+      "events": {
+        "True": [
+          {
+            "Item1": "d3bf3e99-874f-4289-8654-0e62e01f8297",
+            "Item2": "disable"
+          }
+        ],
+        "False": []
+      },
+      "vars": {
+        "Check": {
+          "Item1": "896e4f03-d690-4a7a-90af-520130d84c51",
+          "Item2": "Value"
+        }
+      },
+      "type": "If",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -1241.68433,
+        "y": -144.403809
+      },
+      "block_id": "6b17a08d-230e-4097-b2d2-f6469751bb38",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "5352239a-206c-400d-b450-cd9e39499977",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

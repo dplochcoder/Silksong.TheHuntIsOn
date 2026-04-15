@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "566617ec",
+        "pos": {
+          "x": 69.0692,
+          "y": 82.9555054,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Trapdoor Control/Trapdoor Closed/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "98505ace",
+        "pos": {
+          "x": 67.4945145,
+          "y": 83.29294,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "Trapdoor Control/Trapdoor Open"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

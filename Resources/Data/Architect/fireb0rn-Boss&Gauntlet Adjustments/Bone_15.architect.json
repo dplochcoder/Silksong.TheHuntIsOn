@@ -1,0 +1,57 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "762a9eb7",
+        "pos": {
+          "x": 81.18444,
+          "y": 21.4256287,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Boss Scene/Skull King"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "8fb91807-d6db-422d-9236-90b14f6e430e",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "762a9eb7",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -238.125,
+        "y": 20.0
+      },
+      "block_id": "e808ac34-de03-492d-89e0-1163d36a6a63",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "8fb91807-d6db-422d-9236-90b14f6e430e",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "placements": [],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -16.5625,
+        "y": 96.5625
+      },
+      "block_id": "73f018eb-0fe2-4189-8178-32cdfc89ce5c",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool": "False",
+        "pd_bool_type": "visitedBellhart"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -15.9375,
+        "y": 10.0
+      },
+      "block_id": "6853eabc-2503-4aa5-8db2-79ee5cd31542",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "VampireGnatBossInAltLoc",
+        "pd_bool": "False"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -205.3125,
+        "y": 64.0625
+      },
+      "block_id": "a2fceecf-bfee-426f-a3f4-7971c01117d4",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "73f018eb-0fe2-4189-8178-32cdfc89ce5c",
+            "Item2": "Set"
+          },
+          {
+            "Item1": "6853eabc-2503-4aa5-8db2-79ee5cd31542",
+            "Item2": "Set"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

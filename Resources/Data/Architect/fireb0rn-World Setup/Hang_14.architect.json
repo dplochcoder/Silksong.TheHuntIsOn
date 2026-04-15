@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a2f842b7",
+        "pos": {
+          "x": 89.0890656,
+          "y": 12.6866512,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "dc052c1e",
+        "pos": {
+          "x": 51.4839,
+          "y": 23.8158531,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Handmaiden Scene/break_thread_core/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

@@ -1,0 +1,82 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "62a55bd6",
+        "pos": {
+          "x": 17.98659,
+          "y": 19.3785362,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Whole Scene/Coral Crust Group/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6b2b9c6b",
+        "pos": {
+          "x": 3.31274033,
+          "y": 24.9438419,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Whole Scene/Coral Crust Group/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a130d431",
+        "pos": {
+          "x": 29.7567253,
+          "y": 27.5363884,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Whole Scene/Coral Crust Group/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "49aaa64b",
+        "pos": {
+          "x": 22.774128,
+          "y": 18.25507,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

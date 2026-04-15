@@ -1,0 +1,46 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "8cb3ada4",
+        "pos": {
+          "x": 15.85685,
+          "y": 30.2953987,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_collide": "False",
+        "trans_id": "StepsSpawnCoral38-1"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "2acd9974",
+        "pos": {
+          "x": 32.1883965,
+          "y": 43.76241,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_collide": "False",
+        "trans_id": "StepsSpawnCoral38-2"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

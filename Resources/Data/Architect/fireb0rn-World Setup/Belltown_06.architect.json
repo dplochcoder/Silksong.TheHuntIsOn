@@ -1,0 +1,135 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1ec51dbc",
+        "pos": {
+          "x": 30.79315,
+          "y": 11.8077631,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Lift Control/Mines Lift"
+      }
+    },
+    {
+      "placement": {
+        "id": "greymoor_flip_bridge",
+        "pid": "8d313fa5",
+        "pos": {
+          "x": 27.0991573,
+          "y": 18.964653,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "4585632d",
+        "pos": {
+          "x": 27.9783649,
+          "y": 14.4631815,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "6ce0f776",
+        "pos": {
+          "x": 27.9776287,
+          "y": 21.22888,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 813.3067,
+        "y": -12.0967827
+      },
+      "block_id": "1eceaea5-496a-4ab8-b5a8-7c351bf490c4",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "de33cb5a-8d50-436d-9fab-20aa08bc12d9",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "6ce0f776",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 401.613037,
+        "y": -15.7258148
+      },
+      "block_id": "de33cb5a-8d50-436d-9fab-20aa08bc12d9",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "956273de-386d-4fd3-849d-dc91eb309d11",
+            "Item2": "Display"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "4585632d",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 586.3784,
+        "y": 135.215942
+      },
+      "block_id": "956273de-386d-4fd3-849d-dc91eb309d11",
+      "events": {},
+      "vars": {},
+      "type": "Song Display",
+      "config": {
+        "song_text": "Shortcut Blocked",
+        "song_duration": "2"
+      },
+      "ext": {}
+    }
+  ]
+}

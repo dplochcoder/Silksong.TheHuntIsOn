@@ -1,0 +1,254 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "18ecd02b",
+        "pos": {
+          "x": 37.84709,
+          "y": 47.36393,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "7d52f17d-cf10934d",
+        "pos": {
+          "x": 12.7400208,
+          "y": 65.18415,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "2",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "a43b9218-cf10934d",
+        "pos": {
+          "x": 14.8660393,
+          "y": 65.39838,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "2",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "9925429b-cf10934d",
+        "pos": {
+          "x": 14.5237274,
+          "y": 69.44354,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Black Thread States Thread Only Variant/Normal World/Breakable Wall (1)/",
+        "fsm_hook_name": "breakable_wall_v2",
+        "fsm_hook_state": "Send to Register?"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "4c6b0f02-cf10934d",
+        "pos": {
+          "x": 18.1792755,
+          "y": 69.4418,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "Black Thread States Thread Only Variant/Normal World/Breakable Wall (1)/",
+        "component_hook_name": "BoxCollider2D"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6c7c41da-cf10934d",
+        "pos": {
+          "x": 16.4021149,
+          "y": 67.01228,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States Thread Only Variant/Normal World/Breakable Wall (1)/Masks",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e24ea6ec",
+        "pos": {
+          "x": 5.75810432,
+          "y": 88.64775,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -126.9088,
+        "y": -60.3040733
+      },
+      "block_id": "d53703af-eaf0-4ad7-a253-e397723a3e76",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "d575c405-1815-4387-8a0b-4944e2ed5868",
+            "Item2": "fsm_set_state"
+          },
+          {
+            "Item1": "86b9b145-6612-40fe-8f60-cda061f601aa",
+            "Item2": "component_hook_apply"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 68.24325,
+        "y": 6.081087
+      },
+      "block_id": "d575c405-1815-4387-8a0b-4944e2ed5868",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "9925429b-cf10934d",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 63.17568,
+        "y": -28.0405579
+      },
+      "block_id": "86b9b145-6612-40fe-8f60-cda061f601aa",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "4c6b0f02-cf10934d",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": -270.608124,
+        "y": 316.216278
+      },
+      "block_id": "406c9384-d2b7-46c3-b0c8-3d76ea30ae86",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "cc075917-221e-41c4-a973-b20c26f847bb",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7d52f17d-cf10934d",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": -75.00001,
+        "y": 270.2703
+      },
+      "block_id": "cc075917-221e-41c4-a973-b20c26f847bb",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "6c7c41da-cf10934d",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": -272.297363,
+        "y": 159.121628
+      },
+      "block_id": "a5ccc543-3a31-494f-ba5f-c52a3ea95c47",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "cc075917-221e-41c4-a973-b20c26f847bb",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "a43b9218-cf10934d",
+        "object_type": "trigger_zone"
+      }
+    }
+  ]
+}

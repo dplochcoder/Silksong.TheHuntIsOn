@@ -1,0 +1,148 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "bcb5232e",
+        "pos": {
+          "x": 25.2104015,
+          "y": 24.89597,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bone Gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ff2f1538",
+        "pos": {
+          "x": 18.21054,
+          "y": 25.2195072,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bone Lever"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1dfd3c0f",
+        "pos": {
+          "x": 114.061111,
+          "y": 16.03904,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Chain Plat Lever"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8812a7ab",
+        "pos": {
+          "x": 118.8141,
+          "y": 23.06145,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "457811bf",
+        "pos": {
+          "x": 157.8223,
+          "y": 5.396348,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side right"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b4f1f6e0",
+        "pos": {
+          "x": 58.4107323,
+          "y": 15.4696646,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Mapper NPC"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -1.033588,
+        "y": -1.03358841
+      },
+      "block_id": "1ec1a429-a240-4aad-bacb-c1466daa498c",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "9ad9a2ea",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -216.0199,
+        "y": 16.0206146
+      },
+      "block_id": "a9044677-4349-485f-8acd-159b9bbd4076",
+      "events": {
+        "OnStart": []
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

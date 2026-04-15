@@ -1,0 +1,286 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "undersweep",
+        "pid": "a708cfd0",
+        "pos": {
+          "x": 122.556511,
+          "y": 38.8567276,
+          "z": 0.006
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_hp_scale": "True",
+        "invulnerable": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "underscrub",
+        "pid": "02061327",
+        "pos": {
+          "x": 112.489738,
+          "y": 37.28204,
+          "z": 0.006
+        },
+        "flipped": true,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_hp_scale": "True",
+        "invulnerable": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f3d2a7f8",
+        "pos": {
+          "x": 110.779938,
+          "y": 43.58081,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Battle Scene/Harpoon Ring Pull Switch"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "d61d6dc8",
+        "pos": {
+          "x": 101.950417,
+          "y": 38.7442665,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_height": "1.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ab3bec11",
+        "pos": {
+          "x": 126.200668,
+          "y": 45.7854,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Battle Scene/Gates/Pipe_Vent_Hatch (1)/Platform/lid"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1480a875",
+        "pos": {
+          "x": 127.526924,
+          "y": 45.7854042,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Battle Scene/Gates/Pipe_Vent_Hatch (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f0c0e33f",
+        "pos": {
+          "x": 139.3728,
+          "y": 16.8246651,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -1233.16345,
+        "y": 283.458862
+      },
+      "block_id": "7cffdaf9-528e-47bb-a836-62fc79f09394",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "99baf43a-9ad4-43ea-8953-87d5883bd006",
+            "Item2": "Trigger"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -773.1354,
+        "y": 169.6479
+      },
+      "block_id": "18040379-e257-415b-9e0d-c1146cd7a7bf",
+      "events": {
+        "False": [],
+        "True": [
+          {
+            "Item1": "c8abeb81-bb70-4872-90ef-7836f47b88e1",
+            "Item2": "Trigger"
+          }
+        ]
+      },
+      "vars": {
+        "Check": {
+          "Item1": "4a3ab28c-bb08-4f29-824a-d5c7aaa83903",
+          "Item2": "Value"
+        }
+      },
+      "type": "If",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -213.541641,
+        "y": 158.75
+      },
+      "block_id": "b05c4e2a-912c-4b60-8894-b1f78b871f89",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool": "False",
+        "pd_bool_type": "hasHarpoonDash"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -771.9791,
+        "y": 359.583282
+      },
+      "block_id": "2b073bb8-ca0f-4c8d-b870-9898529426e9",
+      "events": {},
+      "vars": {},
+      "type": "Constant Bool",
+      "config": {
+        "constant_bool": "True"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -771.562439,
+        "y": 279.999969
+      },
+      "block_id": "4a3ab28c-bb08-4f29-824a-d5c7aaa83903",
+      "events": {},
+      "vars": {
+        "New Value": {
+          "Item1": "2b073bb8-ca0f-4c8d-b870-9898529426e9",
+          "Item2": "Value"
+        }
+      },
+      "type": "Variable (Bool)",
+      "config": {
+        "var_persistence_bool": "2",
+        "var_id_bool": "tempHarpoonDash"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -424.47818,
+        "y": 157.1945
+      },
+      "block_id": "c8abeb81-bb70-4872-90ef-7836f47b88e1",
+      "events": {},
+      "vars": {},
+      "type": "Random Event",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":-314.9092,\"y\":157.711731},\"block_id\":\"ff14ed49-dea2-4862-a473-e7d02608faa1\",\"events\":{\"OnTrigger\":[{\"Item1\":\"b05c4e2a-912c-4b60-8894-b1f78b871f89\",\"Item2\":\"Set\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": -769.640869,
+        "y": 52.7909546
+      },
+      "block_id": "df1588e0-fc9b-4442-9d8b-8754d7abeac4",
+      "events": {},
+      "vars": {},
+      "type": "Constant Bool",
+      "config": {
+        "constant_bool": "False"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -770.057556,
+        "y": -32.4389229
+      },
+      "block_id": "8426c34a-1f21-4f40-a6b5-3cb16afcdc16",
+      "events": {},
+      "vars": {
+        "New Value": {
+          "Item1": "df1588e0-fc9b-4442-9d8b-8754d7abeac4",
+          "Item2": "Value"
+        }
+      },
+      "type": "Variable (Bool)",
+      "config": {
+        "var_persistence_bool": "2",
+        "var_id_bool": "tempHarpoonDash"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -987.801941,
+        "y": 258.168121
+      },
+      "block_id": "99baf43a-9ad4-43ea-8953-87d5883bd006",
+      "events": {},
+      "vars": {},
+      "type": "Ordered Events",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":-728.75,\"y\":169.375},\"block_id\":\"35bd460b-7028-4fa6-9fd1-00bf12827756\",\"events\":{\"OnTrigger\":[{\"Item1\":\"18040379-e257-415b-9e0d-c1146cd7a7bf\",\"Item2\":\"In\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":-728.75,\"y\":169.375},\"block_id\":\"14b7f797-108d-4007-82b9-0a1a4e364ff2\",\"events\":{\"OnTrigger\":[{\"Item1\":\"8426c34a-1f21-4f40-a6b5-3cb16afcdc16\",\"Item2\":\"Set\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}}]"
+      }
+    }
+  ]
+}

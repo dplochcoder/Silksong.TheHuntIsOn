@@ -1,0 +1,129 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c7a99a39",
+        "pos": {
+          "x": 8.706163,
+          "y": 12.76166,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ba3176e0",
+        "pos": {
+          "x": 5.5005455,
+          "y": 10.23515,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_Gate_small"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e8d891dc",
+        "pos": {
+          "x": 7.33003044,
+          "y": 25.6818352,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "4dc11e12",
+        "pos": {
+          "x": 30.5470867,
+          "y": 38.5880661,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Flea Rescue Barrel"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "cc57aef8",
+        "pos": {
+          "x": 101.379395,
+          "y": 13.6931067,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Ability Scene (1)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "97af6e37-02c3-4660-86e4-0424a42ba2d8",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "430c7dad",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -190.202728,
+        "y": 5.06757355
+      },
+      "block_id": "3f8ad048-681c-4046-b4e0-8b91e94cfd69",
+      "events": {
+        "OnStart": []
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

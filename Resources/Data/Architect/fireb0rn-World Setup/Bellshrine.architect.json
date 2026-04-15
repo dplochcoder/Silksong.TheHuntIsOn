@@ -1,0 +1,81 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "3d28dbd6",
+        "pos": {
+          "x": 4.178217,
+          "y": 13.7803268,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f306c506",
+        "pos": {
+          "x": 25.2003288,
+          "y": 9.438682,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Whole Scene/bellshrine_gate_curved/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "885f5ed3",
+        "pos": {
+          "x": 23.3557072,
+          "y": 9.48366451,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Whole Scene/Bellshrine Sequence"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0a43413a",
+        "pos": {
+          "x": 24.2442741,
+          "y": 9.472419,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Whole Scene/_Scenery/CC_metal_cog_pieces_modular_0000_1"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

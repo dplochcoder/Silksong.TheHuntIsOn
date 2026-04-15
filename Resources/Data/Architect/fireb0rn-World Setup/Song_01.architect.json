@@ -1,0 +1,82 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1bcd855d",
+        "pos": {
+          "x": 27.10497,
+          "y": 36.4559,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Floor_basic Song_01"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1f339677",
+        "pos": {
+          "x": 100.810532,
+          "y": 80.25844,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "GameObject (3)/Song_lever_side/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2b7eadb4",
+        "pos": {
+          "x": 105.489471,
+          "y": 78.95197,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "song_trap_door/Door/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "383e6b58",
+        "pos": {
+          "x": 101.672813,
+          "y": 80.80256,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "song_trap_door/lever/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

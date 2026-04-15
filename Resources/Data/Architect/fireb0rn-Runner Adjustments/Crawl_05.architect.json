@@ -1,0 +1,274 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "5abff083",
+        "pos": {
+          "x": 96.96529,
+          "y": 56.5831947,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Ability Scene (2)/Shrine Weaver Ability",
+        "fsm_hook_name": "Inspection",
+        "fsm_hook_state": "Fade Pause"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "de5fec3a",
+        "pos": {
+          "x": 100.155083,
+          "y": 56.5944328,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Ability Scene (2)/Shrine Weaver Ability",
+        "fsm_hook_name": "Inspection",
+        "fsm_hook_state": "Fade To Black"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "ebbab9b7",
+        "pos": {
+          "x": 103.377586,
+          "y": 56.5920029,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Ability Scene (2)/Shrine Weaver Ability",
+        "fsm_hook_name": "Inspection",
+        "fsm_hook_state": "Needolin?"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "8d8c7094",
+        "pos": {
+          "x": 93.78455,
+          "y": 56.5831947,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Ability Scene (2)/Shrine Weaver Ability",
+        "fsm_hook_name": "Inspection",
+        "fsm_hook_state": "Look Back"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "393a1a00",
+        "pos": {
+          "x": 93.75413,
+          "y": 53.01416,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Ability Scene (2)/Shrine Weaver Ability",
+        "fsm_hook_name": "Inspection",
+        "fsm_hook_state": "Msg End Pause"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "53d5180a",
+        "pos": {
+          "x": 96.94848,
+          "y": 53.014164,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Ability Scene (2)/Shrine Weaver Ability",
+        "fsm_hook_name": "Inspection",
+        "fsm_hook_state": "Get Up Pause"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "eb609967",
+        "pos": {
+          "x": 100.135933,
+          "y": 53.01453,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Ability Scene (2)/Shrine Weaver Ability",
+        "fsm_hook_name": "Inspection",
+        "fsm_hook_state": "Get Up"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -506.696228,
+        "y": -243.749908
+      },
+      "block_id": "24e36847-7e16-40d1-bdfe-2a0e14938e30",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "30e330b2-6e59-48d7-955f-92f3d461e0d8",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "8d8c7094",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -284.82135,
+        "y": -252.678482
+      },
+      "block_id": "30e330b2-6e59-48d7-955f-92f3d461e0d8",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "1fd41ca8-ac11-4829-bb9d-823f69b1977c",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "5abff083",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -43.7499847,
+        "y": -262.0534
+      },
+      "block_id": "d9613a03-1580-4e82-857a-cbb18035f7ec",
+      "events": {
+        "OnTarget": []
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "de5fec3a",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 185.2678,
+        "y": -274.106934
+      },
+      "block_id": "1fd41ca8-ac11-4829-bb9d-823f69b1977c",
+      "events": {
+        "OnTarget": []
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "ebbab9b7",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -140.680756,
+        "y": 299.6092
+      },
+      "block_id": "7d163a09-3740-469d-a124-432afdfafbee",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "19422c00-ccc7-4a47-9caf-94dece62c7b2",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "393a1a00",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 77.79016,
+        "y": 295.982
+      },
+      "block_id": "8dc69c99-be90-4e80-97c2-b9d642c732ae",
+      "events": {
+        "OnTarget": []
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "53d5180a",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 279.52002,
+        "y": 288.3928
+      },
+      "block_id": "19422c00-ccc7-4a47-9caf-94dece62c7b2",
+      "events": {
+        "OnTarget": []
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "eb609967",
+        "object_type": "fsm_hook"
+      }
+    }
+  ]
+}

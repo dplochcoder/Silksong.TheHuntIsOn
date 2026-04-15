@@ -1,0 +1,26 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "0cab79e2",
+        "pos": {
+          "x": 74.8564148,
+          "y": 59.6800461,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_id": "GreymoorSpawn11",
+        "trans_collide": "0"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

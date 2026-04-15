@@ -1,0 +1,87 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "194ad0d0",
+        "pos": {
+          "x": 27.51089,
+          "y": 24.3830986,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bot Blocker"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f97f00de",
+        "pos": {
+          "x": 27.5454559,
+          "y": 25.4554329,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bot Blocker"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "62c6e591",
+        "pos": {
+          "x": 20.4686184,
+          "y": 19.94197,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "bank_door"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "3ae6a761",
+        "pos": {
+          "x": 16.49338,
+          "y": 21.1518288,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "0",
+        "trans_collide": "1",
+        "trans_edit_mode_active": "True",
+        "trans_id": "bankEntry",
+        "trans_other_id": "left1",
+        "trans_other_scene": "Hang_06_bank",
+        "size_height": "2"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

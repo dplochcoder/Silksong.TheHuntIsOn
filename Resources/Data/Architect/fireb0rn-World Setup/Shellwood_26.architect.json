@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "3b523000",
+        "pos": {
+          "x": 45.1480026,
+          "y": 112.669037,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Shellwood Twig Wall (2)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

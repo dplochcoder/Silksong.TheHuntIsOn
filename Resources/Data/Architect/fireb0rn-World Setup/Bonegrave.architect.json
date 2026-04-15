@@ -1,0 +1,158 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "2b2fd510",
+        "pos": {
+          "x": 146.187027,
+          "y": 10.6263685,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "Steel_Servant_Tunnel/Open"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "035921f9",
+        "pos": {
+          "x": 147.1881,
+          "y": 10.6938553,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Steel_Servant_Tunnel/Closed"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "dce17acc",
+        "pos": {
+          "x": 194.889145,
+          "y": 11.073925,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Chapel Door Control/Door Closed"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "4b9db032",
+        "pos": {
+          "x": 194.135529,
+          "y": 11.0964184,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Chapel Door Control/Do Close"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "f45dab11",
+        "pos": {
+          "x": 195.721466,
+          "y": 11.107666,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "door1"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d55c355c",
+        "pos": {
+          "x": 301.617371,
+          "y": 24.9610786,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "church_gate/bone_gate_02004"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "92611922",
+        "pos": {
+          "x": 301.64035,
+          "y": 25.820549,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Moss Vine Cluster"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b05b3b75",
+        "pos": {
+          "x": 262.025726,
+          "y": 73.2837143,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "One Way Wall"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

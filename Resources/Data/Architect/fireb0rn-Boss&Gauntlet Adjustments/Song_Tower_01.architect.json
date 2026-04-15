@@ -1,0 +1,135 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "183c2286",
+        "pos": {
+          "x": 75.7573242,
+          "y": 114.847557,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Boss Scene/Lace Boss2 New",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "c314b94e",
+        "pos": {
+          "x": 65.46015,
+          "y": 106.861885,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "door_cutsceneEndLaceTower",
+        "fsm_hook_name": "Travel Control",
+        "fsm_hook_state": "Lift Already Here"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "b5541dc6",
+        "pos": {
+          "x": 61.9171,
+          "y": 106.812752,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "door_cutsceneEndLaceTower",
+        "fsm_hook_name": "Travel Control",
+        "fsm_hook_state": "Lift Active"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 29.9137936,
+        "y": 89.10557
+      },
+      "block_id": "8cc9cd6a-9d6c-4463-8790-e831078b6918",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "183c2286",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -309.805542,
+        "y": 99.62502
+      },
+      "block_id": "3eac340a-a7db-46d4-939b-9645b2d7267b",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "8cc9cd6a-9d6c-4463-8790-e831078b6918",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -47.84481,
+        "y": -140.086151
+      },
+      "block_id": "0646ede7-732f-4979-81ae-3dbc1e3abb3b",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "fff67444-7da7-4f22-aee7-812ec3d7c40f",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "b5541dc6",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 191.810287,
+        "y": -144.8275
+      },
+      "block_id": "fff67444-7da7-4f22-aee7-812ec3d7c40f",
+      "events": {
+        "OnTarget": []
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "c314b94e",
+        "object_type": "fsm_hook"
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a7f2ccd2",
+        "pos": {
+          "x": 91.31324,
+          "y": 52.065937,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "GameObject (3)/Collectable Item Pickup/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

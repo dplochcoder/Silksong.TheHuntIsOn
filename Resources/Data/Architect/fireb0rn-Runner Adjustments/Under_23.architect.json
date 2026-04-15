@@ -1,0 +1,58 @@
+{
+  "placements": [],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -135.685455,
+        "y": -23.4161625
+      },
+      "block_id": "794653ec-1c3e-40ce-84ee-7fe77d534c22",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "80422191-5122-4039-a5cd-6bac4894067c",
+            "Item2": "Set"
+          },
+          {
+            "Item1": "a5700d54-88c7-4674-b6b2-d239c901b95e",
+            "Item2": "Set"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 172.253189,
+        "y": 46.5115738
+      },
+      "block_id": "80422191-5122-4039-a5cd-6bac4894067c",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "act2Started",
+        "pd_bool": "True"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 172.573944,
+        "y": -81.15466
+      },
+      "block_id": "a5700d54-88c7-4674-b6b2-d239c901b95e",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "visitedCitadel",
+        "pd_bool": "True"
+      },
+      "ext": {}
+    }
+  ]
+}

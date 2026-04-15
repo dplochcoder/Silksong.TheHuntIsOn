@@ -1,0 +1,378 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "21c560ed",
+        "pos": {
+          "x": 34.9104,
+          "y": 7.096332,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Librarian Scene/Librarian",
+        "fsm_hook_name": "Dialogue",
+        "fsm_hook_state": "Needolin Pre Wait"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "e431b901",
+        "pos": {
+          "x": 38.3072281,
+          "y": 7.07383633,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Librarian Scene/Librarian",
+        "fsm_hook_name": "Dialogue",
+        "fsm_hook_state": "Needolin"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "50bfc2c0",
+        "pos": {
+          "x": 27.2672176,
+          "y": 6.92761564,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Librarian Scene/Librarian",
+        "fsm_hook_name": "Dialogue",
+        "fsm_hook_state": "Wait"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "7eea5fd3",
+        "pos": {
+          "x": 31.1027126,
+          "y": 7.028846,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Librarian Scene/Librarian",
+        "fsm_hook_name": "Dialogue",
+        "fsm_hook_state": "Given First?"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "76adc818",
+        "pos": {
+          "x": 30.7315369,
+          "y": 10.8530922,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Librarian Scene/Librarian",
+        "fsm_hook_name": "Dialogue",
+        "fsm_hook_state": "Grab All Relics"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "8c93b8a0",
+        "pos": {
+          "x": 25.95828,
+          "y": 10.796854,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Librarian Scene/Librarian",
+        "fsm_hook_name": "Dialogue",
+        "fsm_hook_state": "Relic Ask Dlg"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "98fda5c3",
+        "pos": {
+          "x": 16.8663635,
+          "y": 7.31004,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Librarian Scene/Librarian",
+        "fsm_hook_name": "Dialogue",
+        "fsm_hook_state": "First?"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "c43d8bf3",
+        "pos": {
+          "x": 20.40504,
+          "y": 7.141323,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Librarian Scene/Librarian",
+        "fsm_hook_name": "Dialogue",
+        "fsm_hook_state": "Open Relic Board"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 591.7027,
+        "y": -189.365662
+      },
+      "block_id": "7f8cc3c1-1ac5-4508-8698-fec33f3e6071",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "8432b7fe-d363-42f0-acea-135272df2457",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "21c560ed",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 828.835144,
+        "y": -192.302933
+      },
+      "block_id": "8432b7fe-d363-42f0-acea-135272df2457",
+      "events": {
+        "OnTarget": []
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "e431b901",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 18.6257324,
+        "y": -10.7071991
+      },
+      "block_id": "5966dbb4-5725-4bd8-8920-1eb09dd61804",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "ab16c895-c16f-41ac-8245-296e6fa89c23",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "50bfc2c0",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 16.1564922,
+        "y": 212.4825
+      },
+      "block_id": "c5c76604-8c9b-4fcb-a718-42ae36c481f1",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "1f1972a7-82c1-4793-9cb1-36c472b2ad95",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7eea5fd3",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 415.492523,
+        "y": 76.52534
+      },
+      "block_id": "ab16c895-c16f-41ac-8245-296e6fa89c23",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "76adc818",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 219.3521,
+        "y": 243.157074
+      },
+      "block_id": "1f1972a7-82c1-4793-9cb1-36c472b2ad95",
+      "events": {
+        "False": [
+          {
+            "Item1": "ab16c895-c16f-41ac-8245-296e6fa89c23",
+            "Item2": "fsm_set_state"
+          }
+        ],
+        "True": [
+          {
+            "Item1": "67fbf9eb-efee-431e-a775-fec7a17e73d6",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {
+        "Check": {
+          "Item1": "dd47b46f-dea9-4f5f-adcc-54c2785cecff",
+          "Item2": "Value"
+        }
+      },
+      "type": "If",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 211.821289,
+        "y": 391.380463
+      },
+      "block_id": "dd47b46f-dea9-4f5f-adcc-54c2785cecff",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "GivenLibrarianRelic"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -242.829514,
+        "y": 118.614548
+      },
+      "block_id": "37c7d6ff-e46b-4b32-a803-e79ae4fb08c1",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "5966dbb4-5725-4bd8-8920-1eb09dd61804",
+            "Item2": "fsm_remove_transition"
+          },
+          {
+            "Item1": "c5c76604-8c9b-4fcb-a718-42ae36c481f1",
+            "Item2": "fsm_remove_transition"
+          },
+          {
+            "Item1": "fa484fbf-ef01-4e24-a9bd-b996cb242df9",
+            "Item2": "fsm_remove_transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 419.814362,
+        "y": 307.37854
+      },
+      "block_id": "67fbf9eb-efee-431e-a775-fec7a17e73d6",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "8c93b8a0",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 33.5689735,
+        "y": -243.071732
+      },
+      "block_id": "fa484fbf-ef01-4e24-a9bd-b996cb242df9",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "90628520-711d-46fc-8819-0cd5d5bb7662",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "98fda5c3",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 306.569672,
+        "y": -209.907257
+      },
+      "block_id": "90628520-711d-46fc-8819-0cd5d5bb7662",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "c43d8bf3",
+        "object_type": "fsm_hook"
+      }
+    }
+  ]
+}

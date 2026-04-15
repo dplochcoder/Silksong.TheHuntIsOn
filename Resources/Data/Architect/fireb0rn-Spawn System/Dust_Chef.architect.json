@@ -1,0 +1,46 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "433447a6",
+        "pos": {
+          "x": 16.1792336,
+          "y": 31.8534241,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_id": "DustChef",
+        "trans_collide": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "a2e79a4f",
+        "pos": {
+          "x": 15.8744755,
+          "y": 7.25395966,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_id": "DustChef2",
+        "trans_collide": "False"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

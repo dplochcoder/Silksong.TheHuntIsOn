@@ -1,0 +1,139 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f0a38d21",
+        "pos": {
+          "x": 108.818237,
+          "y": 85.53462,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "dock_sealed_gate_long"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "4d373a40",
+        "pos": {
+          "x": 37.17787,
+          "y": 82.9652557,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "One Way Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8be19943",
+        "pos": {
+          "x": 74.81394,
+          "y": 108.451431,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_Gate_small"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e08037da",
+        "pos": {
+          "x": 120.424545,
+          "y": 108.183426,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f6a43154",
+        "pos": {
+          "x": 119.058411,
+          "y": 108.245758,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall_Silhouette"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c8ffb692",
+        "pos": {
+          "x": 68.1964645,
+          "y": 108.204636,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b7b7afbf",
+        "pos": {
+          "x": 104.334961,
+          "y": 85.97331,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Harpoon Ring Pull Switch"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

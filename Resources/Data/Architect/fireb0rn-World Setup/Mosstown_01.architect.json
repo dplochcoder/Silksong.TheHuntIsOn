@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "973b8c5f",
+        "pos": {
+          "x": 25.9797974,
+          "y": 3.5534358,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bone Trapdoor Slide"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "73bc0784",
+        "pos": {
+          "x": 25.8097725,
+          "y": 14.1188316,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bone Lever"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

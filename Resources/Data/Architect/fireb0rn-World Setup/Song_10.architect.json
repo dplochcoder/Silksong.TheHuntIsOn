@@ -1,0 +1,272 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0e16f20c",
+        "pos": {
+          "x": 51.2563553,
+          "y": 56.25026,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d59f84ea",
+        "pos": {
+          "x": 51.39339,
+          "y": 54.9194221,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_Gate_small"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "09fc4c7e",
+        "pos": {
+          "x": 51.2896919,
+          "y": 53.381176,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_Gate_small (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "dcd9c116",
+        "pos": {
+          "x": 87.45571,
+          "y": 53.86038,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Sherma Citadel Spa NPC"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f5d26417",
+        "pos": {
+          "x": 104.090767,
+          "y": 60.7099457,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Sherma Citadel Spa NPC"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "66aec300",
+        "pos": {
+          "x": 103.182236,
+          "y": 59.3911247,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Sherma Citadel Spa NPC"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "90faede5",
+        "pos": {
+          "x": 96.2495956,
+          "y": 62.03554,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Sherma Citadel Spa NPC"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e8baee6e",
+        "pos": {
+          "x": 98.08166,
+          "y": 54.49987,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "917eaa5b",
+        "pos": {
+          "x": 16.5876179,
+          "y": 27.6426716,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Plat Break Scene"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "e2f80a57",
+        "pos": {
+          "x": 127.160225,
+          "y": 64.06786,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "Song_10_hidden_gate/open"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "401d9d28",
+        "pos": {
+          "x": 121.041809,
+          "y": 62.89257,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch_Gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5f7d96bf",
+        "pos": {
+          "x": 117.464096,
+          "y": 62.9271431,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch/Lever Cog/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6cfff92b",
+        "pos": {
+          "x": 119.69368,
+          "y": 63.77404,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Cog_Lever"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d4123d41",
+        "pos": {
+          "x": 78.67204,
+          "y": 49.5797,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

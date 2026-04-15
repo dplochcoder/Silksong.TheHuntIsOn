@@ -1,0 +1,673 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ca065fef",
+        "pos": {
+          "x": 45.7089539,
+          "y": 118.133705,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Tutorial Blocker/GameObject (23)"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "becd544e",
+        "pos": {
+          "x": 56.2325935,
+          "y": 0.201594353,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "399db228",
+        "pos": {
+          "x": 55.0290947,
+          "y": 5.465557,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "0",
+        "trans_other_scene": "Bonetown",
+        "trans_other_id": "doorBonebottom",
+        "trans_id": "doorStart",
+        "trans_collide": "1",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "custom_wav",
+        "pid": "22c98f4c",
+        "pos": {
+          "x": 25.8724041,
+          "y": 6.151673,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "wav_volume": "1",
+        "wav_pitch": "1",
+        "wav_mode": "1",
+        "wav_loop": "False",
+        "wav_url": "https://drive.google.com/uc?export=download&id=1tOQQ0aojQJu9a5np1_VDq74MNiJi5xjJ"
+      }
+    },
+    {
+      "placement": {
+        "id": "custom_wav",
+        "pid": "997e37af",
+        "pos": {
+          "x": 28.0826168,
+          "y": 6.08418655,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "wav_volume": "1",
+        "wav_pitch": "1",
+        "wav_mode": "1",
+        "wav_loop": "False",
+        "wav_url": "https://drive.google.com/uc?export=download&id=11l6wwQFADEpMxcBe5ryeGvOQSbBqE-u1"
+      }
+    },
+    {
+      "placement": {
+        "id": "custom_wav",
+        "pid": "82283780",
+        "pos": {
+          "x": 30.3492641,
+          "y": 6.0504427,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "wav_volume": "1",
+        "wav_pitch": "1",
+        "wav_mode": "1",
+        "wav_loop": "False",
+        "wav_url": "https://drive.google.com/uc?export=download&id=1gE_kKIIREW0InC0QpF5kTc3FR3fw1Vgr"
+      }
+    },
+    {
+      "placement": {
+        "id": "custom_wav",
+        "pid": "7445a8df",
+        "pos": {
+          "x": 32.61007,
+          "y": 5.92671728,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "wav_volume": "1",
+        "wav_pitch": "1",
+        "wav_mode": "1",
+        "wav_loop": "False",
+        "wav_url": "https://drive.google.com/uc?export=download&id=1yGf5hRlCvtaP3nmeu9pe8hKc9nTU4Ih9"
+      }
+    },
+    {
+      "placement": {
+        "id": "node",
+        "pid": "aba54363",
+        "pos": {
+          "x": 49.9301376,
+          "y": 82.0278244,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "track_id": "1"
+      }
+    },
+    {
+      "placement": {
+        "id": "node",
+        "pid": "62e6bb2d",
+        "pos": {
+          "x": 50.07976,
+          "y": 119.044807,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "track_id": "1"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_mover",
+        "pid": "20f66640",
+        "pos": {
+          "x": 45.0298462,
+          "y": 4.64447,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "mover_x_offset": "0",
+        "mover_y_offset": "-50",
+        "mover_rot": "0",
+        "mover_clear_vel": "True",
+        "mover_do_x": "True",
+        "mover_do_y": "True",
+        "mover_mode": "0",
+        "mover_target": "e90e7973",
+        "mover_mode_2": "Hero_Hornet"
+      }
+    },
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "da934adc",
+        "pos": {
+          "x": 49.99483,
+          "y": 6.477858,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "4",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "start_node",
+        "pid": "7f09ec47",
+        "pos": {
+          "x": 50.03512,
+          "y": 3.40721416,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "track_speed": "40",
+        "track_r": "1",
+        "track_g": "1",
+        "track_b": "1",
+        "track_a": "0.1",
+        "obj_z": "0",
+        "track_id": "1",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_anchor",
+        "pid": "00da31cd",
+        "pos": {
+          "x": 49.9145126,
+          "y": 1.9674983,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "anchor_dist": "40",
+        "anchor_start_dist": "0",
+        "anchor_speed": "0",
+        "anchor_rot": "0",
+        "anchor_rot_speed": "0",
+        "anchor_smoothing": "0.5",
+        "anchor_pause_time": "0",
+        "anchor_moving": "True",
+        "anchor_parent": "7f09ec47",
+        "anchor_target": "e90e7973",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "dock_plat_01",
+        "pid": "e90e7973",
+        "pos": {
+          "x": 43.92757,
+          "y": 8.479966,
+          "z": -0.05
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0",
+        "is_visible": "False",
+        "collider_type": "2"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 38.84197,
+        "y": 156.915588
+      },
+      "block_id": "151838ad-cd67-4922-b53b-13ca62b613f2",
+      "events": {
+        "Stop": [
+          {
+            "Item1": "3157c6d5-09e8-4362-88a2-749746ec28a1",
+            "Item2": "Trigger"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Animator Controller",
+      "config": {
+        "anim_take_ctrl": "True",
+        "anim_clip": "Super Jump Antic"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 400.021973,
+        "y": 156.260651
+      },
+      "block_id": "f959f0b3-7af3-4a65-8ae1-3e84ee0c8df8",
+      "events": {
+        "Stop": [
+          {
+            "Item1": "dd87eea4-f95e-4e00-ac59-1072ca5798f3",
+            "Item2": "Start"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Animator Controller",
+      "config": {
+        "anim_take_ctrl": "True",
+        "anim_clip": "Super Jump Throw"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 598.3674,
+        "y": 155.754654
+      },
+      "block_id": "dd87eea4-f95e-4e00-ac59-1072ca5798f3",
+      "events": {
+        "Stop": [
+          {
+            "Item1": "a976e23d-0f54-424c-9fee-dbc69f4f1eb0",
+            "Item2": "Trigger"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Animator Controller",
+      "config": {
+        "anim_take_ctrl": "False",
+        "anim_clip": "Super Jump Throw Wait"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1151.17554,
+        "y": 14.8574409
+      },
+      "block_id": "d94a5780-cddf-433e-941a-210995435e2c",
+      "events": {
+        "Stop": [
+          {
+            "Item1": "7557fa01-92c0-4310-829f-87a884578cd3",
+            "Item2": "Trigger"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Animator Controller",
+      "config": {
+        "anim_take_ctrl": "False",
+        "anim_clip": "Super Jump Loop",
+        "anim_duration": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 963.2076,
+        "y": 154.027832
+      },
+      "block_id": "b7ee0ef0-710d-478d-9635-2766aa586147",
+      "events": {},
+      "vars": {},
+      "type": "UI Control",
+      "config": {
+        "ui_fade_r": "0",
+        "ui_fade_g": "0",
+        "ui_fade_b": "0",
+        "ui_fade_a": "1",
+        "ui_fade_duration": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 961.868958,
+        "y": 269.4872
+      },
+      "block_id": "04be0aee-ac04-489c-b6d4-9eeec114f12d",
+      "events": {},
+      "vars": {},
+      "type": "Camera Shake",
+      "config": {
+        "camera_shake_type": "3"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1604.54712,
+        "y": -126.2368
+      },
+      "block_id": "e718f907-db0a-42a1-8bbe-05afc566a7f0",
+      "events": {},
+      "vars": {},
+      "type": "Set Lighting",
+      "config": {
+        "lighting_r": "1",
+        "lighting_g": "1",
+        "lighting_b": "1",
+        "lighting_intense": "1",
+        "lighting_sat": "1",
+        "lighting_lock": "True"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1603.91357,
+        "y": -222.5095
+      },
+      "block_id": "5eaf35c3-c816-4354-a22b-fce45c65753e",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bonetown",
+        "trans_door": "doorBonebottom"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1599.28687,
+        "y": -20.15933
+      },
+      "block_id": "c34e12f0-8f7a-430a-aea8-bc8e6f12e2ed",
+      "events": {},
+      "vars": {},
+      "type": "Camera Shake",
+      "config": {
+        "camera_shake_type": "3"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -169.261292,
+        "y": 186.5719
+      },
+      "block_id": "cc8f96ff-49ca-4752-8995-00e827ce862b",
+      "events": {},
+      "vars": {},
+      "type": "Ordered Events",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":-5.625,\"y\":104.375},\"block_id\":\"1e1e51e1-440c-4c87-ae81-f431bd76344d\",\"events\":{\"OnTrigger\":[{\"Item1\":\"151838ad-cd67-4922-b53b-13ca62b613f2\",\"Item2\":\"Start\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":-5.625,\"y\":104.375},\"block_id\":\"904eaf55-b828-4bc7-ad1d-84f13d35caf6\",\"events\":{\"OnTrigger\":[{\"Item1\":\"2fc93b7b-dc03-4c51-ae3c-50d21ece32ed\",\"Item2\":\"start_play\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":75.3125,\"y\":-76.5625},\"block_id\":\"b58815cf-0e5a-404b-a279-54fdfb391558\",\"events\":{\"OnTrigger\":[{\"Item1\":\"751b3903-13e9-40a2-9c12-076a22205dc6\",\"Item2\":\"Set\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 22.7567711,
+        "y": -41.2622375
+      },
+      "block_id": "2fc93b7b-dc03-4c51-ae3c-50d21ece32ed",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "22c98f4c",
+        "object_type": "custom_wav"
+      }
+    },
+    {
+      "pos": {
+        "x": 235.768188,
+        "y": 143.572113
+      },
+      "block_id": "3157c6d5-09e8-4362-88a2-749746ec28a1",
+      "events": {},
+      "vars": {},
+      "type": "Ordered Events",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":245.007324,\"y\":126.180817},\"block_id\":\"c4f5c104-a8b7-43c9-9476-e808b71bafac\",\"events\":{\"OnTrigger\":[{\"Item1\":\"f959f0b3-7af3-4a65-8ae1-3e84ee0c8df8\",\"Item2\":\"Start\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":245.007324,\"y\":126.180817},\"block_id\":\"e90743ce-d7f6-4689-a203-146257fe8510\",\"events\":{\"OnTrigger\":[{\"Item1\":\"dd26a9e5-a556-49f6-9572-f50a5881ccbd\",\"Item2\":\"start_play\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 407.064758,
+        "y": -33.69561
+      },
+      "block_id": "dd26a9e5-a556-49f6-9572-f50a5881ccbd",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "997e37af",
+        "object_type": "custom_wav"
+      }
+    },
+    {
+      "pos": {
+        "x": 790.7671,
+        "y": 276.8134
+      },
+      "block_id": "a976e23d-0f54-424c-9fee-dbc69f4f1eb0",
+      "events": {},
+      "vars": {},
+      "type": "Ordered Events",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":664.088745,\"y\":250.694458},\"block_id\":\"a1235e7b-0c25-4405-88db-a73c91c6450d\",\"events\":{\"OnTrigger\":[{\"Item1\":\"04be0aee-ac04-489c-b6d4-9eeec114f12d\",\"Item2\":\"Shake\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":676.901245,\"y\":149.756958},\"block_id\":\"b7794165-dafc-4551-b46a-0d3fb16a7733\",\"events\":{\"OnTrigger\":[{\"Item1\":\"b7ee0ef0-710d-478d-9635-2766aa586147\",\"Item2\":\"FadeOut\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":676.901245,\"y\":149.756958},\"block_id\":\"3e2200c5-44f5-4564-8995-7e63695cb039\",\"events\":{\"OnTrigger\":[{\"Item1\":\"ba13484a-49b8-4c66-b332-968dc4005cf1\",\"Item2\":\"start_play\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":492.9685,\"y\":112.329529},\"block_id\":\"a8f5734d-beb0-4311-b796-00e4e758036a\",\"events\":{\"OnTrigger\":[{\"Item1\":\"d94a5780-cddf-433e-941a-210995435e2c\",\"Item2\":\"Start\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":724.6875,\"y\":-20.0},\"block_id\":\"5c5af6b5-ae86-4c9b-8803-34bf9d82ee7c\",\"events\":{\"OnTrigger\":[{\"Item1\":\"a2641814-14ed-4afe-9207-3a112a07bd3a\",\"Item2\":\"enable\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":389.0625,\"y\":-56.875},\"block_id\":\"be8cc1ab-a2dc-4ef6-b9f9-95571f1008c3\",\"events\":{\"OnTrigger\":[{\"Item1\":\"a04a8bba-7741-43c4-949d-3cfb374e3ae2\",\"Item2\":\"enable\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":389.0625,\"y\":-56.875},\"block_id\":\"d31f822e-b927-4145-a44e-1292ab65c288\",\"events\":{\"OnTrigger\":[{\"Item1\":\"a04a8bba-7741-43c4-949d-3cfb374e3ae2\",\"Item2\":\"anchor_start\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 971.1947,
+        "y": -45.10863
+      },
+      "block_id": "ba13484a-49b8-4c66-b332-968dc4005cf1",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "82283780",
+        "object_type": "custom_wav"
+      }
+    },
+    {
+      "pos": {
+        "x": 1370.05786,
+        "y": 182.403656
+      },
+      "block_id": "7557fa01-92c0-4310-829f-87a884578cd3",
+      "events": {},
+      "vars": {},
+      "type": "Ordered Events",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":1072.55811,\"y\":142.640442},\"block_id\":\"8ace40c7-dd3e-40d6-aca8-23b5951489ea\",\"events\":{\"OnTrigger\":[{\"Item1\":\"786a5cd4-8629-4f1d-81c1-3be99640c9f8\",\"Item2\":\"start_play\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":1186.30811,\"y\":98.26544},\"block_id\":\"93efd801-b4d9-4d68-8b0b-7e6586dfefae\",\"events\":{\"OnTrigger\":[{\"Item1\":\"c34e12f0-8f7a-430a-aea8-bc8e6f12e2ed\",\"Item2\":\"Shake\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":793.825439,\"y\":-14.1589661},\"block_id\":\"e444aa1f-4f72-4e17-8455-d1d1eeb0d5ec\",\"events\":{\"OnTrigger\":[{\"Item1\":\"e718f907-db0a-42a1-8bbe-05afc566a7f0\",\"Item2\":\"Set\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":938.667236,\"y\":-52.65674},\"block_id\":\"cac31581-2c36-45cd-8c4f-226ab99faa8a\",\"events\":{\"OnTrigger\":[{\"Item1\":\"5eaf35c3-c816-4354-a22b-fce45c65753e\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 1602.51086,
+        "y": 131.7459
+      },
+      "block_id": "786a5cd4-8629-4f1d-81c1-3be99640c9f8",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7445a8df",
+        "object_type": "custom_wav"
+      }
+    },
+    {
+      "pos": {
+        "x": 977.8426,
+        "y": -316.3881
+      },
+      "block_id": "a04a8bba-7741-43c4-949d-3cfb374e3ae2",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "00da31cd",
+        "object_type": "object_anchor"
+      }
+    },
+    {
+      "pos": {
+        "x": -568.5184,
+        "y": 203.240662
+      },
+      "block_id": "3a62b1c7-0b47-4f67-8b27-707b5f9865ca",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "cc8f96ff-49ca-4752-8995-00e827ce862b",
+            "Item2": "Trigger"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "da934adc",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": 971.296,
+        "y": -182.407364
+      },
+      "block_id": "a2641814-14ed-4afe-9207-3a112a07bd3a",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7f09ec47",
+        "object_type": "start_node"
+      }
+    },
+    {
+      "pos": {
+        "x": 107.129555,
+        "y": -177.430481
+      },
+      "block_id": "cbbfa42f-a334-455b-8587-dd81f5b76ff3",
+      "events": {},
+      "vars": {},
+      "type": "Constant Bool",
+      "config": {
+        "constant_bool": "True"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 69.1666,
+        "y": -268.1712
+      },
+      "block_id": "751b3903-13e9-40a2-9c12-076a22205dc6",
+      "events": {},
+      "vars": {
+        "New Value": {
+          "Item1": "cbbfa42f-a334-455b-8587-dd81f5b76ff3",
+          "Item2": "Value"
+        }
+      },
+      "type": "Variable (Bool)",
+      "config": {
+        "var_persistence_bool": "2",
+        "var_id_bool": "dramaticEntrance"
+      },
+      "ext": {}
+    }
+  ]
+}

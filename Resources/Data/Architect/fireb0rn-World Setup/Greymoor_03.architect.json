@@ -1,0 +1,158 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7039a005",
+        "pos": {
+          "x": 109.047379,
+          "y": 76.76816,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0a37092f",
+        "pos": {
+          "x": 71.1233444,
+          "y": 23.60493,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Hornet_pressure_plate_small_persistent"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "57b4034c",
+        "pos": {
+          "x": 70.521965,
+          "y": 22.6078758,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Hornet_pressure_plate_small_persistent"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "dc442783",
+        "pos": {
+          "x": 70.91568,
+          "y": 20.5832767,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Hornet_pressure_plate_small_persistent"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6f6b89b0",
+        "pos": {
+          "x": 69.31849,
+          "y": 22.7091084,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Hornet_pressure_plate_small_persistent"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c93d117f",
+        "pos": {
+          "x": 69.34099,
+          "y": 22.7653484,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Hornet_pressure_plate_small_persistent"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6a7b1ebe",
+        "pos": {
+          "x": 70.3083,
+          "y": 22.83284,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Hornet_pressure_plate_small_persistent"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0a1f4338",
+        "pos": {
+          "x": 76.6295547,
+          "y": 16.3766079,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Grey Door"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

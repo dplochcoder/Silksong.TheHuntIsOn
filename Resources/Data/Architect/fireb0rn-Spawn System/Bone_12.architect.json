@@ -1,0 +1,46 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "4f605d79",
+        "pos": {
+          "x": 49.6875076,
+          "y": 11.7482452,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_id": "MarrowSpawn12-2",
+        "trans_collide": "1"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "584007bf",
+        "pos": {
+          "x": 6.906519,
+          "y": 30.2310867,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_id": "MarrowSpawn12-1",
+        "trans_collide": "1"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

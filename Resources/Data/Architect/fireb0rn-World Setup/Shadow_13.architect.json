@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "fc1b090a",
+        "pos": {
+          "x": 307.2671,
+          "y": 64.4184647,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Heart Piece"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "27005046",
+        "pos": {
+          "x": 217.494,
+          "y": 53.2650375,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "moss_crumble_plat (5)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

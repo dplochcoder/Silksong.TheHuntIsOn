@@ -1,0 +1,63 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8e028c29",
+        "pos": {
+          "x": 14.4567366,
+          "y": 5.65560246,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup - Melody"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5fafa4e1",
+        "pos": {
+          "x": 31.09993,
+          "y": 4.825989,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "secret wall library slide mover - EDITED/gates/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "54f6fd5a",
+        "pos": {
+          "x": 41.4170761,
+          "y": 4.03094,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Hornet_pressure_plate_small_persistent"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

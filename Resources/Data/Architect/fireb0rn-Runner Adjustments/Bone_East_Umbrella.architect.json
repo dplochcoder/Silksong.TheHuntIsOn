@@ -1,0 +1,461 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "1e892176",
+        "pos": {
+          "x": 19.91793,
+          "y": 12.5186958,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "_NPCs/Seamstress",
+        "fsm_hook_name": "Dialogue",
+        "fsm_hook_state": "Start Talk"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "3c2b4e0e",
+        "pos": {
+          "x": 29.5226974,
+          "y": 8.926526,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "_NPCs/Seamstress",
+        "fsm_hook_name": "Dialogue",
+        "fsm_hook_state": "Quest Prompt"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "f365b62a",
+        "pos": {
+          "x": 19.82705,
+          "y": 9.151483,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "_NPCs/Seamstress",
+        "fsm_hook_name": "Dialogue",
+        "fsm_hook_state": "Quest Accept"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "ad6a73b0",
+        "pos": {
+          "x": 23.2351265,
+          "y": 9.106491,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "_NPCs/Seamstress",
+        "fsm_hook_name": "Dialogue",
+        "fsm_hook_state": "Talk End 2"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "e0872b32",
+        "pos": {
+          "x": 28.1841717,
+          "y": 9.23023,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "_NPCs/Seamstress",
+        "fsm_hook_name": "Dialogue",
+        "fsm_hook_state": "Quest Offered?"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "ee3d5cda",
+        "pos": {
+          "x": 23.2576218,
+          "y": 12.4583321,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "_NPCs/Seamstress",
+        "fsm_hook_name": "Dialogue",
+        "fsm_hook_state": "Quest State?"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "86281acc",
+        "pos": {
+          "x": 27.8129978,
+          "y": 12.4583445,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "_NPCs/Seamstress",
+        "fsm_hook_name": "Dialogue",
+        "fsm_hook_state": "Fade Up"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "8b2b21f6",
+        "pos": {
+          "x": 30.9061184,
+          "y": 12.3571033,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "_NPCs/Seamstress",
+        "fsm_hook_name": "Dialogue",
+        "fsm_hook_state": "Dress Flourish"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "277f529f",
+        "pos": {
+          "x": 14.1353331,
+          "y": 8.048719,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "_NPCs/Seamstress",
+        "fsm_hook_name": "Dialogue",
+        "fsm_hook_state": "Fade Down"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "db0a3536",
+        "pos": {
+          "x": 15.4966488,
+          "y": 7.869235,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "_NPCs/Seamstress",
+        "fsm_hook_name": "Dialogue",
+        "fsm_hook_state": "Msg"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "2fd57bb4",
+        "pos": {
+          "x": 16.3289165,
+          "y": 11.9521427,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "_NPCs/Seamstress",
+        "fsm_hook_name": "Dialogue",
+        "fsm_hook_state": "Quest Complete"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -500.430878,
+        "y": -100.861977
+      },
+      "block_id": "2213a6ce-9c78-4ac4-96f5-a96d99895bc5",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "8b231522-8fd5-4ccc-9652-5bbc10682a7a",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "1e892176",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 256.465424,
+        "y": -86.6379
+      },
+      "block_id": "d39ab630-3874-4c9b-ad33-1c4792a2c590",
+      "events": {
+        "OnTarget": []
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "3c2b4e0e",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -775.7864,
+        "y": -119.321091
+      },
+      "block_id": "e0ea77ed-99ce-46cc-a397-fab99d4859fe",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "2213a6ce-9c78-4ac4-96f5-a96d99895bc5",
+            "Item2": "fsm_remove_transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -505.603271,
+        "y": -364.6551
+      },
+      "block_id": "79788fef-9903-4d5a-b5df-4d2a063b0fe4",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "709dbfae-251f-4f13-8aa6-73a4274570b3",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "f365b62a",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -21.5517178,
+        "y": -387.499878
+      },
+      "block_id": "709dbfae-251f-4f13-8aa6-73a4274570b3",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "ad6a73b0",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -270.689575,
+        "y": -96.12065
+      },
+      "block_id": "8b231522-8fd5-4ccc-9652-5bbc10682a7a",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "ee3d5cda",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 36.2068863,
+        "y": -85.77583
+      },
+      "block_id": "c941b309-c76d-43bb-8b82-2bc8f2913093",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "d39ab630-3874-4c9b-ad33-1c4792a2c590",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "e0872b32",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 240.517166,
+        "y": 175.862
+      },
+      "block_id": "4a983779-e412-497e-a340-1a242f9cc3c3",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "ec96948a-90d2-4a17-a7e4-3e74756bc363",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "86281acc",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 517.2412,
+        "y": 167.241318
+      },
+      "block_id": "ec96948a-90d2-4a17-a7e4-3e74756bc363",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "8b2b21f6",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -222.413727,
+        "y": 174.999939
+      },
+      "block_id": "a9e754fc-ba0a-42ac-864e-c066f6634428",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "df314220-8e3a-4311-ac76-827548f53eb6",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "277f529f",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 40.5172272,
+        "y": 176.293045
+      },
+      "block_id": "df314220-8e3a-4311-ac76-827548f53eb6",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "db0a3536",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -7.46770144,
+        "y": 393.609833
+      },
+      "block_id": "0631f6cd-c688-4efb-a991-e025ed822ca5",
+      "events": {},
+      "vars": {},
+      "type": "UI Control",
+      "config": {
+        "ui_fade_r": "0",
+        "ui_fade_g": "0",
+        "ui_fade_b": "0",
+        "ui_fade_a": "1",
+        "ui_fade_duration": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -255.172333,
+        "y": 396.982635
+      },
+      "block_id": "c491cbd0-7a7a-49d4-a884-84a3b3f4aa6b",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "0631f6cd-c688-4efb-a991-e025ed822ca5",
+            "Item2": "FadeOut"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "2fd57bb4",
+        "object_type": "fsm_hook"
+      }
+    }
+  ]
+}

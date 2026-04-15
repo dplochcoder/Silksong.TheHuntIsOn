@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "hornet_cocoon",
+        "pid": "70a5d039",
+        "pos": {
+          "x": 76.79544,
+          "y": 67.40562,
+          "z": 0.005895
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "cocoon_mode": "2",
+        "cocoon_items": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "hornet_cocoon",
+        "pid": "a80be386",
+        "pos": {
+          "x": 19.2959843,
+          "y": 123.359207,
+          "z": 0.005895
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "cocoon_mode": "2",
+        "cocoon_items": "False"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

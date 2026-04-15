@@ -1,0 +1,76 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "a71c8b7c",
+        "pos": {
+          "x": 19.8551064,
+          "y": 38.1996956,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Battle Scene/Wave 1/Coral Conch Driller Giant Solo/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f6a5a770",
+        "pos": {
+          "x": 30.2498589,
+          "y": 36.78989,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Battle Scene/Gates/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -0.39062497,
+        "y": 1.90734863E-06
+      },
+      "block_id": "ac1c00f2-b45a-4bd0-a334-fe92172e9696",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "a71c8b7c",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -266.0156,
+        "y": 30.078125
+      },
+      "block_id": "609b561f-29e8-40eb-bbfe-a9cabacd9f0a",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "ac1c00f2-b45a-4bd0-a334-fe92172e9696",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

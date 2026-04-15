@@ -1,0 +1,440 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "78aca86d",
+        "pos": {
+          "x": 178.677734,
+          "y": 10.7264442,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Churchkeeper Intro Scene"
+      }
+    },
+    {
+      "placement": {
+        "id": "emerge_dust",
+        "pid": "44b7e315",
+        "pos": {
+          "x": 297.55603,
+          "y": 23.2145863,
+          "z": -0.003
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "dust_time": "1"
+      }
+    },
+    {
+      "placement": {
+        "id": "custom_wav",
+        "pid": "b9dc0177",
+        "pos": {
+          "x": 288.0506,
+          "y": 34.69613,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "wav_volume": "1",
+        "wav_pitch": "1",
+        "wav_mode": "1",
+        "wav_loop": "False",
+        "wav_url": "https://drive.google.com/uc?export=download&id=1mkwYJku2ofl0nP7RZqTL54WGqvP1cfS0"
+      }
+    },
+    {
+      "placement": {
+        "id": "custom_wav",
+        "pid": "65b1ecad",
+        "pos": {
+          "x": 290.367645,
+          "y": 34.63985,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "wav_volume": "1",
+        "wav_pitch": "1",
+        "wav_mode": "1",
+        "wav_loop": "False",
+        "wav_url": "https://drive.google.com/uc?export=download&id=1_13xGE_dnh_CHPw2xF4Pm2GOOoy9VR_D"
+      }
+    },
+    {
+      "placement": {
+        "id": "custom_wav",
+        "pid": "8fb289d8",
+        "pos": {
+          "x": 288.140564,
+          "y": 32.3228,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "wav_volume": "1",
+        "wav_pitch": "1",
+        "wav_mode": "1",
+        "wav_loop": "False",
+        "wav_url": "https://drive.google.com/uc?export=download&id=1HKKgo7XbP3C862CcfszAQM3gHGnftLs6"
+      }
+    },
+    {
+      "placement": {
+        "id": "custom_wav",
+        "pid": "6145d31a",
+        "pos": {
+          "x": 290.378876,
+          "y": 32.2204552,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "wav_volume": "1",
+        "wav_pitch": "1",
+        "wav_mode": "1",
+        "wav_loop": "False",
+        "wav_url": "https://drive.google.com/uc?export=download&id=1H6g_sIOrHjJiAGgtSIgH4_ie1G-n8SfL"
+      }
+    },
+    {
+      "placement": {
+        "id": "custom_wav",
+        "pid": "682a6893",
+        "pos": {
+          "x": 288.028656,
+          "y": 29.6369839,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "wav_volume": "1",
+        "wav_pitch": "1",
+        "wav_mode": "1",
+        "wav_loop": "False",
+        "wav_url": "https://drive.google.com/uc?export=download&id=1kRp5PML80mAxyjswYsv2m7_kW7br1fjH"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "6596b052",
+        "pos": {
+          "x": 297.601044,
+          "y": 24.4277229,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_other_scene": "Bonetown",
+        "trans_other_id": "doorStart",
+        "trans_id": "doorBonebottom",
+        "trans_collide": "1",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "emerge_dust",
+        "pid": "17e84ff3",
+        "pos": {
+          "x": 297.6,
+          "y": 23.3037472,
+          "z": -0.003
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "dust_time": "1"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 633.3908,
+        "y": -11.0055809
+      },
+      "block_id": "d9af44cc-c278-4d4a-8409-4c878839229b",
+      "events": {
+        "Stop": [
+          {
+            "Item1": "fb232437-f876-417a-bf46-55b6f009ae33",
+            "Item2": "Trigger"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Animator Controller",
+      "config": {
+        "anim_take_ctrl": "True",
+        "anim_clip": "Super Hard Land",
+        "anim_duration": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 231.146713,
+        "y": 67.91356
+      },
+      "block_id": "9f8a6242-8495-4850-8fa1-420b96247992",
+      "events": {},
+      "vars": {},
+      "type": "Ordered Events",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":122.955994,\"y\":29.2027588},\"block_id\":\"1d521d1d-0e07-4f93-b66c-8fe9e7a07ec2\",\"events\":{\"OnTrigger\":[{\"Item1\":\"d9af44cc-c278-4d4a-8409-4c878839229b\",\"Item2\":\"Start\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":122.955994,\"y\":29.2027588},\"block_id\":\"ed50b3c6-dfe3-4740-84d7-9ccbabbf2feb\",\"events\":{\"OnTrigger\":[{\"Item1\":\"10c35fc0-7a9d-4afa-aa85-e9ec84f56385\",\"Item2\":\"start_play\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":468.4375,\"y\":-34.375},\"block_id\":\"db619dc0-35d7-4f47-9b73-141d5babdc3f\",\"events\":{\"OnTrigger\":[{\"Item1\":\"128bde47-d584-4dbb-ba8a-635b212f948e\",\"Item2\":\"Shake\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":327.8125,\"y\":-105.9375},\"block_id\":\"c4c42d4d-41a8-46f2-8ee8-30070443bb1f\",\"events\":{\"OnTrigger\":[{\"Item1\":\"0df0a206-e41b-41ff-ba75-49e392cec8db\",\"Item2\":\"dust_on\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":177.891968,\"y\":-57.347168},\"block_id\":\"91a28966-9608-499f-aa95-5e54001ab27e\",\"events\":{\"OnTrigger\":[{\"Item1\":\"f304f361-87f1-43e0-b6e1-ee5c69e00567\",\"Item2\":\"Set\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 640.74054,
+        "y": -168.055481
+      },
+      "block_id": "10c35fc0-7a9d-4afa-aa85-e9ec84f56385",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "65b1ecad",
+        "object_type": "custom_wav"
+      }
+    },
+    {
+      "pos": {
+        "x": 840.166443,
+        "y": 52.92959
+      },
+      "block_id": "fb232437-f876-417a-bf46-55b6f009ae33",
+      "events": {},
+      "vars": {},
+      "type": "Ordered Events",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":467.0185,\"y\":1.07775879},\"block_id\":\"4c35bf96-0b08-4f26-b506-55ef39a66f3e\",\"events\":{\"OnTrigger\":[{\"Item1\":\"45f468f3-567e-4906-a882-8d86b04a7085\",\"Item2\":\"Start\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":467.0185,\"y\":1.07775879},\"block_id\":\"2bb2ade4-fd9f-440a-bab7-5fe91a8f5271\",\"events\":{\"OnTrigger\":[{\"Item1\":\"173e7008-ec6e-4aa2-a055-f1465e56b45d\",\"Item2\":\"start_play\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":921.7145,\"y\":-175.860321},\"block_id\":\"63c3454e-603a-4675-aa82-fcd4a45b9675\",\"events\":{\"OnTrigger\":[{\"Item1\":\"ecfa910b-2123-4d4c-927d-ce1ba31b3163\",\"Item2\":\"Shake\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 1040.16626,
+        "y": -4.940752
+      },
+      "block_id": "45f468f3-567e-4906-a882-8d86b04a7085",
+      "events": {
+        "Stop": []
+      },
+      "vars": {},
+      "type": "Animator Controller",
+      "config": {
+        "anim_take_ctrl": "True",
+        "anim_clip": "Bind First Stand",
+        "anim_duration": "0.5"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1037.96252,
+        "y": -169.444336
+      },
+      "block_id": "173e7008-ec6e-4aa2-a055-f1465e56b45d",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "8fb289d8",
+        "object_type": "custom_wav"
+      }
+    },
+    {
+      "pos": {
+        "x": 44.6527443,
+        "y": 21.2152786
+      },
+      "block_id": "7a03960a-5b63-4f90-b6db-5d8f0ebcc18f",
+      "events": {
+        "True": [
+          {
+            "Item1": "9f8a6242-8495-4850-8fa1-420b96247992",
+            "Item2": "Trigger"
+          }
+        ]
+      },
+      "vars": {
+        "Check": {
+          "Item1": "c7f39056-9696-4a54-bff9-518e7031c922",
+          "Item2": "Value"
+        }
+      },
+      "type": "If",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -190.532379,
+        "y": 27.6967583
+      },
+      "block_id": "6884d672-bfbf-42f6-9f34-cb52b7884195",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "7a03960a-5b63-4f90-b6db-5d8f0ebcc18f",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 44.826355,
+        "y": 218.4027
+      },
+      "block_id": "60c220af-6c0b-4a30-9209-e1ad435512ac",
+      "events": {},
+      "vars": {},
+      "type": "Constant Bool",
+      "config": {
+        "constant_bool": "True"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 47.60413,
+        "y": 141.087891
+      },
+      "block_id": "c7f39056-9696-4a54-bff9-518e7031c922",
+      "events": {},
+      "vars": {
+        "New Value": {
+          "Item1": "60c220af-6c0b-4a30-9209-e1ad435512ac",
+          "Item2": "Value"
+        }
+      },
+      "type": "Variable (Bool)",
+      "config": {
+        "var_persistence_bool": "2",
+        "var_id_bool": "dramaticEntrance"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 640.659668,
+        "y": -316.782318
+      },
+      "block_id": "128bde47-d584-4dbb-ba8a-635b212f948e",
+      "events": {},
+      "vars": {},
+      "type": "Camera Shake",
+      "config": {
+        "camera_shake_type": "3"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 638.888733,
+        "y": -428.703583
+      },
+      "block_id": "0df0a206-e41b-41ff-ba75-49e392cec8db",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "17e84ff3",
+        "object_type": "emerge_dust"
+      }
+    },
+    {
+      "pos": {
+        "x": 1041.77356,
+        "y": -319.12027
+      },
+      "block_id": "ecfa910b-2123-4d4c-927d-ce1ba31b3163",
+      "events": {},
+      "vars": {},
+      "type": "Camera Shake",
+      "config": {
+        "camera_shake_type": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 414.839081,
+        "y": -361.313477
+      },
+      "block_id": "fd51aeb0-d99b-4d3f-9ade-b05e6438ac48",
+      "events": {},
+      "vars": {},
+      "type": "Constant Bool",
+      "config": {
+        "constant_bool": "False"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 418.997742,
+        "y": -457.875946
+      },
+      "block_id": "f304f361-87f1-43e0-b6e1-ee5c69e00567",
+      "events": {},
+      "vars": {
+        "New Value": {
+          "Item1": "fd51aeb0-d99b-4d3f-9ade-b05e6438ac48",
+          "Item2": "Value"
+        }
+      },
+      "type": "Variable (Bool)",
+      "config": {
+        "var_persistence_bool": "2",
+        "var_id_bool": "dramaticEntrance"
+      },
+      "ext": {}
+    }
+  ]
+}

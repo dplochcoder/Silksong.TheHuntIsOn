@@ -1,0 +1,270 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "7628dafb",
+        "pos": {
+          "x": 8.211257,
+          "y": 128.282227,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Understore Lift Scene/Understore_lift",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Ready 1"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "6c3f22eb",
+        "pos": {
+          "x": 11.7880535,
+          "y": 128.338486,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Understore Lift Scene/Understore_lift",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Drop 2"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "756a7caf",
+        "pos": {
+          "x": 8.357475,
+          "y": 124.817932,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Understore Lift Scene/Understore_lift",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Drop Stop 2"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "8637ebf7",
+        "pos": {
+          "x": 11.9005337,
+          "y": 124.81794,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Understore Lift Scene/Understore_lift",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Break Down"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8ced3b24",
+        "pos": {
+          "x": 11.8465986,
+          "y": 130.789429,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Understore Lift Scene/Understore_lift/CamLock 2",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "de86c32a",
+        "pos": {
+          "x": 18.7216568,
+          "y": 13.6875029,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Understore Lift Scene/Understore_lift",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Set Pos"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "709dd152",
+        "pos": {
+          "x": 22.4109287,
+          "y": 13.6578159,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Understore Lift Scene/Understore_lift",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Fade Up"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "7ba0accf-2c30-4b7f-a2b4-7fd2accc8ba7",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "e45b50d5-6748-4b67-9862-ce5c102f9b7f",
+            "Item2": "fsm_set_state"
+          },
+          {
+            "Item1": "51bd0ebb-ba35-4714-b1ad-505f3409d8c2",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7628dafb",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 328.9634,
+        "y": -3.382658
+      },
+      "block_id": "e45b50d5-6748-4b67-9862-ce5c102f9b7f",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "6c3f22eb",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -96.40573,
+        "y": -268.921234
+      },
+      "block_id": "74a3b4f5-d109-4f9c-94ab-b0a8ea1bcc0d",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "de2fe4cf-1b1b-4b6c-b619-1e6c46c0d75c",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "756a7caf",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 133.192123,
+        "y": -284.988861
+      },
+      "block_id": "de2fe4cf-1b1b-4b6c-b619-1e6c46c0d75c",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "8637ebf7",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 161.9447,
+        "y": 165.327347
+      },
+      "block_id": "51bd0ebb-ba35-4714-b1ad-505f3409d8c2",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "8ced3b24",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": -694.2904,
+        "y": -354.7562
+      },
+      "block_id": "c7582e4b-479e-4bcb-be82-c503e817977e",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "e4c47ffc-13da-4261-8698-3160e2d776d2",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "de86c32a",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -357.293152,
+        "y": -351.7964
+      },
+      "block_id": "e4c47ffc-13da-4261-8698-3160e2d776d2",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "709dd152",
+        "object_type": "fsm_hook"
+      }
+    }
+  ]
+}

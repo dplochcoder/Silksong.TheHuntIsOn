@@ -1,0 +1,251 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "7921aafe",
+        "pos": {
+          "x": 25.1825829,
+          "y": 70.5,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "Battle Scene Test/Battle Scene"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "f2288236",
+        "pos": {
+          "x": 24.7542686,
+          "y": 72.76257,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Battle Scene Test/Battle Scene/Wave 1/Song Automaton Ball L"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "2babd46c",
+        "pos": {
+          "x": 28.108633,
+          "y": 73.03537,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Battle Scene Test/Battle Scene/Wave 1/Song Automaton Ball R"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "be97dad1",
+        "pos": {
+          "x": 27.49046,
+          "y": 82.15183,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "8",
+        "size_width": "12"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b5b7f1a2",
+        "pos": {
+          "x": 30.5169868,
+          "y": 71.4865,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Battle Scene Test/Battle Scene/Gates"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "178612f7",
+        "pos": {
+          "x": 27.0176544,
+          "y": 69.1883545,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Battle Scene Test/Battle Scene/CamLocks",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "37ef04d3",
+        "pos": {
+          "x": 28.0868855,
+          "y": 63.72743,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/terrain collider non slider (3)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f2dad963",
+        "pos": {
+          "x": 31.4584,
+          "y": 52.0794334,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Repairable Scene/Song Automaton Ball (1)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "f75f875b-eee8-4c9f-90eb-66cd5328ff4c",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "f2288236",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -6.48147869,
+        "y": -194.907333
+      },
+      "block_id": "dfb0c122-d4a8-4752-b4fd-ebd3be95911e",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "2babd46c",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -281.8517,
+        "y": -47.40737
+      },
+      "block_id": "3e1fabff-3f8f-4fbb-a1fe-4bbbf22405f0",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "f75f875b-eee8-4c9f-90eb-66cd5328ff4c",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "dfb0c122-d4a8-4752-b4fd-ebd3be95911e",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 293.05542,
+        "y": 47.6851578
+      },
+      "block_id": "e407c1d0-c06f-499d-8a74-e87d868cb51a",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "d470eb2b-de54-4003-bc82-8d2b19185a33",
+            "Item2": "disable"
+          }
+        ],
+        "ZoneExit": [
+          {
+            "Item1": "d470eb2b-de54-4003-bc82-8d2b19185a33",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "be97dad1",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 546.759033,
+        "y": 50.46293
+      },
+      "block_id": "d470eb2b-de54-4003-bc82-8d2b19185a33",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "178612f7",
+        "object_type": "object_remover"
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9e1a78f9",
+        "pos": {
+          "x": 97.60297,
+          "y": 35.67591,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bell Wall Tall (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9bc088bf",
+        "pos": {
+          "x": 111.579765,
+          "y": 34.3822365,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bell Wall Tall (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1f7a2e38",
+        "pos": {
+          "x": 135.71315,
+          "y": 34.3261757,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bell Wall Tall"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

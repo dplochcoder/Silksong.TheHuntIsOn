@@ -1,0 +1,389 @@
+{
+  "placements": [
+   {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "240c0b4f",
+        "pos": {
+          "x": 50.2325745,
+          "y": 41.4444466,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Wisp Pyre Effigy",
+        "fsm_hook_name": "Summon Control",
+        "fsm_hook_state": "Dormant"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "8432bf6c",
+        "pos": {
+          "x": 53.83023,
+          "y": 41.2565536,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Wisp Pyre Effigy",
+        "fsm_hook_name": "Summon Control",
+        "fsm_hook_state": "P2"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "4db1b52e",
+        "pos": {
+          "x": 51.5838623,
+          "y": 37.3094063,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Wisp Pyre Effigy",
+        "fsm_hook_name": "Summon Control",
+        "fsm_hook_state": "Flame Wave Antic"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "236e0cf2",
+        "pos": {
+          "x": 62.200058,
+          "y": 16.429884,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "Boss Scene/Wisp Pyre Effigy/Core/Idle Effects Uncaged"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "a1d28b34",
+        "pos": {
+          "x": 63.0866966,
+          "y": 16.3958073,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "Boss Scene/Wisp Pyre Effigy/Core/Idle Effects Uncaged"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "00a0733b",
+        "pos": {
+          "x": 71.0306854,
+          "y": 14.5663376,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Boss Scene/Battle Gates"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "236e0cf2",
+        "pos": {
+          "x": 62.200058,
+          "y": 16.429884,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "Boss Scene/Wisp Pyre Effigy/Core/Idle Effects Uncaged"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "a1d28b34",
+        "pos": {
+          "x": 63.0866966,
+          "y": 16.3958073,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "Boss Scene/Wisp Pyre Effigy/Core/Idle Effects Uncaged"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "00a0733b",
+        "pos": {
+          "x": 71.0306854,
+          "y": 14.5663376,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Boss Scene/Battle Gates"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c08dbf69",
+        "pos": {
+          "x": 62.08999,
+          "y": 13.9963951,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Boss Scene/Wisp Pyre Effigy/Core/Collider"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5a8e8570",
+        "pos": {
+          "x": 63.0435371,
+          "y": 13.9695549,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Boss Scene/CamLocks"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 240.865311,
+        "y": -3.84614182
+      },
+      "block_id": "2365363c-2b19-4e8a-b7a4-496ab93806bf",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "8432bf6c",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -220.673019,
+        "y": 2.88462639
+      },
+      "block_id": "123d32b7-5675-465a-a5a5-165140a8cbbc",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "abc07fa8-0d1f-4374-9f16-b32ce9278fce",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "abc07fa8-0d1f-4374-9f16-b32ce9278fce",
+      "events": {
+        "Out": []
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 49.5370445,
+        "y": -204.1666
+      },
+      "block_id": "b74c9023-065a-4f73-bf6c-edd7833013df",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "4db1b52e",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -229.962067,
+        "y": -155.1019
+      },
+      "block_id": "2b486469-7088-42ef-b75f-98159ed40c91",
+      "events": {
+        "OnCall": []
+      },
+      "vars": {},
+      "type": "Timer",
+      "config": {
+        "timer_start_delay": "10",
+        "timer_repeat_delay": "12",
+        "timer_rand_delay": "0"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 240.865311,
+        "y": -3.84614182
+      },
+      "block_id": "2365363c-2b19-4e8a-b7a4-496ab93806bf",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "8432bf6c",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -220.673019,
+        "y": 2.88462639
+      },
+      "block_id": "123d32b7-5675-465a-a5a5-165140a8cbbc",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "abc07fa8-0d1f-4374-9f16-b32ce9278fce",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "abc07fa8-0d1f-4374-9f16-b32ce9278fce",
+      "events": {
+        "Out": [
+          {
+            "Item1": "2365363c-2b19-4e8a-b7a4-496ab93806bf",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 49.5370445,
+        "y": -204.1666
+      },
+      "block_id": "b74c9023-065a-4f73-bf6c-edd7833013df",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "4db1b52e",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -229.962067,
+        "y": -155.1019
+      },
+      "block_id": "2b486469-7088-42ef-b75f-98159ed40c91",
+      "events": {
+        "OnCall": [
+          {
+            "Item1": "b74c9023-065a-4f73-bf6c-edd7833013df",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Timer",
+      "config": {
+        "timer_start_delay": "10",
+        "timer_repeat_delay": "12",
+        "timer_rand_delay": "0"
+      },
+      "ext": {}
+    }
+  ]
+}

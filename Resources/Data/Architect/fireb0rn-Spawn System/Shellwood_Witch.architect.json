@@ -1,0 +1,26 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "ea7c80a4",
+        "pos": {
+          "x": 19.20287,
+          "y": 15.1568108,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_id": "ShellwoodSpawnWitch",
+        "trans_collide": "0"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

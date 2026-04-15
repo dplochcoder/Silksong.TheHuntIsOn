@@ -1,0 +1,191 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "ffd3b52a",
+        "pos": {
+          "x": 73.31405,
+          "y": 14.3385849,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "2",
+        "trans_id": "BonebottomStag",
+        "trans_collide": "1"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "34d234fe",
+        "pos": {
+          "x": 65.0828857,
+          "y": 12.1665487,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Bone Beast NPC",
+        "fsm_hook_name": "Interaction",
+        "fsm_hook_state": "Appear Delay",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "b36a3669",
+        "pos": {
+          "x": 68.7772141,
+          "y": 11.9865885,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Bone Beast NPC",
+        "fsm_hook_name": "Interaction",
+        "fsm_hook_state": "Start Shake",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0e991aa2",
+        "pos": {
+          "x": 71.82609,
+          "y": 9.192778,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States Thread Only Variant/Normal World/Bellway Pilgrim Stuff/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -16.5625,
+        "y": -85.3125
+      },
+      "block_id": "772f6fbf-7ae3-4e3a-9e66-bcb1d46eff07",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "5d9fc955-bbc7-4b13-9e02-c9a743b344f4",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "34d234fe",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 208.75,
+        "y": -81.875
+      },
+      "block_id": "5d9fc955-bbc7-4b13-9e02-c9a743b344f4",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "b36a3669",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -475.3125,
+        "y": -42.1875
+      },
+      "block_id": "b7869780-244d-42d9-a119-1aa2113d6300",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "ae03f2ca-8a9f-499e-98e9-95e6a3a9670b",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -294.0625,
+        "y": -33.75
+      },
+      "block_id": "ae03f2ca-8a9f-499e-98e9-95e6a3a9670b",
+      "events": {
+        "Out": [
+          {
+            "Item1": "772f6fbf-7ae3-4e3a-9e66-bcb1d46eff07",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "5d9fc955-bbc7-4b13-9e02-c9a743b344f4",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "b046edec-71c8-4654-be66-13c125d794e0",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -163.125,
+        "y": 44.375
+      },
+      "block_id": "b046edec-71c8-4654-be66-13c125d794e0",
+      "events": {
+        "Out": [
+          {
+            "Item1": "772f6fbf-7ae3-4e3a-9e66-bcb1d46eff07",
+            "Item2": "fsm_remove_transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    }
+  ]
+}

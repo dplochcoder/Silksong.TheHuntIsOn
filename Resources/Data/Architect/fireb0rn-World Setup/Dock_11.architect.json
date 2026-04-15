@@ -1,0 +1,234 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "da251eb7",
+        "pos": {
+          "x": 45.87888,
+          "y": 65.89003,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Dock Pipe Grate Door"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e8831290",
+        "pos": {
+          "x": 71.8818359,
+          "y": 66.02504,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Dock Pipe Grate Door (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a3095612",
+        "pos": {
+          "x": 143.297974,
+          "y": 67.02614,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Dock Pipe Grate Door (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9971fe17",
+        "pos": {
+          "x": 62.0275154,
+          "y": 7.79385138,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "803ef0de",
+        "pos": {
+          "x": 71.6897354,
+          "y": 23.7015114,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall (4)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6b1d5712",
+        "pos": {
+          "x": 41.2667656,
+          "y": 16.0717545,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall (5)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a60843a6",
+        "pos": {
+          "x": 71.74598,
+          "y": 20.900816,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall (3)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "669e639f",
+        "pos": {
+          "x": 71.2060852,
+          "y": 18.392561,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b192bbec",
+        "pos": {
+          "x": 84.67919,
+          "y": 65.98015,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5005a9b8",
+        "pos": {
+          "x": 81.71208,
+          "y": 66.04306,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f8466d33",
+        "pos": {
+          "x": 81.54323,
+          "y": 64.8951645,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "20182f05",
+        "pos": {
+          "x": 81.54323,
+          "y": 63.865448,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side (2)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

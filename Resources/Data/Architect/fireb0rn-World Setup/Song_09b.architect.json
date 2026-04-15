@@ -1,0 +1,120 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2e737f1f",
+        "pos": {
+          "x": 7.84209538,
+          "y": 127.956711,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song Trapdoor Back"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5a709018",
+        "pos": {
+          "x": 87.76994,
+          "y": 128.592545,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song Trapdoor Back (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "de9d555d",
+        "pos": {
+          "x": 87.59365,
+          "y": 129.644318,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7ea0a1c6",
+        "pos": {
+          "x": 7.35077953,
+          "y": 129.992752,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "10e9d3e4",
+        "pos": {
+          "x": 106.341629,
+          "y": 134.165436,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Gourmand"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "14a9d85f",
+        "pos": {
+          "x": 102.933586,
+          "y": 134.741516,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Lace Scene"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

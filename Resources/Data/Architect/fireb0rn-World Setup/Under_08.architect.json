@@ -1,0 +1,565 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "48138e9a",
+        "pos": {
+          "x": 114.8691,
+          "y": 37.0342674,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "One Way Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "7d52f17d-546b6d2b",
+        "pos": {
+          "x": 109.061752,
+          "y": 49.3356,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "2",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "a43b9218-546b6d2b",
+        "pos": {
+          "x": 109.959511,
+          "y": 49.364254,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "2",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "9925429b-546b6d2b",
+        "pos": {
+          "x": 110.1185,
+          "y": 52.56247,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Breakable Wall",
+        "fsm_hook_name": "breakable_wall_v2",
+        "fsm_hook_state": "Send to Register?"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "4c6b0f02-546b6d2b",
+        "pos": {
+          "x": 113.774048,
+          "y": 52.56073,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "Breakable Wall",
+        "component_hook_name": "BoxCollider2D"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "e7e8bdde",
+        "pos": {
+          "x": 116.111664,
+          "y": 48.84809,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "Breakable Wall",
+        "component_hook_name": "SpriteRenderer"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6c7c41da-546b6d2b",
+        "pos": {
+          "x": 111.9969,
+          "y": 50.13121,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall/Masks",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "253e68a7",
+        "pos": {
+          "x": 105.069305,
+          "y": 33.54668,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall/Masks",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8b3fcac2",
+        "pos": {
+          "x": 107.454422,
+          "y": 33.5466881,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall/Masks",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "bc2e7abe",
+        "pos": {
+          "x": 104.447067,
+          "y": 33.4256973,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall/Masks",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "442d5a14",
+        "pos": {
+          "x": 111.654343,
+          "y": 31.7837524,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall/Masks",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d63b3d4b",
+        "pos": {
+          "x": 117.046944,
+          "y": 18.9938583,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Confessional NPC"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "37b731c2",
+        "pos": {
+          "x": 110.806252,
+          "y": 18.4362965,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "terrain collider (3)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "974aa25a",
+        "pos": {
+          "x": 79.7265244,
+          "y": 19.8035774,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Understore Toll Bench"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f64ccedd",
+        "pos": {
+          "x": 83.3906555,
+          "y": 19.4427261,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Understore Toll Bench (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e848572f",
+        "pos": {
+          "x": 86.91652,
+          "y": 19.8234577,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Understore Toll Bench (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9248be85",
+        "pos": {
+          "x": 52.3494873,
+          "y": 31.8012238,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Understore Toll Bench (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f25ad647",
+        "pos": {
+          "x": 78.24443,
+          "y": 22.76284,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Understore Toll Bench (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "21e17437",
+        "pos": {
+          "x": 87.14546,
+          "y": 24.0145473,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Understore Toll Bench (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6463cb3f",
+        "pos": {
+          "x": 52.57817,
+          "y": 29.57985,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Understore Toll Bench (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2af919ce",
+        "pos": {
+          "x": 88.320755,
+          "y": 25.4836273,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Understore Toll Bench (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "64e0e541",
+        "pos": {
+          "x": 87.56028,
+          "y": 24.36019,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Understore Toll Bench (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5f26aafd",
+        "pos": {
+          "x": 65.6445541,
+          "y": 19.7454433,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Church Lamp"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "59b64b68",
+        "pos": {
+          "x": 64.0199,
+          "y": 19.883707,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -215.540558,
+        "y": -165.878387
+      },
+      "block_id": "eb64c7b1-ecb3-4168-889a-e123ba0cf2a4",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "57823e9c-0fa5-41b1-a0e1-7fd6e1fe09b0",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7d52f17d-546b6d2b",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": -212.500015,
+        "y": -32.09459
+      },
+      "block_id": "58ade177-65d4-4e3a-803f-0975c7123ccd",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "57823e9c-0fa5-41b1-a0e1-7fd6e1fe09b0",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "a43b9218-546b6d2b",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 31.75676,
+        "y": -100.337845
+      },
+      "block_id": "57823e9c-0fa5-41b1-a0e1-7fd6e1fe09b0",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "6c7c41da-546b6d2b",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": 125.337845,
+        "y": 62.83783
+      },
+      "block_id": "e7e0a238-4a2c-4c80-b37c-cb656c3035fe",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "9925429b-546b6d2b",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -113.851357,
+        "y": 71.95945
+      },
+      "block_id": "744ab4d0-8c87-4332-b1d9-f625486deecf",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "e7e0a238-4a2c-4c80-b37c-cb656c3035fe",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

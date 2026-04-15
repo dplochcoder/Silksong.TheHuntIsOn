@@ -1,0 +1,860 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "dock_plat_01",
+        "pid": "42d37e00",
+        "pos": {
+          "x": 90.0510254,
+          "y": 15.0995121,
+          "z": -0.05
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 90.0,
+        "scale": 1.0
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0",
+        "collider_type": "2",
+        "is_visible": "False",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "1ed0dee3",
+        "pos": {
+          "x": 90.35472,
+          "y": 14.6271057,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "2",
+        "trigger_shape": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "25f23bfd",
+        "pos": {
+          "x": 103.39257,
+          "y": 14.9457092,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Grand Stage Scene/Boss Scene Trobbio/Trobbio",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Phase Roar Antic"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "2eefca5c",
+        "pos": {
+          "x": 99.9159546,
+          "y": 14.8894434,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Grand Stage Scene/Boss Scene Trobbio/Trobbio",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Land 2"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "4f983980",
+        "pos": {
+          "x": 57.53786,
+          "y": 14.5821161,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "2",
+        "trigger_shape": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "dock_plat_01",
+        "pid": "cff45fc1",
+        "pos": {
+          "x": 57.80781,
+          "y": 15.0995131,
+          "z": -0.05
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 270.0,
+        "scale": 1.0
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0",
+        "collider_type": "2",
+        "is_visible": "False",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5e939724",
+        "pos": {
+          "x": 61.1917534,
+          "y": 17.87454,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Grand Stage Scene/Boss Scene Trobbio/CamLock Intro",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c2979cd2",
+        "pos": {
+          "x": 61.18223,
+          "y": 18.8337765,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Grand Stage Scene/Boss Scene Trobbio/CamLock Boss",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "95051266",
+        "pos": {
+          "x": 58.6857071,
+          "y": 15.9271755,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Grand Stage Scene/Boss Scene Trobbio/Gates"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "2ac33cbe",
+        "pos": {
+          "x": 74.1129,
+          "y": 20.93711,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_width": "7",
+        "size_height": "6"
+      }
+    },
+    {
+      "placement": {
+        "id": "camera_border",
+        "pid": "cfd1744d",
+        "pos": {
+          "x": 62.12486,
+          "y": 18.8900146,
+          "z": 0.1
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "camera_border_type": "3",
+        "camera_border_mode": "1"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "95051266",
+        "pos": {
+          "x": 58.6857071,
+          "y": 15.9271755,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Grand Stage Scene/Boss Scene Trobbio/Gates"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "6e9ede87",
+        "pos": {
+          "x": 61.6433067,
+          "y": 21.76945,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Grand Stage Scene/Boss Scene Trobbio/Trobbio",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "4f983980",
+        "pos": {
+          "x": 57.53786,
+          "y": 14.5821161,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "2",
+        "trigger_shape": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "dock_plat_01",
+        "pid": "cff45fc1",
+        "pos": {
+          "x": 57.80781,
+          "y": 15.0995131,
+          "z": -0.05
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 270.0,
+        "scale": 1.0
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0",
+        "collider_type": "2",
+        "is_visible": "False",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "dock_plat_01",
+        "pid": "42d37e00",
+        "pos": {
+          "x": 90.0510254,
+          "y": 15.0995121,
+          "z": -0.05
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 90.0,
+        "scale": 1.0
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0",
+        "collider_type": "2",
+        "is_visible": "False",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "1ed0dee3",
+        "pos": {
+          "x": 90.35472,
+          "y": 14.6271057,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "2",
+        "trigger_shape": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "2ac33cbe",
+        "pos": {
+          "x": 74.1129,
+          "y": 20.93711,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_width": "7",
+        "size_height": "6"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c2979cd2",
+        "pos": {
+          "x": 61.18223,
+          "y": 18.8337765,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Grand Stage Scene/Boss Scene Trobbio/CamLock Boss",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "camera_border",
+        "pid": "cfd1744d",
+        "pos": {
+          "x": 62.12486,
+          "y": 18.8900146,
+          "z": 0.1
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "camera_border_type": "3",
+        "camera_border_mode": "1"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5e939724",
+        "pos": {
+          "x": 61.1917534,
+          "y": 17.87454,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Grand Stage Scene/Boss Scene Trobbio/CamLock Intro",
+        "start_active": "False"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -16.666666,
+        "y": -123.48484
+      },
+      "block_id": "21b4d005-7944-44fa-af1d-a10996b72f90",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "cff45fc1",
+        "object_type": "dock_plat_01"
+      }
+    },
+    {
+      "pos": {
+        "x": -256.818176,
+        "y": -133.712112
+      },
+      "block_id": "6d6f687f-5148-43db-bf23-ee477a72b1b0",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "21b4d005-7944-44fa-af1d-a10996b72f90",
+            "Item2": "enable"
+          }
+        ],
+        "ZoneExit": [
+          {
+            "Item1": "21b4d005-7944-44fa-af1d-a10996b72f90",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "4f983980",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": -28.030302,
+        "y": -251.136322
+      },
+      "block_id": "2e70920a-2d0d-4578-85c3-0d69a69df1dc",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "42d37e00",
+        "object_type": "dock_plat_01"
+      }
+    },
+    {
+      "pos": {
+        "x": -257.954529,
+        "y": -281.818176
+      },
+      "block_id": "dd958fe7-279d-48b4-8833-16cd993db952",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "2e70920a-2d0d-4578-85c3-0d69a69df1dc",
+            "Item2": "enable"
+          }
+        ],
+        "ZoneExit": [
+          {
+            "Item1": "2e70920a-2d0d-4578-85c3-0d69a69df1dc",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "1ed0dee3",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 215.909073,
+        "y": -260.227234
+      },
+      "block_id": "f4a8ecb6-e4b8-4aa1-a054-e534faf33a38",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "6546af42-53ed-479d-8957-1151543bf172",
+            "Item2": "disable"
+          },
+          {
+            "Item1": "0bf25a2c-e218-49f7-934a-e6b7f7dbfdc3",
+            "Item2": "disable"
+          }
+        ],
+        "ZoneExit": [
+          {
+            "Item1": "6546af42-53ed-479d-8957-1151543bf172",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "0bf25a2c-e218-49f7-934a-e6b7f7dbfdc3",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "2ac33cbe",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 476.893921,
+        "y": -248.106033
+      },
+      "block_id": "6546af42-53ed-479d-8957-1151543bf172",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "c2979cd2",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": 474.2424,
+        "y": -350.378754
+      },
+      "block_id": "0bf25a2c-e218-49f7-934a-e6b7f7dbfdc3",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "5e939724",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": 703.9062,
+        "y": -39.8437653
+      },
+      "block_id": "8a9dfe0c-19d3-4683-aa81-932951bf780a",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "99b4ce28-e4b5-4009-ad17-1c63b9b93019",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "2eefca5c",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 912.890564,
+        "y": -33.2031441
+      },
+      "block_id": "99b4ce28-e4b5-4009-ad17-1c63b9b93019",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "25f23bfd",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 236.7424,
+        "y": -1.5151577
+      },
+      "block_id": "cb778b15-4cb8-430b-ab39-3a52e444cc8f",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "6e9ede87",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -348.481079,
+        "y": 148.685669
+      },
+      "block_id": "ffdaf2a7-0a8f-4f1a-b112-e82f5e9de752",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "0f4507aa-ba13-49c4-8b06-313b6d526bed",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -171.015137,
+        "y": 130.0758
+      },
+      "block_id": "0f4507aa-ba13-49c4-8b06-313b6d526bed",
+      "events": {
+        "Out": [
+          {
+            "Item1": "cb778b15-4cb8-430b-ab39-3a52e444cc8f",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "b2c3bcb4-cc2e-4a15-b05a-0d72658ab1cf",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 39.31819,
+        "y": 125.333374
+      },
+      "block_id": "b2c3bcb4-cc2e-4a15-b05a-0d72658ab1cf",
+      "events": {
+        "Out": [
+          {
+            "Item1": "cb778b15-4cb8-430b-ab39-3a52e444cc8f",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -16.666666,
+        "y": -123.48484
+      },
+      "block_id": "21b4d005-7944-44fa-af1d-a10996b72f90",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "cff45fc1",
+        "object_type": "dock_plat_01"
+      }
+    },
+    {
+      "pos": {
+        "x": -256.818176,
+        "y": -133.712112
+      },
+      "block_id": "6d6f687f-5148-43db-bf23-ee477a72b1b0",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "21b4d005-7944-44fa-af1d-a10996b72f90",
+            "Item2": "enable"
+          }
+        ],
+        "ZoneExit": [
+          {
+            "Item1": "21b4d005-7944-44fa-af1d-a10996b72f90",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "4f983980",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": -28.030302,
+        "y": -251.136322
+      },
+      "block_id": "2e70920a-2d0d-4578-85c3-0d69a69df1dc",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "42d37e00",
+        "object_type": "dock_plat_01"
+      }
+    },
+    {
+      "pos": {
+        "x": -257.954529,
+        "y": -281.818176
+      },
+      "block_id": "dd958fe7-279d-48b4-8833-16cd993db952",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "2e70920a-2d0d-4578-85c3-0d69a69df1dc",
+            "Item2": "enable"
+          }
+        ],
+        "ZoneExit": [
+          {
+            "Item1": "2e70920a-2d0d-4578-85c3-0d69a69df1dc",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "1ed0dee3",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 215.909073,
+        "y": -260.227234
+      },
+      "block_id": "f4a8ecb6-e4b8-4aa1-a054-e534faf33a38",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "6546af42-53ed-479d-8957-1151543bf172",
+            "Item2": "disable"
+          },
+          {
+            "Item1": "0bf25a2c-e218-49f7-934a-e6b7f7dbfdc3",
+            "Item2": "disable"
+          }
+        ],
+        "ZoneExit": [
+          {
+            "Item1": "6546af42-53ed-479d-8957-1151543bf172",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "0bf25a2c-e218-49f7-934a-e6b7f7dbfdc3",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "2ac33cbe",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 476.893921,
+        "y": -248.106033
+      },
+      "block_id": "6546af42-53ed-479d-8957-1151543bf172",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "c2979cd2",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": 474.2424,
+        "y": -350.378754
+      },
+      "block_id": "0bf25a2c-e218-49f7-934a-e6b7f7dbfdc3",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "5e939724",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": 703.9062,
+        "y": -39.8437653
+      },
+      "block_id": "8a9dfe0c-19d3-4683-aa81-932951bf780a",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "99b4ce28-e4b5-4009-ad17-1c63b9b93019",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "2eefca5c",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 912.890564,
+        "y": -33.2031441
+      },
+      "block_id": "99b4ce28-e4b5-4009-ad17-1c63b9b93019",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "25f23bfd",
+        "object_type": "fsm_hook"
+      }
+    }
+  ]
+}

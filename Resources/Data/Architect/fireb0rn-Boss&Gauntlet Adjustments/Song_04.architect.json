@@ -1,0 +1,229 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "95812b95",
+        "pos": {
+          "x": 87.45964,
+          "y": 4.835684,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Black Thread States/Normal World/Scene States/Battle Scene/Wave 1/Song Reed"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "e31b48e8",
+        "pos": {
+          "x": 90.76649,
+          "y": 4.50949764,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Black Thread States/Normal World/Scene States/Battle Scene/Wave 1/Song Pilgrim 03"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "45f5eb8a",
+        "pos": {
+          "x": 77.3157654,
+          "y": 4.925666,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_height": "2"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "4b32c253",
+        "pos": {
+          "x": 38.47274,
+          "y": 4.32953358,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_height": "2"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "03e4f998",
+        "pos": {
+          "x": 83.7733154,
+          "y": 5.29684258,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Scene States/Battle Scene/CamLocks"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "7ece8c03",
+        "pos": {
+          "x": 58.1224747,
+          "y": 6.9052763,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "8",
+        "size_width": "7"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6469ea29",
+        "pos": {
+          "x": 83.72237,
+          "y": 4.01459455,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Scene States/Battle Scene/Gates"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 287.499878,
+        "y": -120.83329
+      },
+      "block_id": "ab399592-cd60-4613-9449-f17e33545df0",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "95812b95",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 285.648,
+        "y": 106.481407
+      },
+      "block_id": "8264ffb6-db87-4aac-b5f5-673411ea032a",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "e31b48e8",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -47.6851654,
+        "y": -150.925873
+      },
+      "block_id": "69a88c27-c76c-422c-8e62-41492a2daad7",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "03e4f998",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": 6.48147869,
+        "y": 14.351841
+      },
+      "block_id": "37291c3e-4d17-457d-b9d4-afb10be8155e",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "8264ffb6-db87-4aac-b5f5-673411ea032a",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "ab399592-cd60-4613-9449-f17e33545df0",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -304.166534,
+        "y": -166.6666
+      },
+      "block_id": "6674521c-57a9-40ab-8487-27c1c6e91b05",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "69a88c27-c76c-422c-8e62-41492a2daad7",
+            "Item2": "disable"
+          }
+        ],
+        "ZoneExit": [
+          {
+            "Item1": "69a88c27-c76c-422c-8e62-41492a2daad7",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7ece8c03",
+        "object_type": "trigger_zone"
+      }
+    }
+  ]
+}

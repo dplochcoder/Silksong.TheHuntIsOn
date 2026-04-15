@@ -1,0 +1,63 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "448dba9f",
+        "pos": {
+          "x": 59.6617661,
+          "y": 21.8399563,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_Gate_small"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e73a8949",
+        "pos": {
+          "x": 53.099205,
+          "y": 23.0662117,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Heart Piece Sound Control/Heart Piece/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8698398f",
+        "pos": {
+          "x": 54.17565,
+          "y": 22.8659077,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

@@ -1,0 +1,197 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "fa0e4ee7",
+        "pos": {
+          "x": 50.4720955,
+          "y": 84.90837,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Battle Scene/Gates"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "80804fc7",
+        "pos": {
+          "x": 41.698822,
+          "y": 85.45951,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Battle Scene/Wave 1/Pilgrim Fly"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "42f31048",
+        "pos": {
+          "x": 45.7030258,
+          "y": 85.5045,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Battle Scene/Wave 1/Pilgrim 01"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "423ac466",
+        "pos": {
+          "x": 49.8197174,
+          "y": 85.45951,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Battle Scene/Wave 1/Pilgrim 03"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "439ec3d9",
+        "pos": {
+          "x": 54.17262,
+          "y": 81.72522,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "d3712c79",
+        "pos": {
+          "x": 28.5874977,
+          "y": 81.85457,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "fce6afde",
+        "pos": {
+          "x": 52.241642,
+          "y": 85.00396,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Battle Scene/CamLocks"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 2.34374976,
+        "y": 1.90734863E-06
+      },
+      "block_id": "e6370656-6c41-4116-ba49-9aa9cf99f71b",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "80804fc7",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 4.07447767,
+        "y": -212.698578
+      },
+      "block_id": "53f0c097-8b04-4c59-9da5-31c5925641ec",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "42f31048",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 3.501797,
+        "y": 197.141525
+      },
+      "block_id": "cd901295-d1f2-4e5f-9b83-a7fe666ed96e",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "423ac466",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -325.291382,
+        "y": 51.2615967
+      },
+      "block_id": "f5ff1d96-e67c-4d25-9505-12827f3c3ac9",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "e6370656-6c41-4116-ba49-9aa9cf99f71b",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "cd901295-d1f2-4e5f-9b83-a7fe666ed96e",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "53f0c097-8b04-4c59-9da5-31c5925641ec",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

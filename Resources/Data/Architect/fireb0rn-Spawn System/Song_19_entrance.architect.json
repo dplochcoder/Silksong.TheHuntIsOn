@@ -1,0 +1,46 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "46f3150e",
+        "pos": {
+          "x": 20.8936653,
+          "y": 72.57888,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_collide": "False",
+        "trans_id": "CitadelBLSpawn19Entrance-2"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "443f6459",
+        "pos": {
+          "x": 65.39401,
+          "y": 103.5054,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_collide": "False",
+        "trans_id": "CitadelBLSpawn19Entrance-1"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

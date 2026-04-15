@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9ea6af8a",
+        "pos": {
+          "x": 134.315979,
+          "y": 13.31386,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Rhino Scene/Song_Gate_small (1)/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "41551b8f",
+        "pos": {
+          "x": 134.342331,
+          "y": 14.4256773,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Rhino Scene/Song_lever_side/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

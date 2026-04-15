@@ -1,0 +1,93 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "8daf9ad6",
+        "pos": {
+          "x": 47.66165,
+          "y": 9.788419,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Battle Scene/Wave 1/Bone Hunter Throw"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "edf7f334",
+        "pos": {
+          "x": 60.3631935,
+          "y": 6.42831039,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Battle Scene/Gates/Battle Gate Ant",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "f84581df",
+        "pos": {
+          "x": 61.0736122,
+          "y": 5.396944,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -46.2837868,
+        "y": -33.1081047
+      },
+      "block_id": "0fe93d53-3ad7-4a1d-bde2-d52744b74d28",
+      "events": {
+        "OnDamage": []
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "8daf9ad6",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -292.567627,
+        "y": 14.5270348
+      },
+      "block_id": "159c6648-fc8a-46d0-a61c-90126d2572d8",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "0fe93d53-3ad7-4a1d-bde2-d52744b74d28",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

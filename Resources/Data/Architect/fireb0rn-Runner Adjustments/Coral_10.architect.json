@@ -1,0 +1,39 @@
+{
+  "placements": [],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "eeeb0074-f2a3-472d-8473-e2202153d1f7",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "257827c7-ee81-4d6a-9a70-fc2faaf68db5",
+            "Item2": "Set"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 201.223618,
+        "y": 2.937582
+      },
+      "block_id": "257827c7-ee81-4d6a-9a70-fc2faaf68db5",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "act2Started",
+        "pd_bool": "True"
+      },
+      "ext": {}
+    }
+  ]
+}

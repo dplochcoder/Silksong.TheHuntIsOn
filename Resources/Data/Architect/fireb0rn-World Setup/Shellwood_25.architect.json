@@ -1,0 +1,509 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "6fdf9721",
+        "pos": {
+          "x": 232.30014,
+          "y": 4.906481,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "2",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "0227c138",
+        "pos": {
+          "x": 233.756958,
+          "y": 4.872736,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "2",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9a9019c7",
+        "pos": {
+          "x": 231.417419,
+          "y": 6.32370949,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall (1)/Masks",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "ba87dfe0",
+        "pos": {
+          "x": 235.421631,
+          "y": 7.380995,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "Breakable Wall (1)",
+        "component_hook_name": "BoxCollider2D"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "46d02962",
+        "pos": {
+          "x": 235.421616,
+          "y": 4.13212,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Breakable Wall (1)",
+        "fsm_hook_name": "breakable_wall_v2",
+        "fsm_hook_state": "Send to Register?"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "02d53d79",
+        "pos": {
+          "x": 244.485855,
+          "y": 12.0401011,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Witch_Cluster_Vine"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "87c3f13f",
+        "pos": {
+          "x": 62.3550339,
+          "y": 15.1586914,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Shellwood Twig Wall (3)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5d207e91",
+        "pos": {
+          "x": 63.3785858,
+          "y": 15.0584164,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Shellwood Twig Wall (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1b355997",
+        "pos": {
+          "x": 64.49212,
+          "y": 15.0246716,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Shellwood Twig Wall (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "33619721",
+        "pos": {
+          "x": 65.56065,
+          "y": 14.9571857,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Shellwood Twig Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "7d52f17d-93ee09a2",
+        "pos": {
+          "x": 65.615036,
+          "y": 26.4350433,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "2",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "a43b9218-93ee09a2",
+        "pos": {
+          "x": 68.28076,
+          "y": 26.4125748,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "2",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "9925429b-93ee09a2",
+        "pos": {
+          "x": 61.9369926,
+          "y": 28.77634,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Shellwood Twig Wall (4)",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "End"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "4c6b0f02-93ee09a2",
+        "pos": {
+          "x": 61.9707565,
+          "y": 25.2540436,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "Shellwood Twig Wall (4)",
+        "component_hook_name": "BoxCollider2D"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6c7c41da-93ee09a2",
+        "pos": {
+          "x": 67.39218,
+          "y": 28.4034271,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Shellwood Twig Wall (4)/Mask",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "cad93b51",
+        "pos": {
+          "x": 56.2054176,
+          "y": 28.4123421,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Shellwood Twig Wall (4)/Vine"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "3dc98248",
+        "pos": {
+          "x": 64.58502,
+          "y": 26.6914272,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Shellwood Twig Wall (4)/Vine 1"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d5dcf2d3",
+        "pos": {
+          "x": 64.39381,
+          "y": 25.6566315,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Shellwood Twig Wall (4)/Vine 2"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "4d73c40f",
+        "pos": {
+          "x": 64.98995,
+          "y": 26.0053139,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Shellwood Twig Wall (4)/Vine 3"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a3d9fc17",
+        "pos": {
+          "x": 65.26943,
+          "y": 14.7252846,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Witch_Cluster_Vine (2)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "20a93be6-4dd5-479c-9ac2-254ac949fc69",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "9925429b-93ee09a2",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -1.01351357,
+        "y": -176.013519
+      },
+      "block_id": "b70aeb2c-c7bd-4af1-ac52-7c24e9741cb3",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "4c6b0f02-93ee09a2",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": 341.5541,
+        "y": -140.202759
+      },
+      "block_id": "25ca47cc-5897-420f-bf42-5ef8bfc878ca",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "997980ed-e984-4462-9f05-cc6e34aad3ec",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7d52f17d-93ee09a2",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 341.891968,
+        "y": 5.405411
+      },
+      "block_id": "ef4c95cb-b297-43cd-9bd2-a6f378e84bb7",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "997980ed-e984-4462-9f05-cc6e34aad3ec",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "a43b9218-93ee09a2",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 616.2164,
+        "y": -26.351347
+      },
+      "block_id": "997980ed-e984-4462-9f05-cc6e34aad3ec",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "6c7c41da-93ee09a2",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": -222.973,
+        "y": 7.770277
+      },
+      "block_id": "265aaac9-d8af-49fa-a169-2b54dd3da495",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "20a93be6-4dd5-479c-9ac2-254ac949fc69",
+            "Item2": "fsm_set_state"
+          },
+          {
+            "Item1": "b70aeb2c-c7bd-4af1-ac52-7c24e9741cb3",
+            "Item2": "component_hook_apply"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f5e44624",
+        "pos": {
+          "x": 148.641891,
+          "y": 12.1194706,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "drop_planks"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9aef8b60",
+        "pos": {
+          "x": 162.717712,
+          "y": 26.6778355,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "One Way Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "3900494f",
+        "pos": {
+          "x": 122.699623,
+          "y": 14.6082563,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall bot mid"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "966dd9f9",
+        "pos": {
+          "x": 8.083618,
+          "y": 39.32899,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable_cage"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

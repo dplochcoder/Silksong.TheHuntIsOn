@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "1139ed08",
+        "pos": {
+          "x": 64.60847,
+          "y": 26.66191,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_id": "Under04",
+        "trans_collide": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_remover",
+        "pid": "f5f1fbbf",
+        "pos": {
+          "x": 60.0191422,
+          "y": 23.1263561,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "disabler_all": "False"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

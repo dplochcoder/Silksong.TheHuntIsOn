@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e21d73fe",
+        "pos": {
+          "x": 22.06147,
+          "y": 140.536942,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Flea Rescue Sleeping"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

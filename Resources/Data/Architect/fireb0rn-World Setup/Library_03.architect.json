@@ -1,0 +1,519 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "bf325b98",
+        "pos": {
+          "x": 24.0772133,
+          "y": 55.82943,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Library Sliding Plat/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "36ad37f9",
+        "pos": {
+          "x": 24.5035286,
+          "y": 46.5258369,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "left_side/innerworks_lever/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b6a15a74",
+        "pos": {
+          "x": 24.4862461,
+          "y": 46.5258369,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "left_side/innerworks_lever/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f05276e5",
+        "pos": {
+          "x": 13.8895674,
+          "y": 40.1507225,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c8cd26f7",
+        "pos": {
+          "x": 20.217186,
+          "y": 34.79442,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "song_trap_door"
+      }
+    },
+    {
+      "placement": {
+        "id": "memorium_plat_2",
+        "pid": "f65370aa",
+        "pos": {
+          "x": 16.2073784,
+          "y": 37.46905,
+          "z": -0.03
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 90.0,
+        "scale": 1.0
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d0c5d045",
+        "pos": {
+          "x": 9.207501,
+          "y": 43.2885437,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "253f3822",
+        "pos": {
+          "x": 45.7069626,
+          "y": 6.68691349,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Secret Mask Scene/Library Sliding Plat/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b9f0351a",
+        "pos": {
+          "x": 91.16633,
+          "y": 27.77453,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "song_library_box_tri (15)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "3d3eab0a",
+        "pos": {
+          "x": 58.1444969,
+          "y": 57.2279472,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Library Sliding Plat (5)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1528a597",
+        "pos": {
+          "x": 47.3594971,
+          "y": 52.28482,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Library Sliding Plat Tall (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "01a3ea3d",
+        "pos": {
+          "x": 31.4160633,
+          "y": 44.12528,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "left_side/library_slide_wall/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8aeb1578",
+        "pos": {
+          "x": 71.28789,
+          "y": 44.2504425,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "song_library_box_tri (11)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "cf3f64ec",
+        "pos": {
+          "x": 76.94055,
+          "y": 45.6556358,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "song_library_box_tri (13)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a7f9c2cb",
+        "pos": {
+          "x": 83.7676,
+          "y": 43.08037,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Library Sliding Plat Tall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "95bad8d9",
+        "pos": {
+          "x": 64.80957,
+          "y": 30.05164,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Library Sliding Plat Tall (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "84851107",
+        "pos": {
+          "x": 85.0066147,
+          "y": 6.93178225,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Library Sliding Plat (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "517cc5eb",
+        "pos": {
+          "x": 67.28476,
+          "y": 16.9795475,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Library Sliding Plat (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1c67c648",
+        "pos": {
+          "x": 77.41608,
+          "y": 27.8911839,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "song_library_box_tri (6)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "fc42765d",
+        "pos": {
+          "x": 59.03446,
+          "y": 15.6822252,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Secret Mask Scene"
+      }
+    },
+    {
+      "placement": {
+        "id": "cog_plat_1",
+        "pid": "6f51e9af",
+        "pos": {
+          "x": 88.55929,
+          "y": 8.264944,
+          "z": 0.007
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "cog_plat_1",
+        "pid": "691a6fbd",
+        "pos": {
+          "x": 88.42747,
+          "y": 14.83588,
+          "z": 0.007
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "cog_plat_1",
+        "pid": "d1b96dbe",
+        "pos": {
+          "x": 88.4384842,
+          "y": 20.9000359,
+          "z": 0.007
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "cog_plat_1",
+        "pid": "20c69496",
+        "pos": {
+          "x": 88.3707352,
+          "y": 27.2477169,
+          "z": 0.02
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "cog_plat_1",
+        "pid": "f9ccb981",
+        "pos": {
+          "x": 80.9769745,
+          "y": 32.4869,
+          "z": 0.02
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "cog_plat_1",
+        "pid": "bf27b87a",
+        "pos": {
+          "x": 73.5125,
+          "y": 37.4972458,
+          "z": 0.02
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "cog_plat_1",
+        "pid": "2c959cc7",
+        "pos": {
+          "x": 64.328804,
+          "y": 41.20552,
+          "z": 0.02
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

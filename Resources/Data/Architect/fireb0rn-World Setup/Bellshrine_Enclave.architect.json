@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "bd487474",
+        "pos": {
+          "x": 38.5393944,
+          "y": 13.9939594,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Enclave States/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "06217bc1",
+        "pos": {
+          "x": 28.0451946,
+          "y": 6.75037861,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Whole Scene/Bellshrine Sequence/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

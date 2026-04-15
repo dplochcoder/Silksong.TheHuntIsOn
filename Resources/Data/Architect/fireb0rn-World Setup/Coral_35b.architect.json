@@ -1,0 +1,112 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a5a09739",
+        "pos": {
+          "x": 22.7998543,
+          "y": 8.420987,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Coral Crust Wall Tall (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d1f43e37",
+        "pos": {
+          "x": 15.6444225,
+          "y": 119.240822,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Stalactite Group Top"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0e8cdd30",
+        "pos": {
+          "x": 11.0988226,
+          "y": 107.565575,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "break_bridge_chunk"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 30.06757,
+        "y": -0.3378315
+      },
+      "block_id": "4c68c9e4-1977-4841-946e-4bdff70cd98c",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "c5fdd242",
+        "object_type": "object_enabler"
+      }
+    },
+    {
+      "pos": {
+        "x": -326.258453,
+        "y": -4.8479805
+      },
+      "block_id": "ae71e190-ae73-4c0d-b224-811f0364ab69",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "7531e3f1-276f-4c5f-aaf3-12b5507a67e1",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -163.082809,
+        "y": -88.9696045
+      },
+      "block_id": "7531e3f1-276f-4c5f-aaf3-12b5507a67e1",
+      "events": {
+        "Out": []
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "1"
+      },
+      "ext": {}
+    }
+  ]
+}

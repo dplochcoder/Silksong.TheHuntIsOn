@@ -1,0 +1,82 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6f48752e",
+        "pos": {
+          "x": 124.296982,
+          "y": 19.7750168,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bellshrine gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9f7e7027",
+        "pos": {
+          "x": 67.747,
+          "y": 6.685857,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Floor Control Scene/Floor Unbroken/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "b093b496",
+        "pos": {
+          "x": 66.76558,
+          "y": 6.679267,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "Floor Control Scene/Floor Broken/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "bde1a2f4",
+        "pos": {
+          "x": 17.22888,
+          "y": 5.41952229,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "rosary_stringer"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

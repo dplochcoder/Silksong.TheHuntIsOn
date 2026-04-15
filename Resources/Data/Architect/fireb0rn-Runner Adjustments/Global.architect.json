@@ -1,0 +1,400 @@
+{
+  "placements": [],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -449.949554,
+        "y": 72.03628
+      },
+      "block_id": "66732650-7561-4d74-a7a8-9213e6fb1df1",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "cd929268-c1a2-4508-999e-e5c59d606265",
+            "Item2": "Set"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -262.0363,
+        "y": 59.7177353
+      },
+      "block_id": "cd929268-c1a2-4508-999e-e5c59d606265",
+      "events": {},
+      "vars": {},
+      "type": "Persistent Data",
+      "config": {
+        "ped_bool_scene": "Bone_16",
+        "ped_bool": "True",
+        "ped_bool_type": "Bone Carriage"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 376.4142,
+        "y": 192.533813
+      },
+      "block_id": "0c4e13d0-6cf1-4fd8-a7ce-e7cd2d8f1b47",
+      "events": {},
+      "vars": {},
+      "type": "Silk Control",
+      "config": {
+        "silk_amount": "4"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -133.9865,
+        "y": 355.1689
+      },
+      "block_id": "b2f1c9d5-23c7-452c-99aa-d3f62c3310ee",
+      "events": {
+        "OnHealFail": [
+          {
+            "Item1": "629de3d0-45a5-4954-b007-bb6992799abb",
+            "Item2": "In"
+          }
+        ],
+        "Land": []
+      },
+      "vars": {},
+      "type": "Player Listener",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 158.9086,
+        "y": 205.293457
+      },
+      "block_id": "629de3d0-45a5-4954-b007-bb6992799abb",
+      "events": {
+        "Out": [
+          {
+            "Item1": "0c4e13d0-6cf1-4fd8-a7ce-e7cd2d8f1b47",
+            "Item2": "Give"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.5"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -3.28817,
+        "y": -123.262611
+      },
+      "block_id": "2d605893-120e-492b-a5e1-633a037f9cb6",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Int)",
+      "config": {
+        "pd_int_type": "heartPieces",
+        "pd_int": "0"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -141.798676,
+        "y": -234.409546
+      },
+      "block_id": "5ce68ab4-eea2-4cf1-b8ef-90de3def9772",
+      "events": {
+        "True": [
+          {
+            "Item1": "3e9db948-a14c-487b-95bf-b6af5fa19d14",
+            "Item2": "Set"
+          }
+        ]
+      },
+      "vars": {
+        "Check": {
+          "Item1": "8a946263-bc7e-49c9-bfe3-e0b9e056f472",
+          "Item2": "Value"
+        }
+      },
+      "type": "If",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -141.6677,
+        "y": -179.780121
+      },
+      "block_id": "8a946263-bc7e-49c9-bfe3-e0b9e056f472",
+      "events": {},
+      "vars": {
+        "2": {
+          "Item1": "2d605893-120e-492b-a5e1-633a037f9cb6",
+          "Item2": "Value"
+        },
+        "1": {
+          "Item1": "ef98e438-0c12-4157-b209-a6ca0f33be1f",
+          "Item2": "Value"
+        }
+      },
+      "type": "Compare",
+      "config": {
+        "compare_mode": "0"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -140.074921,
+        "y": -144.709534
+      },
+      "block_id": "ef98e438-0c12-4157-b209-a6ca0f33be1f",
+      "events": {},
+      "vars": {},
+      "type": "Constant Num",
+      "config": {
+        "constant_num": "0"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -0.8712275,
+        "y": -230.13945
+      },
+      "block_id": "3e9db948-a14c-487b-95bf-b6af5fa19d14",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Int)",
+      "config": {
+        "pd_int_type": "heartPieces",
+        "pd_int": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -563.418945,
+        "y": -212.989792
+      },
+      "block_id": "8a970c8f-763d-4f99-900e-3458282f6739",
+      "events": {
+        "OnCall": [
+          {
+            "Item1": "51c3777c-41a0-4679-9b99-bc70087f0c27",
+            "Item2": "Trigger"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Timer",
+      "config": {
+        "timer_start_delay": "1",
+        "timer_repeat_delay": "1",
+        "timer_rand_delay": "0"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -343.067474,
+        "y": -212.775742
+      },
+      "block_id": "51c3777c-41a0-4679-9b99-bc70087f0c27",
+      "events": {},
+      "vars": {},
+      "type": "Ordered Events",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":-183.4375,\"y\":-217.1875},\"block_id\":\"77c84d90-40fc-4d65-bf80-9f6674ef92f3\",\"events\":{\"OnTrigger\":[{\"Item1\":\"5ce68ab4-eea2-4cf1-b8ef-90de3def9772\",\"Item2\":\"In\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":-183.4375,\"y\":-217.1875},\"block_id\":\"57815cc2-9fd6-4da0-9159-e174dde91595\",\"events\":{\"OnTrigger\":[{\"Item1\":\"fb2fb928-5de4-4bc1-9d3c-13b5d36e35f0\",\"Item2\":\"In\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":-5.93505859,\"y\":-183.318558},\"block_id\":\"b1501630-7a74-4b73-b7dc-564a8f9d2c12\",\"events\":{\"OnTrigger\":[{\"Item1\":\"35cc358a-d567-49f0-a0cb-9b03bb195133\",\"Item2\":\"In\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 597.2799,
+        "y": -446.1711
+      },
+      "block_id": "35cc358a-d567-49f0-a0cb-9b03bb195133",
+      "events": {
+        "True": [
+          {
+            "Item1": "bff35984-5035-4221-8bcc-6ee113657fc0",
+            "Item2": "Set"
+          }
+        ]
+      },
+      "vars": {
+        "Check": {
+          "Item1": "13572576-f06f-4a30-8ec2-9ea3793ae60c",
+          "Item2": "Value"
+        }
+      },
+      "type": "If",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 502.813019,
+        "y": -156.41011
+      },
+      "block_id": "4f01733b-b386-492a-bd1e-211368a9784b",
+      "events": {},
+      "vars": {},
+      "type": "Constant Num",
+      "config": {
+        "constant_num": "0"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 674.5042,
+        "y": -148.689514
+      },
+      "block_id": "da800d75-a218-409d-a9e8-5d37e1a33bd6",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Int)",
+      "config": {
+        "pd_int_type": "silkSpoolParts",
+        "pd_int": "0"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 595.8278,
+        "y": -244.277756
+      },
+      "block_id": "13572576-f06f-4a30-8ec2-9ea3793ae60c",
+      "events": {},
+      "vars": {
+        "1": {
+          "Item1": "4f01733b-b386-492a-bd1e-211368a9784b",
+          "Item2": "Value"
+        },
+        "2": {
+          "Item1": "da800d75-a218-409d-a9e8-5d37e1a33bd6",
+          "Item2": "Value"
+        }
+      },
+      "type": "Compare",
+      "config": {
+        "compare_mode": "0"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 796.967468,
+        "y": -433.634247
+      },
+      "block_id": "bff35984-5035-4221-8bcc-6ee113657fc0",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Int)",
+      "config": {
+        "pd_int_type": "silkSpoolParts",
+        "pd_int": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -142.648743,
+        "y": -412.784271
+      },
+      "block_id": "fb2fb928-5de4-4bc1-9d3c-13b5d36e35f0",
+      "events": {
+        "True": [
+          {
+            "Item1": "e348e773-7065-4a32-b45e-c9eff63c2838",
+            "Item2": "Set"
+          }
+        ]
+      },
+      "vars": {
+        "Check": {
+          "Item1": "36dff505-154e-4c1e-a57f-ed3ce863887e",
+          "Item2": "Value"
+        }
+      },
+      "type": "If",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -144.402756,
+        "y": -300.697571
+      },
+      "block_id": "bb6fc356-e6b8-48e7-bb0c-537a4c1bff5a",
+      "events": {},
+      "vars": {},
+      "type": "Constant Num",
+      "config": {
+        "constant_num": "2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -2.0540297,
+        "y": -337.5826
+      },
+      "block_id": "bdb7e358-74c5-4fa2-b6db-99a341bda79a",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Int)",
+      "config": {
+        "pd_int_type": "heartPieces",
+        "pd_int": "2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -0.4411266,
+        "y": -450.48587
+      },
+      "block_id": "e348e773-7065-4a32-b45e-c9eff63c2838",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Int)",
+      "config": {
+        "pd_int_type": "heartPieces",
+        "pd_int": "3"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -143.2939,
+        "y": -346.493958
+      },
+      "block_id": "36dff505-154e-4c1e-a57f-ed3ce863887e",
+      "events": {},
+      "vars": {
+        "1": {
+          "Item1": "bb6fc356-e6b8-48e7-bb0c-537a4c1bff5a",
+          "Item2": "Value"
+        },
+        "2": {
+          "Item1": "bdb7e358-74c5-4fa2-b6db-99a341bda79a",
+          "Item2": "Value"
+        }
+      },
+      "type": "Compare",
+      "config": {
+        "compare_mode": "0"
+      },
+      "ext": {}
+    }
+  ]
+}

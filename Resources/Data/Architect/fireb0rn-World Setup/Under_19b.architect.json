@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b8e93a46",
+        "pos": {
+          "x": 10.0938425,
+          "y": 9.396416,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "tool_metal_deposit"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

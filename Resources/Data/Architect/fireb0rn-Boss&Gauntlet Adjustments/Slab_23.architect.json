@@ -1,0 +1,182 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "c580b9a9",
+        "pos": {
+          "x": 45.4441566,
+          "y": 9.86449051,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Battle Scene/Wave 1a/Slab Fly Mid"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "11601365",
+        "pos": {
+          "x": 48.70602,
+          "y": 9.875736,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Battle Scene/Wave 1a/Slab Fly Small (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "e1ed68ec",
+        "pos": {
+          "x": 52.0241127,
+          "y": 9.819496,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Battle Scene/Wave 1a/Slab Fly Small (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "982f19d1",
+        "pos": {
+          "x": 44.8617668,
+          "y": 12.5077248,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Battle Scene/Gates",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "924705ae",
+        "pos": {
+          "x": 46.240387,
+          "y": 12.4514847,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Jail Gate Door"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "26db9b36-0512-41d4-9666-b73979dbc394",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "e1ed68ec",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -12.9629574,
+        "y": 194.444336
+      },
+      "block_id": "ef1b3ffd-8f81-4019-91de-84e3440570bd",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "11601365",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 3.703702,
+        "y": -185.18512
+      },
+      "block_id": "4b0759d9-13c0-407c-9e37-bf44cb4f90c9",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "c580b9a9",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -248.148041,
+        "y": 16.6666565
+      },
+      "block_id": "18ee80b7-4ad1-409f-86da-b48c0b0f0885",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "26db9b36-0512-41d4-9666-b73979dbc394",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "ef1b3ffd-8f81-4019-91de-84e3440570bd",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "4b0759d9-13c0-407c-9e37-bf44cb4f90c9",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "ee431fb5-99c6-4201-88b2-1e824c91e9b1",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "70d5f3ea",
+        "object_type": "object_remover"
+      }
+    }
+  ]
+}

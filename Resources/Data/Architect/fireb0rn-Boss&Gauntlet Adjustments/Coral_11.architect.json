@@ -1,0 +1,300 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "cb081fa8",
+        "pos": {
+          "x": 59.593853,
+          "y": 16.8998947,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_name": "Control",
+        "fsm_hook_target": "Black Thread States Thread Only Variant/Normal World/Boss Scene/Driller A",
+        "fsm_hook_state": "Roar Antic G"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "07ac814b",
+        "pos": {
+          "x": 63.8346977,
+          "y": 16.9492283,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_name": "Control",
+        "fsm_hook_target": "Black Thread States Thread Only Variant/Normal World/Boss Scene/Driller A",
+        "fsm_hook_state": "Music"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "b3a9815a",
+        "pos": {
+          "x": 63.66506,
+          "y": 20.5116959,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_name": "Control",
+        "fsm_hook_target": "Black Thread States Thread Only Variant/Normal World/Boss Scene/Driller B",
+        "fsm_hook_state": "Music"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "50f66638",
+        "pos": {
+          "x": 76.4259338,
+          "y": 24.4977036,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d3ebca67",
+        "pos": {
+          "x": 67.9947,
+          "y": 18.6571884,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States Thread Only Variant/Normal World/Boss Scene/Gates",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "ad0184e6",
+        "pos": {
+          "x": 59.3755455,
+          "y": 21.06909,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_name": "Control",
+        "fsm_hook_target": "Black Thread States Thread Only Variant/Normal World/Boss Scene/Driller B",
+        "fsm_hook_state": "Roar Antic R"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5f4a4563",
+        "pos": {
+          "x": 64.62373,
+          "y": 18.2303371,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States Thread Only Variant/Normal World/Boss Scene/Gates"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "8c5969dc",
+        "pos": {
+          "x": 54.494606,
+          "y": 18.9850311,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Black Thread States Thread Only Variant/Normal World/Boss Scene/Driller A"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "240890e6",
+        "pos": {
+          "x": 58.25137,
+          "y": 19.0300236,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Black Thread States Thread Only Variant/Normal World/Boss Scene/Driller B"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "92237dee-c6c3-4499-93d3-bd474531e85e",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "8c5969dc",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -3.571429,
+        "y": 212.500046
+      },
+      "block_id": "5452c22f-89b9-40f0-b294-cd0dc8297e49",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "240890e6",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -256.3839,
+        "y": 152.232132
+      },
+      "block_id": "51f3ab63-47f7-48ad-927c-14817fbc2b9a",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "5452c22f-89b9-40f0-b294-cd0dc8297e49",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "92237dee-c6c3-4499-93d3-bd474531e85e",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+   {
+      "pos": {
+        "x": -1.33928585,
+        "y": -196.875015
+      },
+      "block_id": "3fcda775-719b-42ca-a86c-54083cb61ab1",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "e767ec61-29a9-475f-8a82-3cee03f6d427",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "cb081fa8",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 239.285736,
+        "y": -199.553589
+      },
+      "block_id": "e767ec61-29a9-475f-8a82-3cee03f6d427",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "07ac814b",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 8.035715,
+        "y": 50.4464569
+      },
+      "block_id": "289b4584-ca7f-45d6-9728-06bc40a1bb44",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "73cc1c93-36dd-41fa-a647-fc7b325ba536",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "ad0184e6",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 208.928589,
+        "y": 42.8571434
+      },
+      "block_id": "73cc1c93-36dd-41fa-a647-fc7b325ba536",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "b3a9815a",
+        "object_type": "fsm_hook"
+      }
+    }
+  ]
+}

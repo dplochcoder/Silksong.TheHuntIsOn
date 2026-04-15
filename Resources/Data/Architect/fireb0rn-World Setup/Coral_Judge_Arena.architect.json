@@ -1,0 +1,158 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2406921f",
+        "pos": {
+          "x": 58.91452,
+          "y": 39.664,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "closed gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9b151b36",
+        "pos": {
+          "x": 58.7071152,
+          "y": 32.197464,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "closed gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6f52951c",
+        "pos": {
+          "x": 58.91452,
+          "y": 31.4715519,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "closed gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7ad658ed",
+        "pos": {
+          "x": 58.87995,
+          "y": 31.4369831,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "closed gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "24b11242",
+        "pos": {
+          "x": 59.7095642,
+          "y": 32.128334,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "closed gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c1ab1adb",
+        "pos": {
+          "x": 24.9002972,
+          "y": 22.9507236,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "closed gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "fd56392f",
+        "pos": {
+          "x": 32.5742378,
+          "y": 35.5159264,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "closed gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "27b9698f",
+        "pos": {
+          "x": 53.66029,
+          "y": 29.328392,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Boss Scene/Great Gate/Gate/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

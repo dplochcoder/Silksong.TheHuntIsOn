@@ -1,0 +1,66 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "ea9fcd8e",
+        "pos": {
+          "x": 69.5347,
+          "y": 15.58909,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_collide": "False",
+        "trans_id": "StepsSpawnCoral12-1"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "9b011fa7",
+        "pos": {
+          "x": 35.13096,
+          "y": 67.58403,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_collide": "False",
+        "trans_id": "StepsSpawnCoral12-2"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "af3bdb56",
+        "pos": {
+          "x": 27.459671,
+          "y": 28.515131,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_collide": "False",
+        "trans_id": "StepsSpawnCoral12-3"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

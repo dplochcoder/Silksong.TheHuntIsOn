@@ -1,0 +1,101 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "67bcfe0f",
+        "pos": {
+          "x": 55.9458923,
+          "y": 11.39016,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Area_States/Uninfected/Scientist_set/scientist_cart/main_cart/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a92089ea",
+        "pos": {
+          "x": 52.0316658,
+          "y": 12.7848864,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Area_States/Uninfected/Scientist_set/scientist_cart/tent junk/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "37a991aa",
+        "pos": {
+          "x": 56.68825,
+          "y": 13.2123013,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Area_States/Uninfected/Scientist_set/scientist_cart/right_tall_vial/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2cd54a17",
+        "pos": {
+          "x": 53.76384,
+          "y": 14.427062,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Area_States/Uninfected/Scientist_set/scientist_cart/left_tall_vial/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "49ec6a8b",
+        "pos": {
+          "x": 54.3824577,
+          "y": 11.5363808,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Area_States/Uninfected/Scientist_set/Blue Scientist/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

@@ -1,0 +1,196 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "44ce3d6f",
+        "pos": {
+          "x": 152.390472,
+          "y": 14.3458939,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Greymoor Stand Lever"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9fa0d570",
+        "pos": {
+          "x": 113.276077,
+          "y": 88.31053,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Greymoor Stand Lever (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "3ccb91fd",
+        "pos": {
+          "x": 206.534149,
+          "y": 27.0268173,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Clover Entry Gate (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "7797f918",
+        "pos": {
+          "x": 145.724091,
+          "y": 23.335043,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "Balloon Set 1/Activate/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "51656b8e",
+        "pos": {
+          "x": 93.82785,
+          "y": 36.0031624,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c652d9f0",
+        "pos": {
+          "x": 148.886078,
+          "y": 12.2425585,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "grey_lever_gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "77487976",
+        "pos": {
+          "x": 178.7628,
+          "y": 53.97245,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Flea Rescue Barrel"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ec52f137",
+        "pos": {
+          "x": 102.776558,
+          "y": 80.3101044,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "grey_lever_gate (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2e11ca2c",
+        "pos": {
+          "x": 40.8821144,
+          "y": 38.46273,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Ability Scene"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e79c6529",
+        "pos": {
+          "x": 71.81701,
+          "y": 26.66888,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "One Way Wall (2)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

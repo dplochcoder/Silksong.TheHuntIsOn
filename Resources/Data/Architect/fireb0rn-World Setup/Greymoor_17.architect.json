@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c0e0bae0",
+        "pos": {
+          "x": 47.00035,
+          "y": 26.0081272,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "plank_wall_cluster/Break Set"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

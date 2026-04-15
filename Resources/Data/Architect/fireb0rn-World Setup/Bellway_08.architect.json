@@ -1,0 +1,179 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f78d8255",
+        "pos": {
+          "x": 120.584129,
+          "y": 15.6950951,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bell Bench Scene/bell_bench/bell_toll_machine/"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "1d17b55b",
+        "pos": {
+          "x": 92.52112,
+          "y": 17.4008846,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "1",
+        "trans_collide": "1",
+        "trans_id": "StepsStag"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "04caf59c",
+        "pos": {
+          "x": 121.600525,
+          "y": 15.6416531,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bell Bench Scene/bell_bench/frame/"
+      }
+    },
+    {
+      "placement": {
+        "id": "bell_bench",
+        "pid": "5a147ed6",
+        "pos": {
+          "x": 120.824425,
+          "y": 14.30315,
+          "z": 0.009
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "bench_spawn": "True",
+        "bench_offset_x": "0",
+        "bench_offset_y": "0",
+        "bench_offset_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "06c5172b",
+        "pos": {
+          "x": 84.32573,
+          "y": 18.589592,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Bone Beast NPC",
+        "fsm_hook_name": "Interaction",
+        "fsm_hook_state": "Appear Delay"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "93760fed",
+        "pos": {
+          "x": 88.02006,
+          "y": 18.4096317,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Bone Beast NPC",
+        "fsm_hook_name": "Interaction",
+        "fsm_hook_state": "Start Shake"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -117.5,
+        "y": -88.75
+      },
+      "block_id": "661576eb-0553-494c-8c11-481939dc9a0d",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "5f2e2a94-fab4-4520-ab08-3defba0b7cd5",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "06c5172b",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 152.1875,
+        "y": -74.6875
+      },
+      "block_id": "5f2e2a94-fab4-4520-ab08-3defba0b7cd5",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "93760fed",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -325.3125,
+        "y": -42.1875
+      },
+      "block_id": "7d9a1e71-8d06-42d8-955e-4d5c3c751810",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "661576eb-0553-494c-8c11-481939dc9a0d",
+            "Item2": "fsm_remove_transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

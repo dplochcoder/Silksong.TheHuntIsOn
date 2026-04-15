@@ -1,0 +1,392 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f359be25",
+        "pos": {
+          "x": 130.789536,
+          "y": 30.94566,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "greymoor_drop_propeller/Vine"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7f46b842",
+        "pos": {
+          "x": 130.103409,
+          "y": 30.61963,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "drop plat group/greymoor_drop_propeller/Plat"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "68e4e26c",
+        "pos": {
+          "x": 130.395844,
+          "y": 31.99186,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "drop plat group/greymoor_drop_propeller/Vine"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "1b95e641",
+        "pos": {
+          "x": 128.915024,
+          "y": 7.90632868,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "drop plat group/greymoor_drop_propeller/Updraft Region",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Active"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "2473e2a3",
+        "pos": {
+          "x": 97.14004,
+          "y": 6.767231,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_height": "2",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "bellbeast_child",
+        "pid": "5d5d41e3",
+        "pos": {
+          "x": 92.95584,
+          "y": 4.59641075,
+          "z": 0.005
+        },
+        "flipped": true,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "c5ba8e89",
+        "pos": {
+          "x": 93.07959,
+          "y": 4.225235,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "7",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5",
+        "size_height": "0.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_anchor",
+        "pid": "4f2c3d72",
+        "pos": {
+          "x": 93.0233459,
+          "y": 4.3602066,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "anchor_dist": "10",
+        "anchor_start_dist": "0",
+        "anchor_speed": "0",
+        "anchor_rot": "0",
+        "anchor_rot_speed": "0",
+        "anchor_smoothing": "0.5",
+        "anchor_pause_time": "0",
+        "anchor_moving": "True",
+        "anchor_target": "c5ba8e89",
+        "anchor_parent": "5d5d41e3"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "6cb23f15",
+        "pos": {
+          "x": 93.84444,
+          "y": 7.99324036,
+          "z": 0.0
+        },
+        "flipped": true,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "0",
+        "trans_collide": "2",
+        "trans_edit_mode_active": "True",
+        "trans_id": "fleaCaravan2",
+        "trans_other_id": "fleaCaravan3",
+        "trans_other_scene": "Coral_32"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "040e7f08",
+        "pos": {
+          "x": 10.5137215,
+          "y": 8.397507,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bell Wall Gate",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "marrow_plat_01",
+        "pid": "0efd30eb",
+        "pos": {
+          "x": 133.39537,
+          "y": 5.20730162,
+          "z": -0.09
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "fc5aa410",
+        "pos": {
+          "x": 89.9862442,
+          "y": 6.631669,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_height": "2",
+        "size_width": "0.1"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 4.58333254,
+        "y": 3.74999619
+      },
+      "block_id": "26450df6-5e9f-41dc-bab2-bc218741f7a4",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "1b95e641",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -207.291672,
+        "y": 17.8124962
+      },
+      "block_id": "cd15fedf-35f7-4d60-a145-eaf1999cae97",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "26450df6-5e9f-41dc-bab2-bc218741f7a4",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -365.3125,
+        "y": -206.5625
+      },
+      "block_id": "c22e2ea7-f3b1-4154-aa9c-a73762c0a5ff",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "f167967f-0ac2-44d7-9107-97c36e2d14fe",
+            "Item2": "Display"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "c5ba8e89",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": 70.3125,
+        "y": -237.8125
+      },
+      "block_id": "9d1abe39-e51a-4120-9c2a-eba213991bde",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "6cb23f15",
+        "object_type": "transition_gate"
+      }
+    },
+    {
+      "pos": {
+        "x": -150.3125,
+        "y": -215.625
+      },
+      "block_id": "f167967f-0ac2-44d7-9107-97c36e2d14fe",
+      "events": {
+        "Yes": [
+          {
+            "Item1": "9d1abe39-e51a-4120-9c2a-eba213991bde",
+            "Item2": "transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Choice Display",
+      "config": {
+        "choice_text": "Take the Beastling to the Grand Gate?",
+        "choice_requirement": "0",
+        "choice_cost": "0",
+        "choice_take_item": "False"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -405.350861,
+        "y": 36.885952
+      },
+      "block_id": "2d6dd8d8-0c0e-427d-a0f6-b997cf5b49a5",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "040e7f08",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": -562.7138,
+        "y": -27.1546059
+      },
+      "block_id": "aea397c2-ce1f-41c0-ad49-4ecda6e61e85",
+      "events": {
+        "Out": [
+          {
+            "Item1": "2d6dd8d8-0c0e-427d-a0f6-b997cf5b49a5",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -727.2313,
+        "y": 39.4462738
+      },
+      "block_id": "0b85f202-820e-473d-afeb-6e70a5eb29f1",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "aea397c2-ce1f-41c0-ad49-4ecda6e61e85",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

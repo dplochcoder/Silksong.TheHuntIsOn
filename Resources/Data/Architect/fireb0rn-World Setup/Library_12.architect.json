@@ -1,0 +1,120 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "427a430f",
+        "pos": {
+          "x": 58.35738,
+          "y": 104.5424,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Plug_Gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1ffa5f78",
+        "pos": {
+          "x": 132.11586,
+          "y": 84.3972549,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "breakable blocker struts"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5364e74f",
+        "pos": {
+          "x": 127.069023,
+          "y": 32.7274933,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "breakable blocker struts"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "256296c6",
+        "pos": {
+          "x": 119.758041,
+          "y": 27.9572067,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "breakable blocker struts"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a8bda234",
+        "pos": {
+          "x": 127.207314,
+          "y": 27.300415,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1bcead79",
+        "pos": {
+          "x": 29.4496269,
+          "y": 91.43821,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "One Way Wall"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

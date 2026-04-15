@@ -1,0 +1,82 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "620b7255",
+        "pos": {
+          "x": 38.20607,
+          "y": 82.32994,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "cog_lever"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "73f83599",
+        "pos": {
+          "x": 52.6862679,
+          "y": 140.113586,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "cog_lever (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e9c787ba",
+        "pos": {
+          "x": 37.3180466,
+          "y": 82.27236,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Cogwork Energy Gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a619124c",
+        "pos": {
+          "x": 49.11976,
+          "y": 139.607666,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Cogwork Energy Gate (1)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

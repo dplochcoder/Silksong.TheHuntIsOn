@@ -1,0 +1,82 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "15cac9d9",
+        "pos": {
+          "x": 52.83935,
+          "y": 64.02334,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "docks_giant_gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ed501f5d",
+        "pos": {
+          "x": 49.1703148,
+          "y": 56.15681,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1ada0963",
+        "pos": {
+          "x": 43.43387,
+          "y": 108.379585,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "One Way Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "09869946",
+        "pos": {
+          "x": 29.6440659,
+          "y": 105.680115,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

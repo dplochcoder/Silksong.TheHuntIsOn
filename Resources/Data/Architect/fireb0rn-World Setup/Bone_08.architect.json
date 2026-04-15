@@ -1,0 +1,139 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "dock_plat_02",
+        "pid": "1acfe751",
+        "pos": {
+          "x": 32.2590179,
+          "y": 91.64151,
+          "z": -0.09
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 0.5
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "20b65b44",
+        "pos": {
+          "x": 11.6418333,
+          "y": 90.14555,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "lever"
+      }
+    },
+    {
+      "placement": {
+        "id": "dock_plat_01",
+        "pid": "6c4e6627",
+        "pos": {
+          "x": 13.7901592,
+          "y": 79.96936,
+          "z": -0.09
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 0.65
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "dock_plat_01",
+        "pid": "330712e7",
+        "pos": {
+          "x": 10.9894609,
+          "y": 75.57363,
+          "z": -0.09
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 0.65
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "dock_plat_01",
+        "pid": "9524e8fa",
+        "pos": {
+          "x": 13.8688955,
+          "y": 71.1449356,
+          "z": -0.09
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 0.65
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "dock_plat_01",
+        "pid": "0cd7dbb1",
+        "pos": {
+          "x": 11.0119572,
+          "y": 66.7717361,
+          "z": -0.09
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 0.65
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "dock_plat_01",
+        "pid": "2b7c3d46",
+        "pos": {
+          "x": 13.8126564,
+          "y": 62.3738441,
+          "z": -0.09
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 0.65
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

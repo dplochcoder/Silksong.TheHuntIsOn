@@ -1,0 +1,310 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0ed62386",
+        "pos": {
+          "x": 37.323,
+          "y": 42.39119,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Understore Lever/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "56f32f18",
+        "pos": {
+          "x": 16.21093,
+          "y": 45.8667221,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Understore Lever/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e510a90f",
+        "pos": {
+          "x": 18.34801,
+          "y": 49.8146973,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Understore Lever/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "077b5690",
+        "pos": {
+          "x": 18.4829845,
+          "y": 49.9834137,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Understore Lever/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2ccfa75e",
+        "pos": {
+          "x": 40.0562325,
+          "y": 48.644928,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Understore Lever/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f1291229",
+        "pos": {
+          "x": 40.0337334,
+          "y": 48.53245,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Understore Lever/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f87a7cec",
+        "pos": {
+          "x": 39.82003,
+          "y": 47.7001152,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Understore Lever/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e6230b61",
+        "pos": {
+          "x": 40.1012154,
+          "y": 48.4199753,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Understore Lever/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "3404534f",
+        "pos": {
+          "x": 39.66255,
+          "y": 47.7901,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Understore Lever/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "612c2442",
+        "pos": {
+          "x": 31.65413,
+          "y": 47.3064537,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Understore Lever/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2f065eb9",
+        "pos": {
+          "x": 36.95183,
+          "y": 47.3177147,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Understore Lever/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "4a35a20c",
+        "pos": {
+          "x": 39.1676445,
+          "y": 40.5465469,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Cradle Slide Wall/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "aaf83bbb",
+        "pos": {
+          "x": 118.836967,
+          "y": 41.9216156,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/dock_b__0051_lore_sign_hang/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0da2f5d6",
+        "pos": {
+          "x": 42.62259,
+          "y": 124.085114,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Cradle Slide Wall/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b90f18ad",
+        "pos": {
+          "x": 27.9683685,
+          "y": 95.84824,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "cradle_pipe_trapdoor/floor1_start/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6c5f345d",
+        "pos": {
+          "x": 28.0323181,
+          "y": 96.73632,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "cradle_pipe_trapdoor"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

@@ -1,0 +1,481 @@
+{
+  "placements": [
+   {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "6e7e0069",
+        "pos": {
+          "x": 29.9475975,
+          "y": 40.0234871,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Battle Parent/Battle Scene/Wave 2/Roachkeeper Chef (1)",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Dormant"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "390ef11d",
+        "pos": {
+          "x": 33.390152,
+          "y": 39.9447556,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Battle Parent/Battle Scene/Wave 2/Roachkeeper Chef (1)",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Entry Antic"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "2230436d",
+        "pos": {
+          "x": 36.92196,
+          "y": 39.91101,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Battle Parent/Battle Scene/Wave 2/Roachkeeper Chef (1)",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Entry Land"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "c9d693a8",
+        "pos": {
+          "x": 40.4312668,
+          "y": 39.89976,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Battle Parent/Battle Scene/Wave 2/Roachkeeper Chef (1)",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "First Idle"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "948070b2",
+        "pos": {
+          "x": 34.8482437,
+          "y": 42.4956665,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Battle Parent/Battle Scene/Wave 2/Chef Stopper"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "26027376",
+        "pos": {
+          "x": 39.16979,
+          "y": 43.7915077,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Battle Parent/Battle Scene/Wave 2/Roachkeeper Chef (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "6e7e0069",
+        "pos": {
+          "x": 29.9475975,
+          "y": 40.0234871,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Battle Parent/Battle Scene/Wave 2/Roachkeeper Chef (1)",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Dormant"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "390ef11d",
+        "pos": {
+          "x": 33.390152,
+          "y": 39.9447556,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Battle Parent/Battle Scene/Wave 2/Roachkeeper Chef (1)",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Entry Antic"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "2230436d",
+        "pos": {
+          "x": 36.92196,
+          "y": 39.91101,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Battle Parent/Battle Scene/Wave 2/Roachkeeper Chef (1)",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Entry Land"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "c9d693a8",
+        "pos": {
+          "x": 40.4312668,
+          "y": 39.89976,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Battle Parent/Battle Scene/Wave 2/Roachkeeper Chef (1)",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "First Idle"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "948070b2",
+        "pos": {
+          "x": 34.8482437,
+          "y": 42.4956665,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Battle Parent/Battle Scene/Wave 2/Chef Stopper"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "26027376",
+        "pos": {
+          "x": 39.16979,
+          "y": 43.7915077,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Battle Parent/Battle Scene/Wave 2/Roachkeeper Chef (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "223dd770",
+        "pos": {
+          "x": 37.25373,
+          "y": 42.97041,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Battle Parent/Battle Scene/Wave 1"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -331.2499,
+        "y": -30.28844
+      },
+      "block_id": "5d8b7e65-6ab6-451b-b1ff-83bf8129111c",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "affd4bd1-5561-4953-83eb-883d0082e7ec",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "6e7e0069",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -133.653809,
+        "y": -30.769228
+      },
+      "block_id": "affd4bd1-5561-4953-83eb-883d0082e7ec",
+      "events": {
+        "OnTarget": []
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "390ef11d",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 104.326889,
+        "y": -32.2115173
+      },
+      "block_id": "fdb162eb-9736-494f-913d-472011d87388",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "7fd9317f-50de-48fc-bb3f-b8c5d5e7f243",
+            "Item2": "fsm_set_state"
+          },
+          {
+            "Item1": "eac24d28-ca0a-4ea4-b133-2ebcb3763fd4",
+            "Item2": "Damage"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "2230436d",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 289.423,
+        "y": -35.09615
+      },
+      "block_id": "7fd9317f-50de-48fc-bb3f-b8c5d5e7f243",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "c9d693a8",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -155.745239,
+        "y": 260.408569
+      },
+      "block_id": "eac24d28-ca0a-4ea4-b133-2ebcb3763fd4",
+      "events": {},
+      "vars": {
+        "Target": {
+          "Item1": "17100e69-ea94-4d1c-ae52-72dc77b3e017",
+          "Item2": "hp_hook_target"
+        }
+      },
+      "type": "Enemy Control",
+      "config": {
+        "enemy_damage_type": "1",
+        "enemy_hp_amount": "500"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 27.8846073,
+        "y": 210.5769
+      },
+      "block_id": "17100e69-ea94-4d1c-ae52-72dc77b3e017",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "26027376",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -331.2499,
+        "y": -30.28844
+      },
+      "block_id": "5d8b7e65-6ab6-451b-b1ff-83bf8129111c",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "affd4bd1-5561-4953-83eb-883d0082e7ec",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "6e7e0069",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -133.653809,
+        "y": -30.769228
+      },
+      "block_id": "affd4bd1-5561-4953-83eb-883d0082e7ec",
+      "events": {
+        "OnTarget": []
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "390ef11d",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 79.80767,
+        "y": -30.288435
+      },
+      "block_id": "fdb162eb-9736-494f-913d-472011d87388",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "7fd9317f-50de-48fc-bb3f-b8c5d5e7f243",
+            "Item2": "fsm_set_state"
+          },
+          {
+            "Item1": "232e4ea1-9e05-466a-ab25-5bc4d449a8a1",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "2230436d",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 289.423,
+        "y": -35.09615
+      },
+      "block_id": "7fd9317f-50de-48fc-bb3f-b8c5d5e7f243",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "c9d693a8",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 312.980682,
+        "y": 220.192291
+      },
+      "block_id": "17100e69-ea94-4d1c-ae52-72dc77b3e017",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "26027376",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 97.71632,
+        "y": 164.038452
+      },
+      "block_id": "232e4ea1-9e05-466a-ab25-5bc4d449a8a1",
+      "events": {
+        "Out": [
+          {
+            "Item1": "17100e69-ea94-4d1c-ae52-72dc77b3e017",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.01"
+      },
+      "ext": {}
+    }
+  ]
+}

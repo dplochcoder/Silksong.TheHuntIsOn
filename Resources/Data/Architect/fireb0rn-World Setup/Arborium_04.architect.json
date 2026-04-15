@@ -1,0 +1,63 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b5319b54",
+        "pos": {
+          "x": 25.3801231,
+          "y": 8.715648,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Moss Vine Cluster"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2e719634",
+        "pos": {
+          "x": 66.41898,
+          "y": 10.504034,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Moss Vine Cluster (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "08c809b0",
+        "pos": {
+          "x": 50.01466,
+          "y": 10.1891012,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Moss Vine Cluster (2)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

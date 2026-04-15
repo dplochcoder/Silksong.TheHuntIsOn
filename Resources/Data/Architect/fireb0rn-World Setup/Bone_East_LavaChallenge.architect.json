@@ -1,0 +1,82 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "92394cfc",
+        "pos": {
+          "x": 11.34452,
+          "y": 245.557419,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "52f1769f",
+        "pos": {
+          "x": 15.0669365,
+          "y": 174.871017,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a89c853e",
+        "pos": {
+          "x": 15.3094263,
+          "y": 19.3214836,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "45552271",
+        "pos": {
+          "x": 25.3981972,
+          "y": 188.225266,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall (3)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

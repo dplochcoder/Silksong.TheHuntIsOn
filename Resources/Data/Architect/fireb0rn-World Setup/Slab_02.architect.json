@@ -1,0 +1,63 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e8378f6d",
+        "pos": {
+          "x": 7.86257744,
+          "y": 11.0666246,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "slab_gate_simple"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "05fde53b",
+        "pos": {
+          "x": 8.818638,
+          "y": 10.8830547,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "slab_gate_simple (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c6b097d7",
+        "pos": {
+          "x": 11.2706566,
+          "y": 11.2433224,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "slab_jail_lever"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

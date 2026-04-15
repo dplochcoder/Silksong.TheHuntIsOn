@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "162f7757",
+        "pos": {
+          "x": 376.944763,
+          "y": 16.43949,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Encounter Scene Control/Lace Meet/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

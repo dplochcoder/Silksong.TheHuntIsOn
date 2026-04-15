@@ -1,0 +1,63 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "3727d86e",
+        "pos": {
+          "x": 65.439,
+          "y": 28.81405,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "grey_lever_gate (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c984f953",
+        "pos": {
+          "x": 67.19366,
+          "y": 28.51036,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "greymoor_lever_simple"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0a98dcf2",
+        "pos": {
+          "x": 16.1964,
+          "y": 82.32993,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "One Way Wall"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

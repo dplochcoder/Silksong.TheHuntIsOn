@@ -1,0 +1,152 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "813743d1",
+        "pos": {
+          "x": 174.704712,
+          "y": 21.929493,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_state": "Next Scene",
+        "fsm_hook_name": "Door Enter Play",
+        "fsm_hook_target": "Cinematic Player",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "12925679",
+        "pos": {
+          "x": 171.0042,
+          "y": 21.96235,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_state": "Move Scene",
+        "fsm_hook_name": "Door Enter Play",
+        "fsm_hook_target": "Cinematic Player",
+        "start_active": "False"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -3.77527213,
+        "y": 38.68246
+      },
+      "block_id": "5521077d-4a6b-4b3d-8a92-b1c4e02eafb9",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "f4921da8-d12e-4862-a8fa-c9e325e30139",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "12925679",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 11.630085,
+        "y": -206.461166
+      },
+      "block_id": "f4921da8-d12e-4862-a8fa-c9e325e30139",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "813743d1",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -337.613922,
+        "y": -64.811676
+      },
+      "block_id": "acf6be1d-c647-4dd2-a2fe-a801d851254b",
+      "events": {
+        "Out": [
+          {
+            "Item1": "e93cea60-f6f6-4d9a-b4d3-c6579aca0536",
+            "Item2": "In"
+          },
+          {
+            "Item1": "5521077d-4a6b-4b3d-8a92-b1c4e02eafb9",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "f4921da8-d12e-4862-a8fa-c9e325e30139",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -532.871643,
+        "y": -60.8614922
+      },
+      "block_id": "21d7adb7-3c57-4f89-8adc-cb57f5f7a337",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "acf6be1d-c647-4dd2-a2fe-a801d851254b",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -215.1858,
+        "y": 69.06251
+      },
+      "block_id": "e93cea60-f6f6-4d9a-b4d3-c6579aca0536",
+      "events": {
+        "Out": [
+          {
+            "Item1": "5521077d-4a6b-4b3d-8a92-b1c4e02eafb9",
+            "Item2": "fsm_remove_transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    }
+  ]
+}

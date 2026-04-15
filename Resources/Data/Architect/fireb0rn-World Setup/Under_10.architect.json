@@ -1,0 +1,63 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "695b65e8",
+        "pos": {
+          "x": 21.7535973,
+          "y": 9.72495651,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Silk Spool"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2464183e",
+        "pos": {
+          "x": 14.0151186,
+          "y": 6.49684143,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_Gate_small"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ad17197b",
+        "pos": {
+          "x": 16.5458717,
+          "y": 12.2557077,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

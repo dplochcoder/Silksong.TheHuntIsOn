@@ -1,0 +1,82 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0cf2b367",
+        "pos": {
+          "x": 39.3029823,
+          "y": 13.76836,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Lace Scene"
+      }
+    },
+    {
+      "placement": {
+        "id": "envoy",
+        "pid": "3112a258",
+        "pos": {
+          "x": 35.29484,
+          "y": 11.4562731,
+          "z": 0.006
+        },
+        "flipped": true,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_hp_scale": "True",
+        "enemy_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "song_reed",
+        "pid": "eae4877f",
+        "pos": {
+          "x": 17.9541569,
+          "y": 10.9501228,
+          "z": 0.006
+        },
+        "flipped": true,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_hp_scale": "True",
+        "enemy_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a835206b",
+        "pos": {
+          "x": 40.55979,
+          "y": 142.840668,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Window"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

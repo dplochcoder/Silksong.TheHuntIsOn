@@ -1,0 +1,82 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9a0bab62",
+        "pos": {
+          "x": 5.185607,
+          "y": 13.600872,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "GameObject (3)/Shellwood_large_gates (1)/Gate Parent/Gate/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "23f3ef4d",
+        "pos": {
+          "x": 50.66341,
+          "y": 24.81768,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ef025e89",
+        "pos": {
+          "x": 126.162048,
+          "y": 37.2787476,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Wasp Scene/Hive Scene/Shellwood Hive/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8d6e1569",
+        "pos": {
+          "x": 93.86807,
+          "y": 81.3041153,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "purple_flower_set/Big Flower/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

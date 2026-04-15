@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "efbb5c19",
+        "pos": {
+          "x": 35.5328979,
+          "y": 28.7491913,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_id": "MarrowSpawn18",
+        "trans_collide": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e66b1800",
+        "pos": {
+          "x": 39.9476967,
+          "y": 24.8799458,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Quest Scene/Final Encounter/Battle Scene"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

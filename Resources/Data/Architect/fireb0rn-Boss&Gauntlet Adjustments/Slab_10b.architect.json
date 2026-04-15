@@ -1,0 +1,451 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "76effcdc",
+        "pos": {
+          "x": 31.22987,
+          "y": 13.2075586,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/First Weaver",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Dormant"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "c8b82686",
+        "pos": {
+          "x": 35.211586,
+          "y": 13.106329,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/First Weaver",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Death Stagger F"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ce9eb78b",
+        "pos": {
+          "x": 23.451046,
+          "y": 10.5142269,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Boss Scene/Gates"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "14109e9e",
+        "pos": {
+          "x": 32.9088631,
+          "y": 12.775032,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Boss Scene/First Weaver"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8354b733",
+        "pos": {
+          "x": 45.54471,
+          "y": 13.69813,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Memory_Scene/Group/Glow Respone floor_ring large1"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7efa192e",
+        "pos": {
+          "x": 43.3918,
+          "y": 19.0850639,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Memory_Scene/Group/Glow Respone floor_ring large1"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "198d429c",
+        "pos": {
+          "x": 25.2941132,
+          "y": 10.4917593,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Memory_Scene/Group/Glow Response floor_ring large1"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7f9fe148",
+        "pos": {
+          "x": 24.5801315,
+          "y": 11.7085876,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Memory_Scene/memory_pieces/rune_walls/terrain collider"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "b08c6778",
+        "pos": {
+          "x": 42.99838,
+          "y": 23.982708,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_width": "12",
+        "size_height": "12"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "46d5871d",
+        "pos": {
+          "x": 24.5403957,
+          "y": 13.13496,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Boss Scene/CamLock Regular",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "camera_border",
+        "pid": "340c40e1",
+        "pos": {
+          "x": 23.5103226,
+          "y": 13.3055706,
+          "z": 0.1
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "camera_border_type": "3",
+        "camera_border_mode": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c9dceaf8",
+        "pos": {
+          "x": 23.0543041,
+          "y": 11.6598711,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Boss Scene/CamLock Battle",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "c0690f9b",
+        "pos": {
+          "x": 19.0097218,
+          "y": 10.8275213,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "1",
+        "trans_collide": "0",
+        "trans_edit_mode_active": "True",
+        "trans_id": "firstSinnerExit",
+        "size_height": "2",
+        "start_active": "False",
+        "trans_other_scene": "Slab_10c",
+        "trans_other_id": "door1"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "7a2cb34e",
+        "pos": {
+          "x": 39.65969,
+          "y": 17.6323586,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "2",
+        "trigger_shape": "0",
+        "size_width": "10",
+        "size_height": "10"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "f8ee6751-d7c7-418f-bdc7-5d75ee16a862",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "496cdf08-468b-44b7-8aab-47cf418db0ff",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "76effcdc",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 238.4375,
+        "y": -2.1875
+      },
+      "block_id": "496cdf08-468b-44b7-8aab-47cf418db0ff",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "c8b82686",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -28.125,
+        "y": 62.5
+      },
+      "block_id": "3dae83b6-eb35-4254-8653-e615a33f6ab7",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "14109e9e",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -270.0,
+        "y": 75.0
+      },
+      "block_id": "a99431f2-4b42-4697-ac9f-3bc89cc1eef0",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "3dae83b6-eb35-4254-8653-e615a33f6ab7",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -31.875,
+        "y": -135.625
+      },
+      "block_id": "3c5bdb2f-08c0-4051-b466-6e7f21432e0e",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "06f60e7f-2dfa-4bc9-83a7-f23c11253ee8",
+            "Item2": "disable"
+          },
+          {
+            "Item1": "e91d5769-df5e-4f82-82d1-0001b53eeb5c",
+            "Item2": "disable"
+          }
+        ],
+        "ZoneExit": [
+          {
+            "Item1": "06f60e7f-2dfa-4bc9-83a7-f23c11253ee8",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "e91d5769-df5e-4f82-82d1-0001b53eeb5c",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "b08c6778",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 214.0625,
+        "y": -121.875
+      },
+      "block_id": "06f60e7f-2dfa-4bc9-83a7-f23c11253ee8",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "46d5871d",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": 214.0625,
+        "y": 0.3125
+      },
+      "block_id": "e91d5769-df5e-4f82-82d1-0001b53eeb5c",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "c9dceaf8",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": -313.125,
+        "y": -314.6875
+      },
+      "block_id": "26aac89d-1fce-4f90-a448-b4af4e1c8ed2",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "0d387a75-59d0-474f-bb7b-a27c5f33dc5f",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7a2cb34e",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": -60.9375,
+        "y": -318.125
+      },
+      "block_id": "0d387a75-59d0-474f-bb7b-a27c5f33dc5f",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "c0690f9b",
+        "object_type": "transition_gate"
+      }
+    }
+  ]
+}

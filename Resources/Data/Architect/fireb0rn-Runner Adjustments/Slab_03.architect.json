@@ -1,0 +1,136 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "5f8704a3",
+        "pos": {
+          "x": 10.4745226,
+          "y": 245.814087,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "door_slabCaged",
+        "fsm_hook_name": "Teleport Arrive",
+        "fsm_hook_state": "Fade In",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "56dfc619",
+        "pos": {
+          "x": 14.602458,
+          "y": 245.829361,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "door_slabCaged",
+        "fsm_hook_name": "Teleport Arrive",
+        "fsm_hook_state": "Break 1",
+        "start_active": "False"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 215.348,
+        "y": -54.67021
+      },
+      "block_id": "a4b26e00-d33b-4843-9e75-34b8aa551424",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "56dfc619",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -982.777649,
+        "y": -27.2611389
+      },
+      "block_id": "5b7540b4-47a3-4b0f-b71b-108b592e3201",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "26e9baf3-1366-49f8-b4b0-c61ce3304e8f",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -70.30414,
+        "y": 2.300911
+      },
+      "block_id": "30c9d532-eb3b-4161-a837-9947a77bfb57",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "a4b26e00-d33b-4843-9e75-34b8aa551424",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "5f8704a3",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -765.4885,
+        "y": -45.0959778
+      },
+      "block_id": "26e9baf3-1366-49f8-b4b0-c61ce3304e8f",
+      "events": {
+        "Out": [
+          {
+            "Item1": "af1c58d0-aa99-4a09-8294-0eb778fa5eba",
+            "Item2": "Trigger"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "3"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -558.815735,
+        "y": -37.411438
+      },
+      "block_id": "af1c58d0-aa99-4a09-8294-0eb778fa5eba",
+      "events": {},
+      "vars": {},
+      "type": "Ordered Events",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":-250.930237,\"y\":-14.8837128},\"block_id\":\"d4b45637-9deb-4e20-b2b1-1c619c8b783f\",\"events\":{\"OnTrigger\":[{\"Item1\":\"30c9d532-eb3b-4161-a837-9947a77bfb57\",\"Item2\":\"enable\"},{\"Item1\":\"a4b26e00-d33b-4843-9e75-34b8aa551424\",\"Item2\":\"enable\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":-250.930237,\"y\":-14.8837128},\"block_id\":\"b4d430f5-e74b-417d-a063-6ea71e2e153d\",\"events\":{\"OnTrigger\":[{\"Item1\":\"30c9d532-eb3b-4161-a837-9947a77bfb57\",\"Item2\":\"fsm_remove_transition\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}}]"
+      }
+    }
+  ]
+}

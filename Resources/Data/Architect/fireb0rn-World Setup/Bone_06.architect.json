@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7b41d0ba",
+        "pos": {
+          "x": 7.95256472,
+          "y": 13.0127106,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bone_face_shortcut"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "94357f56",
+        "pos": {
+          "x": 100.085991,
+          "y": 25.4219723,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Flea Rescue Branches"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

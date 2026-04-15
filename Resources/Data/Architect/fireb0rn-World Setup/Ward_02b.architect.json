@@ -1,0 +1,101 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b3d4201c",
+        "pos": {
+          "x": 100.619804,
+          "y": 6.01670074,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "ward_junk_pile_break 1"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "21a45ac3",
+        "pos": {
+          "x": 107.329941,
+          "y": 6.084187,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "ward_junk_pile_break 2"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5354cf3d",
+        "pos": {
+          "x": 113.178787,
+          "y": 6.151674,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "ward_junk_pile_break 3"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ecd36fcb",
+        "pos": {
+          "x": 117.486694,
+          "y": 6.309143,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "ward_junk_pile_break 4"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ca2d3ee3",
+        "pos": {
+          "x": 50.46888,
+          "y": 4.217055,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Husk Item Ambush/Ward Bed (1)/corpse/Collectable Item Pickup/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

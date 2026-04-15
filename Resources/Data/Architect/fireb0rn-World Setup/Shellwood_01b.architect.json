@@ -1,0 +1,122 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "de66c992",
+        "pos": {
+          "x": 43.65797,
+          "y": 61.4798546,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "wall_patch"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "01558504",
+        "pos": {
+          "x": 28.4934444,
+          "y": 63.9163666,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bloom Puncher (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6949d9e9",
+        "pos": {
+          "x": 24.0821724,
+          "y": 37.6471329,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "bell_bench/bell_toll_machine/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "52814948",
+        "pos": {
+          "x": 33.7036667,
+          "y": 74.88069,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "358ea484",
+        "pos": {
+          "x": 25.1696129,
+          "y": 37.7824478,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "bell_bench/frame/"
+      }
+    },
+    {
+      "placement": {
+        "id": "bell_bench",
+        "pid": "a5473d42",
+        "pos": {
+          "x": 23.1787548,
+          "y": 37.2763,
+          "z": 0.009
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "bench_spawn": "True",
+        "bench_offset_x": "0",
+        "bench_offset_y": "0",
+        "bench_offset_z": "0"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

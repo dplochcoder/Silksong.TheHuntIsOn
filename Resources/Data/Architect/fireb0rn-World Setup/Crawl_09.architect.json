@@ -1,0 +1,120 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6ce5f868",
+        "pos": {
+          "x": 45.17417,
+          "y": 41.21362,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "PUSTULE_States"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "35c3af83",
+        "pos": {
+          "x": 32.20547,
+          "y": 44.4867249,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "PUSTULE_States"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5482c6be",
+        "pos": {
+          "x": 32.3516922,
+          "y": 44.4867249,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "PUSTULE_States"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7fbfc388",
+        "pos": {
+          "x": 46.29894,
+          "y": 41.534996,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "77c81384",
+        "pos": {
+          "x": 47.62618,
+          "y": 41.2313042,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "34fa5372",
+        "pos": {
+          "x": 129.9338,
+          "y": 4.69035673,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

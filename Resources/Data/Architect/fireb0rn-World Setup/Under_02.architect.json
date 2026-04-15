@@ -1,0 +1,215 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "788aad93",
+        "pos": {
+          "x": 4.57548428,
+          "y": 61.14978,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "door states/Understore Big Plate Gate/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "efe50b82",
+        "pos": {
+          "x": 31.1011028,
+          "y": 25.25322,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5befaf7f",
+        "pos": {
+          "x": 13.810276,
+          "y": 94.98573,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "23f968ca",
+        "pos": {
+          "x": 8.206296,
+          "y": 163.7785,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side (3)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "12c7c904",
+        "pos": {
+          "x": 22.5731182,
+          "y": 163.077957,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Dock Smash Plats/Dock Smash Plats Before"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "3ede051f",
+        "pos": {
+          "x": 25.0899181,
+          "y": 164.309341,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "Dock Smash Plats/Dock Smash Plats After",
+        "component_hook_name": "DeactivateIfPlayerdataFalse"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "64e66a7c",
+        "pos": {
+          "x": 20.454771,
+          "y": 163.613724,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "Dock Smash Plats/Dock Smash Plats After/",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "309078f8",
+        "pos": {
+          "x": 20.5431023,
+          "y": 11.7935753,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Barrel Plat Lift DROPPER/Chain/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "62d60dc9-b33f-4b2c-ba85-deda828c535b",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "64e66a7c",
+        "object_type": "object_enabler"
+      }
+    },
+    {
+      "pos": {
+        "x": -361.562531,
+        "y": 35.8277054
+      },
+      "block_id": "2c58cbf5-63e3-4f8d-bfe6-747de3e79431",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "f1ef0065-90fc-488d-9dc7-f2fbf8c9896a",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -167.305756,
+        "y": 28.3952751
+      },
+      "block_id": "f1ef0065-90fc-488d-9dc7-f2fbf8c9896a",
+      "events": {
+        "Out": [
+          {
+            "Item1": "62d60dc9-b33f-4b2c-ba85-deda828c535b",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    }
+  ]
+}

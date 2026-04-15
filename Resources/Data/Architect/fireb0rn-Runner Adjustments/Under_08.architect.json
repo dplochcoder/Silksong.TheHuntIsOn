@@ -1,0 +1,576 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "7c9f4c39-2795bc77",
+        "pos": {
+          "x": 79.34291,
+          "y": 18.1248932,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "0",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "2d6d892a-2795bc77",
+        "pos": {
+          "x": 76.8459,
+          "y": 22.5902367,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "2",
+        "component_hook_target": "Understore Toll Bench",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "2056b447-2795bc77",
+        "pos": {
+          "x": 76.21921,
+          "y": 22.6265659,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "1",
+        "component_hook_target": "Understore Toll Bench",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "3d71b07f-2795bc77",
+        "pos": {
+          "x": 79.44413,
+          "y": 19.3734,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Understore Toll Bench",
+        "fsm_hook_state": "Flip to Bench",
+        "fsm_hook_name": "Behaviour (special)"
+      }
+    },
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "c7d4fe7d",
+        "pos": {
+          "x": 83.3021851,
+          "y": 18.1362514,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "0",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "66bafc7a",
+        "pos": {
+          "x": 87.34014,
+          "y": 18.2149868,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "0",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "56c07d96",
+        "pos": {
+          "x": 80.2684555,
+          "y": 22.6491737,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "1",
+        "component_hook_target": "Understore Toll Bench (1)",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "ab160911",
+        "pos": {
+          "x": 80.89515,
+          "y": 22.6128445,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "2",
+        "component_hook_target": "Understore Toll Bench (1)",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "3096102e",
+        "pos": {
+          "x": 83.50462,
+          "y": 19.38476,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Understore Toll Bench (1)",
+        "fsm_hook_state": "Flip to Bench",
+        "fsm_hook_name": "Behaviour (special)"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "f09af538",
+        "pos": {
+          "x": 86.82255,
+          "y": 22.82914,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "1",
+        "component_hook_target": "Understore Toll Bench (2)",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "f5e17136",
+        "pos": {
+          "x": 87.44924,
+          "y": 22.79281,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "2",
+        "component_hook_target": "Understore Toll Bench (2)",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "5f5048e2",
+        "pos": {
+          "x": 87.3176346,
+          "y": 19.4297523,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Understore Toll Bench (2)",
+        "fsm_hook_state": "Flip to Bench",
+        "fsm_hook_name": "Behaviour (special)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -6.06060553,
+        "y": 143.560608
+      },
+      "block_id": "97b0d917-55ac-4124-9de7-e5284ad3faff",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "2d6d892a-2795bc77",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": -6.81818151,
+        "y": 10.2272892
+      },
+      "block_id": "2b346772-e0ac-4757-ae11-cd7883a99206",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "2056b447-2795bc77",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": -8.333333,
+        "y": -161.742416
+      },
+      "block_id": "9d13cf42-b575-4965-bd1d-c5b35cb70bf7",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "3d71b07f-2795bc77",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -289.0151,
+        "y": -73.10606
+      },
+      "block_id": "1613d1c5-bf28-47af-bdc7-a51cf5747086",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "2b346772-e0ac-4757-ae11-cd7883a99206",
+            "Item2": "component_hook_apply"
+          },
+          {
+            "Item1": "9d13cf42-b575-4965-bd1d-c5b35cb70bf7",
+            "Item2": "fsm_set_state"
+          },
+          {
+            "Item1": "d831823e-a3d2-460b-afc5-92f316bb5115",
+            "Item2": "In"
+          },
+          {
+            "Item1": "1613d1c5-bf28-47af-bdc7-a51cf5747086",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7c9f4c39-2795bc77",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": -232.140167,
+        "y": 168.8447
+      },
+      "block_id": "0d55facf-fdbe-453b-ad01-f2e40e01e954",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "97b0d917-55ac-4124-9de7-e5284ad3faff",
+            "Item2": "component_hook_apply"
+          },
+          {
+            "Item1": "2180c053-0294-449e-8124-4935c3435187",
+            "Item2": "component_hook_apply"
+          },
+          {
+            "Item1": "ac5aeb6e-c8aa-4b85-849b-821cb7f4a6d1",
+            "Item2": "component_hook_apply"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 453.5985,
+        "y": 169.507568
+      },
+      "block_id": "2180c053-0294-449e-8124-4935c3435187",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "ab160911",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": 461.9319,
+        "y": 32.7651558
+      },
+      "block_id": "20aabd17-6eb3-4814-b200-b18b97e39a20",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "56c07d96",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": 454.734863,
+        "y": -160.416641
+      },
+      "block_id": "b993551f-a80c-4844-8a9b-59b5faabb733",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "3096102e",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 212.689453,
+        "y": -111.174232
+      },
+      "block_id": "54846e97-889a-44fe-995c-7b2b19c6624b",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "b993551f-a80c-4844-8a9b-59b5faabb733",
+            "Item2": "fsm_set_state"
+          },
+          {
+            "Item1": "20aabd17-6eb3-4814-b200-b18b97e39a20",
+            "Item2": "component_hook_apply"
+          },
+          {
+            "Item1": "54846e97-889a-44fe-995c-7b2b19c6624b",
+            "Item2": "disable"
+          },
+          {
+            "Item1": "0cb52de7-5f29-4d83-a6f1-3de148689fc5",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "c7d4fe7d",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": 896.7803,
+        "y": 26.70454
+      },
+      "block_id": "baaf69fa-8e6e-4066-afc9-5e4412abe1a9",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "f09af538",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": 894.8863,
+        "y": 163.446991
+      },
+      "block_id": "ac5aeb6e-c8aa-4b85-849b-821cb7f4a6d1",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "f5e17136",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": 896.022644,
+        "y": -135.416656
+      },
+      "block_id": "514ba301-6e92-4c61-933a-f56b0c885ba0",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "5f5048e2",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 671.780334,
+        "y": -47.91668
+      },
+      "block_id": "d1100a10-8256-4090-9491-e98328785cc1",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "baaf69fa-8e6e-4066-afc9-5e4412abe1a9",
+            "Item2": "component_hook_apply"
+          },
+          {
+            "Item1": "514ba301-6e92-4c61-933a-f56b0c885ba0",
+            "Item2": "fsm_set_state"
+          },
+          {
+            "Item1": "d1100a10-8256-4090-9491-e98328785cc1",
+            "Item2": "disable"
+          },
+          {
+            "Item1": "5a5e6d44-3d9c-4ef3-ab4d-d96144eeca2c",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "66bafc7a",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": -271.6477,
+        "y": -215.757584
+      },
+      "block_id": "d831823e-a3d2-460b-afc5-92f316bb5115",
+      "events": {
+        "Out": [
+          {
+            "Item1": "1613d1c5-bf28-47af-bdc7-a51cf5747086",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "5"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 213.95842,
+        "y": -236.382538
+      },
+      "block_id": "0cb52de7-5f29-4d83-a6f1-3de148689fc5",
+      "events": {
+        "Out": [
+          {
+            "Item1": "54846e97-889a-44fe-995c-7b2b19c6624b",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "5"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 669.2804,
+        "y": -222.348465
+      },
+      "block_id": "5a5e6d44-3d9c-4ef3-ab4d-d96144eeca2c",
+      "events": {
+        "Out": [
+          {
+            "Item1": "d1100a10-8256-4090-9491-e98328785cc1",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "5"
+      },
+      "ext": {}
+    }
+  ]
+}

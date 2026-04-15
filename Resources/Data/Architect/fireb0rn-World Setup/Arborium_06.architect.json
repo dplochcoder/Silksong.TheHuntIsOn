@@ -1,0 +1,120 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "635c31d6",
+        "pos": {
+          "x": 75.98306,
+          "y": 9.895013,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Coral Crust Wall Tall (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6cf07103",
+        "pos": {
+          "x": 60.2109337,
+          "y": 9.69764,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Coral Crust Wall Tall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5904202d",
+        "pos": {
+          "x": 97.10894,
+          "y": 15.9945574,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Coral Goomba Ambush/Crust Wall/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "23c50ee8",
+        "pos": {
+          "x": 120.109711,
+          "y": 15.2634392,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Coral Crust Wall Mid (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8636aed8",
+        "pos": {
+          "x": 122.888908,
+          "y": 10.3340988,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Coral Crust Wall Small (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f7081666",
+        "pos": {
+          "x": 126.431953,
+          "y": 10.3903351,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Coral Crust Wall Tall (3)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

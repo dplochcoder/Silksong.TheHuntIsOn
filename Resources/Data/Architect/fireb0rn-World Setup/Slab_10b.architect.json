@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b1bf3dc6",
+        "pos": {
+          "x": 28.2889214,
+          "y": 11.9648752,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Shrine First Weaver"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

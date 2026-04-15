@@ -1,0 +1,63 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "cd90882f",
+        "pos": {
+          "x": 30.4417953,
+          "y": 6.210568,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "bellshrine_gate_curved (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "187c1c89",
+        "pos": {
+          "x": 22.60274,
+          "y": 7.59979534,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Whole Scene/Bellshrine Sequence/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "7f4f7414",
+        "pos": {
+          "x": 19.6631241,
+          "y": 7.79371262,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "Whole Scene/Bell Bench/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

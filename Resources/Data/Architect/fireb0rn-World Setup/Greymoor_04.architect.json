@@ -1,0 +1,101 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a79f54d3",
+        "pos": {
+          "x": 15.6461143,
+          "y": 41.4948769,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "propeller (3)/lever/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "cd50f491",
+        "pos": {
+          "x": 14.7800341,
+          "y": 41.5284767,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "propeller (2)/lever/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "373e2ab7",
+        "pos": {
+          "x": 13.9476967,
+          "y": 41.5059776,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "propeller (1)/lever/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "cf49506c",
+        "pos": {
+          "x": 16.5009441,
+          "y": 41.3822556,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "propeller (4)/lever/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6a24f05c",
+        "pos": {
+          "x": 19.095293,
+          "y": 143.054749,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Silk Grub Large Cocoon"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

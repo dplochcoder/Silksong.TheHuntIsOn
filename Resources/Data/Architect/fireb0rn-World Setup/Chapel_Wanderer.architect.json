@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ffd3fe5a",
+        "pos": {
+          "x": 19.885891,
+          "y": 103.022774,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "One Way Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a2613884",
+        "pos": {
+          "x": 47.7743759,
+          "y": 61.4366531,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Group (1)/Crest Get Shrine"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

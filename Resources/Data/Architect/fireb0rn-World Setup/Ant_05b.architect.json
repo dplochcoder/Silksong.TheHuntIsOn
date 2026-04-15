@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d1617e9b",
+        "pos": {
+          "x": 105.923157,
+          "y": 8.007557,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States Thread Only Variant/Normal World/Group/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

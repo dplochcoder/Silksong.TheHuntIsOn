@@ -1,0 +1,63 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "19c6fb1a",
+        "pos": {
+          "x": 44.7195168,
+          "y": 28.3657742,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Battle Scene/vintage_table/regular/Collectable Item Dummy/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "21c6b35c",
+        "pos": {
+          "x": 46.3834267,
+          "y": 27.2755566,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Battle Scene/vintage_table"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "95d3f2f9",
+        "pos": {
+          "x": 44.80273,
+          "y": 26.90394,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Battle Scene/BattleStart Inspect Region/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

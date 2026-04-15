@@ -1,0 +1,191 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "fb34b610",
+        "pos": {
+          "x": 40.70188,
+          "y": 10.5148792,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "plank_wall_cluster"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "1e3f5d88",
+        "pos": {
+          "x": 70.98851,
+          "y": 13.3269634,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "2",
+        "trans_collide": "1",
+        "trans_id": "GreymoorStag"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "9e41f598",
+        "pos": {
+          "x": 75.69818,
+          "y": 12.1881952,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Bone Beast NPC",
+        "fsm_hook_name": "Interaction",
+        "fsm_hook_state": "Appear Delay",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "38b60559",
+        "pos": {
+          "x": 79.39251,
+          "y": 12.0082331,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Bone Beast NPC",
+        "fsm_hook_name": "Interaction",
+        "fsm_hook_state": "Start Shake",
+        "start_active": "False"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "1a384ed9-3b3d-463e-a4b9-2a37bbaad7fc",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "9a76902b-7f56-4ab6-9272-2c55bba72ef6",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "9e41f598",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 275.0,
+        "y": -10.625
+      },
+      "block_id": "9a76902b-7f56-4ab6-9272-2c55bba72ef6",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "38b60559",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -411.5625,
+        "y": 9.375
+      },
+      "block_id": "a5b2abe8-ea2e-401f-9a54-66a4914c5280",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "80382642-bd4b-4397-9b27-3f55c5fe274b",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -209.375,
+        "y": 14.0625
+      },
+      "block_id": "80382642-bd4b-4397-9b27-3f55c5fe274b",
+      "events": {
+        "Out": [
+          {
+            "Item1": "1a384ed9-3b3d-463e-a4b9-2a37bbaad7fc",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "9a76902b-7f56-4ab6-9272-2c55bba72ef6",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "b7ee64dc-2a3e-492f-9abb-992c0ac01d17",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -146.5625,
+        "y": 144.0625
+      },
+      "block_id": "b7ee64dc-2a3e-492f-9abb-992c0ac01d17",
+      "events": {
+        "Out": [
+          {
+            "Item1": "1a384ed9-3b3d-463e-a4b9-2a37bbaad7fc",
+            "Item2": "fsm_remove_transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    }
+  ]
+}

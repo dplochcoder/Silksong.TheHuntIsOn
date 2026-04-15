@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "60d31d12",
+        "pos": {
+          "x": 15.8253431,
+          "y": 12.5435181,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Mapper Sit NPC"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

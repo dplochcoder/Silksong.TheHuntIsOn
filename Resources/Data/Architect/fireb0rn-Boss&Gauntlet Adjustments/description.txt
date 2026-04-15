@@ -1,0 +1,5 @@
+This module performs the following:
+
+* Makes bosses and gauntlet enemies invincible.
+* Removes the gates from these arenas, allowing you to enter and exit.
+* Makes bosses start in their final phase.

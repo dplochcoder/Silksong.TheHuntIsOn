@@ -1,0 +1,191 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "edff7d3e",
+        "pos": {
+          "x": 111.89254,
+          "y": 8.716178,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "50311bca",
+        "pos": {
+          "x": 116.2078,
+          "y": 8.601958,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "bellbeast_child",
+        "pid": "24b779a3",
+        "pos": {
+          "x": 113.906944,
+          "y": 8.236782,
+          "z": 0.005
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8dbb6497",
+        "pos": {
+          "x": 113.650444,
+          "y": 12.6984034,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Memory Scene Control/Memory Scene/Green Prince Stand/"
+      }
+    },
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "6c61c1e9",
+        "pos": {
+          "x": 114.056587,
+          "y": 8.019027,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "7",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5",
+        "size_height": "0.7"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "e3bdc1ed",
+        "pos": {
+          "x": 113.823784,
+          "y": 12.4445648,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "0",
+        "trans_collide": "2",
+        "trans_edit_mode_active": "True",
+        "trans_id": "greenPrinceEntry",
+        "trans_other_scene": "Clover_01b",
+        "trans_other_id": "greenPrinceExit"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_anchor",
+        "pid": "8781d977",
+        "pos": {
+          "x": 114.06633,
+          "y": 8.051836,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "anchor_dist": "10",
+        "anchor_start_dist": "0",
+        "anchor_speed": "0",
+        "anchor_rot": "0",
+        "anchor_rot_speed": "0",
+        "anchor_smoothing": "0.5",
+        "anchor_pause_time": "0",
+        "anchor_moving": "True",
+        "anchor_target": "6c61c1e9",
+        "anchor_parent": "24b779a3"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -312.1875,
+        "y": 15.9375
+      },
+      "block_id": "483a01b5-cad1-4791-95fa-22ca51e39b97",
+      "events": {
+        "OnStart": []
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 249.6875,
+        "y": -11.5625
+      },
+      "block_id": "4895105b-c855-47fe-b0ff-0b41ac34f268",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "e3bdc1ed",
+        "object_type": "transition_gate"
+      }
+    },
+    {
+      "pos": {
+        "x": -0.625,
+        "y": -12.5
+      },
+      "block_id": "a18bf950-cb5e-40ad-bd3f-343ff5f091c9",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "4895105b-c855-47fe-b0ff-0b41ac34f268",
+            "Item2": "transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "6c61c1e9",
+        "object_type": "interaction"
+      }
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "5dfdca30",
+        "pos": {
+          "x": 23.2881756,
+          "y": 37.36507,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "0",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "64705051",
+        "pos": {
+          "x": 19.9282665,
+          "y": 42.0579567,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "1",
+        "component_hook_target": "bell_bench/bell_toll_machine",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "76405ab6",
+        "pos": {
+          "x": 23.209425,
+          "y": 42.01038,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "2",
+        "component_hook_target": "bell_bench/bell_toll_machine",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "6418d10f",
+        "pos": {
+          "x": 28.6871014,
+          "y": 39.4796638,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "bell_bench/bell_toll_machine",
+        "fsm_hook_state": "Set Extra PD Bool",
+        "fsm_hook_name": "Unlock Behaviour"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -184.469681,
+        "y": 143.560608
+      },
+      "block_id": "07104fea-901a-4210-919b-aeed579a8db4",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "64705051",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": 13.636363,
+        "y": 7.95453835
+      },
+      "block_id": "038c82ff-fbef-4a7d-ad75-25c1787bda57",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "76405ab6",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": -257.575745,
+        "y": -132.954529
+      },
+      "block_id": "6cbe9484-a83c-4eb5-b663-4d56390b63df",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "038c82ff-fbef-4a7d-ad75-25c1787bda57",
+            "Item2": "component_hook_apply"
+          },
+          {
+            "Item1": "24450cae-f5fe-416c-aaeb-36f84adabae4",
+            "Item2": "fsm_set_state"
+          },
+          {
+            "Item1": "6cbe9484-a83c-4eb5-b663-4d56390b63df",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "5dfdca30",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": 7.196969,
+        "y": -173.484833
+      },
+      "block_id": "24450cae-f5fe-416c-aaeb-36f84adabae4",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "6418d10f",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -407.6799,
+        "y": 94.86742
+      },
+      "block_id": "be1035a7-519e-4cd6-876c-54f99c839c96",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "07104fea-901a-4210-919b-aeed579a8db4",
+            "Item2": "component_hook_apply"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

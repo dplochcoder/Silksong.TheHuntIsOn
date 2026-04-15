@@ -1,0 +1,181 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "f6a3d59c",
+        "pos": {
+          "x": 19.2909775,
+          "y": 65.8510361,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "0",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "86df5673",
+        "pos": {
+          "x": 15.7286224,
+          "y": 69.873,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "1",
+        "component_hook_target": "bell_bench (1)/bell_toll_machine",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "880d0f87",
+        "pos": {
+          "x": 19.0097885,
+          "y": 69.82542,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "2",
+        "component_hook_target": "bell_bench (1)/bell_toll_machine",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "7079cfd5",
+        "pos": {
+          "x": 24.57743,
+          "y": 67.30595,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "bell_bench (1)/bell_toll_machine",
+        "fsm_hook_state": "Set Extra PD Bool",
+        "fsm_hook_name": "Unlock Behaviour"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -225.657867,
+        "y": -42.7631531
+      },
+      "block_id": "0506931a-c8f2-42e9-8894-fb9b24ccc7a3",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "0506931a-c8f2-42e9-8894-fb9b24ccc7a3",
+            "Item2": "disable"
+          },
+          {
+            "Item1": "c17214a0-080f-47df-ad08-71fa8887cc3f",
+            "Item2": "component_hook_apply"
+          },
+          {
+            "Item1": "dd48d687-f9da-45ef-bc98-c5da2732b668",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "f6a3d59c",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": 50.3289375,
+        "y": -166.776291
+      },
+      "block_id": "dd48d687-f9da-45ef-bc98-c5da2732b668",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7079cfd5",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 47.368412,
+        "y": 22.6973763
+      },
+      "block_id": "c17214a0-080f-47df-ad08-71fa8887cc3f",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "880d0f87",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": 51.6447258,
+        "y": 193.092087
+      },
+      "block_id": "4a0b02fe-d564-4cad-adaf-37def13eec97",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "86df5673",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": -222.96051,
+        "y": 151.578964
+      },
+      "block_id": "81d8a3de-d5e3-4842-9501-7a3cf6640987",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "4a0b02fe-d564-4cad-adaf-37def13eec97",
+            "Item2": "component_hook_apply"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "0bc440d4",
+        "pos": {
+          "x": 2.96978855,
+          "y": 12.099287,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "1",
+        "trans_collide": "2",
+        "trans_edit_mode_active": "True",
+        "trans_id": "architectDoor",
+        "size_width": "0.2",
+        "size_height": "2"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "36893c73",
+        "pos": {
+          "x": 26.3003349,
+          "y": 15.6629429,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7e923731",
+        "pos": {
+          "x": 30.3528881,
+          "y": 14.5053825,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Crest Get Shrine"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

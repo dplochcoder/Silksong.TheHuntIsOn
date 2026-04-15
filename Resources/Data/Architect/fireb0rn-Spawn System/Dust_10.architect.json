@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "f680673e",
+        "pos": {
+          "x": 24.89427,
+          "y": 74.79311,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "0",
+        "trans_id": "Dust10-1"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "ff26adf5",
+        "pos": {
+          "x": 21.5279922,
+          "y": 21.951828,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "0",
+        "trans_id": "Dust10-2"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

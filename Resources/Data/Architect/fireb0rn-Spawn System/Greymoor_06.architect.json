@@ -1,0 +1,26 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "df199014",
+        "pos": {
+          "x": 7.13942051,
+          "y": 199.449738,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_collide": "2",
+        "trans_edit_mode_active": "True"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2fe73ac7",
+        "pos": {
+          "x": 55.1168671,
+          "y": 33.6470261,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "breakable blocker struts"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1512156a",
+        "pos": {
+          "x": 54.55426,
+          "y": 69.38412,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Group/Map Machine (1)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

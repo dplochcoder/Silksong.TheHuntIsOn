@@ -1,0 +1,63 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f675a5bb",
+        "pos": {
+          "x": 7.36767435,
+          "y": 29.8175583,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "dust_chef_door_inner/gate/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "790098e2",
+        "pos": {
+          "x": 7.7725935,
+          "y": 31.04357,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "greymoor_lever_simple"
+      }
+    },
+	{
+      "placement": {
+        "id": "object_remover",
+        "pid": "e3c5e689",
+        "pos": {
+          "x": 36.0199776,
+          "y": 42.42717,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "kitchen_string"
+      }
+	}
+  ],
+  "tilemap": [],
+  "script": []
+}

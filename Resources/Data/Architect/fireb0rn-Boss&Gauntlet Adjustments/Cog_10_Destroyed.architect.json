@@ -1,0 +1,251 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "8b91756e",
+        "pos": {
+          "x": 13.21898,
+          "y": 73.91064,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Battle Scene/Wave 1/Understore Small"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "95caf741",
+        "pos": {
+          "x": 16.6945457,
+          "y": 73.9781647,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Battle Scene/Wave 1/Understore Poker"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1bdc3b9f",
+        "pos": {
+          "x": 11.1943817,
+          "y": 73.02699,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Battle Scene/Gates"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "64eb6191",
+        "pos": {
+          "x": 11.1831341,
+          "y": 71.34354,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "start_active": "False",
+        "remover_path": "Battle Scene/CamLocks"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "cbe6660c",
+        "pos": {
+          "x": 14.1637983,
+          "y": 84.30362,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_width": "10",
+        "size_height": "4"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "47c8f4f9",
+        "pos": {
+          "x": 12.2966614,
+          "y": 78.91168,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_width": "0.2",
+        "size_height": "0.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "ed518c71",
+        "pos": {
+          "x": 15.6597509,
+          "y": 77.8206558,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_width": "2",
+        "size_height": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "e59cb4db",
+        "pos": {
+          "x": 14.2312832,
+          "y": 90.147995,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_width": "2",
+        "size_height": "0.1"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 61.111084,
+        "y": 12.0370293
+      },
+      "block_id": "63f0059e-9c99-40fe-8be5-3bac067d3446",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "95caf741",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 49.537014,
+        "y": -203.703629
+      },
+      "block_id": "a33d29a3-6143-404d-8fe5-93359a89bc79",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "8b91756e",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -207.476761,
+        "y": 39.4328728
+      },
+      "block_id": "f174853f-24ac-4dc2-9eae-ec58b06a8704",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "63f0059e-9c99-40fe-8be5-3bac067d3446",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "a33d29a3-6143-404d-8fe5-93359a89bc79",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 290.277649,
+        "y": -33.33332
+      },
+      "block_id": "107e9977-0d0f-4470-a677-9dc2c32bdc70",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "9c2171b5-a4e9-4500-b91c-ca008d0ca5e5",
+            "Item2": "disable"
+          }
+        ],
+        "ZoneExit": [
+          {
+            "Item1": "9c2171b5-a4e9-4500-b91c-ca008d0ca5e5",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "cbe6660c",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 549.5368,
+        "y": -25.9259186
+      },
+      "block_id": "9c2171b5-a4e9-4500-b91c-ca008d0ca5e5",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "64eb6191",
+        "object_type": "object_remover"
+      }
+    }
+  ]
+}

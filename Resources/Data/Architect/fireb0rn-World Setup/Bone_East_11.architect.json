@@ -1,0 +1,405 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f6f259db",
+        "pos": {
+          "x": 12.0770779,
+          "y": 117.250336,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bone East 11 Cross Over Group/Gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c7b7e6fa",
+        "pos": {
+          "x": 13.3555832,
+          "y": 117.008369,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bone East 11 Cross Over Group/extra_masks_left/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "dc164af4",
+        "pos": {
+          "x": 14.8938255,
+          "y": 117.025642,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bone East 11 Cross Over Group/extra_masks_right"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d7b2a51e",
+        "pos": {
+          "x": 16.5876236,
+          "y": 117.18119,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bone East 11 Cross Over Group/ant_lever_persistent/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "75b8176b",
+        "pos": {
+          "x": 16.069231,
+          "y": 115.781219,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bone East 11 Cross Over Group/ant_lever_persistent (1)/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7675ee80",
+        "pos": {
+          "x": 18.5962849,
+          "y": 4.869425,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song Trapdoor"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "cbfe1f78",
+        "pos": {
+          "x": 13.0877419,
+          "y": 3.62092161,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side"
+      }
+    },
+    {
+      "placement": {
+        "id": "updraft_region",
+        "pid": "d9c8fcd9",
+        "pos": {
+          "x": 19.8683128,
+          "y": 0.2015953,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "updraft_width": "1.5",
+        "updraft_height": "12"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "320836cd",
+        "pos": {
+          "x": 14.5887537,
+          "y": 45.3495941,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Multihit Updraft/explode_wall/"
+      }
+    },
+    {
+      "placement": {
+        "id": "updraft_region",
+        "pid": "3cc9be13",
+        "pos": {
+          "x": 10.4383192,
+          "y": 20.0476742,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "updraft_width": "1.5",
+        "updraft_height": "35"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8a5bf361",
+        "pos": {
+          "x": 20.34177,
+          "y": 81.38592,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2be7e22c",
+        "pos": {
+          "x": 14.1892347,
+          "y": 81.58838,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Multihit Updraft"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5c972b66",
+        "pos": {
+          "x": 29.651659,
+          "y": 68.11713,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "DropBomb Rock"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "151be77a",
+        "pos": {
+          "x": 27.6832962,
+          "y": 37.6969833,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Wind Weak"
+      }
+    },
+    {
+      "placement": {
+        "id": "updraft_region",
+        "pid": "f71f1a37",
+        "pos": {
+          "x": 30.36027,
+          "y": 36.60814,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "updraft_width": "1.5",
+        "updraft_height": "22"
+      }
+    },
+    {
+      "placement": {
+        "id": "updraft_region",
+        "pid": "e4c4cde9",
+        "pos": {
+          "x": 15.0259418,
+          "y": 102.711884,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "updraft_width": "1.5",
+        "updraft_height": "22"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "43f3254b",
+        "pos": {
+          "x": 22.96282,
+          "y": 199.447739,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Wind Rock/explode rock"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "aaafb3ae",
+        "pos": {
+          "x": 22.9628258,
+          "y": 200.291412,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Wind Rock/Glow Idle"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2430b2e0",
+        "pos": {
+          "x": 24.1438446,
+          "y": 199.920227,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Wind Rock/Pt Idle"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "11b54e07",
+        "pos": {
+          "x": 23.8514023,
+          "y": 201.326218,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Wind Rock/Wind Weak"
+      }
+    },
+    {
+      "placement": {
+        "id": "updraft_region",
+        "pid": "cb79393e",
+        "pos": {
+          "x": 19.1610737,
+          "y": 198.93692,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "updraft_width": "1.5",
+        "updraft_height": "50"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

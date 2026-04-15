@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7df53574",
+        "pos": {
+          "x": 18.5651913,
+          "y": 8.498105,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Lace Encounter Control"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

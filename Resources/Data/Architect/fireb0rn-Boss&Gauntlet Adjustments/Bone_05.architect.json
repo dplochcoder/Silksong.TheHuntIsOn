@@ -1,0 +1,516 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "818349ff",
+        "pos": {
+          "x": 76.0607452,
+          "y": 7.71077061,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Boss Scene/Bone Beast",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "8ad43783",
+        "pos": {
+          "x": 85.10906,
+          "y": 8.415482,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Bone Beast",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Submerged Init",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "46c3ab20",
+        "pos": {
+          "x": 88.70836,
+          "y": 8.347994,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Bone Beast",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Rage?",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "aa6fe035",
+        "pos": {
+          "x": 67.30873,
+          "y": 13.620203,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Boss Scene/Bone Beast",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "9bda0566",
+        "pos": {
+          "x": 66.04898,
+          "y": 12.6978865,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Boss Scene/Bone Beast",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "2fcaab9e",
+        "pos": {
+          "x": 66.15021,
+          "y": 12.529171,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Boss Scene/Bone Beast",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "c6ac2a67",
+        "pos": {
+          "x": 93.956604,
+          "y": 14.9586859,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Boss Scene/Bone Beast",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "489c2251",
+        "pos": {
+          "x": 87.27982,
+          "y": 8.243765,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Boss Scene/Bone Beast",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "4cb973fe",
+        "pos": {
+          "x": 58.77717,
+          "y": 8.449812,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene/Threaded Bell Gate",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ae270d2a",
+        "pos": {
+          "x": 59.9075432,
+          "y": 9.694727,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene/Threaded Bell Gate (1)",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "b08e7264",
+        "pos": {
+          "x": 109.767746,
+          "y": 8.311252,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "door_fastTravelExit",
+        "fsm_hook_name": "Teleport Arrive",
+        "fsm_hook_state": "Wait For Boss Load",
+        "start_active": "False"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -248.8281,
+        "y": 33.98437
+      },
+      "block_id": "4f26b295-c488-48c5-8466-b76e14346e9a",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "44ec3294-ea6f-4920-b6aa-b6af7afda4e1",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -38.5937653,
+        "y": 20.1562424
+      },
+      "block_id": "44ec3294-ea6f-4920-b6aa-b6af7afda4e1",
+      "events": {
+        "Out": [
+          {
+            "Item1": "d1b39a2c-2ef4-4560-9669-4ff9bdf84e34",
+            "Item2": "In"
+          },
+          {
+            "Item1": "aad56504-342e-41c0-903f-72f75cdc2543",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "b035ed1a-58be-4241-96b5-e1295351f827",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "650e02bb-e949-451a-8416-89c9ca79ebbc",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 321.874969,
+        "y": -32.81252
+      },
+      "block_id": "aad56504-342e-41c0-903f-72f75cdc2543",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "818349ff",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 284.609375,
+        "y": 198.04689
+      },
+      "block_id": "11a68295-b97d-4b26-8262-ea997e32f416",
+      "events": {},
+      "vars": {
+        "Target": {
+          "Item1": "aad56504-342e-41c0-903f-72f75cdc2543",
+          "Item2": "hp_hook_target"
+        }
+      },
+      "type": "Enemy Control",
+      "config": {
+        "enemy_damage_type": "2",
+        "enemy_hp_amount": "100"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 139.14064,
+        "y": 24.5312462
+      },
+      "block_id": "d1b39a2c-2ef4-4560-9669-4ff9bdf84e34",
+      "events": {
+        "Out": [
+          {
+            "Item1": "11a68295-b97d-4b26-8262-ea997e32f416",
+            "Item2": "Damage"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.05"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 110.546867,
+        "y": -264.843719
+      },
+      "block_id": "650e02bb-e949-451a-8416-89c9ca79ebbc",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "b035ed1a-58be-4241-96b5-e1295351f827",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "8ad43783",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 339.843719,
+        "y": -265.234344
+      },
+      "block_id": "b035ed1a-58be-4241-96b5-e1295351f827",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "46c3ab20",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 202.364883,
+        "y": 5.743244
+      },
+      "block_id": "e92fce79-be99-456a-8292-52a0bf901af1",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "489c2251",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -349.822723,
+        "y": 158.674011
+      },
+      "block_id": "5c23b394-111f-466f-a0b9-c0a2571bcedb",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "9845a5cc-1d14-43c7-a0a2-7f4763b29b9f",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -157.373322,
+        "y": 146.3261
+      },
+      "block_id": "9845a5cc-1d14-43c7-a0a2-7f4763b29b9f",
+      "events": {
+        "Out": [
+          {
+            "Item1": "e92fce79-be99-456a-8292-52a0bf901af1",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "894d7fa4-1f49-4352-be16-e5ec801a320c",
+            "Item2": "In"
+          },
+          {
+            "Item1": "325f78d9-9cdf-4783-b70d-e31e691963e7",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "16591b4d-faf0-4638-ba29-be0fab893803",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "b17cb6b1-ddb0-443c-9c4b-1c93bd5b3559",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 32.0016823,
+        "y": 147.795746
+      },
+      "block_id": "894d7fa4-1f49-4352-be16-e5ec801a320c",
+      "events": {
+        "Out": [
+          {
+            "Item1": "e92fce79-be99-456a-8292-52a0bf901af1",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -22.6351376,
+        "y": 22.97298
+      },
+      "block_id": "325f78d9-9cdf-4783-b70d-e31e691963e7",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "4cb973fe",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": -23.9864883,
+        "y": -79.05406
+      },
+      "block_id": "16591b4d-faf0-4638-ba29-be0fab893803",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "ae270d2a",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": 193.286942,
+        "y": -248.346512
+      },
+      "block_id": "b17cb6b1-ddb0-443c-9c4b-1c93bd5b3559",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "3f55f4a8-d2b8-4766-a8a6-19fb37568829",
+            "Item2": "Broadcast"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "b08e7264",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 404.997742,
+        "y": -211.519562
+      },
+      "block_id": "3f55f4a8-d2b8-4766-a8a6-19fb37568829",
+      "events": {},
+      "vars": {},
+      "type": "Broadcast",
+      "config": {
+        "in_name": "FINISHED"
+      },
+      "ext": {}
+    }
+  ]
+}

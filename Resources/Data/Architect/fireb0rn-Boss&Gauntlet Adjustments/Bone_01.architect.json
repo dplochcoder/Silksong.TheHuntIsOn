@@ -1,0 +1,148 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "808fcfb5",
+        "pos": {
+          "x": 83.10438,
+          "y": 28.9337063,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Battle Scene/End Scene"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "0aee7551",
+        "pos": {
+          "x": 100.137871,
+          "y": 27.6134338,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Battle Scene/Wave 1/Bone Flyer (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "dfb1dec3",
+        "pos": {
+          "x": 100.876793,
+          "y": 20.2592869,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_width": "2"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "1c004cc7",
+        "pos": {
+          "x": 87.6102142,
+          "y": 38.16145,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_width": "2"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "c689e5e3",
+        "pos": {
+          "x": 83.3698,
+          "y": 26.7891369,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_width": "1",
+        "size_height": "2"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a360a485",
+        "pos": {
+          "x": 84.013916,
+          "y": 30.1390247,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Battle Scene/ActiveBeforeBattle/Fake Flyers"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 86.5625,
+        "y": -24.375
+      },
+      "block_id": "437cfbbd-c1b5-49c4-8f52-5d3288102db8",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "0aee7551",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -159.0625,
+        "y": -0.625
+      },
+      "block_id": "406c0849-f725-4402-8af4-3ba6caa2eb77",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "437cfbbd-c1b5-49c4-8f52-5d3288102db8",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

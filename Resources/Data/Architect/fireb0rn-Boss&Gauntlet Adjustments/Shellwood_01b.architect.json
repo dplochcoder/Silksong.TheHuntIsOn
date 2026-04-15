@@ -1,0 +1,147 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "4f5f414c",
+        "pos": {
+          "x": 13.2235518,
+          "y": 3.665916,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Battle Scene/Gates/Battle Gate Shellwood"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2f8ed23e",
+        "pos": {
+          "x": 28.2722569,
+          "y": 19.8031788,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Battle Scene/Gates/Battle Gate Shellwood (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7f2cc40e",
+        "pos": {
+          "x": 29.7909012,
+          "y": 19.8241234,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Battle Scene/Gates/Battle Gate Shellwood (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "1d8f12c5",
+        "pos": {
+          "x": 22.14925,
+          "y": 10.1446447,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Battle Scene/Wave 1/Flower Drifter"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "1077ef80",
+        "pos": {
+          "x": 34.0269127,
+          "y": 10.1896362,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Battle Scene/Wave 1/Flower Drifter (1)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "a95cc013-41a4-41c5-9dc2-1e299b3c1cde",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "1d8f12c5",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 1.5625,
+        "y": -186.875
+      },
+      "block_id": "45789aaa-8c03-43ba-986f-d8461e874a2d",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "1077ef80",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -316.25,
+        "y": 2.8125
+      },
+      "block_id": "e235b189-6635-4bb5-a2a7-0e98cdd9479d",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "a95cc013-41a4-41c5-9dc2-1e299b3c1cde",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "45789aaa-8c03-43ba-986f-d8461e874a2d",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a12de093",
+        "pos": {
+          "x": 71.79081,
+          "y": 36.5766029,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Craft Pickup"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d5e65548",
+        "pos": {
+          "x": 26.8816757,
+          "y": 63.9284134,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Black Thread World/Garmond Scenes/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7a6947e5",
+        "pos": {
+          "x": 21.0570889,
+          "y": 64.61976,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Dice Game Control/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

@@ -1,0 +1,97 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "412ada51",
+        "pos": {
+          "x": 31.7650356,
+          "y": 44.15428,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "cog_junk_pile_break"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "3dafe4ae",
+        "pos": {
+          "x": 40.4833374,
+          "y": 45.0878448,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "cog_junk_pile_break (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "43a7fbcb",
+        "pos": {
+          "x": 9.167322,
+          "y": 45.29037,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d3ba73de",
+        "pos": {
+          "x": 61.6302261,
+          "y": 46.3686333,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song Knight Scene"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "5fc96009-6340-4f0a-bf20-c8e3999eb0ae",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "acdb9f5a",
+        "object_type": "interaction"
+      }
+    }
+  ]
+}

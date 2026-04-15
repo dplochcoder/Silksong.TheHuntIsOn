@@ -1,0 +1,280 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "fc08825e",
+        "pos": {
+          "x": 56.405098,
+          "y": 20.8822136,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "start_active": "False",
+        "enemy_path": "Black Thread States/Normal World/Battle Scene/Wave 1/Mossbone Mother"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "44676b5c",
+        "pos": {
+          "x": 45.0345268,
+          "y": 18.8903828,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Black Thread States/Normal World/Battle Scene/Gates/Battle Gate Mossbone (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f83ba18d",
+        "pos": {
+          "x": 68.91145,
+          "y": 20.0091267,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Black Thread States/Normal World/Battle Scene/Gates/Battle Gate Mossbone",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "3c88c3fa",
+        "pos": {
+          "x": 42.7754669,
+          "y": 18.37628,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.5
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "cc8e3c93",
+        "pos": {
+          "x": 71.3184357,
+          "y": 18.4794273,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.5
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "82ab7424",
+        "pos": {
+          "x": 67.854126,
+          "y": 26.88153,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "a4dcf212",
+        "pos": {
+          "x": 67.41547,
+          "y": 26.84779,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ec9b6df4",
+        "pos": {
+          "x": 56.35794,
+          "y": 25.4474564,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "start_active": "False",
+        "remover_path": "Black Thread States/Normal World/Battle Scene/CamLocks/CameraLockArea B"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "e3b2eb2f",
+        "pos": {
+          "x": 58.005497,
+          "y": 23.1476288,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 7.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 291.875,
+        "y": 1.5625
+      },
+      "block_id": "67e1377e-c5fc-4638-b8ca-395f7589b1e6",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "fc08825e",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -328.75,
+        "y": 5.9375
+      },
+      "block_id": "b0827c6a-1143-4866-97bd-5e3bba0e82a6",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "f269868f-57a1-4302-b90b-d4416dd86325",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -94.6875,
+        "y": 58.125
+      },
+      "block_id": "f269868f-57a1-4302-b90b-d4416dd86325",
+      "events": {
+        "Out": [
+          {
+            "Item1": "67e1377e-c5fc-4638-b8ca-395f7589b1e6",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "6dcca610-a46a-4191-8d3e-6ffba203639b",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 91.25,
+        "y": 88.125
+      },
+      "block_id": "6dcca610-a46a-4191-8d3e-6ffba203639b",
+      "events": {
+        "Out": [
+          {
+            "Item1": "67e1377e-c5fc-4638-b8ca-395f7589b1e6",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 93.75,
+        "y": -95.9375
+      },
+      "block_id": "a739a5b7-b7d4-44a1-8a45-d35d1dda560f",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "ec9b6df4",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": -131.25,
+        "y": -108.4375
+      },
+      "block_id": "96ae08c3-648c-4467-88e3-d118e05a5060",
+      "events": {
+        "ZoneExit": [
+          {
+            "Item1": "a739a5b7-b7d4-44a1-8a45-d35d1dda560f",
+            "Item2": "enable"
+          }
+        ],
+        "ZoneEnter": [
+          {
+            "Item1": "a739a5b7-b7d4-44a1-8a45-d35d1dda560f",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "e3b2eb2f",
+        "object_type": "trigger_zone"
+      }
+    }
+  ]
+}

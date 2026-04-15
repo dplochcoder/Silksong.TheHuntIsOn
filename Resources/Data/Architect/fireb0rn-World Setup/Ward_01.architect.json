@@ -1,0 +1,63 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "07812b7a",
+        "pos": {
+          "x": 28.4258327,
+          "y": 101.324509,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "key_machine"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ffa77a6e",
+        "pos": {
+          "x": 29.105072,
+          "y": 7.74886,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Silk Spool"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "acf1a5bf",
+        "pos": {
+          "x": 54.65238,
+          "y": 22.2107468,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Map Machine (1)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

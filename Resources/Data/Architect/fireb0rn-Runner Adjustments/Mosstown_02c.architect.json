@@ -1,0 +1,106 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "9b4ac40b",
+        "pos": {
+          "x": 12.2604637,
+          "y": 5.33796644,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "moss_hut_set/NPC Scene/Moss Creep NPC",
+        "fsm_hook_name": "Conversation Control",
+        "fsm_hook_state": "Begin Quest?"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "bde0bd40",
+        "pos": {
+          "x": 8.874881,
+          "y": 5.25923157,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "moss_hut_set/NPC Scene/Moss Creep NPC",
+        "fsm_hook_name": "Conversation Control",
+        "fsm_hook_state": "Choice"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "38c954e3",
+        "pos": {
+          "x": 19.5715218,
+          "y": 5.29297447,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "moss_hut_set/NPC Scene/Moss Creep NPC",
+        "fsm_hook_name": "Conversation Control",
+        "fsm_hook_state": "Can End Quest?"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "6ae6925a",
+        "pos": {
+          "x": 24.396822,
+          "y": 4.730586,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "moss_hut_set/NPC Scene/Moss Creep NPC",
+        "fsm_hook_name": "Conversation Control",
+        "fsm_hook_state": "Trade Check"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "51b4387e",
+        "pos": {
+          "x": 15.8260088,
+          "y": 5.236736,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "moss_hut_set/NPC Scene/Moss Creep NPC",
+        "fsm_hook_name": "Conversation Control",
+        "fsm_hook_state": "Do Reset"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

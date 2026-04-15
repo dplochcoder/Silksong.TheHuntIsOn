@@ -1,0 +1,114 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "87fc6296",
+        "pos": {
+          "x": 73.1497345,
+          "y": 15.9360418,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Shellwood_large_gates-EDITED (1)/Gate Parent/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f9a4a678",
+        "pos": {
+          "x": 69.13698,
+          "y": 10.4516535,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Hornet_pressure_plate/Plate/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "abef93f3",
+        "pos": {
+          "x": 71.47376,
+          "y": 79.0821457,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "purple_flower_set/Big Flower/"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "7b59dc5e",
+        "pos": {
+          "x": 38.52461,
+          "y": 62.82329,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Shellwood Hive (1)/Control"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -2.1875,
+        "y": -0.625
+      },
+      "block_id": "ed3deea1-ac11-4320-9f0f-d34069711ee3",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7b59dc5e",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -286.25,
+        "y": 16.25
+      },
+      "block_id": "78c68bf3-8f68-41f4-b016-d2e611d85463",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "ed3deea1-ac11-4320-9f0f-d34069711ee3",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b54d165b",
+        "pos": {
+          "x": 22.2141666,
+          "y": 27.67209,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Green Prince Caged/Green Prince Sit"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e45ba50a",
+        "pos": {
+          "x": 8.222507,
+          "y": 89.392334,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "greymoor_lever_simple_EDITED"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

@@ -1,0 +1,179 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c24a9d73",
+        "pos": {
+          "x": 140.45018,
+          "y": 64.94692,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_Gate_set/Mask Half Back"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "194dea3b",
+        "pos": {
+          "x": 139.7528,
+          "y": 65.0031357,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_Gate_set/Mask Half Front"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "63ee5832",
+        "pos": {
+          "x": 139.704132,
+          "y": 64.15258,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_Gate_set/solid"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8835651b",
+        "pos": {
+          "x": 140.440292,
+          "y": 64.11458,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_Gate_set/Terrain Block"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "339478d2",
+        "pos": {
+          "x": 138.989319,
+          "y": 64.193306,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_Gate_set/Pt Crack"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c14fec71",
+        "pos": {
+          "x": 138.978073,
+          "y": 65.0144,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_Gate_set/Pt Slam"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "619168a6",
+        "pos": {
+          "x": 138.246964,
+          "y": 64.64322,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_Gate_set/Leave Range"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "ad8d8dcf",
+        "pos": {
+          "x": 136.178009,
+          "y": 64.4743042,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "Song_Gate_set",
+        "component_hook_name": "PlayMakerFSM"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "71a7f03e",
+        "pos": {
+          "x": 87.72206,
+          "y": 91.91548,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "moss_berry_vine"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

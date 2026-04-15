@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8b5d962d",
+        "pos": {
+          "x": 4.578227,
+          "y": 8.679191,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Citadel Switch Gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "fa61d32a",
+        "pos": {
+          "x": 5.71425152,
+          "y": 9.499811,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

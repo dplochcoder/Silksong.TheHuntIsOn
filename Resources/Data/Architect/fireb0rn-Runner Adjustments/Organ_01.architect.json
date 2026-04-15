@@ -1,0 +1,200 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "70bc7fd3",
+        "pos": {
+          "x": 103.219742,
+          "y": 105.1891,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Phantom",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Cross Slash"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "886108c1",
+        "pos": {
+          "x": 99.85665,
+          "y": 105.009132,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Phantom",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "DC Dash"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "3e415f19",
+        "pos": {
+          "x": 108.351166,
+          "y": 105.065376,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Phantom",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Cross Slash End"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "57bd4ba5",
+        "pos": {
+          "x": 111.972946,
+          "y": 105.042892,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Phantom",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Death Explode"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -201.328064,
+        "y": -156.809937
+      },
+      "block_id": "dd6ce2b5-647b-423a-ac61-2f414ecdbe4a",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "4f45e437-c81f-4126-8eed-0c03c2306dc0",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "886108c1",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 280.105225,
+        "y": -178.072342
+      },
+      "block_id": "a7b2b514-cac0-46ee-b3f9-9b72b4032729",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "70bc7fd3",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 37.714138,
+        "y": -103.893295
+      },
+      "block_id": "4f45e437-c81f-4126-8eed-0c03c2306dc0",
+      "events": {
+        "Out": [
+          {
+            "Item1": "a7b2b514-cac0-46ee-b3f9-9b72b4032729",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -479.237366,
+        "y": -84.95073
+      },
+      "block_id": "a0f40361-ee15-4da7-bb93-edae252da83d",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "dd6ce2b5-647b-423a-ac61-2f414ecdbe4a",
+            "Item2": "fsm_remove_transition"
+          },
+          {
+            "Item1": "5cf09c21-e0e7-43fe-98eb-25253832aac0",
+            "Item2": "fsm_remove_transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 66.2323761,
+        "y": 53.9533539
+      },
+      "block_id": "5cf09c21-e0e7-43fe-98eb-25253832aac0",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "bfdd23ed-86c7-4c50-8aca-b0f41df3a9dc",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "3e415f19",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 321.4875,
+        "y": 57.3022
+      },
+      "block_id": "bfdd23ed-86c7-4c50-8aca-b0f41df3a9dc",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "57bd4ba5",
+        "object_type": "fsm_hook"
+      }
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8a70332d",
+        "pos": {
+          "x": 22.7795982,
+          "y": 67.56777,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "plank_wall_cluster_swamp"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f721b709",
+        "pos": {
+          "x": 23.35324,
+          "y": 78.21545,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "plank_wall_cluster_swamp (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "32477244",
+        "pos": {
+          "x": 9.484718,
+          "y": 85.8978,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f446cef5",
+        "pos": {
+          "x": 21.0811844,
+          "y": 102.652557,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "stake_trap_spikeball_loose Scene/plank_wall_cluster_swamp (2)/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

@@ -1,0 +1,226 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "94a00d5a",
+        "pos": {
+          "x": 214.186813,
+          "y": 15.2698689,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall_norck/wall3"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "209a9572",
+        "pos": {
+          "x": 212.890518,
+          "y": 14.388402,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall_norck/Glow Idle"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "4a8f412e",
+        "pos": {
+          "x": 213.962112,
+          "y": 14.267417,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall_norck/Pt Idle"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "43736b85",
+        "pos": {
+          "x": 216.20752,
+          "y": 17.5412083,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall_norck/masks"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "3a8aebf2",
+        "pos": {
+          "x": 213.184372,
+          "y": 16.65256,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall_norck/explode rock"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2d1eed59",
+        "pos": {
+          "x": 212.149826,
+          "y": 15.4599876,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall_norck/wall1"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "cb2c4284",
+        "pos": {
+          "x": 219.2221,
+          "y": 15.9893007,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "explode_wall_norck",
+        "component_hook_name": "BoxCollider2D"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "37dfa202",
+        "pos": {
+          "x": 211.856888,
+          "y": 11.8023071,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall_norck/wall2"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b0cbf9df",
+        "pos": {
+          "x": 248.447891,
+          "y": 39.7456932,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Ant_Big_Bone_Gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "4db044f4",
+        "pos": {
+          "x": 251.852859,
+          "y": 38.397316,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "ant_lever_persistent (1)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "32ee2974-3dd7-460b-bb05-14bb324ebf92",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "79939e73",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -282.7703,
+        "y": 7.770277
+      },
+      "block_id": "2b0c9c6c-6679-444d-b71f-23a25dd9eb2b",
+      "events": {
+        "OnStart": []
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

@@ -1,0 +1,423 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7b74a3ba",
+        "pos": {
+          "x": 45.9430847,
+          "y": 32.5950928,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Boss Scene/Battle Gates/gate ground/hero blocker top"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "4a0ee854",
+        "pos": {
+          "x": 32.6714859,
+          "y": 33.21879,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/cog_lever",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Open Mechanism"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ba0d21a8",
+        "pos": {
+          "x": 45.9559822,
+          "y": 33.7424545,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Boss Scene/cog_lever"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a1a3f2a3",
+        "pos": {
+          "x": 8.874881,
+          "y": 36.2619247,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/harpoon_ring_gate/slide_gate_trapdoor/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9c8cd206",
+        "pos": {
+          "x": 13.4030123,
+          "y": 35.86624,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/harpoon_ring_gate/slide_gate_ring/ring parent/Harpoon Ring Citadel(Clone)/"
+      }
+    },
+    {
+      "placement": {
+        "id": "silk_lever",
+        "pid": "ee4a701b",
+        "pos": {
+          "x": 39.20159,
+          "y": 41.0818024,
+          "z": -0.1500001
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 180.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "fly_swarm_effect",
+        "pid": "b1538f38",
+        "pos": {
+          "x": 39.4521027,
+          "y": 37.163208,
+          "z": -2.89677548
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "c3e62dc8",
+        "pos": {
+          "x": 43.86354,
+          "y": 35.8989754,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "0",
+        "trans_collide": "1",
+        "start_active": "True",
+        "trans_id": "cogworkDancers",
+        "trans_other_id": "lace2tower",
+        "trans_other_scene": "Song_Tower_01",
+        "trans_delay": "1"
+      }
+    },
+    {
+      "placement": {
+        "id": "custom_png",
+        "pid": "866faffb",
+        "pos": {
+          "x": 37.4904556,
+          "y": 37.9204025,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "png_col_r": "1",
+        "png_col_g": "1",
+        "png_col_b": "1",
+        "png_col_a": "1",
+        "obj_layer": "0",
+        "obj_z": "0",
+        "png_antialias": "True",
+        "png_ppu": "100",
+        "png_glow": "False",
+        "png_framecount": "1",
+        "png_hframecount": "1",
+        "png_eframecount": "0",
+        "png_sframe": "0",
+        "png_frametime": "10",
+        "png_loop": "True",
+        "png_start_playing": "True",
+        "png_url": "https://cdn.wikimg.net/en/hkwiki/images/e/e6/B_Lace.png"
+      }
+    },
+    {
+      "placement": {
+        "id": "custom_png",
+        "pid": "b3fde778",
+        "pos": {
+          "x": 14.0786228,
+          "y": 15.8745251,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "png_col_r": "1",
+        "png_col_g": "1",
+        "png_col_b": "1",
+        "png_col_a": "1",
+        "obj_layer": "2",
+        "obj_z": "0",
+        "png_antialias": "True",
+        "png_ppu": "100",
+        "png_glow": "False",
+        "png_framecount": "1",
+        "png_hframecount": "1",
+        "png_eframecount": "0",
+        "png_sframe": "0",
+        "png_frametime": "10",
+        "png_loop": "True",
+        "png_start_playing": "True",
+        "png_url": "https://cdn.wikimg.net/en/hkwiki/images/e/e6/B_Lace.png"
+      }
+    },
+    {
+      "placement": {
+        "id": "coloured_triangle",
+        "pid": "b1aee216",
+        "pos": {
+          "x": 15.9705658,
+          "y": 16.0691433,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 84.65146,
+        "scale": 0.4
+      },
+      "config": {
+        "colour_red": "1",
+        "colour_green": "1",
+        "colour_blue": "1",
+        "colour_alpha": "1",
+        "obj_layer": "2",
+        "obj_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "coloured_square",
+        "pid": "612c4258",
+        "pos": {
+          "x": 15.3748169,
+          "y": 15.0730362,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": -36.47688,
+        "scale": 1.0
+      },
+      "config": {
+        "colour_red": "1",
+        "colour_green": "1",
+        "colour_blue": "1",
+        "colour_alpha": "1",
+        "obj_layer": "4",
+        "obj_z": "0",
+        "size_height": "0.5",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "custom_png",
+        "pid": "659fab29",
+        "pos": {
+          "x": 65.89028,
+          "y": 15.0750494,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "png_col_r": "1",
+        "png_col_g": "1",
+        "png_col_b": "1",
+        "png_col_a": "1",
+        "obj_layer": "2",
+        "obj_z": "0",
+        "png_antialias": "True",
+        "png_ppu": "100",
+        "png_glow": "False",
+        "png_framecount": "1",
+        "png_hframecount": "1",
+        "png_eframecount": "0",
+        "png_sframe": "0",
+        "png_frametime": "10",
+        "png_loop": "True",
+        "png_start_playing": "True",
+        "png_url": "https://cdn.wikimg.net/en/hkwiki/images/e/e6/B_Lace.png"
+      }
+    },
+    {
+      "placement": {
+        "id": "coloured_triangle",
+        "pid": "88734046",
+        "pos": {
+          "x": 63.2656631,
+          "y": 15.9004974,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 159.3584,
+        "scale": 0.4
+      },
+      "config": {
+        "colour_red": "1",
+        "colour_green": "1",
+        "colour_blue": "1",
+        "colour_alpha": "1",
+        "obj_layer": "2",
+        "obj_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "coloured_square",
+        "pid": "9f61ddb3",
+        "pos": {
+          "x": 64.13962,
+          "y": 15.135541,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 40.96497,
+        "scale": 1.0
+      },
+      "config": {
+        "colour_red": "1",
+        "colour_green": "1",
+        "colour_blue": "1",
+        "colour_alpha": "1",
+        "obj_layer": "4",
+        "obj_z": "0",
+        "size_height": "0.5",
+        "size_width": "0.1"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -220.512482,
+        "y": -204.045273
+      },
+      "block_id": "97281c65-f1ae-4524-a709-d30124b2a957",
+      "events": {
+        "OnPull": [
+          {
+            "Item1": "3f8a1f19-40d3-461c-8879-67b440917fb8",
+            "Item2": "Transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "ee4a701b",
+        "object_type": "silk_lever"
+      }
+    },
+    {
+      "pos": {
+        "x": 0.291006625,
+        "y": -220.3554
+      },
+      "block_id": "3f8a1f19-40d3-461c-8879-67b440917fb8",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Song_Tower_01",
+        "trans_door": "door_cutsceneEndLaceTower"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "cbc37780-47c2-418d-b484-289f4a5eb43c",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "4a0ee854",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -285.0,
+        "y": 28.125
+      },
+      "block_id": "8db1abb9-1d92-41e7-b1af-e234feb7f1bd",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "cbc37780-47c2-418d-b484-289f4a5eb43c",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

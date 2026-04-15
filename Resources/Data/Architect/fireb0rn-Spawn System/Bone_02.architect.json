@@ -1,0 +1,26 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "79be1426",
+        "pos": {
+          "x": 12.5978937,
+          "y": 41.3936462,
+          "z": 0.0
+        },
+        "flipped": true,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_id": "MarrowSpawn02",
+        "trans_collide": "1"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

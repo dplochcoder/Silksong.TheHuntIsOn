@@ -1,0 +1,82 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b52085d6",
+        "pos": {
+          "x": 7.48015261,
+          "y": 95.72882,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bellshrine gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "4d4c1ac4",
+        "pos": {
+          "x": 44.8601,
+          "y": 93.9796448,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "22a37589",
+        "pos": {
+          "x": 40.7011566,
+          "y": 92.39032,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "song_trap_door/Door/Tilt Plat/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d91c184f",
+        "pos": {
+          "x": 46.2200737,
+          "y": 92.18795,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "song_trap_door/lever/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

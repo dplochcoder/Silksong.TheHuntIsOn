@@ -1,0 +1,158 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "34ba3b3b",
+        "pos": {
+          "x": 111.48455,
+          "y": 89.25625,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "One Way Wall (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a53a6004",
+        "pos": {
+          "x": 87.08458,
+          "y": 69.2827,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "One Way Wall (3)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7023ea6e",
+        "pos": {
+          "x": 77.0772,
+          "y": 30.9909115,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "One Way Wall (3)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0ef575b6",
+        "pos": {
+          "x": 53.1081848,
+          "y": 33.5104141,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "One Way Wall (3)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a29af3dc",
+        "pos": {
+          "x": 52.995697,
+          "y": 33.5104141,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "One Way Wall (3)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8e3b9dae",
+        "pos": {
+          "x": 78.0895157,
+          "y": 31.3620872,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "One Way Wall (3)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f045fe4c",
+        "pos": {
+          "x": 110.594124,
+          "y": 40.734993,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "One Way Wall (4)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "92aac78d",
+        "pos": {
+          "x": 98.77168,
+          "y": 104.349182,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Group/Bell Hermit/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

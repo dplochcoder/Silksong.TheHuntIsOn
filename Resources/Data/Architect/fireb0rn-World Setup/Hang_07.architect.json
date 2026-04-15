@@ -1,0 +1,208 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "greymoor_flip_bridge",
+        "pid": "b035c398",
+        "pos": {
+          "x": 22.1225643,
+          "y": 24.7210674,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 270.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "greymoor_flip_bridge",
+        "pid": "32964697",
+        "pos": {
+          "x": 31.5438614,
+          "y": 22.74967,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 90.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "7cdeec0d",
+        "pos": {
+          "x": 19.4249477,
+          "y": 20.4063759,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "d6064d41",
+        "pos": {
+          "x": 26.8709831,
+          "y": 23.99442,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "206efe24",
+        "pos": {
+          "x": 5.96169949,
+          "y": 10.323904,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "shortcut_states/closed/pipe_vent_end/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "fa0e6b71",
+        "pos": {
+          "x": 7.1314683,
+          "y": 10.3512545,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "shortcut_states/open/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "af41cc09",
+        "pos": {
+          "x": 27.2104912,
+          "y": 25.2826176,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song Knight Quest Parent/Blocker/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ced057eb",
+        "pos": {
+          "x": 103.518524,
+          "y": 9.997715,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song Reed Scene/Chevalier/Song Knight/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 291.0156,
+        "y": -57.4218674
+      },
+      "block_id": "1e235f62-bfb3-41b4-975c-1adfb4a86a2e",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "49f768fc-c8d4-4f8e-81f5-2c0b40a78a3f",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "d6064d41",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": -133.20311,
+        "y": -53.1249924
+      },
+      "block_id": "49f768fc-c8d4-4f8e-81f5-2c0b40a78a3f",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "4e06a8a7-eb3f-4cec-a99d-a7fc29fa2dc0",
+            "Item2": "Display"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7cdeec0d",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 55.4151955,
+        "y": 39.06976
+      },
+      "block_id": "4e06a8a7-eb3f-4cec-a99d-a7fc29fa2dc0",
+      "events": {},
+      "vars": {},
+      "type": "Song Display",
+      "config": {
+        "song_text": "Shortcut Blocked",
+        "song_duration": "2"
+      },
+      "ext": {}
+    }
+  ]
+}

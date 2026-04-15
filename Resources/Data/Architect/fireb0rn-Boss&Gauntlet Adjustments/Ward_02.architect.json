@@ -1,0 +1,495 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "05b09f96",
+        "pos": {
+          "x": 56.43062,
+          "y": 16.97608,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Slasher 1",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "7dbe4a3b",
+        "pos": {
+          "x": 54.57956,
+          "y": 11.066186,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Conductor Boss",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "After Tele",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "666ea561",
+        "pos": {
+          "x": 59.7145538,
+          "y": 10.7100391,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Conductor Boss",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Shoot Antic 1",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "3a6fd8ad",
+        "pos": {
+          "x": 50.1764336,
+          "y": 12.1160412,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Conductor Boss",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Tele Antic Intro",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "camera_border",
+        "pid": "0fc1b3e1",
+        "pos": {
+          "x": 62.52391,
+          "y": 10.923748,
+          "z": 0.1
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "camera_border_type": "3",
+        "camera_border_mode": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "be5b8a26",
+        "pos": {
+          "x": 59.72969,
+          "y": 14.5412588,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene Parent/Pipe_Vent_Hatch/",
+        "fsm_hook_name": "Open At Battle End",
+        "fsm_hook_state": "Set Opened"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "15c92e84",
+        "pos": {
+          "x": 52.3473549,
+          "y": 31.60716,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Boss Scene Parent/ward_slide_hatch bottom/"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "c7b9d504",
+        "pos": {
+          "x": 54.7429733,
+          "y": 14.7030144,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Boss Scene/Conductor Boss/"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "10d5cc6b",
+        "pos": {
+          "x": 59.77079,
+          "y": 7.673161,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Conductor Boss",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Charge Voice",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "8c42f987",
+        "pos": {
+          "x": 46.0648575,
+          "y": 17.5358772,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_width": "12",
+        "size_height": "8"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "6fea68de",
+        "pos": {
+          "x": 50.43342,
+          "y": 16.0391674,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "P3 Pause",
+        "start_active": "False"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -404.070343,
+        "y": 110.727371
+      },
+      "block_id": "15b34e84-d342-4afe-9d4b-5ea67aa4741d",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "92f2d9f6-2faa-4941-bb2b-aadfcc989d06",
+            "Item2": "In"
+          },
+          {
+            "Item1": "95f8136b-dc6c-4eb0-b7bc-135a0ad256f8",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -188.59375,
+        "y": 105.234383
+      },
+      "block_id": "92f2d9f6-2faa-4941-bb2b-aadfcc989d06",
+      "events": {
+        "Out": [
+          {
+            "Item1": "4b6d37f5-a38e-4258-84c5-fe48fb81f1fd",
+            "Item2": "In"
+          },
+          {
+            "Item1": "09118fd0-6527-4d93-87cf-34a72831835e",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "6a898fe3-2fcb-4097-921c-ecd290fd641e",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "d76a77cd-ecb8-4ba9-b52d-3c347b9b7879",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "54ba30c1-064e-4d36-81ce-a0aca416d7fc",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "aee470e1-bd4a-43a0-b39d-c9a2956c66c3",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 639.5417,
+        "y": 322.216217
+      },
+      "block_id": "c3fa2b62-6de0-4841-b1b6-38837222fb3c",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "05b09f96",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": 14.37497,
+        "y": 249.1406
+      },
+      "block_id": "4b6d37f5-a38e-4258-84c5-fe48fb81f1fd",
+      "events": {
+        "Out": [
+          {
+            "Item1": "d76a77cd-ecb8-4ba9-b52d-3c347b9b7879",
+            "Item2": "fsm_set_state"
+          },
+          {
+            "Item1": "927fd70e-d185-4302-a666-923ba4a2ed4e",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -137.109344,
+        "y": -136.096649
+      },
+      "block_id": "09118fd0-6527-4d93-87cf-34a72831835e",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "930632af-0b88-4769-aea4-5c31559834a0",
+            "Item2": "Trigger"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7dbe4a3b",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 332.378418,
+        "y": -166.391785
+      },
+      "block_id": "6a898fe3-2fcb-4097-921c-ecd290fd641e",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "666ea561",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 76.43515,
+        "y": -169.201416
+      },
+      "block_id": "930632af-0b88-4769-aea4-5c31559834a0",
+      "events": {},
+      "vars": {},
+      "type": "Random Event",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":28.75,\"y\":-69.375},\"block_id\":\"3255a3af-96df-4ea2-82fd-a3af2dadb351\",\"events\":{\"OnTrigger\":[{\"Item1\":\"6a898fe3-2fcb-4097-921c-ecd290fd641e\",\"Item2\":\"fsm_set_state\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":28.75,\"y\":-69.375},\"block_id\":\"ed2fd18a-141a-44d0-a5c8-cbc15d14b562\",\"events\":{\"OnTrigger\":[{\"Item1\":\"54ba30c1-064e-4d36-81ce-a0aca416d7fc\",\"Item2\":\"fsm_set_state\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 316.218079,
+        "y": 95.54398
+      },
+      "block_id": "d76a77cd-ecb8-4ba9-b52d-3c347b9b7879",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "3a6fd8ad",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -386.157379,
+        "y": -63.4490776
+      },
+      "block_id": "95f8136b-dc6c-4eb0-b7bc-135a0ad256f8",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "be5b8a26",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 606.6212,
+        "y": 112.381393
+      },
+      "block_id": "927fd70e-d185-4302-a666-923ba4a2ed4e",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "c7b9d504",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 334.259155,
+        "y": -401.851746
+      },
+      "block_id": "54ba30c1-064e-4d36-81ce-a0aca416d7fc",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "10d5cc6b",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 119.412117,
+        "y": 468.022949
+      },
+      "block_id": "b859a9b6-0552-4ce0-801f-a914263df611",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "d5fe46fa-c672-43cf-a337-689a7dfffbcb",
+            "Item2": "In"
+          },
+          {
+            "Item1": "aee470e1-bd4a-43a0-b39d-c9a2956c66c3",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "8c42f987",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 369.818451,
+        "y": 338.9761
+      },
+      "block_id": "d5fe46fa-c672-43cf-a337-689a7dfffbcb",
+      "events": {
+        "Out": [
+          {
+            "Item1": "c3fa2b62-6de0-4841-b1b6-38837222fb3c",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "3"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 534.722046,
+        "y": 520.370239
+      },
+      "block_id": "aee470e1-bd4a-43a0-b39d-c9a2956c66c3",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "6fea68de",
+        "object_type": "fsm_hook"
+      }
+    }
+  ]
+}

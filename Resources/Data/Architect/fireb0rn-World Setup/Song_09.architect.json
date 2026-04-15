@@ -1,0 +1,177 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e73628f6",
+        "pos": {
+          "x": 40.77361,
+          "y": 14.2282915,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Citadel Switch Gate (5)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "88f83d16",
+        "pos": {
+          "x": 32.4021072,
+          "y": 3.47786427,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall Ruin Lift"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "89d3604c",
+        "pos": {
+          "x": 39.7035522,
+          "y": 45.34235,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Hornet_pressure_plate_small_persistent"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7a325922",
+        "pos": {
+          "x": 50.962532,
+          "y": 30.6674938,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Hornet_pressure_plate_small_persistent"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "77411572",
+        "pos": {
+          "x": 32.0715065,
+          "y": 26.744751,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Hornet_pressure_plate_small_persistent"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "990cb3e7",
+        "pos": {
+          "x": 34.4324036,
+          "y": 10.72866,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Citadel Switch Gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6d584790",
+        "pos": {
+          "x": 16.8672371,
+          "y": 57.2104645,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Citadel Switch Gate (4)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9b1a153b",
+        "pos": {
+          "x": 32.92498,
+          "y": 43.69594,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Citadel Switch Gate (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6fc4fcc2",
+        "pos": {
+          "x": 38.65561,
+          "y": 44.30159,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Heart Piece"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

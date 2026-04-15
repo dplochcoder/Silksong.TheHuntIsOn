@@ -1,0 +1,63 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "46335acc",
+        "pos": {
+          "x": 92.65527,
+          "y": 25.6725731,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "GameObject (6)/Moss Vine Cluster/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5bb494b2",
+        "pos": {
+          "x": 90.14329,
+          "y": 9.616206,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song Knight Trail Quest Parent"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6af26870",
+        "pos": {
+          "x": 89.20972,
+          "y": 9.584876,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song Knight Control"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

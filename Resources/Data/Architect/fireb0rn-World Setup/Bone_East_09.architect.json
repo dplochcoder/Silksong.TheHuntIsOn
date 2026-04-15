@@ -1,0 +1,312 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "updraft_region",
+        "pid": "7a30546e",
+        "pos": {
+          "x": 57.97019,
+          "y": 61.74657,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "updraft_width": "1.5",
+        "updraft_height": "10"
+      }
+    },
+    {
+      "placement": {
+        "id": "updraft_region",
+        "pid": "54e359e3",
+        "pos": {
+          "x": 31.4391,
+          "y": 75.73145,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "updraft_width": "1.5",
+        "updraft_height": "10"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5cd0df0b",
+        "pos": {
+          "x": 40.20573,
+          "y": 77.7535248,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Wind Rock"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1d15cfbc",
+        "pos": {
+          "x": 41.2293,
+          "y": 77.64662,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Wind Rock (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2cbd2236",
+        "pos": {
+          "x": 42.0054054,
+          "y": 77.74785,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Wind Rock (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "07b1fe73",
+        "pos": {
+          "x": 40.42454,
+          "y": 79.42106,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "wind rock float (4)"
+      }
+    },
+    {
+      "placement": {
+        "id": "updraft_region",
+        "pid": "bd20136a",
+        "pos": {
+          "x": 36.50307,
+          "y": 63.7682648,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "updraft_width": "1.5",
+        "updraft_height": "10"
+      }
+    },
+    {
+      "placement": {
+        "id": "fung_plat_float_02",
+        "pid": "3bf2199b",
+        "pos": {
+          "x": 31.4894085,
+          "y": 75.085144,
+          "z": -0.09
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.3
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "7abbee06",
+        "pos": {
+          "x": 26.4682121,
+          "y": 72.62889,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "Updraft After",
+        "component_hook_name": "PlayMakerFixedUpdate"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "032db98c",
+        "pos": {
+          "x": 23.16157,
+          "y": 72.76747,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "Updraft After/Updraft After 1",
+        "component_hook_name": "PlayMakerFixedUpdate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "851881ad",
+        "pos": {
+          "x": 40.6077538,
+          "y": 82.3281,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Updraft After",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d9e26e19",
+        "pos": {
+          "x": 34.4799042,
+          "y": 90.7093353,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "top_explode_wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e711a8dc",
+        "pos": {
+          "x": 39.1417847,
+          "y": 79.82445,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Wind Rock Double"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -2.17391348,
+        "y": -0.5434818
+      },
+      "block_id": "c3e28f1b-2b61-4912-b0ab-32c25a434028",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "851881ad",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": -195.108734,
+        "y": -2.71739578
+      },
+      "block_id": "e319e02c-241a-4fc7-a9f1-61d120b5eaf8",
+      "events": {
+        "Out": [
+          {
+            "Item1": "c3e28f1b-2b61-4912-b0ab-32c25a434028",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -390.760925,
+        "y": 4.347824
+      },
+      "block_id": "6fe7e8dd-b42e-4bc8-a1da-35c415fbd5f9",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "e319e02c-241a-4fc7-a9f1-61d120b5eaf8",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

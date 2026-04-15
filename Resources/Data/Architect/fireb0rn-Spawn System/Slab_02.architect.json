@@ -1,0 +1,26 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "454cc3ad",
+        "pos": {
+          "x": 63.57853,
+          "y": 21.2636414,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_collide": "False",
+        "trans_id": "Slab_02"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

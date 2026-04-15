@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8e4d9726",
+        "pos": {
+          "x": 213.123337,
+          "y": 37.5063858,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall_norck"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

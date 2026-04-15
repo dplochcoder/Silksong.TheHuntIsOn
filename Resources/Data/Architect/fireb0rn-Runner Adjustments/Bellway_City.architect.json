@@ -1,0 +1,656 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "3f6129dc",
+        "pos": {
+          "x": 39.8952,
+          "y": 13.108098,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "0",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "f308cbf6",
+        "pos": {
+          "x": 36.55781,
+          "y": 17.09245,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "1",
+        "component_hook_target": "Bellway Toll Machine",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "2783a849",
+        "pos": {
+          "x": 39.83897,
+          "y": 17.0448647,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "2",
+        "component_hook_target": "Bellway Toll Machine",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "4521db91",
+        "pos": {
+          "x": 45.4066124,
+          "y": 14.5253954,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Bellway Toll Machine",
+        "fsm_hook_state": "Return Control",
+        "fsm_hook_name": "Unlock Behaviour"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "09c12779",
+        "pos": {
+          "x": 72.6893158,
+          "y": 15.58486,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "2",
+        "component_hook_target": "City Travel Tube",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "1919cdc4",
+        "pos": {
+          "x": 69.2875748,
+          "y": 15.5961132,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "1",
+        "component_hook_target": "City Travel Tube",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "525aacfb",
+        "pos": {
+          "x": 76.32579,
+          "y": 15.527545,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "City Travel Tube",
+        "fsm_hook_name": "Tube Travel",
+        "fsm_hook_state": "Unlock Open"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "6255ae3a",
+        "pos": {
+          "x": 76.3031,
+          "y": 12.1082182,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "City Travel Tube/tube_toll_machine",
+        "fsm_hook_name": "Unlock Behaviour",
+        "fsm_hook_state": "Retract Animation"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "482849a9",
+        "pos": {
+          "x": 72.53841,
+          "y": 11.8793783,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_state": "Unlock",
+        "fsm_hook_name": "Animation",
+        "fsm_hook_target": "City Travel Tube/pneumatic_tube_set"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "33537dd5",
+        "pos": {
+          "x": 80.4163055,
+          "y": 16.51845,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "2",
+        "component_hook_target": "City Travel Tube/tube_toll_machine",
+        "component_hook_name": "Animator",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "c78d68a4",
+        "pos": {
+          "x": 81.5815048,
+          "y": 12.8179207,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "0",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e0de777a",
+        "pos": {
+          "x": 63.13307,
+          "y": 22.7272282,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "af0ba23a",
+        "pos": {
+          "x": 85.31371,
+          "y": 15.8210888,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "start_active": "False",
+        "remover_path": "City Travel Tube/tube_toll_machine/toll_machine"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -147.292923,
+        "y": 179.326675
+      },
+      "block_id": "bc7f1e45-68ce-4698-8f81-bd040d43e1a8",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "f308cbf6",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": -149.017075,
+        "y": 39.2405167
+      },
+      "block_id": "1a010a17-b81a-4126-a214-d9851de45896",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "2783a849",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": -355.947723,
+        "y": -2.2069397
+      },
+      "block_id": "59d344ff-3c71-4fc7-9960-ede34d8723f2",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "1a010a17-b81a-4126-a214-d9851de45896",
+            "Item2": "component_hook_apply"
+          },
+          {
+            "Item1": "59d344ff-3c71-4fc7-9960-ede34d8723f2",
+            "Item2": "disable"
+          },
+          {
+            "Item1": "885080e1-5d1e-4ab0-8177-cdfd76197aaf",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "3f6129dc",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": -348.2627,
+        "y": 126.244843
+      },
+      "block_id": "2f072b34-f21e-48be-be03-0b872993ee16",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "bc7f1e45-68ce-4698-8f81-bd040d43e1a8",
+            "Item2": "component_hook_apply"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 581.264,
+        "y": 306.422729
+      },
+      "block_id": "d48b0995-4fc2-4a1f-a8ed-4d32b15239c5",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "d48b0995-4fc2-4a1f-a8ed-4d32b15239c5",
+            "Item2": "disable"
+          },
+          {
+            "Item1": "62040e3a-ca52-4039-8a17-abdf3c3500a4",
+            "Item2": "fsm_set_state"
+          },
+          {
+            "Item1": "15fa15c8-db02-4040-93b4-87f8e70149b3",
+            "Item2": "In"
+          },
+          {
+            "Item1": "20c3858a-d4e5-4a91-8e92-df16585d36bf",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "c78d68a4",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": 584.2881,
+        "y": 443.754456
+      },
+      "block_id": "cbc27e82-9241-4d35-bb61-deb9b5978c03",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "1919cdc4",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": 206.250885,
+        "y": 320.1882
+      },
+      "block_id": "93ea43c8-89a8-4092-a17c-7b758adbc874",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "cbc27e82-9241-4d35-bb61-deb9b5978c03",
+            "Item2": "component_hook_apply"
+          },
+          {
+            "Item1": "8806a824-a7af-4bf7-9376-bf36d4de02fd",
+            "Item2": "In"
+          },
+          {
+            "Item1": "a09da824-fec1-4335-bc8a-47b61eabf0e6",
+            "Item2": "Set"
+          },
+          {
+            "Item1": "d731288c-f2ff-4d18-a7ab-ec9f9716d1d9",
+            "Item2": "Set"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 815.138855,
+        "y": 268.681
+      },
+      "block_id": "62040e3a-ca52-4039-8a17-abdf3c3500a4",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "482849a9",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 746.688843,
+        "y": 61.7049866
+      },
+      "block_id": "15fa15c8-db02-4040-93b4-87f8e70149b3",
+      "events": {
+        "Out": [
+          {
+            "Item1": "991f3e4b-3980-49fb-9436-0c79bc29ca4f",
+            "Item2": "Trigger"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "4.2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1408.23865,
+        "y": -157.21347
+      },
+      "block_id": "a3cc074f-0692-483d-a3df-ec4c8efdbeaa",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "525aacfb",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 1093.48779,
+        "y": 295.6998
+      },
+      "block_id": "20c3858a-d4e5-4a91-8e92-df16585d36bf",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "33537dd5",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": 1188.10767,
+        "y": 10.6178741
+      },
+      "block_id": "3b6ce2fa-3d1d-4333-a62d-16d6637defa1",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "6255ae3a",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 1190.88013,
+        "y": -200.797241
+      },
+      "block_id": "51feb95f-a0fd-44fa-bbc3-14de0b90a405",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "09c12779",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": 407.728363,
+        "y": 447.322144
+      },
+      "block_id": "8b928178-b874-4637-89ba-98dc1dfe1318",
+      "events": {
+        "OnTrue": [],
+        "OnFalse": []
+      },
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "UnlockedCityBellwayTube"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 406.1488,
+        "y": 306.822845
+      },
+      "block_id": "8806a824-a7af-4bf7-9376-bf36d4de02fd",
+      "events": {
+        "True": [
+          {
+            "Item1": "d48b0995-4fc2-4a1f-a8ed-4d32b15239c5",
+            "Item2": "disable"
+          },
+          {
+            "Item1": "48d7ee30-5b9c-40a8-a324-f9a628f0d347",
+            "Item2": "component_hook_apply"
+          }
+        ],
+        "False": [
+          {
+            "Item1": "d48b0995-4fc2-4a1f-a8ed-4d32b15239c5",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {
+        "Check": {
+          "Item1": "8b928178-b874-4637-89ba-98dc1dfe1318",
+          "Item2": "Value"
+        }
+      },
+      "type": "If",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 970.3318,
+        "y": 46.1242523
+      },
+      "block_id": "991f3e4b-3980-49fb-9436-0c79bc29ca4f",
+      "events": {},
+      "vars": {},
+      "type": "Ordered Events",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":327.441864,\"y\":75.5814056},\"block_id\":\"6dd2a5e7-641b-4f91-acb5-d04dc2dafc41\",\"events\":{\"OnTrigger\":[{\"Item1\":\"3b6ce2fa-3d1d-4333-a62d-16d6637defa1\",\"Item2\":\"fsm_set_state\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":348.604645,\"y\":34.1860657},\"block_id\":\"f3b87ad0-b28e-4749-8904-ad04b00c79fd\",\"events\":{\"OnTrigger\":[{\"Item1\":\"a3cc074f-0692-483d-a3df-ec4c8efdbeaa\",\"Item2\":\"fsm_set_state\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":386.744171,\"y\":-20.6976624},\"block_id\":\"39966cee-bc47-4580-9dba-055214cf43fb\",\"events\":{\"OnTrigger\":[{\"Item1\":\"51feb95f-a0fd-44fa-bbc3-14de0b90a405\",\"Item2\":\"component_hook_apply\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":386.744171,\"y\":-20.6976624},\"block_id\":\"7e40e751-f3c4-4f54-b0ba-4ece5bf56930\",\"events\":{\"OnTrigger\":[{\"Item1\":\"fe455472-e65c-46db-8348-bedfb1c80346\",\"Item2\":\"enable\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 1189.13855,
+        "y": -328.163055
+      },
+      "block_id": "fe455472-e65c-46db-8348-bedfb1c80346",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "af0ba23a",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": 583.975,
+        "y": 189.1459
+      },
+      "block_id": "48d7ee30-5b9c-40a8-a324-f9a628f0d347",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "09c12779",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": -133.169922,
+        "y": -152.264084
+      },
+      "block_id": "885080e1-5d1e-4ab0-8177-cdfd76197aaf",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "4521db91",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 363.122559,
+        "y": 186.578
+      },
+      "block_id": "a09da824-fec1-4335-bc8a-47b61eabf0e6",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "act2Started",
+        "pd_bool": "True"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 360.7424,
+        "y": 82.33673
+      },
+      "block_id": "d731288c-f2ff-4d18-a7ab-ec9f9716d1d9",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "visitedCitadel",
+        "pd_bool": "True"
+      },
+      "ext": {}
+    }
+  ]
+}

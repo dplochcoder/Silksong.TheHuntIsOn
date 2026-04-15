@@ -1,0 +1,535 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "fe35cf0d",
+        "pos": {
+          "x": 95.68663,
+          "y": 27.7287254,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_Gate_small"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d34b86c2",
+        "pos": {
+          "x": 99.11727,
+          "y": 29.5268879,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6c7c41da-56ff0423",
+        "pos": {
+          "x": 67.44711,
+          "y": 40.05356,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall/Masks",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "7d52f17d-56ff0423",
+        "pos": {
+          "x": 61.80073,
+          "y": 38.7600441,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "2",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "a43b9218-56ff0423",
+        "pos": {
+          "x": 63.6453743,
+          "y": 39.96296,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "2",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "9925429b-56ff0423",
+        "pos": {
+          "x": 65.5687256,
+          "y": 42.4848175,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Breakable Wall",
+        "fsm_hook_name": "breakable_wall_v2",
+        "fsm_hook_state": "Send to Register?"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "4c6b0f02-56ff0423",
+        "pos": {
+          "x": 69.22427,
+          "y": 42.483078,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "Breakable Wall",
+        "component_hook_name": "BoxCollider2D"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "778a0971",
+        "pos": {
+          "x": 51.971283,
+          "y": 13.1801062,
+          "z": -2.0
+        },
+        "flipped": true,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Inspect Region/Prompt Marker"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5d22bfe2",
+        "pos": {
+          "x": 52.0749855,
+          "y": 13.2319565,
+          "z": -2.0
+        },
+        "flipped": true,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Inspect Region/Prompt Marker"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "10b6ebc5",
+        "pos": {
+          "x": 54.9290581,
+          "y": 18.9962845,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States Thread Only Variant/Normal World/Caravan/"
+      }
+    },
+    {
+      "placement": {
+        "id": "bellbeast_child",
+        "pid": "c6ff09eb",
+        "pos": {
+          "x": 44.8919067,
+          "y": 16.1444836,
+          "z": 0.005
+        },
+        "flipped": true,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "f130d830",
+        "pos": {
+          "x": 44.88517,
+          "y": 15.8048191,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "7",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5",
+        "size_height": "0.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_anchor",
+        "pid": "e0b9c9b0",
+        "pos": {
+          "x": 44.83332,
+          "y": 16.05281,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "anchor_dist": "10",
+        "anchor_start_dist": "0",
+        "anchor_speed": "0",
+        "anchor_rot": "0",
+        "anchor_rot_speed": "0",
+        "anchor_smoothing": "0.5",
+        "anchor_pause_time": "0",
+        "anchor_moving": "True",
+        "anchor_target": "f130d830",
+        "anchor_parent": "c6ff09eb"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "d2e51559",
+        "pos": {
+          "x": 64.78206,
+          "y": 23.4580555,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_width": "0.1",
+        "size_height": "8"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "af2e20c4",
+        "pos": {
+          "x": 41.02236,
+          "y": 22.8832817,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_width": "0.1",
+        "size_height": "5"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "883e0508",
+        "pos": {
+          "x": 44.7987556,
+          "y": 20.8576641,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "0",
+        "trans_collide": "2",
+        "trans_edit_mode_active": "True",
+        "trans_id": "fleaCaravan1",
+        "trans_other_id": "fleaCaravan2",
+        "trans_other_scene": "Greymoor_08"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b18b73d5",
+        "pos": {
+          "x": 99.19416,
+          "y": 43.22078,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup"
+      }
+    },
+    {
+      "placement": {
+        "id": "bell_bench",
+        "pid": "4f979ef8",
+        "pos": {
+          "x": 52.3423347,
+          "y": 17.231329,
+          "z": 0.009
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "bench_spawn": "True",
+        "bench_offset_x": "0",
+        "bench_offset_y": "0",
+        "bench_offset_z": "0"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 328.378418,
+        "y": -116.216194
+      },
+      "block_id": "02b8fd30-9e56-4947-87ca-d650aeefba12",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "fe317090-5a2a-4312-bcd5-edf3557e21c6",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7d52f17d-56ff0423",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 328.7163,
+        "y": 19.5945816
+      },
+      "block_id": "45897f51-54ea-4215-b98b-e7cd8166f4c3",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "fe317090-5a2a-4312-bcd5-edf3557e21c6",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "a43b9218-56ff0423",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": -101.351372,
+        "y": 14.1891937
+      },
+      "block_id": "0d249f9b-d864-456a-a585-6c19eaff4571",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "9925429b-56ff0423",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 66.8919,
+        "y": 4.054081
+      },
+      "block_id": "512cb8c3-4401-4b29-8bff-ac018d38ed6c",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "4c6b0f02-56ff0423",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": 570.608154,
+        "y": -27.70272
+      },
+      "block_id": "fe317090-5a2a-4312-bcd5-edf3557e21c6",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "6c7c41da-56ff0423",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": -280.0676,
+        "y": -3.378374
+      },
+      "block_id": "c8669945-b8cc-414a-a368-d5d6323aa6dd",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "0d249f9b-d864-456a-a585-6c19eaff4571",
+            "Item2": "fsm_set_state"
+          },
+          {
+            "Item1": "512cb8c3-4401-4b29-8bff-ac018d38ed6c",
+            "Item2": "component_hook_apply"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 399.379272,
+        "y": -305.8133
+      },
+      "block_id": "0fdf515f-2a9c-4576-9c81-40dead10b9a4",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "883e0508",
+        "object_type": "transition_gate"
+      }
+    },
+    {
+      "pos": {
+        "x": -87.17273,
+        "y": -277.576
+      },
+      "block_id": "931f2cb4-3005-43f5-93ec-cf75a4a7487a",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "5b75eb38-98bd-432d-b8ee-70896ce9bf19",
+            "Item2": "Display"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "f130d830",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": 146.495529,
+        "y": -280.476959
+      },
+      "block_id": "5b75eb38-98bd-432d-b8ee-70896ce9bf19",
+      "events": {
+        "Yes": [
+          {
+            "Item1": "0fdf515f-2a9c-4576-9c81-40dead10b9a4",
+            "Item2": "transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Choice Display",
+      "config": {
+        "choice_text": "Take the Beastling to Greymoor?",
+        "choice_requirement": "0",
+        "choice_cost": "0",
+        "choice_take_item": "False"
+      },
+      "ext": {}
+    }
+  ]
+}

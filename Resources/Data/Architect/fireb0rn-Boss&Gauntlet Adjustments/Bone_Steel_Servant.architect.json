@@ -1,0 +1,513 @@
+{
+  "placements": [
+   {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "057661d7",
+        "pos": {
+          "x": 116.221085,
+          "y": 33.20279,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Steel Servant Scene/Steel Servant NPC"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "3ac6ef5e",
+        "pos": {
+          "x": 31.5896835,
+          "y": 8.3449955,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Steel Servant Scene/Battle Scene/Wave 1/Abyss Mass",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Dormant"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "8fc7301c",
+        "pos": {
+          "x": 35.1775551,
+          "y": 8.288757,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Steel Servant Scene/Battle Scene/Wave 1/Abyss Mass",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Start Battle"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "df466118",
+        "pos": {
+          "x": 31.28067,
+          "y": 11.7531919,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Steel Servant Scene/Steel Servant NPC"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "65f4facf",
+        "pos": {
+          "x": 32.37899,
+          "y": 11.7643223,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Steel Servant Scene/Battle Scene/CamLocks"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6ef993e8",
+        "pos": {
+          "x": 33.5150146,
+          "y": 11.7643232,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Steel Servant Scene/Battle Scene/CamLock Battle"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "658b239c",
+        "pos": {
+          "x": 31.7153568,
+          "y": 10.8532486,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Steel Servant Scene/Battle Scene/Gates"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a8b8876f",
+        "pos": {
+          "x": 32.11626,
+          "y": 12.7991161,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Steel Servant Scene/Abyss Mass Summon"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a1ea9674",
+        "pos": {
+          "x": 33.010807,
+          "y": 10.8645,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Steel Servant Scene/Start Range"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "6636ed4c",
+        "pos": {
+          "x": 33.3801956,
+          "y": 4.869426,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Steel Servant Scene/Battle Scene/Wave 1/Abyss Mass"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "057661d7",
+        "pos": {
+          "x": 116.221085,
+          "y": 33.20279,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Steel Servant Scene/Steel Servant NPC"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "3ac6ef5e",
+        "pos": {
+          "x": 31.5896835,
+          "y": 8.3449955,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Steel Servant Scene/Battle Scene/Wave 1/Abyss Mass",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Dormant"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "8fc7301c",
+        "pos": {
+          "x": 35.1775551,
+          "y": 8.288757,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Steel Servant Scene/Battle Scene/Wave 1/Abyss Mass",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Start Battle"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "df466118",
+        "pos": {
+          "x": 31.28067,
+          "y": 11.7531919,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Steel Servant Scene/Steel Servant NPC"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "65f4facf",
+        "pos": {
+          "x": 32.37899,
+          "y": 11.7643223,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Steel Servant Scene/Battle Scene/CamLocks"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6ef993e8",
+        "pos": {
+          "x": 33.5150146,
+          "y": 11.7643232,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Steel Servant Scene/Battle Scene/CamLock Battle"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "658b239c",
+        "pos": {
+          "x": 31.7153568,
+          "y": 10.8532486,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Steel Servant Scene/Battle Scene/Gates"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a8b8876f",
+        "pos": {
+          "x": 32.11626,
+          "y": 12.7991161,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Steel Servant Scene/Abyss Mass Summon"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a1ea9674",
+        "pos": {
+          "x": 33.010807,
+          "y": 10.8645,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Steel Servant Scene/Start Range"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "6636ed4c",
+        "pos": {
+          "x": 33.3801956,
+          "y": 4.869426,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Steel Servant Scene/Battle Scene/Wave 1/Abyss Mass"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -20.7031231,
+        "y": 3.124998
+      },
+      "block_id": "91f426b9-fa5d-475c-9cea-f0bbe9d681dc",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "6636ed4c",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 168.35936,
+        "y": 201.95311
+      },
+      "block_id": "def88340-bdbc-4fc3-9c1a-acb3b28137a6",
+      "events": {},
+      "vars": {
+        "Target": {
+          "Item1": "91f426b9-fa5d-475c-9cea-f0bbe9d681dc",
+          "Item2": "hp_hook_target"
+        }
+      },
+      "type": "Enemy Control",
+      "config": {
+        "enemy_damage_type": "1",
+        "enemy_hp_amount": "400"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -233.90625,
+        "y": 192.26561
+      },
+      "block_id": "129f7753-888e-4d23-ae59-940ea550effc",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "edcd4cc9-4340-49ef-90b4-99ee1b17c8ac",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -28.8281422,
+        "y": 208.4375
+      },
+      "block_id": "edcd4cc9-4340-49ef-90b4-99ee1b17c8ac",
+      "events": {
+        "Out": [
+          {
+            "Item1": "def88340-bdbc-4fc3-9c1a-acb3b28137a6",
+            "Item2": "Damage"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -157.42186,
+        "y": -228.906235
+      },
+      "block_id": "bbc922bb-a069-41db-8c80-66674907ffb3",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "884995db-4840-4996-9183-2a60bb11b98b",
+            "Item2": "fsm_set_state"
+          },
+          {
+            "Item1": "91f426b9-fa5d-475c-9cea-f0bbe9d681dc",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "3ac6ef5e",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 129.29686,
+        "y": -237.499985
+      },
+      "block_id": "884995db-4840-4996-9183-2a60bb11b98b",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "8fc7301c",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "91f426b9-fa5d-475c-9cea-f0bbe9d681dc",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "6636ed4c",
+        "object_type": "enemy_hook"
+      }
+    }
+  ]
+}

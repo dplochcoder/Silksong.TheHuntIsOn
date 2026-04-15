@@ -1,0 +1,68 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "d3121886",
+        "pos": {
+          "x": 21.5743275,
+          "y": 7.66818476,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "08a3fe90-f56c-40c3-8da2-eb80e081d6fc",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "e981025e-3006-4add-b17f-b3d8adab3a9e",
+            "Item2": "Set"
+          }
+        ],
+        "ZoneExit": [
+          {
+            "Item1": "e981025e-3006-4add-b17f-b3d8adab3a9e",
+            "Item2": "Set"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "d3121886",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 201.5625,
+        "y": 25.3125
+      },
+      "block_id": "e981025e-3006-4add-b17f-b3d8adab3a9e",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "spinnerDefeated",
+        "pd_bool": "True"
+      },
+      "ext": {}
+    }
+  ]
+}

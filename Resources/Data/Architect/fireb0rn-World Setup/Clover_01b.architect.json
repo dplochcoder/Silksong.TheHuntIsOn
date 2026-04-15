@@ -1,0 +1,159 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "5fac57aa",
+        "pos": {
+          "x": 10.7334337,
+          "y": 8.873642,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "0",
+        "trans_collide": "1",
+        "trans_edit_mode_active": "True",
+        "trans_id": "greenPrinceExit",
+        "trans_other_scene": "Clover_01",
+        "trans_other_id": "greenPrinceEntry"
+      }
+    },
+    {
+      "placement": {
+        "id": "bellbeast_child",
+        "pid": "643b4d00",
+        "pos": {
+          "x": 10.9246492,
+          "y": 4.23955441,
+          "z": 0.005
+        },
+        "flipped": true,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "55ebbdb3",
+        "pos": {
+          "x": 8.21393,
+          "y": 4.633226,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "b1c16023",
+        "pos": {
+          "x": 13.3316708,
+          "y": 4.734457,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "294922f7",
+        "pos": {
+          "x": 10.921979,
+          "y": 3.90212059,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "7",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5",
+        "size_height": "0.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_anchor",
+        "pid": "57c452bd",
+        "pos": {
+          "x": 10.8319969,
+          "y": 3.980855,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "anchor_dist": "10",
+        "anchor_start_dist": "0",
+        "anchor_speed": "0",
+        "anchor_rot": "0",
+        "anchor_rot_speed": "0",
+        "anchor_smoothing": "0.5",
+        "anchor_pause_time": "0",
+        "anchor_moving": "True",
+        "anchor_target": "294922f7",
+        "anchor_parent": "643b4d00"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -168.125,
+        "y": -134.0625
+      },
+      "block_id": "6e84c8b3-be70-49a6-b41d-4737f0797708",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "c1a5e15d-d39f-49c5-9dd1-9004dd80176d",
+            "Item2": "transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "294922f7",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": 94.375,
+        "y": -101.25
+      },
+      "block_id": "c1a5e15d-d39f-49c5-9dd1-9004dd80176d",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "5fac57aa",
+        "object_type": "transition_gate"
+      }
+    }
+  ]
+}

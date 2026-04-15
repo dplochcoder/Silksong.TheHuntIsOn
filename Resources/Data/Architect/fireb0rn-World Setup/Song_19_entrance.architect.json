@@ -1,0 +1,82 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0ed5b04e",
+        "pos": {
+          "x": 41.0747833,
+          "y": 8.673527,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Map Machine (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e37bae33",
+        "pos": {
+          "x": 6.131011,
+          "y": 9.91257,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Entrance gate small"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a16c86e5",
+        "pos": {
+          "x": 22.1504822,
+          "y": 95.3771744,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Silk Spool"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7fc3701e",
+        "pos": {
+          "x": 63.2863579,
+          "y": 67.9577255,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall Entrance Secret"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

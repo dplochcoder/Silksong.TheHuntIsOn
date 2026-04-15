@@ -1,0 +1,316 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "3e602af0",
+        "pos": {
+          "x": 48.2152252,
+          "y": 138.855377,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Silk Boss",
+        "fsm_hook_name": "Phase Control",
+        "fsm_hook_state": "Set P6"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "162a7c24",
+        "pos": {
+          "x": 32.13813,
+          "y": 138.518646,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Silk Boss",
+        "fsm_hook_name": "Phase Control",
+        "fsm_hook_state": "Set P2"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "8105a720",
+        "pos": {
+          "x": 35.4787254,
+          "y": 138.529892,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Silk Boss",
+        "fsm_hook_name": "Phase Control",
+        "fsm_hook_state": "Set P3"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "540b4836",
+        "pos": {
+          "x": 38.84181,
+          "y": 138.597382,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Silk Boss",
+        "fsm_hook_name": "Phase Control",
+        "fsm_hook_state": "Set P4"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "8a21076b",
+        "pos": {
+          "x": 42.4860954,
+          "y": 138.64238,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Silk Boss",
+        "fsm_hook_name": "Phase Control",
+        "fsm_hook_state": "Set P5"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "90d5a82d",
+        "pos": {
+          "x": 40.69007,
+          "y": 142.5791,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Boss Scene/Silk Boss"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "90d5a82d",
+        "pos": {
+          "x": 40.69007,
+          "y": 142.5791,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Boss Scene/Silk Boss"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "72c304c3",
+        "pos": {
+          "x": 19.29785,
+          "y": 135.209824,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Boss Scene/Battle Gate"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -362.948151,
+        "y": 21.2758942
+      },
+      "block_id": "74c37266-dc80-44b3-97cc-95d3609b3c14",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "825b7d34-5d19-4f65-b2a4-fa406c5c7b39",
+            "Item2": "Trigger"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 353.879181,
+        "y": -24.9999886
+      },
+      "block_id": "4b1ea638-5fc9-49d1-9e8a-c8150a65d9ce",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "162a7c24",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -53.87929,
+        "y": 99.568924
+      },
+      "block_id": "825b7d34-5d19-4f65-b2a4-fa406c5c7b39",
+      "events": {},
+      "vars": {},
+      "type": "Ordered Events",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":0.0,\"y\":0.0},\"block_id\":\"7bfa146e-9c5f-4567-a0d9-54bcb7c9b8a6\",\"events\":{\"OnTrigger\":[{\"Item1\":\"4b1ea638-5fc9-49d1-9e8a-c8150a65d9ce\",\"Item2\":\"fsm_set_state\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":0.0,\"y\":0.0},\"block_id\":\"2447b2ee-6212-43fd-9abf-42a394afd681\",\"events\":{\"OnTrigger\":[{\"Item1\":\"f74bd24f-7179-4484-8ee0-48c140e2376c\",\"Item2\":\"fsm_set_state\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":15.625,\"y\":-115.0},\"block_id\":\"97a171e0-9e9c-4ac8-99be-9e8effc7538e\",\"events\":{\"OnTrigger\":[{\"Item1\":\"c9f2b87a-87ae-416d-8402-e3f13fb649f6\",\"Item2\":\"fsm_set_state\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":15.625,\"y\":-115.0},\"block_id\":\"78a395a4-3f5d-45c7-9bad-db9f16b2ffe5\",\"events\":{\"OnTrigger\":[{\"Item1\":\"e2cb163d-1e29-45c7-9117-c1320b5f3ac0\",\"Item2\":\"fsm_set_state\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":15.625,\"y\":-115.0},\"block_id\":\"18e22731-192a-4672-91f6-7864564356a9\",\"events\":{\"OnTrigger\":[{\"Item1\":\"47e169a0-f101-41c4-bff3-ff4cbf3dcec6\",\"Item2\":\"fsm_set_state\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 513.3619,
+        "y": -140.948227
+      },
+      "block_id": "f74bd24f-7179-4484-8ee0-48c140e2376c",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "8105a720",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 349.137817,
+        "y": -232.758545
+      },
+      "block_id": "c9f2b87a-87ae-416d-8402-e3f13fb649f6",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "540b4836",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 521.120544,
+        "y": -366.3792
+      },
+      "block_id": "e2cb163d-1e29-45c7-9117-c1320b5f3ac0",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "8a21076b",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 346.982635,
+        "y": -447.4136
+      },
+      "block_id": "47e169a0-f101-41c4-bff3-ff4cbf3dcec6",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "3e602af0",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -285.44812,
+        "y": 4.275858
+      },
+      "block_id": "74c37266-dc80-44b3-97cc-95d3609b3c14",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "9af23a66-9663-44aa-aa92-82e5031fbc0e",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 268.016937,
+        "y": -24.5858173
+      },
+      "block_id": "d84a6cce-8bac-4d63-aab5-459f2bef5241",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "90d5a82d",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -32.1875,
+        "y": -14.375
+      },
+      "block_id": "9af23a66-9663-44aa-aa92-82e5031fbc0e",
+      "events": {
+        "Out": [
+          {
+            "Item1": "d84a6cce-8bac-4d63-aab5-459f2bef5241",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "1"
+      },
+      "ext": {}
+    }
+  ]
+}

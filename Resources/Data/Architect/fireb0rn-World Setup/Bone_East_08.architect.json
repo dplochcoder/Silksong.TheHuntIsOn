@@ -1,0 +1,414 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "magma_rocks",
+        "pid": "89dd7cc1",
+        "pos": {
+          "x": 54.22716,
+          "y": 4.9386816,
+          "z": -0.049999997
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "magma_rocks",
+        "pid": "5fc3a772",
+        "pos": {
+          "x": 45.8374634,
+          "y": 4.96123552,
+          "z": -0.049999997
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "magma_rocks",
+        "pid": "3085e03d",
+        "pos": {
+          "x": 64.42159,
+          "y": 5.07372046,
+          "z": -0.049999997
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "magma_rocks",
+        "pid": "4f4bf501",
+        "pos": {
+          "x": 98.56565,
+          "y": 5.0399704,
+          "z": -0.049999997
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "magma_rocks",
+        "pid": "a1e9bcf2",
+        "pos": {
+          "x": 108.261238,
+          "y": 5.03789139,
+          "z": -0.049999997
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "magma_rocks",
+        "pid": "d416bb76",
+        "pos": {
+          "x": 117.574409,
+          "y": 5.12061644,
+          "z": -0.049999997
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "wind_zone",
+        "pid": "e5c15856",
+        "pos": {
+          "x": 13.193922,
+          "y": 24.207592,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 90.0,
+        "scale": 1.0
+      },
+      "config": {
+        "wind_particles": "True",
+        "wind_speed": "6",
+        "wind_affects_player": "True",
+        "wind_affects_enemies": "False",
+        "wind_affects_projectiles": "False",
+        "wind_colour_r": "1",
+        "wind_colour_g": "1",
+        "wind_colour_b": "1",
+        "wind_colour_a": "1",
+        "size_height": "0.5",
+        "size_width": "3.2"
+      }
+    },
+    {
+      "placement": {
+        "id": "wind_zone",
+        "pid": "606dc697",
+        "pos": {
+          "x": 22.8356018,
+          "y": 20.9760189,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 90.0,
+        "scale": 1.0
+      },
+      "config": {
+        "wind_particles": "True",
+        "wind_speed": "6",
+        "wind_affects_player": "True",
+        "wind_affects_enemies": "False",
+        "wind_affects_projectiles": "False",
+        "wind_colour_r": "1",
+        "wind_colour_g": "1",
+        "wind_colour_b": "1",
+        "wind_colour_a": "1",
+        "size_height": "0.5",
+        "size_width": "2.6"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -471.4037,
+        "y": 40.0239029
+      },
+      "block_id": "54121ca8-4a0e-4e4b-841d-716c74e3b468",
+      "events": {
+        "OnCall": [
+          {
+            "Item1": "172c7219-91d6-45d6-b98a-e2681528d943",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Timer",
+      "config": {
+        "timer_start_delay": "0",
+        "timer_repeat_delay": "1",
+        "timer_rand_delay": "0"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -178.573425,
+        "y": 164.696869
+      },
+      "block_id": "267360bd-5609-4192-ba56-56edff6549dd",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "hasBrolly",
+        "pd_bool": "True"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -287.685242,
+        "y": 47.8943863
+      },
+      "block_id": "172c7219-91d6-45d6-b98a-e2681528d943",
+      "events": {
+        "True": [
+          {
+            "Item1": "8f2361f4-aaa5-4d82-81c1-c76fb95ee805",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "2cdfc0e4-cff9-4904-b81e-af0cb7ce8241",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "26843009-f9fc-40be-9a91-d60a02df402e",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "de16d5a4-7677-4b02-bae1-e158a8f07640",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "bca298ac-4cfc-43aa-990d-3ad84828517f",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "e18e6eb8-bab1-4458-ba0a-8f6299dc3fcc",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "62a8df37-80f7-48bd-9364-156c40b9c5cf",
+            "Item2": "disable"
+          },
+          {
+            "Item1": "318d8e03-70cd-4a1e-b933-ed276d00a0df",
+            "Item2": "disable"
+          }
+        ],
+        "False": [
+          {
+            "Item1": "8f2361f4-aaa5-4d82-81c1-c76fb95ee805",
+            "Item2": "disable"
+          },
+          {
+            "Item1": "2cdfc0e4-cff9-4904-b81e-af0cb7ce8241",
+            "Item2": "disable"
+          },
+          {
+            "Item1": "26843009-f9fc-40be-9a91-d60a02df402e",
+            "Item2": "disable"
+          },
+          {
+            "Item1": "de16d5a4-7677-4b02-bae1-e158a8f07640",
+            "Item2": "disable"
+          },
+          {
+            "Item1": "e18e6eb8-bab1-4458-ba0a-8f6299dc3fcc",
+            "Item2": "disable"
+          },
+          {
+            "Item1": "bca298ac-4cfc-43aa-990d-3ad84828517f",
+            "Item2": "disable"
+          },
+          {
+            "Item1": "62a8df37-80f7-48bd-9364-156c40b9c5cf",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "318d8e03-70cd-4a1e-b933-ed276d00a0df",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {
+        "Check": {
+          "Item1": "267360bd-5609-4192-ba56-56edff6549dd",
+          "Item2": "Value"
+        }
+      },
+      "type": "If",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 15.2069035,
+        "y": -351.137848
+      },
+      "block_id": "7970c71b-938f-418b-b508-d38606bc050f",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "f0d77671",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 607.499756,
+        "y": 64.49997
+      },
+      "block_id": "2cdfc0e4-cff9-4904-b81e-af0cb7ce8241",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "89dd7cc1",
+        "object_type": "magma_rocks"
+      }
+    },
+    {
+      "pos": {
+        "x": 601.999756,
+        "y": -92.49998
+      },
+      "block_id": "26843009-f9fc-40be-9a91-d60a02df402e",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "5fc3a772",
+        "object_type": "magma_rocks"
+      }
+    },
+    {
+      "pos": {
+        "x": 600.499756,
+        "y": 218.999908
+      },
+      "block_id": "8f2361f4-aaa5-4d82-81c1-c76fb95ee805",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "3085e03d",
+        "object_type": "magma_rocks"
+      }
+    },
+    {
+      "pos": {
+        "x": 770.4997,
+        "y": 258.4999
+      },
+      "block_id": "de16d5a4-7677-4b02-bae1-e158a8f07640",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "4f4bf501",
+        "object_type": "magma_rocks"
+      }
+    },
+    {
+      "pos": {
+        "x": 770.9997,
+        "y": 94.99996
+      },
+      "block_id": "bca298ac-4cfc-43aa-990d-3ad84828517f",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "a1e9bcf2",
+        "object_type": "magma_rocks"
+      }
+    },
+    {
+      "pos": {
+        "x": 765.499756,
+        "y": -73.9999847
+      },
+      "block_id": "e18e6eb8-bab1-4458-ba0a-8f6299dc3fcc",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "d416bb76",
+        "object_type": "magma_rocks"
+      }
+    },
+    {
+      "pos": {
+        "x": 70.9375,
+        "y": 201.875
+      },
+      "block_id": "62a8df37-80f7-48bd-9364-156c40b9c5cf",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "e5c15856",
+        "object_type": "wind_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 53.75,
+        "y": -100.625
+      },
+      "block_id": "318d8e03-70cd-4a1e-b933-ed276d00a0df",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "606dc697",
+        "object_type": "wind_zone"
+      }
+    }
+  ]
+}

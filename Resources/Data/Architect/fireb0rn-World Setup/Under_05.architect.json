@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "45b84518",
+        "pos": {
+          "x": 5.55924034,
+          "y": 58.02303,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Understore Big Plate Gate"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

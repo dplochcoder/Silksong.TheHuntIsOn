@@ -1,0 +1,26 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "4d545bf7",
+        "pos": {
+          "x": 20.5230751,
+          "y": 8.385023,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_id": "MarrowSpawnBellshrine",
+        "trans_collide": "1"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

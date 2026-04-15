@@ -1,0 +1,215 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "updraft_region",
+        "pid": "051c355d",
+        "pos": {
+          "x": 123.76973,
+          "y": 6.565244,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "updraft_width": "1.5",
+        "updraft_height": "9"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e57d7c5d",
+        "pos": {
+          "x": 136.011612,
+          "y": 17.0606213,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Group/Wind Rock (10)/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "aee77671",
+        "pos": {
+          "x": 135.966629,
+          "y": 16.04832,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Vine Cluster Control/Wind Rock (8)/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "025180a4",
+        "pos": {
+          "x": 136.933945,
+          "y": 16.014576,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall_norck"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "81906b0a",
+        "pos": {
+          "x": 137.0014,
+          "y": 16.95939,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Group/Wind Rock (9)/"
+      }
+    },
+    {
+      "placement": {
+        "id": "updraft_region",
+        "pid": "bf1be621",
+        "pos": {
+          "x": 81.4715958,
+          "y": 3.99277067,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "updraft_width": "1.5",
+        "updraft_height": "7"
+      }
+    },
+    {
+      "placement": {
+        "id": "updraft_region",
+        "pid": "0b62eaf4",
+        "pos": {
+          "x": 103.216812,
+          "y": 3.57371521,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "updraft_width": "1.5",
+        "updraft_height": "10"
+      }
+    },
+    {
+      "placement": {
+        "id": "fung_plat_float_02",
+        "pid": "f434f90c",
+        "pos": {
+          "x": 103.441765,
+          "y": 3.427494,
+          "z": -0.09
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "fung_plat_float_02",
+        "pid": "ae0555e7",
+        "pos": {
+          "x": 123.825867,
+          "y": 6.516093,
+          "z": -0.09
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ea1e67c1",
+        "pos": {
+          "x": 92.82009,
+          "y": 16.2672977,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Group/Heart Piece/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f7505943",
+        "pos": {
+          "x": 95.71505,
+          "y": 26.9069519,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Group/DropBomb Rock/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

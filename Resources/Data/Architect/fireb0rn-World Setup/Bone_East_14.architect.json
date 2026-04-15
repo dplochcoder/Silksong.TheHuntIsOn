@@ -1,0 +1,177 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "77628a2f",
+        "pos": {
+          "x": 14.5471554,
+          "y": 9.683893,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5b4d4f6a",
+        "pos": {
+          "x": 21.0033875,
+          "y": 10.0325737,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "78c01cb1",
+        "pos": {
+          "x": 49.1439323,
+          "y": 42.3598938,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9f63859e",
+        "pos": {
+          "x": 42.64614,
+          "y": 41.628788,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8f37edef",
+        "pos": {
+          "x": 43.5909538,
+          "y": 41.0214043,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "05c2f93b",
+        "pos": {
+          "x": 119.1309,
+          "y": 58.5329628,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Explode Floor Scene/bone_bridge_dust (1)/Explode Floor/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ea485279",
+        "pos": {
+          "x": 135.728851,
+          "y": 9.732819,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall (4)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "14ecf453",
+        "pos": {
+          "x": 128.7342,
+          "y": 49.1633759,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall (3)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b0300c8b",
+        "pos": {
+          "x": 118.916374,
+          "y": 71.33327,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Explode Floor Scene/DropBomb Rock (2)/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

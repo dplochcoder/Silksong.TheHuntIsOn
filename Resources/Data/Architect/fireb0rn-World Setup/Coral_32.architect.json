@@ -1,0 +1,229 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "bbf16f52",
+        "pos": {
+          "x": 132.083954,
+          "y": 110.035751,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Coral Crust Wall Tall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c50b8d71",
+        "pos": {
+          "x": 76.81224,
+          "y": 9.187428,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "tool_metal_deposit"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "853d9a09",
+        "pos": {
+          "x": 155.330109,
+          "y": 91.49502,
+          "z": 0.0
+        },
+        "flipped": true,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "0",
+        "trans_collide": "2",
+        "trans_edit_mode_active": "True",
+        "trans_id": "fleaCaravan3",
+        "trans_other_id": "fleaCaravan4",
+        "trans_other_scene": "Aqueduct_05"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "8d047062",
+        "pos": {
+          "x": 145.153259,
+          "y": 90.5399,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_width": "0.1",
+        "size_height": "3"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "6cc9c5d5",
+        "pos": {
+          "x": 168.751129,
+          "y": 90.3262,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_width": "0.1",
+        "size_height": "3"
+      }
+    },
+    {
+      "placement": {
+        "id": "bellbeast_child",
+        "pid": "73ff53da",
+        "pos": {
+          "x": 150.47345,
+          "y": 87.04184,
+          "z": 0.005
+        },
+        "flipped": true,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "2a287696",
+        "pos": {
+          "x": 150.585953,
+          "y": 86.83937,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "7",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5",
+        "size_height": "0.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_anchor",
+        "pid": "0724e54d",
+        "pos": {
+          "x": 150.450958,
+          "y": 86.65941,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "anchor_dist": "10",
+        "anchor_start_dist": "0",
+        "anchor_speed": "0",
+        "anchor_rot": "0",
+        "anchor_rot_speed": "0",
+        "anchor_smoothing": "0.5",
+        "anchor_pause_time": "0",
+        "anchor_moving": "True",
+        "anchor_target": "2a287696",
+        "anchor_parent": "73ff53da"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -269.6875,
+        "y": -153.4375
+      },
+      "block_id": "164efd30-d0d9-4a67-be56-7bd5033fc7ba",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "d7d3ebbc-cf14-42c3-a23f-16cec67fe982",
+            "Item2": "Display"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "2a287696",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": 186.875,
+        "y": -154.375
+      },
+      "block_id": "964b0dae-03c9-4bdc-bd09-2322ba20ef73",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "853d9a09",
+        "object_type": "transition_gate"
+      }
+    },
+    {
+      "pos": {
+        "x": -40.0,
+        "y": -143.75
+      },
+      "block_id": "d7d3ebbc-cf14-42c3-a23f-16cec67fe982",
+      "events": {
+        "Yes": [
+          {
+            "Item1": "964b0dae-03c9-4bdc-bd09-2322ba20ef73",
+            "Item2": "transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Choice Display",
+      "config": {
+        "choice_text": "Take the Beastling to Fleatopia?",
+        "choice_requirement": "0",
+        "choice_cost": "0",
+        "choice_take_item": "False"
+      },
+      "ext": {}
+    }
+  ]
+}

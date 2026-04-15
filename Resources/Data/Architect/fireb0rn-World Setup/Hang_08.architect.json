@@ -1,0 +1,348 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "05c3d709",
+        "pos": {
+          "x": 7.13408661,
+          "y": 39.48371,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f8a8ce3e",
+        "pos": {
+          "x": 9.311827,
+          "y": 90.23476,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "hang_spike_gate (3)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "bdc8a23c",
+        "pos": {
+          "x": 8.395794,
+          "y": 90.0792,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "hang_spike_gate (4)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0c2fd342",
+        "pos": {
+          "x": 7.410625,
+          "y": 90.0792,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "hang_spike_gate (5)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8fa1fee7",
+        "pos": {
+          "x": 7.566177,
+          "y": 90.97795,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "hang_spike_gate (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "797b35fe",
+        "pos": {
+          "x": 8.551346,
+          "y": 90.8051147,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "hang_spike_gate (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "29113b9f",
+        "pos": {
+          "x": 9.225408,
+          "y": 90.99524,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "hang_spike_gate (6)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1e609d56",
+        "pos": {
+          "x": 7.6353116,
+          "y": 91.6347351,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "hang_spike_gate (7)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d2963df2",
+        "pos": {
+          "x": 8.499494,
+          "y": 91.6865845,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "hang_spike_gate (8)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d79b4bb2",
+        "pos": {
+          "x": 9.501946,
+          "y": 91.87671,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "hang_spike_gate (9)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9a8ab82d",
+        "pos": {
+          "x": 10.0377407,
+          "y": 91.067215,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "hang_spike_gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8e3c54a1",
+        "pos": {
+          "x": 20.9782944,
+          "y": 14.7142563,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "hang_spike_gate (10)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "cb5cc743",
+        "pos": {
+          "x": 21.7214928,
+          "y": 14.6451216,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "hang_spike_gate (11)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b7ebf87e",
+        "pos": {
+          "x": 22.5165386,
+          "y": 14.575985,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "hang_spike_gate (12)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "21ffe18b",
+        "pos": {
+          "x": 23.2424488,
+          "y": 14.4031487,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "hang_spike_gate (13)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "cb279947",
+        "pos": {
+          "x": 23.9510784,
+          "y": 14.2994461,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "hang_spike_gate (14)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6f8619cd",
+        "pos": {
+          "x": 22.8794937,
+          "y": 13.1241589,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "hang_spike_gate (15)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9ba70a1b",
+        "pos": {
+          "x": 19.8752975,
+          "y": 196.651886,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Chest Scene/Chest/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

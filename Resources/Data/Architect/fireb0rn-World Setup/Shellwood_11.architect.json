@@ -1,0 +1,348 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "b6d5e27b",
+        "pos": {
+          "x": 91.68542,
+          "y": 11.3600063,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Bloom Puncher (3)"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "63381bd0",
+        "pos": {
+          "x": 46.7429848,
+          "y": 22.678894,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Bloom Puncher"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "2a6d258d",
+        "pos": {
+          "x": 51.4558067,
+          "y": 27.121151,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Bloom Puncher (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "a1cc5d02",
+        "pos": {
+          "x": 17.7852821,
+          "y": 17.53127,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Bloom Puncher (4)"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "758645c2",
+        "pos": {
+          "x": 4.535405,
+          "y": 13.6622181,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Bloom Puncher (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "bf0b93d1",
+        "pos": {
+          "x": 28.25875,
+          "y": 11.5026436,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Flower Drifter"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "1b852d03",
+        "pos": {
+          "x": 69.30864,
+          "y": 24.288866,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Flower Drifter (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8257fe04",
+        "pos": {
+          "x": 52.0229,
+          "y": 13.65778,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Shellwood Twig Wall start"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "eab2dc3f",
+        "pos": {
+          "x": 21.3243027,
+          "y": 22.3271179,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Shellwood Twig Wall (3)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "011d750d",
+        "pos": {
+          "x": 55.20445,
+          "y": 32.7719421,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Shellwood Twig Wall top"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 169.375,
+        "y": -308.125
+      },
+      "block_id": "4e38cbcd-e3cf-4662-b1c7-b58abcfa4cb7",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "bf0b93d1",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 128.4375,
+        "y": -273.4375
+      },
+      "block_id": "9ba0e342-8951-4736-9d59-4807b5a7e33e",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "a1cc5d02",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 101.25,
+        "y": -248.75
+      },
+      "block_id": "17ba51fb-0309-4897-b524-e6f5e7571335",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "758645c2",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 73.4375,
+        "y": -221.25
+      },
+      "block_id": "9283fe3b-5ef9-4478-9111-3aad0487a219",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "63381bd0",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 42.1875,
+        "y": -195.625
+      },
+      "block_id": "f6ab182e-63f2-4525-b1aa-fd764e4a646d",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "2a6d258d",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 16.875,
+        "y": -171.5625
+      },
+      "block_id": "503f7cd1-d95a-465f-8101-43ba1b8868f4",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "2a6d258d",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -4.6875,
+        "y": -157.1875
+      },
+      "block_id": "bfca91e3-7d17-4507-908a-c1a7af95bdd6",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "b6d5e27b",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 210.3125,
+        "y": -357.1875
+      },
+      "block_id": "91257739-2ad4-49e4-9a65-b20af4e6ee34",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "1b852d03",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -321.5625,
+        "y": 9.0625
+      },
+      "block_id": "cb946cf9-d77d-456c-899d-7ee10337e574",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "bfca91e3-7d17-4507-908a-c1a7af95bdd6",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "503f7cd1-d95a-465f-8101-43ba1b8868f4",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "f6ab182e-63f2-4525-b1aa-fd764e4a646d",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "9283fe3b-5ef9-4478-9111-3aad0487a219",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "17ba51fb-0309-4897-b524-e6f5e7571335",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "9ba0e342-8951-4736-9d59-4807b5a7e33e",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "4e38cbcd-e3cf-4662-b1c7-b58abcfa4cb7",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "91257739-2ad4-49e4-9a65-b20af4e6ee34",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

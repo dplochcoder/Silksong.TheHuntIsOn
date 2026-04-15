@@ -1,0 +1,142 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "a509af34",
+        "pos": {
+          "x": 22.8756046,
+          "y": 32.8451042,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "Event Control/Battle Cloakless Scene"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "4a5824df",
+        "pos": {
+          "x": 23.9984322,
+          "y": 32.7776756,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Event Control/Battle Cloakless Scene/Gates"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "09c54263",
+        "pos": {
+          "x": 25.51687,
+          "y": 32.9014168,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Event Control/Battle Cloakless Scene/Jail Gate Door/"
+      }
+    },
+    {
+      "placement": {
+        "id": "wardenfly",
+        "pid": "3425d70e",
+        "pos": {
+          "x": 18.2095013,
+          "y": 21.30929,
+          "z": 0.008
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_hp_scale": "True",
+        "enemy_z": "0",
+        "enemy_hp": "9999",
+        "invulnerable": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "guardfly",
+        "pid": "0ca08464",
+        "pos": {
+          "x": 31.8080788,
+          "y": 20.58943,
+          "z": 0.006
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_hp_scale": "True",
+        "enemy_z": "0",
+        "enemy_hp": "9999",
+        "invulnerable": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "b2de0bda",
+        "pos": {
+          "x": 39.6951866,
+          "y": 21.0280972,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_height": "2"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "23a2c519",
+        "pos": {
+          "x": 25.5199852,
+          "y": 29.25025,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_height": "0.2",
+        "size_width": "2"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

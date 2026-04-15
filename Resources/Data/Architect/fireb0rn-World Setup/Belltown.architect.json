@@ -1,0 +1,139 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "934befe0",
+        "pos": {
+          "x": 64.7141,
+          "y": 9.826069,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Cutscene States"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "bac27e3d",
+        "pos": {
+          "x": 60.64636,
+          "y": 67.46601,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "23d7cdfe",
+        "pos": {
+          "x": 98.6181259,
+          "y": 24.0326557,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Mapper Control"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "046a5a2a",
+        "pos": {
+          "x": 70.79601,
+          "y": 12.3626118,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Town States"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e8aa88d8",
+        "pos": {
+          "x": 72.87344,
+          "y": 11.7631083,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pilgrim Fisher NPC Walker"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9cb6f021",
+        "pos": {
+          "x": 66.57069,
+          "y": 10.8204689,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States Thread Only Variant/Normal World/Pilgrim Crowds/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7e43f47b",
+        "pos": {
+          "x": 42.0177345,
+          "y": 24.1654911,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Couriers States"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

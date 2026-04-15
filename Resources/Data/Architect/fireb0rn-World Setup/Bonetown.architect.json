@@ -1,0 +1,230 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "386f137d",
+        "pos": {
+          "x": 11.8811836,
+          "y": 13.2886219,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "bone_gate_02004"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "b0db37fe",
+        "pos": {
+          "x": 205.979584,
+          "y": 64.5252762,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Black Thread States/Normal World/Bonetown Lift Sequence/Bonetown Lift",
+        "fsm_hook_name": "Lift Control",
+        "fsm_hook_state": "Activate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "07cc203d",
+        "pos": {
+          "x": 207.5129,
+          "y": 67.62975,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Bone Lever/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "56a4ed32",
+        "pos": {
+          "x": 274.753937,
+          "y": 12.4223042,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Churchkeeper Intro Scene"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "262e8f8b",
+        "pos": {
+          "x": 275.777618,
+          "y": 12.3885679,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Mapper Control"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a4585443",
+        "pos": {
+          "x": 276.801239,
+          "y": 12.3098354,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Bonechurch_Shop/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5c381621",
+        "pos": {
+          "x": 278.511,
+          "y": 12.1523685,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/bonebottom_quest_board/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "044b5c4d",
+        "pos": {
+          "x": 246.079071,
+          "y": 8.908188,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Generic Pilgrim Control/Generic Pilgrim Round/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8dcb4927",
+        "pos": {
+          "x": 266.7003,
+          "y": 50.77211,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Aspid Collector (3)/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "4ea3b914",
+        "pos": {
+          "x": 244.945663,
+          "y": 8.361859,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Bonetown Resident/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 17.0542164,
+        "y": 4.651142
+      },
+      "block_id": "e612f1f2-0ddf-4b4e-afec-89f00b76d8ac",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "b0db37fe",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -233.134842,
+        "y": 13.9163742
+      },
+      "block_id": "f5255c0e-1b41-47e6-9a75-183219e5a8b9",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "e612f1f2-0ddf-4b4e-afec-89f00b76d8ac",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

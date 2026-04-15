@@ -1,0 +1,42 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "1969803b",
+        "pos": {
+          "x": 53.7866325,
+          "y": 15.1630411,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "0",
+        "trans_collide": "2",
+        "trans_edit_mode_active": "True",
+        "trans_id": "fleaCaravan4"
+      }
+    },
+    {
+      "placement": {
+        "id": "bellbeast_child",
+        "pid": "e2de7124",
+        "pos": {
+          "x": 59.0045471,
+          "y": 10.1864214,
+          "z": 0.005
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

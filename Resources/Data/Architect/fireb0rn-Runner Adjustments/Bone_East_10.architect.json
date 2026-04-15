@@ -1,0 +1,181 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "7c9f4c39-4c7ea5c1",
+        "pos": {
+          "x": 75.69404,
+          "y": 5.825566,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "0",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "2d6d892a-4c7ea5c1",
+        "pos": {
+          "x": 75.46904,
+          "y": 10.673336,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "2",
+        "component_hook_target": "Black Thread States Thread Only Variant/Normal World/toll door interactible",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "2056b447-4c7ea5c1",
+        "pos": {
+          "x": 72.18788,
+          "y": 10.7209129,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "1",
+        "component_hook_target": "Black Thread States Thread Only Variant/Normal World/toll door interactible",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "3d71b07f-4c7ea5c1",
+        "pos": {
+          "x": 80.94673,
+          "y": 8.142612,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Black Thread States Thread Only Variant/Normal World/toll door interactible",
+        "fsm_hook_state": "Sequence Animation",
+        "fsm_hook_name": "Unlock Behaviour"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 7.327584,
+        "y": 154.3103
+      },
+      "block_id": "1999a69e-5d93-47bb-99b7-71d25ca1a228",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "2056b447-4c7ea5c1",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": 3.87930918,
+        "y": 4.7413826
+      },
+      "block_id": "cf8c9da4-cc98-490f-9b27-45e1e217aa52",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "2d6d892a-4c7ea5c1",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": -240.517166,
+        "y": -49.5689468
+      },
+      "block_id": "cfdb87d9-19ea-437a-9489-460698841694",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "cf8c9da4-cc98-490f-9b27-45e1e217aa52",
+            "Item2": "component_hook_apply"
+          },
+          {
+            "Item1": "29f4175b-e961-427d-aaad-1db62031b532",
+            "Item2": "fsm_set_state"
+          },
+          {
+            "Item1": "cfdb87d9-19ea-437a-9489-460698841694",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7c9f4c39-4c7ea5c1",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": -3.01724029,
+        "y": -187.930984
+      },
+      "block_id": "29f4175b-e961-427d-aaad-1db62031b532",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "3d71b07f-4c7ea5c1",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -225.851257,
+        "y": 89.69826
+      },
+      "block_id": "c53b2ff9-8019-4a10-b9d9-b86fe1316cae",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "1999a69e-5d93-47bb-99b7-71d25ca1a228",
+            "Item2": "component_hook_apply"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

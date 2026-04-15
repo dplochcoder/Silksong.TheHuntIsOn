@@ -1,0 +1,82 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c2765bf6",
+        "pos": {
+          "x": 21.63496,
+          "y": 27.55643,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Whole Scene/song_trap_door/Door/Tilt Plat/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a520b790",
+        "pos": {
+          "x": 21.4207382,
+          "y": 10.7391958,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States Thread Only Variant/Normal World/Boss Scene/Mask/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5c8b19e7",
+        "pos": {
+          "x": 22.0344086,
+          "y": 21.3611755,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Whole Scene/Song_lever_side/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "25944731",
+        "pos": {
+          "x": 52.6879158,
+          "y": 8.660469,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States Thread Only Variant/Normal World/Boss Scene/Bell Bench/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

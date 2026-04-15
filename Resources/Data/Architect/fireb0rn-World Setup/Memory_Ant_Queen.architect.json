@@ -1,0 +1,159 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "bellbeast_child",
+        "pid": "93a01900",
+        "pos": {
+          "x": 21.1962738,
+          "y": 20.8572025,
+          "z": 0.005
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "e49fb86d",
+        "pos": {
+          "x": 24.52468,
+          "y": 21.4118328,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "9dccef34",
+        "pos": {
+          "x": 14.97686,
+          "y": 21.5109558,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "065b395e",
+        "pos": {
+          "x": 21.2888489,
+          "y": 21.0321121,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "7",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5",
+        "size_height": "0.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "be46b313",
+        "pos": {
+          "x": 20.0174141,
+          "y": 26.2431469,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "0",
+        "trans_collide": "2",
+        "trans_edit_mode_active": "True",
+        "trans_other_id": "karmEntry",
+        "trans_other_scene": "Ant_Queen",
+        "trans_id": "karmExit"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_anchor",
+        "pid": "06a9605f",
+        "pos": {
+          "x": 21.2406235,
+          "y": 20.64658,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "anchor_dist": "10",
+        "anchor_start_dist": "0",
+        "anchor_speed": "0",
+        "anchor_rot": "0",
+        "anchor_rot_speed": "0",
+        "anchor_smoothing": "0.5",
+        "anchor_pause_time": "0",
+        "anchor_moving": "True",
+        "anchor_target": "065b395e",
+        "anchor_parent": "93a01900"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -2.02702713,
+        "y": -0.3378315
+      },
+      "block_id": "e3d4e800-e6a7-45e0-9dff-2ca65fb6899c",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "07eb03a2-1631-474d-9bcd-9eb03df3553b",
+            "Item2": "transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "065b395e",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": 239.527039,
+        "y": -2.36486053
+      },
+      "block_id": "07eb03a2-1631-474d-9bcd-9eb03df3553b",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "be46b313",
+        "object_type": "transition_gate"
+      }
+    }
+  ]
+}

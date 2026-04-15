@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "683ef270",
+        "pos": {
+          "x": 30.6042728,
+          "y": 24.7891312,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Rosary Thief Control/Flea Rescue Scene/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

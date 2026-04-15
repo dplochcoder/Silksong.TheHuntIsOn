@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "cba49332",
+        "pos": {
+          "x": 26.1504135,
+          "y": 9.566331,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Group/Collectable Item Pickup (1)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

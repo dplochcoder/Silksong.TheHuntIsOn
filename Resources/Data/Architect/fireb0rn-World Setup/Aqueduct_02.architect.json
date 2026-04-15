@@ -1,0 +1,101 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a44050c1",
+        "pos": {
+          "x": 6.22285748,
+          "y": 7.75800037,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "4345c846",
+        "pos": {
+          "x": 22.9370651,
+          "y": 46.34376,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "swamp_barnacle_vine_breakable (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "37b22ee3",
+        "pos": {
+          "x": 21.6323261,
+          "y": 45.7701263,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "swamp_barnacle_vine_breakable"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "14b30bb8",
+        "pos": {
+          "x": 19.51774,
+          "y": 47.9297,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "right_break_gate/Closed/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "73531771",
+        "pos": {
+          "x": 21.1149254,
+          "y": 47.9746933,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "right_break_gate/Open/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

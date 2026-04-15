@@ -1,0 +1,256 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "dbec6a0d",
+        "pos": {
+          "x": 34.1493874,
+          "y": 49.8925934,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Battle Scene/Gates/Top Mask"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "a8c7b62d",
+        "pos": {
+          "x": 41.0257263,
+          "y": 51.1429443,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Battle Scene/Wave 1/Farmer Scissors (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "greymoor_balloon_small",
+        "pid": "c8b718e6",
+        "pos": {
+          "x": 33.16987,
+          "y": 42.8451,
+          "z": 0.00700008869
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7eb8dcc8",
+        "pos": {
+          "x": 37.0850677,
+          "y": 42.32141,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Battle Scene/Gates/drop bridge"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2cfa9cbe",
+        "pos": {
+          "x": 37.1187973,
+          "y": 30.4212456,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Battle Scene/greymoor_flip_bridge (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "greymoor_flip_bridge",
+        "pid": "ef6ad610",
+        "pos": {
+          "x": 37.9961243,
+          "y": 30.4510345,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 180.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "greymoor_flip_bridge",
+        "pid": "789c43c2",
+        "pos": {
+          "x": 37.9623833,
+          "y": 42.42422,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 180.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "dock_plat_01",
+        "pid": "49d6c398",
+        "pos": {
+          "x": 36.893837,
+          "y": 36.4275627,
+          "z": -0.05
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "d058bb7c",
+        "pos": {
+          "x": 37.1412659,
+          "y": 36.382637,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_width": "8",
+        "size_height": "4"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9bcde4e1",
+        "pos": {
+          "x": 31.0562134,
+          "y": 46.23722,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Battle Scene/CamLocks",
+        "start_active": "False"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 35.98485,
+        "y": -25.7575817
+      },
+      "block_id": "80473b71-345a-464e-b677-08adeeb7c85e",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "a8c7b62d",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -260.587128,
+        "y": 14.80114
+      },
+      "block_id": "56e5e40c-d892-4758-9781-c9cd39d5ef46",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "80473b71-345a-464e-b677-08adeeb7c85e",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 224.242447,
+        "y": 201.1364
+      },
+      "block_id": "9e1d2901-f8b7-4b3c-ba9e-80da848e2f4f",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "fb98f7f6-871a-455f-9db0-5e2c46db7bdb",
+            "Item2": "disable"
+          }
+        ],
+        "ZoneExit": [
+          {
+            "Item1": "fb98f7f6-871a-455f-9db0-5e2c46db7bdb",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "d058bb7c",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 456.060669,
+        "y": 218.181854
+      },
+      "block_id": "fb98f7f6-871a-455f-9db0-5e2c46db7bdb",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "9bcde4e1",
+        "object_type": "object_remover"
+      }
+    }
+  ]
+}

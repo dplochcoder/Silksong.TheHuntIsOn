@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e42ee22f",
+        "pos": {
+          "x": 24.9254646,
+          "y": 11.8145733,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "dock_steam_door"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

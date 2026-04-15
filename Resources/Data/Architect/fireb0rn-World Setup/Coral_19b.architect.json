@@ -1,0 +1,101 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "49d792ae",
+        "pos": {
+          "x": 94.87402,
+          "y": 111.577545,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Encounter Scene Control/Lace Meet/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "36b6ef6a",
+        "pos": {
+          "x": 67.01277,
+          "y": 119.700867,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Encounter Scene Control/Lace Meet/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b8f4f068",
+        "pos": {
+          "x": 96.93078,
+          "y": 117.021904,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Encounter Scene Control/Lace Meet/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "170a0e9b",
+        "pos": {
+          "x": 96.7579346,
+          "y": 115.725632,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Encounter Scene Control/Lace Meet/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "3856fc6d",
+        "pos": {
+          "x": 75.58547,
+          "y": 109.088707,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Heart Piece"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

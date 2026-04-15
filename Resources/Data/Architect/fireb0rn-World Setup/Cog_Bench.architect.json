@@ -1,0 +1,65 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6ebadeb8",
+        "pos": {
+          "x": 22.6091747,
+          "y": 14.8097391,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "cog_lever"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "58a1505b",
+        "pos": {
+          "x": 26.3195953,
+          "y": 30.23131,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Group"
+      }
+    },
+    {
+      "placement": {
+        "id": "bell_bench",
+        "pid": "963fb0e0",
+        "pos": {
+          "x": 24.1735973,
+          "y": 9.376791,
+          "z": 0.009
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "bench_spawn": "True",
+        "bench_offset_x": "0",
+        "bench_offset_y": "0",
+        "bench_offset_z": "0"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9c55fa78",
+        "pos": {
+          "x": 84.78862,
+          "y": 20.6811886,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Moss Vine Cluster (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "506687d4",
+        "pos": {
+          "x": 74.90595,
+          "y": 20.2987652,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Moss Vine Cluster"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

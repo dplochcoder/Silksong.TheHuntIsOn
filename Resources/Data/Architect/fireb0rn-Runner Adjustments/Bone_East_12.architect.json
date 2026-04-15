@@ -1,0 +1,155 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "cf4c2e07",
+        "pos": {
+          "x": 73.34708,
+          "y": 9.835226,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Boss Scene/Lace Boss1"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "7c9097a8",
+        "pos": {
+          "x": 76.9013748,
+          "y": 9.786564,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_state": "Open",
+        "fsm_hook_name": "BG Control",
+        "fsm_hook_target": "Boss Scene/Battle Gates/Battle Gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "54c4c1e8",
+        "pos": {
+          "x": 80.77482,
+          "y": 13.441823,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Lace Boss1",
+        "fsm_hook_state": "Encountered?",
+        "fsm_hook_name": "Control"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "0d7bac52",
+        "pos": {
+          "x": 84.14916,
+          "y": 13.441823,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Lace Boss1",
+        "fsm_hook_state": "Refight",
+        "fsm_hook_name": "Control"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "9e9dbcec-a7fb-4a78-8be6-b0845b789f93",
+      "events": {
+        "OnDeath": [
+          {
+            "Item1": "372492e6-840f-4b07-8d5f-0bebbc19a00d",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "cf4c2e07",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 274.9999,
+        "y": 6.896553
+      },
+      "block_id": "372492e6-840f-4b07-8d5f-0bebbc19a00d",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7c9097a8",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 114.2241,
+        "y": -231.034409
+      },
+      "block_id": "a29eb9d9-fe14-44ee-a578-be2a1845c1c6",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "65870b13-dd62-4abb-a4a6-3c28f9dae18d",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "54c4c1e8",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 340.94812,
+        "y": -214.6551
+      },
+      "block_id": "65870b13-dd62-4abb-a4a6-3c28f9dae18d",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "0d7bac52",
+        "object_type": "fsm_hook"
+      }
+    }
+  ]
+}

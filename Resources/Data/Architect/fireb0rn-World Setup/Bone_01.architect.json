@@ -1,0 +1,101 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "79a76f43",
+        "pos": {
+          "x": 67.38636,
+          "y": 12.0224085,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Great Bone Gate Scene"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "14e951ef",
+        "pos": {
+          "x": 68.5334854,
+          "y": 12.3492041,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Battle Scene/End Scene/Secret Mask"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7b06cdf5",
+        "pos": {
+          "x": 125.2643,
+          "y": 56.3101921,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "521c512d",
+        "pos": {
+          "x": 90.5852,
+          "y": 53.2051544,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Battle Scene/Collapser Small (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "3575be3f",
+        "pos": {
+          "x": 105.302734,
+          "y": 69.9286346,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "Chain Plat Drop/Chain Plat Lever/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

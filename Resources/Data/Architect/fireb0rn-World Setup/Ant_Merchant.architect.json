@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e9b691a0",
+        "pos": {
+          "x": 18.57073,
+          "y": 17.8836746,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "_NPCs"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

@@ -1,0 +1,173 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0e397916",
+        "pos": {
+          "x": 4.31623173,
+          "y": 14.2020044,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Vine Wall Shortcut"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a50e11bf",
+        "pos": {
+          "x": 12.8301525,
+          "y": 124.563,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Understore Lift Scene/Understore_lift_wreckage/"
+      }
+    },
+    {
+      "placement": {
+        "id": "fung_plat_float_02",
+        "pid": "291f60ec",
+        "pos": {
+          "x": 17.8318615,
+          "y": 8.44181,
+          "z": -0.09
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "fung_plat_float_02",
+        "pid": "46fc71ed",
+        "pos": {
+          "x": 15.3430176,
+          "y": 8.459094,
+          "z": -0.09
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "fung_plat_float_02",
+        "pid": "2324f80d",
+        "pos": {
+          "x": 12.9405909,
+          "y": 8.47637749,
+          "z": -0.09
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "coloured_line",
+        "pid": "055ad38a",
+        "pos": {
+          "x": 22.7293243,
+          "y": 9.094193,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "point_id": "1",
+        "line_width": "0.2",
+        "line_red": "1",
+        "line_green": "1",
+        "line_blue": "1",
+        "line_alpha": "0",
+        "obj_layer": "0",
+        "obj_z": "0",
+        "collider_type": "2"
+      }
+    },
+    {
+      "placement": {
+        "id": "coloured_line",
+        "pid": "7dc289b4",
+        "pos": {
+          "x": 26.9896049,
+          "y": 8.988015,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "point_id": "1",
+        "line_width": "0.2",
+        "line_red": "1",
+        "line_green": "1",
+        "line_blue": "1",
+        "line_alpha": "0",
+        "obj_layer": "0",
+        "obj_z": "0",
+        "collider_type": "2"
+      }
+    },
+    {
+      "placement": {
+        "id": "camera_border",
+        "pid": "5636c479",
+        "pos": {
+          "x": 21.0037174,
+          "y": 15.02823,
+          "z": 0.1
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "camera_border_type": "3",
+        "camera_border_mode": "1",
+        "start_active": "True"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

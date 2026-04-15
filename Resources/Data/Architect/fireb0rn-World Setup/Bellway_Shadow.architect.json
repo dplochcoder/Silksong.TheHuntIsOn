@@ -1,0 +1,120 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "fa6f5c74",
+        "pos": {
+          "x": 53.0370064,
+          "y": 25.911726,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "2",
+        "trans_collide": "1",
+        "trans_id": "BilewaterStag"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "33a84210",
+        "pos": {
+          "x": 45.7405167,
+          "y": 26.2439766,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Bone Beast NPC",
+        "fsm_hook_name": "Interaction",
+        "fsm_hook_state": "Appear Delay"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "7780bedc",
+        "pos": {
+          "x": 49.43484,
+          "y": 26.0640163,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Bone Beast NPC",
+        "fsm_hook_name": "Interaction",
+        "fsm_hook_state": "Start Shake"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -35.0,
+        "y": -36.25
+      },
+      "block_id": "9b8874ec-eae0-4609-a7fd-b7072fe6fe3c",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7780bedc",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -294.375,
+        "y": -27.8125
+      },
+      "block_id": "9fd94d34-2fb9-4250-8585-6235ada0cfcd",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "9b8874ec-eae0-4609-a7fd-b7072fe6fe3c",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "33a84210",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -529.6875,
+        "y": -2.5
+      },
+      "block_id": "9bc23ca8-a937-4e4e-a079-a92c9412e589",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "9fd94d34-2fb9-4250-8585-6235ada0cfcd",
+            "Item2": "fsm_remove_transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

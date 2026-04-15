@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "cba24779",
+        "pos": {
+          "x": 50.14141,
+          "y": 8.511985,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Boss Scene/Gates/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

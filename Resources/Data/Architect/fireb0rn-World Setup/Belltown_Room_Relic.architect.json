@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "cdc8ac6e",
+        "pos": {
+          "x": 25.25226,
+          "y": 10.0352392,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "relic_dealer"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

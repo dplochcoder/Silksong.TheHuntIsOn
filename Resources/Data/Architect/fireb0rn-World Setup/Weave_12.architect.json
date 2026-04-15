@@ -1,0 +1,59 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "ab0b3acf",
+        "pos": {
+          "x": 39.2527237,
+          "y": 12.9738111,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "weaver_lift_power_chamber",
+        "fsm_hook_name": "States",
+        "fsm_hook_state": "Stage 1 Finished?"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "ffaa9a30-2940-4c67-8781-21ee8d4b501d",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "ab0b3acf",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -304.6505,
+        "y": 5.81393433
+      },
+      "block_id": "946ce3c0-95a3-40c9-9332-50e613bc28b6",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "ffaa9a30-2940-4c67-8781-21ee8d4b501d",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

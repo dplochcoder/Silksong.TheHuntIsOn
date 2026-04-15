@@ -1,0 +1,199 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "a056e314",
+        "pos": {
+          "x": 18.4760685,
+          "y": 52.15472,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "puzzle cylinders",
+        "fsm_hook_name": "Prompt Control",
+        "fsm_hook_state": "Get Melody"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "47178c9e",
+        "pos": {
+          "x": 22.1428471,
+          "y": 52.1097374,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "puzzle cylinders",
+        "fsm_hook_name": "Cylinder States",
+        "fsm_hook_state": "Show Prompt"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "c5a8851c",
+        "pos": {
+          "x": 31.6753788,
+          "y": 52.2017937,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "puzzle cylinders",
+        "fsm_hook_name": "Cylinder States",
+        "fsm_hook_state": "Start Lock"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "5c850e42",
+        "pos": {
+          "x": 27.81739,
+          "y": 52.16806,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "puzzle cylinders",
+        "fsm_hook_name": "Cylinder States",
+        "fsm_hook_state": "Needolin Prompt"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "7fde6a6d",
+        "pos": {
+          "x": 31.68661,
+          "y": 55.7561035,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "puzzle cylinders",
+        "fsm_hook_name": "Cylinder States",
+        "fsm_hook_state": "BG Choir On"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "e7eefacf",
+        "pos": {
+          "x": 27.7760143,
+          "y": 55.778595,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "puzzle cylinders",
+        "fsm_hook_name": "Cylinder States",
+        "fsm_hook_state": "Singing 2"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -4.186004,
+        "y": 159.068176
+      },
+      "block_id": "bff67880-acef-42be-a90f-7ba60330fdad",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "91398470-4f32-4c58-97c0-771618c461e0",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "c5a8851c",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 200.463074,
+        "y": 161.393738
+      },
+      "block_id": "91398470-4f32-4c58-97c0-771618c461e0",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "5c850e42",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 521.3904,
+        "y": -123.719765
+      },
+      "block_id": "0d3b0330-e4b5-4a76-b557-03d00f8d77ca",
+      "events": {
+        "OnTarget": []
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7fde6a6d",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 307.903839,
+        "y": -121.394157
+      },
+      "block_id": "0600e46d-e0d3-4f88-8524-cb6e3c3d5514",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "0d3b0330-e4b5-4a76-b557-03d00f8d77ca",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "e7eefacf",
+        "object_type": "fsm_hook"
+      }
+    }
+  ]
+}

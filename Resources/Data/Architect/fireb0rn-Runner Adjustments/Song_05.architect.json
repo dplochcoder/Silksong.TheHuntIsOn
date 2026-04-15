@@ -1,0 +1,448 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "d5964068",
+        "pos": {
+          "x": 36.5922623,
+          "y": 14.5156565,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Black Thread States/Normal World/Lace Scene/Lace NPC Citadel Meet",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Take Control"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "49f4cbe2",
+        "pos": {
+          "x": 39.7303925,
+          "y": 14.5718956,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Black Thread States/Normal World/Lace Scene/Lace NPC Citadel Meet",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Look Up"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "5f89a5bf",
+        "pos": {
+          "x": 43.08224,
+          "y": 14.4706678,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Black Thread States/Normal World/Lace Scene/Lace NPC Citadel Meet",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Wait"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "bb976b9f",
+        "pos": {
+          "x": 46.64779,
+          "y": 14.3356934,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Black Thread States/Normal World/Lace Scene/Lace NPC Citadel Meet",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Jump Antic",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "18349791",
+        "pos": {
+          "x": 32.0819,
+          "y": 10.9163675,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Black Thread States/Normal World/Lace Scene/Lace NPC Citadel Meet",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Jump Away",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "ccde2176",
+        "pos": {
+          "x": 35.07381,
+          "y": 10.7588978,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Black Thread States/Normal World/Lace Scene/Lace NPC Citadel Meet",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Quest Update",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "a4c121d0",
+        "pos": {
+          "x": 38.84182,
+          "y": 10.8947935,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Black Thread States/Normal World/Lace Scene/Lace NPC Citadel Meet",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Wake Rumble",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "fc46f0b2",
+        "pos": {
+          "x": 42.23865,
+          "y": 10.7701473,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Black Thread States/Normal World/Lace Scene/Lace NPC Citadel Meet",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Wake Threads",
+        "start_active": "True"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -367.196442,
+        "y": -138.55545
+      },
+      "block_id": "4b630076-cad0-4039-93be-1941a70a948c",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "271fea71-83c0-4bcb-b87f-66eda04f3e1d",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "d5964068",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 4.89595175,
+        "y": -140.024261
+      },
+      "block_id": "b08da339-69bd-4a74-925c-75b607a1b0df",
+      "events": {
+        "OnTarget": []
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "49f4cbe2",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 592.4102,
+        "y": -140.0243
+      },
+      "block_id": "e4238f9f-0b9d-4bd4-a1bf-78939c754366",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "bb976b9f",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 248.714371,
+        "y": -147.368149
+      },
+      "block_id": "a9dc38b9-0935-4a24-af7f-f64dadbf24ca",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "57345a24-a968-4356-abe9-c66ee3e6827d",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "5f89a5bf",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -35.7405052,
+        "y": 65.60577
+      },
+      "block_id": "7f26e798-849b-43a6-9552-755fbe71bf57",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "4b630076-cad0-4039-93be-1941a70a948c",
+            "Item2": "fsm_remove_transition"
+          },
+          {
+            "Item1": "a9dc38b9-0935-4a24-af7f-f64dadbf24ca",
+            "Item2": "fsm_remove_transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 411.211273,
+        "y": 72.77839
+      },
+      "block_id": "57345a24-a968-4356-abe9-c66ee3e6827d",
+      "events": {
+        "Out": [
+          {
+            "Item1": "e4238f9f-0b9d-4bd4-a1bf-78939c754366",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.5"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 116.034035,
+        "y": -388.7386
+      },
+      "block_id": "c87d11e0-a72c-4c10-bace-e9f3a3931e72",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "b48f7bfe-d8ca-48ef-b99f-314911ec2904",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "a4c121d0",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 626.1922,
+        "y": -401.468079
+      },
+      "block_id": "b94aaebc-3779-4fac-95e4-5315cabb542c",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "fc46f0b2",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -707.9547,
+        "y": -378.457184
+      },
+      "block_id": "d9890c70-e4c7-4f0b-9d72-683789f1d700",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "451237d4-e7cc-413b-9474-ed18e1712b9c",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "18349791",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -292.777924,
+        "y": -382.8634
+      },
+      "block_id": "5bec9416-57b7-4d85-9923-f8c5f504c689",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "dff49e43-2270-417a-9aa5-7f129f3ea339",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "ccde2176",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -497.918427,
+        "y": -301.101044
+      },
+      "block_id": "451237d4-e7cc-413b-9474-ed18e1712b9c",
+      "events": {
+        "Out": [
+          {
+            "Item1": "5bec9416-57b7-4d85-9923-f8c5f504c689",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.5"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -89.15546,
+        "y": -365.091278
+      },
+      "block_id": "dff49e43-2270-417a-9aa5-7f129f3ea339",
+      "events": {
+        "Out": [
+          {
+            "Item1": "c87d11e0-a72c-4c10-bace-e9f3a3931e72",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.5"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 376.755676,
+        "y": -368.420532
+      },
+      "block_id": "b48f7bfe-d8ca-48ef-b99f-314911ec2904",
+      "events": {
+        "Out": [
+          {
+            "Item1": "b94aaebc-3779-4fac-95e4-5315cabb542c",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.5"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -191.92131,
+        "y": -130.2323
+      },
+      "block_id": "271fea71-83c0-4bcb-b87f-66eda04f3e1d",
+      "events": {
+        "Out": [
+          {
+            "Item1": "b08da339-69bd-4a74-925c-75b607a1b0df",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    }
+  ]
+}

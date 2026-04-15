@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ab162367",
+        "pos": {
+          "x": 15.1395731,
+          "y": 8.0531,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Last Conductor NPC/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a79792a7",
+        "pos": {
+          "x": 16.4111786,
+          "y": 8.069334,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Conductor Bed Chamber Machine/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ae7c8176",
+        "pos": {
+          "x": 14.8812838,
+          "y": 159.2399,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Silk Spool"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

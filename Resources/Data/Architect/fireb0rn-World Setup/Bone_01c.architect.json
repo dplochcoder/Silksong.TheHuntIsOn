@@ -1,0 +1,141 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "cd8b2348",
+        "pos": {
+          "x": 168.358841,
+          "y": 8.688197,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "bell_bench/bell_toll_machine/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9b8d9ab2",
+        "pos": {
+          "x": 185.560455,
+          "y": 8.62839,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Marrow_Start_Sign"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2ce7ea26",
+        "pos": {
+          "x": 166.254623,
+          "y": 14.1937265,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Marrow_Start_Sign"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8ec540b1",
+        "pos": {
+          "x": 185.214783,
+          "y": 9.440723,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "inspect plink"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "4ffbe5b3",
+        "pos": {
+          "x": 169.055466,
+          "y": 9.919683,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "bell_bench/frame"
+      }
+    },
+    {
+      "placement": {
+        "id": "bell_bench",
+        "pid": "edb0e61d",
+        "pos": {
+          "x": 168.29068,
+          "y": 8.300004,
+          "z": 0.009
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "bench_spawn": "True",
+        "bench_offset_x": "0",
+        "bench_offset_y": "0",
+        "bench_offset_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "26f363dc",
+        "pos": {
+          "x": 186.994949,
+          "y": 10.6678619,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Inspect Region"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

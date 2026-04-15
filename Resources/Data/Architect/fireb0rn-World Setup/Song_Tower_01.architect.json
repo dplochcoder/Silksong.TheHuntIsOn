@@ -1,0 +1,46 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "149d32b1",
+        "pos": {
+          "x": 49.3767967,
+          "y": 102.488159,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "0",
+        "trans_id": "fakeLace2Elevator",
+        "trans_other_id": "cogworkDancers",
+        "trans_other_scene": "Cog_Dancers",
+        "trans_collide": "1"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "33a47d52",
+        "pos": {
+          "x": 43.94712,
+          "y": 104.961006,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "door_cutsceneEndLaceTower/Door Interact"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

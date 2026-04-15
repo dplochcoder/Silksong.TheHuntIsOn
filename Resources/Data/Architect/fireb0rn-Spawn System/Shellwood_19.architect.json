@@ -1,0 +1,46 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "da3bfffc",
+        "pos": {
+          "x": 59.9336624,
+          "y": 10.3359375,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "2",
+        "trans_collide": "False",
+        "trans_id": "ShellwoodStag"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "9f507535",
+        "pos": {
+          "x": 48.38013,
+          "y": 12.62082,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_id": "ShellwoodSpawn19",
+        "trans_collide": "False"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

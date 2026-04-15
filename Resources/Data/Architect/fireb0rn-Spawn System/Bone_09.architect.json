@@ -1,0 +1,46 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "9a3abf20",
+        "pos": {
+          "x": 12.1817293,
+          "y": 27.00326,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_id": "MarrowSpawn9",
+        "trans_collide": "1"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "9415642e",
+        "pos": {
+          "x": 126.997536,
+          "y": 38.91736,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_id": "DocksSpawnMarrow9",
+        "trans_collide": "1"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

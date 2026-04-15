@@ -1,0 +1,181 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "68b3a60a",
+        "pos": {
+          "x": 44.486557,
+          "y": 7.53512,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "0",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "b79300df",
+        "pos": {
+          "x": 41.2054,
+          "y": 11.609457,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "1",
+        "component_hook_target": "Bellway_pieces/Bellway Toll Machine",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "6ffad8d8",
+        "pos": {
+          "x": 44.4865646,
+          "y": 11.5618725,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "2",
+        "component_hook_target": "Bellway_pieces/Bellway Toll Machine",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "9988e5da",
+        "pos": {
+          "x": 50.054203,
+          "y": 9.042402,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Bellway_pieces/Bellway Toll Machine",
+        "fsm_hook_state": "Return Control",
+        "fsm_hook_name": "Unlock Behaviour"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 21.1206837,
+        "y": 130.172348
+      },
+      "block_id": "714af05f-6ca9-4199-9b08-b500600c6604",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "b79300df",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": 4.741378,
+        "y": -19.8275757
+      },
+      "block_id": "f81d6211-264d-449d-9fd7-b523593366fe",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "6ffad8d8",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": -213.362,
+        "y": -61.20687
+      },
+      "block_id": "5d1d355c-7056-4b94-bf20-002713a9f400",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "f81d6211-264d-449d-9fd7-b523593366fe",
+            "Item2": "component_hook_apply"
+          },
+          {
+            "Item1": "6caea05d-a7a5-4c6f-b9f8-9f7498669aeb",
+            "Item2": "fsm_set_state"
+          },
+          {
+            "Item1": "5d1d355c-7056-4b94-bf20-002713a9f400",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "68b3a60a",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": -7.327584,
+        "y": -212.930954
+      },
+      "block_id": "6caea05d-a7a5-4c6f-b9f8-9f7498669aeb",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "9988e5da",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -245.538712,
+        "y": 62.24137
+      },
+      "block_id": "b51d19d7-4292-43de-8f49-dcaaa1495a79",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "714af05f-6ca9-4199-9b08-b500600c6604",
+            "Item2": "component_hook_apply"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

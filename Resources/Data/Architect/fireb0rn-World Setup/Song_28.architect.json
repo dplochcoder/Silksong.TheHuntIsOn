@@ -1,0 +1,101 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9ad2af33",
+        "pos": {
+          "x": 12.5304117,
+          "y": 8.058251,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Toll_machine (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "201f8efe",
+        "pos": {
+          "x": 7.71636,
+          "y": 7.969144,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Toll_machine"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1c6bb5cf",
+        "pos": {
+          "x": 18.0643253,
+          "y": 7.74418831,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Toll_machine (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a44e88fd",
+        "pos": {
+          "x": 23.8133545,
+          "y": 8.171603,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Toll_machine (3)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d26cefac",
+        "pos": {
+          "x": 29.6219368,
+          "y": 7.94664764,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Toll_machine (4)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

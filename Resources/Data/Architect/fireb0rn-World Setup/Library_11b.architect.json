@@ -1,0 +1,63 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "984ead3e",
+        "pos": {
+          "x": 109.971832,
+          "y": 137.817566,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "door states (1)/Understore Big Plate Gate/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "cc98dd1e",
+        "pos": {
+          "x": 24.686676,
+          "y": 8.505448,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Silk Spool"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "474e8ef4",
+        "pos": {
+          "x": 33.33576,
+          "y": 9.521935,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "plank_wall_cluster_metal (1)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

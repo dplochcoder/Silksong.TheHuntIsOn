@@ -1,0 +1,160 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "690b3471",
+        "pos": {
+          "x": 35.093483,
+          "y": 6.869178,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Shellwood Twig Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5bb72ab8",
+        "pos": {
+          "x": 15.21913,
+          "y": 5.237599,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "bell_bench/bell_toll_machine/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "52a5ef3e",
+        "pos": {
+          "x": 31.1546555,
+          "y": 4.978344,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "rosary_stringer"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ecdd0d61",
+        "pos": {
+          "x": -0.7091656,
+          "y": 4.096862,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "rosary_stringer"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "71df4be3",
+        "pos": {
+          "x": -0.726448059,
+          "y": 4.114148,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "rosary_stringer"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f1618b2c",
+        "pos": {
+          "x": 0.7945156,
+          "y": 4.407971,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "rosary_stringer"
+      }
+    },
+    {
+      "placement": {
+        "id": "bell_bench",
+        "pid": "2f2eb3e7",
+        "pos": {
+          "x": 15.0480957,
+          "y": 5.49000359,
+          "z": 0.009
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "bench_spawn": "True",
+        "bench_offset_x": "0",
+        "bench_offset_y": "0",
+        "bench_offset_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8841d190",
+        "pos": {
+          "x": 18.84985,
+          "y": 5.78244543,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "bell_bench/frame/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

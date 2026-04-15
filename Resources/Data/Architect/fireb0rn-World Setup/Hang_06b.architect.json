@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e0ca032c",
+        "pos": {
+          "x": 30.3275623,
+          "y": 6.580289,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "new_scene/City Travel Tube/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a50fc5b4",
+        "pos": {
+          "x": 50.74073,
+          "y": 6.83954334,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "new_scene/Map Machine/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

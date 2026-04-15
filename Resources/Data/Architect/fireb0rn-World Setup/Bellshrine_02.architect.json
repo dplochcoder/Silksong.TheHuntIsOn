@@ -1,0 +1,100 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "57dc0b52",
+        "pos": {
+          "x": 13.0976248,
+          "y": 8.898715,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "bellshrine_gate_curved"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0871a142",
+        "pos": {
+          "x": 20.33285,
+          "y": 7.803218,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Bellshrine Sequence/Bell Shrine Lever"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "dbfe3134",
+        "pos": {
+          "x": 20.7799187,
+          "y": 6.99789762,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Bellshrine Sequence/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "cacdf9a3",
+        "pos": {
+          "x": 18.9015541,
+          "y": 11.8344593,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/CC_metal_cog_pieces_modular_0000_1"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "939466e7",
+        "pos": {
+          "x": 24.7579231,
+          "y": 6.7238555,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

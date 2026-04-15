@@ -1,0 +1,114 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2008ca54",
+        "pos": {
+          "x": 69.90682,
+          "y": 24.9757,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Scene Control/Garmond Scene"
+      }
+    },
+    {
+      "placement": {
+        "id": "garmond_zaza_boss",
+        "pid": "cc11279e",
+        "pos": {
+          "x": 74.36094,
+          "y": 16.7132378,
+          "z": 0.0059
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "garmond_lethal": "True",
+        "enemy_hp_scale": "True",
+        "enemy_z": "0",
+        "invulnerable": "True",
+        "enemy_stay_dead": "0",
+        "enemy_hp": "99999"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -476.68338,
+        "y": 115.65654
+      },
+      "block_id": "df7d70af-780c-495e-955e-e2ccb13390f7",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "5de25e8e-651e-4a57-8690-ec1b53b08682",
+            "Item2": "Heal"
+          },
+          {
+            "Item1": "880cb0fb-53ec-4415-8d2e-583f1499f249",
+            "Item2": "Broadcast"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -79.92424,
+        "y": 142.045364
+      },
+      "block_id": "d167406b-934a-461a-b00c-c459c2ca0f13",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "5fd41ebd",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -278.570068,
+        "y": 120.501877
+      },
+      "block_id": "5de25e8e-651e-4a57-8690-ec1b53b08682",
+      "events": {},
+      "vars": {},
+      "type": "Enemy Control",
+      "config": {
+        "enemy_damage_type": "1",
+        "enemy_hp_amount": "99999"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -270.520844,
+        "y": 269.6212
+      },
+      "block_id": "880cb0fb-53ec-4415-8d2e-583f1499f249",
+      "events": {},
+      "vars": {},
+      "type": "Broadcast",
+      "config": {
+        "in_name": "TIME PASSES ELSEWHERE"
+      },
+      "ext": {}
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0e286104",
+        "pos": {
+          "x": 21.3075676,
+          "y": 8.738155,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States Thread Only Variant/Normal World/_NPCs/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

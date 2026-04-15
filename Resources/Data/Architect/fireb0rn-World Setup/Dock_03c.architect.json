@@ -1,0 +1,120 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c994d810",
+        "pos": {
+          "x": 5.62426853,
+          "y": 9.416293,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "dba6865d",
+        "pos": {
+          "x": 115.809814,
+          "y": 13.2342644,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "92c19d24",
+        "pos": {
+          "x": 127.358978,
+          "y": 23.614418,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall (3)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a44d4449",
+        "pos": {
+          "x": 149.693436,
+          "y": 19.655529,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall (4)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d2687448",
+        "pos": {
+          "x": 150.728256,
+          "y": 43.39421,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall (5)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "bbffc84d",
+        "pos": {
+          "x": 126.732033,
+          "y": 56.1807137,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "dock_pipe_opener_door (1)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

@@ -1,0 +1,101 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "998d9950",
+        "pos": {
+          "x": 71.16662,
+          "y": 13.3157082,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "key_machine"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2ea130a2",
+        "pos": {
+          "x": 78.08006,
+          "y": 13.9677982,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "key_machine"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "91f1350c",
+        "pos": {
+          "x": 57.4433823,
+          "y": 7.209893,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e82d21d4",
+        "pos": {
+          "x": 60.95196,
+          "y": 6.0346055,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Citadel Switch Gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e0fb348f",
+        "pos": {
+          "x": 103.384216,
+          "y": 5.67311525,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Map Machine (2)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

@@ -1,0 +1,82 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a6f88534",
+        "pos": {
+          "x": 14.3750448,
+          "y": 12.6608257,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bone Drop Plat Sequence/Platform/"
+      }
+    },
+    {
+      "placement": {
+        "id": "dock_plat_01",
+        "pid": "17449af1",
+        "pos": {
+          "x": 9.999657,
+          "y": 11.9634638,
+          "z": -0.05
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "fb854c20",
+        "pos": {
+          "x": 31.4740124,
+          "y": 7.15272951,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Silk Spool"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "03f34f98",
+        "pos": {
+          "x": 10.5058079,
+          "y": 4.3745265,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Hornet_pressure_plate/Plate"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

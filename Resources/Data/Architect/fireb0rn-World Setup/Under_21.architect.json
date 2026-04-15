@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d338a908",
+        "pos": {
+          "x": 11.5983582,
+          "y": 16.97827,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Flea Rescue Barrel"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

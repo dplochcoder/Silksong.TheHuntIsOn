@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b5172a65",
+        "pos": {
+          "x": 102.819,
+          "y": 13.0701952,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup Materium"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

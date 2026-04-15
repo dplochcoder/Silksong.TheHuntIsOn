@@ -1,0 +1,139 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e10d1481",
+        "pos": {
+          "x": 132.95845,
+          "y": 32.08213,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "plank_wall_cluster"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8eee1f83",
+        "pos": {
+          "x": 82.6271,
+          "y": 28.6114216,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Witch_Cluster_Vine (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7f73cc0c",
+        "pos": {
+          "x": 70.7985153,
+          "y": 47.9890671,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Witch_Cluster_Vine"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "cae5e8fd",
+        "pos": {
+          "x": 90.9400253,
+          "y": 48.9226456,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Mandrake Scene"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "796284a5",
+        "pos": {
+          "x": 159.382828,
+          "y": 13.2513361,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "drop_planks_horizontal"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b907e47b",
+        "pos": {
+          "x": 107.2323,
+          "y": 5.566791,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5ef09777",
+        "pos": {
+          "x": 16.5346241,
+          "y": 24.9660568,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

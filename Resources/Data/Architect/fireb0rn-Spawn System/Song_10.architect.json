@@ -1,0 +1,46 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "b0c8f8bf",
+        "pos": {
+          "x": 79.0247345,
+          "y": 59.6668053,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_collide": "False",
+        "trans_id": "CitadelSong10-1"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "a282026b",
+        "pos": {
+          "x": 112.054527,
+          "y": 59.88454,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_collide": "False",
+        "trans_id": "CitadelSong10-2"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

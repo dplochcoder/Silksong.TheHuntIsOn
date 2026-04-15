@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "24e843af",
+        "pos": {
+          "x": 46.23448,
+          "y": 76.5023,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "ant_item_string"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

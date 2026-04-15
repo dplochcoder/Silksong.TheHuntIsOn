@@ -1,0 +1,999 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6c7c41da-ab17426a",
+        "pos": {
+          "x": 112.079086,
+          "y": 46.93495,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall/Masks",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "7d52f17d-ab17426a",
+        "pos": {
+          "x": 110.301941,
+          "y": 44.9665833,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "2",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "a43b9218-ab17426a",
+        "pos": {
+          "x": 113.878738,
+          "y": 45.07907,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "2",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "9925429b-ab17426a",
+        "pos": {
+          "x": 110.2007,
+          "y": 49.36621,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Breakable Wall",
+        "fsm_hook_name": "breakable_wall_v2",
+        "fsm_hook_state": "Send to Register?"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "4c6b0f02-ab17426a",
+        "pos": {
+          "x": 113.856247,
+          "y": 49.36447,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "Breakable Wall",
+        "component_hook_name": "BoxCollider2D"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c99d4c82",
+        "pos": {
+          "x": 21.9107246,
+          "y": 48.15596,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall/Masks",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "004878c4",
+        "pos": {
+          "x": 20.13358,
+          "y": 46.18759,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "2",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "12353940",
+        "pos": {
+          "x": 23.7103767,
+          "y": 46.30008,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "2",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "3a730668",
+        "pos": {
+          "x": 20.0323372,
+          "y": 50.58722,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Breakable Wall",
+        "fsm_hook_name": "breakable_wall_v2",
+        "fsm_hook_state": "Send to Register?"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "a83572da",
+        "pos": {
+          "x": 23.6878853,
+          "y": 50.58548,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "Breakable Wall",
+        "component_hook_name": "BoxCollider2D"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "3fa070db",
+        "pos": {
+          "x": 22.1767387,
+          "y": 48.8433952,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall/Masks",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "732423de",
+        "pos": {
+          "x": 20.3995934,
+          "y": 46.8750267,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "2",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "128ddbce",
+        "pos": {
+          "x": 23.97639,
+          "y": 46.9875145,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "2",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "f1caabb1",
+        "pos": {
+          "x": 20.2983513,
+          "y": 51.2746544,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Breakable Wall",
+        "fsm_hook_name": "breakable_wall_v2",
+        "fsm_hook_state": "Send to Register?"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "aa77b387",
+        "pos": {
+          "x": 23.9539,
+          "y": 51.2729149,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "Breakable Wall",
+        "component_hook_name": "BoxCollider2D"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "781b9c1b",
+        "pos": {
+          "x": 22.0003014,
+          "y": 48.9712753,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall/Masks",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "dbcd1a23",
+        "pos": {
+          "x": 20.223156,
+          "y": 47.0029068,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "2",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "e7fc923a",
+        "pos": {
+          "x": 23.7999535,
+          "y": 47.1153946,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "2",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "7de3346c",
+        "pos": {
+          "x": 20.1219139,
+          "y": 51.4025345,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Breakable Wall",
+        "fsm_hook_name": "breakable_wall_v2",
+        "fsm_hook_state": "Send to Register?"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "7cc1cf09",
+        "pos": {
+          "x": 23.777462,
+          "y": 51.400795,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "Breakable Wall",
+        "component_hook_name": "BoxCollider2D"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "e37d2776",
+        "pos": {
+          "x": 29.47916,
+          "y": 54.8033752,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "2",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "2c1b2353",
+        "pos": {
+          "x": 30.93598,
+          "y": 54.76963,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "2",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "744b0bc6",
+        "pos": {
+          "x": 28.5964375,
+          "y": 56.2206039,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall (1)/Masks",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "5c7bc89e",
+        "pos": {
+          "x": 32.6006546,
+          "y": 57.27789,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "Breakable Wall (1)",
+        "component_hook_name": "BoxCollider2D"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "2f7f8353",
+        "pos": {
+          "x": 32.60064,
+          "y": 54.0290146,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Breakable Wall (1)",
+        "fsm_hook_name": "breakable_wall_v2",
+        "fsm_hook_state": "Send to Register?"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "2152cad7",
+        "pos": {
+          "x": 37.555088,
+          "y": 67.15068,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "2",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "e516ef7b",
+        "pos": {
+          "x": 35.5813332,
+          "y": 67.3531342,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "2",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "533d7a94",
+        "pos": {
+          "x": 30.4073524,
+          "y": 67.33063,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "Breakable Wall (2)",
+        "component_hook_name": "BoxCollider2D"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "8cd6606f",
+        "pos": {
+          "x": 31.83581,
+          "y": 63.2494278,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Breakable Wall (2)",
+        "fsm_hook_name": "breakable_wall_v2",
+        "fsm_hook_state": "Send to Register?"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9567b134",
+        "pos": {
+          "x": 36.2562,
+          "y": 66.81325,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall (2)/Masks",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "0a0d56cd",
+        "pos": {
+          "x": 58.9522629,
+          "y": 75.63074,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "0.1",
+        "size_width": "2"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "7c341fa1",
+        "pos": {
+          "x": 58.9463959,
+          "y": 74.292244,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "0.1",
+        "size_width": "2"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -277.195953,
+        "y": 26.6638527
+      },
+      "block_id": "6d96d488-fb62-459d-9277-db088de3663c",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "1f957928-73ad-4ea4-9962-ec85831dd5ee",
+            "Item2": "fsm_set_state"
+          },
+          {
+            "Item1": "df25a8ef-ddb7-4a61-9e4b-d8574406c38c",
+            "Item2": "component_hook_apply"
+          },
+          {
+            "Item1": "a47d6835-bdae-45c8-943d-875e80634d83",
+            "Item2": "fsm_set_state"
+          },
+          {
+            "Item1": "8e4c0ad9-688b-493e-bb9e-ee367c637328",
+            "Item2": "component_hook_apply"
+          },
+          {
+            "Item1": "ed7b58d9-2743-4b26-8c28-024aacd23498",
+            "Item2": "fsm_set_state"
+          },
+          {
+            "Item1": "092a31be-c9fa-4556-9363-5b2b753ee208",
+            "Item2": "component_hook_apply"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4.72973,
+        "y": 222.973022
+      },
+      "block_id": "1f957928-73ad-4ea4-9962-ec85831dd5ee",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "9925429b-ab17426a",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 137.16217,
+        "y": 172.972992
+      },
+      "block_id": "df25a8ef-ddb7-4a61-9e4b-d8574406c38c",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "4c6b0f02-ab17426a",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": 588.5137,
+        "y": 115.540543
+      },
+      "block_id": "ec63064d-3424-455f-a9a6-fa25407052e2",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "ef13e760-5eec-46cd-b565-0f9ea54d8ff3",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7d52f17d-ab17426a",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 587.837952,
+        "y": 251.35144
+      },
+      "block_id": "5caa4aee-d768-47ab-a571-e1a75ffef910",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "ef13e760-5eec-46cd-b565-0f9ea54d8ff3",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "a43b9218-ab17426a",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 822.297363,
+        "y": 181.081085
+      },
+      "block_id": "ef13e760-5eec-46cd-b565-0f9ea54d8ff3",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "6c7c41da-ab17426a",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": 585.4731,
+        "y": -200.33786
+      },
+      "block_id": "11ea9841-86b1-47c5-af40-93ce554b9b2a",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "772da2c8-84a3-4251-81a5-b09f248bd8a3",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "e37d2776",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 587.5001,
+        "y": -52.3648643
+      },
+      "block_id": "bdc526d2-4354-45a4-a47d-9da3a694c746",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "772da2c8-84a3-4251-81a5-b09f248bd8a3",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "2c1b2353",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 151.351364,
+        "y": 35.8108177
+      },
+      "block_id": "8e4c0ad9-688b-493e-bb9e-ee367c637328",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "5c7bc89e",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": -2.364865,
+        "y": -3.7162323
+      },
+      "block_id": "a47d6835-bdae-45c8-943d-875e80634d83",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "2f7f8353",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 839.189331,
+        "y": -62.16218
+      },
+      "block_id": "772da2c8-84a3-4251-81a5-b09f248bd8a3",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "744b0bc6",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": 157.432449,
+        "y": -175.6757
+      },
+      "block_id": "092a31be-c9fa-4556-9363-5b2b753ee208",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "533d7a94",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": -2.364865,
+        "y": -214.189255
+      },
+      "block_id": "ed7b58d9-2743-4b26-8c28-024aacd23498",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "8cd6606f",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 580.4056,
+        "y": -373.648743
+      },
+      "block_id": "0b1ff885-0956-457c-bdd0-89e63fd163a2",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "719b05f2-61ac-47b2-a0b3-b1be164d9507",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "e516ef7b",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 821.959656,
+        "y": -405.4055
+      },
+      "block_id": "719b05f2-61ac-47b2-a0b3-b1be164d9507",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "9567b134",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": 583.1084,
+        "y": -528.716431
+      },
+      "block_id": "d644cb2b-ec72-4570-8a61-190fca9875f8",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "719b05f2-61ac-47b2-a0b3-b1be164d9507",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "2152cad7",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 388.175781,
+        "y": -365.5406
+      },
+      "block_id": "18bfc42b-d5dd-457d-a377-6a56d6d6f0a6",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "719b05f2-61ac-47b2-a0b3-b1be164d9507",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "0a0d56cd",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 381.419,
+        "y": -522.635254
+      },
+      "block_id": "d11b710d-35b1-42ea-b0a1-051befb52626",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "719b05f2-61ac-47b2-a0b3-b1be164d9507",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7c341fa1",
+        "object_type": "trigger_zone"
+      }
+    }
+  ]
+}

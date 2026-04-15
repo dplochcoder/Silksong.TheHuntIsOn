@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "4ed3a634",
+        "pos": {
+          "x": 43.02334,
+          "y": 34.40616,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "purple_flower_set/Big Flower/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

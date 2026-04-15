@@ -1,0 +1,101 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ddfdd80b",
+        "pos": {
+          "x": 129.885468,
+          "y": 31.1463451,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Coral Crust Wall Tall (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "cba9d541",
+        "pos": {
+          "x": 33.6494942,
+          "y": 46.030777,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Flea Rescue Generic"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "99291dde",
+        "pos": {
+          "x": 109.585106,
+          "y": 31.116436,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Coral Crust Wall Tall (3)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "40b33dec",
+        "pos": {
+          "x": 35.3687744,
+          "y": 46.5474319,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Coral Crust Wall Tall (5)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6ac8cf2b",
+        "pos": {
+          "x": 177.150665,
+          "y": 48.26666,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Coral Crust Wall Tall (4)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

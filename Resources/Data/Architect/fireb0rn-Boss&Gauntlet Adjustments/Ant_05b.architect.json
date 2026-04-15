@@ -1,0 +1,272 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "ee7694f0",
+        "pos": {
+          "x": 54.23235,
+          "y": 18.4599075,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "75a3d5bd",
+        "pos": {
+          "x": 53.7045479,
+          "y": 13.093751,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Black Thread States Thread Only Variant/Normal World/Battle Scene/Wave 1/Bone Hunter Child"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "4274e1ca",
+        "pos": {
+          "x": 42.9732971,
+          "y": 13.0609751,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Black Thread States Thread Only Variant/Normal World/Battle Scene/Wave 1/Bone Hunter Child (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6e897e65",
+        "pos": {
+          "x": 59.53003,
+          "y": 8.809309,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "start_active": "True",
+        "remover_path": "Black Thread States Thread Only Variant/Normal World/Battle Scene/Gates/Battle Gate Ant"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8bb4b0f8",
+        "pos": {
+          "x": 34.3350067,
+          "y": 8.876797,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "start_active": "True",
+        "remover_path": "Black Thread States Thread Only Variant/Normal World/Battle Scene/Gates/Battle Gate Ant (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "f21e27bd",
+        "pos": {
+          "x": 32.1978035,
+          "y": 7.939025,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "d062fc8b",
+        "pos": {
+          "x": 61.70707,
+          "y": 7.939027,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "bone_hunter_buzzer",
+        "pid": "b619fb6e",
+        "pos": {
+          "x": 45.2116356,
+          "y": 18.6286316,
+          "z": 0.006
+        },
+        "flipped": true,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "buzzer_ceiling": "True",
+        "enemy_hp_scale": "True",
+        "invulnerable": "True",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "6a54263d",
+        "pos": {
+          "x": 47.87696,
+          "y": 7.102706,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 6.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "bone_hunter_buzzer",
+        "pid": "912fa9d7",
+        "pos": {
+          "x": 46.4504128,
+          "y": 19.47222,
+          "z": 0.006
+        },
+        "flipped": true,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "buzzer_ceiling": "True",
+        "enemy_hp_scale": "True",
+        "invulnerable": "True",
+        "start_active": "False"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 206.451584,
+        "y": 116.935455
+      },
+      "block_id": "a65b364a-aa97-4ff8-88ff-c8c08bc0b7c0",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "75a3d5bd",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 201.568085,
+        "y": -87.76883
+      },
+      "block_id": "a0a9d1f7-62a7-494d-b897-a1cd079a0645",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "4274e1ca",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -95.99435,
+        "y": 2.821972
+      },
+      "block_id": "869b66df-78f0-4ccb-90ea-7020dfed8d0f",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "a65b364a-aa97-4ff8-88ff-c8c08bc0b7c0",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "a0a9d1f7-62a7-494d-b897-a1cd079a0645",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -216.2879,
+        "y": -158.333344
+      },
+      "block_id": "78565806-168d-476c-9583-b95eb9898521",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "9e5daf14-2d6c-443d-a98b-109949471a4f",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "6a54263d",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 6.81818247,
+        "y": -180.303055
+      },
+      "block_id": "9e5daf14-2d6c-443d-a98b-109949471a4f",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "b619fb6e",
+        "object_type": "bone_hunter_buzzer"
+      }
+    }
+  ]
+}

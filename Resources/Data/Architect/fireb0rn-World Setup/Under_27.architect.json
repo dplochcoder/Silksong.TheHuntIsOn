@@ -1,0 +1,46 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "18695e51",
+        "pos": {
+          "x": 122.451729,
+          "y": 62.91893,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Group (1)/Shellwood Twig Wall (1)/"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "c505d69e",
+        "pos": {
+          "x": 119.824615,
+          "y": 65.1986,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "2",
+        "component_hook_target": "Group (1)/right2",
+        "component_hook_name": "BoxCollider2D"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

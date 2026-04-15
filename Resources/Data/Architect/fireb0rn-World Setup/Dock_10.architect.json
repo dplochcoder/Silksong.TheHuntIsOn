@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "eaedca32",
+        "pos": {
+          "x": 30.9616661,
+          "y": 33.4278,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "dock_steam_door"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "29450789",
+        "pos": {
+          "x": 7.603882,
+          "y": 33.06787,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "dock_steam_door (1)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

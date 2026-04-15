@@ -1,0 +1,45 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "a6c24e88",
+        "pos": {
+          "x": 18.0413971,
+          "y": 25.5713425,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_id": "DustMaze",
+        "trans_collide": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "bone_plat_03",
+        "pid": "d4f05963",
+        "pos": {
+          "x": 17.9495964,
+          "y": 22.4374447,
+          "z": -0.09000003
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

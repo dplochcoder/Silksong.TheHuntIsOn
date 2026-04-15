@@ -1,0 +1,101 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "83856493",
+        "pos": {
+          "x": 112.902245,
+          "y": 11.15065,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song Gate Entrance Right"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "216afc35",
+        "pos": {
+          "x": 110.706078,
+          "y": 9.212761,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Hornet_pressure_plate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ddd6199e",
+        "pos": {
+          "x": 23.9350319,
+          "y": 11.817771,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Sherma Citadel NPC"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f964b1a6",
+        "pos": {
+          "x": 24.7992134,
+          "y": 11.71407,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Seth Stand NPC"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a481bac0",
+        "pos": {
+          "x": 8.5353,
+          "y": 10.1585407,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "closed gate"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

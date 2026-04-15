@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "671afae5",
+        "pos": {
+          "x": 4.90441132,
+          "y": 9.139877,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall_Silhouette"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

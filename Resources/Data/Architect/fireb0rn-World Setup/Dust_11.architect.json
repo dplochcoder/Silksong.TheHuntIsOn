@@ -1,0 +1,63 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b4cf985f",
+        "pos": {
+          "x": 105.735107,
+          "y": 8.6824255,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Steel Soul States/Regular/NPC Control/Grub Farmer NPC/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a451fc17",
+        "pos": {
+          "x": 101.388512,
+          "y": 9.334797,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Steel Soul States/Regular/NPC Control/Large Cocoon 1/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "efff1bb4",
+        "pos": {
+          "x": 107.979713,
+          "y": 8.716167,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Steel Soul States/Regular/NPC Control/Large Cocoon 2/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

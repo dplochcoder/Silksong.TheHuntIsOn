@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "93c288bf",
+        "pos": {
+          "x": 17.06319,
+          "y": 71.04779,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "library_glass_heart_piece"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

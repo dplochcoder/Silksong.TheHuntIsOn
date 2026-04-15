@@ -1,0 +1,101 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b5b4b47a",
+        "pos": {
+          "x": 22.9597836,
+          "y": 96.32337,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_Gate_set (1)/Leave Range"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8f67b23c",
+        "pos": {
+          "x": 23.882103,
+          "y": 96.45834,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_Gate_set (1)/Terrain Block"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "48a6b0f5",
+        "pos": {
+          "x": 22.8023129,
+          "y": 95.46854,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_Gate_set (1)/Mask Half Back/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a3e40813",
+        "pos": {
+          "x": 23.78087,
+          "y": 95.38981,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_Gate_set (1)/Mask Half Front/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "efff94e5",
+        "pos": {
+          "x": 124.064842,
+          "y": 92.59227,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Weaver Speed Challenge/Weaver Challenge Reward/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

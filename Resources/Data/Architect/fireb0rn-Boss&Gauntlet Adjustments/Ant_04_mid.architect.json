@@ -1,0 +1,336 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b80c5f1f",
+        "pos": {
+          "x": 206.157669,
+          "y": 14.0493813,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Black Thread States Thread Only Variant/Normal World/Battle Scene/Gates/Battle Gate Ant",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1555e8e2",
+        "pos": {
+          "x": 181.09761,
+          "y": 13.329525,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Black Thread States Thread Only Variant/Normal World/Battle Scene/Gates/Battle Gate Ant (1)",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "25584f91",
+        "pos": {
+          "x": 208.9582,
+          "y": 12.8458576,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "ff2900a6",
+        "pos": {
+          "x": 179.204453,
+          "y": 12.8714,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "91841e4b",
+        "pos": {
+          "x": 189.511047,
+          "y": 17.941103,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Black Thread States Thread Only Variant/Normal World/Battle Scene/Wave 1/Bone Hunter Child",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "7dbe1754",
+        "pos": {
+          "x": 194.471313,
+          "y": 17.95235,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Black Thread States Thread Only Variant/Normal World/Battle Scene/Wave 1/Bone Hunter Child (1)",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "4d86bdcc",
+        "pos": {
+          "x": 199.735123,
+          "y": 17.94118,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Black Thread States Thread Only Variant/Normal World/Battle Scene/Wave 1/Bone Hunter",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "bone_hunter_buzzer",
+        "pid": "862d3606",
+        "pos": {
+          "x": 186.575684,
+          "y": 24.2830715,
+          "z": 0.006
+        },
+        "flipped": true,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "buzzer_ceiling": "True",
+        "enemy_hp_scale": "True",
+        "enemy_z": "0",
+        "enemy_hp": "9999",
+        "invulnerable": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "bone_hunter_buzzer",
+        "pid": "f730cdaf",
+        "pos": {
+          "x": 202.820892,
+          "y": 24.4543476,
+          "z": 0.006
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "buzzer_ceiling": "True",
+        "enemy_hp_scale": "True",
+        "enemy_z": "0",
+        "enemy_hp": "9999",
+        "invulnerable": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "55973e53",
+        "pos": {
+          "x": 197.618622,
+          "y": 15.4046078,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States Thread Only Variant/Normal World/Battle Scene/Shakra Fighter/"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "afa4977e",
+        "pos": {
+          "x": 194.597519,
+          "y": 14.6517076,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Black Thread States Thread Only Variant/Normal World/Battle Scene/Return Scene/Group 3/Bone Hunter Child (Return)/",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "1577fbd2",
+        "pos": {
+          "x": 190.233368,
+          "y": 14.38646,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Black Thread States Thread Only Variant/Normal World/Battle Scene/Return Scene/Group 3/Bone Hunter Child (Return) (1)/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 170.945953,
+        "y": -291.554077
+      },
+      "block_id": "6d32a95e-6b9a-4e7d-969b-d4e3b42cffdb",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "91841e4b",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 172.972992,
+        "y": -102.364868
+      },
+      "block_id": "6cbd8884-d183-4f7a-9d8c-08d28e56adfb",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7dbe1754",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 178.716232,
+        "y": 86.14866
+      },
+      "block_id": "eebaacfc-eeb0-49ea-8922-e85806bcc3e6",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "4d86bdcc",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -148.369247,
+        "y": -58.3883
+      },
+      "block_id": "47f04c22-34a2-4342-ab3c-091784afbc6e",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "eebaacfc-eeb0-49ea-8922-e85806bcc3e6",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "6cbd8884-d183-4f7a-9d8c-08d28e56adfb",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "6d32a95e-6b9a-4e7d-969b-d4e3b42cffdb",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "1b138e30-1e7f-4045-a7e8-bd778a61bf97",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "42354683-113f-4881-86d6-6b7b14983e3d",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -43.125,
+        "y": 322.8125
+      },
+      "block_id": "42354683-113f-4881-86d6-6b7b14983e3d",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "afa4977e",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 193.125,
+        "y": 292.1875
+      },
+      "block_id": "1b138e30-1e7f-4045-a7e8-bd778a61bf97",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "1577fbd2",
+        "object_type": "enemy_hook"
+      }
+    }
+  ]
+}

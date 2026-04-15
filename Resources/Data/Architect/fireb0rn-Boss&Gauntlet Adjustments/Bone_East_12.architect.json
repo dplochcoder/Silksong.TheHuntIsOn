@@ -1,0 +1,747 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "ad8e35dd",
+        "pos": {
+          "x": 80.8296356,
+          "y": 23.6703377,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Boss Scene/Lace Boss1",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ec710ef7",
+        "pos": {
+          "x": 108.292778,
+          "y": 17.728,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "start_active": "True",
+        "remover_path": "Boss Scene/Battle Gates/Battle Gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ed2cb117",
+        "pos": {
+          "x": 67.70976,
+          "y": 10.8527565,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "start_active": "True",
+        "remover_path": "Boss Scene/Battle Gates/Battle Gate Left"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "cf18b828",
+        "pos": {
+          "x": 112.7927,
+          "y": 9.42478,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 4.0
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "1efbd86a",
+        "pos": {
+          "x": 75.133606,
+          "y": 9.37979,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 4.0
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2f975cc8",
+        "pos": {
+          "x": 88.83728,
+          "y": 17.0711651,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene/Battle Scene/CamLock Battle",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "df8af379",
+        "pos": {
+          "x": 90.05189,
+          "y": 17.0788765,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene/Battle Scene/CamLock Battle (1)",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "f6384f93",
+        "pos": {
+          "x": 94.3346252,
+          "y": 12.3622913,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "15",
+        "size_width": "7"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "9c90700b",
+        "pos": {
+          "x": 67.4168854,
+          "y": 19.22088,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Lace Boss1",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "CrossSlash?"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "bf32f716",
+        "pos": {
+          "x": 70.81509,
+          "y": 19.1308975,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Lace Boss1",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "CrossSlash Aim"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "14c12be1",
+        "pos": {
+          "x": 74.50755,
+          "y": 19.1836128,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Lace Boss1",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Distance Check"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "b251a34c",
+        "pos": {
+          "x": 73.78038,
+          "y": 9.086136,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Boss Scene/Lace Boss1"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "fff7cf0f",
+        "pos": {
+          "x": 82.6130142,
+          "y": 13.0689917,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Boss Scene/Battle Gates/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "552b4711",
+        "pos": {
+          "x": 82.55672,
+          "y": 11.8552971,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Demo States/Regular/Song_Gate_small/"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "bab0f635",
+        "pos": {
+          "x": 53.8570061,
+          "y": 19.2835064,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Lace Boss1",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Evade Move"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "2fa19ad3",
+        "pos": {
+          "x": 55.8928566,
+          "y": 16.92147,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Lace Boss1",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Charge Antic"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "2fbb1284",
+        "pos": {
+          "x": 58.5585823,
+          "y": 16.92147,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Lace Boss1",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "J Slash Antic"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "e1c43c99",
+        "pos": {
+          "x": 61.31429,
+          "y": 16.8989773,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Lace Boss1",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Hop To Combo"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "464370f1",
+        "pos": {
+          "x": 43.61817,
+          "y": 12.3953829,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Lace Boss1",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "CrossSlash Antic"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 201.738708,
+        "y": 213.519943
+      },
+      "block_id": "a261008c-22ff-46a4-82ee-eca962931224",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "ad8e35dd",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 521.0939,
+        "y": -34.4697151
+      },
+      "block_id": "54a5d1bd-19c2-46c7-b7f9-4facea98492d",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "2f975cc8",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": 521.153,
+        "y": 82.32721
+      },
+      "block_id": "ac7147de-7016-4404-a694-e608d1092a09",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "df8af379",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": 202.343719,
+        "y": 24.84373
+      },
+      "block_id": "74e5145e-4ae9-4954-9531-0755a58989a9",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "ac7147de-7016-4404-a694-e608d1092a09",
+            "Item2": "disable"
+          },
+          {
+            "Item1": "54a5d1bd-19c2-46c7-b7f9-4facea98492d",
+            "Item2": "disable"
+          }
+        ],
+        "ZoneExit": [
+          {
+            "Item1": "ac7147de-7016-4404-a694-e608d1092a09",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "54a5d1bd-19c2-46c7-b7f9-4facea98492d",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "f6384f93",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": -345.7031,
+        "y": 21.2121353
+      },
+      "block_id": "94811bfc-e333-472a-8759-148f4fe71257",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "a261008c-22ff-46a4-82ee-eca962931224",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "eda5588f-d790-4591-9c92-8e8f85b55d59",
+            "Item2": "fsm_remove_transition"
+          },
+          {
+            "Item1": "e5a66778-3772-45c2-846c-cfc8d37954cc",
+            "Item2": "fsm_remove_transition"
+          },
+          {
+            "Item1": "e33181e1-7dd9-4fd3-8307-3a05959fefc4",
+            "Item2": "fsm_remove_transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -112.014671,
+        "y": -210.842834
+      },
+      "block_id": "eda5588f-d790-4591-9c92-8e8f85b55d59",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "2daed25f-149b-4efe-a212-807792ed0453",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "9c90700b",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 685.0157,
+        "y": -499.851746
+      },
+      "block_id": "e33181e1-7dd9-4fd3-8307-3a05959fefc4",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "80270e8b-791c-4807-b72c-3dbe52031e44",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "bf32f716",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 602.962,
+        "y": -227.184357
+      },
+      "block_id": "5f61aa29-48ec-4c35-87ee-01f74c043528",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "171e0b56-a8ff-4bc9-a044-d4b07d1eee2a",
+            "Item2": "Set"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "14c12be1",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 307.437469,
+        "y": -361.2634
+      },
+      "block_id": "ff0fd644-3cc5-4b68-b144-766f0e8ae9da",
+      "events": {},
+      "vars": {},
+      "type": "Random Event",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":37.8125,\"y\":-129.6875},\"block_id\":\"a7639061-d225-44e1-ba7c-c5baa3d8c527\",\"events\":{\"OnTrigger\":[{\"Item1\":\"5f61aa29-48ec-4c35-87ee-01f74c043528\",\"Item2\":\"fsm_set_state\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"0.9\"},\"ext\":{}},{\"pos\":{\"x\":37.8125,\"y\":-129.6875},\"block_id\":\"a1ab8ffd-51bf-4167-8eb8-d3b97f932aa7\",\"events\":{\"OnTrigger\":[{\"Item1\":\"e33181e1-7dd9-4fd3-8307-3a05959fefc4\",\"Item2\":\"fsm_set_state\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"0.1\"},\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 123.948845,
+        "y": -272.585266
+      },
+      "block_id": "2daed25f-149b-4efe-a212-807792ed0453",
+      "events": {
+        "True": [
+          {
+            "Item1": "5f61aa29-48ec-4c35-87ee-01f74c043528",
+            "Item2": "fsm_set_state"
+          }
+        ],
+        "False": [
+          {
+            "Item1": "ff0fd644-3cc5-4b68-b144-766f0e8ae9da",
+            "Item2": "Trigger"
+          }
+        ]
+      },
+      "vars": {
+        "Check": {
+          "Item1": "564ee1bf-2785-41a8-9286-511abc40cb19",
+          "Item2": "Value"
+        }
+      },
+      "type": "If",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 124.1703,
+        "y": -152.8395
+      },
+      "block_id": "564ee1bf-2785-41a8-9286-511abc40cb19",
+      "events": {},
+      "vars": {},
+      "type": "Variable (Bool)",
+      "config": {
+        "var_persistence_bool": "0",
+        "var_default_bool": "True",
+        "var_id_bool": "justOmnislashed"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -155.576935,
+        "y": -841.4905
+      },
+      "block_id": "e5a66778-3772-45c2-846c-cfc8d37954cc",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "7cb9148b-ff31-43bc-993e-64d3315a09ef",
+            "Item2": "Trigger"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "bab0f635",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 513.1391,
+        "y": -816.694946
+      },
+      "block_id": "b6d5ff8a-383f-431b-a934-0126221f8d7a",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "171e0b56-a8ff-4bc9-a044-d4b07d1eee2a",
+            "Item2": "Set"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "2fa19ad3",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 500.8999,
+        "y": -1261.38062
+      },
+      "block_id": "71a255ca-2e75-4387-82de-4ddfe5f7d8d1",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "171e0b56-a8ff-4bc9-a044-d4b07d1eee2a",
+            "Item2": "Set"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "2fbb1284",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 513.444641,
+        "y": -1030.791
+      },
+      "block_id": "ae0f9f8f-de94-40df-aa6f-e26b9ab6945f",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "171e0b56-a8ff-4bc9-a044-d4b07d1eee2a",
+            "Item2": "Set"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "e1c43c99",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 151.937576,
+        "y": -799.7451
+      },
+      "block_id": "7cb9148b-ff31-43bc-993e-64d3315a09ef",
+      "events": {},
+      "vars": {},
+      "type": "Random Event",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":52.1875,\"y\":-804.375},\"block_id\":\"ab584a9d-0ffc-4afb-be3c-10589a309247\",\"events\":{\"OnTrigger\":[{\"Item1\":\"71a255ca-2e75-4387-82de-4ddfe5f7d8d1\",\"Item2\":\"fsm_set_state\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"0.33\"},\"ext\":{}},{\"pos\":{\"x\":52.1875,\"y\":-804.375},\"block_id\":\"26cf1915-e159-47bd-9d35-016c89681664\",\"events\":{\"OnTrigger\":[{\"Item1\":\"ae0f9f8f-de94-40df-aa6f-e26b9ab6945f\",\"Item2\":\"fsm_set_state\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"0.33\"},\"ext\":{}},{\"pos\":{\"x\":52.1875,\"y\":-804.375},\"block_id\":\"2b5371ea-ddab-4a0c-a11d-c4e23b656224\",\"events\":{\"OnTrigger\":[{\"Item1\":\"b6d5ff8a-383f-431b-a934-0126221f8d7a\",\"Item2\":\"fsm_set_state\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"0.34\"},\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 986.4237,
+        "y": -427.404175
+      },
+      "block_id": "80270e8b-791c-4807-b72c-3dbe52031e44",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "53d04693-5e8f-4a47-b3fe-497853e9e182",
+            "Item2": "Set"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "464370f1",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 1249.61584,
+        "y": -298.038757
+      },
+      "block_id": "53d04693-5e8f-4a47-b3fe-497853e9e182",
+      "events": {},
+      "vars": {},
+      "type": "Variable (Bool)",
+      "config": {
+        "var_persistence_bool": "0",
+        "var_default_bool": "True",
+        "var_id_bool": "justOmnislashed"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1034.23108,
+        "y": -654.206848
+      },
+      "block_id": "171e0b56-a8ff-4bc9-a044-d4b07d1eee2a",
+      "events": {},
+      "vars": {},
+      "type": "Variable (Bool)",
+      "config": {
+        "var_persistence_bool": "0",
+        "var_default_bool": "False",
+        "var_id_bool": "justOmnislashed"
+      },
+      "ext": {}
+    }
+  ]
+}

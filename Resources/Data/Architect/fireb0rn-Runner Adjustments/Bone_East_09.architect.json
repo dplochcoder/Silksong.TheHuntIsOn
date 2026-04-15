@@ -1,0 +1,39 @@
+{
+  "placements": [],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -1.293103,
+        "y": -0.862064362
+      },
+      "block_id": "4de66eb5-ee0b-4a31-ace3-da7b2d10244c",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "MetSeamstress",
+        "pd_bool": "False"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -286.637848,
+        "y": -9.051717
+      },
+      "block_id": "17ae7f29-a68b-4ac0-8987-c09ac83f04ac",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "4de66eb5-ee0b-4a31-ace3-da7b2d10244c",
+            "Item2": "Set"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

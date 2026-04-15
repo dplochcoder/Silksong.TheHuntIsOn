@@ -1,0 +1,103 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f2da7b88",
+        "pos": {
+          "x": 29.5894337,
+          "y": 67.38246,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_Gate_small"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "aac52633",
+        "pos": {
+          "x": 16.1737,
+          "y": 66.0638657,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "bell_bench (1)/bell_toll_machine/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "02735b0e",
+        "pos": {
+          "x": 23.88968,
+          "y": 66.43504,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "bell_bench (1)/RestBench/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a0f30002",
+        "pos": {
+          "x": 16.2608147,
+          "y": 69.27265,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "bell_bench (1)/frame/"
+      }
+    },
+    {
+      "placement": {
+        "id": "bell_bench",
+        "pid": "5c524114",
+        "pos": {
+          "x": 18.9611282,
+          "y": 65.2666855,
+          "z": 0.009
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "bench_spawn": "True",
+        "bench_offset_x": "0",
+        "bench_offset_y": "0",
+        "bench_offset_z": "0"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

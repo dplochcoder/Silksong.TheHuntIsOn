@@ -1,0 +1,1030 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "0ba69e66",
+        "pos": {
+          "x": 39.33947,
+          "y": 12.4993343,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene Parent/Boss Scene/Splinter Queen",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Dormant"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "4ef902d0",
+        "pos": {
+          "x": 43.0228462,
+          "y": 12.5121222,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene Parent/Boss Scene/Splinter Queen",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "P3 Antic"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "c793ffe0",
+        "pos": {
+          "x": 46.89755,
+          "y": 12.4263515,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene Parent/Boss Scene/Splinter Queen",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Emerge Antic"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "63d1df0f",
+        "pos": {
+          "x": 43.04727,
+          "y": 8.287178,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene Parent/Boss Scene/Splinter Queen",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Reappear 6"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "06103bfa",
+        "pos": {
+          "x": 46.9304047,
+          "y": 8.343418,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene Parent/Boss Scene/Splinter Queen",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Idle"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "507626c0",
+        "pos": {
+          "x": 80.37645,
+          "y": 12.6158419,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/CamLock Boss"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1b9f7e28",
+        "pos": {
+          "x": 71.2906952,
+          "y": 9.693708,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach R/Gate Trigger (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8d65c2c2",
+        "pos": {
+          "x": 71.23978,
+          "y": 8.759385,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach R/Gate Trigger (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5ce62b4f",
+        "pos": {
+          "x": 71.30234,
+          "y": 10.6433983,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach R/Gate Trigger"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d5dabb4d",
+        "pos": {
+          "x": 72.7274857,
+          "y": 14.5599451,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "start_active": "False",
+        "remover_path": "CamLock"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7d2c7a35",
+        "pos": {
+          "x": 29.18579,
+          "y": 10.1493816,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach L/Gate Trigger"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "220ae5e5",
+        "pos": {
+          "x": 29.1970348,
+          "y": 11.3641415,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach L/Gate Trigger (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "02532fdd",
+        "pos": {
+          "x": 29.33201,
+          "y": 12.4776726,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach L/Gate Trigger (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5bd41a28",
+        "pos": {
+          "x": 29.4444733,
+          "y": 13.65869,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach L/Gate Trigger L"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "4cd7ab38",
+        "pos": {
+          "x": 27.5772648,
+          "y": 10.1831217,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach L/Gate Trigger R Rematch/Splinter Queen Gate Spike"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c7423aed",
+        "pos": {
+          "x": 27.6447563,
+          "y": 11.3191528,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach L/Gate Trigger R Rematch/Splinter Queen Gate Spike (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ebd8fd7a",
+        "pos": {
+          "x": 27.6447563,
+          "y": 12.5339127,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach L/Gate Trigger R Rematch/Splinter Queen Gate Spike (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "dc8b9d0d",
+        "pos": {
+          "x": 27.7459869,
+          "y": 13.5462132,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach L/Gate Trigger R Rematch/Splinter Queen Gate Spike (3)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9c28afcc",
+        "pos": {
+          "x": 27.8247261,
+          "y": 14.7047358,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach L/Gate Trigger R Rematch/Splinter Queen Gate Spike (4)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ede9ec63",
+        "pos": {
+          "x": 27.9484539,
+          "y": 15.964488,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach L/Gate Trigger R Rematch/Splinter Queen Gate Spike (5)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "cb429b00",
+        "pos": {
+          "x": 27.9371986,
+          "y": 16.9767876,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach L/Gate Trigger R Rematch/Splinter Queen Gate Spike (6)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b5659503",
+        "pos": {
+          "x": 27.9371986,
+          "y": 17.9440975,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach L/Gate Trigger R Rematch/Splinter Queen Gate Spike (7)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6983d704",
+        "pos": {
+          "x": 73.64254,
+          "y": 12.2977133,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach L/Gate Trigger R Rematch/Splinter Queen Gate Spike"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f69dcc8a",
+        "pos": {
+          "x": 75.3039,
+          "y": 8.467438,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach R/Gate Trigger L Rematch/Splinter Queen Gate Spike"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5cf10a48",
+        "pos": {
+          "x": 75.3039,
+          "y": 9.457241,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach R/Gate Trigger L Rematch/Splinter Queen Gate Spike (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "89e958eb",
+        "pos": {
+          "x": 75.28141,
+          "y": 10.3908072,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach R/Gate Trigger L Rematch/Splinter Queen Gate Spike (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5bd66bed",
+        "pos": {
+          "x": 75.3039,
+          "y": 11.3806133,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach R/Gate Trigger L Rematch/Splinter Queen Gate Spike (3)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e49b9d11",
+        "pos": {
+          "x": 76.22623,
+          "y": 8.489933,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach R/Gate Trigger L Rematch/Splinter Queen Gate Spike (4)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "50bed045",
+        "pos": {
+          "x": 76.25997,
+          "y": 9.322268,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach R/Gate Trigger L Rematch/Splinter Queen Gate Spike (5)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "03255333",
+        "pos": {
+          "x": 76.23748,
+          "y": 10.2895784,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach R/Gate Trigger L Rematch/Splinter Queen Gate Spike (6)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "76900f0c",
+        "pos": {
+          "x": 76.25997,
+          "y": 11.2456388,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach R/Gate Trigger L Rematch/Splinter Queen Gate Spike (7)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "aca47ead",
+        "pos": {
+          "x": 27.5323181,
+          "y": 8.912125,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach L/Gate Trigger R Rematch/terrain collider non slider"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9223c5f5",
+        "pos": {
+          "x": 77.6680756,
+          "y": 10.14238,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach R/Gate Trigger L Rematch/terrain collider non slider"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a5948c3c",
+        "pos": {
+          "x": 29.0800171,
+          "y": 8.961367,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach L/soft masker"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "f72c2778",
+        "pos": {
+          "x": 72.89928,
+          "y": 17.2657452,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Boss Scene Parent/Boss Scene/Splinter Queen"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "225e9058",
+        "pos": {
+          "x": 80.47027,
+          "y": 8.394373,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach R/Gate Trigger L Rematch/soft_masker",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "13a75c7c",
+        "pos": {
+          "x": 19.45682,
+          "y": 14.0913029,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach L/Gate Trigger R Rematch/soft_masker",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e5c77908",
+        "pos": {
+          "x": 21.241621,
+          "y": 14.1504326,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach L/Gate Trigger R Rematch/CameraLockArea",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "50c0cb40",
+        "pos": {
+          "x": 46.70831,
+          "y": 12.716321,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_width": "8",
+        "size_height": "5"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c79c0ce3",
+        "pos": {
+          "x": 76.65765,
+          "y": 13.9374046,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach R/Gate Trigger L Rematch/CameraLockArea",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "camera_border",
+        "pid": "66a88100",
+        "pos": {
+          "x": 37.42533,
+          "y": 13.5166817,
+          "z": 0.1
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "camera_border_type": "3",
+        "camera_border_mode": "1",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5fe70e4d",
+        "pos": {
+          "x": 65.7915344,
+          "y": 12.8601036,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach R/Gate Trigger L Rematch/Pt Slam"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5d3a921a",
+        "pos": {
+          "x": 64.51894,
+          "y": 12.8999014,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Boss Scene Parent/Boss Scene/Approaches/Approach L/Gate Trigger R Rematch/Pt Slam"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -5.803572,
+        "y": -25.8928642
+      },
+      "block_id": "f7ef5641-ef53-4597-8aae-0868f4f917ca",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "122fa689-b1f4-46c2-a7d4-5d1f240d4426",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "0ba69e66",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 200.000015,
+        "y": -42.41072
+      },
+      "block_id": "122fa689-b1f4-46c2-a7d4-5d1f240d4426",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "98f7790f-cbe8-4db8-9370-1502718b59c9",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "4ef902d0",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 425.8929,
+        "y": -44.642868
+      },
+      "block_id": "98f7790f-cbe8-4db8-9370-1502718b59c9",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "c793ffe0",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -1.78571451,
+        "y": -275.892883
+      },
+      "block_id": "070b3bf9-6069-436e-97e8-c4621e4c4439",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "41864715-cbf0-4641-8df8-9fda8ba19e13",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "63d1df0f",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 220.08931,
+        "y": -280.357178
+      },
+      "block_id": "41864715-cbf0-4641-8df8-9fda8ba19e13",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "06103bfa",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -311.382568,
+        "y": 63.99621
+      },
+      "block_id": "81d3d95f-9a7c-43b8-b97f-e1542b5e40e0",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "5f67e1c7-f589-485f-9dc7-5a19827d9561",
+            "Item2": "disable"
+          },
+          {
+            "Item1": "e47d74ba-91d3-48ac-bb72-12a83d1461a0",
+            "Item2": "In"
+          },
+          {
+            "Item1": "531b41a9-c9f6-4206-b1ff-b3dbe83c1f48",
+            "Item2": "disable"
+          }
+        ],
+        "ZoneExit": [
+          {
+            "Item1": "5f67e1c7-f589-485f-9dc7-5a19827d9561",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "4710d39c-705f-498a-83fa-c00efbb96a2f",
+            "Item2": "disable"
+          },
+          {
+            "Item1": "531b41a9-c9f6-4206-b1ff-b3dbe83c1f48",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "50c0cb40",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 124.6875,
+        "y": 57.8125
+      },
+      "block_id": "4710d39c-705f-498a-83fa-c00efbb96a2f",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "d5dabb4d",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": 98.75,
+        "y": -88.4375
+      },
+      "block_id": "5f67e1c7-f589-485f-9dc7-5a19827d9561",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "c79c0ce3",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": -194.6875,
+        "y": -190.0
+      },
+      "block_id": "1c5c8b3c-9d83-4650-964f-342f14bf0726",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "f72c2778",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -407.1875,
+        "y": -122.1875
+      },
+      "block_id": "8c119796-0492-4411-9149-b8f14e26b313",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "1c5c8b3c-9d83-4650-964f-342f14bf0726",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -81.875,
+        "y": 126.5625
+      },
+      "block_id": "e47d74ba-91d3-48ac-bb72-12a83d1461a0",
+      "events": {
+        "Out": [
+          {
+            "Item1": "4710d39c-705f-498a-83fa-c00efbb96a2f",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 103.75,
+        "y": -169.6875
+      },
+      "block_id": "531b41a9-c9f6-4206-b1ff-b3dbe83c1f48",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "e5c77908",
+        "object_type": "object_remover"
+      }
+    }
+  ]
+}

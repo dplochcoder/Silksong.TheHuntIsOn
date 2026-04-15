@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "aa743d49",
+        "pos": {
+          "x": 60.6299629,
+          "y": 9.157455,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Flea Rescue CitadelCage"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "934de3c6",
+        "pos": {
+          "x": 131.261749,
+          "y": 87.2803345,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Coral Crust Lore Tablet"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

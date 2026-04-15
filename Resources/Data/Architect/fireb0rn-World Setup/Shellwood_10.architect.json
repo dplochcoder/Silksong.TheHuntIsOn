@@ -1,0 +1,466 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "flower_drifter",
+        "pid": "e1d511cf",
+        "pos": {
+          "x": 67.10927,
+          "y": 28.61614,
+          "z": 0.006
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_hp_scale": "True",
+        "enemy_z": "0",
+        "invulnerable": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_remover",
+        "pid": "12e29a15",
+        "pos": {
+          "x": 52.960968,
+          "y": 29.91406,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "disabler_all": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "414dc404",
+        "pos": {
+          "x": 69.12266,
+          "y": 28.1496525,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_height": "1.5",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "35f895c2",
+        "pos": {
+          "x": 65.17469,
+          "y": 28.1815529,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_height": "1.5",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "fa79a1a8",
+        "pos": {
+          "x": 67.165535,
+          "y": 30.4779453,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_width": "1.1",
+        "size_height": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "761d8e1f",
+        "pos": {
+          "x": 67.14304,
+          "y": 25.8213615,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_width": "1.1",
+        "size_height": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_remover",
+        "pid": "8be675bb",
+        "pos": {
+          "x": 48.7110252,
+          "y": 36.0211563,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "disabler_all": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "flower_drifter",
+        "pid": "e8c5b5c9",
+        "pos": {
+          "x": 48.7043266,
+          "y": 37.35829,
+          "z": 0.006
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_hp_scale": "True",
+        "enemy_z": "0",
+        "invulnerable": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "5f913716",
+        "pos": {
+          "x": 50.7177162,
+          "y": 36.8918037,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_height": "1.5",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "e94f7199",
+        "pos": {
+          "x": 46.76975,
+          "y": 36.9237061,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_height": "1.5",
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "03367862",
+        "pos": {
+          "x": 48.7605934,
+          "y": 39.2200966,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_width": "1.1",
+        "size_height": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "0edba557",
+        "pos": {
+          "x": 48.738102,
+          "y": 34.5635147,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_width": "1.1",
+        "size_height": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "544c7029",
+        "pos": {
+          "x": 31.7583561,
+          "y": 68.450264,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Flower Drifter (3)"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "2b006402",
+        "pos": {
+          "x": 33.6479759,
+          "y": 56.9325142,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Bloom Puncher (3)"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "f87eb1e0",
+        "pos": {
+          "x": 5.93605232,
+          "y": 48.33042,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Bloom Puncher (4)"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "e02bea8b",
+        "pos": {
+          "x": 6.66714859,
+          "y": 38.61134,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Bloom Puncher"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "3f5c4430",
+        "pos": {
+          "x": 37.0578651,
+          "y": 51.6124954,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Bloom Puncher (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "aa8a109b",
+        "pos": {
+          "x": 45.2061844,
+          "y": 82.007515,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Ability Scene (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "eec95a2a",
+        "pos": {
+          "x": 12.5532608,
+          "y": 26.4484711,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "purple_flower_set/Big Flower/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 152.1875,
+        "y": 0.625
+      },
+      "block_id": "6034138f-ae30-4895-8f50-10f77ae3012f",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "544c7029",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -225.3125,
+        "y": -11.875
+      },
+      "block_id": "d0bc545a-8737-45cb-88d1-517d750a1168",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "6034138f-ae30-4895-8f50-10f77ae3012f",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "1014cf17-7c17-4f1a-9832-2e8936a5685f",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "5df9f80d-fe27-4cce-b925-ac070a0221f5",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "1e9957be-813a-46e0-850b-395ecf8fa9d4",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "635546c7-df6b-40bf-a780-f45b213de89d",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 152.8125,
+        "y": -42.5
+      },
+      "block_id": "1014cf17-7c17-4f1a-9832-2e8936a5685f",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "2b006402",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 157.5,
+        "y": -76.25
+      },
+      "block_id": "5df9f80d-fe27-4cce-b925-ac070a0221f5",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "e02bea8b",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 153.4375,
+        "y": -116.875
+      },
+      "block_id": "1e9957be-813a-46e0-850b-395ecf8fa9d4",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "f87eb1e0",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 151.5625,
+        "y": -170.0
+      },
+      "block_id": "635546c7-df6b-40bf-a780-f45b213de89d",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "3f5c4430",
+        "object_type": "enemy_hook"
+      }
+    }
+  ]
+}

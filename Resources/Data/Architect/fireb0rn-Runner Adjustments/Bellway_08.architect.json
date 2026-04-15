@@ -1,0 +1,341 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "c71250f5",
+        "pos": {
+          "x": 94.33643,
+          "y": 14.9286022,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "0",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "44da4f8f",
+        "pos": {
+          "x": 90.99905,
+          "y": 18.9129543,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "1",
+        "component_hook_target": "Bellway Toll Machine",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "fe428e99",
+        "pos": {
+          "x": 94.2802048,
+          "y": 18.86537,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "2",
+        "component_hook_target": "Bellway Toll Machine",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "48d28c00",
+        "pos": {
+          "x": 99.84785,
+          "y": 16.3459,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Bellway Toll Machine",
+        "fsm_hook_state": "Return Control",
+        "fsm_hook_name": "Unlock Behaviour"
+      }
+    },
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "469a0970",
+        "pos": {
+          "x": 120.653015,
+          "y": 14.7546577,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "0",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "b3aeb2b4",
+        "pos": {
+          "x": 117.293106,
+          "y": 19.44755,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "1",
+        "component_hook_target": "Bell Bench Scene/bell_bench/bell_toll_machine",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "c0fdd78e",
+        "pos": {
+          "x": 120.574265,
+          "y": 19.3999653,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "2",
+        "component_hook_target": "Bell Bench Scene/bell_bench/bell_toll_machine",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "f79242d4",
+        "pos": {
+          "x": 126.051941,
+          "y": 16.8692455,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Bell Bench Scene/bell_bench/bell_toll_machine",
+        "fsm_hook_state": "Set Extra PD Bool",
+        "fsm_hook_name": "Unlock Behaviour"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 19.82758,
+        "y": 116.379272
+      },
+      "block_id": "6163b647-4108-4541-8322-38c81719b755",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "44da4f8f",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": 14.6551676,
+        "y": -14.6551638
+      },
+      "block_id": "baf279f7-e376-4c46-aa9d-3c8058f0f905",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "fe428e99",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": -209.913727,
+        "y": -63.79308
+      },
+      "block_id": "80680681-7170-44a9-9579-906c24c472c1",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "baf279f7-e376-4c46-aa9d-3c8058f0f905",
+            "Item2": "component_hook_apply"
+          },
+          {
+            "Item1": "0621e3ce-0fe5-4548-8ddc-9c0ef5e4746a",
+            "Item2": "fsm_set_state"
+          },
+          {
+            "Item1": "80680681-7170-44a9-9579-906c24c472c1",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "c71250f5",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": 10.3448238,
+        "y": -187.499939
+      },
+      "block_id": "0621e3ce-0fe5-4548-8ddc-9c0ef5e4746a",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "48d28c00",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -199.4827,
+        "y": 90.16158
+      },
+      "block_id": "2c13398b-d3cc-4cb6-96ca-a5ac8f6229ed",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "6163b647-4108-4541-8322-38c81719b755",
+            "Item2": "component_hook_apply"
+          },
+          {
+            "Item1": "025f537c-6b3b-4f2e-b4dc-34bb61d9e877",
+            "Item2": "component_hook_apply"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 496.120483,
+        "y": 197.844757
+      },
+      "block_id": "025f537c-6b3b-4f2e-b4dc-34bb61d9e877",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "b3aeb2b4",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": 527.155,
+        "y": 76.72411
+      },
+      "block_id": "85825e4f-23e1-4322-a4a0-901d14766105",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "c0fdd78e",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": 292.241272,
+        "y": 0.862072
+      },
+      "block_id": "260f2e89-4d71-477a-ab9a-dc6696079011",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "85825e4f-23e1-4322-a4a0-901d14766105",
+            "Item2": "component_hook_apply"
+          },
+          {
+            "Item1": "ca3b5333-079b-465d-9285-c423da6cac16",
+            "Item2": "fsm_set_state"
+          },
+          {
+            "Item1": "260f2e89-4d71-477a-ab9a-dc6696079011",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "469a0970",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": 511.206726,
+        "y": -98.70686
+      },
+      "block_id": "ca3b5333-079b-465d-9285-c423da6cac16",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "f79242d4",
+        "object_type": "fsm_hook"
+      }
+    }
+  ]
+}

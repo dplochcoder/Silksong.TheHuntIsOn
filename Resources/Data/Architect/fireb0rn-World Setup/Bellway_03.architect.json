@@ -1,0 +1,343 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "updraft_region",
+        "pid": "c0f04a06",
+        "pos": {
+          "x": 134.9988,
+          "y": 16.7742882,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "updraft_width": "1.5",
+        "updraft_height": "20"
+      }
+    },
+    {
+      "placement": {
+        "id": "updraft_region",
+        "pid": "a6d82f72",
+        "pos": {
+          "x": 109.51413,
+          "y": 3.64478683,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "updraft_width": "1.5",
+        "updraft_height": "35"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "50083a18",
+        "pos": {
+          "x": 139.692047,
+          "y": 19.5799847,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Wind Rock"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "940938a0",
+        "pos": {
+          "x": 140.625626,
+          "y": 19.5912323,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Wind Rock (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "56e64dd0",
+        "pos": {
+          "x": 54.6839256,
+          "y": 10.3662758,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "bell_bench/bell_toll_machine/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0961e9cc",
+        "pos": {
+          "x": 54.6051865,
+          "y": 11.2211065,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "bell_bench/frame"
+      }
+    },
+    {
+      "placement": {
+        "id": "bell_bench",
+        "pid": "c07429d8",
+        "pos": {
+          "x": 49.03842,
+          "y": 10.2790976,
+          "z": 0.009
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "bench_spawn": "True",
+        "bench_offset_x": "0",
+        "bench_offset_y": "0",
+        "bench_offset_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "ca540a6c",
+        "pos": {
+          "x": 70.747345,
+          "y": 13.1683807,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "2",
+        "trans_collide": "1",
+        "trans_id": "FieldsStag"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "46525b9b",
+        "pos": {
+          "x": 74.874115,
+          "y": 13.3194628,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "start_active": "False",
+        "fsm_hook_state": "Appear Delay",
+        "fsm_hook_name": "Interaction",
+        "fsm_hook_target": "Bone Beast NPC"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "c668e5a6",
+        "pos": {
+          "x": 78.42754,
+          "y": 13.3866758,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "start_active": "False",
+        "fsm_hook_state": "Start Shake",
+        "fsm_hook_name": "Interaction",
+        "fsm_hook_target": "Bone Beast NPC"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -2.1875,
+        "y": -22.8125
+      },
+      "block_id": "89daec27-18fe-479f-b18d-bfe0f1a19ce3",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "835da8f4-28ce-4547-ad8c-562d9c21fa72",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "46525b9b",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 255.3125,
+        "y": -30.625
+      },
+      "block_id": "835da8f4-28ce-4547-ad8c-562d9c21fa72",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "c668e5a6",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -387.5,
+        "y": -10.0
+      },
+      "block_id": "c9d2f38f-913b-4286-9a59-ce4db0d1c16b",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "8d9f63cf-894e-4854-b0d4-b6b4d9874550",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -197.8125,
+        "y": 91.875
+      },
+      "block_id": "920dfa70-dbe2-4582-a9ed-cd72b35d05d1",
+      "events": {
+        "Out": [
+          {
+            "Item1": "89daec27-18fe-479f-b18d-bfe0f1a19ce3",
+            "Item2": "fsm_remove_transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -236.875,
+        "y": -82.1875
+      },
+      "block_id": "8d9f63cf-894e-4854-b0d4-b6b4d9874550",
+      "events": {
+        "Out": [
+          {
+            "Item1": "920dfa70-dbe2-4582-a9ed-cd72b35d05d1",
+            "Item2": "In"
+          },
+          {
+            "Item1": "89daec27-18fe-479f-b18d-bfe0f1a19ce3",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "835da8f4-28ce-4547-ad8c-562d9c21fa72",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -147.8261,
+        "y": -350.5435
+      },
+      "block_id": "be924061-cd25-44df-9661-a63a22c639fc",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "58c3955b-6539-4a2a-a814-31ec82931414",
+            "Item2": "Set"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "b695f042",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": 123.697578,
+        "y": -347.4476
+      },
+      "block_id": "58c3955b-6539-4a2a-a814-31ec82931414",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "travelling",
+        "pd_bool": "False"
+      },
+      "ext": {}
+    }
+  ]
+}

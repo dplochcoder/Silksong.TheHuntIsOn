@@ -1,0 +1,801 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "236b7dc0",
+        "pos": {
+          "x": 80.8034,
+          "y": 9.301056,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Boss Scene/Bone Beast",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "16383714",
+        "pos": {
+          "x": 133.534912,
+          "y": 7.692626,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Silk Heart",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Drop To Place",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "896f581f",
+        "pos": {
+          "x": 137.302933,
+          "y": 7.72637,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Silk Heart",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Fade Return",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "7527a637",
+        "pos": {
+          "x": 144.467789,
+          "y": 3.33973122,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Silk Heart",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Shatter",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "1d8ab96b",
+        "pos": {
+          "x": 148.066788,
+          "y": 3.20476055,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Silk Heart",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Wipe",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "24017ff6",
+        "pos": {
+          "x": 80.4943848,
+          "y": 6.579089,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "start_active": "False",
+        "enabler_path": "Boss Scene/Silk Heart"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9703088c",
+        "pos": {
+          "x": 125.299118,
+          "y": 8.153778,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Silk Heart Memory Return"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "5b0da37a",
+        "pos": {
+          "x": 141.071518,
+          "y": 7.737612,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Silk Heart",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Fade Audio Down",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "1c1a929c",
+        "pos": {
+          "x": 86.22818,
+          "y": 9.282363,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Bone Beast NPC",
+        "fsm_hook_name": "Interaction",
+        "fsm_hook_state": "Wait For Enter",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "b252497d",
+        "pos": {
+          "x": 89.83626,
+          "y": 9.1955595,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Bone Beast NPC",
+        "fsm_hook_name": "Interaction",
+        "fsm_hook_state": "Is Already Present?",
+        "start_active": "False"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 11.6541071,
+        "y": -281.1742
+      },
+      "block_id": "c24428f8-cac1-4b1d-82b2-97000d97645c",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "2c601ab9-dfa6-4549-ba32-c1378e536c56",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7527a637",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -491.889984,
+        "y": -131.146149
+      },
+      "block_id": "d232ffb6-0333-4920-b2ef-543d5b383297",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "76c0cd88-cc59-43fa-95ab-4e4703a5001a",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "16383714",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -184.195313,
+        "y": -132.21579
+      },
+      "block_id": "0e30a7ed-c593-452e-93f8-f36b752b1dbe",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "896f581f",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -351.350525,
+        "y": 47.3973923
+      },
+      "block_id": "76c0cd88-cc59-43fa-95ab-4e4703a5001a",
+      "events": {
+        "Out": [
+          {
+            "Item1": "0e30a7ed-c593-452e-93f8-f36b752b1dbe",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -803.032837,
+        "y": 46.7064743
+      },
+      "block_id": "84c38bac-7196-407d-a693-a39db33ba9bd",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "ecbf024b-d304-449c-a5fd-ef6c69ece99e",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -598.9576,
+        "y": 43.03877
+      },
+      "block_id": "ecbf024b-d304-449c-a5fd-ef6c69ece99e",
+      "events": {
+        "Out": [
+          {
+            "Item1": "d232ffb6-0333-4920-b2ef-543d5b383297",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "0e30a7ed-c593-452e-93f8-f36b752b1dbe",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "c24428f8-cac1-4b1d-82b2-97000d97645c",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "2bfc9e51-7dc0-4186-8b50-fce2c6522ac6",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "2c601ab9-dfa6-4549-ba32-c1378e536c56",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "846562b6-aecf-4bf9-97e4-82c177d485b7",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "7b630cce-1c33-40ba-bf5e-6e9dd4bf8e89",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -219.174362,
+        "y": 254.662811
+      },
+      "block_id": "2bfc9e51-7dc0-4186-8b50-fce2c6522ac6",
+      "events": {
+        "OnDeath": [
+          {
+            "Item1": "4dedec89-7bce-49e1-b3c0-ac377268a77e",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "236b7dc0",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 226.411285,
+        "y": 306.349335
+      },
+      "block_id": "8de5a000-b4cb-408b-bd94-10da7fd4fd9b",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "24017ff6",
+        "object_type": "object_enabler"
+      }
+    },
+    {
+      "pos": {
+        "x": 8.314375,
+        "y": 305.520844
+      },
+      "block_id": "4dedec89-7bce-49e1-b3c0-ac377268a77e",
+      "events": {
+        "Out": [
+          {
+            "Item1": "8de5a000-b4cb-408b-bd94-10da7fd4fd9b",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "3"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 968.101257,
+        "y": -21.3230686
+      },
+      "block_id": "0cf63da8-c156-4604-a93a-9f8e51722ffa",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_05",
+        "trans_door": "door_cinematicEnd"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2459.51343,
+        "y": -169.571442
+      },
+      "block_id": "c72cfdc0-471d-4411-91a9-112404c8e340",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Int)",
+      "config": {
+        "pd_int_type": "CurrentSilkRegenMax",
+        "pd_int": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1401.8905,
+        "y": -164.561813
+      },
+      "block_id": "48d36703-4cc4-449a-91ed-c6e4d0b6eb73",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "4795d5ce-67da-40fe-8fd3-de604883cf31",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1914.01172,
+        "y": -97.06183
+      },
+      "block_id": "37cd5440-75a4-4a40-a9ab-a6db6e937492",
+      "events": {
+        "Out": [
+          {
+            "Item1": "690a3f36-b96c-40d2-acf0-8fe50d157b79",
+            "Item2": "Trigger"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 421.1957,
+        "y": 187.257782
+      },
+      "block_id": "d9b8d4ba-ba01-4f7e-90c1-688e1eec9d24",
+      "events": {},
+      "vars": {},
+      "type": "Ordered Events",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":504.62207,\"y\":-90.27443},\"block_id\":\"6c0ded02-cd03-4cbd-ab30-bec24b45def7\",\"events\":{\"OnTrigger\":[{\"Item1\":\"8695b2b8-903d-465c-a075-3a62711105f9\",\"Item2\":\"Set\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":341.5625,\"y\":-22.1875},\"block_id\":\"b716350a-52ef-426b-a0e9-af991696e3f6\",\"events\":{\"OnTrigger\":[{\"Item1\":\"c1df157c-585f-4552-97a4-d480ea35ce14\",\"Item2\":\"Spawn\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":404.6875,\"y\":-25.625},\"block_id\":\"a97174b0-02fe-48b9-ae8c-962efb2a25d9\",\"events\":{\"OnTrigger\":[{\"Item1\":\"e91d000e-7df2-43e1-8d31-61abc7c94692\",\"Item2\":\"In\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 1589.12537,
+        "y": -30.1584225
+      },
+      "block_id": "738c2d6d-9669-400f-b864-a5f260c1fbfb",
+      "events": {},
+      "vars": {
+        "New Value": {
+          "Item1": "77d59338-7d50-4c53-8952-cac910bde2aa",
+          "Item2": "Value"
+        }
+      },
+      "type": "Variable (Bool)",
+      "config": {
+        "var_persistence_bool": "2",
+        "var_id_bool": "justDefeatedBellBeast"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1303.68188,
+        "y": -20.68871
+      },
+      "block_id": "77d59338-7d50-4c53-8952-cac910bde2aa",
+      "events": {},
+      "vars": {},
+      "type": "Constant Bool",
+      "config": {
+        "constant_bool": "True"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1591.777,
+        "y": -177.128159
+      },
+      "block_id": "4795d5ce-67da-40fe-8fd3-de604883cf31",
+      "events": {
+        "True": [
+          {
+            "Item1": "37cd5440-75a4-4a40-a9ab-a6db6e937492",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {
+        "Check": {
+          "Item1": "738c2d6d-9669-400f-b864-a5f260c1fbfb",
+          "Item2": "Value"
+        }
+      },
+      "type": "If",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2038.92651,
+        "y": -187.47847
+      },
+      "block_id": "690a3f36-b96c-40d2-acf0-8fe50d157b79",
+      "events": {},
+      "vars": {},
+      "type": "Ordered Events",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":1.19042969,\"y\":-473.80957},\"block_id\":\"2a613257-d82f-41dd-97db-75c223dafb5d\",\"events\":{\"OnTrigger\":[{\"Item1\":\"c72cfdc0-471d-4411-91a9-112404c8e340\",\"Item2\":\"Set\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":1.19042969,\"y\":-623.8095},\"block_id\":\"fbdf8fc9-4b3d-4885-a875-55e9ff18b3fc\",\"events\":{\"OnTrigger\":[{\"Item1\":\"83dca9ce-4a3d-480a-af6f-6fd30a65e1af\",\"Item2\":\"Set\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":1285.07446,\"y\":-186.565125},\"block_id\":\"43850c61-ddc5-448f-875e-5b39aa43b602\",\"events\":{\"OnTrigger\":[{\"Item1\":\"7b3ba5a6-ee2a-4c67-a998-250610646148\",\"Item2\":\"Start\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":1791.17871,\"y\":-218.61824},\"block_id\":\"03b455c6-9335-47f2-93fb-53b24bf8e5bc\",\"events\":{\"OnTrigger\":[{\"Item1\":\"89ac4fa9-1bd7-4c9b-b495-cd4b130b2de3\",\"Item2\":\"Give\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 2455.86768,
+        "y": -266.3233
+      },
+      "block_id": "f21a9f5a-a170-43ca-9456-f1d514b063ae",
+      "events": {},
+      "vars": {},
+      "type": "Constant Bool",
+      "config": {
+        "constant_bool": "False"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2459.65552,
+        "y": -326.929352
+      },
+      "block_id": "83dca9ce-4a3d-480a-af6f-6fd30a65e1af",
+      "events": {},
+      "vars": {
+        "New Value": {
+          "Item1": "f21a9f5a-a170-43ca-9456-f1d514b063ae",
+          "Item2": "Value"
+        }
+      },
+      "type": "Variable (Bool)",
+      "config": {
+        "var_persistence_bool": "2",
+        "var_id_bool": "justDefeatedBellBeast"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 196.1715,
+        "y": -283.1303
+      },
+      "block_id": "2c601ab9-dfa6-4549-ba32-c1378e536c56",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "d9b8d4ba-ba01-4f7e-90c1-688e1eec9d24",
+            "Item2": "Trigger"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "1d8ab96b",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 709.2838,
+        "y": -32.9937
+      },
+      "block_id": "e91d000e-7df2-43e1-8d31-61abc7c94692",
+      "events": {
+        "Out": [
+          {
+            "Item1": "0cf63da8-c156-4604-a93a-9f8e51722ffa",
+            "Item2": "Transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 709.211,
+        "y": 118.496979
+      },
+      "block_id": "c1df157c-585f-4552-97a4-d480ea35ce14",
+      "events": {},
+      "vars": {},
+      "type": "Spawn Prefab",
+      "config": {
+        "prefab_x": "0",
+        "prefab_y": "0",
+        "prefab_name": "ReturnControl"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 707.990967,
+        "y": 304.47644
+      },
+      "block_id": "dd6e8ca1-5e41-486c-8c3b-061ad101e94a",
+      "events": {},
+      "vars": {},
+      "type": "Constant Bool",
+      "config": {
+        "constant_bool": "True"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 709.970154,
+        "y": 217.080627
+      },
+      "block_id": "8695b2b8-903d-465c-a075-3a62711105f9",
+      "events": {},
+      "vars": {
+        "New Value": {
+          "Item1": "dd6e8ca1-5e41-486c-8c3b-061ad101e94a",
+          "Item2": "Value"
+        }
+      },
+      "type": "Variable (Bool)",
+      "config": {
+        "var_persistence_bool": "2",
+        "var_id_bool": "justDefeatedBellBeast"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2466.18164,
+        "y": -598.456665
+      },
+      "block_id": "89ac4fa9-1bd7-4c9b-b495-cd4b130b2de3",
+      "events": {},
+      "vars": {},
+      "type": "Health Control",
+      "config": {
+        "health_amount": "5"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2278.67847,
+        "y": -412.784821
+      },
+      "block_id": "7b3ba5a6-ee2a-4c67-a998-250610646148",
+      "events": {
+        "Stop": [
+          {
+            "Item1": "3cc1481d-a3a1-47cd-ba89-06433ba0e10b",
+            "Item2": "Start"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Animator Controller",
+      "config": {
+        "anim_take_ctrl": "True",
+        "anim_clip": "Prostrate",
+        "anim_duration": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2501.59546,
+        "y": -417.368164
+      },
+      "block_id": "3cc1481d-a3a1-47cd-ba89-06433ba0e10b",
+      "events": {},
+      "vars": {},
+      "type": "Animator Controller",
+      "config": {
+        "anim_take_ctrl": "True",
+        "anim_clip": "Prostrate Rise"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 584.7804,
+        "y": -479.3418
+      },
+      "block_id": "846562b6-aecf-4bf9-97e4-82c177d485b7",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "c0eb9ee3-f164-4b4d-b3ac-8bf90d382259",
+            "Item2": "Trigger"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "1c1a929c",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 1152.52051,
+        "y": -509.182526
+      },
+      "block_id": "7b630cce-1c33-40ba-bf5e-6e9dd4bf8e89",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "b252497d",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 828.28656,
+        "y": -528.155762
+      },
+      "block_id": "c0eb9ee3-f164-4b4d-b3ac-8bf90d382259",
+      "events": {},
+      "vars": {},
+      "type": "Ordered Events",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":377.7661,\"y\":-237.010254},\"block_id\":\"8794848d-5d7e-4049-aec9-4e3d2181f564\",\"events\":{\"OnTrigger\":[{\"Item1\":\"7b630cce-1c33-40ba-bf5e-6e9dd4bf8e89\",\"Item2\":\"fsm_set_state\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":377.7661,\"y\":-237.010254},\"block_id\":\"b3537f93-96c7-46f3-9d78-47673f95baba\",\"events\":{\"OnTrigger\":[{\"Item1\":\"63a20dc6-903c-4833-b60b-38cb7a4f9745\",\"Item2\":\"Set\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 1117.34875,
+        "y": -732.843262
+      },
+      "block_id": "63a20dc6-903c-4833-b60b-38cb7a4f9745",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "UnlockedFastTravel",
+        "pd_bool": "True"
+      },
+      "ext": {}
+    }
+  ]
+}

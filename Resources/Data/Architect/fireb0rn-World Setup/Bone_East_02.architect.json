@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "298a8102",
+        "pos": {
+          "x": 22.00686,
+          "y": 10.5362043,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bellshrine gate"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

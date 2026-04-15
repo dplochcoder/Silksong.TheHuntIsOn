@@ -1,0 +1,116 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "cf53bb65",
+        "pos": {
+          "x": 113.817268,
+          "y": 53.4964371,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "e599b3c7",
+        "pos": {
+          "x": 121.407539,
+          "y": 12.596302,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "bell_bench Group/bell_bench_underside",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Break"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2b18ba72",
+        "pos": {
+          "x": 69.89113,
+          "y": 62.18204,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "One Way Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5925e78f",
+        "pos": {
+          "x": 114.19976,
+          "y": 45.8254471,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Mapper Sit NPC"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "8072de72-20e2-4470-9180-cd66b15cd4ee",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "e599b3c7",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -291.25,
+        "y": 38.125
+      },
+      "block_id": "6ca11570-90ea-4287-b445-618445d26e2e",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "8072de72-20e2-4470-9180-cd66b15cd4ee",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

@@ -1,0 +1,331 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2ab9d9bc",
+        "pos": {
+          "x": 98.44482,
+          "y": 35.0825424,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "GameObjects/Battle Scene Control/Battle Scene/Gates"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0ca32633",
+        "pos": {
+          "x": 98.48785,
+          "y": 33.99822,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "GameObject/Battle Scene Control/Battle Scene/Gates"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "357391b7",
+        "pos": {
+          "x": 80.28888,
+          "y": 44.87486,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "GameObject/Battle Scene Control/Battle Scene/Wave 1/Pilgrim 02 Song"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "3929beb9",
+        "pos": {
+          "x": 76.4872,
+          "y": 44.68362,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "GameObject/Battle Scene Control/Battle Scene/Wave 1/Pilgrim 04 Song"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "74f80bc4",
+        "pos": {
+          "x": 72.58421,
+          "y": 44.5149078,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "GameObject/Battle Scene Control/Battle Scene/Wave 1/Song Pilgrim 03"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "4700d2fc",
+        "pos": {
+          "x": 59.0191078,
+          "y": 33.0534,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.2
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "0150b2b3",
+        "pos": {
+          "x": 94.91096,
+          "y": 33.0062943,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.2
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "70925ce3",
+        "pos": {
+          "x": 77.05704,
+          "y": 42.3328133,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_width": "8",
+        "size_height": "8"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8c5f6232",
+        "pos": {
+          "x": 55.9715424,
+          "y": 35.0340538,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "GameObject/Battle Scene Control/Battle Scene/CamLocks",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "pilgrim_02_song",
+        "pid": "762397d8",
+        "pos": {
+          "x": 85.6560059,
+          "y": 32.4471169,
+          "z": 0.006
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_hp_scale": "True",
+        "enemy_z": "0",
+        "invulnerable": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "choristor",
+        "pid": "28a1abd9",
+        "pos": {
+          "x": 66.82591,
+          "y": 32.7170639,
+          "z": 0.006
+        },
+        "flipped": true,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_hp_scale": "True",
+        "enemy_z": "0",
+        "invulnerable": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "choir_flyer",
+        "pid": "6522d099",
+        "pos": {
+          "x": 75.62911,
+          "y": 37.69983,
+          "z": 0.006
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "patroller_x": "5",
+        "patroller_y": "0",
+        "enemy_hp_scale": "True",
+        "enemy_z": "0",
+        "invulnerable": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f9090a0a",
+        "pos": {
+          "x": 63.4737663,
+          "y": 39.3307457,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "GameObject/Battle Scene Control/Return Acolytes/"
+      }
+    },
+    {
+      "placement": {
+        "id": "song_reed",
+        "pid": "e034dc69",
+        "pos": {
+          "x": 68.68152,
+          "y": 34.529808,
+          "z": 0.006
+        },
+        "flipped": true,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_hp_scale": "True",
+        "enemy_z": "0",
+        "enemy_stay_dead": "0",
+        "invulnerable": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "pilgrim_stomper_song",
+        "pid": "32edb748",
+        "pos": {
+          "x": 84.31595,
+          "y": 34.86217,
+          "z": 0.006
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_hp_scale": "True",
+        "enemy_z": "0",
+        "invulnerable": "True",
+        "enemy_stay_dead": "0"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -364.393921,
+        "y": -126.893913
+      },
+      "block_id": "c96e8cc2-fa51-480d-bb3a-e4a7f5a0e5b2",
+      "events": {
+        "ZoneExit": [
+          {
+            "Item1": "afaf6aa4-2f2b-4054-8b7b-4ac866f95e1b",
+            "Item2": "enable"
+          }
+        ],
+        "ZoneEnter": [
+          {
+            "Item1": "afaf6aa4-2f2b-4054-8b7b-4ac866f95e1b",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "70925ce3",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": -136.742416,
+        "y": -167.803024
+      },
+      "block_id": "afaf6aa4-2f2b-4054-8b7b-4ac866f95e1b",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "8c5f6232",
+        "object_type": "object_remover"
+      }
+    }
+  ]
+}

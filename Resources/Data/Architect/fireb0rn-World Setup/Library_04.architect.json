@@ -1,0 +1,282 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b4b367af",
+        "pos": {
+          "x": 10.3806591,
+          "y": 94.209404,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "song_trap_door (1)/Door"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b15afbb5",
+        "pos": {
+          "x": 10.7082653,
+          "y": 89.68662,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "39429057",
+        "pos": {
+          "x": 49.888607,
+          "y": 161.652176,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Song_lever_side"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9c4e8319",
+        "pos": {
+          "x": 51.1483574,
+          "y": 161.6983,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "song_trap_door (2)/Door"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "64a9e13f",
+        "pos": {
+          "x": 24.51975,
+          "y": 214.296646,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "shortcut/One Way Wall/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "7b832c88",
+        "pos": {
+          "x": 52.7084961,
+          "y": 195.366943,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "attic_ladder/Down State Controller"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "aef231b5",
+        "pos": {
+          "x": 49.83942,
+          "y": 194.94252,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "2",
+        "component_hook_target": "attic_ladder",
+        "component_hook_name": "Animator"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "d9a01af4",
+        "pos": {
+          "x": 20.096487,
+          "y": 217.542,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "2",
+        "component_hook_target": "attic_ladder",
+        "component_hook_name": "Animator"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "47534c41",
+        "pos": {
+          "x": 15.9656944,
+          "y": 217.559311,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "2",
+        "component_hook_target": "attic_ladder",
+        "component_hook_name": "Animator"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "ddc2c72f",
+        "pos": {
+          "x": 16.4496384,
+          "y": 217.818573,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "2",
+        "component_hook_target": "attic_ladder",
+        "component_hook_name": "Animator"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "04581bf9",
+        "pos": {
+          "x": 5.889329,
+          "y": 221.724655,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "2",
+        "component_hook_target": "attic_ladder",
+        "component_hook_name": "Animator"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8e8b6622",
+        "pos": {
+          "x": 10.9534512,
+          "y": 208.485489,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Map Machine (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0c5d1be9",
+        "pos": {
+          "x": 20.01382,
+          "y": 112.895523,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Library Sliding Plat/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a542f854",
+        "pos": {
+          "x": 37.0296936,
+          "y": 31.1729927,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Library Sliding Plat (3)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

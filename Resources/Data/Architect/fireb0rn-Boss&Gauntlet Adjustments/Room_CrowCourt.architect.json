@@ -1,0 +1,331 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1410d385",
+        "pos": {
+          "x": 24.6265373,
+          "y": 55.053627,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Battle Scene/CamLocks/CameraLockArea (2)",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6b695c82",
+        "pos": {
+          "x": 47.3513565,
+          "y": 47.90219,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Battle Scene/Gates/grey_lever_gate crowcourt01"
+      }
+    },
+    {
+      "placement": {
+        "id": "moor_plat_1",
+        "pid": "f5771e4c",
+        "pos": {
+          "x": 29.6357422,
+          "y": 48.13627,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "53c33895",
+        "pos": {
+          "x": 24.8523312,
+          "y": 58.47711,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Battle Scene/Wave 1/Crowman Dagger"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "5659ff1e",
+        "pos": {
+          "x": 29.4900112,
+          "y": 57.5816574,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.5
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "08a2950b",
+        "pos": {
+          "x": 48.38713,
+          "y": 44.2219734,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.5
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "0a9fdd84",
+        "pos": {
+          "x": 54.17263,
+          "y": 44.48072,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Battle Scene/After Battle/Crowman"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "90cb8293",
+        "pos": {
+          "x": 46.1386528,
+          "y": 49.1786,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Battle Scene/After Battle/Crowman Dagger (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "497ce8ce",
+        "pos": {
+          "x": 58.054615,
+          "y": 44.68062,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Battle Scene/After Battle/Crowman Dagger (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "31fd047b",
+        "pos": {
+          "x": 27.391428,
+          "y": 47.0665169,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_width": "9",
+        "size_height": "4"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "13dacb22",
+        "pos": {
+          "x": 43.88725,
+          "y": 45.4189148,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Battle Scene/Wave 1/Crow (1)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 410.227356,
+        "y": 9.289732
+      },
+      "block_id": "b5beeb95-b144-434c-b798-b65f7c98e6ee",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "1410d385",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": 225.032684,
+        "y": -0.4819374
+      },
+      "block_id": "f115034f-8695-415e-99ae-e1f3ec21c0db",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "b5beeb95-b144-434c-b798-b65f7c98e6ee",
+            "Item2": "disable"
+          }
+        ],
+        "ZoneExit": [
+          {
+            "Item1": "b5beeb95-b144-434c-b798-b65f7c98e6ee",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "31fd047b",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": -42.04546,
+        "y": -53.4090767
+      },
+      "block_id": "2ac74d2b-16f7-4511-8181-ea47f477ffa0",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "53c33895",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -310.9898,
+        "y": -72.13828
+      },
+      "block_id": "9aa4b00a-9e50-4e40-9c30-c263474f67b4",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "2ac74d2b-16f7-4511-8181-ea47f477ffa0",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "095605ec-5147-400d-88e8-6e4b43fe9024",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "fea86129-71c9-47cf-b267-0c961cd7b952",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "1037ff81-3a3a-4067-8852-7caf7372ec9d",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -31.5614071,
+        "y": 139.534637
+      },
+      "block_id": "095605ec-5147-400d-88e8-6e4b43fe9024",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "497ce8ce",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -29.9002838,
+        "y": -240.531128
+      },
+      "block_id": "fea86129-71c9-47cf-b267-0c961cd7b952",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "0a9fdd84",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 201.562485,
+        "y": -223.82811
+      },
+      "block_id": "1037ff81-3a3a-4067-8852-7caf7372ec9d",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "13dacb22",
+        "object_type": "enemy_hook"
+      }
+    }
+  ]
+}

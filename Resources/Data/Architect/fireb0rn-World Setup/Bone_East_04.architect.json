@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "29489848",
+        "pos": {
+          "x": 61.75454,
+          "y": 43.6458778,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bottom Block"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a5146149",
+        "pos": {
+          "x": 46.6729736,
+          "y": 46.62654,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8d004dd0",
+        "pos": {
+          "x": 42.3184357,
+          "y": 12.3180866,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Scene Control/Mapper NPC/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

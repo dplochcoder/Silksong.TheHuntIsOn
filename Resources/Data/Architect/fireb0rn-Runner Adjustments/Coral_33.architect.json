@@ -1,0 +1,246 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "63ed8797",
+        "pos": {
+          "x": 26.2089558,
+          "y": 67.71293,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Black Thread States/Normal World/Dice Game Control/Dice Game/Dice Pilgrim"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "19614250",
+        "pos": {
+          "x": 23.4680138,
+          "y": 67.7668457,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Dice Game Control"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "cbe01395",
+        "pos": {
+          "x": 30.0592,
+          "y": 67.77809,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "a9a07bef",
+        "component_hook_name": "PlayMakerFSM"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "4d537287",
+        "pos": {
+          "x": 33.7354736,
+          "y": 67.991806,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "a9a07bef",
+        "component_hook_name": "Walker"
+      }
+    },
+    {
+      "placement": {
+        "id": "pilgrim_hulk",
+        "pid": "a9a07bef",
+        "pos": {
+          "x": 21.070879,
+          "y": 61.6035767,
+          "z": 0.006
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_hp_scale": "False",
+        "enemy_z": "0",
+        "enemy_stay_dead": "0",
+        "enemy_hp": "5",
+        "enemy_recoil_speed": "100"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "0c542792",
+        "pos": {
+          "x": 19.7094879,
+          "y": 61.42309,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "ef82f15e",
+        "pos": {
+          "x": 22.36397,
+          "y": 61.4230957,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_width": "0.1"
+      }
+    },
+    {
+      "placement": {
+        "id": "item_pickup",
+        "pid": "3207a245",
+        "pos": {
+          "x": 21.7650757,
+          "y": 60.3257,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "item_id": "Magnetite Dice",
+        "item_touch": "False",
+        "item_ignore_obtained": "False",
+        "start_active": "False"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -46.9160347,
+        "y": -70.77838
+      },
+      "block_id": "7799a739-385d-4e24-b746-03eb515a6b2e",
+      "events": {
+        "OnDeath": [
+          {
+            "Item1": "a3d726c4-1cde-4a2e-baa7-b1869dcfa1f0",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "a9a07bef",
+        "object_type": "pilgrim_hulk"
+      }
+    },
+    {
+      "pos": {
+        "x": -254.802353,
+        "y": 31.1425056
+      },
+      "block_id": "9f8aabad-b627-4d4e-910a-a8f6040565a2",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "cbe01395",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": -482.5171,
+        "y": 22.1031227
+      },
+      "block_id": "0348c9c0-d02f-4c16-847f-09dfdb5ae5d0",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "9f8aabad-b627-4d4e-910a-a8f6040565a2",
+            "Item2": "component_hook_apply"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 306.57193,
+        "y": -100.30323
+      },
+      "block_id": "a3d726c4-1cde-4a2e-baa7-b1869dcfa1f0",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "3207a245",
+        "object_type": "item_pickup"
+      }
+    },
+    {
+      "pos": {
+        "x": 589.685364,
+        "y": 5.66226
+      },
+      "block_id": "73022b35-3b55-41a8-806f-f75a2e72a5f5",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "d4655c5d",
+        "object_type": "object_mover"
+      }
+    }
+  ]
+}

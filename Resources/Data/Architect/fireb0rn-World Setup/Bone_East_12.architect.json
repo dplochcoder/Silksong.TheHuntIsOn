@@ -1,0 +1,177 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ea978d17",
+        "pos": {
+          "x": 75.6378555,
+          "y": 10.9113426,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Demo States/Regular/Song_Gate_small/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e6966a06",
+        "pos": {
+          "x": 73.0311356,
+          "y": 20.46962,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Demo States/Regular/Song_lever_side/"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "98e224e3",
+        "pos": {
+          "x": 88.4669,
+          "y": 11.5843592,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "0",
+        "component_hook_target": "Boss Scene",
+        "component_hook_name": "DeactivateIfPlayerdataTrue"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "7e0de5dd",
+        "pos": {
+          "x": 87.81454,
+          "y": 13.6202068,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "Boss Scene",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "351537b3",
+        "pos": {
+          "x": 115.612564,
+          "y": 14.9715118,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Flea Rescue Sleeping"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "39fd36ef",
+        "pos": {
+          "x": 124.453323,
+          "y": 15.297699,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Flea Rescue Sleeping"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 93.47825,
+        "y": -19.565237
+      },
+      "block_id": "ec77b929-854a-4256-a8b0-0fa6b971a614",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "7e0de5dd",
+        "object_type": "object_enabler"
+      }
+    },
+    {
+      "pos": {
+        "x": -306.52182,
+        "y": 1.71661377E-05
+      },
+      "block_id": "71eef9aa-b85d-4d98-9579-21b22b91de48",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "3ec241c8-4e25-43e3-b788-8d653de5ce66",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -120.578857,
+        "y": -1.09021
+      },
+      "block_id": "3ec241c8-4e25-43e3-b788-8d653de5ce66",
+      "events": {
+        "Out": [
+          {
+            "Item1": "ec77b929-854a-4256-a8b0-0fa6b971a614",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "1"
+      },
+      "ext": {}
+    }
+  ]
+}

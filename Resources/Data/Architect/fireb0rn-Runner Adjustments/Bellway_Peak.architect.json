@@ -1,0 +1,181 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "dbb8731f",
+        "pos": {
+          "x": 14.4352255,
+          "y": 6.82926846,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "0",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "4e598b63",
+        "pos": {
+          "x": 11.1499014,
+          "y": 10.6042643,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "1",
+        "component_hook_target": "bell_bench/bell_toll_machine",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "87bb9352",
+        "pos": {
+          "x": 14.43106,
+          "y": 10.5566874,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "2",
+        "component_hook_target": "bell_bench/bell_toll_machine",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "80673463",
+        "pos": {
+          "x": 19.9087372,
+          "y": 8.025971,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "bell_bench/bell_toll_machine",
+        "fsm_hook_state": "Set Extra PD Bool",
+        "fsm_hook_name": "Unlock Behaviour"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -161.363525,
+        "y": -27.2727222
+      },
+      "block_id": "24141337-4b2a-4e93-8662-6d76197f65bc",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "cb8b95ed-3ebd-4cec-b8a5-19552770c54c",
+            "Item2": "component_hook_apply"
+          },
+          {
+            "Item1": "73bcf2c5-6e99-47dc-b5ff-96d2e751de2a",
+            "Item2": "fsm_set_state"
+          },
+          {
+            "Item1": "24141337-4b2a-4e93-8662-6d76197f65bc",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "dbb8731f",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": 31.81816,
+        "y": 51.136322
+      },
+      "block_id": "cb8b95ed-3ebd-4cec-b8a5-19552770c54c",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "87bb9352",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": 31.81816,
+        "y": 192.6135
+      },
+      "block_id": "c801530c-4398-4e50-bda3-4bbb5b511f88",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "4e598b63",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": 34.6590652,
+        "y": -142.04538
+      },
+      "block_id": "73bcf2c5-6e99-47dc-b5ff-96d2e751de2a",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "80673463",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -157.27272,
+        "y": 171.022675
+      },
+      "block_id": "69f30b5d-0db8-4b6d-9e33-853e46fd2b89",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "c801530c-4398-4e50-bda3-4bbb5b511f88",
+            "Item2": "component_hook_apply"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

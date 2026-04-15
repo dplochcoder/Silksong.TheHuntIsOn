@@ -1,0 +1,468 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "e8fe1bdf",
+        "pos": {
+          "x": 100.139473,
+          "y": 10.4901447,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Centipede Control",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Set P3"
+      }
+    },
+    {
+      "placement": {
+        "id": "camera_border",
+        "pid": "bef63d8f",
+        "pos": {
+          "x": 119.4428,
+          "y": 12.4691229,
+          "z": 0.1
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "camera_border_type": "3",
+        "camera_border_mode": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "67f06421",
+        "pos": {
+          "x": 103.715294,
+          "y": 10.4114122,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Boss Scene/Giant Centipede Head"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "427a6b95",
+        "pos": {
+          "x": 107.033394,
+          "y": 10.5013933,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Boss Scene/Giant Centipede Butt"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "e8fe1bdf",
+        "pos": {
+          "x": 100.139473,
+          "y": 10.4901447,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene/Centipede Control",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Battle Start"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d597540f",
+        "pos": {
+          "x": 112.061157,
+          "y": 11.2325,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Boss Scene/BodyWall L"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "99d37915",
+        "pos": {
+          "x": 112.938484,
+          "y": 11.2212515,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Boss Scene/BodyWall R"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8e7f75e2",
+        "pos": {
+          "x": 113.786354,
+          "y": 11.1303873,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Boss Scene/Start Range"
+      }
+    },
+    {
+      "placement": {
+        "id": "bellbeast_child",
+        "pid": "b942ac58",
+        "pos": {
+          "x": 59.53136,
+          "y": 10.10772,
+          "z": 0.005
+        },
+        "flipped": true,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "a846cf21",
+        "pos": {
+          "x": 62.4782829,
+          "y": 10.7938366,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_height": "2"
+      }
+    },
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "f6f2b012",
+        "pos": {
+          "x": 59.4188843,
+          "y": 9.387863,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "7",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5",
+        "size_width": "3"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+   {
+      "pos": {
+        "x": 555.4687,
+        "y": -58.98439
+      },
+      "block_id": "ceafd7a0-04c1-46d8-9259-2791d4d514ef",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "e8fe1bdf",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 154.687485,
+        "y": 3.906252
+      },
+      "block_id": "a180bc90-5d89-492e-a8af-506ed60dec78",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "aae617bb-c3ee-42c5-a55f-a515151161df",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 346.484344,
+        "y": -8.593751
+      },
+      "block_id": "aae617bb-c3ee-42c5-a55f-a515151161df",
+      "events": {
+        "Out": [
+          {
+            "Item1": "ceafd7a0-04c1-46d8-9259-2791d4d514ef",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "3"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 154.687485,
+        "y": 3.906252
+      },
+      "block_id": "a180bc90-5d89-492e-a8af-506ed60dec78",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "aae617bb-c3ee-42c5-a55f-a515151161df",
+            "Item2": "In"
+          },
+          {
+            "Item1": "746e723c-191f-40e4-8df2-e44c64e76fc9",
+            "Item2": "enemy_invul"
+          },
+          {
+            "Item1": "379f6d22-302f-4756-bd85-7e3b85f75ba2",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 346.484344,
+        "y": -8.984376
+      },
+      "block_id": "aae617bb-c3ee-42c5-a55f-a515151161df",
+      "events": {
+        "Out": [
+          {
+            "Item1": "7edeca75-0d33-4806-a7a2-8446b70bc261",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 381.6406,
+        "y": 187.499954
+      },
+      "block_id": "379f6d22-302f-4756-bd85-7e3b85f75ba2",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "67f06421",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 346.874969,
+        "y": 185.937454
+      },
+      "block_id": "746e723c-191f-40e4-8df2-e44c64e76fc9",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "427a6b95",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 566.4062,
+        "y": -13.671875
+      },
+      "block_id": "7edeca75-0d33-4806-a7a2-8446b70bc261",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "e8fe1bdf",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 366.0156,
+        "y": -173.04686
+      },
+      "block_id": "00927f6e-0412-45b8-85c9-3a17d54c44b6",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "1cf12652-a412-430f-b9ac-0e5c912101da",
+            "Item2": "Display"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "f6f2b012",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": 551.328064,
+        "y": -185.624985
+      },
+      "block_id": "1cf12652-a412-430f-b9ac-0e5c912101da",
+      "events": {
+        "Yes": [
+          {
+            "Item1": "356c8288-6900-42a6-a537-bbf76b37aaeb",
+            "Item2": "Trigger"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Choice Display",
+      "config": {
+        "choice_text": "Ride the Beastling?",
+        "choice_requirement": "0",
+        "choice_cost": "0",
+        "choice_take_item": "True"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1151.71875,
+        "y": -424.296844
+      },
+      "block_id": "3e51d980-6f07-4810-8079-e6b9aae94c2f",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Tut_01",
+        "trans_door": "Start"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 771.953064,
+        "y": -185.781235
+      },
+      "block_id": "356c8288-6900-42a6-a537-bbf76b37aaeb",
+      "events": {},
+      "vars": {},
+      "type": "Ordered Events",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":510.625,\"y\":-94.375},\"block_id\":\"a59987b8-a685-4dcb-8475-4755829d1521\",\"events\":{\"OnTrigger\":[{\"Item1\":\"519b1f13-11ed-43fe-9cf2-0b10557a088b\",\"Item2\":\"FadeOut\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":665.625,\"y\":-207.5},\"block_id\":\"a4cbc2a4-dded-4d62-92db-797b68d240d6\",\"events\":{\"OnTrigger\":[{\"Item1\":\"e7a144a0-8364-4c77-964e-e26f4de96b01\",\"Item2\":\"In\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 970.1561,
+        "y": -437.499969
+      },
+      "block_id": "e7a144a0-8364-4c77-964e-e26f4de96b01",
+      "events": {
+        "Out": [
+          {
+            "Item1": "3e51d980-6f07-4810-8079-e6b9aae94c2f",
+            "Item2": "Transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 963.28125,
+        "y": -194.999985
+      },
+      "block_id": "519b1f13-11ed-43fe-9cf2-0b10557a088b",
+      "events": {},
+      "vars": {},
+      "type": "UI Control",
+      "config": {
+        "ui_fade_r": "0",
+        "ui_fade_g": "0",
+        "ui_fade_b": "0",
+        "ui_fade_a": "1",
+        "ui_fade_duration": "1"
+      },
+      "ext": {}
+    }
+  ]
+}

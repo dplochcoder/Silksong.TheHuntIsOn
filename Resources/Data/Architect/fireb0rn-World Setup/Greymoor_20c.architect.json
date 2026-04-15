@@ -1,0 +1,62 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2e4d1ebe",
+        "pos": {
+          "x": 23.5003014,
+          "y": 69.80671,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "greystore_floor_shortcut"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7f12ca1f",
+        "pos": {
+          "x": 35.13918,
+          "y": 66.73397,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Battle Scene/Gates/Top Mask"
+      }
+    },
+	{
+      "placement": {
+        "id": "object_remover",
+        "pid": "72a3a4fd",
+        "pos": {
+          "x": 40.0769653,
+          "y": 75.48472,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Crest Get Shrine"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

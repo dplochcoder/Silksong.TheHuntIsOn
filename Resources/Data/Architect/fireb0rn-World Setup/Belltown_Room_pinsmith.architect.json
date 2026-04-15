@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9f34232f",
+        "pos": {
+          "x": 24.6045914,
+          "y": 11.2315159,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Plinney Inside"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

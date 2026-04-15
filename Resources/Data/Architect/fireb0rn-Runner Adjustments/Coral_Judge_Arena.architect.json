@@ -1,0 +1,102 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "4769535f",
+        "pos": {
+          "x": 16.0473785,
+          "y": 30.4621544,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Boss Scene/Last Judge"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "13baee06",
+        "pos": {
+          "x": 11.5293541,
+          "y": 30.0010529,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Gate Open To Cinematic"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "f5fbab1f",
+        "pos": {
+          "x": 7.84008074,
+          "y": 30.147274,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Boss Scene",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Defeated Pause"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -7.08748531,
+        "y": -48.72641
+      },
+      "block_id": "ce7c41aa-fb8e-45b0-9ae4-3c5f44270d36",
+      "events": {
+        "OnTarget": []
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "f5fbab1f",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -282.499969,
+        "y": -55.35714
+      },
+      "block_id": "c46fe7a2-4ffc-4225-b418-2708cc2d7da7",
+      "events": {
+        "OnDeath": [
+          {
+            "Item1": "ce7c41aa-fb8e-45b0-9ae4-3c5f44270d36",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "4769535f",
+        "object_type": "enemy_hook"
+      }
+    }
+  ]
+}

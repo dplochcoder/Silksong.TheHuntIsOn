@@ -1,0 +1,591 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "c491b0e7",
+        "pos": {
+          "x": 48.6442947,
+          "y": 14.0873289,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_name": "Control",
+        "fsm_hook_target": "Black Thread States Thread Only Variant/Normal World/Boss Scene/Spinner Boss",
+        "fsm_hook_state": "Final Bind Burst"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "b114d441",
+        "pos": {
+          "x": 48.453083,
+          "y": 9.835665,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_name": "Control",
+        "fsm_hook_target": "Black Thread States Thread Only Variant/Normal World/Boss Scene/Spinner Boss",
+        "fsm_hook_state": "Get Needolin"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "37f81c33",
+        "pos": {
+          "x": 44.56135,
+          "y": 9.936896,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_name": "Control",
+        "fsm_hook_target": "Black Thread States Thread Only Variant/Normal World/Boss Scene/Spinner Boss",
+        "fsm_hook_state": "Fade To Black"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "39d559f3",
+        "pos": {
+          "x": 62.758812,
+          "y": 18.3539,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "door_wakeOnGround",
+        "fsm_hook_name": "Wake Up",
+        "fsm_hook_state": "Get Up"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "fa375b75",
+        "pos": {
+          "x": 60.7177277,
+          "y": 9.839357,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Black Thread States Thread Only Variant/Normal World/Boss Scene/Bellshrine Sequence Bellhart/Bench Appear Sequence",
+        "fsm_hook_name": "Bench Appear",
+        "fsm_hook_state": "Rune Flash"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "4d869a5b",
+        "pos": {
+          "x": 64.06957,
+          "y": 9.850605,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Black Thread States Thread Only Variant/Normal World/Boss Scene/Bellshrine Sequence Bellhart/Bench Appear Sequence",
+        "fsm_hook_name": "Bench Appear",
+        "fsm_hook_state": "Bench Appear Anim"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "1342ed7b",
+        "pos": {
+          "x": 67.4776459,
+          "y": 9.839357,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Black Thread States Thread Only Variant/Normal World/Boss Scene/Bellshrine Sequence Bellhart/Bench Appear Sequence",
+        "fsm_hook_name": "Bench Appear",
+        "fsm_hook_state": "Fade In Real Bench"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "9f1fe972",
+        "pos": {
+          "x": 59.3057556,
+          "y": 18.35435,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "door_wakeOnGround",
+        "fsm_hook_name": "Wake Up",
+        "fsm_hook_state": "Get Up Wait"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "17f37b5f",
+        "pos": {
+          "x": 55.8023224,
+          "y": 18.4514866,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "door_wakeOnGround",
+        "fsm_hook_name": "Wake Up",
+        "fsm_hook_state": "Fade Up"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "026f0e1d",
+        "pos": {
+          "x": 52.248024,
+          "y": 18.5752125,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "door_wakeOnGround",
+        "fsm_hook_name": "Wake Up",
+        "fsm_hook_state": "Wait"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "06c4351d",
+        "pos": {
+          "x": 61.56766,
+          "y": 13.9223042,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Black Thread States Thread Only Variant/Normal World/Boss Scene/Hanging Bell",
+        "fsm_hook_name": "Break Threads",
+        "fsm_hook_state": "Snap Start"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "e407a837",
+        "pos": {
+          "x": 57.95711,
+          "y": 14.0009718,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Black Thread States Thread Only Variant/Normal World/Boss Scene/Hanging Bell",
+        "fsm_hook_name": "Break Threads",
+        "fsm_hook_state": "Hit"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "c1c9e78b",
+        "pos": {
+          "x": 57.0826225,
+          "y": 9.903152,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Black Thread States Thread Only Variant/Normal World/Boss Scene/Bellshrine Sequence Bellhart/Bench Appear Sequence",
+        "fsm_hook_name": "Bench Appear",
+        "fsm_hook_state": "State 1"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "0a1cb799",
+        "pos": {
+          "x": 44.70757,
+          "y": 14.0667076,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_name": "Control",
+        "fsm_hook_target": "Black Thread States Thread Only Variant/Normal World/Boss Scene/Spinner Boss",
+        "fsm_hook_state": "Hornet Connect"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -42.60416,
+        "y": -10.937501
+      },
+      "block_id": "6def8635-d757-47e8-9b6a-89735dfaf3fc",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "2d64095c-7802-4f37-acf2-2e11d857e021",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "0a1cb799",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 188.437515,
+        "y": -20.520834
+      },
+      "block_id": "2d64095c-7802-4f37-acf2-2e11d857e021",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "c491b0e7",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -41.77805,
+        "y": -232.058182
+      },
+      "block_id": "3c529615-1f87-44be-b3f6-692e091e79ca",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "44e2f10c-1673-4452-b90f-6924e2e61f28",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "37f81c33",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 193.987091,
+        "y": -236.573273
+      },
+      "block_id": "44e2f10c-1673-4452-b90f-6924e2e61f28",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "b114d441",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 646.8031,
+        "y": 277.881348
+      },
+      "block_id": "b6ef9006-ada3-44dc-985e-be42ff2fd3f1",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "e6efe316-c226-455e-be79-db234c17b7b7",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "9f1fe972",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 832.2523,
+        "y": 271.5316
+      },
+      "block_id": "e6efe316-c226-455e-be79-db234c17b7b7",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "e19db097-726b-4c0f-bbcd-8e60302efd39",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "39d559f3",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 676.1291,
+        "y": -233.7447
+      },
+      "block_id": "e19db097-726b-4c0f-bbcd-8e60302efd39",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "3a6175af-dfaa-48f0-aaff-0c1e0da2002d",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "fa375b75",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 869.957764,
+        "y": -240.493713
+      },
+      "block_id": "3a6175af-dfaa-48f0-aaff-0c1e0da2002d",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "39e96d2c-a589-43ef-aa03-8bb734b88dd3",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "4d869a5b",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 1084.47986,
+        "y": -255.5147
+      },
+      "block_id": "39e96d2c-a589-43ef-aa03-8bb734b88dd3",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "11483661-4211-4261-80e2-05779658c9a2",
+            "Item2": "Set"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "1342ed7b",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 327.092743,
+        "y": 285.189362
+      },
+      "block_id": "d8a26a35-1146-40fa-8447-1136c8cf4b4c",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "30bae644-31b1-44d1-af47-458ddd59b0b6",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "17f37b5f",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 493.491455,
+        "y": 440.594818
+      },
+      "block_id": "30bae644-31b1-44d1-af47-458ddd59b0b6",
+      "events": {
+        "Out": [
+          {
+            "Item1": "b6ef9006-ada3-44dc-985e-be42ff2fd3f1",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 128.333313,
+        "y": 286.666626
+      },
+      "block_id": "941da421-a60f-4e0f-afa7-08c05adba08e",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "d8a26a35-1146-40fa-8447-1136c8cf4b4c",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "026f0e1d",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -470.833252,
+        "y": 193.3333
+      },
+      "block_id": "1571997e-2d11-4a00-9121-531979c1ffa9",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "239268ee-fb65-48c0-9eab-40eed0b3c60c",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "e407a837",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -262.083282,
+        "y": 193.3333
+      },
+      "block_id": "239268ee-fb65-48c0-9eab-40eed0b3c60c",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "06c4351d",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 457.589142,
+        "y": -232.589218
+      },
+      "block_id": "789b57c9-42bf-4e85-a23b-0636dd30dbe9",
+      "events": {
+        "OnTarget": []
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "c1c9e78b",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 1316.3114,
+        "y": -208.9594
+      },
+      "block_id": "11483661-4211-4261-80e2-05779658c9a2",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "bellShrineBellhart",
+        "pd_bool": "True"
+      },
+      "ext": {}
+    }
+  ]
+}

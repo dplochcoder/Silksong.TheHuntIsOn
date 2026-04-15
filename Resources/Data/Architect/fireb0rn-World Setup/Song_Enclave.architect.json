@@ -1,0 +1,63 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "eb077c23",
+        "pos": {
+          "x": 63.0319633,
+          "y": 8.231972,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Enclave States/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "013844fe",
+        "pos": {
+          "x": 85.06492,
+          "y": 9.032978,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Library_shortcut/before"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_enabler",
+        "pid": "b2251351",
+        "pos": {
+          "x": 87.29203,
+          "y": 8.571823,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enabler_index": "0",
+        "enabler_path": "Library_shortcut/after/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

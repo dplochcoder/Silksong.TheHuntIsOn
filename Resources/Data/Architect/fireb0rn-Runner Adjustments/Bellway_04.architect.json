@@ -1,0 +1,181 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "668b0f56",
+        "pos": {
+          "x": 69.49706,
+          "y": 10.6787958,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "0",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "57b4aa03",
+        "pos": {
+          "x": 74.99722,
+          "y": 12.1973257,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Bellway Toll Machine",
+        "fsm_hook_state": "Return Control",
+        "fsm_hook_name": "Unlock Behaviour"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "6e357c49",
+        "pos": {
+          "x": 66.1484146,
+          "y": 14.7643795,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "1",
+        "component_hook_target": "Bellway Toll Machine",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "b7fa3d46",
+        "pos": {
+          "x": 69.42958,
+          "y": 14.716795,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "2",
+        "component_hook_target": "Bellway Toll Machine",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -12.0689611,
+        "y": 176.293045
+      },
+      "block_id": "5da95fb2-2abc-4d08-b7d5-20af57edd929",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "6e357c49",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": -9.91379,
+        "y": 21.9827538
+      },
+      "block_id": "57cc40fa-8a12-4f7e-a10a-4000a342f9f6",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "b7fa3d46",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": -252.586121,
+        "y": -27.5861931
+      },
+      "block_id": "25210792-945d-42b9-9d4f-f49b7415bb01",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "57cc40fa-8a12-4f7e-a10a-4000a342f9f6",
+            "Item2": "component_hook_apply"
+          },
+          {
+            "Item1": "ca494019-f9fd-4e8d-adce-874d2db5b516",
+            "Item2": "fsm_set_state"
+          },
+          {
+            "Item1": "25210792-945d-42b9-9d4f-f49b7415bb01",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "668b0f56",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": -9.051722,
+        "y": -160.344788
+      },
+      "block_id": "ca494019-f9fd-4e8d-adce-874d2db5b516",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "57b4aa03",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -251.713318,
+        "y": 83.13578
+      },
+      "block_id": "dc30db56-6c90-42fd-b25c-4f29c775798e",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "5da95fb2-2abc-4d08-b7d5-20af57edd929",
+            "Item2": "component_hook_apply"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

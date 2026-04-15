@@ -1,0 +1,63 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b4092357",
+        "pos": {
+          "x": 31.2748222,
+          "y": 23.0205784,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "3bc1017e",
+        "pos": {
+          "x": 337.163635,
+          "y": 19.25589,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "greymoor_lever_simple"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "815dbec2",
+        "pos": {
+          "x": 338.828339,
+          "y": 18.7272434,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "greymoor_metal_gate/Gate Parent"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

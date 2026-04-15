@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e88bd199",
+        "pos": {
+          "x": 26.0078316,
+          "y": 9.129267,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "sauna_grate"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

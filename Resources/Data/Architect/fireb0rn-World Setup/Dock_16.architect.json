@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "64bf346a",
+        "pos": {
+          "x": 56.80746,
+          "y": 18.0637722,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collapser Small"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "aaf1ad56",
+        "pos": {
+          "x": 51.3842545,
+          "y": 20.1349525,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Flea Rescue Sleeping"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

@@ -1,0 +1,62 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2bb3e559",
+        "pos": {
+          "x": 94.31975,
+          "y": 35.77607,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "ant_gate_animated"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "13ec4e2a",
+        "pos": {
+          "x": 89.55069,
+          "y": 34.1114,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "ant_lever_persistent"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "89ff78ea",
+        "pos": {
+          "x": 20.5405159,
+          "y": 36.7947464,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Crest Get Shrine"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

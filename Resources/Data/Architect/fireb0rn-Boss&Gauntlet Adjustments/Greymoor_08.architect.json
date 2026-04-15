@@ -1,0 +1,321 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "99c01b35",
+        "pos": {
+          "x": 38.7435875,
+          "y": 16.259119,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "2",
+        "trigger_shape": "0",
+        "size_width": "10",
+        "size_height": "10"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "c2214808",
+        "pos": {
+          "x": 41.2616768,
+          "y": 11.2690239,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Vampire Gnat Scene/Vampire Gnat",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "c274ad2d",
+        "pos": {
+          "x": 10.13463,
+          "y": 11.9442835,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Bell Wall Gate",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "0ddfba6e",
+        "pos": {
+          "x": 7.51664543,
+          "y": 7.350278,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "1",
+        "size_width": "1",
+        "size_height": "3",
+        "trans_id": "left1",
+        "trans_other_scene": "Belltown_06",
+        "trans_other_id": "right2"
+      }
+    },
+    {
+      "placement": {
+        "id": "door_remover",
+        "pid": "6997182c",
+        "pos": {
+          "x": 9.870677,
+          "y": 13.4477873,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "bca0e914",
+        "pos": {
+          "x": 31.815136,
+          "y": 12.9340887,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "start_active": "False",
+        "enemy_path": "Vampire Gnat Scene/Vampire Gnat"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "4fa3b837",
+        "pos": {
+          "x": 6.14929962,
+          "y": 7.287703,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_height": "3"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -102.403839,
+        "y": 0.9615269
+      },
+      "block_id": "ae26665a-0f68-494c-8635-7beb63e91d94",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "6477055d-9b90-4745-bc18-c6b38b997a1a",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "b3c85b80-c473-4712-a125-b694e41c9d47",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "99c01b35",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 195.9699,
+        "y": 142.1105
+      },
+      "block_id": "535d7006-91d0-4c7d-aff0-c8400d4c27b6",
+      "events": {},
+      "vars": {
+        "Target": {
+          "Item1": "6477055d-9b90-4745-bc18-c6b38b997a1a",
+          "Item2": "hp_hook_target"
+        }
+      },
+      "type": "Enemy Control",
+      "config": {
+        "enemy_damage_type": "1",
+        "enemy_hp_amount": "400"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 198.798,
+        "y": -78.78604
+      },
+      "block_id": "6477055d-9b90-4745-bc18-c6b38b997a1a",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "c2214808",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 13.9139071,
+        "y": 152.678741
+      },
+      "block_id": "b3c85b80-c473-4712-a125-b694e41c9d47",
+      "events": {
+        "Out": [
+          {
+            "Item1": "535d7006-91d0-4c7d-aff0-c8400d4c27b6",
+            "Item2": "Damage"
+          },
+          {
+            "Item1": "ae26665a-0f68-494c-8635-7beb63e91d94",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -409.4251,
+        "y": 191.770172
+      },
+      "block_id": "d2551fdd-49cb-4ede-b8fa-f40efac744d1",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "75d1e321-1f8b-4aec-92ae-5598eaa8bd04",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -198.304916,
+        "y": 176.439423
+      },
+      "block_id": "75d1e321-1f8b-4aec-92ae-5598eaa8bd04",
+      "events": {
+        "Out": [
+          {
+            "Item1": "4a6d474f-113c-436e-aa8b-dc3c20a99859",
+            "Item2": "In"
+          },
+          {
+            "Item1": "809cfa71-59f1-46a6-8ac1-f00ebdb2a9cf",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "0ebb412a-38d8-426f-a61b-6e693dbf0e88",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 17.8172474,
+        "y": 177.1023
+      },
+      "block_id": "4a6d474f-113c-436e-aa8b-dc3c20a99859",
+      "events": {
+        "Out": [
+          {
+            "Item1": "0ebb412a-38d8-426f-a61b-6e693dbf0e88",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 18.18182,
+        "y": 11.742424
+      },
+      "block_id": "809cfa71-59f1-46a6-8ac1-f00ebdb2a9cf",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "c274ad2d",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": 244.296844,
+        "y": 109.374985
+      },
+      "block_id": "0ebb412a-38d8-426f-a61b-6e693dbf0e88",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "bca0e914",
+        "object_type": "enemy_hook"
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "b1859212",
+        "pos": {
+          "x": 125.500931,
+          "y": 37.1230927,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_id": "DocksSpawnForge",
+        "trans_collide": "1"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "09488059",
+        "pos": {
+          "x": 130.416489,
+          "y": 17.280302,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "3",
+        "trans_id": "DocksSpawnForge-2",
+        "trans_collide": "1"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

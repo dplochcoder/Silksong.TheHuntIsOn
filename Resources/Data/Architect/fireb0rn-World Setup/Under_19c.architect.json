@@ -1,0 +1,128 @@
+{
+  "placements": [],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -255.5316,
+        "y": 8.908043
+      },
+      "block_id": "dc43172f-67e1-4661-aa3c-89bdeedeb296",
+      "events": {
+        "ZoneEnter": [],
+        "ZoneExit": [
+          {
+            "Item1": "e74c66b8-6f79-4056-90c9-f35071573c78",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "12a88e69",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 193.333282,
+        "y": -2.50000381
+      },
+      "block_id": "d5b8aa0d-933f-434a-9a7f-7fa0468332a2",
+      "events": {},
+      "vars": {},
+      "type": "Ordered Events",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":120.0,\"y\":30.9375},\"block_id\":\"ebb79057-5d8f-4900-a0f3-17ddd5a54547\",\"events\":{\"OnTrigger\":[{\"Item1\":\"5dc83dd1-9bc2-4fb3-b739-d0e5c8dfee99\",\"Item2\":\"Set\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}},{\"pos\":{\"x\":120.0,\"y\":30.9375},\"block_id\":\"ae70195d-a15b-4925-8802-6996e38328da\",\"events\":{\"OnTrigger\":[{\"Item1\":\"7e4909c3-c491-4675-b342-b086c6723042\",\"Item2\":\"Set\"}]},\"vars\":{},\"type\":\"Order Trigger\",\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": -17.9166622,
+        "y": 5.83332634
+      },
+      "block_id": "e74c66b8-6f79-4056-90c9-f35071573c78",
+      "events": {
+        "False": [
+          {
+            "Item1": "d5b8aa0d-933f-434a-9a7f-7fa0468332a2",
+            "Item2": "Trigger"
+          }
+        ]
+      },
+      "vars": {
+        "Check": {
+          "Item1": "ec14de9e-1da2-4c42-9be6-478e486e2a45",
+          "Item2": "Value"
+        }
+      },
+      "type": "If",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 406.2499,
+        "y": -9.583336
+      },
+      "block_id": "fc391765-2fb6-4a32-a636-bc06e03525c6",
+      "events": {},
+      "vars": {},
+      "type": "Constant Bool",
+      "config": {
+        "constant_bool": "True"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 404.9999,
+        "y": -92.08331
+      },
+      "block_id": "5dc83dd1-9bc2-4fb3-b739-d0e5c8dfee99",
+      "events": {},
+      "vars": {
+        "New Value": {
+          "Item1": "fc391765-2fb6-4a32-a636-bc06e03525c6",
+          "Item2": "Value"
+        }
+      },
+      "type": "Variable (Bool)",
+      "config": {
+        "var_persistence_bool": "2",
+        "var_id_bool": "tempHarpoonDash"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -19.1666622,
+        "y": 144.062485
+      },
+      "block_id": "ec14de9e-1da2-4c42-9be6-478e486e2a45",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "hasHarpoonDash",
+        "pd_bool": "True"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 401.874939,
+        "y": -193.124954
+      },
+      "block_id": "7e4909c3-c491-4675-b342-b086c6723042",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "hasHarpoonDash",
+        "pd_bool": "True"
+      },
+      "ext": {}
+    }
+  ]
+}

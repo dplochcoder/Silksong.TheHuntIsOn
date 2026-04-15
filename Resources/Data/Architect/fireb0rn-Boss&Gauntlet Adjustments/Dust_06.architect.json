@@ -1,0 +1,75 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "2e0013a7",
+        "pos": {
+          "x": 14.7125463,
+          "y": 184.6468,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Roachkeeper Key Control/Roachkeeper"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a556ff6f",
+        "pos": {
+          "x": 3.95655918,
+          "y": 179.430283,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "greymoor_flip_bridge (3)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "5e42dd5c-de23-4a2f-ab9e-d41605325fbc",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "412d66bf-3e7b-4044-8c2d-20116bc40536",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 240.0,
+        "y": 11.5625
+      },
+      "block_id": "412d66bf-3e7b-4044-8c2d-20116bc40536",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "2e0013a7",
+        "object_type": "enemy_hook"
+      }
+    }
+  ]
+}

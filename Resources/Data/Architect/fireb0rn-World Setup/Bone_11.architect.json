@@ -1,0 +1,62 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2ae8be5d",
+        "pos": {
+          "x": 79.53936,
+          "y": 6.556593,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Plaza_closed"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "08dbb4f5",
+        "pos": {
+          "x": 8.222507,
+          "y": 27.435318,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "trapdoor"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_remover",
+        "pid": "c5ff0fb7",
+        "pos": {
+          "x": 79.64813,
+          "y": 3.96689272,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "disabler_all": "False"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

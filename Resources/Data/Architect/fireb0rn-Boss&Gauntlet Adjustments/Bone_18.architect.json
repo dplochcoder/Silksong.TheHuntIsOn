@@ -1,0 +1,85 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5fbd41d7",
+        "pos": {
+          "x": 30.0608482,
+          "y": 24.59877,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Quest Scene"
+      }
+    },
+    {
+      "placement": {
+        "id": "pilgrim_01",
+        "pid": "c4d27ac3",
+        "pos": {
+          "x": 29.3461838,
+          "y": 21.5275249,
+          "z": 0.006
+        },
+        "flipped": true,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_hp_scale": "True",
+        "enemy_z": "0",
+        "invulnerable": "True",
+        "enemy_hp": "99999"
+      }
+    },
+    {
+      "placement": {
+        "id": "pilgrim_01",
+        "pid": "db90e006",
+        "pos": {
+          "x": 41.4600449,
+          "y": 21.3025684,
+          "z": 0.006
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_hp_scale": "True",
+        "enemy_z": "0",
+        "invulnerable": "True",
+        "enemy_hp": "99999"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "d4da7327",
+        "pos": {
+          "x": 23.51733,
+          "y": 22.6874771,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_height": "2"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

@@ -1,0 +1,195 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "1592fc9e",
+        "pos": {
+          "x": 77.25743,
+          "y": 9.78032,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "2",
+        "size_width": "1",
+        "size_height": "3",
+        "trans_id": "right2",
+        "trans_other_scene": "Greymoor_08",
+        "trans_other_id": "left1"
+      }
+    },
+    {
+      "placement": {
+        "id": "door_remover",
+        "pid": "621795dd",
+        "pos": {
+          "x": 74.7243958,
+          "y": 12.2548227,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "0f903f33",
+        "pos": {
+          "x": 4.971896,
+          "y": 10.331459,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "3"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "364db43a",
+        "pos": {
+          "x": 22.5296879,
+          "y": 11.208786,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_height": "4"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -115.3125,
+        "y": -3.75
+      },
+      "block_id": "eed77558-ac85-479a-a70f-dbd1952f0924",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "f45b59cf-9ada-4cf4-ab13-d9b4fae754a8",
+            "Item2": "Set"
+          },
+          {
+            "Item1": "d8b88974-a3a0-42e6-bc88-90a88630d0e1",
+            "Item2": "Set"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "0f903f33",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 102.8125,
+        "y": 103.4375
+      },
+      "block_id": "f45b59cf-9ada-4cf4-ab13-d9b4fae754a8",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "spinnerDefeated",
+        "pd_bool": "True"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -110.3125,
+        "y": -149.375
+      },
+      "block_id": "18624fdb-b61f-482e-aa06-9067d91852b8",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "07592481-8788-4432-a6df-e36ab23e3d6a",
+            "Item2": "Set"
+          },
+          {
+            "Item1": "27e9d41f-1d7f-44e1-ad22-08b8a7c3dc52",
+            "Item2": "Set"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "364db43a",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 91.25,
+        "y": -112.5
+      },
+      "block_id": "07592481-8788-4432-a6df-e36ab23e3d6a",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "spinnerDefeated",
+        "pd_bool": "False"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 99.0625,
+        "y": 6.875
+      },
+      "block_id": "d8b88974-a3a0-42e6-bc88-90a88630d0e1",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "visitedBellhart",
+        "pd_bool": "True"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 81.25,
+        "y": -203.125
+      },
+      "block_id": "27e9d41f-1d7f-44e1-ad22-08b8a7c3dc52",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "visitedBellhart",
+        "pd_bool": "False"
+      },
+      "ext": {}
+    }
+  ]
+}

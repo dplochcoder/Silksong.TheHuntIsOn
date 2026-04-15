@@ -1,0 +1,58 @@
+{
+  "placements": [],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -114.375,
+        "y": -19.0625
+      },
+      "block_id": "766ac2c4-ccd5-4b7b-b784-e89d9ed92f84",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "541a58f3-550d-407a-879e-a9e1b1489a91",
+            "Item2": "Set"
+          },
+          {
+            "Item1": "3f4b71b6-cf13-416e-b583-0cf9c8a034c6",
+            "Item2": "Set"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 92.5,
+        "y": 35.9375
+      },
+      "block_id": "541a58f3-550d-407a-879e-a9e1b1489a91",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "visitedBellhart",
+        "pd_bool": "False"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 105.0,
+        "y": -73.4375
+      },
+      "block_id": "3f4b71b6-cf13-416e-b583-0cf9c8a034c6",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "VampireGnatBossInAltLoc",
+        "pd_bool": "False"
+      },
+      "ext": {}
+    }
+  ]
+}

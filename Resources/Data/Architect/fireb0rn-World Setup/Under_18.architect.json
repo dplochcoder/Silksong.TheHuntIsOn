@@ -1,0 +1,447 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "3d6c1ad6",
+        "pos": {
+          "x": 34.984848,
+          "y": 36.44669,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "51f8e1b0",
+        "pos": {
+          "x": 26.4113922,
+          "y": 16.3036633,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Ability Scene"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1362d7e4",
+        "pos": {
+          "x": 139.713226,
+          "y": 16.5585442,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Pipe_Vent_Hatch"
+      }
+    },
+    {
+      "placement": {
+        "id": "understore_auto",
+        "pid": "c6b9e2dc",
+        "pos": {
+          "x": 78.96056,
+          "y": 27.0028439,
+          "z": 0.006
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_hp_scale": "True",
+        "enemy_z": "0",
+        "invulnerable": "False",
+        "enemy_stay_dead": "0",
+        "enemy_hp": "5"
+      }
+    },
+    {
+      "placement": {
+        "id": "understore_auto",
+        "pid": "dc98a4d4",
+        "pos": {
+          "x": 79.02406,
+          "y": 33.96933,
+          "z": 0.006
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_hp_scale": "True",
+        "enemy_z": "0",
+        "invulnerable": "False",
+        "enemy_stay_dead": "0",
+        "enemy_hp": "5"
+      }
+    },
+    {
+      "placement": {
+        "id": "understore_auto",
+        "pid": "471c4399",
+        "pos": {
+          "x": 91.84666,
+          "y": 36.8883057,
+          "z": 0.006
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_hp_scale": "True",
+        "enemy_z": "0",
+        "invulnerable": "False",
+        "enemy_stay_dead": "0",
+        "enemy_hp": "5"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_duplicator",
+        "pid": "471bab6d",
+        "pos": {
+          "x": 78.88333,
+          "y": 26.74453,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "duplicator_id": "c6b9e2dc"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_duplicator",
+        "pid": "3954b085",
+        "pos": {
+          "x": 91.86165,
+          "y": 36.8957939,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "duplicator_id": "471c4399"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_duplicator",
+        "pid": "4d50c758",
+        "pos": {
+          "x": 79.04841,
+          "y": 33.938736,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "duplicator_id": "dc98a4d4"
+      }
+    },
+    {
+      "placement": {
+        "id": "lava_crumble_plat_b",
+        "pid": "246da42d",
+        "pos": {
+          "x": 115.836632,
+          "y": 8.203047,
+          "z": -0.04
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "crumble_hazard_respawn": "True",
+        "crumble_respawn_time": "3"
+      }
+    },
+    {
+      "placement": {
+        "id": "lava_crumble_plat_b",
+        "pid": "6c0ecfed",
+        "pos": {
+          "x": 111.655762,
+          "y": 8.203047,
+          "z": -0.04
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "crumble_hazard_respawn": "True",
+        "crumble_respawn_time": "3"
+      }
+    },
+    {
+      "placement": {
+        "id": "lava_crumble_plat_b",
+        "pid": "dfc78c08",
+        "pos": {
+          "x": 100.251732,
+          "y": 8.203047,
+          "z": -0.04
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "crumble_hazard_respawn": "True",
+        "crumble_respawn_time": "3"
+      }
+    },
+    {
+      "placement": {
+        "id": "lava_crumble_plat_b",
+        "pid": "f7d5be2f",
+        "pos": {
+          "x": 69.38147,
+          "y": 8.203047,
+          "z": -0.04
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "crumble_hazard_respawn": "True",
+        "crumble_respawn_time": "3"
+      }
+    },
+    {
+      "placement": {
+        "id": "lava_crumble_plat_b",
+        "pid": "48895603",
+        "pos": {
+          "x": 53.40548,
+          "y": 8.203047,
+          "z": -0.04
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "crumble_hazard_respawn": "True",
+        "crumble_respawn_time": "3"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -157.916641,
+        "y": -11.1693735
+      },
+      "block_id": "0e5dce62-c0fc-4e8d-8d7b-2c5452a4bdc7",
+      "events": {
+        "OnDeath": [
+          {
+            "Item1": "60ddc583-417f-42f3-b956-b35af44e1b83",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "c6b9e2dc",
+        "object_type": "understore_auto"
+      }
+    },
+    {
+      "pos": {
+        "x": 264.0994,
+        "y": -8.534945
+      },
+      "block_id": "25293ca9-854f-46fe-8b9c-20a217ff8eed",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "471bab6d",
+        "object_type": "object_duplicator"
+      }
+    },
+    {
+      "pos": {
+        "x": 51.72045,
+        "y": -5.80647
+      },
+      "block_id": "60ddc583-417f-42f3-b956-b35af44e1b83",
+      "events": {
+        "Out": [
+          {
+            "Item1": "25293ca9-854f-46fe-8b9c-20a217ff8eed",
+            "Item2": "duplicate"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 263.014069,
+        "y": -243.185455
+      },
+      "block_id": "cd398dce-d876-4063-8a84-ed5eade3a772",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "3954b085",
+        "object_type": "object_duplicator"
+      }
+    },
+    {
+      "pos": {
+        "x": -161.381073,
+        "y": -263.924744
+      },
+      "block_id": "1bcf6167-f07d-4004-aece-a140b27402c9",
+      "events": {
+        "OnDeath": [
+          {
+            "Item1": "ef14c16d-1705-4c81-9c16-f651169e4346",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "471c4399",
+        "object_type": "understore_auto"
+      }
+    },
+    {
+      "pos": {
+        "x": 51.9052353,
+        "y": -245.4536
+      },
+      "block_id": "ef14c16d-1705-4c81-9c16-f651169e4346",
+      "events": {
+        "Out": [
+          {
+            "Item1": "cd398dce-d876-4063-8a84-ed5eade3a772",
+            "Item2": "duplicate"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -159.47908,
+        "y": -478.02063
+      },
+      "block_id": "133ef249-12f2-463a-b503-e4200ebe3a24",
+      "events": {
+        "OnDeath": [
+          {
+            "Item1": "51bd415d-60fa-48e1-8647-e5d3b4e9a071",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "471c4399",
+        "object_type": "understore_auto"
+      }
+    },
+    {
+      "pos": {
+        "x": 44.83177,
+        "y": -460.5012
+      },
+      "block_id": "51bd415d-60fa-48e1-8647-e5d3b4e9a071",
+      "events": {
+        "Out": [
+          {
+            "Item1": "6b9456f2-70fb-4fd9-9eb4-d3aabdecdcd8",
+            "Item2": "duplicate"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 259.791534,
+        "y": -455.103973
+      },
+      "block_id": "6b9456f2-70fb-4fd9-9eb4-d3aabdecdcd8",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "4d50c758",
+        "object_type": "object_duplicator"
+      }
+    }
+  ]
+}

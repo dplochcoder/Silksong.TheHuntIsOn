@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "154501e7",
+        "pos": {
+          "x": 23.4518852,
+          "y": 13.1379566,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Aftermath Control/Battle Aftermath/City Merchant Scavenge Generic/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a3130621",
+        "pos": {
+          "x": 24.3443336,
+          "y": 13.1379566,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Aftermath Control/Battle Aftermath/Garmond Heavy Sleeper NPC/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

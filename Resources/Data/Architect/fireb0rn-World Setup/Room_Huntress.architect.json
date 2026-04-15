@@ -1,0 +1,25 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "db62e9d4",
+        "pos": {
+          "x": 21.7877369,
+          "y": 10.2896805,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "scene/Huntress_set/pre/Huntress/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

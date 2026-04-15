@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "623733d8",
+        "pos": {
+          "x": 95.28218,
+          "y": 44.4741821,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "greystore_floor_shortcut (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "cc41f31a",
+        "pos": {
+          "x": 149.923065,
+          "y": 43.4069252,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "plank_wall_cluster"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

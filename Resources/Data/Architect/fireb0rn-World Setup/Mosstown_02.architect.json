@@ -1,0 +1,119 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "684a3750",
+        "pos": {
+          "x": 10.0407534,
+          "y": 35.25431,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b97d059e",
+        "pos": {
+          "x": 43.7906227,
+          "y": 53.308094,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States Thread Only Variant/Normal World/Thick Silk Vines (1)/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b5f4c0bc",
+        "pos": {
+          "x": 134.015717,
+          "y": 37.724144,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States Thread Only Variant/Normal World/Thick Silk Vines/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5f425ef7",
+        "pos": {
+          "x": 40.6614,
+          "y": 41.4392433,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Vine Platform"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8cc4c436",
+        "pos": {
+          "x": 37.13743,
+          "y": 42.04792,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5afc8432",
+        "pos": {
+          "x": 90.6421661,
+          "y": 54.9307442,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Ability Scene"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

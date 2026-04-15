@@ -1,0 +1,443 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6f266c62",
+        "pos": {
+          "x": 19.9386864,
+          "y": 186.210312,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "trapdoor/closed/Song Trapdoor/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "16fe9338",
+        "pos": {
+          "x": 21.3105583,
+          "y": 132.974289,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall (6)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "91d5387d",
+        "pos": {
+          "x": 27.908844,
+          "y": 66.04227,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall/explode rock/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0024c170",
+        "pos": {
+          "x": 28.689518,
+          "y": 65.9262161,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall/Pt Idle/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "90f1ac65",
+        "pos": {
+          "x": 27.3510342,
+          "y": 65.93743,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall/Glow Idle/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "daf912fe",
+        "pos": {
+          "x": 26.51979,
+          "y": 65.8938751,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall/Wind Weak/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d2445dfa",
+        "pos": {
+          "x": 7.817587,
+          "y": 126.094917,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Explode Wall Group/explode_wall (7) - boneEast07_openedMidRoof/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "30636fb6",
+        "pos": {
+          "x": 9.234808,
+          "y": 101.599617,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Explode Wall Group/explode_wall (5)/wall1"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "98f520a8",
+        "pos": {
+          "x": 9.032347,
+          "y": 100.620377,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Explode Wall Group/explode_wall (5)/wall2"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7b98713e",
+        "pos": {
+          "x": 9.842188,
+          "y": 100.912819,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Explode Wall Group/explode_wall (5)/wall3"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1fd4e193",
+        "pos": {
+          "x": 10.07839,
+          "y": 101.778839,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Explode Wall Group/explode_wall (5)/explode rock"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "834eab6f",
+        "pos": {
+          "x": 9.178568,
+          "y": 99.911705,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Explode Wall Group/explode_wall (5)/Pt Idle"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "4be56963",
+        "pos": {
+          "x": 9.572242,
+          "y": 103.061081,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Explode Wall Group/explode_wall (5)/Glow Idle"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5cfbb1d9",
+        "pos": {
+          "x": 10.292099,
+          "y": 78.89037,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Updraft Before"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d147b3ae",
+        "pos": {
+          "x": 9.729712,
+          "y": 96.2990341,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Explode Wall Group/explode_wall (5)/"
+      }
+    },
+    {
+      "placement": {
+        "id": "updraft_region",
+        "pid": "12707e89",
+        "pos": {
+          "x": 7.52514744,
+          "y": 56.7604179,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "updraft_width": "1.5",
+        "updraft_height": "36"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f43c4819",
+        "pos": {
+          "x": 11.8519621,
+          "y": 104.38974,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Explode Wall Group/Remasker_Left/"
+      }
+    },
+    {
+      "placement": {
+        "id": "updraft_region",
+        "pid": "62fcabab",
+        "pos": {
+          "x": 21.7074451,
+          "y": 121.610519,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "updraft_width": "1.5",
+        "updraft_height": "36"
+      }
+    },
+    {
+      "placement": {
+        "id": "updraft_region",
+        "pid": "b3acfd3d",
+        "pos": {
+          "x": 29.5054359,
+          "y": 153.0973,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "updraft_width": "1.5",
+        "updraft_height": "12.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "480afd59",
+        "pos": {
+          "x": 29.629158,
+          "y": 155.543869,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d5135f84",
+        "pos": {
+          "x": 33.2284546,
+          "y": 22.73907,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b0bece93",
+        "pos": {
+          "x": 35.3542862,
+          "y": 10.1839037,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "explode_wall (3)"
+      }
+    },
+    {
+      "placement": {
+        "id": "updraft_region",
+        "pid": "afb1088c",
+        "pos": {
+          "x": 28.0114632,
+          "y": 65.03948,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "updraft_width": "1.5",
+        "updraft_height": "26"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

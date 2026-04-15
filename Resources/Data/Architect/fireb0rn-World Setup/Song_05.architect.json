@@ -1,0 +1,139 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "70bf9a61",
+        "pos": {
+          "x": 44.488205,
+          "y": 52.3578,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Shortcut Wall/Group/sc_gold_gate (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5e367b2a",
+        "pos": {
+          "x": 33.2731,
+          "y": 51.49079,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Window"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d0f6c545",
+        "pos": {
+          "x": 34.5440979,
+          "y": 51.5956345,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Window (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6955cde0",
+        "pos": {
+          "x": 20.45994,
+          "y": 7.94018269,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Lace Scene"
+      }
+    },
+    {
+      "placement": {
+        "id": "envoy",
+        "pid": "3460b888",
+        "pos": {
+          "x": 29.7956,
+          "y": 5.544405,
+          "z": 0.006
+        },
+        "flipped": true,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_hp_scale": "True",
+        "enemy_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "song_reed",
+        "pid": "df253ea7",
+        "pos": {
+          "x": 12.9239244,
+          "y": 5.53315735,
+          "z": 0.006
+        },
+        "flipped": true,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_hp_scale": "True",
+        "enemy_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "5706607a",
+        "pos": {
+          "x": 43.36343,
+          "y": 54.6409073,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Shortcut Wall"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

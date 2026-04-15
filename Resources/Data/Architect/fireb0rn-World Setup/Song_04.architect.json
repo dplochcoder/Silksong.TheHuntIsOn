@@ -1,0 +1,253 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "7d9e0216",
+        "pos": {
+          "x": 41.85328,
+          "y": 14.2801418,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Citadel Switch Gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "4820471c",
+        "pos": {
+          "x": 41.85328,
+          "y": 14.2801418,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Citadel Switch Gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "96ff3293",
+        "pos": {
+          "x": 47.4359055,
+          "y": 11.4974747,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Citadel Switch Gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0be4d51b",
+        "pos": {
+          "x": 40.85083,
+          "y": 14.2282906,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Citadel Switch Gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f461a1ef",
+        "pos": {
+          "x": 40.6607132,
+          "y": 14.17644,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Citadel Switch Gate"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "681f1b20",
+        "pos": {
+          "x": 28.8057022,
+          "y": 4.20377636,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Bot Blocker"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f36a80ca",
+        "pos": {
+          "x": 102.808723,
+          "y": 31.8642578,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "innerworks_trap_bridge/trap_bottom/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6ae94c0c",
+        "pos": {
+          "x": 111.001175,
+          "y": 31.6741333,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "innerworks_trap_bridge/trap_top/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6b23b2c8",
+        "pos": {
+          "x": 103.94944,
+          "y": 31.6914215,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "innerworks_trap_bridge/lever_left"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6cd8ad15",
+        "pos": {
+          "x": 112.072754,
+          "y": 31.8469715,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "innerworks_trap_bridge/lever_right"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "56b3b029",
+        "pos": {
+          "x": 103.961456,
+          "y": 30.39482,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "innerworks_trap_bridge/colliders_closed/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "831c2579",
+        "pos": {
+          "x": 123.93808,
+          "y": 39.38875,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9d7f8ffe",
+        "pos": {
+          "x": 87.53617,
+          "y": 8.367488,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

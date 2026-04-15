@@ -1,0 +1,3409 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "878ef01d",
+        "pos": {
+          "x": 53.1618156,
+          "y": 8.465888,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "1",
+        "remover_path": "Shell Shard Fossil Large Uni"
+      }
+    },
+    {
+      "placement": {
+        "id": "bellbeast_child",
+        "pid": "292e35a9",
+        "pos": {
+          "x": 78.65615,
+          "y": 9.251897,
+          "z": 0.005
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "bellbeast_child",
+        "pid": "64c48282",
+        "pos": {
+          "x": 71.93625,
+          "y": 9.34188,
+          "z": 0.005
+        },
+        "flipped": true,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "bellbeast_child",
+        "pid": "1043fa1d",
+        "pos": {
+          "x": 74.4444962,
+          "y": 9.303257,
+          "z": 0.005
+        },
+        "flipped": true,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "bellbeast_child",
+        "pid": "5e7e8e56",
+        "pos": {
+          "x": 82.28422,
+          "y": 9.330631,
+          "z": 0.005
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "b9cc6e85",
+        "pos": {
+          "x": 71.92328,
+          "y": 9.881786,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "7",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5",
+        "size_width": "0.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "b3cf8df8",
+        "pos": {
+          "x": 74.51028,
+          "y": 9.93802452,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "7",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5",
+        "size_width": "0.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "66822ad1",
+        "pos": {
+          "x": 78.63821,
+          "y": 9.7243185,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "7",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5",
+        "size_width": "0.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "adec8af4",
+        "pos": {
+          "x": 82.248764,
+          "y": 9.881785,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "7",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5",
+        "size_width": "0.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_anchor",
+        "pid": "37891a89",
+        "pos": {
+          "x": 71.95703,
+          "y": 9.071934,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "anchor_dist": "10",
+        "anchor_start_dist": "0",
+        "anchor_speed": "0",
+        "anchor_rot": "0",
+        "anchor_rot_speed": "0",
+        "anchor_smoothing": "0.5",
+        "anchor_pause_time": "0",
+        "anchor_moving": "True",
+        "anchor_target": "b9cc6e85",
+        "anchor_parent": "64c48282"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_anchor",
+        "pid": "321191cd",
+        "pos": {
+          "x": 74.51027,
+          "y": 9.150668,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "anchor_dist": "10",
+        "anchor_start_dist": "0",
+        "anchor_speed": "0",
+        "anchor_rot": "0",
+        "anchor_rot_speed": "0",
+        "anchor_smoothing": "0.5",
+        "anchor_pause_time": "0",
+        "anchor_moving": "True",
+        "anchor_target": "b3cf8df8",
+        "anchor_parent": "1043fa1d"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_anchor",
+        "pid": "d8b1e36f",
+        "pos": {
+          "x": 78.66072,
+          "y": 8.92571449,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "anchor_dist": "10",
+        "anchor_start_dist": "0",
+        "anchor_speed": "0",
+        "anchor_rot": "0",
+        "anchor_rot_speed": "0",
+        "anchor_smoothing": "0.5",
+        "anchor_pause_time": "0",
+        "anchor_moving": "True",
+        "anchor_target": "66822ad1",
+        "anchor_parent": "292e35a9"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_anchor",
+        "pid": "5c7251ec",
+        "pos": {
+          "x": 82.32756,
+          "y": 9.12817,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "anchor_dist": "10",
+        "anchor_start_dist": "0",
+        "anchor_speed": "0",
+        "anchor_rot": "0",
+        "anchor_rot_speed": "0",
+        "anchor_smoothing": "0.5",
+        "anchor_pause_time": "0",
+        "anchor_moving": "True",
+        "anchor_target": "adec8af4",
+        "anchor_parent": "5e7e8e56"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "60ae236d",
+        "pos": {
+          "x": 69.6798248,
+          "y": 9.747661,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "size_width": "0.2"
+      }
+    },
+    {
+      "placement": {
+        "id": "custom_png",
+        "pid": "ce9a765c",
+        "pos": {
+          "x": 77.07172,
+          "y": 9.250324,
+          "z": 0.0
+        },
+        "flipped": true,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "png_glow": "False",
+        "obj_z": "0",
+        "obj_layer": "-1",
+        "png_col_r": "1",
+        "png_col_g": "1",
+        "png_col_b": "1",
+        "png_col_a": "1",
+        "png_antialias": "True",
+        "png_ppu": "100",
+        "png_framecount": "1",
+        "png_hframecount": "1",
+        "png_eframecount": "0",
+        "png_sframe": "0",
+        "png_frametime": "10",
+        "png_loop": "True",
+        "png_start_playing": "True",
+        "png_url": "https://cdn.wikimg.net/en/hkwiki/images/9/9a/Bell_Beast.png"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "eda93c75",
+        "pos": {
+          "x": 63.4623871,
+          "y": 8.367533,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 64.9584961,
+        "y": -62.7551537
+      },
+      "block_id": "824dbae3-85c4-45d8-86ff-239d9e4e4e5f",
+      "events": {},
+      "vars": {
+        "Map": {
+          "Item1": "9f96a6f0-5842-4574-b67b-5587f868ba73",
+          "Item2": "Current Sprite"
+        },
+        "Top": {
+          "Item1": "6891ac7d-f4ec-43b2-a894-958e2a884b70",
+          "Item2": "Current Sprite"
+        }
+      },
+      "type": "Travel UI",
+      "config": {
+        "travel_ui_list_name": "Beastling Station"
+      },
+      "ext": {
+        "children": "[{\"pos\":{\"x\":-16.01352,\"y\":-82.4046},\"block_id\":\"5527d392-91fd-4b0f-86ed-c70f792318bb\",\"events\":{\"OnChoose\":[{\"Item1\":\"f8756d7a-e897-4144-9e37-30898f0fb717\",\"Item2\":\"Trigger\"}]},\"vars\":{},\"type\":\"Travel Target\",\"config\":{\"travel_ui_name\":\"The Marrow\",\"travel_ui_x\":\"-5.9\",\"travel_ui_y\":\"-1.78\"},\"ext\":{}},{\"pos\":{\"x\":-16.01352,\"y\":-82.4046},\"block_id\":\"10caf1d5-a345-4295-a971-e7ec9e0b734c\",\"events\":{\"OnChoose\":[{\"Item1\":\"73b3be33-0fba-4fe1-87f9-2c9c990f542e\",\"Item2\":\"Trigger\"}]},\"vars\":{},\"type\":\"Travel Target\",\"config\":{\"travel_ui_name\":\"Deep Docks\",\"travel_ui_y\":\"-2.2\",\"travel_ui_x\":\"-3.76\"},\"ext\":{}},{\"pos\":{\"x\":-34.95581,\"y\":-154.175766},\"block_id\":\"d3926ef1-1740-4cb0-890a-80b40c19305d\",\"events\":{\"OnChoose\":[{\"Item1\":\"a82e4373-00c3-41fb-88b3-8b5b216e8d13\",\"Item2\":\"Trigger\"}]},\"vars\":{},\"type\":\"Travel Target\",\"config\":{\"travel_ui_name\":\"Far Fields\",\"travel_ui_x\":\"-1.5\",\"travel_ui_y\":\"-1.62\"},\"ext\":{}},{\"pos\":{\"x\":110.525391,\"y\":-117.252319},\"block_id\":\"20d2538e-b6ac-4bdd-be8e-93dcb4be190f\",\"events\":{\"OnChoose\":[{\"Item1\":\"d5f05089-608c-44f7-b30f-15da3848eccb\",\"Item2\":\"Trigger\"}]},\"vars\":{},\"type\":\"Travel Target\",\"config\":{\"travel_ui_name\":\"Greymoor\",\"travel_ui_x\":\"-2.55\",\"travel_ui_y\":\"-0.563\"},\"ext\":{}},{\"pos\":{\"x\":11.5170288,\"y\":-330.443817},\"block_id\":\"907a08e0-ba71-4b26-9ddb-76c1991e62db\",\"events\":{\"OnChoose\":[{\"Item1\":\"31a9c31b-86e1-42ad-b8c9-0a07c219ed51\",\"Item2\":\"Trigger\"}]},\"vars\":{},\"type\":\"Travel Target\",\"config\":{\"travel_ui_name\":\"Shellwood\",\"travel_ui_x\":\"-6.4\",\"travel_ui_y\":\"-0.611\"},\"ext\":{}},{\"pos\":{\"x\":14.9545288,\"y\":-412.318878},\"block_id\":\"d21e5497-1e71-4f57-8b21-6bd7080e476d\",\"events\":{\"OnChoose\":[{\"Item1\":\"6143092d-6fcc-4215-940a-d14fba748ca4\",\"Item2\":\"Trigger\"}]},\"vars\":{\"Unlocked\":{\"Item1\":\"b3817f05-b3ff-4efb-be4d-63a4b11e8b10\",\"Item2\":\"Value\"}},\"type\":\"Travel Target\",\"config\":{\"travel_ui_name\":\"Blasted Steps\",\"travel_ui_x\":\"-7.98\",\"travel_ui_y\":\"-0.15\"},\"ext\":{}},{\"pos\":{\"x\":-1.60797119,\"y\":-518.256348},\"block_id\":\"eb014196-d82f-40c0-a379-b2cabccb0338\",\"events\":{\"OnChoose\":[{\"Item1\":\"d5c1c1e2-af1b-4c2e-b9c7-b7f07e0e788a\",\"Item2\":\"Trigger\"}]},\"vars\":{\"Unlocked\":{\"Item1\":\"b3817f05-b3ff-4efb-be4d-63a4b11e8b10\",\"Item2\":\"Value\"}},\"type\":\"Travel Target\",\"config\":{\"travel_ui_name\":\"Citadel Entrance\",\"travel_ui_x\":\"5.56\",\"travel_ui_y\":\"1.2\"},\"ext\":{}},{\"pos\":{\"x\":-1.60797119,\"y\":-518.256348},\"block_id\":\"bb3e6151-79c7-45f4-aee4-d616b035336d\",\"events\":{\"OnChoose\":[{\"Item1\":\"e2cca31f-f35a-46d1-8826-887323f7cf35\",\"Item2\":\"Trigger\"}]},\"vars\":{\"Unlocked\":{\"Item1\":\"b3817f05-b3ff-4efb-be4d-63a4b11e8b10\",\"Item2\":\"Value\"}},\"type\":\"Travel Target\",\"config\":{\"travel_ui_name\":\"Citadel Proper\",\"travel_ui_y\":\"1.96\",\"travel_ui_x\":\"-4.1\"},\"ext\":{}},{\"pos\":{\"x\":-1.60797119,\"y\":-518.256348},\"block_id\":\"584d21fa-bd76-4e94-bd4a-41d7c591401b\",\"events\":{\"OnChoose\":[{\"Item1\":\"6e01f42f-a7d4-4a73-a0b8-09b084350fda\",\"Item2\":\"Trigger\"}]},\"vars\":{\"Unlocked\":{\"Item1\":\"b3817f05-b3ff-4efb-be4d-63a4b11e8b10\",\"Item2\":\"Value\"}},\"type\":\"Travel Target\",\"config\":{\"travel_ui_name\":\"Underworks\",\"travel_ui_x\":\"-4.1\",\"travel_ui_y\":\"0.645\"},\"ext\":{}},{\"pos\":{\"x\":-0.322937,\"y\":-957.1038},\"block_id\":\"b75073d4-996f-4751-9a47-fb62b0e8a7ec\",\"events\":{\"OnChoose\":[{\"Item1\":\"d4d6fe33-2a28-44d6-abd9-60213a255e7f\",\"Item2\":\"Trigger\"}]},\"vars\":{\"Unlocked\":{\"Item1\":\"b3817f05-b3ff-4efb-be4d-63a4b11e8b10\",\"Item2\":\"Value\"}},\"type\":\"Travel Target\",\"config\":{\"travel_ui_name\":\"The Slab\",\"travel_ui_x\":\"-6.62\",\"travel_ui_y\":\"1.735\"},\"ext\":{}},{\"pos\":{\"x\":-0.322937,\"y\":-957.1038},\"block_id\":\"ffe3095f-f12c-4fc1-88a3-2a920a66f901\",\"events\":{\"OnChoose\":[{\"Item1\":\"ddb5a068-f6bd-49ff-8833-acdde99b1b48\",\"Item2\":\"Trigger\"}]},\"vars\":{\"Unlocked\":{\"Item1\":\"b3817f05-b3ff-4efb-be4d-63a4b11e8b10\",\"Item2\":\"Value\"}},\"type\":\"Travel Target\",\"config\":{\"travel_ui_name\":\"Bilewater\",\"travel_ui_x\":\"-1.04\",\"travel_ui_y\":\"0.9\"},\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 335.597,
+        "y": -61.3025856
+      },
+      "block_id": "f8756d7a-e897-4144-9e37-30898f0fb717",
+      "events": {},
+      "vars": {},
+      "type": "Random Event",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":143.704529,\"y\":-21.3813782},\"block_id\":\"edccd789-46e0-4907-b9c2-4901cc44623f\",\"events\":{\"OnTrigger\":[{\"Item1\":\"77831d6d-ba38-4634-a079-427d54bab752\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":143.704529,\"y\":-21.3813782},\"block_id\":\"baeb56f5-0e24-403e-b529-9843b13eaffa\",\"events\":{\"OnTrigger\":[{\"Item1\":\"d444ce5a-cc69-4f03-87a0-1917a25512c9\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":476.981079,\"y\":-210.430374},\"block_id\":\"faaee9cf-a42c-4aa2-ab70-b200743a0012\",\"events\":{\"OnTrigger\":[{\"Item1\":\"0b8de537-524c-434e-8472-8933dddd7ec7\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":476.981079,\"y\":-210.430374},\"block_id\":\"124c8058-5d79-4b22-a1dd-8191e5a5460e\",\"events\":{\"OnTrigger\":[{\"Item1\":\"c4a71baf-0ae8-4725-961b-f4cb2c62c241\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":476.981079,\"y\":-210.430374},\"block_id\":\"f3bcfcf2-32d1-4381-82c0-4ca7c485f901\",\"events\":{\"OnTrigger\":[{\"Item1\":\"0926d7f6-de61-4876-af1b-22e00a40cca0\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":471.981079,\"y\":-495.117859},\"block_id\":\"d4e4492a-2c09-4e11-a7a6-eac2473193c6\",\"events\":{\"OnTrigger\":[{\"Item1\":\"a695cc3c-fe29-4da0-be0d-8c7c62c181f9\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":471.981079,\"y\":-495.117859},\"block_id\":\"de8bd43f-4583-45d0-9eaa-c15fec164128\",\"events\":{\"OnTrigger\":[{\"Item1\":\"a7e951f4-2bcf-4e39-bce2-1a1cd6db0e5b\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":471.981079,\"y\":-495.117859},\"block_id\":\"8c88aafb-058f-4873-81c5-c5dbac418412\",\"events\":{\"OnTrigger\":[{\"Item1\":\"b8b91dae-1b9f-4696-879e-7135367af138\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":450.418579,\"y\":-683.555359},\"block_id\":\"76fc795b-01ab-48d3-9ecc-5a247ae40e3f\",\"events\":{\"OnTrigger\":[{\"Item1\":\"118a77d7-81d0-4a58-b064-870047b8a77a\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":450.418579,\"y\":-683.555359},\"block_id\":\"ef0773f0-d33b-4eb7-b2ed-fa990c9ba3ee\",\"events\":{\"OnTrigger\":[{\"Item1\":\"15a2a911-8f93-4d26-8f14-c4ed6f2409e5\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":450.418579,\"y\":-683.555359},\"block_id\":\"27591652-d975-4d18-87f6-4e863071ee8c\",\"events\":{\"OnTrigger\":[{\"Item1\":\"56583cd5-0213-44bf-bea9-49ede6c7db56\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":400.418579,\"y\":-881.680359},\"block_id\":\"53b02b68-43d8-4908-94d8-dde4ac89fdbf\",\"events\":{\"OnTrigger\":[{\"Item1\":\"b7d65881-6000-458e-8e21-326e62abf202\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":400.418579,\"y\":-881.680359},\"block_id\":\"991d90e6-dd5a-42fb-b859-37a3e50fb594\",\"events\":{\"OnTrigger\":[{\"Item1\":\"6233d75d-5c3f-4117-ab35-9cbde2634ba6\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":391.668579,\"y\":-916.992859},\"block_id\":\"39c9ccf3-2786-469a-b2e7-553fdff6e226\",\"events\":{\"OnTrigger\":[{\"Item1\":\"212d2724-f34d-4dfb-b1c7-fcda3b7a0061\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 529.8778,
+        "y": -138.243958
+      },
+      "block_id": "77831d6d-ba38-4634-a079-427d54bab752",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_10",
+        "trans_door": "MarrowSpawn10"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 527.6173,
+        "y": -211.8775
+      },
+      "block_id": "d444ce5a-cc69-4f03-87a0-1917a25512c9",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_17",
+        "trans_door": "MarrowSpawn17"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 528.905334,
+        "y": -287.076721
+      },
+      "block_id": "0b8de537-524c-434e-8472-8933dddd7ec7",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_11b",
+        "trans_door": "MarrowSpawn11b"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 526.0669,
+        "y": -365.030945
+      },
+      "block_id": "c4a71baf-0ae8-4725-961b-f4cb2c62c241",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_05b",
+        "trans_door": "MarrowSpawn05b"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 526.7197,
+        "y": -445.595337
+      },
+      "block_id": "0926d7f6-de61-4876-af1b-22e00a40cca0",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bellshrine",
+        "trans_door": "MarrowSpawnBellshrine"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 534.0538,
+        "y": -523.635437
+      },
+      "block_id": "a695cc3c-fe29-4da0-be0d-8c7c62c181f9",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_06",
+        "trans_door": "MarrowSpawn06-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 527.851563,
+        "y": -597.327759
+      },
+      "block_id": "a7e951f4-2bcf-4e39-bce2-1a1cd6db0e5b",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_06",
+        "trans_door": "MarrowSpawn06-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 538.1476,
+        "y": -675.2153
+      },
+      "block_id": "b8b91dae-1b9f-4696-879e-7135367af138",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_18",
+        "trans_door": "MarrowSpawn18"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 532.9335,
+        "y": -743.7626
+      },
+      "block_id": "118a77d7-81d0-4a58-b064-870047b8a77a",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_19",
+        "trans_door": "MarrowSpawn19"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 532.248657,
+        "y": -817.7292
+      },
+      "block_id": "15a2a911-8f93-4d26-8f14-c4ed6f2409e5",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_12",
+        "trans_door": "MarrowSpawn12-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 529.091858,
+        "y": -900.6717
+      },
+      "block_id": "56583cd5-0213-44bf-bea9-49ede6c7db56",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_12",
+        "trans_door": "MarrowSpawn12-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 527.761963,
+        "y": -977.9612
+      },
+      "block_id": "b7d65881-6000-458e-8e21-326e62abf202",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_09",
+        "trans_door": "MarrowSpawn9"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 526.87085,
+        "y": -1048.9126
+      },
+      "block_id": "6233d75d-5c3f-4117-ab35-9cbde2634ba6",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_01c",
+        "trans_door": "MarrowSpawn01c"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 526.4023,
+        "y": -1123.15564
+      },
+      "block_id": "212d2724-f34d-4dfb-b1c7-fcda3b7a0061",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_02",
+        "trans_door": "MarrowSpawn02"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -111.39399,
+        "y": 61.49443
+      },
+      "block_id": "9f96a6f0-5842-4574-b67b-5587f868ba73",
+      "events": {},
+      "vars": {},
+      "type": "Custom PNG",
+      "config": {
+        "png_antialias": "True",
+        "png_ppu": "120",
+        "png_url": "https://drive.google.com/uc?export=download&id=1954hDIucSyX-KcVaJbYrDrfZra94RyqG"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 40.7807732,
+        "y": 62.5376968
+      },
+      "block_id": "6891ac7d-f4ec-43b2-a894-958e2a884b70",
+      "events": {},
+      "vars": {},
+      "type": "Custom PNG",
+      "config": {
+        "png_antialias": "True",
+        "png_ppu": "300",
+        "png_url": "https://drive.google.com/uc?export=download&id=1qDjbiZYiH1KNt9pLMhwwS6vNIlxm1B4M"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -305.297943,
+        "y": 92.21368
+      },
+      "block_id": "74716b60-913b-4ce7-9467-950febad30df",
+      "events": {},
+      "vars": {},
+      "type": "Constant Bool",
+      "config": {
+        "constant_bool": "True"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -305.297974,
+        "y": 20.3387
+      },
+      "block_id": "1747a5e8-3b2b-4f1c-b782-bf153fdabe92",
+      "events": {},
+      "vars": {
+        "New Value": {
+          "Item1": "74716b60-913b-4ce7-9467-950febad30df",
+          "Item2": "Value"
+        }
+      },
+      "type": "Variable (Bool)",
+      "config": {
+        "var_persistence_bool": "2",
+        "var_id_bool": "UsedTeleporter"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 699.178833,
+        "y": -57.7805824
+      },
+      "block_id": "73b3be33-0fba-4fe1-87f9-2c9c990f542e",
+      "events": {},
+      "vars": {},
+      "type": "Random Event",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":689.8932,\"y\":-151.7392},\"block_id\":\"4693c9c8-3f6c-4c5d-8703-c17a15dc91cd\",\"events\":{\"OnTrigger\":[{\"Item1\":\"d4c2ebca-abaa-45e5-b7ed-ce292e519fdf\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":689.2682,\"y\":-229.5517},\"block_id\":\"8c12d5b5-7c82-42b5-b340-8f91c0c3a5f0\",\"events\":{\"OnTrigger\":[{\"Item1\":\"536715ce-626a-4e22-ba9c-f3476f7330b5\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":663.75,\"y\":-210.3125},\"block_id\":\"cdf25603-9926-4b85-a983-0acdbf470734\",\"events\":{\"OnTrigger\":[{\"Item1\":\"cb15d026-24a1-401a-814a-18beaa2ffbc5\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":663.75,\"y\":-210.3125},\"block_id\":\"70180b18-9645-42ee-91c3-2935892020af\",\"events\":{\"OnTrigger\":[{\"Item1\":\"d6d82ff6-f1bb-4cc4-b5b2-e4bead529138\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":643.75,\"y\":-302.1875},\"block_id\":\"1acbffcf-1bb0-4571-a266-84dd83e28c3c\",\"events\":{\"OnTrigger\":[{\"Item1\":\"2c0b4301-5989-4a8b-a722-ba730a037ada\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":643.75,\"y\":-302.1875},\"block_id\":\"77f8f92c-c407-4a4c-b216-b5f078c49cb9\",\"events\":{\"OnTrigger\":[{\"Item1\":\"8ae5f54c-063b-4617-8a58-a2476f1de72a\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":643.75,\"y\":-302.1875},\"block_id\":\"372e653e-dcb2-454d-a23b-47349b7aeba1\",\"events\":{\"OnTrigger\":[{\"Item1\":\"1a25d0cd-b38c-4e77-973a-50d25145e30f\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":640.625,\"y\":-434.375},\"block_id\":\"37bf410f-7e2c-4467-bdb7-e69329b1ae72\",\"events\":{\"OnTrigger\":[{\"Item1\":\"8e8eee17-cf74-4aee-bc6e-e8b7659d3b00\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":844.7368,\"y\":-702.3279},\"block_id\":\"e7ab8fef-e924-4fe2-a2e1-e48b7d054a8a\",\"events\":{\"OnTrigger\":[{\"Item1\":\"a5f0d27e-f0b4-4dd4-b313-ddcd13e86c83\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":844.7368,\"y\":-702.3279},\"block_id\":\"0085ab64-8ff9-4268-b651-94a2ed5fc926\",\"events\":{\"OnTrigger\":[{\"Item1\":\"539c3d4b-7f53-4484-801a-44c97c2bc42f\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 905.6223,
+        "y": -134.343369
+      },
+      "block_id": "d4c2ebca-abaa-45e5-b7ed-ce292e519fdf",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_09",
+        "trans_door": "DocksSpawnMarrow9"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 905.6249,
+        "y": -220.9896
+      },
+      "block_id": "536715ce-626a-4e22-ba9c-f3476f7330b5",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Dock_05",
+        "trans_door": "DocksSpawn5"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 905.208252,
+        "y": -293.802063
+      },
+      "block_id": "cb15d026-24a1-401a-814a-18beaa2ffbc5",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Dock_16",
+        "trans_door": "DocksSpawn16"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 905.6249,
+        "y": -370.572968
+      },
+      "block_id": "d6d82ff6-f1bb-4cc4-b5b2-e4bead529138",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_East_04",
+        "trans_door": "DocksSpawnBE4"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 898.749939,
+        "y": -594.635437
+      },
+      "block_id": "1a25d0cd-b38c-4e77-973a-50d25145e30f",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Dock_04",
+        "trans_door": "DocksSpawn4-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 900.520752,
+        "y": -669.84375
+      },
+      "block_id": "8e8eee17-cf74-4aee-bc6e-e8b7659d3b00",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Dock_04",
+        "trans_door": "DocksSpawn4-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 906.354065,
+        "y": -444.114624
+      },
+      "block_id": "2c0b4301-5989-4a8b-a722-ba730a037ada",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Room_Forge",
+        "trans_door": "DocksSpawnForge"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 899.687439,
+        "y": -519.948
+      },
+      "block_id": "8ae5f54c-063b-4617-8a58-a2476f1de72a",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Room_Forge",
+        "trans_door": "DocksSpawnForge-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1157.58533,
+        "y": -75.42427
+      },
+      "block_id": "a82e4373-00c3-41fb-88b3-8b5b216e8d13",
+      "events": {},
+      "vars": {},
+      "type": "Random Event",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":765.625,\"y\":-121.5625},\"block_id\":\"9f260e96-c0d4-4b9a-9bfa-033a07357a30\",\"events\":{\"OnTrigger\":[{\"Item1\":\"9e66a2b0-08b4-4599-9fea-76ff835bedd3\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":765.625,\"y\":-121.5625},\"block_id\":\"87a4f341-6038-44f2-9041-32472547b601\",\"events\":{\"OnTrigger\":[{\"Item1\":\"c5cff73f-4480-4e66-9c7f-12d5108bcc54\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":765.0,\"y\":-124.6875},\"block_id\":\"c936db85-8a70-413e-8d5e-548a6509ba8f\",\"events\":{\"OnTrigger\":[{\"Item1\":\"0e87e67e-aecd-4575-adc6-ab822a63d0be\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":787.5,\"y\":-210.625},\"block_id\":\"d7b62ada-f2d7-4f1b-81c5-cb548f3f5e8d\",\"events\":{\"OnTrigger\":[{\"Item1\":\"424e4856-59ff-4eeb-a0c7-e006d5b2b37c\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":805.625,\"y\":-265.9375},\"block_id\":\"975f1880-07c4-4f22-b304-298d52f6cee9\",\"events\":{\"OnTrigger\":[{\"Item1\":\"09681c38-8747-4716-93e0-11aea09d8c25\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":805.625,\"y\":-265.9375},\"block_id\":\"0fd7dc46-ee02-42cb-a3c4-e981a836e84b\",\"events\":{\"OnTrigger\":[{\"Item1\":\"75414423-7526-4034-ab85-f472305b30f0\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":805.625,\"y\":-265.9375},\"block_id\":\"63021833-367a-41dd-85f8-8fc2ac038312\",\"events\":{\"OnTrigger\":[{\"Item1\":\"d8627a55-c50b-4e4a-b3e7-fa1e7ee1a275\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":800.3125,\"y\":-426.25},\"block_id\":\"1483be08-5796-44b9-80b4-e71a3c44785b\",\"events\":{\"OnTrigger\":[{\"Item1\":\"1c77b3b3-0267-4eb2-81e5-dbf9fc642b84\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":800.3125,\"y\":-426.25},\"block_id\":\"0bc0ce54-4dd1-4347-8cd9-d7864027d33f\",\"events\":{\"OnTrigger\":[{\"Item1\":\"2a8027a1-df15-407e-9d59-05ec2cbb1015\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1245.0,\"y\":-666.25},\"block_id\":\"beb104e8-40c1-4c35-bd30-033223b9c8ff\",\"events\":{\"OnTrigger\":[{\"Item1\":\"3e665a3f-863c-42bf-a70e-f64dc4f14cb0\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1245.0,\"y\":-666.25},\"block_id\":\"920d4856-2e59-4b8b-a5d1-eec62474dae4\",\"events\":{\"OnTrigger\":[{\"Item1\":\"8f47528a-9d94-4162-999a-86f1ea543126\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1245.0,\"y\":-666.25},\"block_id\":\"79e1990e-ac04-4d0d-b80a-7fd7ec8b6ce3\",\"events\":{\"OnTrigger\":[{\"Item1\":\"2b2160e7-5906-454b-a749-8dd6b293bd82\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1245.0,\"y\":-666.25},\"block_id\":\"ff8d6bb9-94ce-4931-ba65-8b639e65f2ba\",\"events\":{\"OnTrigger\":[{\"Item1\":\"a5be4460-5e6d-43ff-9217-3d2c32bdbcdc\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1251.5625,\"y\":-975.3125},\"block_id\":\"2239ecea-3343-4746-b523-ffd42842fb62\",\"events\":{\"OnTrigger\":[{\"Item1\":\"96976b58-6c70-41f7-bc0c-7d69e859c4c7\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1251.5625,\"y\":-975.3125},\"block_id\":\"fd0c0366-5931-4223-bdc1-0dd83f8f2cf2\",\"events\":{\"OnTrigger\":[{\"Item1\":\"49ea46fb-b9ee-4214-9c8c-e663642ba722\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 1336.71509,
+        "y": -145.914383
+      },
+      "block_id": "9e66a2b0-08b4-4599-9fea-76ff835bedd3",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_East_02",
+        "trans_door": "FarFieldsSpawnBE2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1336.96387,
+        "y": -520.5802
+      },
+      "block_id": "75414423-7526-4034-ab85-f472305b30f0",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_East_10",
+        "trans_door": "FarFieldsSpawnBE10-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1331.24963,
+        "y": -446.294525
+      },
+      "block_id": "09681c38-8747-4716-93e0-11aea09d8c25",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_East_17",
+        "trans_door": "FarFieldsSpawnBE17"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1335.53564,
+        "y": -370.937439
+      },
+      "block_id": "424e4856-59ff-4eeb-a0c7-e006d5b2b37c",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_East_16",
+        "trans_door": "FarFieldsSpawnBE16"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1333.39246,
+        "y": -295.9374
+      },
+      "block_id": "0e87e67e-aecd-4575-adc6-ab822a63d0be",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_East_15",
+        "trans_door": "FarFieldsSpawnBE15-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1333.39258,
+        "y": -220.5803
+      },
+      "block_id": "c5cff73f-4480-4e66-9c7f-12d5108bcc54",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_East_15",
+        "trans_door": "FarFieldsSpawnBE15-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1328.25842,
+        "y": -894.4196
+      },
+      "block_id": "8f47528a-9d94-4162-999a-86f1ea543126",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_East_09",
+        "trans_door": "FarFieldsSpawnBE9"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1330.40161,
+        "y": -819.4193
+      },
+      "block_id": "3e665a3f-863c-42bf-a70e-f64dc4f14cb0",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_East_20",
+        "trans_door": "FarFieldsSpawnBE20"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1328.973,
+        "y": -745.1337
+      },
+      "block_id": "2a8027a1-df15-407e-9d59-05ec2cbb1015",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Dock_03b",
+        "trans_door": "FarFieldsSpawnDocks3b"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1332.18738,
+        "y": -670.13385
+      },
+      "block_id": "1c77b3b3-0267-4eb2-81e5-dbf9fc642b84",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_East_07",
+        "trans_door": "FarFieldsSpawnBE7"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1331.83008,
+        "y": -595.13385
+      },
+      "block_id": "d8627a55-c50b-4e4a-b3e7-fa1e7ee1a275",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_East_10",
+        "trans_door": "FarFieldsSpawnBE10-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1324.07373,
+        "y": -1209.24475
+      },
+      "block_id": "49ea46fb-b9ee-4214-9c8c-e663642ba722",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_East_11",
+        "trans_door": "FarFieldsSpawnBE11"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1323.04907,
+        "y": -1130.64209
+      },
+      "block_id": "96976b58-6c70-41f7-bc0c-7d69e859c4c7",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_East_14b",
+        "trans_door": "FarFieldsSpawnBE14b-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1323.1178,
+        "y": -1046.36035
+      },
+      "block_id": "a5be4460-5e6d-43ff-9217-3d2c32bdbcdc",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_East_14b",
+        "trans_door": "FarFieldsSpawnBE14b-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1327.35046,
+        "y": -970.2154
+      },
+      "block_id": "2b2160e7-5906-454b-a749-8dd6b293bd82",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_East_14",
+        "trans_door": "FarFieldsSpawnBE14"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1518.29846,
+        "y": -119.988182
+      },
+      "block_id": "d5f05089-608c-44f7-b30f-15da3848eccb",
+      "events": {},
+      "vars": {},
+      "type": "Random Event",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":1132.8125,\"y\":-165.625},\"block_id\":\"ce337655-b5db-48fa-84a0-e3f10b89c60c\",\"events\":{\"OnTrigger\":[{\"Item1\":\"e454bb87-e2f9-4f42-bbfd-9691c7a6e1fc\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1132.8125,\"y\":-165.625},\"block_id\":\"4f2b53ae-90b9-49ef-ae3d-c917f81f68b8\",\"events\":{\"OnTrigger\":[{\"Item1\":\"dc0dd11c-5494-4110-ab51-c0378014a312\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1284.375,\"y\":-304.0625},\"block_id\":\"aefccce4-96cb-40af-ae9d-a5c4777c89d6\",\"events\":{\"OnTrigger\":[{\"Item1\":\"43f0f4cf-75d2-40a4-a505-1c99a5e94f07\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1284.375,\"y\":-304.0625},\"block_id\":\"7c532c74-dd02-49e9-a8ca-ca6fb5360a62\",\"events\":{\"OnTrigger\":[{\"Item1\":\"cde642e2-e1f8-4ae8-b386-1c3b66e30697\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1284.375,\"y\":-304.0625},\"block_id\":\"cb2fe174-53d2-4133-98f5-d23d6bc1bc28\",\"events\":{\"OnTrigger\":[{\"Item1\":\"3cfe0582-6ec7-4e89-a055-7dda3242ed22\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1284.375,\"y\":-304.0625},\"block_id\":\"d41f101f-80c4-446b-be41-0bd073e70542\",\"events\":{\"OnTrigger\":[{\"Item1\":\"b729e85e-b267-4329-af71-2ce5a5ab621f\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1287.96448,\"y\":-526.5982},\"block_id\":\"158047e4-73a3-4950-ba40-bf1e36b7cbfa\",\"events\":{\"OnTrigger\":[{\"Item1\":\"fa7fc900-2fae-40da-8059-4d79c254ad6d\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1287.96448,\"y\":-526.5982},\"block_id\":\"d36fa22a-1a64-4d45-9c4c-7f33a5893c7a\",\"events\":{\"OnTrigger\":[{\"Item1\":\"9af79eb5-12b9-48ac-b3ba-7c3da4299668\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1287.96448,\"y\":-526.5982},\"block_id\":\"88cf22a3-15cd-4753-b39f-18fe9a8a351d\",\"events\":{\"OnTrigger\":[{\"Item1\":\"cd0197f4-97a5-4a0d-9265-df9565d96fb8\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1290.777,\"y\":-642.5357},\"block_id\":\"46dc66e4-b505-4251-abe4-46573960bdc9\",\"events\":{\"OnTrigger\":[{\"Item1\":\"62ac94f2-5585-4560-b9da-d8ed3224da61\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1290.777,\"y\":-642.5357},\"block_id\":\"22bed1cf-5b4f-440a-82c1-b86824b40c79\",\"events\":{\"OnTrigger\":[{\"Item1\":\"bab85f39-1ae0-422a-88fb-db666ad1d9e6\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1290.777,\"y\":-642.5357},\"block_id\":\"6adfe2de-c935-45d9-b6cf-287af1b201ea\",\"events\":{\"OnTrigger\":[{\"Item1\":\"80006637-7aea-456b-930e-8212e8008629\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1326.08948,\"y\":-893.4732},\"block_id\":\"8c5859f4-1cc0-4e72-9e35-4f01c7097b2c\",\"events\":{\"OnTrigger\":[{\"Item1\":\"0bb1b6cc-0eea-400f-8902-6b81819bfdc1\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1326.08948,\"y\":-893.4732},\"block_id\":\"29478b1f-3268-4003-80a1-65193c782fcd\",\"events\":{\"OnTrigger\":[{\"Item1\":\"0b3120bf-12d1-42b4-96bf-87fc5d4d260a\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1326.08948,\"y\":-893.4732},\"block_id\":\"c8e39e1f-1f03-4082-b4c7-e2522e5d3faf\",\"events\":{\"OnTrigger\":[{\"Item1\":\"2344a0bb-15b7-4068-bde8-0fb4aad3b061\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1315.46448,\"y\":-1026.59814},\"block_id\":\"fd006e24-37ba-446b-8ff6-469229c02beb\",\"events\":{\"OnTrigger\":[{\"Item1\":\"80a93183-80af-45bc-a955-0b703ff493c3\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1315.46448,\"y\":-1026.59814},\"block_id\":\"71f351b6-6625-4f25-a642-591da8f5beef\",\"events\":{\"OnTrigger\":[{\"Item1\":\"1539fa54-4512-4405-accf-fc49298f921f\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1315.46448,\"y\":-1026.59814},\"block_id\":\"7e1aac25-34bd-4d1c-a45e-5e7d157b5c9c\",\"events\":{\"OnTrigger\":[{\"Item1\":\"f837d92a-c58f-4c0f-a427-f867345c893d\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1304.21448,\"y\":-1124.72314},\"block_id\":\"49307c77-fb8e-47ec-9e33-fe20afac344f\",\"events\":{\"OnTrigger\":[{\"Item1\":\"293f47bf-d4e4-4dce-ae92-ba3469beddd7\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 1712.24731,
+        "y": -957.2598
+      },
+      "block_id": "bab85f39-1ae0-422a-88fb-db666ad1d9e6",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Greymoor_03",
+        "trans_door": "GreymoorSpawn3"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1711.512,
+        "y": -879.3185
+      },
+      "block_id": "62ac94f2-5585-4560-b9da-d8ed3224da61",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Greymoor_12",
+        "trans_door": "GreymoorSpawn12-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1710.04138,
+        "y": -804.3188
+      },
+      "block_id": "cd0197f4-97a5-4a0d-9265-df9565d96fb8",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Greymoor_12",
+        "trans_door": "GreymoorSpawn12-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1706.73267,
+        "y": -728.5834
+      },
+      "block_id": "9af79eb5-12b9-48ac-b3ba-7c3da4299668",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Greymoor_15b",
+        "trans_door": "GreymoorSpawn15b-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1707.10046,
+        "y": -655.7893
+      },
+      "block_id": "fa7fc900-2fae-40da-8059-4d79c254ad6d",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Greymoor_15b",
+        "trans_door": "GreymoorSpawn15b-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1705.62988,
+        "y": -576.3776
+      },
+      "block_id": "b729e85e-b267-4329-af71-2ce5a5ab621f",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Greymoor_15",
+        "trans_door": "GreymoorSpawn15"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1712.24756,
+        "y": -502.48056
+      },
+      "block_id": "3cfe0582-6ec7-4e89-a055-7dda3242ed22",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Greymoor_02",
+        "trans_door": "GreymoorSpawn2-3"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1706.36523,
+        "y": -424.906982
+      },
+      "block_id": "cde642e2-e1f8-4ae8-b386-1c3b66e30697",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Greymoor_02",
+        "trans_door": "GreymoorSpawn2-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1707.83582,
+        "y": -353.125946
+      },
+      "block_id": "43f0f4cf-75d2-40a4-a505-1c99a5e94f07",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Greymoor_02",
+        "trans_door": "GreymoorSpawn2-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1705.99744,
+        "y": -278.583466
+      },
+      "block_id": "dc0dd11c-5494-4110-ab51-c0378014a312",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Greymoor_01",
+        "trans_door": "GreymoorSpawn1-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1707.46814,
+        "y": -200.642319
+      },
+      "block_id": "e454bb87-e2f9-4f42-bbfd-9691c7a6e1fc",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Greymoor_01",
+        "trans_door": "GreymoorSpawn1-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1715.5011,
+        "y": -1329.61279
+      },
+      "block_id": "80a93183-80af-45bc-a955-0b703ff493c3",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Greymoor_20b",
+        "trans_door": "GreymoorSpawn20b"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1712.56,
+        "y": -1256.8186
+      },
+      "block_id": "2344a0bb-15b7-4068-bde8-0fb4aad3b061",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Greymoor_06",
+        "trans_door": "GreymoorSpawn6"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1717.70715,
+        "y": -1174.46582
+      },
+      "block_id": "0b3120bf-12d1-42b4-96bf-87fc5d4d260a",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Greymoor_11",
+        "trans_door": "GreymoorSpawn11"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1716.23657,
+        "y": -1109.02454
+      },
+      "block_id": "0bb1b6cc-0eea-400f-8902-6b81819bfdc1",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Greymoor_04",
+        "trans_door": "GreymoorSpawn4-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1714.766,
+        "y": -1034.02466
+      },
+      "block_id": "80006637-7aea-456b-930e-8212e8008629",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Greymoor_04",
+        "trans_door": "GreymoorSpawn4-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1719.45337,
+        "y": -1552.6825
+      },
+      "block_id": "293f47bf-d4e4-4dce-ae92-ba3469beddd7",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Greymoor_16",
+        "trans_door": "GreymoorSpawn16-3"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1720.92407,
+        "y": -1485.03552
+      },
+      "block_id": "f837d92a-c58f-4c0f-a427-f867345c893d",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Greymoor_16",
+        "trans_door": "GreymoorSpawn16-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1717.61511,
+        "y": -1407.09436
+      },
+      "block_id": "1539fa54-4512-4405-accf-fc49298f921f",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Greymoor_16",
+        "trans_door": "GreymoorSpawn16-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 1890.21936,
+        "y": -123.364
+      },
+      "block_id": "31a9c31b-86e1-42ad-b8c9-0a07c219ed51",
+      "events": {},
+      "vars": {},
+      "type": "Random Event",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":1295.52087,\"y\":-132.176575},\"block_id\":\"16ab500a-cf4e-41c4-b66d-a6b92401f307\",\"events\":{\"OnTrigger\":[{\"Item1\":\"d8d94b28-355c-4136-815b-e5b702fb43af\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1295.52087,\"y\":-132.176575},\"block_id\":\"2a514f91-4f2f-4cbc-ae8e-30f60e381d96\",\"events\":{\"OnTrigger\":[{\"Item1\":\"810f0310-ef4c-4a36-9652-9d040c20b2dd\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1302.70862,\"y\":-193.42659},\"block_id\":\"f1df00dd-2c9f-4f5d-92dc-df7038716761\",\"events\":{\"OnTrigger\":[{\"Item1\":\"51d2fc73-8ec3-46d1-861b-8ab8975842ca\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1314.27112,\"y\":-273.739075},\"block_id\":\"7daedb93-cc8c-466b-8402-4e9939535991\",\"events\":{\"OnTrigger\":[{\"Item1\":\"2fe3901c-3cbf-459f-a95c-3985506dc383\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1335.83362,\"y\":-347.489075},\"block_id\":\"6d69c411-d549-4d76-aa92-580350f7e7b9\",\"events\":{\"OnTrigger\":[{\"Item1\":\"7077e4b5-1496-493d-a53c-25ea86b40e45\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1335.83362,\"y\":-347.489075},\"block_id\":\"4b7acd1b-d697-41ab-920f-18b6c46c14db\",\"events\":{\"OnTrigger\":[{\"Item1\":\"a26ff2f0-c230-4d40-9516-2810c76e6122\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1335.83362,\"y\":-347.489075},\"block_id\":\"401d3ec4-596e-4f70-9f29-5ac6bd60ac7f\",\"events\":{\"OnTrigger\":[{\"Item1\":\"38c40d96-26fd-4b2f-b22f-f20018c6b69e\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1335.83362,\"y\":-347.489075},\"block_id\":\"ad2f3540-73a4-41c1-9f32-ab94bcce5b43\",\"events\":{\"OnTrigger\":[{\"Item1\":\"ed87189b-9f0e-4022-9a43-34184002f12a\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1339.58362,\"y\":-519.6766},\"block_id\":\"c1033886-2979-4b49-bc25-c3a26c51a6f1\",\"events\":{\"OnTrigger\":[{\"Item1\":\"94d04cb3-6744-4c1d-a66b-03c652672768\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1339.58362,\"y\":-519.6766},\"block_id\":\"21b34960-e098-4704-b18d-e560460f41fc\",\"events\":{\"OnTrigger\":[{\"Item1\":\"787c0a72-d126-4d8d-9137-f75da1a8220a\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1347.08362,\"y\":-628.1141},\"block_id\":\"d149d899-b5ca-494a-a2fe-56c3b9fe2a83\",\"events\":{\"OnTrigger\":[{\"Item1\":\"61531e8e-31f4-442b-8b2d-4790df213b28\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1347.08362,\"y\":-628.1141},\"block_id\":\"eb0d0173-7de0-4596-9eb7-dce23ec4e286\",\"events\":{\"OnTrigger\":[{\"Item1\":\"6a78bcb2-6643-44b5-9c63-e222567e8b89\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1345.20862,\"y\":-736.8641},\"block_id\":\"5686af09-620b-4c49-baef-230090fa96d0\",\"events\":{\"OnTrigger\":[{\"Item1\":\"d7737e7a-62f5-4eff-956d-b895d0e06533\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1345.20862,\"y\":-736.8641},\"block_id\":\"72c6612a-0cb9-44e3-a59a-414f796c9e66\",\"events\":{\"OnTrigger\":[{\"Item1\":\"c2fb9be2-8f02-4700-9b64-8b35aa970edd\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1329.58362,\"y\":-793.7391},\"block_id\":\"ab3b1798-0f90-40fe-a0e2-983ddac10760\",\"events\":{\"OnTrigger\":[{\"Item1\":\"762a7974-8946-4e2f-8e41-3819081ea175\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1329.58362,\"y\":-793.7391},\"block_id\":\"7202325f-5892-421f-9aef-354f7283dbde\",\"events\":{\"OnTrigger\":[{\"Item1\":\"992ecd26-4849-46ad-9d49-8cf66ec096d0\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1324.27112,\"y\":-927.4891},\"block_id\":\"94647eef-3dc5-4d1d-a76f-d5ff2707ca85\",\"events\":{\"OnTrigger\":[{\"Item1\":\"64a95daf-a9a2-4b72-bd46-42ee4222526e\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1324.27112,\"y\":-927.4891},\"block_id\":\"37483f82-1d7f-4e47-88e6-6eb0996aa1f1\",\"events\":{\"OnTrigger\":[{\"Item1\":\"7cadad35-d8ff-4123-8839-3ab11ebca405\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1324.27112,\"y\":-927.4891},\"block_id\":\"45ada032-76b4-4395-a04d-73fea2aa2942\",\"events\":{\"OnTrigger\":[{\"Item1\":\"d346fc67-5fcb-4129-a77b-879c6baf61d1\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1324.27112,\"y\":-927.4891},\"block_id\":\"b96e231c-60e6-47a2-ad8f-8da6fb80755f\",\"events\":{\"OnTrigger\":[{\"Item1\":\"5f70e67b-c75e-464b-a463-ce0ec0894a4e\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2273.9834,\"y\":-1642.90417},\"block_id\":\"0fef19f6-4447-485b-afea-a8a5590242d9\",\"events\":{\"OnTrigger\":[{\"Item1\":\"701c330f-a800-46bc-ba86-907d65825eeb\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 2115.71826,
+        "y": -291.4144
+      },
+      "block_id": "810f0310-ef4c-4a36-9652-9d040c20b2dd",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Shellwood_01",
+        "trans_door": "ShellwoodSpawn1-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2116.215,
+        "y": -214.25766
+      },
+      "block_id": "d8d94b28-355c-4136-815b-e5b702fb43af",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Shellwood_01",
+        "trans_door": "ShellwoodSpawn1-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2109.4104,
+        "y": -666.235
+      },
+      "block_id": "38c40d96-26fd-4b2f-b22f-f20018c6b69e",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Mosstown_03",
+        "trans_door": "ShellwoodSpawnMT03-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2108.80054,
+        "y": -590.0155
+      },
+      "block_id": "a26ff2f0-c230-4d40-9516-2810c76e6122",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Mosstown_03",
+        "trans_door": "ShellwoodSpawnMT03-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2112.764,
+        "y": -516.539856
+      },
+      "block_id": "7077e4b5-1496-493d-a53c-25ea86b40e45",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Room_Witch",
+        "trans_door": "ShellwoodSpawnWitch2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2112.1543,
+        "y": -440.9301
+      },
+      "block_id": "2fe3901c-3cbf-459f-a95c-3985506dc383",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Shellwood_Witch",
+        "trans_door": "ShellwoodSpawnWitch"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2116.72729,
+        "y": -366.844757
+      },
+      "block_id": "51d2fc73-8ec3-46d1-861b-8ab8975842ca",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Belltown_Room_Shellwood",
+        "trans_door": "ShellwoodSpawnBT1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2105.69849,
+        "y": -1116.46362
+      },
+      "block_id": "d7737e7a-62f5-4eff-956d-b895d0e06533",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Aspid_01",
+        "trans_door": "ShellwoodSpawnAspid01-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2106.308,
+        "y": -1039.6344
+      },
+      "block_id": "6a78bcb2-6643-44b5-9c63-e222567e8b89",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Shellgrave",
+        "trans_door": "ShellwoodSpawnShellgrave-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2105.08862,
+        "y": -966.4636
+      },
+      "block_id": "61531e8e-31f4-442b-8b2d-4790df213b28",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Shellgrave",
+        "trans_door": "ShellwoodSpawnShellgrave-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2110.88135,
+        "y": -891.7685
+      },
+      "block_id": "787c0a72-d126-4d8d-9137-f75da1a8220a",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Shellwood_25",
+        "trans_door": "ShellwoodSpawn25-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2114.75879,
+        "y": -820.630249
+      },
+      "block_id": "94d04cb3-6744-4c1d-a66b-03c652672768",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Shellwood_25",
+        "trans_door": "ShellwoodSpawn25-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2109.66187,
+        "y": -741.4636
+      },
+      "block_id": "ed87189b-9f0e-4022-9a43-34184002f12a",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Mosstown_03",
+        "trans_door": "ShellwoodSpawnMT03-3"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2106.8418,
+        "y": -1191.65417
+      },
+      "block_id": "c2fb9be2-8f02-4700-9b64-8b35aa970edd",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Aspid_01",
+        "trans_door": "ShellwoodSpawnAspid01-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2109.74561,
+        "y": -1566.0675
+      },
+      "block_id": "d346fc67-5fcb-4129-a77b-879c6baf61d1",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Shellwood_13",
+        "trans_door": "ShellwoodSpawn13"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2112.18457,
+        "y": -1489.543
+      },
+      "block_id": "7cadad35-d8ff-4123-8839-3ab11ebca405",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Shellwood_26",
+        "trans_door": "ShellwoodSpawn26"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2111.27,
+        "y": -1415.76245
+      },
+      "block_id": "64a95daf-a9a2-4b72-bd46-42ee4222526e",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Shellwood_19",
+        "trans_door": "ShellwoodSpawn19"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2108.52612,
+        "y": -1341.06738
+      },
+      "block_id": "992ecd26-4849-46ad-9d49-8cf66ec096d0",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Coral_19",
+        "trans_door": "ShellwoodSpawnCoral19"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2107.00171,
+        "y": -1266.0675
+      },
+      "block_id": "762a7974-8946-4e2f-8e41-3819081ea175",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Aspid_01",
+        "trans_door": "ShellwoodSpawnAspid01-3"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2114.12817,
+        "y": -1719.985
+      },
+      "block_id": "701c330f-a800-46bc-ba86-907d65825eeb",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Belltown_04",
+        "trans_door": "ShellwoodSpawnBT4-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2112.604,
+        "y": -1644.07031
+      },
+      "block_id": "5f70e67b-c75e-464b-a463-ce0ec0894a4e",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Belltown_04",
+        "trans_door": "ShellwoodSpawnBT4-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2325.70361,
+        "y": -139.833649
+      },
+      "block_id": "6143092d-6fcc-4215-940a-d14fba748ca4",
+      "events": {},
+      "vars": {},
+      "type": "Random Event",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":1500.85181,\"y\":-48.73523},\"block_id\":\"3f92daca-86da-4975-a40c-500016e69086\",\"events\":{\"OnTrigger\":[{\"Item1\":\"555daf6a-eef7-45de-a588-78679e597c10\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1534.91443,\"y\":-135.297729},\"block_id\":\"5993e46c-e381-469a-be1a-a619ee864bd8\",\"events\":{\"OnTrigger\":[{\"Item1\":\"30ec78cc-b933-404c-a805-25c8529af812\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1534.91443,\"y\":-135.297729},\"block_id\":\"5a9233a6-0592-43da-b3e5-a00f1d3a6172\",\"events\":{\"OnTrigger\":[{\"Item1\":\"abd7ec9e-5faf-4390-8b49-c74491f1d00c\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1534.91443,\"y\":-135.297729},\"block_id\":\"35adf78c-7948-4eb8-95e8-441b4d358f9f\",\"events\":{\"OnTrigger\":[{\"Item1\":\"18499ae0-5b1a-474c-ac37-f329bdc79ba8\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1643.35193,\"y\":-281.235229},\"block_id\":\"cf83e1e8-9a06-45ee-9f27-5222beb0496d\",\"events\":{\"OnTrigger\":[{\"Item1\":\"1c671040-8ed5-47dd-9472-2938e81af972\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1646.78943,\"y\":-366.860229},\"block_id\":\"42e4ed78-210f-40e8-ad5c-d8665d6846b9\",\"events\":{\"OnTrigger\":[{\"Item1\":\"3a49e042-d487-4bd7-9faa-cc7b60dd8504\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1648.03955,\"y\":-430.6102},\"block_id\":\"9a2a44f5-ab19-45e7-8f68-dae386e89f46\",\"events\":{\"OnTrigger\":[{\"Item1\":\"b4dd9c5c-b23f-43a1-baa3-ff367a1fda14\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1648.977,\"y\":-506.860229},\"block_id\":\"7f21250d-9a00-427e-9cd4-a01c0a4901d7\",\"events\":{\"OnTrigger\":[{\"Item1\":\"ce3b2374-c541-4b77-a023-1f7c59acac60\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1649.91455,\"y\":-581.2352},\"block_id\":\"f5d64af6-b985-4e62-aaec-8430b476f8ad\",\"events\":{\"OnTrigger\":[{\"Item1\":\"d15f26c9-887b-444c-8ae7-22d6765826af\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1648.352,\"y\":-649.9852},\"block_id\":\"f4082bb0-af24-4270-be83-7d307743ab3a\",\"events\":{\"OnTrigger\":[{\"Item1\":\"74cb70cf-43fd-4d92-90c0-97a8e6406321\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1647.102,\"y\":-697.4853},\"block_id\":\"b77f9f8d-3b77-4b0a-b3ed-104eb368d1cc\",\"events\":{\"OnTrigger\":[{\"Item1\":\"a62b0663-1709-4d66-958f-2bce365e718f\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 2522.19067,
+        "y": -299.6281
+      },
+      "block_id": "30ec78cc-b933-404c-a805-25c8529af812",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Coral_19",
+        "trans_door": "StepsSpawnCoral19-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2523.88745,
+        "y": -219.940628
+      },
+      "block_id": "555daf6a-eef7-45de-a588-78679e597c10",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Coral_19",
+        "trans_door": "StepsSpawnCoral19-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2518.32251,
+        "y": -515.6907
+      },
+      "block_id": "1c671040-8ed5-47dd-9472-2938e81af972",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Coral_12",
+        "trans_door": "StepsSpawnCoral12-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2515.74316,
+        "y": -441.844727
+      },
+      "block_id": "18499ae0-5b1a-474c-ac37-f329bdc79ba8",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Coral_03",
+        "trans_door": "StepsSpawnCoral3-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2518.64941,
+        "y": -366.6779
+      },
+      "block_id": "abd7ec9e-5faf-4390-8b49-c74491f1d00c",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Coral_02",
+        "trans_door": "StepsSpawnCoral2-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2522.49243,
+        "y": -894.9184
+      },
+      "block_id": "74cb70cf-43fd-4d92-90c0-97a8e6406321",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Coral_11",
+        "trans_door": "StepsSpawnCoral11-3"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2519.475,
+        "y": -817.3323
+      },
+      "block_id": "d15f26c9-887b-444c-8ae7-22d6765826af",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Coral_11",
+        "trans_door": "StepsSpawnCoral11-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2518.613,
+        "y": -743.194336
+      },
+      "block_id": "ce3b2374-c541-4b77-a023-1f7c59acac60",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Coral_11",
+        "trans_door": "StepsSpawnCoral11-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2513.00952,
+        "y": -663.884033
+      },
+      "block_id": "b4dd9c5c-b23f-43a1-baa3-ff367a1fda14",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Coral_12",
+        "trans_door": "StepsSpawnCoral12-3"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2516.02686,
+        "y": -592.763367
+      },
+      "block_id": "3a49e042-d487-4bd7-9faa-cc7b60dd8504",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Coral_12",
+        "trans_door": "StepsSpawnCoral12-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2517.168,
+        "y": -971.175232
+      },
+      "block_id": "a62b0663-1709-4d66-958f-2bce365e718f",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Coral_38",
+        "trans_door": "StepsSpawnCoral38"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2718.00757,
+        "y": -148.973236
+      },
+      "block_id": "d5c1c1e2-af1b-4c2e-b9c7-b7f07e0e788a",
+      "events": {},
+      "vars": {},
+      "type": "Random Event",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":2021.80469,\"y\":-106.8074},\"block_id\":\"af06133f-11fd-468c-b791-4d78f72214fc\",\"events\":{\"OnTrigger\":[{\"Item1\":\"ab3b5bd3-5e81-4b30-9b7c-443d4ee263a6\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2021.80469,\"y\":-106.8074},\"block_id\":\"37427b49-1bcc-4ca3-a3b1-f46bb9790380\",\"events\":{\"OnTrigger\":[{\"Item1\":\"04948924-d10b-4e28-ad71-409dab08c50e\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2015.86719,\"y\":-245.5574},\"block_id\":\"bdf0c5e9-576c-4783-9689-ea19d3682ab6\",\"events\":{\"OnTrigger\":[{\"Item1\":\"4269558f-b430-4691-9abd-3c2abb5df066\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2015.86719,\"y\":-245.5574},\"block_id\":\"2e49c88a-ddb5-4049-8a3d-2dc264b2f01d\",\"events\":{\"OnTrigger\":[{\"Item1\":\"a87ebfd6-6103-42d3-afb8-2f990c3ccf99\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1995.55469,\"y\":-334.9324},\"block_id\":\"b7cb9b67-14ad-4906-bc05-99d937f83e5e\",\"events\":{\"OnTrigger\":[{\"Item1\":\"4ae2d1df-5c63-4dcf-af90-5102a700000b\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1995.55469,\"y\":-334.9324},\"block_id\":\"8b2e8abf-765b-44e9-a090-e3a9101ded92\",\"events\":{\"OnTrigger\":[{\"Item1\":\"3c848c58-df23-45b7-992a-bcb93d815c9e\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1995.55469,\"y\":-334.9324},\"block_id\":\"56267ae5-1605-4664-beee-dcdf22271f05\",\"events\":{\"OnTrigger\":[{\"Item1\":\"c5905e32-01bb-4a93-bcab-1174c5588b56\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1995.55469,\"y\":-334.9324},\"block_id\":\"5db187a9-ae1c-47bd-adb8-b97793bfa627\",\"events\":{\"OnTrigger\":[{\"Item1\":\"388daf03-240b-450a-80c0-af2db8f361f7\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1970.24219,\"y\":-502.744873},\"block_id\":\"fc29dba2-f680-4a7c-95df-2b24a4b23f6a\",\"events\":{\"OnTrigger\":[{\"Item1\":\"06aa0cc1-8139-486d-a20c-43e8f561adc3\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1970.24219,\"y\":-502.744873},\"block_id\":\"67222de5-cfd2-4def-b5c8-799a1106b2c7\",\"events\":{\"OnTrigger\":[{\"Item1\":\"bdb0acfa-88ee-49e7-b65e-0cc86c81f8e7\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1959.61719,\"y\":-615.8699},\"block_id\":\"72d0a595-d66d-4d3d-8e8c-e582a048b5a2\",\"events\":{\"OnTrigger\":[{\"Item1\":\"2f08630e-9176-491a-8270-074133de7550\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1959.61719,\"y\":-615.8699},\"block_id\":\"b1cf8006-4fcd-426a-8c02-1c68ef26f07b\",\"events\":{\"OnTrigger\":[{\"Item1\":\"56b9fa28-7c53-4c94-98c0-95677b02888b\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 2912.203,
+        "y": -223.413
+      },
+      "block_id": "ab3b5bd3-5e81-4b30-9b7c-443d4ee263a6",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Song_19_entrance",
+        "trans_door": "CitadelBLSpawn19Entrance-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2915.09375,
+        "y": -968.7643
+      },
+      "block_id": "2f08630e-9176-491a-8270-074133de7550",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Song_27",
+        "trans_door": "CitadelMidSpawn27-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2911.752,
+        "y": -824.119
+      },
+      "block_id": "06aa0cc1-8139-486d-a20c-43e8f561adc3",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Song_27",
+        "trans_door": "CitadelMidSpawn27-3"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2915.502,
+        "y": -900.369
+      },
+      "block_id": "bdb0acfa-88ee-49e7-b65e-0cc86c81f8e7",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Song_27",
+        "trans_door": "CitadelMidSpawn27-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2914.252,
+        "y": -747.869
+      },
+      "block_id": "388daf03-240b-450a-80c0-af2db8f361f7",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Song_03",
+        "trans_door": "CitadelBLSpawn3-3"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2914.66846,
+        "y": -673.7024
+      },
+      "block_id": "c5905e32-01bb-4a93-bcab-1174c5588b56",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Song_03",
+        "trans_door": "CitadelBLSpawn3-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2913.83521,
+        "y": -597.869141
+      },
+      "block_id": "3c848c58-df23-45b7-992a-bcb93d815c9e",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Song_03",
+        "trans_door": "CitadelBLSpawn3-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2914.252,
+        "y": -523.702454
+      },
+      "block_id": "4ae2d1df-5c63-4dcf-af90-5102a700000b",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Under_07b",
+        "trans_door": "CitadelBLSpawnUnder07b"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2917.16846,
+        "y": -449.952454
+      },
+      "block_id": "a87ebfd6-6103-42d3-afb8-2f990c3ccf99",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Song_01",
+        "trans_door": "CitadelBLSpawn1-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2912.58521,
+        "y": -371.202454
+      },
+      "block_id": "4269558f-b430-4691-9abd-3c2abb5df066",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Song_01",
+        "trans_door": "CitadelBLSpawn1-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2912.58521,
+        "y": -297.0358
+      },
+      "block_id": "04948924-d10b-4e28-ad71-409dab08c50e",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Song_19_entrance",
+        "trans_door": "CitadelBLSpawn19Entrance-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 2914.06787,
+        "y": -1050.73242
+      },
+      "block_id": "56b9fa28-7c53-4c94-98c0-95677b02888b",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Song_24",
+        "trans_door": "CitadelMidSpawn24-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3129.32617,
+        "y": -140.46756
+      },
+      "block_id": "e2cca31f-f35a-46d1-8826-887323f7cf35",
+      "events": {},
+      "vars": {},
+      "type": "Random Event",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":2163.68359,\"y\":-179.05304},\"block_id\":\"7224f29d-c4fe-4cb6-80ef-3ab47e94ece9\",\"events\":{\"OnTrigger\":[{\"Item1\":\"1fed3372-4b5c-4c28-880d-a795141d932a\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2163.68359,\"y\":-179.05304},\"block_id\":\"867ed712-de3c-41e5-b618-cb3386cdebfb\",\"events\":{\"OnTrigger\":[{\"Item1\":\"c781705a-e686-4513-99b8-b5757ed30550\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2163.68359,\"y\":-179.05304},\"block_id\":\"2560af2d-465d-4136-9f9a-55f18286c782\",\"events\":{\"OnTrigger\":[{\"Item1\":\"39b32dd3-b05e-4fba-91f0-ad6975555b0e\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2163.68359,\"y\":-179.05304},\"block_id\":\"f7c7186f-9ff2-42a9-9471-098063324039\",\"events\":{\"OnTrigger\":[{\"Item1\":\"9edab8e1-41cd-4419-a23c-ec652d5f4e5b\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2161.496,\"y\":-319.36554},\"block_id\":\"3295f55f-12ae-4bbf-a4a2-d1c970de7d09\",\"events\":{\"OnTrigger\":[{\"Item1\":\"d6d538b4-8040-40d7-b774-99a5128d6d7f\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2161.496,\"y\":-319.36554},\"block_id\":\"6d5dd250-8e02-4019-b9ac-d2abaec78ab4\",\"events\":{\"OnTrigger\":[{\"Item1\":\"957b9b8f-7e0a-4cdb-b618-32484e75bb31\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2161.496,\"y\":-319.36554},\"block_id\":\"4f3ed813-376b-47bb-a788-375057ad0410\",\"events\":{\"OnTrigger\":[{\"Item1\":\"d02da041-e8e4-449a-b7c6-bedc2cd2ead9\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2170.246,\"y\":-463.11554},\"block_id\":\"6b59a324-fded-4dcf-8948-6ef190342d47\",\"events\":{\"OnTrigger\":[{\"Item1\":\"e9741ed0-d160-4ac8-aaf6-63864f782705\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2170.246,\"y\":-463.11554},\"block_id\":\"8c0b6eac-330b-4587-a9d8-fd549eed8f88\",\"events\":{\"OnTrigger\":[{\"Item1\":\"b6bc9d11-81b1-4658-8a65-e69a1bd2e370\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2170.246,\"y\":-463.11554},\"block_id\":\"df541f37-28ea-4df6-867f-9501df6c0173\",\"events\":{\"OnTrigger\":[{\"Item1\":\"acd615e3-b251-476e-b67d-b529e8f1578d\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2170.246,\"y\":-463.11554},\"block_id\":\"6d4caa4e-9334-4354-ac41-a49517a0aec6\",\"events\":{\"OnTrigger\":[{\"Item1\":\"8108bb65-6d9e-4d91-bb51-075f519680f1\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2170.246,\"y\":-463.11554},\"block_id\":\"8c9990fb-d587-4985-ad44-7edb814ef789\",\"events\":{\"OnTrigger\":[{\"Item1\":\"a82fcfe9-89e4-4497-844e-d98fd29b2724\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2163.68359,\"y\":-666.24054},\"block_id\":\"0200ce1a-7bde-46aa-afb7-fabcfa6addfa\",\"events\":{\"OnTrigger\":[{\"Item1\":\"589d7c16-f7a1-473c-8f9d-d2cad118b633\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2163.68359,\"y\":-666.24054},\"block_id\":\"623f8c12-a509-496c-9d04-823f78222848\",\"events\":{\"OnTrigger\":[{\"Item1\":\"27df200a-1e42-4f98-acf1-baf716419441\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2163.68359,\"y\":-666.24054},\"block_id\":\"11b19a05-ef43-43e4-a66c-6ffd4451325d\",\"events\":{\"OnTrigger\":[{\"Item1\":\"08e61c15-847f-4afb-b58e-07f6b4904909\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2163.68359,\"y\":-666.24054},\"block_id\":\"cdae5c0e-d57f-4b50-8bfe-0102048d685c\",\"events\":{\"OnTrigger\":[{\"Item1\":\"736b18fa-eeec-4de0-a60c-40c9b390b218\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2154.93359,\"y\":-862.49054},\"block_id\":\"d82fa52e-0a49-48a7-b8c1-b86182326861\",\"events\":{\"OnTrigger\":[{\"Item1\":\"acbbba66-55f7-4d1f-b87c-d5a584b723e3\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 3347.02954,
+        "y": -589.154968
+      },
+      "block_id": "957b9b8f-7e0a-4cdb-b618-32484e75bb31",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Cog_07",
+        "trans_door": "Cog7"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3357.126,
+        "y": -515.116455
+      },
+      "block_id": "d6d538b4-8040-40d7-b774-99a5128d6d7f",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Cog_05",
+        "trans_door": "Cog5"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3351.05225,
+        "y": -442.533569
+      },
+      "block_id": "9edab8e1-41cd-4419-a23c-ec652d5f4e5b",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Cog_10",
+        "trans_door": "Cog10"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3354.6936,
+        "y": -364.7111
+      },
+      "block_id": "39b32dd3-b05e-4fba-91f0-ad6975555b0e",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Arborium_03",
+        "trans_door": "CitadelArborium3"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3360.56641,
+        "y": -293.3781
+      },
+      "block_id": "c781705a-e686-4513-99b8-b5757ed30550",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Arborium_11",
+        "trans_door": "CitadelArborium11"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3354.194,
+        "y": -216.9169
+      },
+      "block_id": "1fed3372-4b5c-4c28-880d-a795141d932a",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Arborium_02",
+        "trans_door": "CitadelArborium2-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3348.53833,
+        "y": -812.8805
+      },
+      "block_id": "b6bc9d11-81b1-4658-8a65-e69a1bd2e370",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Song_10",
+        "trans_door": "CitadelSong10-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3351.86743,
+        "y": -741.2275
+      },
+      "block_id": "e9741ed0-d160-4ac8-aaf6-63864f782705",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Song_04",
+        "trans_door": "CitadelSong4"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3344.777,
+        "y": -664.992065
+      },
+      "block_id": "d02da041-e8e4-449a-b7c6-bedc2cd2ead9",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Song_15",
+        "trans_door": "CitadelSong15"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3355.992,
+        "y": -1187.7229
+      },
+      "block_id": "27df200a-1e42-4f98-acf1-baf716419441",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Song_17",
+        "trans_door": "CitadelSong17"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3353.10742,
+        "y": -1111.76147
+      },
+      "block_id": "589d7c16-f7a1-473c-8f9d-d2cad118b633",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Slab_01",
+        "trans_door": "CitadelSlab1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3348.29956,
+        "y": -1037.7229
+      },
+      "block_id": "a82fcfe9-89e4-4497-844e-d98fd29b2724",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Song_14",
+        "trans_door": "CitadelSong14"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3348.94067,
+        "y": -965.607544
+      },
+      "block_id": "8108bb65-6d9e-4d91-bb51-075f519680f1",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Song_26",
+        "trans_door": "CitadelSong26"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3350.54346,
+        "y": -891.5691
+      },
+      "block_id": "acd615e3-b251-476e-b67d-b529e8f1578d",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Song_10",
+        "trans_door": "CitadelSong10-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3354.06934,
+        "y": -1262.034
+      },
+      "block_id": "08e61c15-847f-4afb-b58e-07f6b4904909",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Hang_01",
+        "trans_door": "CitadelHang1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3348.94116,
+        "y": -1412.99561
+      },
+      "block_id": "acbbba66-55f7-4d1f-b87c-d5a584b723e3",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Song_09b",
+        "trans_door": "CitadelSong9b-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3355.35083,
+        "y": -1339.91187
+      },
+      "block_id": "736b18fa-eeec-4de0-a60c-40c9b390b218",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Hang_08",
+        "trans_door": "CitadelHang8"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3559.386,
+        "y": -151.522018
+      },
+      "block_id": "6e01f42f-a7d4-4a73-a0b8-09b084350fda",
+      "events": {},
+      "vars": {},
+      "type": "Random Event",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":1941.59253,\"y\":-69.37782},\"block_id\":\"b70a899a-ff57-41cf-a769-2fcd890efb0f\",\"events\":{\"OnTrigger\":[{\"Item1\":\"0831a58d-ed29-4057-bb2f-83245c64266a\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":1941.59253,\"y\":-69.37782},\"block_id\":\"61c2b5ef-43e5-431e-bc6a-4bb47ef37e80\",\"events\":{\"OnTrigger\":[{\"Item1\":\"11ce2287-905a-4890-a00e-e08cb4f2e53c\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2004.71753,\"y\":-192.815323},\"block_id\":\"2d67f564-8359-4e5b-9d15-9924b8aa6bfc\",\"events\":{\"OnTrigger\":[{\"Item1\":\"92b14b78-69ac-4134-b336-65a75ba09064\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2004.71753,\"y\":-192.815323},\"block_id\":\"07ee8611-66eb-4f50-b9f8-cb73250abfe8\",\"events\":{\"OnTrigger\":[{\"Item1\":\"dcf05a38-cfe2-4e93-b297-e3763b7a67f9\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2004.71753,\"y\":-192.815323},\"block_id\":\"d25750d6-f7bc-41c6-a404-17f5c561b0e1\",\"events\":{\"OnTrigger\":[{\"Item1\":\"310e2f9a-71a7-48b0-8e0c-dc47bfe5d9c2\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2004.71753,\"y\":-192.815323},\"block_id\":\"5388641c-1623-4a1d-b2af-2102a851e558\",\"events\":{\"OnTrigger\":[{\"Item1\":\"8b39e1a7-6ffd-44ec-b3a3-e5d668ef4529\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2026.905,\"y\":-357.5028},\"block_id\":\"e0674b6a-59f4-4875-868b-d3511e4f5eb1\",\"events\":{\"OnTrigger\":[{\"Item1\":\"143c3f88-53ff-48e5-927a-489d1cff11a5\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2026.905,\"y\":-357.5028},\"block_id\":\"0c48765b-ad15-4ecb-b9ae-380c45b5ea3c\",\"events\":{\"OnTrigger\":[{\"Item1\":\"632dc4fe-d5a3-47e8-9a7f-ef899eab5f8f\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2026.905,\"y\":-357.5028},\"block_id\":\"d39a6d6a-b243-4e0a-9ea9-52fa129ee08e\",\"events\":{\"OnTrigger\":[{\"Item1\":\"d70f7387-ecfb-4a80-b155-bc5687973d80\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2026.905,\"y\":-357.5028},\"block_id\":\"05f8f8fe-603e-43cf-bf55-db6b165d54c9\",\"events\":{\"OnTrigger\":[{\"Item1\":\"36e75201-24d0-4f83-88d0-f8b0618c897c\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2025.34253,\"y\":-471.8778},\"block_id\":\"948b00b6-b16e-4f07-98e8-34dbbdc9fbb5\",\"events\":{\"OnTrigger\":[{\"Item1\":\"e349b3c0-e2c4-4f24-96a4-cf123f68b612\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2025.34253,\"y\":-471.8778},\"block_id\":\"fdfbf23c-26a3-4a8e-8c77-ee023c9f031b\",\"events\":{\"OnTrigger\":[{\"Item1\":\"57753c91-b691-476c-b0dd-ca2ee6371d36\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2025.34253,\"y\":-471.8778},\"block_id\":\"05bb3a1b-c835-44b4-863a-7572f5f6548f\",\"events\":{\"OnTrigger\":[{\"Item1\":\"23210fd2-a528-4bc7-8f67-bf3fc4a2d2f4\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2032.84253,\"y\":-640.3153},\"block_id\":\"88fd159c-62e9-4cc0-bae2-6e29b2a9c5b2\",\"events\":{\"OnTrigger\":[{\"Item1\":\"b606efdf-2c79-4b09-8f62-ab920d7086e3\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2032.84253,\"y\":-640.3153},\"block_id\":\"8e17ab70-8dd9-4e28-9bf6-2d4faf1e0f27\",\"events\":{\"OnTrigger\":[{\"Item1\":\"c755e249-236c-4524-abc6-d9b6fa760ba7\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2032.84253,\"y\":-640.3153},\"block_id\":\"8492c88e-db57-42b3-b752-6b20d64b2642\",\"events\":{\"OnTrigger\":[{\"Item1\":\"e9b597ed-032e-4d6e-9c2c-5ed1fc1e1eda\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2032.84253,\"y\":-640.3153},\"block_id\":\"ddad2d0f-c5d7-4d14-8fc4-fcba0d99825e\",\"events\":{\"OnTrigger\":[{\"Item1\":\"7c5f499a-682e-4d4b-93af-8c1be29934cb\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2050.655,\"y\":-790.3153},\"block_id\":\"64db5083-566e-435f-ae02-a584b1be3473\",\"events\":{\"OnTrigger\":[{\"Item1\":\"58373ea6-3b5c-4e48-b467-410ee229b65c\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2050.655,\"y\":-790.3153},\"block_id\":\"edeccef9-aad0-48ec-9e2d-aee63bf82a84\",\"events\":{\"OnTrigger\":[{\"Item1\":\"d6884a51-b15d-4216-aa49-368f35ee3942\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2050.655,\"y\":-790.3153},\"block_id\":\"0775cb61-1089-4b60-8342-a278b6818768\",\"events\":{\"OnTrigger\":[{\"Item1\":\"517def5d-86cb-4654-a1d9-3bdd97a56260\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2050.655,\"y\":-790.3153},\"block_id\":\"057ceabf-2747-49a9-81d2-0210d2f9ce26\",\"events\":{\"OnTrigger\":[{\"Item1\":\"b8cd8f70-03c0-497a-b9cf-5613ce863ff8\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2046.59253,\"y\":-977.8153},\"block_id\":\"609774b9-44de-433e-88bd-3ddef65a1042\",\"events\":{\"OnTrigger\":[{\"Item1\":\"7ed0f87f-181c-411c-a0a3-fd20c21ef222\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2046.59253,\"y\":-977.8153},\"block_id\":\"138548e2-b1e3-4dd9-a85b-bb5d7ad633b5\",\"events\":{\"OnTrigger\":[{\"Item1\":\"abf90544-a46f-4916-baaf-d34a1af9c5d0\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2046.59253,\"y\":-977.8153},\"block_id\":\"491f0cbf-9dcd-4de6-8d81-ed003ae0b8a4\",\"events\":{\"OnTrigger\":[{\"Item1\":\"656dccf6-fc7b-4f9f-9232-3bda63e07b35\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2046.59253,\"y\":-977.8153},\"block_id\":\"603be054-f15d-4c3d-943a-c52527ea5bfa\",\"events\":{\"OnTrigger\":[{\"Item1\":\"9d152228-e945-4a95-823c-eb1d0339fef0\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":3874.725,\"y\":-1978.3136},\"block_id\":\"fccb1d55-6b24-4c9c-968e-d84b85b0e582\",\"events\":{\"OnTrigger\":[{\"Item1\":\"c61fb5f3-2548-42de-b22e-b574ed103537\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 3788.7876,
+        "y": -523.625854
+      },
+      "block_id": "310e2f9a-71a7-48b0-8e0c-dc47bfe5d9c2",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Under_02",
+        "trans_door": "Under02-3"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3789.725,
+        "y": -448.000916
+      },
+      "block_id": "dcf05a38-cfe2-4e93-b297-e3763b7a67f9",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Under_02",
+        "trans_door": "Under02-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3787.85,
+        "y": -372.375916
+      },
+      "block_id": "92b14b78-69ac-4134-b336-65a75ba09064",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Under_02",
+        "trans_door": "Under02-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3787.225,
+        "y": -300.188446
+      },
+      "block_id": "11ce2287-905a-4890-a00e-e08cb4f2e53c",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Under_01",
+        "trans_door": "Under01"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3783.1626,
+        "y": -221.438461
+      },
+      "block_id": "0831a58d-ed29-4057-bb2f-83245c64266a",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Under_27",
+        "trans_door": "Under27"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3785.35,
+        "y": -898.001
+      },
+      "block_id": "36e75201-24d0-4f83-88d0-f8b0618c897c",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Under_04",
+        "trans_door": "Under04"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3783.7876,
+        "y": -824.5635
+      },
+      "block_id": "d70f7387-ecfb-4a80-b155-bc5687973d80",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Under_03",
+        "trans_door": "Under03"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3781.9126,
+        "y": -748.3135
+      },
+      "block_id": "632dc4fe-d5a3-47e8-9a7f-ef899eab5f8f",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Under_03c",
+        "trans_door": "Under03c"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3784.4126,
+        "y": -672.6885
+      },
+      "block_id": "143c3f88-53ff-48e5-927a-489d1cff11a5",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Under_14",
+        "trans_door": "Under14"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3785.0376,
+        "y": -600.188538
+      },
+      "block_id": "8b39e1a7-6ffd-44ec-b3a3-e5d668ef4529",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Under_02",
+        "trans_door": "Under02-4"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3791.57,
+        "y": -1272.376
+      },
+      "block_id": "c755e249-236c-4524-abc6-d9b6fa760ba7",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Under_13",
+        "trans_door": "Under13-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3786.2876,
+        "y": -1198.93848
+      },
+      "block_id": "b606efdf-2c79-4b09-8f62-ab920d7086e3",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Under_13",
+        "trans_door": "Under13-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3791.2876,
+        "y": -1123.001
+      },
+      "block_id": "23210fd2-a528-4bc7-8f67-bf3fc4a2d2f4",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Under_08",
+        "trans_door": "Under08"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3787.5376,
+        "y": -1048.001
+      },
+      "block_id": "57753c91-b691-476c-b0dd-ca2ee6371d36",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Under_05",
+        "trans_door": "Under05-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3787.85,
+        "y": -974.5635
+      },
+      "block_id": "e349b3c0-e2c4-4f24-96a4-cf123f68b612",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Under_05",
+        "trans_door": "Under05-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3789.1,
+        "y": -1648.0011
+      },
+      "block_id": "517def5d-86cb-4654-a1d9-3bdd97a56260",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Under_17",
+        "trans_door": "Under17-3"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3789.1,
+        "y": -1573.9386
+      },
+      "block_id": "d6884a51-b15d-4216-aa49-368f35ee3942",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Under_17",
+        "trans_door": "Under17-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3787.5376,
+        "y": -1497.6886
+      },
+      "block_id": "58373ea6-3b5c-4e48-b467-410ee229b65c",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Under_17",
+        "trans_door": "Under17-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3790.6626,
+        "y": -1423.9386
+      },
+      "block_id": "7c5f499a-682e-4d4b-93af-8c1be29934cb",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Under_19b",
+        "trans_door": "Under19b"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3792.85,
+        "y": -1348.3136
+      },
+      "block_id": "e9b597ed-032e-4d6e-9c2c-5ed1fc1e1eda",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Under_10",
+        "trans_door": "Under10"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3791.82324,
+        "y": -1957.748
+      },
+      "block_id": "656dccf6-fc7b-4f9f-9232-3bda63e07b35",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Library_11",
+        "trans_door": "Library11"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3793.609,
+        "y": -1877.3313
+      },
+      "block_id": "abf90544-a46f-4916-baaf-d34a1af9c5d0",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Library_11b",
+        "trans_door": "Library11b-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3794.71,
+        "y": -1805.38208
+      },
+      "block_id": "7ed0f87f-181c-411c-a0a3-fd20c21ef222",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Library_11b",
+        "trans_door": "Library11b-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3795.6626,
+        "y": -1723.62622
+      },
+      "block_id": "b8cd8f70-03c0-497a-b9cf-5613ce863ff8",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Under_17",
+        "trans_door": "Under17-4"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3796.67432,
+        "y": -2037.77759
+      },
+      "block_id": "9d152228-e945-4a95-823c-eb1d0339fef0",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Library_12",
+        "trans_door": "Library12-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3791.094,
+        "y": -2112.629
+      },
+      "block_id": "c61fb5f3-2548-42de-b22e-b574ed103537",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Library_12b",
+        "trans_door": "Library12b"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 3978.46631,
+        "y": -151.111877
+      },
+      "block_id": "d4d6fe33-2a28-44d6-abd9-60213a255e7f",
+      "events": {},
+      "vars": {},
+      "type": "Random Event",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":2714.71484,\"y\":-80.8728},\"block_id\":\"85746218-0615-4a94-9601-1166ddd217b7\",\"events\":{\"OnTrigger\":[{\"Item1\":\"7a3cadb9-a240-46e3-b540-b2e3e94e30a5\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2303.82275,\"y\":-158.167419},\"block_id\":\"3e0eab92-1e6a-4eaa-b971-ca8123d0a089\",\"events\":{\"OnTrigger\":[{\"Item1\":\"e07a83df-0d08-489b-aa96-d5f912efec7e\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2289.13525,\"y\":-246.604919},\"block_id\":\"3336d1b2-fba7-472f-a7d7-fa60ac56e2d6\",\"events\":{\"OnTrigger\":[{\"Item1\":\"53223bcc-d5de-4fcf-8b5e-86471eee3068\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2289.13525,\"y\":-246.604919},\"block_id\":\"41ca1879-9e67-48b1-9005-1781ec95aa31\",\"events\":{\"OnTrigger\":[{\"Item1\":\"879276d9-6a4d-4dc3-9a69-2efc0f6a85c5\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2289.13525,\"y\":-246.604919},\"block_id\":\"35e8baae-eac5-49ef-a89f-64b00a8fa01e\",\"events\":{\"OnTrigger\":[{\"Item1\":\"2ca293b1-7648-49d7-b9f3-ee5e28daf131\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2289.13525,\"y\":-246.604919},\"block_id\":\"c73c5e36-9de4-4eb7-8966-4039d04fb2bc\",\"events\":{\"OnTrigger\":[{\"Item1\":\"11a78fd5-8738-4bf0-95e8-b7363cd22a4e\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2294.44775,\"y\":-383.792419},\"block_id\":\"9d352b5e-5ff4-456a-a41b-74e8ef369fcf\",\"events\":{\"OnTrigger\":[{\"Item1\":\"017f42c1-7ab0-4dcd-abd4-da1c27fd0439\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2294.44775,\"y\":-383.792419},\"block_id\":\"c8c0965a-0ba3-4f35-87fc-59ef2b1535ed\",\"events\":{\"OnTrigger\":[{\"Item1\":\"cfaca7fe-9d67-47c1-8219-666f2bde1785\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2294.44775,\"y\":-383.792419},\"block_id\":\"7e770239-2f45-4ca4-b4b7-e7a430936ed6\",\"events\":{\"OnTrigger\":[{\"Item1\":\"25dab9c3-dc0e-4ac3-bcc6-20176eb34cfc\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2277.88525,\"y\":-507.229919},\"block_id\":\"f121ff37-c8f0-40d5-96d9-7e66bced29bc\",\"events\":{\"OnTrigger\":[{\"Item1\":\"4664380c-b8bf-48bd-ab1b-f8c1fdc018ef\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2277.88525,\"y\":-507.229919},\"block_id\":\"b3750653-b223-4d7a-9bd4-4e2e0c8ecf85\",\"events\":{\"OnTrigger\":[{\"Item1\":\"dca645d6-b91a-47c2-8a21-32fc52fe9a0d\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2277.88525,\"y\":-507.229919},\"block_id\":\"777410ad-ab87-47f9-9eea-b35f388d777f\",\"events\":{\"OnTrigger\":[{\"Item1\":\"85685c05-e65a-4331-89ef-1fd36ddd1060\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2277.88525,\"y\":-507.229919},\"block_id\":\"b614100d-5ec2-43f3-97c0-ac32549b05bb\",\"events\":{\"OnTrigger\":[{\"Item1\":\"82d32ce4-023b-4077-9bc7-158b9868dcd8\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":4463.94873,\"y\":-1214.31665},\"block_id\":\"7923e9cb-3b02-47fd-a575-13234c90df7d\",\"events\":{\"OnTrigger\":[{\"Item1\":\"4afbb8c7-8073-489b-b6a0-cf67ca513ce8\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 4430.292,
+        "y": -392.5243
+      },
+      "block_id": "ddb5a068-f6bd-49ff-8833-acdde99b1b48",
+      "events": {},
+      "vars": {},
+      "type": "Random Event",
+      "ext": {
+        "children": "[{\"pos\":{\"x\":2138.90625,\"y\":-99.418335},\"block_id\":\"8db168c2-e592-4f6a-bd5c-b1d1b651bffe\",\"events\":{\"OnTrigger\":[{\"Item1\":\"5c64f74c-6706-46d0-aa05-37164f04c963\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2138.90625,\"y\":-99.418335},\"block_id\":\"d3de1f8e-be88-4ae3-975e-6a27fd53ee00\",\"events\":{\"OnTrigger\":[{\"Item1\":\"a084fd41-eacd-4a30-a1b8-eaf4213ab1c2\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2138.90625,\"y\":-99.418335},\"block_id\":\"215e9e61-f627-4dda-8301-348ee4aa1f95\",\"events\":{\"OnTrigger\":[{\"Item1\":\"568be2f9-a146-4277-ad98-b39e7456dab8\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2172.34375,\"y\":-190.980835},\"block_id\":\"accb1d93-b7ac-4c28-ae40-83870dbf8e06\",\"events\":{\"OnTrigger\":[{\"Item1\":\"2660dae6-8766-4169-a792-5aadd7934a85\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2172.34375,\"y\":-190.980835},\"block_id\":\"4935ab75-4ce9-41b2-a1b0-5a2da5f2f8b6\",\"events\":{\"OnTrigger\":[{\"Item1\":\"0f1b6458-20f9-4699-8d18-a985f21eb726\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2172.34375,\"y\":-190.980835},\"block_id\":\"04b488b1-ace7-42e4-b957-7be756cf1139\",\"events\":{\"OnTrigger\":[{\"Item1\":\"ec2b7cd5-ef4b-4cf5-a7f8-1b834eb3e8f2\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2172.34375,\"y\":-190.980835},\"block_id\":\"24f531d6-0160-4087-adcc-f5369aa0b0c5\",\"events\":{\"OnTrigger\":[{\"Item1\":\"654333e6-ad55-4870-bb50-0e907053f028\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2172.34375,\"y\":-190.980835},\"block_id\":\"727e320f-04fa-40a3-ad6b-07cf7f4dabb6\",\"events\":{\"OnTrigger\":[{\"Item1\":\"83452c66-d722-4146-9eea-da133aef169f\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2190.46875,\"y\":-352.543335},\"block_id\":\"4c32773d-f642-4806-b0eb-e1cbf4de7b3d\",\"events\":{\"OnTrigger\":[{\"Item1\":\"069dc70d-e1c6-4190-9d1b-d0c6cfcca1b9\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2190.46875,\"y\":-352.543335},\"block_id\":\"2636d59d-f5a2-4a79-a822-39abda43414c\",\"events\":{\"OnTrigger\":[{\"Item1\":\"fec81d8f-b80c-4f36-8d06-06b946d9a500\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2190.46875,\"y\":-352.543335},\"block_id\":\"b2f61431-f5c4-4536-82c1-e638262a8370\",\"events\":{\"OnTrigger\":[{\"Item1\":\"6bb014e2-f110-4f29-913c-17c9fdc0fb77\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2190.46875,\"y\":-352.543335},\"block_id\":\"f5b2f0a5-7383-473c-b010-a6c4b48b4593\",\"events\":{\"OnTrigger\":[{\"Item1\":\"2476618a-6a02-4a18-a4de-2b110a3c0ad4\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2206.40625,\"y\":-489.105835},\"block_id\":\"048170e2-1163-41a4-8fd2-d74d9529188f\",\"events\":{\"OnTrigger\":[{\"Item1\":\"317aceb2-440e-4363-9ee8-1b39eb97c16b\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2206.40625,\"y\":-489.105835},\"block_id\":\"488e6be4-0ee9-40ec-9ec5-3b6224bb8514\",\"events\":{\"OnTrigger\":[{\"Item1\":\"75826e74-30f9-4c14-a78f-0959a0a007e8\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2206.40625,\"y\":-489.105835},\"block_id\":\"36ce096d-1a11-47cd-9d35-4a5341768fc4\",\"events\":{\"OnTrigger\":[{\"Item1\":\"c8a67fe3-5c5a-4484-84e8-62b93c5109d4\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2206.40625,\"y\":-489.105835},\"block_id\":\"eceb1e94-503a-47e9-81f3-c47b5af0fb12\",\"events\":{\"OnTrigger\":[{\"Item1\":\"93426a7b-b6a7-445d-ad58-a45231a97745\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}},{\"pos\":{\"x\":2206.40625,\"y\":-489.105835},\"block_id\":\"4fad75c9-b0a1-4959-bb7e-2068f91881b9\",\"events\":{\"OnTrigger\":[{\"Item1\":\"e9877ae0-df8b-4dab-a60c-9fe24ea4bb93\",\"Item2\":\"Transition\"}]},\"vars\":{},\"type\":\"Random Trigger\",\"config\":{\"random_trigger_chance\":\"1\"},\"ext\":{}}]"
+      }
+    },
+    {
+      "pos": {
+        "x": 4556.274,
+        "y": -308.3589
+      },
+      "block_id": "a084fd41-eacd-4a30-a1b8-eaf4213ab1c2",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Shadow_20",
+        "trans_door": "Shadow_20-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4546.979,
+        "y": -538.487
+      },
+      "block_id": "0f1b6458-20f9-4699-8d18-a985f21eb726",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Shadow_02",
+        "trans_door": "Shadow_2-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4550.50439,
+        "y": -458.679352
+      },
+      "block_id": "2660dae6-8766-4169-a792-5aadd7934a85",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Shadow_04b",
+        "trans_door": "Shadow_04b"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4554.35059,
+        "y": -386.243469
+      },
+      "block_id": "568be2f9-a146-4277-ad98-b39e7456dab8",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Shadow_20",
+        "trans_door": "Shadow_20-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4558.197,
+        "y": -233.999908
+      },
+      "block_id": "5c64f74c-6706-46d0-aa05-37164f04c963",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Shadow_22",
+        "trans_door": "Shadow_22"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4550.68066,
+        "y": -830.1779
+      },
+      "block_id": "069dc70d-e1c6-4190-9d1b-d0c6cfcca1b9",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Shadow_26",
+        "trans_door": "Shadow_26"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4549.719,
+        "y": -907.100952
+      },
+      "block_id": "fec81d8f-b80c-4f36-8d06-06b946d9a500",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Shadow_23",
+        "trans_door": "Shadow_23"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4549.719,
+        "y": -754.8573
+      },
+      "block_id": "83452c66-d722-4146-9eea-da133aef169f",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Shadow_14",
+        "trans_door": "Shadow_14"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4544.591,
+        "y": -684.024048
+      },
+      "block_id": "654333e6-ad55-4870-bb50-0e907053f028",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Shadow_02",
+        "trans_door": "Shadow_2-3"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4546.83447,
+        "y": -613.190735
+      },
+      "block_id": "ec2b7cd5-ef4b-4cf5-a7f8-1b834eb3e8f2",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Shadow_02",
+        "trans_door": "Shadow_2-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4552.259,
+        "y": -1283.69543
+      },
+      "block_id": "c8a67fe3-5c5a-4484-84e8-62b93c5109d4",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Shadow_27",
+        "trans_door": "Shadow27"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4550.977,
+        "y": -1212.8623
+      },
+      "block_id": "75826e74-30f9-4c14-a78f-0959a0a007e8",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Shadow_01",
+        "trans_door": "Shadow1-1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4549.69531,
+        "y": -1136.90076
+      },
+      "block_id": "317aceb2-440e-4363-9ee8-1b39eb97c16b",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Shadow_05",
+        "trans_door": "Shadow5"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4548.093,
+        "y": -1057.734
+      },
+      "block_id": "2476618a-6a02-4a18-a4de-2b110a3c0ad4",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Shadow_09"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4549.69531,
+        "y": -985.2981
+      },
+      "block_id": "6bb014e2-f110-4f29-913c-17c9fdc0fb77",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Shadow_03"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4547.659,
+        "y": -1437.14661
+      },
+      "block_id": "e9877ae0-df8b-4dab-a60c-9fe24ea4bb93",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Shadow_12",
+        "trans_door": "Shadow12"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4548.317,
+        "y": -1358.67151
+      },
+      "block_id": "93426a7b-b6a7-445d-ad58-a45231a97745",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Shadow_19",
+        "trans_door": "Shadow19"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 905.674438,
+        "y": -831.286438
+      },
+      "block_id": "539c3d4b-7f53-4484-801a-44c97c2bc42f",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Bone_East_03",
+        "trans_door": "DocksSpawnBE3"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 904.0252,
+        "y": -749.284
+      },
+      "block_id": "a5f0d27e-f0b4-4dd4-b313-ddcd13e86c83",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_door": "DocksSpawnBE1",
+        "trans_scene": "Bone_East_01"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -185.963547,
+        "y": -590.5222
+      },
+      "block_id": "b3817f05-b3ff-4efb-be4d-63a4b11e8b10",
+      "events": {},
+      "vars": {},
+      "type": "PlayerData (Bool)",
+      "config": {
+        "pd_bool_type": "hasWalljump"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4185.71973,
+        "y": -228.939651
+      },
+      "block_id": "7a3cadb9-a240-46e3-b540-b2e3e94e30a5",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Slab_02",
+        "trans_door": "Slab_02"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4190.318,
+        "y": -303.736328
+      },
+      "block_id": "e07a83df-0d08-489b-aa96-d5f912efec7e",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Peak_01",
+        "trans_door": "Peak_01"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4186.28467,
+        "y": -603.5578
+      },
+      "block_id": "11a78fd5-8738-4bf0-95e8-b7363cd22a4e",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Slab_20",
+        "trans_door": "Slab_20"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4187.47559,
+        "y": -527.3673
+      },
+      "block_id": "2ca293b1-7648-49d7-b9f3-ee5e28daf131",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Slab_17-2",
+        "trans_door": "Slab_17-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4190.749,
+        "y": -451.176819
+      },
+      "block_id": "879276d9-6a4d-4dc3-9a69-2efc0f6a85c5",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Slab_17",
+        "trans_door": "Slab_17"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4192.53467,
+        "y": -377.9625
+      },
+      "block_id": "53223bcc-d5de-4fcf-8b5e-86471eee3068",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Peak_01-2",
+        "trans_door": "Peak_01-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4181.672,
+        "y": -974.673767
+      },
+      "block_id": "dca645d6-b91a-47c2-8a21-32fc52fe9a0d",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Slab_04",
+        "trans_door": "Slab_04"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4184.35059,
+        "y": -901.4595
+      },
+      "block_id": "4664380c-b8bf-48bd-ab1b-f8c1fdc018ef",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Slab_22-2",
+        "trans_door": "Slab_22-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4187.02832,
+        "y": -826.4595
+      },
+      "block_id": "25dab9c3-dc0e-4ac3-bcc6-20176eb34cfc",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Slab_22",
+        "trans_door": "Slab_22"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4184.946,
+        "y": -749.3762
+      },
+      "block_id": "cfaca7fe-9d67-47c1-8219-666f2bde1785",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Slab_21",
+        "trans_door": "Slab_21"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4184.946,
+        "y": -677.0548
+      },
+      "block_id": "017f42c1-7ab0-4dcd-abd4-da1c27fd0439",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Slab_14",
+        "trans_door": "Slab_14"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4179.60352,
+        "y": -1129.49524
+      },
+      "block_id": "82d32ce4-023b-4077-9bc7-158b9868dcd8",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Slab_10c-2",
+        "trans_door": "Slab_10c-2"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4177.818,
+        "y": -1051.519
+      },
+      "block_id": "85685c05-e65a-4331-89ef-1fd36ddd1060",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Slab_10c",
+        "trans_door": "Slab_10c"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 4176.151,
+        "y": -1207.47144
+      },
+      "block_id": "4afbb8c7-8073-489b-b6a0-cf67ca513ce8",
+      "events": {},
+      "vars": {},
+      "type": "Transition",
+      "config": {
+        "trans_scene": "Slab_12",
+        "trans_door": "Slab_12"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -648.125,
+        "y": -0.625
+      },
+      "block_id": "58271bc5-81af-4f3b-9918-5de6334f0320",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "0f2a5f04-1ccb-40be-9a7f-4eecdbb114e2",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "b9cc6e85",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": -649.0625,
+        "y": -82.8125
+      },
+      "block_id": "677d1b7e-1e81-4b23-b832-f90a4b104986",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "0f2a5f04-1ccb-40be-9a7f-4eecdbb114e2",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "b3cf8df8",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": -647.1875,
+        "y": -164.0625
+      },
+      "block_id": "e9ad7995-6aad-4785-89ad-87aed2f317a0",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "0f2a5f04-1ccb-40be-9a7f-4eecdbb114e2",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "66822ad1",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": -646.386658,
+        "y": -246.411514
+      },
+      "block_id": "fcaf35e2-9bd4-4df4-987d-e54a0a68fa14",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "0f2a5f04-1ccb-40be-9a7f-4eecdbb114e2",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "adec8af4",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": -340.9375,
+        "y": -115.0
+      },
+      "block_id": "0f2a5f04-1ccb-40be-9a7f-4eecdbb114e2",
+      "events": {
+        "Out": [
+          {
+            "Item1": "1747a5e8-3b2b-4f1c-b782-bf153fdabe92",
+            "Item2": "Set"
+          },
+          {
+            "Item1": "824dbae3-85c4-45d8-86ff-239d9e4e4e5f",
+            "Item2": "Display"
+          },
+          {
+            "Item1": "bfbd1de4-99af-4982-91e9-37245d3b805b",
+            "Item2": "MemoryBlur"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.01"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -134.722229,
+        "y": -231.111145
+      },
+      "block_id": "bfbd1de4-99af-4982-91e9-37245d3b805b",
+      "events": {},
+      "vars": {},
+      "type": "UI Control",
+      "config": {
+        "ui_fade_r": "1",
+        "ui_fade_g": "1",
+        "ui_fade_b": "1",
+        "ui_fade_a": "1",
+        "ui_fade_duration": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -94.44445,
+        "y": 357.291718
+      },
+      "block_id": "de492484-46af-4a61-8730-a921e743467d",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "fee9ce2b-604c-4e1b-b462-297fb3966a3f",
+            "Item2": "ClearBlur"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "eda93c75",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": 134.6528,
+        "y": 377.013916
+      },
+      "block_id": "fee9ce2b-604c-4e1b-b462-297fb3966a3f",
+      "events": {},
+      "vars": {},
+      "type": "UI Control",
+      "config": {
+        "ui_fade_r": "1",
+        "ui_fade_g": "1",
+        "ui_fade_b": "1",
+        "ui_fade_a": "1",
+        "ui_fade_duration": "1"
+      },
+      "ext": {}
+    }
+  ]
+}

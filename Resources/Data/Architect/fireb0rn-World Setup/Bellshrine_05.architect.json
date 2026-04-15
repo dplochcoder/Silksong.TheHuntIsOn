@@ -1,0 +1,160 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2be6f4ff",
+        "pos": {
+          "x": 30.01313,
+          "y": 8.223921,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "bellshrine_gate_curved"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "8fbee5e3",
+        "pos": {
+          "x": 19.207737,
+          "y": 7.43802071,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 0.9074843
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Whole Scene/Scenery/CC_metal_cog_pieces_modular_0000_1"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a058396f",
+        "pos": {
+          "x": 18.0950451,
+          "y": 7.44892645,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Whole Scene/Bellshrine Sequence/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "472e80a8",
+        "pos": {
+          "x": 18.9048862,
+          "y": 9.912191,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Whole Scene/_Scenery/CC_metal_cog_pieces_modular_0000_1"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "0ee8c1f9",
+        "pos": {
+          "x": 26.31173,
+          "y": 9.833457,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Whole Scene/_Scenery/CC_metal_cog_pieces_modular_0000_1"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "928ee76d",
+        "pos": {
+          "x": 14.5240507,
+          "y": 8.776166,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Whole Scene/_Scenery/CC_metal_cog_pieces_modular_0000_1"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "55021f22",
+        "pos": {
+          "x": 17.6059475,
+          "y": 13.8939085,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Whole Scene/_Scenery/CC_metal_cog_pieces_modular_0000_1"
+      }
+    },
+    {
+      "placement": {
+        "id": "bell_bench",
+        "pid": "40fcf07a",
+        "pos": {
+          "x": 20.5538673,
+          "y": 5.32175064,
+          "z": 0.009
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "bench_spawn": "True",
+        "bench_offset_x": "0",
+        "bench_offset_y": "0",
+        "bench_offset_z": "0"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

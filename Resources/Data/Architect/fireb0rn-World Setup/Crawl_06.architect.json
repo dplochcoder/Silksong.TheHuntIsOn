@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d59ba37b",
+        "pos": {
+          "x": 79.48134,
+          "y": 20.8740559,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Aspid Collector (3)/Flea/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "493f089f",
+        "pos": {
+          "x": 67.47245,
+          "y": 15.7113247,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Aspid Collector (3)"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

@@ -1,0 +1,347 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "4d357f2c",
+        "pos": {
+          "x": 89.188446,
+          "y": 25.488903,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "one_way_trapdoor_city_vent"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "26d3f9cb",
+        "pos": {
+          "x": 90.62816,
+          "y": 27.5472488,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Understore Lever"
+      }
+    },
+    {
+      "placement": {
+        "id": "transition_gate",
+        "pid": "9389a31b",
+        "pos": {
+          "x": 41.73546,
+          "y": 15.6931753,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trans_type": "2",
+        "trans_collide": "1",
+        "trans_id": "BellwayStag"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "241b196c",
+        "pos": {
+          "x": 32.036377,
+          "y": 24.6558189,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Bone Beast NPC",
+        "fsm_hook_name": "Interaction",
+        "fsm_hook_state": "Appear Delay",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "a24a9ab9",
+        "pos": {
+          "x": 35.7307053,
+          "y": 24.47586,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Bone Beast NPC",
+        "fsm_hook_name": "Interaction",
+        "fsm_hook_state": "Start Shake",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "2f4677ee",
+        "pos": {
+          "x": 48.9358673,
+          "y": 16.9325676,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Bone Beast NPC",
+        "fsm_hook_name": "Interaction",
+        "fsm_hook_state": "Appear Delay",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "515a763b",
+        "pos": {
+          "x": 52.6301956,
+          "y": 16.7526054,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Bone Beast NPC",
+        "fsm_hook_name": "Interaction",
+        "fsm_hook_state": "Start Shake",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "cc410993",
+        "pos": {
+          "x": 12.09012,
+          "y": 17.68101,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Cinematic Player",
+        "fsm_hook_name": "Door Enter Play",
+        "fsm_hook_state": "Move Scene",
+        "start_active": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "f08c2e5b",
+        "pos": {
+          "x": 15.6444283,
+          "y": 17.66976,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Cinematic Player",
+        "fsm_hook_name": "Door Enter Play",
+        "fsm_hook_state": "Next Scene",
+        "start_active": "False"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 0.9375,
+        "y": 0.3125
+      },
+      "block_id": "7063f31f-8943-428e-a9c9-2dd0d4b688db",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "33c62c65-4f34-4129-a9fd-024a6b26037d",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "2f4677ee",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 219.0625,
+        "y": 1.875
+      },
+      "block_id": "33c62c65-4f34-4129-a9fd-024a6b26037d",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "515a763b",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -254.0625,
+        "y": 50.9375
+      },
+      "block_id": "9f339cdb-c3b9-4150-a939-4868e0c01427",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "7063f31f-8943-428e-a9c9-2dd0d4b688db",
+            "Item2": "fsm_remove_transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 12.1875,
+        "y": -281.875
+      },
+      "block_id": "8c5ccaee-7644-48e4-9389-2d8e7b39b63a",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "4b9127db-ad23-41f8-b687-38ab821d15c6",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "cc410993",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 3.55847716,
+        "y": -494.7883
+      },
+      "block_id": "4b9127db-ad23-41f8-b687-38ab821d15c6",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "f08c2e5b",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -486.1246,
+        "y": -259.800446
+      },
+      "block_id": "29f4ad70-4091-4c21-bef8-079ccc7ce4ee",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "50b5f496-f999-4e45-9c42-9c47d7c6de34",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -267.979462,
+        "y": -329.155273
+      },
+      "block_id": "50b5f496-f999-4e45-9c42-9c47d7c6de34",
+      "events": {
+        "Out": [
+          {
+            "Item1": "8c5ccaee-7644-48e4-9389-2d8e7b39b63a",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "4b9127db-ad23-41f8-b687-38ab821d15c6",
+            "Item2": "enable"
+          },
+          {
+            "Item1": "aafb8d46-3b3a-4767-abd2-877e69a0034f",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -184.511734,
+        "y": -185.203674
+      },
+      "block_id": "aafb8d46-3b3a-4767-abd2-877e69a0034f",
+      "events": {
+        "Out": [
+          {
+            "Item1": "8c5ccaee-7644-48e4-9389-2d8e7b39b63a",
+            "Item2": "fsm_remove_transition"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.1"
+      },
+      "ext": {}
+    }
+  ]
+}

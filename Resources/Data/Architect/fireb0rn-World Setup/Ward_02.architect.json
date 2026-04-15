@@ -1,0 +1,117 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "2b4f7a49",
+        "pos": {
+          "x": 45.78711,
+          "y": 63.87044,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Boss Scene Parent/ward_slide_hatch/"
+      }
+    },
+    {
+      "placement": {
+        "id": "deepnest_platform_05",
+        "pid": "ea7f3c85",
+        "pos": {
+          "x": 50.5562935,
+          "y": 59.51402,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "obj_layer": "0",
+        "obj_z": "0"
+      }
+    },
+    {
+      "placement": {
+        "id": "reusable_lever",
+        "pid": "0fc92ffb",
+        "pos": {
+          "x": 50.21886,
+          "y": 61.0514565,
+          "z": 0.007999986
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -26.25,
+        "y": -6.875
+      },
+      "block_id": "6be38784-6c05-4173-92b4-4aeec209d201",
+      "events": {
+        "OnActivate": [
+          {
+            "Item1": "93904a8a-dbc3-4fd0-b654-bb809f7bd55a",
+            "Item2": "disable"
+          },
+          {
+            "Item1": "6be38784-6c05-4173-92b4-4aeec209d201",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "0fc92ffb",
+        "object_type": "reusable_lever"
+      }
+    },
+    {
+      "pos": {
+        "x": 315.0,
+        "y": -8.4375
+      },
+      "block_id": "93904a8a-dbc3-4fd0-b654-bb809f7bd55a",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "ea7f3c85",
+        "object_type": "deepnest_platform_05"
+      }
+    },
+    {
+      "pos": {
+        "x": -220.3125,
+        "y": -172.1875
+      },
+      "block_id": "8db3e0d0-c158-44d2-96d5-5612bc697a09",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "93904a8a-dbc3-4fd0-b654-bb809f7bd55a",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

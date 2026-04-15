@@ -1,0 +1,188 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "undercrank",
+        "pid": "a6551109",
+        "pos": {
+          "x": 39.79725,
+          "y": 13.54814,
+          "z": 0.006
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_hp_scale": "True",
+        "invulnerable": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "underworker",
+        "pid": "6b80e189",
+        "pos": {
+          "x": 39.8085632,
+          "y": 6.012123,
+          "z": 0.006
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_hp_scale": "True",
+        "invulnerable": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_remover",
+        "pid": "e74ed933",
+        "pos": {
+          "x": 38.4925728,
+          "y": 5.5509634,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "disabler_all": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_remover",
+        "pid": "e5359112",
+        "pos": {
+          "x": 39.6286,
+          "y": 5.58470774,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "disabler_all": "False"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "ac72db91",
+        "pos": {
+          "x": 31.2601776,
+          "y": 5.967131,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_blocker",
+        "pid": "354378a6",
+        "pos": {
+          "x": 58.65979,
+          "y": 8.846566,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "b2751a0c",
+        "pos": {
+          "x": 34.9044647,
+          "y": 16.0451527,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "255bda24",
+        "pos": {
+          "x": 35.7480469,
+          "y": 16.2813568,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "cf8dadeb",
+        "pos": {
+          "x": 35.6693153,
+          "y": 16.01141,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "73fe57e4",
+        "pos": {
+          "x": 35.3318825,
+          "y": 15.9214287,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "cea1c2f8",
+        "pos": {
+          "x": 46.2304,
+          "y": 8.377231,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Battle Scene/Gates"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

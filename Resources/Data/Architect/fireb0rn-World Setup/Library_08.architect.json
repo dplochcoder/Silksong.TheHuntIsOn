@@ -1,0 +1,101 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e4050380",
+        "pos": {
+          "x": 8.715465,
+          "y": 14.0727406,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "784717a9",
+        "pos": {
+          "x": 25.3077641,
+          "y": 8.213584,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Librarian Scene"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f26fdc29",
+        "pos": {
+          "x": 91.8192,
+          "y": 31.5676727,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup Librarian"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "9bb7d060",
+        "pos": {
+          "x": 90.22024,
+          "y": 32.2292,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "e95565bc",
+        "pos": {
+          "x": 6.856928,
+          "y": 10.1457539,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collapser Small"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

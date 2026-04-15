@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "20444bcb",
+        "pos": {
+          "x": 40.6295547,
+          "y": 27.7115822,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Collectable Item Pickup Pin"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "cede0983",
+        "pos": {
+          "x": 21.12246,
+          "y": 6.461796,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Black Thread States/Normal World/Pin Gallery States/Here/Lady Bug Large/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

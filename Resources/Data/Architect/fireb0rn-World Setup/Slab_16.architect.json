@@ -1,0 +1,139 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "dae81312",
+        "pos": {
+          "x": 83.18418,
+          "y": 21.478035,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Slab Lock (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "60840c33",
+        "pos": {
+          "x": 84.83761,
+          "y": 21.5005322,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Slab Lock (2)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1aeab1b5",
+        "pos": {
+          "x": 84.5226746,
+          "y": 20.4094963,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Slab Jail Gate Door (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "1b4516e3",
+        "pos": {
+          "x": 42.41949,
+          "y": 21.3763618,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Event Control/Battle Cloaked Scene/Gates/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "d4351ea0",
+        "pos": {
+          "x": 25.3729534,
+          "y": 26.9219379,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Event Control/Battle Cloakless Scene/Gates/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "203ca5ad",
+        "pos": {
+          "x": 26.52023,
+          "y": 26.96693,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Event Control/Battle Cloakless Scene/Jail Gate Door/"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "bb03205f",
+        "pos": {
+          "x": 27.7860565,
+          "y": 26.8544788,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Event Control/Battle Cloaked Scene/Jail Gate Door/"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

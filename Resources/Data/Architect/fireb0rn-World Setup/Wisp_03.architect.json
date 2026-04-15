@@ -1,0 +1,77 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "87ee6062",
+        "pos": {
+          "x": 54.4133644,
+          "y": 8.79933548,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "bell bits/closed/Doctor Door Inspect/",
+        "fsm_hook_name": "FSM",
+        "fsm_hook_state": "Door Open"
+      }
+    },
+	{
+      "placement": {
+        "id": "object_remover",
+        "pid": "7be5eeff",
+        "pos": {
+          "x": 62.6726074,
+          "y": 37.54887,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Collectable Item Pickup"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "block_id": "14ad0c2b-f11c-405f-ba16-13f1c79544a8",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "87ee6062",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -176.875,
+        "y": -3.75
+      },
+      "block_id": "ea4bfaaf-16f9-4fd2-b168-9bdce323931c",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "14ad0c2b-f11c-405f-ba16-13f1c79544a8",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    }
+  ]
+}

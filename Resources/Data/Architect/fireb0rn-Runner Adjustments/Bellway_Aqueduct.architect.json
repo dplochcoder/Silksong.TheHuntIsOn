@@ -1,0 +1,341 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "4eb7e012",
+        "pos": {
+          "x": 51.5001259,
+          "y": 23.502243,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "0",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "a39a7141",
+        "pos": {
+          "x": 57.0677719,
+          "y": 25.0095253,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Bellway Toll Machine",
+        "fsm_hook_state": "Return Control",
+        "fsm_hook_name": "Unlock Behaviour"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "b24a7a57",
+        "pos": {
+          "x": 48.2189674,
+          "y": 27.57658,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "1",
+        "component_hook_target": "Bellway Toll Machine",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "f4c0f7eb",
+        "pos": {
+          "x": 51.5001335,
+          "y": 27.5289955,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "2",
+        "component_hook_target": "Bellway Toll Machine",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "interaction",
+        "pid": "1984e9fd",
+        "pos": {
+          "x": 83.5916443,
+          "y": 23.783226,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "interaction_label": "0",
+        "interaction_hide": "True",
+        "interaction_offset_x": "0",
+        "interaction_offset_y": "2.5"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "e8f39031",
+        "pos": {
+          "x": 80.2317352,
+          "y": 28.4761181,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "1",
+        "component_hook_target": "Shadow_09b/bell_bench/bell_toll_machine",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "e0e03aba",
+        "pos": {
+          "x": 83.51289,
+          "y": 28.4285336,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "2",
+        "component_hook_target": "Shadow_09b/bell_bench/bell_toll_machine",
+        "component_hook_name": "PlayMakerNPC",
+        "start_active": "True"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "53986285",
+        "pos": {
+          "x": 88.99057,
+          "y": 25.8978138,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Shadow_09b/bell_bench/bell_toll_machine",
+        "fsm_hook_state": "Set Extra PD Bool",
+        "fsm_hook_name": "Unlock Behaviour"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -22.84482,
+        "y": 149.137878
+      },
+      "block_id": "f66f7da4-fae9-436d-ad15-3ff210179fa8",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "b24a7a57",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": 7.327584,
+        "y": 10.3448277
+      },
+      "block_id": "79a5ff86-b547-429b-87ff-9aaf965569ff",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "f4c0f7eb",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": -199.137863,
+        "y": -52.15515
+      },
+      "block_id": "0ce43733-ba09-4fa6-9031-c44eeecef24f",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "79a5ff86-b547-429b-87ff-9aaf965569ff",
+            "Item2": "component_hook_apply"
+          },
+          {
+            "Item1": "a57923d5-3cca-4817-b60a-e8fb36f933b8",
+            "Item2": "fsm_set_state"
+          },
+          {
+            "Item1": "0ce43733-ba09-4fa6-9031-c44eeecef24f",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "4eb7e012",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": -2.586206,
+        "y": -162.068909
+      },
+      "block_id": "a57923d5-3cca-4817-b60a-e8fb36f933b8",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "a39a7141",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -197.844757,
+        "y": 89.22411
+      },
+      "block_id": "adf247ba-b2ea-4250-bec2-4dcb52a81838",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "f66f7da4-fae9-436d-ad15-3ff210179fa8",
+            "Item2": "component_hook_apply"
+          },
+          {
+            "Item1": "24f18e4d-4a7e-4608-b849-e28a11a0aae8",
+            "Item2": "component_hook_apply"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 477.154968,
+        "y": 221.120575
+      },
+      "block_id": "24f18e4d-4a7e-4608-b849-e28a11a0aae8",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "e8f39031",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": 472.844574,
+        "y": 87.49998
+      },
+      "block_id": "31ba3a16-d779-4b2b-935b-d618b24b9d58",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "e0e03aba",
+        "object_type": "component_toggle"
+      }
+    },
+    {
+      "pos": {
+        "x": 252.15509,
+        "y": 34.913784
+      },
+      "block_id": "149257d7-5414-4903-ac85-832e11b41540",
+      "events": {
+        "OnInteract": [
+          {
+            "Item1": "31ba3a16-d779-4b2b-935b-d618b24b9d58",
+            "Item2": "component_hook_apply"
+          },
+          {
+            "Item1": "510db0e1-a21b-4c9c-99f3-b56b2fff6b69",
+            "Item2": "fsm_set_state"
+          },
+          {
+            "Item1": "149257d7-5414-4903-ac85-832e11b41540",
+            "Item2": "disable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "1984e9fd",
+        "object_type": "interaction"
+      }
+    },
+    {
+      "pos": {
+        "x": 449.568817,
+        "y": -100.86203
+      },
+      "block_id": "510db0e1-a21b-4c9c-99f3-b56b2fff6b69",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "53986285",
+        "object_type": "fsm_hook"
+      }
+    }
+  ]
+}

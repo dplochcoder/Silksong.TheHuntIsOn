@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "ed8fcbdd",
+        "pos": {
+          "x": 78.4588,
+          "y": 27.6345215,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Coral Crust Wall Mid (1)"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a3dc17d1",
+        "pos": {
+          "x": 84.8148346,
+          "y": 33.15555,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Coral Crust Wall Mid"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

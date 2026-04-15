@@ -1,0 +1,648 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "af22a7b9",
+        "pos": {
+          "x": 46.89847,
+          "y": 15.4788761,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Battle Scene/Gates"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6e38bb63",
+        "pos": {
+          "x": 50.85022,
+          "y": 17.71126,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Bellshrine Sequence Swamp/CamLock BellSequence"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "08a018b9",
+        "pos": {
+          "x": 49.83783,
+          "y": 22.2961578,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Battle Scene/Wave 1 - also activate bell camlock"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "f5a4755b",
+        "pos": {
+          "x": 67.69937,
+          "y": 21.7674923,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Battle Scene/Wave 6 - Boss/Swamp Shaman/",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Fight Start"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "b58edd0a",
+        "pos": {
+          "x": 58.3870239,
+          "y": 20.46767,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Battle Scene/Wave 6 - Boss/Swamp Shaman"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "f413bb05",
+        "pos": {
+          "x": 61.2218666,
+          "y": 15.7889118,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_width": "8",
+        "size_height": "8"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "51d66383",
+        "pos": {
+          "x": 47.191864,
+          "y": 21.1114845,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "start_active": "False",
+        "remover_path": "Battle Scene/CamLocks/CameraLockArea Battle"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "32b753cf",
+        "pos": {
+          "x": 64.13382,
+          "y": 22.1049232,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Battle Scene/Wave 6 - Boss/Swamp Shaman/",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Active Start"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "af22a7b9",
+        "pos": {
+          "x": 46.89847,
+          "y": 15.4788761,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Battle Scene/Gates"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "94f7b185",
+        "pos": {
+          "x": 53.12895,
+          "y": 17.5294342,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "6e38bb63",
+        "pos": {
+          "x": 50.85022,
+          "y": 17.71126,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_path": "Bellshrine Sequence Swamp/CamLock BellSequence"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "633d8fb7",
+        "pos": {
+          "x": 64.0989456,
+          "y": 25.557991,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Battle Scene/Wave 6 - Boss/Swamp Shaman/",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Dormant"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "249f7019",
+        "pos": {
+          "x": 67.61951,
+          "y": 25.6254787,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Battle Scene/Wave 6 - Boss/Swamp Shaman/",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Entry Antic"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "08a018b9",
+        "pos": {
+          "x": 49.83783,
+          "y": 22.2961578,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Battle Scene/Wave 1 - also activate bell camlock"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "32b753cf",
+        "pos": {
+          "x": 64.13382,
+          "y": 22.1049232,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Battle Scene/Wave 6 - Boss/Swamp Shaman/",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Entry Roar Antic"
+      }
+    },
+    {
+      "placement": {
+        "id": "fsm_hook",
+        "pid": "f5a4755b",
+        "pos": {
+          "x": 67.69937,
+          "y": 21.7674923,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "fsm_hook_target": "Battle Scene/Wave 6 - Boss/Swamp Shaman/",
+        "fsm_hook_name": "Control",
+        "fsm_hook_state": "Fight Start"
+      }
+    },
+    {
+      "placement": {
+        "id": "enemy_hook",
+        "pid": "b58edd0a",
+        "pos": {
+          "x": 58.3870239,
+          "y": 20.46767,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "enemy_path": "Battle Scene/Wave 6 - Boss/Swamp Shaman"
+      }
+    },
+    {
+      "placement": {
+        "id": "trigger_zone",
+        "pid": "f413bb05",
+        "pos": {
+          "x": 61.0311127,
+          "y": 20.1816463,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "trigger_type": "0",
+        "trigger_shape": "0",
+        "size_width": "8",
+        "size_height": "8"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "51d66383",
+        "pos": {
+          "x": 47.191864,
+          "y": 21.1114845,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "start_active": "False",
+        "remover_path": "Battle Scene/CamLocks/CameraLockArea Battle"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": [
+    {
+      "pos": {
+        "x": -328.787842,
+        "y": -251.893921
+      },
+      "block_id": "6143ff2d-5fd2-4c92-b3b0-d28dd12f794c",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "0e5af46d-0c6e-4731-a88b-a1f64cf80db9",
+            "Item2": "disable"
+          }
+        ],
+        "ZoneExit": [
+          {
+            "Item1": "0e5af46d-0c6e-4731-a88b-a1f64cf80db9",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "f413bb05",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": -99.99999,
+        "y": -261.363617
+      },
+      "block_id": "0e5af46d-0c6e-4731-a88b-a1f64cf80db9",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "51d66383",
+        "object_type": "object_remover"
+      }
+    },
+    {
+      "pos": {
+        "x": -131.481445,
+        "y": -41.20371
+      },
+      "block_id": "9718c43b-8c8c-4767-8cf1-0e288119e2f0",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "b58edd0a",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -224.147034,
+        "y": 166.993317
+      },
+      "block_id": "654e1ba3-9f87-41a3-83f0-4483b8bc3a31",
+      "events": {},
+      "vars": {
+        "Target": {
+          "Item1": "9718c43b-8c8c-4767-8cf1-0e288119e2f0",
+          "Item2": "hp_hook_target"
+        }
+      },
+      "type": "Enemy Control",
+      "config": {
+        "enemy_damage_type": "1",
+        "enemy_hp_amount": "500"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -602.46875,
+        "y": 46.8081741
+      },
+      "block_id": "6b48780d-94ab-46a3-87cc-5a25838ff603",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "d6e11c45-dd16-462e-a6d3-d2b4ff8ab0ab",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -427.468781,
+        "y": 5.14151573
+      },
+      "block_id": "d6e11c45-dd16-462e-a6d3-d2b4ff8ab0ab",
+      "events": {
+        "Out": [
+          {
+            "Item1": "654e1ba3-9f87-41a3-83f0-4483b8bc3a31",
+            "Item2": "Damage"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "0.9"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -579.9053,
+        "y": 5.90909767
+      },
+      "block_id": "ba0df809-a946-486d-9517-a5c91f602295",
+      "events": {
+        "OnStart": [
+          {
+            "Item1": "5c3ef133-0262-4c51-a050-40f68a23329b",
+            "Item2": "In"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Start",
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": 84.0909042,
+        "y": 237.5
+      },
+      "block_id": "1b69f4ab-2ec8-4924-a692-8017b85f3095",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "3b3e96c2-a0df-423b-9c93-03db4ba4f841",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "633d8fb7",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 306.818146,
+        "y": 240.530243
+      },
+      "block_id": "3b3e96c2-a0df-423b-9c93-03db4ba4f841",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "249f7019",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 74.24242,
+        "y": -129.166656
+      },
+      "block_id": "f7278623-8f30-4c1d-b6fc-1b89070b0de8",
+      "events": {
+        "OnTarget": [
+          {
+            "Item1": "fa93c2fb-df5c-4df9-bb07-3149d582445c",
+            "Item2": "fsm_set_state"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "32b753cf",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": 286.363617,
+        "y": -126.515144
+      },
+      "block_id": "fa93c2fb-df5c-4df9-bb07-3149d582445c",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "f5a4755b",
+        "object_type": "fsm_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -153.409073,
+        "y": 3.03029633
+      },
+      "block_id": "aa51fe57-18d4-4b2d-b299-a565eca05167",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "b58edd0a",
+        "object_type": "enemy_hook"
+      }
+    },
+    {
+      "pos": {
+        "x": -377.7841,
+        "y": 19.7348557
+      },
+      "block_id": "5c3ef133-0262-4c51-a050-40f68a23329b",
+      "events": {
+        "Out": [
+          {
+            "Item1": "aa51fe57-18d4-4b2d-b299-a565eca05167",
+            "Item2": "enemy_invul"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "Delay",
+      "config": {
+        "delay_num": "1"
+      },
+      "ext": {}
+    },
+    {
+      "pos": {
+        "x": -328.787842,
+        "y": -251.893921
+      },
+      "block_id": "6143ff2d-5fd2-4c92-b3b0-d28dd12f794c",
+      "events": {
+        "ZoneEnter": [
+          {
+            "Item1": "0e5af46d-0c6e-4731-a88b-a1f64cf80db9",
+            "Item2": "disable"
+          }
+        ],
+        "ZoneExit": [
+          {
+            "Item1": "0e5af46d-0c6e-4731-a88b-a1f64cf80db9",
+            "Item2": "enable"
+          }
+        ]
+      },
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "f413bb05",
+        "object_type": "trigger_zone"
+      }
+    },
+    {
+      "pos": {
+        "x": -99.99999,
+        "y": -261.363617
+      },
+      "block_id": "0e5af46d-0c6e-4731-a88b-a1f64cf80db9",
+      "events": {},
+      "vars": {},
+      "type": "object",
+      "ext": {
+        "object": "51d66383",
+        "object_type": "object_remover"
+      }
+    }
+  ]
+}

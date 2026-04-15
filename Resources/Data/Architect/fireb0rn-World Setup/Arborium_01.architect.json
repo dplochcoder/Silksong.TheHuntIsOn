@@ -1,0 +1,82 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "f62829b1",
+        "pos": {
+          "x": 24.4667645,
+          "y": 62.0220222,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "one way moss vine"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "87388adc",
+        "pos": {
+          "x": 24.6692238,
+          "y": 141.299957,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "one_way_inner_craw"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "dae8628f",
+        "pos": {
+          "x": 3.275937,
+          "y": 13.0463409,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Arborium 09 Break Wall"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "433658ae",
+        "pos": {
+          "x": 25.8839836,
+          "y": 125.845345,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Breakable Window Arborium"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

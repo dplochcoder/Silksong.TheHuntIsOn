@@ -1,0 +1,27 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "component_toggle",
+        "pid": "a0a17bb4",
+        "pos": {
+          "x": 57.5369034,
+          "y": 139.503448,
+          "z": 0.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "component_hook_recursive": "True",
+        "component_hook_mode": "2",
+        "component_hook_target": "drop_planks",
+        "component_hook_name": "Animator"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}

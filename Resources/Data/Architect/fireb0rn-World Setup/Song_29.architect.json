@@ -1,0 +1,44 @@
+{
+  "placements": [
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "a5444b34",
+        "pos": {
+          "x": 29.68435,
+          "y": 7.02434444,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Toll machine"
+      }
+    },
+    {
+      "placement": {
+        "id": "object_remover",
+        "pid": "18aad135",
+        "pos": {
+          "x": 23.9254875,
+          "y": 7.687966,
+          "z": -2.0
+        },
+        "flipped": false,
+        "locked": false,
+        "rotation": 0.0,
+        "scale": 1.0
+      },
+      "config": {
+        "remover_index": "0",
+        "remover_path": "Toll machine ration"
+      }
+    }
+  ],
+  "tilemap": [],
+  "script": []
+}
