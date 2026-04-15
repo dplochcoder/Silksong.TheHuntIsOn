@@ -136,13 +136,21 @@ internal class PauseTimerUI
             .First()
     );
 
-    private void CreateText()
+    private bool CreateText()
     {
         GameObject obj = new("Display") { layer = (int)PhysLayers.UI };
         obj.transform.SetParent(parent!.transform);
 
         var text = obj.AddComponent<TextMeshPro>();
-        text.font = Font.Value;
+        try
+        {
+            text.font = Font.Value;
+        }
+        catch
+        {
+            UObject.Destroy(obj);
+            return false;
+        }
         text.color = Color.white;
         text.enableWordWrapping = false;
         text.autoSizeTextContainer = true;
@@ -153,6 +161,7 @@ internal class PauseTimerUI
 
         obj.SetActive(false);
         textCache.Add(text);
+        return true;
     }
 
     private static readonly Vector2 INACTIVE_POS = new(-1000, -1000);
@@ -214,7 +223,10 @@ internal class PauseTimerUI
 
         List<StatusMessage> statuses = ComputeStatuses();
         while (textCache.Count < statuses.Count)
-            CreateText();
+        {
+            if (!CreateText())
+                break;
+        }
         UpdateStatuses(statuses);
     }
 
