@@ -33,18 +33,32 @@ internal class PauseTimerModule
     }
 
     private float prevTimeScale = 1f;
+    private bool inputBlocked;
 
     private void UpdateTimeScale()
     {
         var gs = GameManager.instance.GameState;
-        Time.timeScale =
-            (
-                HuntClientAddon.IsConnected
-                && (gs == GlobalEnums.GameState.PLAYING || gs == GlobalEnums.GameState.PAUSED)
-                && GetServerPauseState().IsServerPaused(out _)
-            )
-                ? 0
-                : prevTimeScale;
+        bool shouldPause =
+            HuntClientAddon.IsConnected
+            && (gs == GlobalEnums.GameState.PLAYING || gs == GlobalEnums.GameState.PAUSED)
+            && GetServerPauseState().IsServerPaused(out _);
+
+        Time.timeScale = shouldPause ? 0 : prevTimeScale;
+
+        var hc = HeroController.instance;
+        if (hc != null)
+        {
+            if (shouldPause)
+            {
+                hc.acceptingInput = false;
+                inputBlocked = true;
+            }
+            else if (inputBlocked)
+            {
+                hc.acceptingInput = true;
+                inputBlocked = false;
+            }
+        }
     }
 
     protected override PauseTimerModule Self() => this;
