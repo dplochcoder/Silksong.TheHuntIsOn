@@ -41,6 +41,8 @@ internal abstract class ModuleBase
             new ArchitectModule.ArchitectModule(),
             new AutoTriggerModule(),
             new BindModule(),
+            new CurrencyModule(),
+            new DamageModule(),
             new DeathModule(),
             new EventsModule.EventsModule(),
             new HealingModule(),
