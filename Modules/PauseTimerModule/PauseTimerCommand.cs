@@ -81,6 +81,26 @@ internal class PauseTimerCommand : IServerCommand
         Broadcast(state);
     }
 
+    internal void ClearCountdownsSilent() => state.Countdowns.Clear();
+
+    internal void SetPauseState(bool paused, long unpauseTimeTicks)
+    {
+        state.ServerPaused = paused;
+        state.UnpauseTimeTicks = unpauseTimeTicks;
+    }
+
+    internal bool AddCountdownSilent(DateTime now, Countdown countdown)
+    {
+        state.UpdateCountdowns(now);
+        if (state.Countdowns.Count >= ServerPauseState.MAX_COUNTDOWNS)
+            return false;
+
+        state.Countdowns.Add(countdown);
+        return true;
+    }
+
+    internal void BroadcastState() => Broadcast(state);
+
     internal void PauseCountdowns(DateTime now) => UpdateCountdowns(now, c => c.Pause(now));
 
     internal void UnpauseCountdowns(DateTime now, DateTime unpauseWhen) =>

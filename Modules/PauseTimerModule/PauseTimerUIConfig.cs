@@ -111,8 +111,8 @@ internal static class PauseTimerSizeExtensions
 
 internal class PauseTimerUIConfig
 {
-    public PauseTimerPosition PauseTimerPosition = PauseTimerPosition.BottomCenter;
-    public PauseTimerSize PauseTimerSize = PauseTimerSize.Normal;
+    public PauseTimerPosition PauseTimerPosition = PauseTimerPosition.BottomRight;
+    public PauseTimerSize PauseTimerSize = PauseTimerSize.Small;
 
     public static IEnumerable<MenuElement> CreateMenu(
         PauseTimerUIConfig config,

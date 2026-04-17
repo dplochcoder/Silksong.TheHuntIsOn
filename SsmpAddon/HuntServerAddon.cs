@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading;
 using Silksong.TheHuntIsOn.Modules;
 using Silksong.TheHuntIsOn.Modules.ArchitectModule;
 using Silksong.TheHuntIsOn.Modules.EventsModule;
@@ -30,6 +33,12 @@ internal class HuntServerAddon : ServerAddon
     private readonly PauseTimerCommand pauseTimerCommand;
 
     private ModuleDataset? moduleDataset;
+
+    private bool isPreparing;
+    private readonly HashSet<ushort> readyPlayers = [];
+    private int speedrunnerCountdown;
+    private List<int> hunterCountdowns = [];
+    private readonly List<Timer> activeTimers = [];
 
     // Allow mod to provide the starting module dataset.
     internal Func<ModuleDataset?>? SeedModuleDataset;
@@ -71,6 +80,7 @@ internal class HuntServerAddon : ServerAddon
         HandleServerPacket<RequestArchitectLevelData>(
             architectModuleServerAddon.OnRequestArchitectLevelData
         );
+        HandleServerPacket<ReadyUp>(OnReadyUp);
         HandleServerPacket<SeedModuleDataset>(OnSeedModuleDataset);
         HandleServerPacket<SpeedrunnerEventsDelta>(
             eventsModuleServerAddon.OnSpeedrunnerEventsDelta
@@ -122,6 +132,151 @@ internal class HuntServerAddon : ServerAddon
             sender?.BroadcastSingleData(packet.Identifier, packet);
         else
             sender?.BroadcastCollectionData(packet.Identifier, packet);
+    }
+
+    internal bool IsPreparing => isPreparing;
+
+    internal int TotalPlayerCount => api?.ServerManager.Players.Count ?? 0;
+
+    internal int ReadyPlayerCount => readyPlayers.Count;
+
+    internal bool AllPlayersReady =>
+        TotalPlayerCount > 0 && readyPlayers.Count >= TotalPlayerCount;
+
+    internal void StartPreparing()
+    {
+        isPreparing = true;
+        readyPlayers.Clear();
+        BroadcastRoundPrepareState();
+    }
+
+    internal void CancelPreparing()
+    {
+        isPreparing = false;
+        readyPlayers.Clear();
+        BroadcastRoundPrepareState();
+    }
+
+    internal void FinishRound()
+    {
+        isPreparing = false;
+        readyPlayers.Clear();
+    }
+
+    internal int SpeedrunnerCountdown => speedrunnerCountdown;
+
+    internal IReadOnlyList<int> HunterCountdowns => hunterCountdowns;
+
+    internal void SetSpeedrunnerCountdown(int seconds) => speedrunnerCountdown = seconds;
+
+    internal void SetHunterCountdowns(List<int> seconds) => hunterCountdowns = seconds;
+
+    internal void ExecuteRoundStart()
+    {
+        ClearActiveTimers();
+
+        var now = DateTime.UtcNow;
+
+        // Reset pause timer state without broadcasting (OnGameReset already cleared it).
+        pauseTimerCommand.ClearCountdownsSilent();
+
+        // Pause the server indefinitely; unpause when the speedrunner countdown expires.
+        if (speedrunnerCountdown > 0)
+        {
+            var unpauseAt = now.AddSeconds(speedrunnerCountdown);
+            pauseTimerCommand.SetPauseState(true, long.MaxValue);
+
+            // Speedrunner countdown display.
+            pauseTimerCommand.AddCountdownSilent(
+                now,
+                new Countdown
+                {
+                    FinishTimeTicks = unpauseAt.Ticks,
+                    Message = "Speedrunner GO",
+                }
+            );
+
+            // Schedule unpause and speedrunner go message.
+            ScheduleTimer(speedrunnerCountdown, () =>
+            {
+                pauseTimerCommand.UpdatePauseState(false, 0);
+                BroadcastMessage("&lSpeedrunner GO!&r");
+            });
+        }
+
+        // Hunter countdown displays and scheduled messages.
+        for (int i = 0; i < hunterCountdowns.Count; i++)
+        {
+            int seconds = hunterCountdowns[i];
+            int hunterNum = i + 1;
+            string label = hunterCountdowns.Count == 1
+                ? "Hunters GO"
+                : $"Hunter {hunterNum} GO";
+
+            pauseTimerCommand.AddCountdownSilent(
+                now,
+                new Countdown
+                {
+                    FinishTimeTicks = now.AddSeconds(seconds).Ticks,
+                    Message = label,
+                }
+            );
+
+            ScheduleTimer(seconds, () =>
+                BroadcastMessage($"&l{label}!&r"));
+        }
+
+        // Single broadcast with the complete state.
+        pauseTimerCommand.BroadcastState();
+    }
+
+    private void ScheduleTimer(int seconds, Action callback)
+    {
+        Timer? timer = null;
+        timer = new Timer(
+            _ =>
+            {
+                callback();
+                timer?.Dispose();
+            },
+            null,
+            seconds * 1000,
+            Timeout.Infinite
+        );
+        activeTimers.Add(timer);
+    }
+
+    private void ClearActiveTimers()
+    {
+        foreach (var timer in activeTimers)
+            timer.Dispose();
+        activeTimers.Clear();
+    }
+
+    private void BroadcastRoundPrepareState()
+    {
+        var names = readyPlayers
+            .Select(id => PlayerName(id))
+            .ToList();
+        Broadcast(new RoundPrepareState { IsPreparing = isPreparing, ReadyPlayerNames = names });
+    }
+
+    private void OnReadyUp(ushort id, ReadyUp _)
+    {
+        if (!isPreparing)
+        {
+            SendMessage(id, "No round is being prepared.");
+            return;
+        }
+
+        if (!readyPlayers.Add(id))
+        {
+            SendMessage(id, "You are already ready.");
+            return;
+        }
+
+        BroadcastMessage($"&l{PlayerName(id)}&r is ready! ({readyPlayers.Count}/{TotalPlayerCount})");
+        BroadcastRoundPrepareState();
     }
 
     private void OnIntelligenceMessage(ushort id, IntelligenceMessage intelligenceMessage) =>

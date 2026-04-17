@@ -50,6 +50,6 @@ internal abstract class ModuleBase
             new PauseTimerModule.PauseTimerModule(),
             new SilkRegenerationModule(),
             new SpawnPointModule(),
-            new StatsModule(),
+            new StartModule(),
         ];
 }

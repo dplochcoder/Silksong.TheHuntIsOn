@@ -7,6 +7,7 @@ internal enum ClientPacketId
     HunterItemGrants,
     HunterItemGrantsDelta,
     ModuleDataset,
+    RoundPrepareState,
     ServerPauseState,
     SpeedrunnerEvents,
     SpeedrunnerEventsDelta,

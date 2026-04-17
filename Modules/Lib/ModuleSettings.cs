@@ -19,7 +19,7 @@ internal enum ModuleSettingsType
     Intelligence,
     SilkRegeneration,
     SpawnPoint,
-    Stats,
+    Start,
 }
 
 internal abstract class ModuleSettings
@@ -62,7 +62,7 @@ internal class ModuleSettingsFactory
             ModuleSettingsType.Intelligence => new IntelligenceSettings(),
             ModuleSettingsType.SilkRegeneration => new SilkRegenerationSettings(),
             ModuleSettingsType.SpawnPoint => new SpawnPointSettings(),
-            ModuleSettingsType.Stats => new StatsSettings(),
+            ModuleSettingsType.Start => new StartSettings(),
             _ => throw new ArgumentException($"{nameof(type)}: {type}"),
         };
 }

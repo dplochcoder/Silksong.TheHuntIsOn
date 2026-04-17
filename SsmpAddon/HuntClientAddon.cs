@@ -45,11 +45,14 @@ internal class HuntClientAddon : TogglableClientAddon
         HandleClientPacket<HunterItemGrants>();
         HandleClientPacket<HunterItemGrantsDelta>();
         HandleClientPacket<ModuleDataset>();
+        HandleClientPacket<RoundPrepareState>();
         HandleClientPacket<ServerPauseState>();
         HandleClientPacket<SpeedrunnerEvents>();
         HandleClientPacket<SpeedrunnerEventsDelta>();
 
         api.ClientManager.ConnectEvent += () => OnConnect?.Invoke();
+
+        api.CommandManager.RegisterCommand(new ReadyCommand());
 
         Instance = this;
     }

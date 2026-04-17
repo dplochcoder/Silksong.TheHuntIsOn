@@ -24,9 +24,7 @@
     <PackageIcon>icon.png</PackageIcon>
     <RepositoryUrl>https://github.com/dplochcoder/Silksong.TheHuntIsOn</RepositoryUrl>
     <Description>SSMP add-on mod for speedrunners vs. hunters.</Description>
-    <ManagedFolder Condition="$(SilksongFolder) != ''"
-      >$(SilksongFolder)/Hollow Knight Silksong_Data/Managed</ManagedFolder
-    >
+    <ManagedFolder Condition="$(SilksongFolder) != ''">$(SilksongFolder)/Hollow Knight Silksong_Data/Managed</ManagedFolder>
     <!-- Set to true to use local references for development purposes. -->
     <UseLocalRefs>false</UseLocalRefs>
   </PropertyGroup>
@@ -54,31 +52,29 @@
     <Reference Include="Architect">
       <HintPath>Assemblies/Architect.dll</HintPath>
     </Reference>
+    <Reference Include="SSMP">
+      <HintPath>..\SSMP.Essentials-fire\obj\Debug\netstandard2.1\SSMP.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup Condition="!$(UseLocalRefs) Or !Exists($(ManagedFolder))">
     <PackageReference Include="Silksong.GameLibs" Version="*-*" PrivateAssets="all" />
   </ItemGroup>
   <ItemGroup Condition="$(UseLocalRefs) And Exists($(ManagedFolder))">
-    <PackageReference
-      Include="BepInEx.AssemblyPublicizer.MSBuild"
-      Version="0.4.2"
-      PrivateAssets="all"
-    />
+    <PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.2" PrivateAssets="all" />
 
-    <LocalReferences
-      Include="$(ManagedFolder)/*.dll"
-      Exclude="$(ManagedFolder)/Mono*.dll;$(ManagedFolder)/netstandard.dll;$(ManagedFolder)/System*.dll;$(ManagedFolder)/mscorlib.dll"
-    />
+    <LocalReferences Include="$(ManagedFolder)/*.dll" Exclude="$(ManagedFolder)/Mono*.dll;$(ManagedFolder)/netstandard.dll;$(ManagedFolder)/System*.dll;$(ManagedFolder)/mscorlib.dll" />
     <Reference Include="@(LocalReferences)" Private="false" Publicize="true" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Resources\**\*.json" />
+    <EmbeddedResource Include="Resources\**\*.dat" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Remove="thunderstore/temp;thunderstore/dist" />
+    <Folder Include="Resources\Data\Start\" />
     <None Include="README.md" Pack="True" PackagePath="README.md" />
     <None Include="thunderstore/icon.png" Pack="True" PackagePath="icon.png" />
   </ItemGroup>
@@ -93,29 +89,14 @@
     </PropertyGroup>
 
     <!-- Local install -->
-    <Copy
-      SourceFiles="@(Binaries)"
-      DestinationFolder="$(SilksongPluginsFolder)/dplochcoder-$(ThunderStoreTitle)/%(Binaries.LocalDir)"
-      Condition="'$(SilksongPluginsFolder)' != '' And Exists('$(SilksongPluginsFolder)')"
-    />
-    <Copy
-      SourceFiles="@(Binaries)"
-      DestinationFolder="$(SSMPFolder)"
-      Condition="'$(SSMPFolder)' != '' AND Exists('$(SSMPFolder)')"
-    />
+    <Copy SourceFiles="@(Binaries)" DestinationFolder="$(SilksongPluginsFolder)/dplochcoder-$(ThunderStoreTitle)/%(Binaries.LocalDir)" Condition="'$(SilksongPluginsFolder)' != '' And Exists('$(SilksongPluginsFolder)')" />
+    <Copy SourceFiles="@(Binaries)" DestinationFolder="$(SSMPFolder)" Condition="'$(SSMPFolder)' != '' AND Exists('$(SSMPFolder)')" />
 
     <!-- Thunderstore packaging -->
     <RemoveDir Directories="$(ThunderstoreDir)/temp;$(ThunderstoreDir)/dist" />
     <MakeDir Directories="$(ThunderstoreDir)/temp" />
-    <Copy
-      SourceFiles="@(Binaries)"
-      DestinationFolder="$(ThunderstoreDir)/temp/%(Binaries.PackDir)"
-    />
+    <Copy SourceFiles="@(Binaries)" DestinationFolder="$(ThunderstoreDir)/temp/%(Binaries.PackDir)" />
     <Exec Command="dotnet tool restore" />
-    <Exec
-      Command="dotnet tcli build --config-path &quot;$(ThunderstoreDir)/thunderstore.toml&quot; --package-name &quot;$(AssemblyTitle)&quot; --package-version $(Version)"
-      StandardOutputImportance="High"
-      StandardErrorImportance="High"
-    />
+    <Exec Command="dotnet tcli build --config-path &quot;$(ThunderstoreDir)/thunderstore.toml&quot; --package-name &quot;$(AssemblyTitle)&quot; --package-version $(Version)" StandardOutputImportance="High" StandardErrorImportance="High" />
   </Target>
 </Project>

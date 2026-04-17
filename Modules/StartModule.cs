@@ -9,9 +9,9 @@ using SSMP.Networking.Packet;
 
 namespace Silksong.TheHuntIsOn.Modules;
 
-internal class StatsSettings : ModuleSettings<StatsSettings>
+internal class StartSettings : ModuleSettings<StartSettings>
 {
-    public override ModuleSettingsType DynamicType => ModuleSettingsType.Stats;
+    public override ModuleSettingsType DynamicType => ModuleSettingsType.Start;
 
     public int StartingMasks = 5;
     public int StartingSilkSpools = 9;
@@ -28,20 +28,20 @@ internal class StatsSettings : ModuleSettings<StatsSettings>
         StartingSilkSpools.WriteData(packet);
     }
 
-    protected override bool Equivalent(StatsSettings other) =>
+    protected override bool Equivalent(StartSettings other) =>
         StartingMasks == other.StartingMasks && StartingSilkSpools == other.StartingSilkSpools;
 }
 
-internal class StatsModule : GlobalSettingsModule<StatsModule, StatsSettings, StatsSubMenu>
+internal class StartModule : GlobalSettingsModule<StartModule, StartSettings, StartSubMenu>
 {
-    protected override StatsModule Self() => this;
+    protected override StartModule Self() => this;
 
-    public override string Name => "Stats";
+    public override string Name => "Start";
 
     public override ModuleActivationType ModuleActivationType =>
         ModuleActivationType.AnyConfiguration;
 
-    private static Func<int> FromSettings(Func<StatsSettings, int> func) =>
+    private static Func<int> FromSettings(Func<StartSettings, int> func) =>
         () => GetEnabledConfig(out var settings) ? func(settings) : 0;
 
     private static readonly Dictionary<string, Func<int>> intModifiers = new()
@@ -67,7 +67,7 @@ internal class StatsModule : GlobalSettingsModule<StatsModule, StatsSettings, St
         UIEvents.UpdateSilk();
     }
 
-    protected override void OnGlobalConfigChanged(StatsSettings before, StatsSettings after)
+    protected override void OnGlobalConfigChanged(StartSettings before, StartSettings after)
     {
         if (before.StartingMasks != after.StartingMasks)
             UIEvents.UpdateHealth();
@@ -76,7 +76,7 @@ internal class StatsModule : GlobalSettingsModule<StatsModule, StatsSettings, St
     }
 }
 
-internal class StatsSubMenu : ModuleSubMenu<StatsSettings>
+internal class StartSubMenu : ModuleSubMenu<StartSettings>
 {
     private readonly ChoiceElement<int> StartingMasks = new(
         "Starting Masks",
@@ -91,13 +91,13 @@ internal class StatsSubMenu : ModuleSubMenu<StatsSettings>
 
     public override IEnumerable<MenuElement> Elements() => [StartingMasks, StartingSilkSpools];
 
-    internal override void Apply(StatsSettings data)
+    internal override void Apply(StartSettings data)
     {
         StartingMasks.Value = data.StartingMasks;
         StartingSilkSpools.Value = data.StartingSilkSpools;
     }
 
-    internal override StatsSettings Export() =>
+    internal override StartSettings Export() =>
         new()
         {
             StartingMasks = StartingMasks.Value,
