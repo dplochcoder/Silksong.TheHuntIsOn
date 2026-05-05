@@ -4,18 +4,18 @@ using System.Collections.Generic;
 namespace Silksong.TheHuntIsOn.Util;
 
 // TODO: Use system.
-internal interface ICloneable
+public interface ICloneable
 {
     ICloneable CloneRaw();
 }
 
-internal interface ICloneable<T> : ICloneable
+public interface ICloneable<T> : ICloneable
     where T : ICloneable<T>
 {
     T Clone();
 }
 
-internal abstract class Cloneable<T> : ICloneable<T>
+public abstract class Cloneable<T> : ICloneable<T>
     where T : Cloneable<T>
 {
     public ICloneable CloneRaw() => Clone();

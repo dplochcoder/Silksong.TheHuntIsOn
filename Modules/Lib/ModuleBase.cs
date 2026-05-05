@@ -12,7 +12,7 @@ internal abstract class ModuleBase
 
     public bool Enabled
     {
-        get => field;
+        get;
         set
         {
             if (field == value)
@@ -26,7 +26,7 @@ internal abstract class ModuleBase
         }
     }
 
-    public abstract IModuleSubMenu CreateGlobalDataSubMenu();
+    public abstract IModuleMenu CreateGlobalDataSubMenu();
 
     public virtual IEnumerable<MenuElement> CreateCosmeticsMenuElements() => [];
 

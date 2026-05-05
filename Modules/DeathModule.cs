@@ -1,11 +1,9 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
+using System.ComponentModel;
 using MonoDetour;
 using MonoDetour.HookGen;
 using PrepatcherPlugin;
-using Silksong.ModMenu.Elements;
-using Silksong.ModMenu.Models;
-using Silksong.TheHuntIsOn.Menu;
+using Silksong.ModMenu.Generator;
 using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.Modules.PauseTimerModule;
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
@@ -13,13 +11,22 @@ using SSMP.Networking.Packet;
 
 namespace Silksong.TheHuntIsOn.Modules;
 
-internal class DeathSettings : ModuleSettings<DeathSettings>
+[GenerateMenu]
+public class DeathSettings : ModuleSettings<DeathSettings>
 {
-    public override ModuleSettingsType DynamicType => ModuleSettingsType.Death;
+    public override ModuleSettingsType DynamicType() => ModuleSettingsType.Death;
 
+    [Description("Seconds to wait to respawn after death.")]
+    [ModMenuOptions(0, 10, 20, 30, 45, 60, 90, 120, 180, 300)]
     public int RespawnTimer = 0;
+
+    [Description("If false, don't spawn coccoons at all.")]
     public bool SpawnCoccoon = true;
+
+    [Description("If false, don't lose rosaries on death.")]
     public bool LoseRosaries = true;
+
+    [Description("If false, don't restrict silk on death.")]
     public bool LimitSilk = true;
 
     public override void ReadDynamicData(IPacket packet)
@@ -46,7 +53,7 @@ internal class DeathSettings : ModuleSettings<DeathSettings>
 }
 
 [MonoDetourTargets(typeof(HeroController), GenerateControlFlowVariants = true)]
-internal class DeathModule : GlobalSettingsModule<DeathModule, DeathSettings, DeathSubMenu>
+internal class DeathModule : GlobalSettingsModule<DeathModule, DeathSettings, DeathSettingsMenu>
 {
     internal static int GetRespawnTimer() =>
         GetEnabledConfig(out var config) ? config.RespawnTimer : 0;
@@ -62,6 +69,18 @@ internal class DeathModule : GlobalSettingsModule<DeathModule, DeathSettings, De
     {
         if (before.RespawnTimer > after.RespawnTimer)
             PauseTimerUI.ShortenRespawn(before.RespawnTimer - after.RespawnTimer);
+    }
+
+    protected override void CustomizeMenu(DeathSettingsMenu menu)
+    {
+        void UpdateInteractable(bool value)
+        {
+            menu.LoseRosaries.Interactable = value;
+            menu.LimitSilk.Interactable = value;
+        }
+
+        menu.SpawnCoccoon.OnValueChanged += UpdateInteractable;
+        UpdateInteractable(menu.SpawnCoccoon.Value);
     }
 
     private static void ExtendDeath(
@@ -103,55 +122,4 @@ internal class DeathModule : GlobalSettingsModule<DeathModule, DeathSettings, De
 
     [MonoDetourHookInitialize]
     private static void Hook() => Md.HeroController.Die.Postfix(ExtendDeath);
-}
-
-internal class DeathSubMenu : ModuleSubMenu<DeathSettings>
-{
-    private readonly ChoiceElement<int> RespawnTimer = new(
-        "Respawn Timer",
-        ChoiceModels.ForValues([0, 10, 20, 30, 45, 60, 90, 120, 180, 300]),
-        "Seconds to wait to respawn after death."
-    );
-    private readonly ChoiceElement<bool> SpawnCoccoon = new(
-        "Spawn Coccoon",
-        ChoiceModels.ForBool(),
-        "If false, don't spawn coccoons at all."
-    );
-    private readonly ChoiceElement<bool> LoseRosaries = new(
-        "Lose Rosaries",
-        ChoiceModels.ForBool(),
-        "If false, don't lose rosaries on death."
-    );
-    private readonly ChoiceElement<bool> LimitSilk = new(
-        "Limit Silk",
-        ChoiceModels.ForBool(),
-        "If false, don't restrict silk on death."
-    );
-
-    public DeathSubMenu() =>
-        SpawnCoccoon.OnValueChanged += value =>
-        {
-            LoseRosaries.Interactable = value;
-            LimitSilk.Interactable = value;
-        };
-
-    public override IEnumerable<MenuElement> Elements() =>
-        [RespawnTimer, SpawnCoccoon, LoseRosaries, LimitSilk];
-
-    internal override void Apply(DeathSettings data)
-    {
-        RespawnTimer.Value = data.RespawnTimer;
-        SpawnCoccoon.Value = data.SpawnCoccoon;
-        LoseRosaries.Value = data.LoseRosaries;
-        LimitSilk.Value = data.LimitSilk;
-    }
-
-    internal override DeathSettings Export() =>
-        new()
-        {
-            RespawnTimer = RespawnTimer.Value,
-            SpawnCoccoon = SpawnCoccoon.Value,
-            LoseRosaries = LoseRosaries.Value,
-            LimitSilk = LimitSilk.Value,
-        };
 }

@@ -14,11 +14,11 @@ internal class ModuleMultiMenu
 
     private readonly ChoiceElement<ModuleActivation> ModuleActivation;
 
-    private readonly IModuleSubMenu mainMenu;
+    private readonly IModuleMenu mainMenu;
     private readonly List<MenuElement> mainElements = [];
-    private readonly IModuleSubMenu? speedrunnersSubMenu;
+    private readonly IModuleMenu? speedrunnersSubMenu;
     private readonly TextButton? speedrunnersSubMenuButton;
-    private readonly IModuleSubMenu? huntersSubMenu;
+    private readonly IModuleMenu? huntersSubMenu;
     private readonly TextButton? huntersSubMenuButton;
 
     private ModuleSettings? speedrunnersMenuData;
@@ -45,7 +45,7 @@ internal class ModuleMultiMenu
     internal ModuleMultiMenu(ModuleBase module)
     {
         mainMenu = module.CreateGlobalDataSubMenu();
-        UpdateData(mainMenu);
+        mainMenu.OnValueChanged += UpdateData;
         List<MenuElement> coreElements = [.. mainMenu.Elements()];
         var (model, desc) = GetChoiceModel(module);
         if (coreElements.Count == 0)
@@ -75,7 +75,7 @@ internal class ModuleMultiMenu
             subScreen.AddRange(mainElements);
 
             speedrunnersSubMenu = module.CreateGlobalDataSubMenu();
-            UpdateData(speedrunnersSubMenu);
+            speedrunnersSubMenu.OnValueChanged += UpdateData;
             speedrunnersSubMenuButton = CreateRoleSpecificMenuButton(
                 module.Name,
                 "Speedrunner",
@@ -84,7 +84,7 @@ internal class ModuleMultiMenu
             subScreen.Add(speedrunnersSubMenuButton);
 
             huntersSubMenu = module.CreateGlobalDataSubMenu();
-            UpdateData(huntersSubMenu);
+            huntersSubMenu.OnValueChanged += UpdateData;
             huntersSubMenuButton = CreateRoleSpecificMenuButton(
                 module.Name,
                 "Hunter",
@@ -98,17 +98,6 @@ internal class ModuleMultiMenu
         }
 
         ModuleActivation.OnValueChanged += UpdateModuleActivation;
-    }
-
-    private void UpdateData(IModuleSubMenu menu)
-    {
-        foreach (var element in menu.Elements())
-        {
-            if (element is not BaseSelectableValueElement selectable)
-                continue;
-            selectable.RawModel.OnRawValueChanged += _ => UpdateData();
-        }
-        menu.OnDataUpdated += UpdateData;
     }
 
     private readonly EventSuppressor updateData = new();
@@ -188,7 +177,7 @@ internal class ModuleMultiMenu
     private static TextButton CreateRoleSpecificMenuButton(
         string moduleName,
         string teamName,
-        IModuleSubMenu subMenu
+        IModuleMenu subMenu
     )
     {
         TextButton button = new($"{teamName} Settings");

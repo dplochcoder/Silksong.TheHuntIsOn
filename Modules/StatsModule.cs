@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using Silksong.ModMenu.Elements;
-using Silksong.TheHuntIsOn.Menu;
+using System.ComponentModel;
+using Silksong.ModMenu.Generator;
 using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using Silksong.TheHuntIsOn.Util;
@@ -9,11 +9,17 @@ using SSMP.Networking.Packet;
 
 namespace Silksong.TheHuntIsOn.Modules;
 
-internal class StatsSettings : ModuleSettings<StatsSettings>
+[GenerateMenu]
+public class StatsSettings : ModuleSettings<StatsSettings>
 {
-    public override ModuleSettingsType DynamicType => ModuleSettingsType.Stats;
+    public override ModuleSettingsType DynamicType() => ModuleSettingsType.Stats;
 
+    [Description("Number of masks players start with.")]
+    [ModMenuOptions(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)]
     public int StartingMasks = 5;
+
+    [Description("Number of silk spools players start with.")]
+    [ModMenuOptions(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18)]
     public int StartingSilkSpools = 9;
 
     public override void ReadDynamicData(IPacket packet)
@@ -32,7 +38,7 @@ internal class StatsSettings : ModuleSettings<StatsSettings>
         StartingMasks == other.StartingMasks && StartingSilkSpools == other.StartingSilkSpools;
 }
 
-internal class StatsModule : GlobalSettingsModule<StatsModule, StatsSettings, StatsSubMenu>
+internal class StatsModule : GlobalSettingsModule<StatsModule, StatsSettings, StatsSettingsMenu>
 {
     protected override StatsModule Self() => this;
 
@@ -74,33 +80,10 @@ internal class StatsModule : GlobalSettingsModule<StatsModule, StatsSettings, St
         if (before.StartingSilkSpools != after.StartingSilkSpools)
             UIEvents.UpdateSilk();
     }
-}
 
-internal class StatsSubMenu : ModuleSubMenu<StatsSettings>
-{
-    private readonly ChoiceElement<int> StartingMasks = new(
-        "Starting Masks",
-        ChoiceModelUtil.IntRangeModel(1, 10).FormatIntDelta(5),
-        "Number of masks players start with."
-    );
-    private readonly ChoiceElement<int> StartingSilkSpools = new(
-        "Starting Silk Spools",
-        ChoiceModelUtil.IntRangeModel(1, 18).FormatIntDelta(9),
-        "Number of silk spools players start with."
-    );
-
-    public override IEnumerable<MenuElement> Elements() => [StartingMasks, StartingSilkSpools];
-
-    internal override void Apply(StatsSettings data)
+    protected override void CustomizeMenu(StatsSettingsMenu menu)
     {
-        StartingMasks.Value = data.StartingMasks;
-        StartingSilkSpools.Value = data.StartingSilkSpools;
+        menu.StartingMasks.Model.FormatIntDelta(5);
+        menu.StartingSilkSpools.Model.FormatIntDelta(9);
     }
-
-    internal override StatsSettings Export() =>
-        new()
-        {
-            StartingMasks = StartingMasks.Value,
-            StartingSilkSpools = StartingSilkSpools.Value,
-        };
 }

@@ -1,10 +1,11 @@
-﻿using SSMP.Networking.Packet;
+﻿using Silksong.ModMenu.Generator;
+using SSMP.Networking.Packet;
 
 namespace Silksong.TheHuntIsOn.Modules.Lib;
 
-internal sealed class EmptySettings : ModuleSettings<EmptySettings>
+public sealed class EmptySettings : ModuleSettings<EmptySettings>
 {
-    public override ModuleSettingsType DynamicType => ModuleSettingsType.Empty;
+    public override ModuleSettingsType DynamicType() => ModuleSettingsType.Empty;
 
     public override ModuleSettings Clone() => this;
 

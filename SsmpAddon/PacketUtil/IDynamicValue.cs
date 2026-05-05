@@ -8,7 +8,7 @@ internal interface IDynamicValue<E, T, F>
     where T : IDynamicValue<E, T, F>
     where F : IDynamicValueFactory<E, T, F>, new()
 {
-    E DynamicType { get; }
+    E DynamicType();
 
     void ReadDynamicData(IPacket packet);
 

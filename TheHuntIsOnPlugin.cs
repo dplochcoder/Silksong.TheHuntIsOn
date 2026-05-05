@@ -83,7 +83,7 @@ public partial class TheHuntIsOnPlugin
 
     public GlobalSaveData? GlobalData
     {
-        get => field;
+        get;
         set
         {
             var prev = field;

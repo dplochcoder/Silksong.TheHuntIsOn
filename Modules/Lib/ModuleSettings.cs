@@ -6,7 +6,7 @@ using SSMP.Networking.Packet;
 
 namespace Silksong.TheHuntIsOn.Modules.Lib;
 
-internal enum ModuleSettingsType
+public enum ModuleSettingsType
 {
     Empty,
     Architect,
@@ -20,11 +20,11 @@ internal enum ModuleSettingsType
     Stats,
 }
 
-internal abstract class ModuleSettings
+public abstract class ModuleSettings
     : Cloneable<ModuleSettings>,
         IDynamicValue<ModuleSettingsType, ModuleSettings, ModuleSettingsFactory>
 {
-    public abstract ModuleSettingsType DynamicType { get; }
+    public abstract ModuleSettingsType DynamicType();
 
     public abstract void ReadDynamicData(IPacket packet);
 
@@ -33,7 +33,7 @@ internal abstract class ModuleSettings
     public abstract bool Equivalent(ModuleSettings other);
 }
 
-internal abstract class ModuleSettings<T> : ModuleSettings, ICloneable<T>
+public abstract class ModuleSettings<T> : ModuleSettings, ICloneable<T>
     where T : ModuleSettings<T>
 {
     T ICloneable<T>.Clone() => (T)((ModuleSettings)this).Clone();

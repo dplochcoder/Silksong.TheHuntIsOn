@@ -9,7 +9,7 @@ using UnityEngine;
 namespace Silksong.TheHuntIsOn.Modules.PauseTimerModule;
 
 internal class PauseTimerModule
-    : Module<PauseTimerModule, EmptySettings, EmptySubMenu, PauseTimerUIConfig>
+    : Module<PauseTimerModule, EmptySettings, EmptySettingsMenu, PauseTimerUIConfig>
 {
     private ServerPauseState serverPauseState = new();
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using HutongGames.PlayMaker;
 using Silksong.FsmUtil.Actions;
+using Silksong.ModMenu.Generator;
 using Silksong.TheHuntIsOn.Menu;
 
 namespace Silksong.TheHuntIsOn.Modules.Lib;
@@ -16,7 +17,7 @@ namespace Silksong.TheHuntIsOn.Modules.Lib;
 internal abstract class Module<ModuleT, GlobalT, SubMenuT, CosmeticT> : ModuleBase
     where ModuleT : Module<ModuleT, GlobalT, SubMenuT, CosmeticT>
     where GlobalT : ModuleSettings<GlobalT>, new()
-    where SubMenuT : ModuleSubMenu<GlobalT>, new()
+    where SubMenuT : ICustomMenu<GlobalT>, new()
     where CosmeticT : class, new()
 {
     protected static ModuleT? Instance { get; private set; }
@@ -74,5 +75,12 @@ internal abstract class Module<ModuleT, GlobalT, SubMenuT, CosmeticT> : ModuleBa
     protected void UpdateCosmeticConfig(Action<CosmeticT> action) =>
         TheHuntIsOnPlugin.UpdateCosmeticConfig(Name, action);
 
-    public override IModuleSubMenu CreateGlobalDataSubMenu() => new SubMenuT();
+    protected virtual void CustomizeMenu(SubMenuT menu) { }
+
+    public override IModuleMenu CreateGlobalDataSubMenu()
+    {
+        SubMenuT subMenu = new();
+        CustomizeMenu(subMenu);
+        return new ModuleMenu<GlobalT>(subMenu);
+    }
 }

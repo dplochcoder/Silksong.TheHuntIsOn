@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using MonoDetour;
 using MonoDetour.Cil;
 using MonoDetour.HookGen;
 using MonoMod.Cil;
-using Silksong.ModMenu.Elements;
-using Silksong.ModMenu.Models;
-using Silksong.TheHuntIsOn.Menu;
+using Silksong.ModMenu.Generator;
 using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using Silksong.TheHuntIsOn.Util;
@@ -16,7 +15,7 @@ using UnityEngine.SceneManagement;
 
 namespace Silksong.TheHuntIsOn.Modules;
 
-internal enum SpawnPoint
+public enum SpawnPoint
 {
     Unchanged,
     BoneBottom,
@@ -25,10 +24,12 @@ internal enum SpawnPoint
     Songclave,
 }
 
-internal class SpawnPointSettings : ModuleSettings<SpawnPointSettings>
+[GenerateMenu]
+public class SpawnPointSettings : ModuleSettings<SpawnPointSettings>
 {
-    public override ModuleSettingsType DynamicType => ModuleSettingsType.SpawnPoint;
+    public override ModuleSettingsType DynamicType() => ModuleSettingsType.SpawnPoint;
 
+    [Description("Forced respawn point on death.")]
     public SpawnPoint SpawnPoint = SpawnPoint.Unchanged;
 
     public override void ReadDynamicData(IPacket packet) =>
@@ -41,7 +42,7 @@ internal class SpawnPointSettings : ModuleSettings<SpawnPointSettings>
 
 [MonoDetourTargets(typeof(GameManager))]
 internal class SpawnPointModule
-    : GlobalSettingsModule<SpawnPointModule, SpawnPointSettings, SpawnPointSubMenu>
+    : GlobalSettingsModule<SpawnPointModule, SpawnPointSettings, SpawnPointSettingsMenu>
 {
     internal SpawnPointModule() => Events.OnEnterScene += OnNewScene;
 
@@ -212,19 +213,4 @@ internal class SpawnPointModule
         Md.GameManager._PlayerDead_d__245.MoveNext.ILHook(OverridePlayerDeadMoveNext);
         Md.GameManager.ReadyForRespawn.ILHook(OverrideReadyForRespawn);
     }
-}
-
-internal class SpawnPointSubMenu : ModuleSubMenu<SpawnPointSettings>
-{
-    private readonly ChoiceElement<SpawnPoint> SpawnPoint = new(
-        "Spawn Point",
-        ChoiceModels.ForEnum<SpawnPoint>(),
-        "Forced respawn point on death."
-    );
-
-    public override IEnumerable<MenuElement> Elements() => [SpawnPoint];
-
-    internal override void Apply(SpawnPointSettings data) => SpawnPoint.Value = data.SpawnPoint;
-
-    internal override SpawnPointSettings Export() => new() { SpawnPoint = SpawnPoint.Value };
 }

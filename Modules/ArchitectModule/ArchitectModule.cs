@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using Silksong.ModMenu.Elements;
+using Silksong.ModMenu.Generator;
 using Silksong.ModMenu.Models;
-using Silksong.TheHuntIsOn.Menu;
 using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using Silksong.TheHuntIsOn.Util;
@@ -15,7 +15,7 @@ internal class ArchitectSettings : ModuleSettings<ArchitectSettings>
 {
     public HashSet<string> EnabledGroups = [];
 
-    public override ModuleSettingsType DynamicType => ModuleSettingsType.Architect;
+    public override ModuleSettingsType DynamicType() => ModuleSettingsType.Architect;
 
     public override void ReadDynamicData(IPacket packet) =>
         EnabledGroups.ReadData(packet, packet => packet.ReadString());
@@ -32,7 +32,7 @@ internal class ArchitectSettings : ModuleSettings<ArchitectSettings>
 }
 
 internal class ArchitectModule
-    : GlobalSettingsModule<ArchitectModule, ArchitectSettings, ArchitectSubMenu>
+    : GlobalSettingsModule<ArchitectModule, ArchitectSettings, ArchitectSettingsMenu>
 {
     internal const string NONE_GROUP = "None";
 
@@ -64,7 +64,7 @@ internal class ArchitectGroupSelectorModel : IChoiceModel<string>
 
     public string Value
     {
-        get => field;
+        get;
         set
         {
             if (field == value)
@@ -156,7 +156,7 @@ internal class ArchitectGroupSelectorModel : IChoiceModel<string>
     }
 }
 
-internal class ArchitectSubMenu : ModuleSubMenu<ArchitectSettings>
+internal class ArchitectSettingsMenu : ICustomMenu<ArchitectSettings>
 {
     private readonly ArchitectGroupSelectorModel model;
     private readonly ChoiceElement<string> GroupSelector;
@@ -165,6 +165,8 @@ internal class ArchitectSubMenu : ModuleSubMenu<ArchitectSettings>
     private readonly HashSet<string> enabledGroups = [];
     private readonly EventSuppressor updateEnabled = new();
 
+    public event Action<CustomMenuValueChangedEvent>? OnValueChanged;
+
     private void UpdateEnabled()
     {
         using var lease = updateEnabled.Suppress();
@@ -172,7 +174,7 @@ internal class ArchitectSubMenu : ModuleSubMenu<ArchitectSettings>
         Enabled?.Value = enabledGroups.Contains(GroupSelector.Value);
     }
 
-    public ArchitectSubMenu()
+    public ArchitectSettingsMenu()
     {
         model = new();
 
@@ -189,13 +191,12 @@ internal class ArchitectSubMenu : ModuleSubMenu<ArchitectSettings>
                 enabledGroups.Add(GroupSelector.Value);
             else
                 enabledGroups.Remove(GroupSelector.Value);
-            NotifyDataUpdated();
+
+            OnValueChanged?.Invoke(new(nameof(Enabled), enabledGroups));
         };
     }
 
-    public override IEnumerable<MenuElement> Elements() => [GroupSelector, Enabled];
-
-    internal override void Apply(ArchitectSettings data)
+    public void ApplyFrom(ArchitectSettings data)
     {
         enabledGroups.Clear();
         foreach (var group in data.EnabledGroups)
@@ -205,9 +206,7 @@ internal class ArchitectSubMenu : ModuleSubMenu<ArchitectSettings>
         UpdateEnabled();
     }
 
-    internal override ArchitectSettings Export()
-    {
-        ArchitectSettings settings = new() { EnabledGroups = [.. enabledGroups] };
-        return settings;
-    }
+    public void ExportTo(ArchitectSettings data) => data.EnabledGroups = [.. enabledGroups];
+
+    public IEnumerable<MenuElement> Elements() => [GroupSelector, Enabled];
 }

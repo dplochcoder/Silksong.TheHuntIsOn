@@ -5,7 +5,7 @@ using Silksong.TheHuntIsOn.Util;
 
 namespace Silksong.TheHuntIsOn.Modules.EventsModule;
 
-internal class EventsModule : Module<EventsModule, EmptySettings, EmptySubMenu, Empty>
+internal class EventsModule : Module<EventsModule, EmptySettings, EmptySettingsMenu, Empty>
 {
     private readonly HunterItemGranter hunterItemGranter = new();
     private SpeedrunnerEvents speedrunnerEvents = new();

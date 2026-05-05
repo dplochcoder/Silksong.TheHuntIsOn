@@ -6,9 +6,7 @@ using MonoDetour;
 using MonoDetour.HookGen;
 using PrepatcherPlugin;
 using Silksong.FsmUtil;
-using Silksong.ModMenu.Elements;
-using Silksong.ModMenu.Models;
-using Silksong.TheHuntIsOn.Menu;
+using Silksong.ModMenu.Generator;
 using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.SsmpAddon;
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
@@ -18,13 +16,13 @@ using UnityEngine.SceneManagement;
 
 namespace Silksong.TheHuntIsOn.Modules;
 
-internal enum NotificationSetting
+public enum NotificationSetting
 {
     Silent,
     Notify,
 }
 
-internal enum TravelNotificationSetting
+public enum TravelNotificationSetting
 {
     Silent,
     NotifyLocal,
@@ -34,9 +32,10 @@ internal enum TravelNotificationSetting
     NotifyDestinationGlobal,
 }
 
-internal class IntelligenceSettings : ModuleSettings<IntelligenceSettings>
+[GenerateMenu]
+public class IntelligenceSettings : ModuleSettings<IntelligenceSettings>
 {
-    public override ModuleSettingsType DynamicType => ModuleSettingsType.Intelligence;
+    public override ModuleSettingsType DynamicType() => ModuleSettingsType.Intelligence;
 
     public NotificationSetting BossKills = NotificationSetting.Silent;
     public NotificationSetting ShopPurchases = NotificationSetting.Silent;
@@ -113,7 +112,7 @@ internal class IntelligenceMessage : IIdentifiedPacket<ServerPacketId>
 [MonoDetourTargets(typeof(Lever_tk2d))]
 [MonoDetourTargets(typeof(ShopItem))]
 internal class IntelligenceModule
-    : GlobalSettingsModule<IntelligenceModule, IntelligenceSettings, IntelligenceSubMenu>
+    : GlobalSettingsModule<IntelligenceModule, IntelligenceSettings, IntelligenceSettingsMenu>
 {
     private const string BOSS_KILL =
         "You hear screams of agony echoing in the distance. A mighty foe has been slain.";
@@ -510,91 +509,4 @@ internal class IntelligenceModule
         Md.Lever_tk2d.Awake.Postfix(PostfixLeverTk2dAwake);
         Md.ShopItem.SetPurchased.Postfix(PostfixShopItemPurchased);
     }
-}
-
-internal class IntelligenceSubMenu : ModuleSubMenu<IntelligenceSettings>
-{
-    public ChoiceElement<NotificationSetting> BossKills = new(
-        "Boss Kills",
-        ChoiceModels.ForEnum<NotificationSetting>()
-    );
-    public ChoiceElement<NotificationSetting> ShopPurchases = new(
-        "Shop Purchases",
-        ChoiceModels.ForEnum<NotificationSetting>()
-    );
-    public ChoiceElement<NotificationSetting> TollPurchases = new(
-        "Toll Purchases",
-        ChoiceModels.ForEnum<NotificationSetting>()
-    );
-    public ChoiceElement<NotificationSetting> SimpleKeyUsages = new(
-        "Simple Key Usages",
-        ChoiceModels.ForEnum<NotificationSetting>()
-    );
-    public ChoiceElement<NotificationSetting> LeverHits = new(
-        "Lever Hits",
-        ChoiceModels.ForEnum<NotificationSetting>()
-    );
-    public ChoiceElement<NotificationSetting> BellShrines = new(
-        "Bell Shrines",
-        ChoiceModels.ForEnum<NotificationSetting>()
-    );
-    public ChoiceElement<NotificationSetting> FleaRescues = new(
-        "Flea Rescues",
-        ChoiceModels.ForEnum<NotificationSetting>()
-    );
-    public ChoiceElement<NotificationSetting> CaravanRides = new(
-        "Caravan Rides",
-        ChoiceModels.ForEnum<NotificationSetting>()
-    );
-    public ChoiceElement<TravelNotificationSetting> BellwayRides = new(
-        "Bellway Rides",
-        ChoiceModels.ForEnum<TravelNotificationSetting>()
-    );
-    public ChoiceElement<TravelNotificationSetting> VentricaRides = new(
-        "Ventrica Rides",
-        ChoiceModels.ForEnum<TravelNotificationSetting>()
-    );
-
-    public override IEnumerable<MenuElement> Elements() =>
-        [
-            BossKills,
-            ShopPurchases,
-            TollPurchases,
-            SimpleKeyUsages,
-            LeverHits,
-            BellShrines,
-            FleaRescues,
-            CaravanRides,
-            BellwayRides,
-            VentricaRides,
-        ];
-
-    internal override void Apply(IntelligenceSettings data)
-    {
-        BossKills.Value = data.BossKills;
-        ShopPurchases.Value = data.ShopPurchases;
-        TollPurchases.Value = data.TollPurchases;
-        SimpleKeyUsages.Value = data.SimpleKeyUsages;
-        LeverHits.Value = data.LeverHits;
-        BellShrines.Value = data.BellShrines;
-        FleaRescues.Value = data.FleaRescues;
-        CaravanRides.Value = data.CaravanRides;
-        BellwayRides.Value = data.BellwayRides;
-        VentricaRides.Value = data.VentricaRides;
-    }
-
-    internal override IntelligenceSettings Export() =>
-        new()
-        {
-            BossKills = BossKills.Value,
-            ShopPurchases = ShopPurchases.Value,
-            TollPurchases = TollPurchases.Value,
-            SimpleKeyUsages = SimpleKeyUsages.Value,
-            LeverHits = LeverHits.Value,
-            BellShrines = BellShrines.Value,
-            FleaRescues = FleaRescues.Value,
-            CaravanRides = CaravanRides.Value,
-            BellwayRides = BellwayRides.Value,
-            VentricaRides = VentricaRides.Value,
-        };
 }

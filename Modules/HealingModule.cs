@@ -1,13 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System.ComponentModel;
 using HutongGames.PlayMaker.Actions;
 using MonoDetour;
 using MonoDetour.DetourTypes;
 using MonoDetour.HookGen;
 using PrepatcherPlugin;
 using Silksong.FsmUtil;
-using Silksong.ModMenu.Elements;
-using Silksong.ModMenu.Models;
-using Silksong.TheHuntIsOn.Menu;
+using Silksong.ModMenu.Generator;
 using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using Silksong.TheHuntIsOn.Util;
@@ -15,20 +13,28 @@ using SSMP.Networking.Packet;
 
 namespace Silksong.TheHuntIsOn.Modules;
 
-internal enum MaskHealType
+public enum MaskHealType
 {
     FullHeal,
     HealOneMask,
     NoHeal,
 }
 
-internal class HealingSettings : ModuleSettings<HealingSettings>
+[GenerateMenu]
+public class HealingSettings : ModuleSettings<HealingSettings>
 {
-    public override ModuleSettingsType DynamicType => ModuleSettingsType.Healing;
+    public override ModuleSettingsType DynamicType() => ModuleSettingsType.Healing;
 
+    [Description("Heal when sitting at a bench.")]
     public bool BenchHeal = true;
+
+    [Description("Heal when completing a new mask.")]
     public MaskHealType MaskHeal = MaskHealType.FullHeal;
+
+    [Description("Heal when obtaining a new ability or silk heart.")]
     public bool AbilityHeal = true;
+
+    [Description("Heal when bathing at a spa.")]
     public bool SpaHeal = true;
 
     public override void ReadDynamicData(IPacket packet)
@@ -56,7 +62,8 @@ internal class HealingSettings : ModuleSettings<HealingSettings>
 
 [MonoDetourTargets(typeof(CallMethodProper))]
 [MonoDetourTargets(typeof(PlayerData), GenerateControlFlowVariants = true)]
-internal class HealingModule : GlobalSettingsModule<HealingModule, HealingSettings, HealingSubMenu>
+internal class HealingModule
+    : GlobalSettingsModule<HealingModule, HealingSettings, HealingSettingsMenu>
 {
     protected override HealingModule Self() => this;
 
@@ -161,48 +168,4 @@ internal class HealingModule : GlobalSettingsModule<HealingModule, HealingSettin
     [MonoDetourHookInitialize]
     private static void Hook() =>
         Md.PlayerData.AddToMaxHealth.ControlFlowPrefix(OverrideAddToMaxHealth);
-}
-
-internal class HealingSubMenu : ModuleSubMenu<HealingSettings>
-{
-    private readonly ChoiceElement<bool> BenchHeal = new(
-        "Bench Heal",
-        ChoiceModels.ForBool("No", "Yes"),
-        "Heal when sitting at a bench."
-    );
-    private readonly ChoiceElement<MaskHealType> MaskHeal = new(
-        "Mask Heal",
-        ChoiceModels.ForEnum<MaskHealType>(),
-        "Heal when completing a new mask."
-    );
-    private readonly ChoiceElement<bool> AbilityHeal = new(
-        "Ability Heal",
-        ChoiceModels.ForBool("No", "Yes"),
-        "Heal when obtaining a new ability or silk heart."
-    );
-    private readonly ChoiceElement<bool> SpaHeal = new(
-        "Spa Heal",
-        ChoiceModels.ForBool("No", "Yes"),
-        "Heal when bathing at a spa."
-    );
-
-    public override IEnumerable<MenuElement> Elements() =>
-        [BenchHeal, MaskHeal, AbilityHeal, SpaHeal];
-
-    internal override void Apply(HealingSettings data)
-    {
-        BenchHeal.Value = data.BenchHeal;
-        MaskHeal.Value = data.MaskHeal;
-        AbilityHeal.Value = data.AbilityHeal;
-        SpaHeal.Value = data.SpaHeal;
-    }
-
-    internal override HealingSettings Export() =>
-        new()
-        {
-            BenchHeal = BenchHeal.Value,
-            MaskHeal = MaskHeal.Value,
-            AbilityHeal = AbilityHeal.Value,
-            SpaHeal = SpaHeal.Value,
-        };
 }

@@ -1,10 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System.ComponentModel;
 using HutongGames.PlayMaker.Actions;
 using Silksong.FsmUtil;
 using Silksong.FsmUtil.Actions;
-using Silksong.ModMenu.Elements;
-using Silksong.ModMenu.Models;
-using Silksong.TheHuntIsOn.Menu;
+using Silksong.ModMenu.Generator;
 using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using Silksong.TheHuntIsOn.Util;
@@ -12,12 +10,18 @@ using SSMP.Networking.Packet;
 
 namespace Silksong.TheHuntIsOn.Modules;
 
-internal class AutoTriggerSettings : ModuleSettings<AutoTriggerSettings>
+[GenerateMenu]
+public class AutoTriggerSettings : ModuleSettings<AutoTriggerSettings>
 {
-    public override ModuleSettingsType DynamicType => ModuleSettingsType.AutoTrigger;
+    public override ModuleSettingsType DynamicType() => ModuleSettingsType.AutoTrigger;
 
+    [Description("Auto-trigger the Bell Beast fight.")]
     public bool BellBeast;
+
+    [Description("Auto-trigger the Last Judge fight.")]
     public bool LastJudge;
+
+    [Description("Auto-trigger the Grand Mother Silk fight.")]
     public bool GrandMotherSilk;
 
     public override void ReadDynamicData(IPacket packet)
@@ -41,7 +45,7 @@ internal class AutoTriggerSettings : ModuleSettings<AutoTriggerSettings>
 }
 
 internal class AutoTriggerModule
-    : GlobalSettingsModule<AutoTriggerModule, AutoTriggerSettings, AutoTriggerSubMenu>
+    : GlobalSettingsModule<AutoTriggerModule, AutoTriggerSettings, AutoTriggerSettingsMenu>
 {
     public override string Name => "Auto Trigger";
 
@@ -160,40 +164,4 @@ internal class AutoTriggerModule
             AutoTriggerGrandMotherSilk
         );
     }
-}
-
-internal class AutoTriggerSubMenu : ModuleSubMenu<AutoTriggerSettings>
-{
-    private readonly ChoiceElement<bool> BellBeast = new(
-        "Bell Beast",
-        ChoiceModels.ForBool("No", "Yes"),
-        "Auto-trigger the Bell Beast fight."
-    );
-    private readonly ChoiceElement<bool> LastJudge = new(
-        "Last Judge",
-        ChoiceModels.ForBool("No", "Yes"),
-        "Auto-trigger the Last Judge fight."
-    );
-    private readonly ChoiceElement<bool> GrandMotherSilk = new(
-        "Grand Mother Silk",
-        ChoiceModels.ForBool("No", "Yes"),
-        "Auto-trigger the Grand Mother Silk fight."
-    );
-
-    public override IEnumerable<MenuElement> Elements() => [BellBeast, LastJudge, GrandMotherSilk];
-
-    internal override void Apply(AutoTriggerSettings data)
-    {
-        BellBeast.Value = data.BellBeast;
-        LastJudge.Value = data.LastJudge;
-        GrandMotherSilk.Value = data.GrandMotherSilk;
-    }
-
-    internal override AutoTriggerSettings Export() =>
-        new()
-        {
-            BellBeast = BellBeast.Value,
-            LastJudge = LastJudge.Value,
-            GrandMotherSilk = GrandMotherSilk.Value,
-        };
 }

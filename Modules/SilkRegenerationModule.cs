@@ -1,13 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.ComponentModel;
 using MonoDetour;
 using MonoDetour.Cil;
 using MonoDetour.DetourTypes;
 using MonoDetour.HookGen;
 using MonoMod.Cil;
 using Silksong.ModMenu.Elements;
+using Silksong.ModMenu.Generator;
 using Silksong.ModMenu.Models;
-using Silksong.TheHuntIsOn.Menu;
 using Silksong.TheHuntIsOn.Modules.Lib;
 using Silksong.TheHuntIsOn.SsmpAddon.PacketUtil;
 using Silksong.TheHuntIsOn.Util;
@@ -15,14 +15,24 @@ using SSMP.Networking.Packet;
 
 namespace Silksong.TheHuntIsOn.Modules;
 
-internal class SilkRegenerationSettings : ModuleSettings<SilkRegenerationSettings>
+[GenerateMenu]
+public class SilkRegenerationSettings : ModuleSettings<SilkRegenerationSettings>
 {
+    // Customized in module.
     public int Silkhearts = 0;
+
+    [Description("Time to regenerate the first silk spool (default 1.45)")]
+    [ModMenuRange(0.1f, 60f)]
     public float FirstSilkRegenTime = 1.45f;
+
+    [Description("Time to regenerate all spools but the first (default 3.9)")]
+    [ModMenuRange(0.1f, 60f)]
     public float SilkRegenTime = 3.9f;
+
+    [Description("Whether silk can be obtained outside of regen")]
     public bool CanFarmSilk = true;
 
-    public override ModuleSettingsType DynamicType => ModuleSettingsType.SilkRegeneration;
+    public override ModuleSettingsType DynamicType() => ModuleSettingsType.SilkRegeneration;
 
     public override void ReadDynamicData(IPacket packet)
     {
@@ -52,7 +62,7 @@ internal class SilkRegenerationModule
     : GlobalSettingsModule<
         SilkRegenerationModule,
         SilkRegenerationSettings,
-        SilkRegenerationSubMenu
+        SilkRegenerationSettingsMenu
     >
 {
     protected override SilkRegenerationModule Self() => this;
@@ -79,6 +89,12 @@ internal class SilkRegenerationModule
         if (before.Silkhearts != after.Silkhearts && HeroController.instance != null)
             HeroController.instance.ResetSilkRegen();
     }
+
+    protected override void CustomizeMenu(SilkRegenerationSettingsMenu menu) =>
+        menu.Silkhearts = new SliderElement<int>(
+            nameof(menu.Silkhearts),
+            SliderModels.ForInts(0, 18)
+        );
 
     private static readonly EventSuppressor blockSilkGain = new();
 
@@ -141,44 +157,4 @@ internal class SilkRegenerationModule
         Md.HeroController.ResetSilkRegen.Prefix(PrefixResetSilkRegen);
         Md.HeroController.StartSilkRegen.Prefix(PrefixStartSilkRegen);
     }
-}
-
-internal class SilkRegenerationSubMenu : ModuleSubMenu<SilkRegenerationSettings>
-{
-    private readonly SliderElement<int> Silkhearts = new("Silkhearts", SliderModels.ForInts(0, 18));
-    private readonly TextInput<float> FirstSilkRegenTime = new(
-        "First Silk Regen Time",
-        TextModels.ForFloats(0.1f, 60f),
-        "Time to regenerate the first silk spool (default 1.45)"
-    );
-    private readonly TextInput<float> SilkRegenTime = new(
-        "Silk Regen Time",
-        TextModels.ForFloats(0.1f, 60f),
-        "Time to regenerate all spools but the first (default 3.9)"
-    );
-    private readonly ChoiceElement<bool> CanFarmSilk = new(
-        "Can Farm Silk",
-        ChoiceModels.ForBool("No", "Yes"),
-        "Whether silk can be obtained outside of regen"
-    );
-
-    public override IEnumerable<MenuElement> Elements() =>
-        [Silkhearts, FirstSilkRegenTime, SilkRegenTime, CanFarmSilk];
-
-    internal override void Apply(SilkRegenerationSettings data)
-    {
-        Silkhearts.Value = data.Silkhearts;
-        FirstSilkRegenTime.Value = data.FirstSilkRegenTime;
-        SilkRegenTime.Value = data.SilkRegenTime;
-        CanFarmSilk.Value = data.CanFarmSilk;
-    }
-
-    internal override SilkRegenerationSettings Export() =>
-        new()
-        {
-            Silkhearts = Silkhearts.Value,
-            FirstSilkRegenTime = FirstSilkRegenTime.Value,
-            SilkRegenTime = SilkRegenTime.Value,
-            CanFarmSilk = CanFarmSilk.Value,
-        };
 }

@@ -127,7 +127,7 @@ internal static class IWireInterfaceExtensions
         where T : IDynamicValue<E, T, F>
         where F : IDynamicValueFactory<E, T, F>, new()
     {
-        self.DynamicType.WriteData(packet);
+        self.DynamicType().WriteData(packet);
         self.WriteDynamicData(packet);
     }
 
